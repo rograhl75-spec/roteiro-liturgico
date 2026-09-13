@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
 
-    <!-- Prevenção de Cache no Navegador -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <!-- Metatags e Ícones Universais (PWA / Celular / Desktop) -->
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icone.png">
@@ -29,7 +27,6 @@
             --card-bg: #ffffff;
             --text: #1e293b;
             --border: #cbd5e1;
-            /* Cores dos Ministérios */
             --cor-animador: #1e40af;
             --bg-animador: #eff6ff;
             --cor-padre: #991b1b;
@@ -79,7 +76,6 @@
             margin-top: 6px;
         }
 
-        /* Barra de Seleção de Semanas */
         .week-selector-bar {
             display: flex;
             justify-content: center;
@@ -112,7 +108,6 @@
             font-weight: 800;
         }
 
-        /* Faixa de Confirmação Visual */
         .active-week-banner {
             background: #fefce8;
             border: 1.5px solid #ca8a04;
@@ -409,7 +404,6 @@
         .row-todos .script-text { border-left-color: var(--cor-todos); }
         .row-rubrica .script-text { border-left-color: var(--cor-rubrica); font-style: italic; background: #f8fafc; }
 
-        /* Modais */
         .modal {
             display: none;
             position: fixed;
@@ -551,7 +545,6 @@
             .print-general-content details summary { display: none !important; }
             .print-general-content details { display: block !important; margin-bottom: 6px !important; }
 
-            /* Impressão das Preces: Estritamente 1 Página por Horário */
             .preces-single-page {
                 page-break-after: always !important;
                 break-after: page !important;
@@ -625,7 +618,7 @@
         <button type="button" class="week-tab-btn" id="btn-tab-w1" onclick="showWeek(1)">👉 Toque para ver: 07 a 13 de Setembro (24º Dom)</button>
     </div>
 
-    <!-- Faixa de Confirmação Visual -->
+    <!-- Faixa de Alerta Visual -->
     <div class="active-week-banner" id="active-week-banner">
         <span>👀</span>
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
@@ -1587,167 +1580,12 @@
         <div class="author-box">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- JAVASCRIPT PRINCIPAL INTEGRADO -->
+    <!-- CARREGAMENTO DO ARQUIVO DE LEITURAS BÍBLICAS -->
+    <script src="leituras.js"></script>
+
+    <!-- SCRIPT DE INTERFACE E EVENTOS -->
     <script>
         let currentWeek = 2;
-
-        const readingsData = {
-            /* SEMANA 1: 07 a 13/09/2026 */
-            '1l_seg': {
-                title: '1ª Leitura — 1 Coríntios 5,1-8 (Lecionário II, pág. 963)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Ouve-se dizer que há entre vós imoralidade grave. Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_seg': {
-                title: 'Salmo Responsorial — Sl 5,5-6.7.12 (Lecionário II, pág. 964)',
-                text: 'R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.'
-            },
-            'ev_seg': {
-                title: 'Evangelho — Lucas 6,6-11 (Lecionário II, pág. 965)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou um homem cuja mão direita era seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E curou o enfermo com autoridade divina.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_ter': {
-                title: '1ª Leitura — Miquéias 5,1-4a (Lecionário III, pág. 165)',
-                text: 'Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_ter': {
-                title: 'Salmo Responsorial — Sl 70(71) (Lecionário III, pág. 166)',
-                text: 'R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.'
-            },
-            'ev_ter': {
-                title: 'Evangelho — Mateus 1,1-16.18-23 (Lecionário III, pág. 167)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qua': {
-                title: '1ª Leitura — 1 Coríntios 7,25-31 (Lecionário II, pág. 966)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qua': {
-                title: 'Salmo Responsorial — Sl 44(45) (Lecionário II, pág. 967)',
-                text: 'R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.'
-            },
-            'ev_qua': {
-                title: 'Evangelho — Lucas 6,20-26 (Lecionário II, pág. 968)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qui': {
-                title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13 (Lecionário II, pág. 970)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qui': {
-                title: 'Salmo Responsorial — Sl 138(139) (Lecionário II, pág. 971)',
-                text: 'R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.'
-            },
-            'ev_qui': {
-                title: 'Evangelho — Lucas 6,27-38 (Lecionário II, pág. 972)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_sex': {
-                title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27 (Lecionário II, pág. 974)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_sex': {
-                title: 'Salmo Responsorial — Sl 83(84) (Lecionário II, pág. 975)',
-                text: 'R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.'
-            },
-            'ev_sex': {
-                title: 'Evangelho — Lucas 6,39-42 (Lecionário II, pág. 976)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_dom': {
-                title: '1ª Leitura — Eclesiástico 27,33-28,9 (Lecionário I, pág. 323)',
-                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo e quando orares teus pecados serão perdoados. Lembra-te do teu fim e deixa de odiar.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_dom': {
-                title: 'Salmo Responsorial — Sl 102(103) (Lecionário I, pág. 323)',
-                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! R.'
-            },
-            '2l_dom': {
-                title: '2ª Leitura — Romanos 14,7-9 (Lecionário I, pág. 324)',
-                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'ev_dom': {
-                title: 'Evangelho — Mateus 18,21-35 (Lecionário I, pág. 325)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o irmão? Até sete?" Jesus respondeu: "Não até sete, mas até setenta vezes sete!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-
-            /* SEMANA 2: 14 a 20/09/2026 */
-            '1l_seg_w2': {
-                title: '1ª Leitura — Números 21,4b-9 (Lecionário III, pág. 174)',
-                text: 'Leitura do Livro dos Números.\n\nO povo se impacientou no deserto e pecou. O Senhor mandou serpentes venenosas. Moisés intercedeu e Deus ordenou: "Faze uma serpente de bronze e ergue-a sobre uma haste; quem olhar para ela viverá". E todo mordido que olhava, ficava curado.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_seg_w2': {
-                title: 'Salmo Responsorial — Sl 77(78),1-2.34-38 (Lecionário III, pág. 175)',
-                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei! O Senhor, compassivo e clemente, perdoava o pecado e não os destruía. R.'
-            },
-            'ev_seg_w2': {
-                title: 'Evangelho — João 3,13-17 (Lecionário III, pág. 176)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nDisse Jesus: "Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todo o que nele crer tenha a vida eterna. Pois Deus amou tanto o mundo que entregou seu Filho único".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_ter_w2': {
-                title: '1ª Leitura — Hebreus 5,7-9 (Lecionário III, pág. 178)',
-                text: 'Leitura da Carta aos Hebreus.\n\nCristo dirigiu preces e lágrimas àquele que podia salvá-lo e tornou-se causa de salvação eterna para todos os que lhe obedecem.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_ter_w2': {
-                title: 'Salmo Responsorial — Sl 30(31),2-6.15-16.20 (R. 17b) (Lecionário III, pág. 179)',
-                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nEm vós me abrigo, ó Senhor; em vossas mãos entrego o meu espírito. R.'
-            },
-            'ev_ter_w2': {
-                title: 'Evangelho — João 19,25-27 (Lecionário III, pág. 181)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nPerto da cruz de Jesus estava sua mãe. Vendo Maria e o discípulo amado, Jesus disse: "Mulher, eis aí o teu filho". Depois disse ao discípulo: "Eis aí a tua mãe". E o discípulo a acolheu consigo.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qua_w2': {
-                title: '1ª Leitura — 1 Coríntios 12,31-13,13 (Lecionário II, pág. 981)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAinda que eu fale a língua dos homens e dos anjos, se não tiver caridade, nada sou. Agora permanecem a fé, a esperança e o amor; a maior delas é o amor.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qua_w2': {
-                title: 'Salmo Responsorial — Sl 32(33),2-5.12.22 (Lecionário II, pág. 982)',
-                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da harpa; reta é a sua palavra e sua bondade enche a terra. R.'
-            },
-            'ev_qua_w2': {
-                title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 983)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse: "A quem compararei esta geração? Tocamos flauta e não dançastes; entoamos lamentações e não chorastes. Mas a sabedoria de Deus é justificada por todos os seus filhos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qui_w2': {
-                title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 985)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nTransmiti-vos o que recebi: Cristo morreu por nossos pecados, foi sepultado e ressuscitou ao terceiro dia, segundo as Escrituras.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qui_w2': {
-                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (R. 1) (Lecionário II, pág. 986)',
-                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nA mão direita do Senhor fez maravilhas, ela me levantou; não hei de morrer, mas viverei! R.'
-            },
-            'ev_qui_w2': {
-                title: 'Evangelho — Lucas 7,36-50 (Lecionário II, pág. 987)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nA mulher pecadora ungiu os pés de Jesus na casa do fariseu. Jesus disse: "Muitos pecados lhe são perdoados porque muito amou. Tua fé te salvou; vai em paz".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_sex_w2': {
-                title: '1ª Leitura — 1 Coríntios 15,12-20 (Lecionário II, pág. 989)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nSe Cristo não ressuscitou, vã é a nossa fé. Mas Cristo ressuscitou dentre os mortos como primícias de todos nós!\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_sex_w2': {
-                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (R. 15b) (Lecionário II, pág. 990)',
-                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nInclinai vosso ouvido e escutai a minha prece; guardai-me à sombra de vossas asas. R.'
-            },
-            'ev_sex_w2': {
-                title: 'Evangelho — Lucas 8,1-3 (Lecionário II, pág. 991)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus andava por cidades e aldeias pregando o Evangelho, acompanhado pelos Doze e por santas mulheres que o ajudavam com seus bens.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_dom_w2': {
-                title: '1ª Leitura — Isaías 55,6-9 (Lecionário I, pág. 327)',
-                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor enquanto se pode achar. Meus pensamentos não são como os vossos, e os meus caminhos são infinitamente mais altos que os vossos.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_dom_w2': {
-                title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18 (R. 18a) (Lecionário I, pág. 327)',
-                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nMisericordioso e compassivo é o Senhor; sua ternura abraça toda criatura. R.'
-            },
-            '2l_dom_w2': {
-                title: '2ª Leitura — Filipenses 1,20c-24.27a (Lecionário I, pág. 328)',
-                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nPara mim o viver é Cristo e o morrer é lucro. Vivei sempre de maneira digna do Evangelho de Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'ev_dom_w2': {
-                title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nParábola dos trabalhadores da vinha: "Acaso tens inveja porque sou bom? Assim os últimos serão os primeiros e os primeiros serão os últimos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            }
-        };
 
         function showWeek(w) {
             currentWeek = w;
@@ -1781,12 +1619,13 @@
         }
 
         function openReading(key) {
-            const data = readingsData[key];
-            if (data) {
-                document.getElementById('modalTitle').innerText = data.title;
-                document.getElementById('modalBody').innerText = data.text;
-                openModal('generalModal');
+            if (typeof readingsData === 'undefined' || !readingsData[key]) {
+                alert('Carregando os textos bíblicos... Certifique-se de criar o arquivo leituras.js na mesma pasta do GitHub.');
+                return;
             }
+            document.getElementById('modalTitle').innerText = readingsData[key].title;
+            document.getElementById('modalBody').innerText = readingsData[key].text;
+            openModal('generalModal');
         }
 
         function openModal(id) {
@@ -2036,6 +1875,10 @@
             const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
             if (checkedBoxes.length === 0) {
                 alert('Por favor, selecione ao menos uma leitura para imprimir.');
+                return;
+            }
+            if (typeof readingsData === 'undefined') {
+                alert('Carregando os textos bíblicos... Certifique-se de que o arquivo leituras.js está na pasta do repositório.');
                 return;
             }
             let readingsHTML = '';
