@@ -105,7 +105,7 @@
             .preces-single-page .script-text{font-size:10.5pt!important;line-height:1.35!important;padding:2px 6px!important;border-left-width:3px!important}
             
             .antifona-print-box{margin-bottom:15px;border:1px solid #ccc;padding:15px;font-size:12pt;line-height:1.5;font-family:'Georgia',serif;page-break-inside:avoid}
-            .antifona-print-box h3{margin:0 0 10px 0;color:#1a365d;border-bottom:1px solid #1a365d;padding-bottom:5px;font-family:Arial,sans-serif;font-size:14pt}
+            .antifona-print-box h3{margin:0 0 10px 0;color:#1a365d;border-bottom:1px solid #1a365d;padding-bottom:5px;font-family:Arial,sans-serif;font-size:14pt;text-transform:uppercase}
             .antifona-print-box p{margin-bottom:12px;text-align:justify}
         }
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
@@ -117,7 +117,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E REVISADO (VERSÃO 10.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E REVISADO (VERSÃO 9.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -130,13 +130,15 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas -->
+    <!-- Barra de Ferramentas com o Rito da Cruz -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Programação</button>
         <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Roteiro</button>
         <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Selecionar Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" onclick="openActiveReflexoesModal()">💡 Reflexões</button>
+        <!-- BOTÃO DO RITO DA CRUZ GLOBAL E BEM VISÍVEL -->
+        <button type="button" class="action-btn" style="background-color: #991b1b;" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz (11/09)</button>
         <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="action-btn blue">🔗 Liturgia Diária CNBB</a>
     </div>
 
@@ -477,6 +479,38 @@
                         </table>
                     </div>
                 </div>
+                
+                <div class="tables-grid" style="margin-top: 0.8rem;">
+                    <div>
+                        <div class="table-caption">Antífonas e Canto Interlecionais</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 407)</small></td>
+                                    <td>A salvação do povo sou eu, diz o Senhor: * de qualquer tribulação em que clamarem por mim, eu os ouvirei e serei seu Deus para sempre.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aclamação</strong><br><small>(cf. At 16,14b)</small></td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; * para que possamos acolher a palavra do vosso Filho!</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comunhão</strong><br><small>(Sl 118 / Jo 10)</small></td>
+                                    <td>Os vossos mandamentos vós nos destes para serem fielmente observados. Que seja firme a minha vida em cumprir vossa vontade!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">Citações Telão (PASCOM)</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr><td><strong>1ª Leitura:</strong> "Meus pensamentos não são como os vossos pensamentos."</td></tr>
+                                <tr><td><strong>2ª Leitura:</strong> "Para mim, o viver é Cristo."</td></tr>
+                                <tr><td><strong>Evangelho:</strong> "Estás com inveja porque eu estou sendo bom?"</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -527,7 +561,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg')">1Cor 5,1-8</span></td><td style="text-align:center;">II / 963</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_seg')">Sl 5,5-6.7.12</span></td><td style="text-align:center;">II / 964</td></tr>
@@ -707,7 +741,7 @@
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum | <em>Rito de Entrega da Cruz (Catequese)</em></div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -751,10 +785,6 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <!-- BOTAO DO RITO DA CRUZ BEM VISIVEL AQUI -->
-                <div class="buttons-row">
-                    <button type="button" class="action-btn secondary" onclick="openModal('modal_rito_cruz')" style="width:100%; padding:10px; font-size:1.1rem;">✝️ Abrir e Imprimir Rito de Entrega da Cruz</button>
                 </div>
             </div>
 
@@ -813,6 +843,38 @@
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom')">Sl 102(103)</span></td><td style="text-align:center;">I / 323</td></tr>
                                 <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom')">Rm 14,7-9</span></td><td style="text-align:center;">I / 324</td></tr>
                                 <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom')">Mt 18,21-35</span></td><td style="text-align:center;">I / 325</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tables-grid" style="margin-top: 0.8rem;">
+                    <div>
+                        <div class="table-caption">Antífonas e Canto Interlecionais</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 406)</small></td>
+                                    <td>Dai a paz, Senhor, aos que em vós esperam; * ouvi as preces do vosso servo e do vosso povo Israel.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aclamação</strong></td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: * que vos ameis uns aos outros assim como eu vos amei.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comunhão</strong></td>
+                                    <td>Como é preciosa, ó Deus, a vossa graça! * Na sombra de vossas asas os homens encontram abrigo.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">Citações Telão (PASCOM)</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr><td><strong>1ª Leitura:</strong> "Perdoa a injustiça cometida por teu próximo; quando orares, teus pecados serão perdoados."</td></tr>
+                                <tr><td><strong>2ª Leitura:</strong> "Quer vivamos, quer morramos, pertencemos ao Senhor."</td></tr>
+                                <tr><td><strong>Evangelho:</strong> "Não te digo perdoar até sete vezes, mas até setenta vezes sete."</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1025,8 +1087,7 @@
         </div>
     </div>
 
-    <!-- Modais de Roteiro e Preces idênticos, com os blocos que já funcionam bem para impressão -->
-
+    <!-- Modais de Roteiro e Preces -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1036,6 +1097,7 @@
             <div class="script-block" id="content_roteiro_w2">
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço Mariano. Datashow projeta: <strong>“SILÊNCIO”</strong>.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">O Ministério de Música inicia o canto de meditação 5 minutos antes da Missa. Prolongar o canto de comunhão até o término da distribuição.</span></div>
+                
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITOS INICIAIS</h4>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">SOMENTE PARA AS MISSAS COM TRANSMISSÃO:<br>As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração, as quais serão apresentadas no altar do Senhor.</span></div>
@@ -1117,7 +1179,7 @@
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">2ª Leitura</span><span class="script-text">Rm 14,7-9. Palavra do Senhor. (Animador: Graças a Deus).</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Aclamação ao Evangelho 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Senhor esteja convosco. (Animador: Ele está no meio de nós). Proclamação do Evangelho de Jesus Cristo segundo Mateus. (Animador: Glória a vós, Senhor). Mt 18,21-35. Palavra da Salvação. (Animador: Glória a vós, Senhor).</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Homilia.<br>Louvado seja o Nosso Senhor Jesus Cristo. (Animador: Para sempre seja louvado).</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Homilia. Louvado seja o Nosso Senhor Jesus Cristo. (Animador: Para sempre seja louvado).</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Padre/Anim</span><span class="script-text">(Profissão de fé)<br>Creio em Deus Pai todo-poderoso... na ressurreição da carne, na vida eterna. Amém.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Fará a introdução às preces.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Conforme formulário de preces para cada horário (com a Oração do Jubileu).</span></div>
@@ -1286,7 +1348,7 @@
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Catequese</span><span class="script-text">Organiza os catequizandos para entrar em procissão pelo corredor central em duas filas.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Queridos catequizandos, vocês hoje receberão esta cruz, sinal do amor de Cristo e da nossa fé. Aprendam a amá-la de todo coração. (Catequizandos: Amém).</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Entrega a cruz para cada catequizando.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Deus, criador e salvador das pessoas, por Vosso amor destes a vida a estes nossos irmãos e irmãs. Na misericórdia, os chamastes a Vós. Nós Vos pedimos confiantes, penetrando no íntimo de Seu ser, protegei-os e conservai-os neste Caminho da Iniciação Cristã. Levando ao fim Vosso plano de amor, concedei que se tornem plenamente conscientes e convictos discípulos do Vossa Filho Jesus Cristo, na Unidade do Espírito Santo.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Deus, criador e salvador das pessoas, por Vosso amor destes a vida a estes nossos irmãos e irmãs. Na misericórdia, os chamastes a Vós. Nós Vos pedimos confiantes, penetrando no íntimo de Seu ser, protegei-os e conservai-os neste Caminho da Iniciação Cristã. Levando ao fim Vosso plano de amor, concedei que se tornem plenamente conscientes e convictos discípulos do Vosso Filho Jesus Cristo, na Unidade do Espírito Santo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
             </div>
         </div>
