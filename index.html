@@ -117,12 +117,17 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO (VERSÃO 11.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E REVISADO (VERSÃO 10.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
         <button type="button" class="week-tab-btn active" id="btn-tab-w2" onclick="showWeek(2)">✅ VISUALIZANDO: 14 a 20 de Setembro (25º Dom)</button>
         <button type="button" class="week-tab-btn" id="btn-tab-w1" onclick="showWeek(1)">👉 Toque para ver: 07 a 13 de Setembro (24º Dom)</button>
+    </div>
+
+    <div class="active-week-banner" id="active-week-banner">
+        <span>👀</span>
+        <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
     <!-- Barra de Ferramentas -->
@@ -132,8 +137,8 @@
         <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Selecionar Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" onclick="openActiveReflexoesModal()">💡 Reflexões</button>
-        <button type="button" class="action-btn red" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz</button>
-        <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="action-btn blue">🔗 Liturgia CNBB</a>
+        <button type="button" class="action-btn red" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz (Sexta 11/09)</button>
+        <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="action-btn blue">🔗 Liturgia Diária CNBB</a>
     </div>
 
     <div class="container">
@@ -142,12 +147,14 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
+            <!-- Segunda 14/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
                     <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Exaltação da Santa Cruz, Festa (Ano A)</div>
+                
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -188,7 +195,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td style="text-align:center;">III / 174</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78)</span></td><td style="text-align:center;">III / 175</td></tr>
@@ -199,6 +206,7 @@
                 </div>
             </div>
 
+            <!-- Terça 15/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
@@ -251,6 +259,7 @@
                 </div>
             </div>
 
+            <!-- Quarta 16/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
@@ -303,6 +312,7 @@
                 </div>
             </div>
 
+            <!-- Quinta 17/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
@@ -355,6 +365,7 @@
                 </div>
             </div>
 
+            <!-- Sexta 18/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
@@ -407,6 +418,7 @@
                 </div>
             </div>
 
+            <!-- Domingo 20/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
@@ -728,7 +740,7 @@
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum | <em>Rito de Entrega da Cruz (Catequese)</em></div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -859,9 +871,9 @@
                         <div class="table-caption">Citações Telão (PASCOM)</div>
                         <table class="liturgy-table">
                             <tbody>
-                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Perdoa a injustiça cometida por teu próximo; quando orares, teus pecados serão perdoados.</td></tr>
-                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Quer vivamos, quer morramos, pertencemos ao Senhor.</td></tr>
-                                <tr><td><strong>EVANGELHO</strong><br>Não te digo perdoar até sete vezes, mas até setenta vezes sete.</td></tr>
+                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Perdoa a injustiça cometida por teu próximo;<br>quando orares, teus pecados serão perdoados.</td></tr>
+                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Quer vivamos, quer morramos,<br>pertencemos ao Senhor.</td></tr>
+                                <tr><td><strong>EVANGELHO</strong><br>Não te digo perdoar até sete vezes,<br>mas até setenta vezes sete.</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -871,7 +883,7 @@
 
     </div>
 
-    <!-- ================== MODAIS ================== -->
+    <!-- ================== MODAIS DO SISTEMA ================== -->
 
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
@@ -1359,199 +1371,202 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
+    <!-- SCRIPT COM DADOS BLINDADOS COM CRASE -->
     <script>
         var readingsData = {
             '1l_seg_w2': {
                 title: '1ª Leitura — Números 21,4b-9',
                 day: 'Segunda-feira (14/09) — Exaltação da Santa Cruz',
-                text: "Leitura do Livro dos Números.\n\nNaqueles dias, os filhos de Israel partiram do monte Hor, pelo caminho que leva ao mar Vermelho, para contornarem o país de Edom. Durante a viagem o povo começou a impacientar-se, e se pôs a falar contra Deus e contra Moisés, dizendo: \"Por que nos fizestes sair do Egito para morrermos no deserto? Não há pão, falta água, e já estamos com nojo desse alimento miserável\".\nEntão o Senhor mandou contra o povo serpentes venenosas, que os mordiam; e morreu muita gente em Israel. O povo foi ter com Moisés e disse: \"Pecamos, falando contra o Senhor e contra ti. Roga ao Senhor que afaste de nós as serpentes\". Moisés intercedeu pelo povo, e o Senhor respondeu: \"Faze uma serpente de bronze e coloca-a como sinal sobre uma haste; aquele que for mordido e olhar para ela, viverá\".\nMoisés fez, pois, uma serpente de bronze e colocou-a como sinal sobre uma haste. Quando alguém era mordido por uma serpente, e olhava para a serpente de bronze, ficava curado.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura do Livro dos Números.\n\nNaqueles dias, os filhos de Israel partiram do monte Hor, pelo caminho que leva ao mar Vermelho, para contornarem o país de Edom. Durante a viagem o povo começou a impacientar-se, e se pôs a falar contra Deus e contra Moisés, dizendo: "Por que nos fizestes sair do Egito para morrermos no deserto? Não há pão, falta água, e já estamos com nojo desse alimento miserável".\nEntão o Senhor mandou contra o povo serpentes venenosas, que os mordiam; e morreu muita gente em Israel. O povo foi ter com Moisés e disse: "Pecamos, falando contra o Senhor e contra ti. Roga ao Senhor que afaste de nós as serpentes". Moisés intercedeu pelo povo, e o Senhor respondeu: "Faze uma serpente de bronze e coloca-a como sinal sobre uma haste; aquele que for mordido e olhar para ela, viverá".\nMoisés fez, pois, uma serpente de bronze e colocou-a como sinal sobre uma haste. Quando alguém era mordido por uma serpente, e olhava para a serpente de bronze, ficava curado.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_seg_w2': {
                 title: 'Salmo Responsorial — Sl 77(78),1-2.34-38',
                 day: 'Segunda-feira (14/09) — Exaltação da Santa Cruz',
-                text: "R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei, *\nouve atento as palavras que eu te digo;\nabrirei a minha boca em parábolas, *\nos mistérios do passado lembrarei. R.\n\nQuando os feria, eles então o procuravam, *\nconvertiam-se correndo para ele;\nrecordavam que o Senhor é sua rocha *\ne que Deus, seu Redentor, é o Deus Altíssimo. R.\n\nMas apenas o honravam com seus lábios *\ne mentiam ao Senhor com suas línguas;\nseus corações enganadores eram falsos *\ne, infiéis, eles rompiam a Aliança. R.\n\nMas o Senhor, sempre benigno e compassivo, *\nnão os matava e perdoava seu pecado;\nquantas vezes dominou a sua ira *\ne não deu largas à vazão de seu furor. R."
+                text: `R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei, *\nouve atento as palavras que eu te digo;\nabrirei a minha boca em parábolas, *\nos mistérios do passado lembrarei. R.\n\nQuando os feria, eles então o procuravam, *\nconvertiam-se correndo para ele;\nrecordavam que o Senhor é sua rocha *\ne que Deus, seu Redentor, é o Deus Altíssimo. R.\n\nMas apenas o honravam com seus lábios *\ne mentiam ao Senhor com suas línguas;\nseus corações enganadores eram falsos *\ne, infiéis, eles rompiam a Aliança. R.\n\nMas o Senhor, sempre benigno e compassivo, *\nnão os matava e perdoava seu pecado;\nquantas vezes dominou a sua ira *\ne não deu largas à vazão de seu furor. R.`
             },
             'ev_seg_w2': {
                 title: 'Evangelho — João 3,13-17',
                 day: 'Segunda-feira (14/09) — Exaltação da Santa Cruz',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, disse Jesus a Nicodemos:\n\"Ninguém subiu ao céu, a não ser aquele que desceu do céu, o Filho do Homem. Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todos os que nele crerem tenham a vida eterna.\nPois Deus amou tanto o mundo, que deu o seu Filho unigênito, para que não morra todo o que nele crer, mas tenha a vida eterna. De fato, Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, disse Jesus a Nicodemos:\n"Ninguém subiu ao céu, a não ser aquele que desceu do céu, o Filho do Homem. Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todos os que nele crerem tenham a vida eterna.\nPois Deus amou tanto o mundo, que deu o seu Filho unigênito, para que não morra todo o que nele crer, mas tenha a vida eterna. De fato, Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_ter_w2': {
                 title: '1ª Leitura — Hebreus 5,7-9',
                 day: 'Terça-feira (15/09) — Nossa Senhora das Dores',
-                text: "Leitura da Carta aos Hebreus.\n\nCristo, nos dias de sua vida terrestre, dirigiu preces e súplicas, com forte clamor e lágrimas, àquele que era capaz de salvá-lo da morte. E foi atendido, por causa de sua entrega a Deus.\nMesmo sendo Filho, aprendeu o que significa a obediência a Deus por aquilo que ele sofreu. Mas, na consumação de sua vida, tornou-se causa de salvação eterna para todos os que lhe obedecem.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Carta aos Hebreus.\n\nCristo, nos dias de sua vida terrestre, dirigiu preces e súplicas, com forte clamor e lágrimas, àquele que era capaz de salvá-lo da morte. E foi atendido, por causa de sua entrega a Deus.\nMesmo sendo Filho, aprendeu o que significa a obediência a Deus por aquilo que ele sofreu. Mas, na consumação de sua vida, tornou-se causa de salvação eterna para todos os que lhe obedecem.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_ter_w2': {
                 title: 'Salmo Responsorial — Sl 30(31),2-6.15-16.20',
                 day: 'Terça-feira (15/09) — Nossa Senhora das Dores',
-                text: "R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nSenhor, eu ponho em vós minha esperança; *\nque eu não fique envergonhado eternamente!\nPorque sois justo, defendei-me e libertai-me *\napressai-vos, ó Senhor, em socorrer-me! R.\n\nSede uma rocha protetora para mim, *\num abrigo bem seguro que me salve!\nSim, sois vós a minha rocha e fortaleza; *\npor vossa honra orientai-me e conduzi-me! R.\n\nRetirai-me desta rede traiçoeira, *\nporque sois o meu refúgio protetor!\nEm vossas mãos, Senhor, entrego o meu espírito, *\nporque vós me salvareis, ó Deus fiel! R.\n\nA vós, porém, ó meu Senhor, eu me confio, *\ne afirmo que só vós sois o meu Deus!\nEu entrego em vossas mãos o meu destino; *\nlibertai-me do inimigo e do opressor! R.\n\nComo é grande, ó Senhor, vossa bondade, *\nque reservastes para aqueles que vos temem!\nPara aqueles que em vós se refugiam, *\nmostrando, assim, o vosso amor perante os homens. R."
+                text: `R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nSenhor, eu ponho em vós minha esperança; *\nque eu não fique envergonhado eternamente!\nPorque sois justo, defendei-me e libertai-me *\napressai-vos, ó Senhor, em socorrer-me! R.\n\nSede uma rocha protetora para mim, *\num abrigo bem seguro que me salve!\nSim, sois vós a minha rocha e fortaleza; *\npor vossa honra orientai-me e conduzi-me! R.\n\nRetirai-me desta rede traiçoeira, *\nporque sois o meu refúgio protetor!\nEm vossas mãos, Senhor, entrego o meu espírito, *\nporque vós me salvareis, ó Deus fiel! R.\n\nA vós, porém, ó meu Senhor, eu me confio, *\ne afirmo que só vós sois o meu Deus!\nEu entrego em vossas mãos o meu destino; *\nlibertai-me do inimigo e do opressor! R.\n\nComo é grande, ó Senhor, vossa bondade, *\nque reservastes para aqueles que vos temem!\nPara aqueles que em vós se refugiam, *\nmostrando, assim, o vosso amor perante os homens. R.`
             },
             'ev_ter_w2': {
                 title: 'Evangelho — João 19,25-27',
                 day: 'Terça-feira (15/09) — Nossa Senhora das Dores',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, perto da cruz de Jesus, estavam de pé a sua mãe, a irmã da sua mãe, Maria de Cléofas, e Maria Madalena.\nJesus, ao ver sua mãe e, ao lado dela, o discípulo que ele amava, disse à mãe: \"Mulher, este é o teu filho\". Depois disse ao discípulo: \"Esta é a tua mãe\".\nDaquela hora em diante, o discípulo a acolheu consigo.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, perto da cruz de Jesus, estavam de pé a sua mãe, a irmã da sua mãe, Maria de Cléofas, e Maria Madalena.\nJesus, ao ver sua mãe e, ao lado dela, o discípulo que ele amava, disse à mãe: "Mulher, este é o teu filho". Depois disse ao discípulo: "Esta é a tua mãe".\nDaquela hora em diante, o discípulo a acolheu consigo.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_qua_w2': {
                 title: '1ª Leitura — 1 Coríntios 12,31-13,13',
                 day: 'Quarta-feira (16/09) — Santos Cornélio e Cipriano',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Aspirai aos dons mais elevados. Eu vou ainda mostrar-vos um caminho incomparavelmente superior:\nAinda que eu falasse as línguas dos homens e dos anjos, se não tiver caridade, sou como um bronze que ressoa ou um címbalo que retine. Ainda que eu tivesse o dom da profecia e conhecesse todos os mistérios, se não tiver caridade, nada sou.\nA caridade é paciente, é benigna; não é invejosa, não é vaidosa, não se ensoberbece. A caridade jamais acabará.\nAtualmente permanecem estas três coisas: fé, esperança e caridade. Mas a maior delas é a caridade.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Aspirai aos dons mais elevados. Eu vou ainda mostrar-vos um caminho incomparavelmente superior:\nAinda que eu falasse as línguas dos homens e dos anjos, se não tiver caridade, sou como um bronze que ressoa ou um címbalo que retine. Ainda que eu tivesse o dom da profecia e conhecesse todos os mistérios, se não tiver caridade, nada sou.\nA caridade é paciente, é benigna; não é invejosa, não é vaidosa, não se ensoberbece. A caridade jamais acabará.\nAtualmente permanecem estas três coisas: fé, esperança e caridade. Mas a maior delas é a caridade.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_qua_w2': {
                 title: 'Salmo Responsorial — Sl 32(33),2-5.12.22',
                 day: 'Quarta-feira (16/09) — Santos Cornélio e Cipriano',
-                text: "R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da cítara, *\ncantai-lhe hinos com a harpa de dez cordas!\nEntoai para ele um canto novo, *\ntocai com arte e aclamai com alegria! R.\n\nPois reta é a palavra do Senhor, *\ne tudo o que ele faz merece fé.\nEle ama a retidão e a justiça; *\nda sua bondade está cheia a terra. R."
+                text: `R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da cítara, *\ncantai-lhe hinos com a harpa de dez cordas!\nEntoai para ele um canto novo, *\ntocai com arte e aclamai com alegria! R.\n\nPois reta é a palavra do Senhor, *\ne tudo o que ele faz merece fé.\nEle ama a retidão e a justiça; *\nda sua bondade está cheia a terra. R.`
             },
             'ev_qua_w2': {
                 title: 'Evangelho — Lucas 7,31-35',
                 day: 'Quarta-feira (16/09) — Santos Cornélio e Cipriano',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, disse Jesus:\n\"Com quem hei de comparar os homens desta geração? São como crianças sentadas nas praças gritando: 'Tocamos flauta para vós e não dançastes; entoamos lamentações e não chorastes!'\nPois veio João Batista, que não comia pão nem bebia vinho, e dissestes: 'Ele tem demônio!' Veio o Filho do Homem, que come e bebe, e dizeis: 'Aí está um comilão e beberrão, amigo de publicanos e pecadores!' Mas a sabedoria é justificada por todos os seus filhos\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, disse Jesus:\n"Com quem hei de comparar os homens desta geração? São como crianças sentadas nas praças gritando: 'Tocamos flauta para vós e não dançastes; entoamos lamentações e não chorastes!'\nPois veio João Batista, que não comia pão nem bebia vinho, e dissestes: 'Ele tem demônio!' Veio o Filho do Homem, que come e bebe, e dizeis: 'Aí está um comilão e beberrão, amigo de publicanos e pecadores!' Mas a sabedoria é justificada por todos os seus filhos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_qui_w2': {
                 title: '1ª Leitura — 1 Coríntios 15,1-11',
                 day: 'Quinta-feira (17/09) — 24ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Quero lembrar-vos o evangelho que vos preguei e que recebestes, no qual estais firmes.\nCom efeito, transmiti-vos aquilo que eu mesmo recebi: que Cristo morreu por nossos pecados, segundo as Escrituras; que foi sepultado; que, ao terceiro dia, ressuscitou, segundo as Escrituras; e que apareceu a Pedro e, depois, aos Doze.\nÉ pela graça de Deus que sou o que sou. É isso o que pregamos e é isso o que crestes.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Quero lembrar-vos o evangelho que vos preguei e que recebestes, no qual estais firmes.\nCom efeito, transmiti-vos aquilo que eu mesmo recebi: que Cristo morreu por nossos pecados, segundo as Escrituras; que foi sepultado; que, ao terceiro dia, ressuscitou, segundo as Escrituras; e que apareceu a Pedro e, depois, aos Doze.\nÉ pela graça de Deus que sou o que sou. É isso o que pregamos e é isso o que crestes.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_qui_w2': {
                 title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28',
                 day: 'Quinta-feira (17/09) — 24ª Semana do Tempo Comum',
-                text: "R. Dai graças ao Senhor, porque ele é bom!\n\nDai graças ao Senhor, porque ele é bom! *\nEterna é a sua misericórdia!\nA casa de Israel agora o diga: *\n\"Eterna é a sua misericórdia!\" R.\n\nA mão direita do Senhor fez maravilhas, *\na mão direita do Senhor me levantou!\nNão morrerei, mas ao contrário, viverei *\npara cantar as grandes obras do Senhor! R."
+                text: `R. Dai graças ao Senhor, porque ele é bom!\n\nDai graças ao Senhor, porque ele é bom! *\nEterna é a sua misericórdia!\nA casa de Israel agora o diga: *\n"Eterna é a sua misericórdia!" R.\n\nA mão direita do Senhor fez maravilhas, *\na mão direita do Senhor me levantou!\nNão morrerei, mas ao contrário, viverei *\npara cantar as grandes obras do Senhor! R.`
             },
             'ev_qui_w2': {
                 title: 'Evangelho — Lucas 7,36-50',
                 day: 'Quinta-feira (17/09) — 24ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nUm fariseu convidou Jesus para cear. Certa mulher, conhecida na cidade como pecadora, soube que Ele estava à mesa e trouxe um vaso de alabastro com perfume. Ficando por detrás, chorava aos pés de Jesus; banhou-lhe os pés com lágrimas, enxugava-os com os cabelos, cobria-os de beijos e ungia-os com o bálsamo.\nJesus disse ao fariseu: \"Os muitos pecados dela estão perdoados porque ela mostrou muito amor. Aquele a quem pouco se perdoa, pouco amor demonstra\". E disse à mulher: \"Tua fé te salvou. Vai em paz!\"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nUm fariseu convidou Jesus para cear. Certa mulher, conhecida na cidade como pecadora, soube que Ele estava à mesa e trouxe um vaso de alabastro com perfume. Ficando por detrás, chorava aos pés de Jesus; banhou-lhe os pés com lágrimas, enxugava-os com os cabelos, cobria-os de beijos e ungia-os com o bálsamo.\nJesus disse ao fariseu: "Os muitos pecados dela estão perdoados porque ela mostrou muito amor. Aquele a quem pouco se perdoa, pouco amor demonstra". E disse à mulher: "Tua fé te salvou. Vai em paz!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_sex_w2': {
                 title: '1ª Leitura — 1 Coríntios 15,12-20',
                 day: 'Sexta-feira (18/09) — 24ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Se se prega que Cristo ressuscitou dos mortos, como dizem alguns que não há ressurreição dos mortos? Se não há ressurreição, então Cristo não ressuscitou. E se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé.\nMas, na realidade, Cristo ressuscitou dos mortos como primícias dos que morreram.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Se se prega que Cristo ressuscitou dos mortos, como dizem alguns que não há ressurreição dos mortos? Se não há ressurreição, então Cristo não ressuscitou. E se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé.\nMas, na realidade, Cristo ressuscitou dos mortos como primícias dos que morreram.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_sex_w2': {
                 title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15',
                 day: 'Sexta-feira (18/09) — 24ª Semana do Tempo Comum',
-                text: "R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nÓ Senhor, ouvi a minha justa causa, *\nescutai-me e atendei o meu clamor!\nInclinai o vosso ouvido à minha prece, *\npois não existe falsidade nos meus lábios! R.\n\nProtegei-me qual dos olhos a pupila, *\ne guardai-me à protection de vossas asas.\nMas eu verei, justificado, a vossa face, *\ne ao despertar me saciará vossa presença. R."
+                text: `R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nÓ Senhor, ouvi a minha justa causa, *\nescutai-me e atendei o meu clamor!\nInclinai o vosso ouvido à minha prece, *\npois não existe falsidade nos meus lábios! R.\n\nProtegei-me qual dos olhos a pupila, *\ne guardai-me à proteção de vossas asas.\nMas eu verei, justificado, a vossa face, *\ne ao despertar me saciará vossa presença. R.`
             },
             'ev_sex_w2': {
                 title: 'Evangelho — Lucas 8,1-3',
                 day: 'Sexta-feira (18/09) — 24ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cidades e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cidades e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_dom_w2': {
                 title: '1ª Leitura — Isaías 55,6-9',
                 day: 'Domingo (20/09) — 25º Domingo do Tempo Comum',
-                text: "Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor, enquanto pode ser achado; invocai-o, enquanto ele está perto. Abandone o ímpio seu caminho, e o homem injusto, suas maquinações; volte para o Senhor, que terá piedade dele, volte para nosso Deus, que é generoso no perdão.\nMeus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor. Estão meus caminhos tão acima dos vossos caminhos e meus pensamentos acima dos vossos pensamentos, quanto está o céu acima da terra.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor, enquanto pode ser achado; invocai-o, enquanto ele está perto. Abandone o ímpio seu caminho, e o homem injusto, suas maquinações; volte para o Senhor, que terá piedade dele, volte para nosso Deus, que é generoso no perdão.\nMeus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor. Estão meus caminhos tão acima dos vossos caminhos e meus pensamentos acima dos vossos pensamentos, quanto está o céu acima da terra.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_dom_w2': {
                 title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18',
                 day: 'Domingo (20/09) — 25º Domingo do Tempo Comum',
-                text: "R. O Senhor está perto da pessoa que o invoca!\n\nTodos os dias haverei de bendizer-vos, *\nhei de louvar o vosso nome para sempre.\nGrande é o Senhor e muito digno de louvores, *\ne ninguém pode medir sua grandeza. R.\n\nMisericórdia e piedade é o Senhor, *\nele é amor, é paciência, é compaixão.\nO Senhor é muito bom para com todos, *\nsua ternura abraça toda criatura. R.\n\nÉ justo o Senhor em seus caminhos, *\né santo em toda obra que ele faz.\nEle está perto da pessoa que o invoca, *\nde todo aquele que o invoca lealmente. R."
+                text: `R. O Senhor está perto da pessoa que o invoca!\n\nTodos os dias haverei de bendizer-vos, *\nhei de louvar o vosso nome para sempre.\nGrande é o Senhor e muito digno de louvores, *\ne ninguém pode medir sua grandeza. R.\n\nMisericórdia e piedade é o Senhor, *\nele é amor, é paciência, é compaixão.\nO Senhor é muito bom para com todos, *\nsua ternura abraça toda criatura. R.\n\nÉ justo o Senhor em seus caminhos, *\né santo em toda obra que ele faz.\nEle está perto da pessoa que o invoca, *\nde todo aquele que o invoca lealmente. R.`
             },
             '2l_dom_w2': {
                 title: '2ª Leitura — Filipenses 1,20c-24.27a',
                 day: 'Domingo (20/09) — 25º Domingo do Tempo Comum',
-                text: "Leitura da Carta de São Paulo aos Filipenses.\n\nIrmãos:\nCristo vai ser glorificado no meu corpo, seja pela minha vida, seja pela minha morte. Pois, para mim, o viver é Cristo e o morrer é lucro. Entretanto, se o viver na carne significa que meu trabalho será frutuoso, neste caso, não sei o que escolher. Sinto-me atraído para os dois lados: tenho o desejo de partir, para estar com Cristo — o que para mim seria de longe o melhor —, mas para vós é mais necessário que eu continue minha vida neste mundo.\nSó uma coisa importa: vivei à altura do Evangelho de Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Carta de São Paulo aos Filipenses.\n\nIrmãos:\nCristo vai ser glorificado no meu corpo, seja pela minha vida, seja pela minha morte. Pois, para mim, o viver é Cristo e o morrer é lucro. Entretanto, se o viver na carne significa que meu trabalho será frutuoso, neste caso, não sei o que escolher. Sinto-me atraído para os dois lados: tenho o desejo de partir, para estar com Cristo — o que para mim seria de longe o melhor —, mas para vós é mais necessário que eu continue minha vida neste mundo.\nSó uma coisa importa: vivei à altura do Evangelho de Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'ev_dom_w2': {
                 title: 'Evangelho — Mateus 20,1-16a',
                 day: 'Domingo (20/09) — 25º Domingo do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nJesus contou esta parábola aos discípulos:\n\"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha. Fez o mesmo às nove horas, ao meio-dia, às três e às cinco horas da tarde.\nAo entardecer, mandou pagar a todos a diária começando pelos últimos. Os das cinco da tarde receberam uma moeda de prata. Quando chegaram os primeiros, pensavam que receberiam mais; porém, receberam também uma moeda cada um. Murmuravam contra o patrão: 'Estes últimos trabalharam uma hora só, e tu os igualaste a nós, que suportamos o cansaço e o calor o dia inteiro!'\nO patrão respondeu: 'Amigo, não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Ou estás com inveja porque estou sendo bom?'\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nJesus contou esta parábola aos discípulos:\n"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha. Fez o mesmo às nove horas, ao meio-dia, às três e às cinco horas da tarde.\nAo entardecer, mandou pagar a todos a diária começando pelos últimos. Os das cinco da tarde receberam uma moeda de prata. Quando chegaram os primeiros, pensavam que receberiam mais; porém, receberam também uma moeda cada um. Murmuravam contra o patrão: 'Estes últimos trabalharam uma hora só, e tu os igualaste a nós, que suportamos o cansaço e o calor o dia inteiro!'\nO patrão respondeu: 'Amigo, não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Ou estás com inveja porque estou sendo bom?'\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_seg': {
                 title: '1ª Leitura — 1 Coríntios 5,1-8',
                 day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_seg': {
                 title: 'Salmo Responsorial — Sl 5,5-6.7.12',
                 day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-                text: "R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R."
+                text: `R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.`
             },
             'ev_seg': {
                 title: 'Evangelho — Lucas 6,6-11',
                 day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: \"É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?\" E restaurou-lhe a saúde.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E restaurou-lhe a saúde.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_ter': {
                 title: '1ª Leitura — Miquéias 5,1-4a',
                 day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-                text: "Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: \"Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz\".\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_ter': {
                 title: 'Salmo Responsorial — Sl 70(71)',
                 day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-                text: "R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R."
+                text: `R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.`
             },
             'ev_ter': {
                 title: 'Evangelho — Mateus 1,1-16.18-23',
                 day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: \"Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_qua': {
                 title: '1ª Leitura — 1 Coríntios 7,25-31',
                 day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_qua': {
                 title: 'Salmo Responsorial — Sl 44(45)',
                 day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-                text: "R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R."
+                text: `R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.`
             },
             'ev_qua': {
                 title: 'Evangelho — Lucas 6,20-26',
                 day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: \"Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!\"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_qui': {
                 title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13',
                 day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conocimiento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_qui': {
                 title: 'Salmo Responsorial — Sl 138(139)',
                 day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-                text: "R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R."
+                text: `R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.`
             },
             'ev_qui': {
                 title: 'Evangelho — Lucas 6,27-38',
                 day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n\"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_sex': {
                 title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27',
                 day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-                text: "Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_sex': {
                 title: 'Salmo Responsorial — Sl 83(84)',
                 day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-                text: "R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R."
+                text: `R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.`
             },
             'ev_sex': {
                 title: 'Evangelho — Lucas 6,39-42',
                 day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n\"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão\".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_dom': {
                 title: '1ª Leitura — Eclesiástico 27,33-28,9',
                 day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-                text: "Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo e quando orares teus pecados serão perdoados. Lembra-te do teu fim e deixa de odiar.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo e quando orares teus pecados serão perdoados. Lembra-te do teu fim e deixa de odiar.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_dom': {
                 title: 'Salmo Responsorial — Sl 102(103)',
                 day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-                text: "R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R."
+                text: `R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.`
             },
             '2l_dom': {
                 title: '2ª Leitura — Romanos 14,7-9',
                 day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-                text: "Leitura da Carta de São Paulo aos Romanos.\n\nNinguém vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\n\nPalavra do Senhor.\nR. Graças a Deus."
+                text: `Leitura da Carta de São Paulo aos Romanos.\n\nNinguém vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'ev_dom': {
                 title: 'Evangelho — Mateus 18,21-35',
                 day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-                text: "Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: \"Senhor, quantas vezes devo perdoar o irmão? Até sete?\" Jesus respondeu: \"Não até sete, mas até setenta vezes sete!\"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor."
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o irmão? Até sete?" Jesus respondeu: "Não até sete, mas até setenta vezes sete!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             }
         };
+
+        let currentWeek = 2;
 
         function showWeek(w) {
             currentWeek = w;
