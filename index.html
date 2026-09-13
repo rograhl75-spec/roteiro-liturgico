@@ -66,6 +66,18 @@
         }
         header h1 { margin: 0; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--primary); }
         header p { margin: 0.2rem 0 0; font-size: 0.9rem; color: var(--secondary); font-weight: 600; }
+        
+        .version-badge {
+            display: inline-block;
+            background: #16a34a;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 12px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
 
         /* Barra de Seleção de Semanas */
         .week-selector-bar {
@@ -604,6 +616,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos Paróquia N. Sra. Auxiliadora" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
+        <div><span class="version-badge">SISTEMA ATUALIZADO (VERSÃO 3.0)</span></div>
     </header>
 
     <!-- Barra de Alternância de Semanas -->
@@ -612,7 +625,7 @@
         <button type="button" class="week-tab-btn" id="btn-tab-w1" onclick="showWeek(1)">👉 Toque para ver: 07 a 13 de Setembro (24º Dom)</button>
     </div>
 
-    <!-- Faixa de Alerta Visual -->
+    <!-- Faixa de Confirmação Visual -->
     <div class="active-week-banner" id="active-week-banner">
         <span>👀</span>
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
@@ -1278,9 +1291,7 @@
 
     </div>
 
-    <!-- MODAIS DO SISTEMA (EXATAMENTE 9 MODAIS ÚNICOS, SEM DUPLICAÇÃO) -->
-
-    <!-- 1. Modal Seleção de Leituras para Impressão -->
+    <!-- MODAIS DO SISTEMA -->
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1383,7 +1394,7 @@
         </div>
     </div>
 
-    <!-- 2. Modal Reflexões Semana 2 -->
+    <!-- Modal Reflexões Semana 2 -->
     <div id="modal_todas_reflexoes" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1404,7 +1415,7 @@
         </div>
     </div>
 
-    <!-- 3. Modal Reflexões Semana 1 -->
+    <!-- Modal Reflexões Semana 1 -->
     <div id="modal_todas_reflexoes_w1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1425,7 +1436,7 @@
         </div>
     </div>
 
-    <!-- 4. Modal Roteiro Comentarista Semana 2 -->
+    <!-- Modal Roteiro Comentarista Semana 2 -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1452,7 +1463,7 @@
         </div>
     </div>
 
-    <!-- 5. Modal Roteiro Comentarista Semana 1 -->
+    <!-- Modal Roteiro Comentarista Semana 1 -->
     <div id="modal_roteiro_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1475,7 +1486,7 @@
         </div>
     </div>
 
-    <!-- 6. Modal Preces Semana 2 -->
+    <!-- Modal Preces Semana 2 -->
     <div id="modal_preces_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1508,7 +1519,7 @@
         </div>
     </div>
 
-    <!-- 7. Modal Preces Semana 1 -->
+    <!-- Modal Preces Semana 1 -->
     <div id="modal_preces_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1539,7 +1550,7 @@
         </div>
     </div>
 
-    <!-- 8. Modal Rito da Cruz -->
+    <!-- Modal Rito da Cruz -->
     <div id="modal_rito_cruz" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1555,7 +1566,7 @@
         </div>
     </div>
 
-    <!-- 9. Modal Leitura Rápida Individual -->
+    <!-- Modal Leitura Rápida Individual -->
     <div id="generalModal" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1576,7 +1587,7 @@
         <div class="author-box">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- SCRIPT DEFINITIVO -->
+    <!-- JAVASCRIPT PRINCIPAL INTEGRADO -->
     <script>
         let currentWeek = 2;
 
@@ -1813,22 +1824,18 @@
             }
         }
 
-        /* FUNÇÃO UNIVERSAL DE IMPRESSÃO */
         function runPrintMount(htmlContent) {
-            // Fecha qualquer modal aberto e destrava o overflow da tela
             document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
             document.body.style.overflow = 'visible';
 
             const mount = document.getElementById('print-mount');
             mount.innerHTML = htmlContent;
             document.body.classList.add('printing-active');
-
             window.onafterprint = function() {
                 document.body.classList.remove('printing-active');
                 mount.innerHTML = '';
                 document.body.style.overflow = '';
             };
-
             setTimeout(() => {
                 window.print();
             }, 250);
