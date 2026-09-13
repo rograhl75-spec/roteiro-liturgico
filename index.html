@@ -288,11 +288,13 @@
             color: #0369a1;
         }
 
+        /* GRID BALANCEADO DAS TABELAS */
         .tables-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.8rem;
+            grid-template-columns: 46% 54%;
+            gap: 12px;
             margin-bottom: 0.8rem;
+            align-items: start;
         }
         @media (max-width: 768px) {
             .tables-grid { grid-template-columns: 1fr; }
@@ -306,7 +308,7 @@
         }
         table.liturgy-table th, table.liturgy-table td {
             border: 1px solid var(--border);
-            padding: 0.45rem 0.55rem;
+            padding: 5px 8px;
             text-align: left;
         }
         table.liturgy-table th {
@@ -330,7 +332,7 @@
             cursor: pointer;
             text-decoration: underline;
             font-weight: 600;
-            padding: 2px 4px;
+            padding: 1px 3px;
             display: inline-block;
         }
         .clickable-ref:hover { color: #1e40af; }
@@ -545,7 +547,8 @@
             }
             .preces-single-page .script-block { gap: 3px !important; margin-top: 0 !important; }
             .preces-single-page .script-row { grid-template-columns: 80px 1fr !important; gap: 5px !important; margin-bottom: 2px !important; }
-            .preces-single-page .script-text { font-size: 9.5pt !important; line-height: 1.28 !important; padding: 2px 6px !important; border-left-width: 3px !important; }
+            .preces-single-page .script-tag { font-size: 0.65rem !important; padding: 2px 4px !important; }
+            .preces-single-page .script-text { font-size: 10.5pt !important; line-height: 1.35 !important; padding: 2px 6px !important; border-left-width: 3px !important; }
 
             body:not(.printing-active) #print-mount { display: none !important; }
             body:not(.printing-active) .toolbar,
@@ -612,19 +615,19 @@
                     <span>Liturgia Diária Oficial (CNBB) — Exaltação da Santa Cruz</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Exaltação da Santa Cruz, Festa (Ano A)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Exaltação da Santa Cruz, Festa (Ano A)[cite: 2]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
                 <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se ou recita-se o Hino de Louvor (Glória)</strong> logo após o Ato Penitencial. Como a festa ocorre em dia de semana (segunda-feira), <strong>omite-se o Creio</strong>.
+                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se ou recita-se o Hino de Louvor (Glória)</strong> logo após o Ato Penitencial[cite: 2]. Como a festa ocorre em dia de semana (segunda-feira), <strong>omite-se o Creio</strong>.
                 </div>
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Exaltação da Santa Cruz)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)</div>
-                        <strong>Meditação:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação. Cristo elevou nossa dor para nos dar a vitória.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)[cite: 8]</div>
+                        <strong>Meditação:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós[cite: 8]. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação[cite: 8]. Cristo elevou nossa dor para nos dar a vitória.
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor. Amém.</div>
                     </div>
                 </details>
@@ -632,28 +635,28 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td>800</td></tr>
-                                <tr style="color:#64748b;"><td>Profissão de Fé (Creio)</td><td><em>Omite-se (Festa ferial)</em></td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>800</td></tr>
-                                <tr><td>Prefácio: A vitória da Cruz gloriosa</td><td>801</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td>537</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>802</td></tr>
-                                <tr><td>Bênção: Solene (Paixão) ou Simples</td><td>580 / 575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">800</td></tr>
+                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">800</td></tr>
+                                <tr><td>Prefácio: A vitória da Cruz gloriosa</td><td style="text-align:center;">801</td></tr>
+                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">802</td></tr>
+                                <tr><td>Bênção: Solene (Paixão) ou Simples</td><td style="text-align:center;">580 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td>Lecionário III</td><td>174</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78),1-2.34-38 (R. 7c)</span></td><td>Lecionário III</td><td>175</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg_w2')">Jo 3,13-17</span></td><td>Lecionário III</td><td>176</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td style="text-align:center;">Lecionário III, p. 174</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78),1-2.34-38 (R. 7c)</span></td><td style="text-align:center;">Lecionário III, p. 175</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg_w2')">Jo 3,13-17</span></td><td style="text-align:center;">Lecionário III, p. 176</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -670,7 +673,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — N. Sra. das Dores</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Bem-aventurada Virgem Maria das Dores, Memória (Ano A)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Bem-aventurada Virgem Maria das Dores, Memória (Ano A)[cite: 2]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Rafael (Matriz Auxiliadora)</div>
@@ -678,8 +681,8 @@
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Nossa Senhora das Dores)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)</div>
-                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' no sofrimento. Ela guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)[cite: 8]</div>
+                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' no sofrimento[cite: 8]. Ela guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja[cite: 8].
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus e a nunca perder a esperança. Amém.</div>
                     </div>
                 </details>
@@ -687,26 +690,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>802</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>802</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td>493</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td>537</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>803</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">802</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">802</td></tr>
+                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td style="text-align:center;">493</td></tr>
+                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">803</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter_w2')">Hb 5,7-9</span></td><td>Lecionário III</td><td>178</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_ter_w2')">Sl 30(31),2-6.15-16.20 (R. 17b)</span></td><td>Lecionário III</td><td>179</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter_w2')">Jo 19,25-27</span></td><td>Lecionário III</td><td>181</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter_w2')">Hb 5,7-9</span></td><td style="text-align:center;">Lecionário III, p. 178</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_ter_w2')">Sl 30(31),2-6.15-16.20 (R. 17b)</span></td><td style="text-align:center;">Lecionário III, p. 179</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter_w2')">Jo 19,25-27</span></td><td style="text-align:center;">Lecionário III, p. 181</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -723,7 +726,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — Santos Cornélio e Cipriano</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Santos Cornélio, papa, e Cipriano, bispo, mártires, Memória (Ano II - Par)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Santos Cornélio, papa, e Cipriano, bispo, mártires, Memória (Ano II - Par)[cite: 2]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
@@ -731,8 +734,8 @@
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Santos Cornélio e Cipriano)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)</div>
-                        <strong>Meditação:</strong> A caridade é o amor paciente, prestativo e desinteressado. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)[cite: 8]</div>
+                        <strong>Meditação:</strong> A caridade é o amor paciente, prestativo e desinteressado[cite: 8]. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor. Amém.</div>
                     </div>
                 </details>
@@ -740,26 +743,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>803</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>804</td></tr>
-                                <tr><td>Prefácio: Santos Mártires I</td><td>502</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>804</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">803</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">804</td></tr>
+                                <tr><td>Prefácio: Santos Mártires I</td><td style="text-align:center;">502</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">804</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua_w2')">1Cor 12,31-13,13</span></td><td>Lecionário II</td><td>981</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qua_w2')">Sl 32(33),2-5.12.22 (R. 12b)</span></td><td>Lecionário II</td><td>982</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua_w2')">Lc 7,31-35</span></td><td>Lecionário II</td><td>983</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua_w2')">1Cor 12,31-13,13</span></td><td style="text-align:center;">Lecionário II, p. 981</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qua_w2')">Sl 32(33),2-5.12.22 (R. 12b)</span></td><td style="text-align:center;">Lecionário II, p. 982</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua_w2')">Lc 7,31-35</span></td><td style="text-align:center;">Lecionário II, p. 983</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -776,7 +779,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — Quinta-feira da 24ª Semana</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)[cite: 2]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Manuel (Matriz Auxiliadora)</div>
@@ -784,8 +787,8 @@
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)</div>
-                        <strong>Meditação:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino. Quem se sabe perdoado acolhe os outros sem julgar.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)[cite: 8]</div>
+                        <strong>Meditação:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino[cite: 8]. Quem se sabe perdoado acolhe os outros sem julgar.
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, obrigado por vosso perdão infinito. Que eu acolha meus irmãos com profunda compaixão. Amém.</div>
                     </div>
                 </details>
@@ -793,26 +796,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>406</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>406</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td>Lecionário II</td><td>985</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118),1-2.16-17.28 (R. 1)</span></td><td>Lecionário II</td><td>986</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui_w2')">Lc 7,36-50</span></td><td>Lecionário II</td><td>987</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">Lecionário II, p. 985</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118),1-2.16-17.28 (R. 1)</span></td><td style="text-align:center;">Lecionário II, p. 986</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui_w2')">Lc 7,36-50</span></td><td style="text-align:center;">Lecionário II, p. 987</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -829,7 +832,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — Sexta-feira da 24ª Semana</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)[cite: 2]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
@@ -837,8 +840,8 @@
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)</div>
-                        <strong>Meditação:</strong> O alicerce inabalável da vida cristã é a Ressurreição. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)[cite: 8]</div>
+                        <strong>Meditação:</strong> O alicerce inabalável da vida cristã é a Ressurreição[cite: 8]. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida[cite: 8].
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa vitória. Amém.</div>
                     </div>
                 </details>
@@ -846,26 +849,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>406</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>406</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td>Lecionário II</td><td>989</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17),1.6-7.8b.15 (R. 15b)</span></td><td>Lecionário II</td><td>990</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex_w2')">Lc 8,1-3</span></td><td>Lecionário II</td><td>991</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td style="text-align:center;">Lecionário II, p. 989</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17),1.6-7.8b.15 (R. 15b)</span></td><td style="text-align:center;">Lecionário II, p. 990</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex_w2')">Lc 8,1-3</span></td><td style="text-align:center;">Lecionário II, p. 991</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -882,7 +885,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — 25º Domingo do Tempo Comum</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 25º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Domingo do Dízimo | Jubileu de Diamante</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 25º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Domingo do Dízimo | Jubileu de Diamante[cite: 2, 7]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="liturgy-table" style="margin-top: 0.3rem;">
@@ -900,8 +903,8 @@
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (25º Domingo do Tempo Comum / Dízimo)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)</div>
-                        <strong>Meditação:</strong> A lógica do Reino é pura graça e gratuidade. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora.
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)[cite: 8]</div>
+                        <strong>Meditação:</strong> A lógica do Reino é pura graça e gratuidade[cite: 8]. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora[cite: 8].
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor nosso Deus, libertai-nos da inveja e fazei-nos trabalhadores gratos na vossa vinha. Amém.</div>
                     </div>
                 </details>
@@ -909,27 +912,27 @@
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>407</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>407</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum IV</td><td>477</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td>537</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>407</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">407</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum IV</td><td style="text-align:center;">477</td></tr>
+                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td style="text-align:center;">583 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td>Lecionário I</td><td>327</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145),2-3.8-9.17-18 (R. 18a)</span></td><td>Lecionário I</td><td>327</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w2')">Fl 1,20c-24.27a</span></td><td>Lecionário I</td><td>328</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w2')">Mt 20,1-16a</span></td><td>Lecionário I</td><td>328</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">Lecionário I, p. 327</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145),2-3.8-9.17-18 (R. 18a)</span></td><td style="text-align:center;">Lecionário I, p. 327</td></tr>
+                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w2')">Fl 1,20c-24.27a</span></td><td style="text-align:center;">Lecionário I, p. 328</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w2')">Mt 20,1-16a</span></td><td style="text-align:center;">Lecionário I, p. 328</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -939,9 +942,9 @@
                         <div class="table-caption">Citações Bíblicas para a Transmissão (PASCOM / Telão)</div>
                         <table class="liturgy-table">
                             <tbody>
-                                <tr><td><strong>1ª Leitura</strong></td><td>"Meus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor." (Is 55,8)</td></tr>
-                                <tr><td><strong>2ª Leitura</strong></td><td>"Pois, para mim, o viver é Cristo e o morrer é lucro." (Fl 1,21)</td></tr>
-                                <tr><td><strong>Evangelho</strong></td><td>"Por acaso não tenho o direito de fazer o que quero com aquilo que me pertence? Ou estás com inveja, porque estou sendo bom?" (Mt 20,15)</td></tr>
+                                <tr><td><strong>1ª Leitura</strong></td><td>"Meus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor." (Is 55,8)[cite: 8]</td></tr>
+                                <tr><td><strong>2ª Leitura</strong></td><td>"Pois, para mim, o viver é Cristo e o morrer é lucro." (Fl 1,21)[cite: 8]</td></tr>
+                                <tr><td><strong>Evangelho</strong></td><td>"Por acaso não tenho o direito de fazer o que quero com aquilo que me pertence? Ou estás com inveja, porque estou sendo bom?" (Mt 20,15)[cite: 8]</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -950,12 +953,12 @@
                         <table class="liturgy-table">
                             <tbody>
                                 <tr>
-                                    <td style="width: 130px;"><strong>Antífona de Entrada</strong><br><small>(Missal p. 407)</small></td>
+                                    <td style="width: 120px;"><strong>Antífona de Entrada</strong><br><small>(Missal p. 407)</small></td>
                                     <td>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Aclamação ao Evangelho</strong><br><small>(cf. At 16,14b)</small></td>
-                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor![cite: 8]</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Antífona de Comunhão</strong><br><small>(Sl 118 / Jo 10)</small></td>
@@ -1005,26 +1008,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>405</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg')">1Cor 5,1-8</span></td><td>Lecionário II</td><td>963</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_seg')">Sl 5,5-6.7.12 (R. 9a)</span></td><td>Lecionário II</td><td>964</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg')">Lc 6,6-11</span></td><td>Lecionário II</td><td>965</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg')">1Cor 5,1-8</span></td><td style="text-align:center;">Lecionário II, p. 963</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_seg')">Sl 5,5-6.7.12 (R. 9a)</span></td><td style="text-align:center;">Lecionário II, p. 964</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg')">Lc 6,6-11</span></td><td style="text-align:center;">Lecionário II, p. 965</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1061,27 +1064,27 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td>796</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>796</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td>493</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td>537</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>797</td></tr>
-                                <tr><td>Bênção: Solene (Da Virgem Maria)</td><td>585</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>796</strong></td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">796</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">796</td></tr>
+                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td style="text-align:center;">493</td></tr>
+                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">797</td></tr>
+                                <tr><td>Bênção: Solene (Da Virgem Maria)</td><td style="text-align:center;">585</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter')">Mq 5,1-4a</span></td><td>Lecionário III</td><td>165</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_ter')">Sl 70(71),6; Sl 12(13),6 (R. Is 61,10)</span></td><td>Lecionário III</td><td>166</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter')">Mt 1,1-16.18-23</span></td><td>Lecionário III</td><td>167</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter')">Mq 5,1-4a</span></td><td style="text-align:center;">Lecionário III, p. 165</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_ter')">Sl 70(71),6; Sl 12(13),6 (R. Is 61,10)</span></td><td style="text-align:center;">Lecionário III, p. 166</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter')">Mt 1,1-16.18-23</span></td><td style="text-align:center;">Lecionário III, p. 167</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1115,26 +1118,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>405</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua')">1Cor 7,25-31</span></td><td>Lecionário II</td><td>966</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qua')">Sl 44(45),11-12.14-17 (R. 11a)</span></td><td>Lecionário II</td><td>967</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua')">Lc 6,20-26</span></td><td>Lecionário II</td><td>968</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua')">1Cor 7,25-31</span></td><td style="text-align:center;">Lecionário II, p. 966</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qua')">Sl 44(45),11-12.14-17 (R. 11a)</span></td><td style="text-align:center;">Lecionário II, p. 967</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua')">Lc 6,20-26</span></td><td style="text-align:center;">Lecionário II, p. 968</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1168,26 +1171,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>405</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui')">1Cor 8,1b-7.11-13</span></td><td>Lecionário II</td><td>970</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qui')">Sl 138(139),1-3.13-14ab.23-24 (R. 24b)</span></td><td>Lecionário II</td><td>971</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui')">Lc 6,27-38</span></td><td>Lecionário II</td><td>972</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui')">1Cor 8,1b-7.11-13</span></td><td style="text-align:center;">Lecionário II, p. 970</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_qui')">Sl 138(139),1-3.13-14ab.23-24 (R. 24b)</span></td><td style="text-align:center;">Lecionário II, p. 971</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui')">Lc 6,27-38</span></td><td style="text-align:center;">Lecionário II, p. 972</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1204,7 +1207,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — Sexta-feira da 23ª Semana</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum | <em>Rito de Entrega da Cruz (Catequese)</em></div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum | <em>Rito de Entrega da Cruz (Catequese)</em>[cite: 5]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
@@ -1221,26 +1224,26 @@
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>405</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td>565</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
+                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex')">1Cor 9,16-19.22b-27</span></td><td>Lecionário II</td><td>974</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_sex')">Sl 83(84),3-6.12 (R. 2)</span></td><td>Lecionário II</td><td>975</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex')">Lc 6,39-42</span></td><td>Lecionário II</td><td>976</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex')">1Cor 9,16-19.22b-27</span></td><td style="text-align:center;">Lecionário II, p. 974</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_sex')">Sl 83(84),3-6.12 (R. 2)</span></td><td style="text-align:center;">Lecionário II, p. 975</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex')">Lc 6,39-42</span></td><td style="text-align:center;">Lecionário II, p. 976</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1261,7 +1264,7 @@
                     <span>Liturgia Diária Oficial (CNBB) — 24º Domingo do Tempo Comum</span>
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
-                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Jubileu de Diamante (60 anos da Paróquia)</div>
+                <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Jubileu de Diamante (60 anos da Paróquia)[cite: 6]</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="liturgy-table" style="margin-top: 0.3rem;">
@@ -1287,27 +1290,27 @@
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr><td>Oração da Coleta</td><td>406</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td>406</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum II</td><td>475</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td>537</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum II</td><td style="text-align:center;">475</td></tr>
+                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td style="text-align:center;">583 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th>Momento</th><th>Referência Bíblica</th><th>Lecionário</th><th style="width:70px;">Página</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Fonte / Página</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom')">Eclo 27,33-28,9</span></td><td>Lecionário I</td><td>323</td></tr>
-                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom')">Sl 102(103),1-4.9-12 (R. 8)</span></td><td>Lecionário I</td><td>323</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom')">Rm 14,7-9</span></td><td>Lecionário I</td><td>324</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom')">Mt 18,21-35</span></td><td>Lecionário I</td><td>325</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom')">Eclo 27,33-28,9</span></td><td style="text-align:center;">Lecionário I, p. 323</td></tr>
+                                <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom')">Sl 102(103),1-4.9-12 (R. 8)</span></td><td style="text-align:center;">Lecionário I, p. 323</td></tr>
+                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom')">Rm 14,7-9</span></td><td style="text-align:center;">Lecionário I, p. 324</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom')">Mt 18,21-35</span></td><td style="text-align:center;">Lecionário I, p. 325</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1438,38 +1441,38 @@
             <div id="content_todas_reflexoes" style="font-size:0.92rem; line-height:1.55; text-align:justify;">
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--cor-padre);">Segunda-feira, 14/09/2026 — Festa da Exaltação da Santa Cruz (Vermelho)</strong><br>
-                    <em>Versículo-chave:</em> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)<br>
-                    <strong>Reflexão:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação.<br>
+                    <em>Versículo-chave:</em> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)[cite: 8]<br>
+                    <strong>Reflexão:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós[cite: 8]. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação[cite: 8].<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor e esperança. Amém.</em>
                 </div>
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--primary);">Terça-feira, 15/09/2026 — Nossa Senhora das Dores, Memória (Branco)</strong><br>
-                    <em>Versículo-chave:</em> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)<br>
-                    <strong>Reflexão:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de incerteza. Guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja.<br>
+                    <em>Versículo-chave:</em> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)[cite: 8]<br>
+                    <strong>Reflexão:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de incerteza[cite: 8]. Guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja[cite: 8].<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus e a nunca perder a esperança. Amém.</em>
                 </div>
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--cor-padre);">Quarta-feira, 16/09/2026 — Santos Cornélio e Cipriano, Mártires (Vermelho)</strong><br>
-                    <em>Versículo-chave:</em> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)<br>
-                    <strong>Reflexão:</strong> A caridade é o amor paciente, prestativo e desinteressado. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.<br>
+                    <em>Versículo-chave:</em> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)[cite: 8]<br>
+                    <strong>Reflexão:</strong> A caridade é o amor paciente, prestativo e desinteressado[cite: 8]. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor verdadeiro. Amém.</em>
                 </div>
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--primary);">Quinta-feira, 17/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)<br>
-                    <strong>Reflexão:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino. Quem se sabe perdoado acolhe os outros sem julgar.<br>
+                    <em>Versículo-chave:</em> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)[cite: 8]<br>
+                    <strong>Reflexão:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino[cite: 8]. Quem se sabe perdoado acolhe os outros sem julgar.<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, obrigado por vosso perdão infinito. Que eu acolha meus irmãos com profunda compaixão. Amém.</em>
                 </div>
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--primary);">Sexta-feira, 18/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)<br>
-                    <strong>Reflexão:</strong> O alicerce inabalável da vida cristã é a Ressurreição. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida.<br>
+                    <em>Versículo-chave:</em> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)[cite: 8]<br>
+                    <strong>Reflexão:</strong> O alicerce inabalável da vida cristã é a Ressurreição[cite: 8]. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida[cite: 8].<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa vitória. Amém.</em>
                 </div>
                 <div style="margin-bottom:14px;">
                     <strong style="color:var(--cor-musica);">Domingo, 20/09/2026 — 25º Domingo do Tempo Comum / Dízimo (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)<br>
-                    <strong>Reflexão:</strong> A lógica do Reino é pura graça e gratuidade. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora.<br>
+                    <em>Versículo-chave:</em> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)[cite: 8]<br>
+                    <strong>Reflexão:</strong> A lógica do Reino é pura graça e gratuidade[cite: 8]. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora[cite: 8].<br>
                     <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor nosso Deus, libertai-nos da inveja e fazei-nos trabalhadores gratos na vossa vinha. Amém.</em>
                 </div>
             </div>
@@ -1696,7 +1699,7 @@
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro... em comunhão com o nosso Bispo Geremias e todos os ministros do vosso povo[cite: 7].</span>
+                    <span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro... em comunhão com o Papa Francisco, com o nosso Arcebispo Geremias, os presbíteros, os diáconos e todos os ministros do vosso povo[cite: 7].</span>
                 </div>
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
@@ -1704,7 +1707,19 @@
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda a honra e toda a glória, por todos os séculos dos séculos[cite: 7]. (Animador: Amém)[cite: 7].</span>
+                    <span class="script-text">Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Concedei-lhes, ó Senhor, a luz eterna![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho[cite: 7].<br><br>Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda a honra e toda a glória, por todos os séculos dos séculos[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Amém[cite: 7].</span>
                 </div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
@@ -1921,117 +1936,7 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- BANCO DE SEGURANÇA EMBUTIDO (IMPEDE QUALQUER ALERTA NA TELA) -->
-    <script>
-        var readingsData = {
-            '1l_seg_w2': {
-                title: '1ª Leitura — Números 21,4b-9 (Lecionário III, pág. 174)',
-                text: 'Leitura do Livro dos Números.\n\nNaqueles dias, os filhos de Israel partiram do monte Hor, pelo caminho que leva ao mar Vermelho, para contornarem o país de Edom. Durante a viagem o povo começou a impacientar-se, e se pôs a falar contra Deus e contra Moisés: "Por que nos fizestes sair do Egito para morrermos no deserto? Não há pão, falta água, e já estamos com nojo desse alimento miserável".\nEntão o Senhor mandou contra o povo serpentes venenosas, que os mordiam; e morreu muita gente em Israel. O povo foi a Moisés e disse: "Pecamos, falando contra o Senhor e contra ti. Roga ao Senhor que afaste de nós as serpentes".\nMoisés intercedeu pelo povo, e o Senhor respondeu: "Faze uma serpente de bronze e coloca-a como sinal sobre uma haste; aquele que for mordido e olhar para ela, viverá". Moisés fez a serpente de bronze e colocou-a como sinal sobre uma haste. Quando alguém era mordido por uma serpente e olhava para a serpente de bronze, ficava curado.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_seg_w2': {
-                title: 'Salmo Responsorial — Sl 77(78),1-2.34-38 (Lecionário III, pág. 175)',
-                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei, *\nouve atento as palavras que eu te digo;\nabrirei a minha boca em parábolas, *\nos mistérios do passado lembrarei. R.\n\nQuando os feria, eles então o procuravam, *\nconvertiam-se correndo para ele;\nrecordavam que o Senhor é sua rocha *\ne que Deus, seu Redentor, é o Deus Altíssimo. R.\n\nMas o Senhor, sempre benigno e compassivo, *\nnão os matava e perdoava seu pecado;\nquantas vezes dominou a sua ira *\ne não deu largas à vazão de seu furor. R.'
-            },
-            'ev_seg_w2': {
-                title: 'Evangelho — João 3,13-17 (Lecionário III, pág. 176)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, disse Jesus a Nicodemos:\n"Ninguém subiu ao céu, a não ser aquele que desceu do céu, o Filho do Homem. Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todos os que nele crerem tenham a vida eterna.\nPois Deus amou tanto o mundo, que deu o seu Filho unigênito, para que não morra todo o que nele crer, mas tenha a vida eterna. De fato, Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_ter_w2': {
-                title: '1ª Leitura — Hebreus 5,7-9 (Lecionário III, pág. 178)',
-                text: 'Leitura da Carta aos Hebreus.\n\nCristo, nos dias de sua vida terrestre, dirigiu preces e súplicas, com forte clamor e lágrimas, àquele que era capaz de salvá-lo da morte. E foi atendido, por causa de sua entrega a Deus.\nMesmo sendo Filho, aprendeu o que significa a obediência a Deus por aquilo que ele sofreu. Mas, na consumação de sua vida, tornou-se causa de salvação eterna para todos os que lhe obedecem.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_ter_w2': {
-                title: 'Salmo Responsorial — Sl 30(31),2-6.15-16.20 (R. 17b) (Lecionário III, pág. 179)',
-                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nSenhor, eu ponho em vós minha esperança; *\nque eu não fique envergonhado eternamente!\nPorque sois justo, defendei-me e libertai-me *\napressai-vos, ó Senhor, em socorrer-me! R.\n\nSede uma rocha protetora para mim, *\num abrigo bem seguro que me salve!\nSim, sois vós a minha rocha e fortaleza; *\npor vossa honra orientai-me e conduzi-me! R.\n\nEm vossas mãos, Senhor, entrego o meu espírito, *\nporque vós me salvareis, ó Deus fiel! R.'
-            },
-            'ev_ter_w2': {
-                title: 'Evangelho — João 19,25-27 (Lecionário III, pág. 181)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, perto da cruz de Jesus, estavam de pé a sua mãe, a irmã da sua mãe, Maria de Cléofas, e Maria Madalena.\nJesus, ao ver sua mãe e, ao lado dela, o discípulo que ele amava, disse à mãe: "Mulher, este é o teu filho". Depois disse ao discípulo: "Esta é a tua mãe".\nDaquela hora em diante, o discípulo a acolheu consigo.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qua_w2': {
-                title: '1ª Leitura — 1 Coríntios 12,31-13,13 (Lecionário II, pág. 981)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Aspirai aos dons mais elevados. Eu vou ainda mostrar-vos um caminho incomparavelmente superior:\nAinda que eu falasse as línguas dos homens e dos anjos, se não tiver caridade, sou como um bronze que ressoa ou um címbalo que retine. Ainda que eu tivesse o dom da profecia e conhecesse todos os mistérios, se não tiver caridade, nada sou.\nA caridade é paciente, é benigna; não é invejosa, não é vaidosa, não se ensoberbece. A caridade jamais acabará.\nAtualmente permanecem estas três coisas: fé, esperança e caridade. Mas a maior delas é a caridade.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qua_w2': {
-                title: 'Salmo Responsorial — Sl 32(33),2-5.12.22 (Lecionário II, pág. 982)',
-                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da cítara, *\ncantai-lhe hinos com a harpa de dez cordas!\nEntoai para ele um canto novo, *\ntocai com arte e aclamai com alegria! R.\n\nPois reta é a palavra do Senhor, *\ne tudo o que ele faz merece fé.\nEle ama a retidão e a justiça; *\nda sua bondade está cheia a terra. R.'
-            },
-            'ev_qua_w2': {
-                title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 983)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, disse Jesus:\n"Com quem hei de comparar os homens desta geração? São como crianças sentadas nas praças gritando: \'Tocamos flauta para vós e não dançastes; entoamos lamentações e não chorastes!\'\nPois veio João Batista, que não comia pão nem bebia vinho, e dissestes: \'Ele tem demônio!\' Veio o Filho do Homem, que come e bebe, e dizeis: \'Aí está um comilão e beberrão, amigo de publicanos e pecadores!\' Mas a sabedoria é justificada por todos os seus filhos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qui_w2': {
-                title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 985)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Quero lembrar-vos o evangelho que vos preguei e que recebestes, no qual estais firmes.\nCom efeito, transmiti-vos aquilo que eu mesmo recebi: que Cristo morreu por nossos pecados, segundo as Escrituras; que foi sepultado; que, ao terceiro dia, ressuscitou, segundo as Escrituras; e que apareceu a Pedro e, depois, aos Doze.\nÉ pela graça de Deus que sou o que sou. É isso o que pregamos e é isso o que crestes.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qui_w2': {
-                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (Lecionário II, pág. 986)',
-                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nDai graças ao Senhor, porque ele é bom! *\nEterna é a sua misericórdia!\nA casa de Israel agora o diga: *\n"Eterna é a sua misericórdia!" R.\n\nA mão direita do Senhor fez maravilhas, *\na mão direita do Senhor me levantou!\nNão morrerei, mas ao contrário, viverei *\npara cantar as grandes obras do Senhor! R.'
-            },
-            'ev_qui_w2': {
-                title: 'Evangelho — Lucas 7,36-50 (Lecionário II, pág. 987)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nUm fariseu convidou Jesus para cear. Certa mulher, conhecida na cidade como pecadora, soube que Ele estava à mesa e trouxe um vaso de alabastro com perfume. Ficando por detrás, chorava aos pés de Jesus; banhou-lhe os pés com lágrimas, enxugava-os com os cabelos, cobria-os de beijos e ungia-os com o bálsamo.\nJesus disse ao fariseu: "Os muitos pecados dela estão perdoados porque ela mostrou muito amor. Aquele a quem pouco se perdoa, pouco amor demonstra". E disse à mulher: "Tua fé te salvou. Vai em paz!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_sex_w2': {
-                title: '1ª Leitura — 1 Coríntios 15,12-20 (Lecionário II, pág. 989)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Se se prega que Cristo ressuscitou dos mortos, como dizem alguns que não há ressurreição dos mortos? Se não há ressurreição, então Cristo não ressuscitou. E se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé.\nMas, na realidade, Cristo ressuscitou dos mortos como primícias dos que morreram.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_sex_w2': {
-                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (Lecionário II, pág. 990)',
-                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nÓ Senhor, ouvi a minha justa causa, *\nescutai-me e atendei o meu clamor!\nInclinai o vosso ouvido à minha prece, *\npois não existe falsidade nos meus lábios! R.\n\nProtegei-me qual dos olhos a pupila, *\ne guardai-me à proteção de vossas asas.\nMas eu verei, justificado, a vossa face, *\ne ao despertar me saciará vossa presença. R.'
-            },
-            'ev_sex_w2': {
-                title: 'Evangelho — Lucas 8,1-3 (Lecionário II, pág. 991)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cidades e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_dom_w2': {
-                title: '1ª Leitura — Isaías 55,6-9 (Lecionário I, pág. 327)',
-                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor, enquanto pode ser achado; invocai-o, enquanto ele está perto. Abandone o ímpio seu caminho, e o homem injusto, suas maquinações; volte para o Senhor, que terá piedade dele, volte para nosso Deus, que é generoso no perdão.\nMeus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor. Estão meus caminhos tão acima dos vossos caminhos e meus pensamentos acima dos vossos pensamentos, quanto está o céu acima da terra.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_dom_w2': {
-                title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18 (R. 18a) (Lecionário I, pág. 327)',
-                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nTodos os dias haverei de bendizer-vos, *\nhei de louvar o vosso nome para sempre.\nGrande é o Senhor e muito digno de louvores, *\ne ninguém pode medir sua grandeza. R.\n\nMisericórdia e piedade é o Senhor, *\nele é amor, é paciência, é compaixão.\nO Senhor é muito bom para com todos, *\nsua ternura abraça toda criatura. R.\n\nÉ justo o Senhor em seus caminhos, *\né santo em toda obra que ele faz.\nEle está perto da pessoa que o invoca, *\nde todo aquele que o invoca lealmente. R.'
-            },
-            '2l_dom_w2': {
-                title: '2ª Leitura — Filipenses 1,20c-24.27a (Lecionário I, pág. 328)',
-                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nIrmãos:\nCristo vai ser glorificado no meu corpo, seja pela minha vida, seja pela minha morte. Pois, para mim, o viver é Cristo e o morrer é lucro. Entretanto, se o viver na carne significa que meu trabalho será frutuoso, neste caso, não sei o que escolher. Sinto-me atraído para os dois lados: tenho o desejo de partir, para estar com Cristo — o que para mim seria de longe o melhor —, mas para vós é mais necessário que eu continue minha vida neste mundo.\nSó uma coisa importa: vivei à altura do Evangelho de Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'ev_dom_w2': {
-                title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nJesus contou esta parábola aos discípulos:\n"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha. Fez o mesmo às nove horas, ao meio-dia, às três e às cinco horas da tarde.\nAo entardecer, mandou pagar a todos a diária começando pelos últimos. Os das cinco da tarde receberam uma moeda de prata. Quando chegaram os primeiros, pensavam que receberiam mais; porém, receberam também uma moeda cada um. Murmuravam contra o patrão: \'Estes últimos trabalharam uma hora só, e tu os igualaste a nós, que suportamos o cansaço e o calor o dia inteiro!\'\nO patrão respondeu: \'Amigo, não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Ou estás com inveja porque estou sendo bom?\'\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_seg': {
-                title: '1ª Leitura — 1 Coríntios 5,1-8 (Lecionário II, pág. 963)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_seg': {
-                title: 'Salmo Responsorial — Sl 5,5-6.7.12 (Lecionário II, pág. 964)',
-                text: 'R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.'
-            },
-            'ev_seg': {
-                title: 'Evangelho — Lucas 6,6-11 (Lecionário II, pág. 965)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E restaurou-lhe a saúde.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_dom': {
-                title: '1ª Leitura — Eclesiástico 27,33-28,9 (Lecionário I, pág. 323)',
-                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo: assim, quando orares, teus pecados serão perdoados. Se alguém guarda rancor, como poderá pedir a Deus a cura? Lembra-te do teu fim e deixa de odiar.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_dom': {
-                title: 'Salmo Responsorial — Sl 102(103) (Lecionário I, pág. 323)',
-                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.'
-            },
-            '2l_dom': {
-                title: '2ª Leitura — Romanos 14,7-9 (Lecionário I, pág. 324)',
-                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém dentre nós vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\n\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'ev_dom': {
-                title: 'Evangelho — Mateus 18,21-35 (Lecionário I, pág. 325)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o meu irmão? Até sete vezes?" Jesus respondeu: "Não te digo até sete vezes, mas até setenta vezes sete!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            }
-        };
-    </script>
-
-    <!-- CARREGAMENTO DO ARQUIVO EXTERNO (SE PRESENTE NO SERVIDOR) -->
+    <!-- CARREGAMENTO DO BANCO DE LEITURAS EXTERNO -->
     <script src="leituras.js"></script>
 
     <!-- SCRIPT DE CONTROLE E IMPRESSÃO -->
@@ -2071,7 +1976,7 @@
 
         function openReading(key) {
             if (typeof readingsData === 'undefined' || !readingsData[key]) {
-                alert('Carregando texto bíblico...');
+                alert('Aguarde o carregamento do arquivo leituras.js...');
                 return;
             }
             const data = readingsData[key];
