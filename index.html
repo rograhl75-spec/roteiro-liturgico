@@ -109,7 +109,7 @@
             .leitura-grid { grid-template-columns: 1fr; }
         }
 
-        /* ESTILOS DE IMPRESSÃO PROFISSIONAL BLINDADOS */
+        /* ESTILOS DE IMPRESSÃO (BLINDADOS E CORRIGIDOS) */
         @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
@@ -132,21 +132,79 @@
                 padding: 0 !important;
             }
 
+            /* CABEÇALHO E LOGO NA IMPRESSÃO */
             .print-sheet-header {
                 text-align: center;
                 border-bottom: 2px solid #cbd5e1;
                 padding-bottom: 8px;
-                margin-bottom: 12px;
+                margin-bottom: 15px;
                 page-break-after: avoid !important;
                 break-after: avoid !important;
+            }
+            .print-sheet-header img {
+                width: 150px !important;
+                max-height: 80px !important;
+                object-fit: contain !important;
+                margin: 0 auto 5px auto !important;
+                display: block !important;
+            }
+            .print-sheet-header h2 { margin:0; font-size:12pt; color:#1a365d; text-transform:uppercase; page-break-after:avoid;}
+            .print-sheet-header h3 { margin:2px 0 0 0; font-size:10pt; color:#8c6414; page-break-after:avoid;}
+            
+            .print-period-badge {
+                background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px;
+                border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase;
             }
             
             .print-general-content {
                 page-break-before: avoid !important;
                 break-before: avoid !important;
             }
+
+            /* ESCALA DE HORÁRIOS COMPACTA NA IMPRESSÃO GERAL */
+            .presidency-box {
+                margin-bottom: 10px !important;
+                border: 1px solid #cbd5e1 !important;
+                border-top: 3px solid #1a365d !important;
+            }
+            .presidency-title {
+                font-size: 8.5pt !important;
+                padding: 4px 6px !important;
+                background-color: #f8fafc !important;
+            }
+            .escala-table {
+                font-size: 8.5pt !important;
+                line-height: 1.2 !important;
+            }
+            .escala-table td {
+                padding: 3px 6px !important;
+            }
+            .p-hora {
+                font-size: 8pt !important;
+                padding: 1px 4px !important;
+            }
             
-            /* Tabela do Roteiro (Separado e Alinhado) */
+            /* TABELAS E CARDS NA IMPRESSÃO GERAL */
+            .print-general-content .card {
+                border: 1px solid #94a3b8 !important;
+                border-left: 5px solid #8c6414 !important;
+                box-shadow: none !important;
+                margin-bottom: 15px !important;
+                padding: 10px !important;
+                page-break-inside: avoid !important;
+            }
+            .tables-grid {
+                display: grid !important;
+                grid-template-columns: 48% 49% !important; 
+                justify-content: space-between !important;
+                gap: 2% !important;
+            }
+            table.liturgy-table {
+                width: 100% !important;
+                font-size: 8.5pt !important;
+            }
+
+            /* ROTEIRO E PRECES - GARANTINDO O ALINHAMENTO LATERAL */
             .script-block { display: block !important; }
             .script-row {
                 display: grid !important; 
@@ -175,7 +233,7 @@
                 background-color: #fff !important;
             }
 
-            /* Força as cores originais na impressão */
+            /* CORES FORÇADAS PARA IMPRESSÃO */
             .tag-animador{background:#eff6ff !important;color:#1e40af !important;border:1px solid #bfdbfe !important;}
             .tag-padre{background:#fef2f2 !important;color:#991b1b !important;border:1px solid #fecaca !important;}
             .tag-musica{background:#f0fdf4 !important;color:#166534 !important;border:1px solid #bbf7d0 !important;}
@@ -186,26 +244,7 @@
             .row-musica .script-text{border-left-color:#166534 !important;}
             .row-todos .script-text{border-left-color:#b45309 !important;}
 
-            /* Tabelas da Programação */
-            .print-general-content .card {
-                border: 1px solid #94a3b8 !important;
-                border-left: 5px solid #8c6414 !important;
-                box-shadow: none !important;
-                margin-bottom: 15px !important;
-                padding: 10px !important;
-                page-break-inside: avoid !important;
-            }
-            .tables-grid {
-                display: grid !important;
-                grid-template-columns: 48% 49% !important; 
-                justify-content: space-between !important;
-                gap: 2% !important;
-            }
-            table.liturgy-table {
-                width: 100% !important;
-                font-size: 8.5pt !important;
-            }
-
+            /* QUEBRAS DE PÁGINA PARA PRECES */
             .preces-single-page {
                 page-break-after: always !important;
                 break-after: page !important;
@@ -216,9 +255,10 @@
                 break-after: auto !important;
             }
 
+            /* IMPRESSÃO DAS LEITURAS COMPLETAS NO AMBÃO */
             .reading-print-block {
                 margin-bottom: 25px;
-                page-break-inside: avoid;
+                page-break-inside: auto !important; /* Libera quebra no meio do texto se for grande */
                 border-bottom: 1px dashed #cbd5e1;
                 padding-bottom: 15px;
                 font-family: 'Georgia', serif;
@@ -241,11 +281,16 @@
                 padding-bottom: 4px;
             }
             .reading-print-block .leitura-texto {
-                font-size: 14pt;
+                font-size: 14pt; /* Fonte grande para o Leitor no Ambão */
                 line-height: 1.6;
                 text-align: justify;
                 white-space: pre-line;
+                page-break-inside: auto !important;
             }
+            
+            .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:12pt; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
+            .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:14pt; text-transform:uppercase; }
+            .antifona-print-box p { margin-bottom:12px; text-align:justify; }
         }
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
     </style>
@@ -256,7 +301,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 16.0 - IMPRESSÃO CORRIGIDA)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 17.0 - CORREÇÃO DE IMPRESSÃO)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -292,6 +337,7 @@
                     <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Exaltação da Santa Cruz, Festa (Ano A)</div>
+                
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -1252,7 +1298,6 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Telão</span><span class="script-text">Glória a Deus nas alturas, e paz na terra aos homens por Ele amados. Senhor Deus, rei dos céus, Deus Pai todo-poderoso. Nós vos louvamos, nós vos bendizemos, nós vos adoramos, nós vos glorificamos, nós vos damos graças por vossa imensa glória. Senhor Jesus Cristo, Filho Unigênito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais o pecado do mundo, tende piedade de nós. Vós que tirais o pecado do mundo, acolhei a nossa súplica. Vós que estais à direita do Pai, tende piedade de nós. Só vós sois o Santo, só vós o Senhor, só vós o Altíssimo, Jesus Cristo, com o Espírito Santo, na glória de Deus Pai. Amém.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração da Coleta.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA DA PALAVRA</h4>
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">1ª Leitura</span><span class="script-text">Is 55,6-9. Palavra do Senhor.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
@@ -1273,7 +1318,6 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Conforme formulário de preces para cada horário (com a intenção dos dizimistas e a Oração do Jubileu de Diamante).</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Finaliza as preces.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA EUCARÍSTICA</h4>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto das Oferendas 🎵🎸</span></div>
@@ -1303,10 +1347,9 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho.<br><br>Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda a honra e toda a glória, por todos os séculos dos séculos.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:</span></div>
-                <div class="script-row row-todos"><span class="script-tag tag-todos">Padre/Todos</span><span class="script-text">Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos daí hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal.</span></div>
+                <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos daí hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto, aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Vosso é o Reino, o poder e a glória para sempre.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo.</span></div>
@@ -1343,7 +1386,6 @@
             <div class="script-block" id="content_roteiro_w1">
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa. O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão.</span></div>
-                
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITOS INICIAIS</h4>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Para sempre seja louvado.</span></div>
@@ -1358,7 +1400,7 @@
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Ato Penitencial 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(segue-se a absolvição sacerdotal)<br>Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison):<br>Senhor, tende piedade de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:<br>Senhor, tende piedade de nós.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
@@ -1367,7 +1409,6 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Telão</span><span class="script-text">Glória a Deus nas alturas, e paz na terra aos homens por Ele amados. Senhor Deus, rei dos céus, Deus Pai todo-poderoso. Nós vos louvamos, nós vos bendizemos, nós vos adoramos, nós vos glorificamos, nós vos damos graças por vossa imensa glória. Senhor Jesus Cristo, Filho Unigênito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais o pecado do mundo, tende piedade de nós. Vós que tirais o pecado do mundo, acolhei a nossa súplica. Vós que estais à direita do Pai, tende piedade de nós. Só vós sois o Santo, só vós o Senhor, só vós o Altíssimo, Jesus Cristo, com o Espírito Santo, na glória de Deus Pai. Amém.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração da Coleta.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA DA PALAVRA</h4>
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">1ª Leitura</span><span class="script-text">Eclo 27,33-28,9. Palavra do Senhor.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
@@ -1388,7 +1429,6 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Conforme formulário de preces para cada horário (com a Oração do Jubileu).</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Finaliza as preces.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA EUCARÍSTICA</h4>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto das Oferendas 🎵🎸</span></div>
@@ -1418,7 +1458,6 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós... glória, por todos os séculos dos séculos.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador... ousamos dizer:</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus... livrai-nos do mal.</span></div>
@@ -1687,7 +1726,7 @@
             'ev_sex_w2': {
                 title: 'Evangelho — Lucas 8,1-3',
                 day: 'Sexta-feira (18/09) — 24ª Semana do Tempo Comum',
-                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cidades e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cities e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
             },
             '1l_dom_w2': {
                 title: '1ª Leitura — Isaías 55,6-9',
@@ -1712,7 +1751,7 @@
             '1l_seg': {
                 title: '1ª Leitura — 1 Coríntios 5,1-8',
                 day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: É geral o boato de que há fornicação entre vós, e fornicação tal, que não se encontra nem mesmo entre os pagãos: um de vós vive com a mulher de seu pai. E vós andais cheios de orgulho, quando deveríeis antes estar de luto, a fim de que fosse tirado do meio de vós o que cometeu tal ação!\n\nQuanto a mim, ausente de corpo mas presente em espírito, já julguei, como se estivesse presente, aquele que assim procedeu. Em nome de nosso Senhor Jesus, estando reunidos vós e o meu espírito, com o poder de nosso Senhor Jesus, seja esse homem entregue a Satanás para a ruína da carne, a fim de que o espírito seja salvo no dia do Senhor.\n\nNão é bom o vosso motivo de glória! Não sabeis que um pouco de fermento leveda a massa toda? Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_seg': {
                 title: 'Salmo Responsorial — Sl 5,5-6.7.12',
@@ -1807,6 +1846,10 @@
         };
 
         let currentWeek = 2;
+
+        window.onload = function() {
+            showWeek(2); // Garante que inicie perfeitamente na semana 2 com botões ativos
+        };
 
         function showWeek(w) {
             currentWeek = w;
