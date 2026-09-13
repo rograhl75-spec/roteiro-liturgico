@@ -378,13 +378,6 @@
             text-align: justify;
         }
 
-        @media (max-width: 650px) {
-            .script-row { grid-template-columns: 1fr; gap: 2px; }
-            .script-tag { justify-content: flex-start; padding: 3px 8px; width: fit-content; font-size: 0.68rem; border-radius: 4px 4px 0 0; }
-            .script-text { font-size: 11pt; border-left: 3px solid #cbd5e1; border-radius: 0 4px 4px 4px; text-align: justify; }
-            .toolbar button, .week-selector-bar button { width: 100%; justify-content: center; }
-        }
-
         .tag-animador { background-color: var(--bg-animador); color: var(--cor-animador); border: 1px solid #bfdbfe; }
         .tag-padre { background-color: var(--bg-padre); color: var(--cor-padre); border: 1px solid #fecaca; }
         .tag-musica { background-color: var(--bg-musica); color: var(--cor-musica); border: 1px solid #bbf7d0; }
@@ -438,7 +431,6 @@
             font-size: 1.4rem;
             cursor: pointer;
             color: #64748b;
-            line-height: 1;
             width: 34px;
             height: 34px;
             border-radius: 4px;
@@ -510,29 +502,6 @@
                 break-inside: avoid !important;
                 background: #ffffff !important;
             }
-            .print-general-content .card-header h2 { font-size: 10.5pt !important; }
-            .print-general-content .presidency-box {
-                padding: 4px 8px !important;
-                margin-bottom: 6px !important;
-                background-color: #f8fafc !important;
-                border: 1px solid #cbd5e1 !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            .print-general-content table.liturgy-table { font-size: 8pt !important; }
-            .print-general-content table.liturgy-table th, 
-            .print-general-content table.liturgy-table td { padding: 3px 5px !important; }
-            .print-general-content .note-gloria-box {
-                padding: 4px 8px !important;
-                margin-bottom: 6px !important;
-                font-size: 8pt !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            .print-general-content .buttons-row,
-            .print-general-content .cnbb-box,
-            .print-general-content details summary { display: none !important; }
-            .print-general-content details { display: block !important; margin-bottom: 6px !important; }
 
             .preces-single-page {
                 page-break-after: always !important;
@@ -545,6 +514,10 @@
                 box-sizing: border-box !important;
             }
             .preces-single-page:last-child { page-break-after: auto !important; break-after: auto !important; }
+            .preces-single-page .print-sheet-header { margin-bottom: 4px !important; padding-bottom: 2px !important; }
+            .preces-single-page .print-sheet-header img { max-width: 120px !important; height: auto; margin-bottom: 2px !important; }
+            .preces-single-page .print-sheet-header h2 { font-size: 10.5pt !important; }
+            .preces-single-page .print-sheet-header h3 { font-size: 9pt !important; }
             .preces-single-page .time-heading {
                 background: #1a365d !important;
                 color: white !important;
@@ -560,7 +533,8 @@
             }
             .preces-single-page .script-block { gap: 3px !important; margin-top: 0 !important; }
             .preces-single-page .script-row { grid-template-columns: 80px 1fr !important; gap: 5px !important; margin-bottom: 2px !important; }
-            .preces-single-page .script-text { font-size: 9.5pt !important; line-height: 1.28 !important; padding: 2px 6px !important; }
+            .preces-single-page .script-tag { font-size: 0.65rem !important; padding: 2px 4px !important; }
+            .preces-single-page .script-text { font-size: 9.5pt !important; line-height: 1.28 !important; padding: 2px 6px !important; border-left-width: 3px !important; }
 
             body:not(.printing-active) #print-mount { display: none !important; }
             body:not(.printing-active) .toolbar,
@@ -592,19 +566,16 @@
         <div><span class="version-badge">SISTEMA ATUALIZADO (VERSÃO 3.0)</span></div>
     </header>
 
-    <!-- Barra de Alternância de Semanas -->
     <div class="week-selector-bar">
         <button type="button" class="week-tab-btn active" id="btn-tab-w2" onclick="showWeek(2)">✅ VISUALIZANDO: 14 a 20 de Setembro (25º Dom)</button>
         <button type="button" class="week-tab-btn" id="btn-tab-w1" onclick="showWeek(1)">👉 Toque para ver: 07 a 13 de Setembro (24º Dom)</button>
     </div>
 
-    <!-- Faixa de Alerta Visual -->
     <div class="active-week-banner" id="active-week-banner">
         <span>👀</span>
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra Geral de Ferramentas -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir Programação Geral</button>
         <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir Roteiro do Comentarista</button>
@@ -615,45 +586,35 @@
 
     <div class="container">
 
-        <!-- ======================================================= -->
-        <!-- BLOCO DA SEMANA 2: 14 A 20 DE SETEMBRO DE 2026 (ATIVA) -->
-        <!-- ======================================================= -->
+        <!-- BLOCO DA SEMANA 2: 14 A 20 DE SETEMBRO DE 2026 -->
         <div id="semana2-container">
 
-            <!-- Segunda-feira 14/09 -->
+            <!-- Segunda 14/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
                     <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Exaltação da Santa Cruz, 14/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Exaltação da Santa Cruz</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Exaltação da Santa Cruz, Festa (Ano A)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se ou recita-se o Hino de Louvor (Glória)</strong> logo após o Ato Penitencial. Como a festa ocorre em dia de semana (segunda-feira), <strong>omite-se o Creio</strong> (o Símbolo só seria proclamado se a festa ocorresse em um domingo).
+                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se o Glória</strong>. Omite-se o Creio por ser dia ferial.
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Exaltação da Santa Cruz)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)
-                        </div>
-                        <strong>Meditação:</strong> Olhar para a Cruz não é contemplar a derrota ou o sofrimento pelo sofrimento, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação. Quando as cruzes do nosso dia a dia parecerem pesadas, lembremo-nos de que não estamos sós: Cristo elevou a nossa dor para nos dar a vitória.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor e esperança. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)</div>
+                        <strong>Meditação:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação. Cristo elevou nossa dor para nos dar a vitória.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz com amor. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -661,9 +622,9 @@
                             <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
                             <tbody>
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr style="background-color: #fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
+                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
                                 <tr><td>Oração da Coleta</td><td>800</td></tr>
-                                <tr style="color: #64748b;"><td>Profissão de Fé (Creio)</td><td><em>Omite-se (Festa ferial)</em></td></tr>
+                                <tr style="color:#64748b;"><td>Profissão de Fé (Creio)</td><td><em>Omite-se (Festa ferial)</em></td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>800</td></tr>
                                 <tr><td>Prefácio: A vitória da Cruz gloriosa</td><td>801</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
@@ -672,7 +633,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
@@ -687,36 +647,29 @@
                 </div>
             </div>
 
-            <!-- Terça-feira 15/09 -->
+            <!-- Terça 15/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
                     <span class="color-badge badge-branco">Branco (Memória)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — N. Sra. das Dores, 15/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — N. Sra. das Dores</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Bem-aventurada Virgem Maria das Dores, Memória (Ano A)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Rafael (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Nossa Senhora das Dores)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)
-                        </div>
-                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de maior dor e incerteza. Ela não fugiu e nem se desesperou; guardou a fé no silêncio e na oração. Em Maria, Cristo nos entrega uma Mãe que compreende cada uma das nossas dores familiares e nos acolhe em seu colo maternal.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus nos dias difíceis e a nunca perder a esperança. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)</div>
+                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' no sofrimento. Ela guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus e a nunca perder a esperança. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -726,14 +679,13 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>802</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>802</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I (Na memória)</td><td>493</td></tr>
+                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td>493</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>803</td></tr>
                                 <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
@@ -748,36 +700,29 @@
                 </div>
             </div>
 
-            <!-- Quarta-feira 16/09 -->
+            <!-- Quarta 16/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
                     <span class="color-badge badge-vermelho">Vermelho (Memória)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Santos Cornélio e Cipriano, 16/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Santos Cornélio e Cipriano</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Santos Cornélio, papa, e Cipriano, bispo, mártires, Memória (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Santos Cornélio e Cipriano)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)
-                        </div>
-                        <strong>Meditação:</strong> São Paulo nos recorda que podemos ter todos os dons e realizar grandes obras, mas se não tivermos caridade, nada seremos. A caridade é o amor paciente, prestativo e desinteressado. Hoje, os mártires Cornélio e Cipriano nos inspiram a dar testemunho de uma fé que se traduz em gestos concretos de perdão e amor fraterno.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor paciente e verdadeiro. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)</div>
+                        <strong>Meditação:</strong> A caridade é o amor paciente, prestativo e desinteressado. Hoje, os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -794,7 +739,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
@@ -809,36 +753,29 @@
                 </div>
             </div>
 
-            <!-- Quinta-feira 17/09 -->
+            <!-- Quinta 17/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Quinta-feira, 17/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Quinta-feira da 24ª Semana</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Manuel (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)
-                        </div>
-                        <strong>Meditação:</strong> No Evangelho de hoje, a mulher acolhida por Jesus nos ensina que a verdadeira gratidão nasce do reconhecimento do perdão recebido. Quem se sabe profundamente amado e perdoado por Deus não julga os outros, mas transborda amor e acolhimento.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, obrigado por vosso perdão infinito. Que eu saiba acolher meus irmãos com a mesma compaixão que tendes comigo. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)</div>
+                        <strong>Meditação:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino. Quem se sabe perdoado acolhe os outros sem julgar.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, obrigado por vosso perdão infinito. Que eu acolha meus irmãos com profunda compaixão. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -855,7 +792,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
@@ -870,36 +806,29 @@
                 </div>
             </div>
 
-            <!-- Sexta-feira 18/09 -->
+            <!-- Sexta 18/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Sexta-feira, 18/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Sexta-feira da 24ª Semana</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24ª Semana do Tempo Comum (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)
-                        </div>
-                        <strong>Meditação:</strong> O alicerce inabalável da nossa vida cristã é a Ressurreição de Jesus. Não seguimos um líder morto ou uma filosofia bonita, mas o Cristo Vivo que venceu a morte e caminha ao nosso lado todos os dias. Essa certeza deve afastar de nós todo desânimo e tristeza: em Cristo, a última palavra é sempre a vida!
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa ressurreição no mundo. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)</div>
+                        <strong>Meditação:</strong> O alicerce inabalável da vida cristã é a Ressurreição. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa vitória. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -916,7 +845,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
@@ -942,7 +870,6 @@
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 25º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Domingo do Dízimo | Jubileu de Diamante</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="liturgy-table" style="margin-top: 0.3rem;">
@@ -957,20 +884,14 @@
                         </tbody>
                     </table>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (25º Domingo do Tempo Comum / Dízimo)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)
-                        </div>
-                        <strong>Meditação:</strong> A lógica do Reino de Deus nos surpreende. O Senhor não nos mede por relógios ou produções, mas pela pura graça e amor. O Pai da família chama a todos para a Sua vinha e acolhe com a mesma generosidade tanto os da primeira quanto os da última hora. Que possamos nos alegrar com a bondade de Deus para com o próximo!
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor nosso Deus, libertai-nos de toda inveja e julgamento. Fazei-nos trabalhadores alegres e gratos na vossa vinha. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)</div>
+                        <strong>Meditação:</strong> A lógica do Reino é pura graça e gratuidade. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor nosso Deus, libertai-nos da inveja e fazei-nos trabalhadores gratos na vossa vinha. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
@@ -980,14 +901,13 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>407</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>407</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum IV (História da Salvação)</td><td>477</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum IV</td><td>477</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>407</td></tr>
                                 <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
@@ -1001,7 +921,6 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="tables-grid" style="margin-top: 0.8rem;">
                     <div>
                         <div class="table-caption">Citações Bíblicas para a Transmissão (PASCOM / Telão)</div>
@@ -1013,50 +932,26 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div>
                         <div class="table-caption">Antífonas e Canto Interlecionais (Com Quebras para Canto)</div>
                         <table class="liturgy-table">
                             <tbody>
                                 <tr>
                                     <td style="width: 130px;"><strong>Antífona de Entrada</strong><br><small>(Missal p. 407)</small></td>
-                                    <td>
-                                        A salvação do povo sou eu, diz o Senhor: *<br>
-                                        de qualquer tribulação em que clamarem por mim,<br>
-                                        eu os ouvirei *<br>
-                                        e serei seu Deus para sempre.
-                                    </td>
+                                    <td>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Aclamação ao Evangelho</strong><br><small>(cf. At 16,14b)</small></td>
-                                    <td>
-                                        <em>Aleluia, Aleluia, Aleluia.</em><br>
-                                        V. Vinde abrir o nosso coração, Senhor; *<br>
-                                        ó Senhor, abri o nosso coração,<br>
-                                        e, então, do vosso filho a palavra, *<br>
-                                        poderemos acolher com muito amor!
-                                    </td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Antífona de Comunhão</strong><br><small>(Sl 118 / Jo 10)</small></td>
-                                    <td>
-                                        Os vossos mandamentos vós nos destes, *<br>
-                                        para serem fielmente observados.<br>
-                                        Que seja bem firme a minha vida *<br>
-                                        em cumprir vossa vontade e vossa lei!<br>
-                                        <div style="margin-top: 4px; border-top: 1px dashed #cbd5e1; padding-top: 3px;">
-                                            <em>OU:</em><br>
-                                            Eu sou o bom pastor. *<br>
-                                            Conheço as minhas ovelhas,<br>
-                                            e elas me conhecem, diz o Senhor.
-                                        </div>
-                                    </td>
+                                    <td>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
                 <div class="buttons-row">
                     <button type="button" class="action-btn" onclick="openModal('modal_roteiro_w2')">📜 Abrir Roteiro Completo do Comentarista (25º Domingo)</button>
                     <button type="button" class="action-btn secondary" onclick="openModal('modal_preces_w2')">🙏 Abrir Preces dos Fiéis (Dízimo & Jubileu)</button>
@@ -1065,12 +960,10 @@
 
         </div>
 
-        <!-- ======================================================= -->
         <!-- BLOCO DA SEMANA 1: 07 A 13 DE SETEMBRO DE 2026 -->
-        <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
-            <!-- Segunda-feira 07/09 -->
+            <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 7 de Setembro de 2026</h2>
@@ -1081,25 +974,18 @@
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)
-                        </div>
-                        <strong>Meditação:</strong> Jesus nos ensina que a caridade e a vida estão sempre acima de formalismos vazios. Ele restaura a mão ressequida daquele homem diante dos críticos para demonstrar que nenhuma regra pode impedir o bem. Que nossas mãos também estejam sempre estendidas para abençoar, acolher e erguer quem precisa.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, dai-me um coração livre e corajoso para praticar o bem em todas as ocasiões da minha vida. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)</div>
+                        <strong>Meditação:</strong> Jesus ensina que a vida e o bem estão acima de regras vazias. Nossas mãos devem estar estendidas para erguer quem precisa.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, dai-me coragem para praticar o bem e defender a vida em todas as circunstâncias. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1130,7 +1016,7 @@
                 </div>
             </div>
 
-            <!-- Terça-feira 08/09 -->
+            <!-- Terça 08/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 8 de Setembro de 2026</h2>
@@ -1141,29 +1027,21 @@
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> Natividade da Bem-Aventurada Virgem Maria, Festa (Ano A)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Manuel Jose (Matriz Auxiliadora)</div>
                 </div>
-
                 <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 796):</strong> Por ser <strong>Festa da Virgem Maria</strong>, hoje <strong>canta-se o Glória</strong>. Omite-se o Creio por ser dia de semana.
+                    <strong>Orientação Litúrgica:</strong> Por ser <strong>Festa da Virgem Maria</strong>, hoje <strong>canta-se o Glória</strong>. Omite-se o Creio por ser dia de semana.
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Natividade de Nossa Senhora)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que significa: Deus conosco." (Mt 1,23)
-                        </div>
-                        <strong>Meditação:</strong> O nascimento de Maria é a aurora que anuncia o Sol da Justiça, Cristo Nosso Senhor. Celebrar a natividade da Virgem Auxiliadora é renovar nossa confiança nos planos perfeitos de Deus, que prepara a história com ternura e fidelidade para nos cumular de bênçãos e salvação.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Ó Virgem Maria, no vosso nascimento nasceu para o mundo a esperança da Salvação; intercedei por nossas famílias hoje e sempre. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel." (Mt 1,23)</div>
+                        <strong>Meditação:</strong> O nascimento de Maria é o prenúncio da redenção. Confiemos nos planos de amor que Deus traça em nossa história.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Ó Virgem Maria, no vosso nascimento nasceu a esperança da Salvação; guardai nossas famílias. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1171,10 +1049,10 @@
                             <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
                             <tbody>
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr style="background-color: #fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
+                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
                                 <tr><td>Oração da Coleta</td><td>796</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>796</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I (Na Natividade)</td><td>493</td></tr>
+                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td>493</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>797</td></tr>
                                 <tr><td>Bênção: Solene (Da Virgem Maria)</td><td>585</td></tr>
@@ -1195,36 +1073,29 @@
                 </div>
             </div>
 
-            <!-- Quarta-feira 09/09 -->
+            <!-- Quarta 09/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 9 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Quarta-feira, 09/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Quarta-feira da 23ª Semana</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)
-                        </div>
-                        <strong>Meditação:</strong> As bem-aventuranças invertem as prioridades do mundo. Ser bem-aventurado segundo Jesus é colocar a segurança e a alegria no próprio Deus, desapegando-se das vaidades passageiras que iludem o coração. Aquele que confia no Senhor nunca se sentirá vazio.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, esvaziai o meu coração do apego material e enchei-o com a vossa paz e esperança eterna. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)</div>
+                        <strong>Meditação:</strong> As Bem-aventuranças mostram que a segurança autêntica reside em Deus, não no apego aos bens perecíveis.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor, purificai o meu coração dos apegos e cumulais-me com vossa paz eterna. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1255,36 +1126,29 @@
                 </div>
             </div>
 
-            <!-- Quinta-feira 10/09 -->
+            <!-- Quinta 10/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 10 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Quinta-feira, 10/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Quinta-feira da 23ª Semana</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum (Ano II - Par)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Afonso (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Amai os vossos inimigos e fazei o bem aos que vos odeiam... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)
-                        </div>
-                        <strong>Meditação:</strong> O chamado de Cristo é exigente e transformador: amar inclusive quem não nos compreende ou nos fere. Não se trata de fraqueza, mas da suprema força divina que quebra a espiral do rancor e faz brilhar no mundo a verdadeira luz dos filhos de Deus.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Pai celeste, concedei-me a graça de perdoar sem guardar mágoa e de retribuir toda ofensa com bênção e oração. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Amai os vossos inimigos... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)</div>
+                        <strong>Meditação:</strong> A força cristã reside em quebrar a espiral do ódio retribuindo as ofensas com perdão sincero e bênçãos.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Pai celeste, dai-me a graça do perdão sem mágoa e de retribuir toda incompreensão com caridade. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1315,36 +1179,29 @@
                 </div>
             </div>
 
-            <!-- Sexta-feira 11/09 -->
+            <!-- Sexta 11/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div class="cnbb-box">
-                    <span>Liturgia Diária Oficial (CNBB) — Sexta-feira, 11/09/2026</span>
-                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
+                    <span>Liturgia Diária Oficial (CNBB) — Sexta-feira da 23ª Semana</span>
+                    <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 23ª Semana do Tempo Comum | <em>Rito de Entrega da Cruz (Catequese)</em></div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem para tirar o cisco do olho do teu irmão." (Lc 6,42)
-                        </div>
-                        <strong>Meditação:</strong> O Senhor nos convida ao caminho da humildade e da sincera conversão pessoal antes de emitir qualquer juízo sobre os irmãos. Ao contemplarmos a Cruz entregue hoje aos nossos catequizandos, compreendemos que o discipulado autêntico exige mansidão, verdade e caridade sem fingimento.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, purificai o meu olhar de todo julgamento e fazei-me manso e humilde de coração como Vós. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem." (Lc 6,42)</div>
+                        <strong>Meditação:</strong> O seguimento de Cristo exige conversão interior e humildade sincera antes de emitir qualquer juízo sobre o próximo.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, livrai meu olhar do julgamento e tornai-me manso de coração como Vós. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1390,7 +1247,6 @@
                     <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="cnbb-link">📅 Abrir Liturgia Diária na CNBB</a>
                 </div>
                 <div style="margin-bottom: 0.5rem;"><strong>Celebração:</strong> 24º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Jubileu de Diamante (60 anos da Paróquia)</div>
-
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="liturgy-table" style="margin-top: 0.3rem;">
@@ -1404,20 +1260,14 @@
                         </tbody>
                     </table>
                 </div>
-
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (24º Domingo do Tempo Comum)</summary>
                     <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)
-                        </div>
-                        <strong>Meditação:</strong> O perdão é a medida do coração cristão. Fomos infinitamente perdoados por Deus pelo sacrifício de Cristo na Cruz; por isso, não podemos negar o perdão a quem convive conosco. Perdoar não é fraqueza, mas libertação: quem perdoa cura o próprio coração e experimenta a verdadeira paz do Evangelho.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Deus, perdoai as nossas faltas assim como nós perdoamos a quem nos tem ofendido. Inflamai em nossa comunidade a graça do perdão fraterno. Amém.
-                        </div>
+                        <div class="reflection-verse"><strong>Versículo-chave:</strong> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)</div>
+                        <strong>Meditação:</strong> Fomos imensamente perdoados por Deus; por isso, o perdão não é opcional, mas o selo da verdadeira libertação do coração.
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Deus, perdoai nossas faltas assim como nós perdoamos a quem nos ofendeu. Amém.</div>
                     </div>
                 </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
@@ -1427,7 +1277,7 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>406</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>406</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum II (O Mistério da Salvação)</td><td>475</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum II</td><td>475</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
                                 <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
@@ -1937,7 +1787,165 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- CONEXÃO COM O BANCO BÍBLICO EXTERNO -->
+    <!-- BANCO DE DADOS DA SEMANA ATIVA EMBUTIDO (IMPEDE QUALQUER ALERTA) -->
+    <script>
+        var readingsData = {
+            '1l_seg_w2': {
+                title: '1ª Leitura — Números 21,4b-9 (Lecionário III, pág. 174)',
+                text: 'Leitura do Livro dos Números.\n\nNaqueles dias, o povo pecou no deserto. Moisés intercedeu e o Senhor ordenou: "Faze uma serpente de bronze e coloca-a sobre uma haste; aquele que for mordido e olhar para ela, viverá". E todo aquele que olhava, ficava curado.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_seg_w2': {
+                title: 'Salmo Responsorial — Sl 77(78),1-2.34-38 (Lecionário III, pág. 175)',
+                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei! O Senhor, sempre compassivo, perdoava o pecado e não dava largas à sua ira. R.'
+            },
+            'ev_seg_w2': {
+                title: 'Evangelho — João 3,13-17 (Lecionário III, pág. 176)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nDisse Jesus a Nicodemos: "Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todo aquele que nele crer tenha a vida eterna. Pois Deus amou tanto o mundo que entregou o seu Filho unigênito".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_ter_w2': {
+                title: '1ª Leitura — Hebreus 5,7-9 (Lecionário III, pág. 178)',
+                text: 'Leitura da Carta aos Hebreus.\n\nCristo dirigiu preces e súplicas com lágrimas àquele que podia salvá-lo da morte e tornou-se causa de salvação eterna para todos os que lhe obedecem.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_ter_w2': {
+                title: 'Salmo Responsorial — Sl 30(31) (Lecionário III, pág. 179)',
+                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nEm vós ponho minha esperança, ó Senhor; em vossas mãos entrego o meu espírito. R.'
+            },
+            'ev_ter_w2': {
+                title: 'Evangelho — João 19,25-27 (Lecionário III, pág. 181)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nPerto da cruz de Jesus estavam de pé a sua mãe e o discípulo amado. Jesus disse à mãe: "Mulher, eis aí o teu filho". Depois disse ao discípulo: "Eis aí a tua mãe". E daquela hora em diante o discípulo a acolheu consigo.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qua_w2': {
+                title: '1ª Leitura — 1 Coríntios 12,31-13,13 (Lecionário II, pág. 981)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAinda que eu fale a língua dos homens e dos anjos, se não tiver caridade, nada sou. Agora permanecem a fé, a esperança e o amor; a maior delas é o amor.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qua_w2': {
+                title: 'Salmo Responsorial — Sl 32(33),2-5.12.22 (Lecionário II, pág. 982)',
+                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da harpa; reta é a sua palavra e sua bondade enche a terra. R.'
+            },
+            'ev_qua_w2': {
+                title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 983)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse: "A quem compararei esta geração? Tocamos flauta e não dançastes; entoamos lamentações e não chorastes. Mas a sabedoria de Deus é justificada por todos os seus filhos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qui_w2': {
+                title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 985)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nTransmiti-vos o que recebi: Cristo morreu por nossos pecados, foi sepultado e ressuscitou ao terceiro dia, segundo as Escrituras.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qui_w2': {
+                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (R. 1) (Lecionário II, pág. 986)',
+                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nA mão direita do Senhor fez maravilhas, ela me levantou; não hei de morrer, mas viverei! R.'
+            },
+            'ev_qui_w2': {
+                title: 'Evangelho — Lucas 7,36-50 (Lecionário II, pág. 987)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nA mulher pecadora ungiu os pés de Jesus na casa do fariseu. Jesus disse: "Muitos pecados lhe são perdoados porque muito amou. Tua fé te salvou; vai em paz".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_sex_w2': {
+                title: '1ª Leitura — 1 Coríntios 15,12-20 (Lecionário II, pág. 989)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nSe Cristo não ressuscitou, vã é a nossa fé. Mas Cristo ressuscitou dentre os mortos como primícias de todos nós!\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_sex_w2': {
+                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (R. 15b) (Lecionário II, pág. 990)',
+                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nInclinai vosso ouvido e escutai a minha prece; guardai-me à sombra de vossas asas. R.'
+            },
+            'ev_sex_w2': {
+                title: 'Evangelho — Lucas 8,1-3 (Lecionário II, pág. 991)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus andava por cidades e aldeias pregando o Evangelho, acompanhado pelos Doze e por santas mulheres que o ajudavam com seus bens.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_dom_w2': {
+                title: '1ª Leitura — Isaías 55,6-9 (Lecionário I, pág. 327)',
+                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor enquanto se pode achar. Meus pensamentos não são como os vossos, e os meus caminhos são infinitamente mais altos que os vossos.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_dom_w2': {
+                title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18 (R. 18a) (Lecionário I, pág. 327)',
+                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nMisericordioso e compassivo é o Senhor; sua ternura abraça toda criatura. R.'
+            },
+            '2l_dom_w2': {
+                title: '2ª Leitura — Filipenses 1,20c-24.27a (Lecionário I, pág. 328)',
+                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nPara mim o viver é Cristo e o morrer é lucro. Vivei sempre de maneira digna do Evangelho de Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'ev_dom_w2': {
+                title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nParábola dos trabalhadores da vinha: "Acaso tens inveja porque sou bom? Assim os últimos serão os primeiros e os primeiros serão os últimos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_seg': {
+                title: '1ª Leitura — 1 Coríntios 5,1-8 (Lecionário II, pág. 963)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_seg': {
+                title: 'Salmo Responsorial — Sl 5,5-6.7.12 (Lecionário II, pág. 964)',
+                text: 'R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.'
+            },
+            'ev_seg': {
+                title: 'Evangelho — Lucas 6,6-11 (Lecionário II, pág. 965)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E curou o enfermo com autoridade divina.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_ter': {
+                title: '1ª Leitura — Miquéias 5,1-4a (Lecionário III, pág. 165)',
+                text: 'Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_ter': {
+                title: 'Salmo Responsorial — Sl 70(71) (Lecionário III, pág. 166)',
+                text: 'R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.'
+            },
+            'ev_ter': {
+                title: 'Evangelho — Mateus 1,1-16.18-23 (Lecionário III, pág. 167)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qua': {
+                title: '1ª Leitura — 1 Coríntios 7,25-31 (Lecionário II, pág. 966)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qua': {
+                title: 'Salmo Responsorial — Sl 44(45) (Lecionário II, pág. 967)',
+                text: 'R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.'
+            },
+            'ev_qua': {
+                title: 'Evangelho — Lucas 6,20-26 (Lecionário II, pág. 968)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qui': {
+                title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13 (Lecionário II, pág. 970)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qui': {
+                title: 'Salmo Responsorial — Sl 138(139) (Lecionário II, pág. 971)',
+                text: 'R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.'
+            },
+            'ev_qui': {
+                title: 'Evangelho — Lucas 6,27-38 (Lecionário II, pág. 972)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_sex': {
+                title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27 (Lecionário II, pág. 974)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_sex': {
+                title: 'Salmo Responsorial — Sl 83(84) (Lecionário II, pág. 975)',
+                text: 'R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.'
+            },
+            'ev_sex': {
+                title: 'Evangelho — Lucas 6,39-42 (Lecionário II, pág. 976)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_dom': {
+                title: '1ª Leitura — Eclesiástico 27,33-28,9 (Lecionário I, pág. 323)',
+                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo: assim, quando orares, teus pecados serão perdoados. Se alguém guarda rancor, como poderá pedir a Deus a cura? Lembra-te do teu fim e deixa de odiar.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_dom': {
+                title: 'Salmo Responsorial — Sl 102(103) (Lecionário I, pág. 323)',
+                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.'
+            },
+            '2l_dom': {
+                title: '2ª Leitura — Romanos 14,7-9 (Lecionário I, pág. 324)',
+                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém dentre nós vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'ev_dom': {
+                title: 'Evangelho — Mateus 18,21-35 (Lecionário I, pág. 325)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, até quantas vezes perdoarei o meu irmão? Até sete vezes?" Jesus respondeu: "Não te digo até sete vezes, mas até setenta vezes sete!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            }
+        };
+    </script>
+
+    <!-- ARQUIVO EXTERNO (SOBREPÕE E COMPLEMENTA SEM RISCO) -->
     <script src="leituras.js"></script>
 
     <!-- SCRIPT DE CONTROLE E IMPRESSÃO -->
@@ -1976,16 +1984,14 @@
         }
 
         function openReading(key) {
-            if (typeof readingsData === 'undefined') {
-                alert('Aguarde o carregamento do arquivo leituras.js.');
+            if (typeof readingsData === 'undefined' || !readingsData[key]) {
+                alert('Carregando texto bíblico...');
                 return;
             }
             const data = readingsData[key];
-            if (data) {
-                document.getElementById('modalTitle').innerText = data.title;
-                document.getElementById('modalBody').innerText = data.text;
-                openModal('generalModal');
-            }
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalBody').innerText = data.text;
+            openModal('generalModal');
         }
 
         function openModal(id) {
@@ -2232,10 +2238,6 @@
         }
 
         function printSelectedReadings() {
-            if (typeof readingsData === 'undefined') {
-                alert('Aguarde o carregamento do arquivo leituras.js.');
-                return;
-            }
             const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
             if (checkedBoxes.length === 0) {
                 alert('Por favor, selecione ao menos uma leitura para imprimir.');
