@@ -2,17 +2,19 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
     <style>
         :root{--primary:#1a365d;--secondary:#8c6414;--bg:#f8fafc;--card-bg:#ffffff;--text:#1e293b;--border:#cbd5e1;--cor-animador:#1e40af;--bg-animador:#eff6ff;--cor-padre:#991b1b;--bg-padre:#fef2f2;--cor-musica:#166534;--bg-musica:#f0fdf4;--cor-todos:#b45309;--bg-todos:#fffbeb;--cor-rubrica:#475569;--bg-rubrica:#f8fafc}
-        *{box-sizing:border-box} body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;font-size:14px;line-height:1.45}
+        *{box-sizing:border-box} body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;font-size:14px;line-height:1.45; -webkit-text-size-adjust: 100%;}
+        
         header{background:linear-gradient(135deg,#ffffff,#f1f5f9);text-align:center;padding:1.2rem 1rem 0.8rem;border-bottom:2px solid var(--border)}
         .header-logo{max-width:250px;height:auto;margin-bottom:6px}
         header h1{margin:0;font-size:1.35rem;text-transform:uppercase;color:var(--primary)}
@@ -20,7 +22,7 @@
         .version-badge{display:inline-block;background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:2px 12px;border-radius:12px;margin-top:6px}
         
         .week-selector-bar{display:flex;justify-content:center;gap:10px;background:#cbd5e1;padding:0.75rem 0.6rem;border-bottom:2px solid #94a3b8;flex-wrap:wrap}
-        .week-tab-btn{background:#fff;border:2px solid #64748b;color:#334155;font-size:0.9rem;font-weight:600;padding:0.65rem 1.2rem;border-radius:8px;cursor:pointer;transition:all 0.25s ease;width:100%;max-width:520px;text-align:center}
+        .week-tab-btn{background:#fff;border:2px solid #64748b;color:#334155;font-size:0.95rem;font-weight:600;padding:0.65rem 1.2rem;border-radius:8px;cursor:pointer;transition:all 0.25s ease;width:100%;max-width:520px;text-align:center}
         .week-tab-btn:hover{background:#f8fafc}
         .week-tab-btn.active{background:var(--primary)!important;border:3px solid #d4af37!important;color:#fff!important;font-weight:800;box-shadow:0 4px 14px rgba(26,54,93,0.35)}
         
@@ -55,7 +57,6 @@
         .reflection-prayer{font-style:italic;background:#ffffff;border-left:3px solid #0284c7;padding:4px 8px;margin-top:6px;border-radius:0 4px 4px 0;color:#0369a1}
         
         .tables-grid{display:grid;grid-template-columns:46% 54%;gap:12px;margin-bottom:0.8rem;align-items:start}
-        @media (max-width:768px){.tables-grid{grid-template-columns:1fr}}
         table.liturgy-table{width:100%;border-collapse:collapse;font-size:0.84rem;background:#fff}
         table.liturgy-table th, table.liturgy-table td{border:1px solid var(--border);padding:6px 8px;text-align:left}
         table.liturgy-table th{background:#f8fafc;color:var(--primary);font-weight:700;font-size:0.75rem;text-transform:uppercase}
@@ -69,7 +70,7 @@
         .script-row{display:grid;grid-template-columns:105px 1fr;gap:8px;align-items:stretch;page-break-inside:avoid}
         .script-tag{font-weight:700;text-transform:uppercase;font-size:0.72rem;padding:4px;border-radius:4px;text-align:center;display:flex;align-items:center;justify-content:center}
         .script-text{font-size:12pt;line-height:1.42;padding:5px 8px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify}
-        @media (max-width:650px){.script-row{grid-template-columns:1fr;gap:2px}.script-tag{justify-content:flex-start;padding:3px 8px;width:fit-content;font-size:0.68rem;border-radius:4px 4px 0 0}.script-text{font-size:11pt;border-left:3px solid #cbd5e1;border-radius:0 4px 4px 4px}}
+        
         .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
         .row-animador .script-text{border-left-color:var(--cor-animador)} .row-padre .script-text{border-left-color:var(--cor-padre)} .row-musica .script-text{border-left-color:var(--cor-musica)} .row-todos .script-text{border-left-color:var(--cor-todos)} .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;background:#f8fafc}
         
@@ -86,6 +87,29 @@
         .leitura-col label{display:flex;align-items:center;gap:6px;font-size:0.9rem;cursor:pointer}
         
         #print-mount{display:none}
+        
+        /* ADAPTAÇÕES PARA CELULAR / TABLET */
+        @media (max-width: 768px) {
+            .tables-grid { grid-template-columns: 1fr; gap: 15px; }
+            .toolbar { flex-direction: column; align-items: stretch; }
+            .action-btn { width: 100%; padding: 12px; font-size: 1rem; }
+            .week-selector-bar { flex-direction: column; }
+            .week-tab-btn { padding: 12px; font-size: 1rem; }
+            
+            .escala-table tr { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 2px solid #e2e8f0; }
+            .escala-table tr:last-child { border-bottom: none; }
+            .escala-table td { display: block; border-bottom: none; padding: 4px 8px; text-align: left !important; width: auto !important; }
+            .p-cel { color: #1e40af; font-size: 1rem; margin-top: 2px; }
+            
+            .script-row { grid-template-columns: 1fr; gap: 0; margin-bottom: 8px; }
+            .script-tag { justify-content: flex-start; padding: 5px 12px; width: fit-content; font-size: 0.75rem; border-radius: 6px 6px 0 0; }
+            .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; }
+            
+            .leitura-grid { grid-template-columns: 1fr; }
+            .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
+        }
+
+        /* ESTILOS DE IMPRESSÃO */
         @media print{
             html,body{margin:0!important;padding:0!important;height:auto!important;min-height:auto!important;overflow:visible!important;background:#fff!important}
             body.printing-active > *:not(#print-mount){display:none!important}
@@ -117,7 +141,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E REVISADO (VERSÃO 10.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 12.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -137,7 +161,7 @@
         <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Selecionar Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" onclick="openActiveReflexoesModal()">💡 Reflexões</button>
-        <button type="button" class="action-btn red" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz (Sexta 11/09)</button>
+        <button type="button" class="action-btn red" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz</button>
         <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="action-btn blue">🔗 Liturgia Diária CNBB</a>
     </div>
 
@@ -147,14 +171,12 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
-            <!-- Segunda 14/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
                     <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Exaltação da Santa Cruz, Festa (Ano A)</div>
-                
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -195,7 +217,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td style="text-align:center;">III / 174</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78)</span></td><td style="text-align:center;">III / 175</td></tr>
@@ -883,7 +905,7 @@
 
     </div>
 
-    <!-- ================== MODAIS DO SISTEMA ================== -->
+    <!-- ================== MODAIS ================== -->
 
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
@@ -1140,8 +1162,7 @@
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto, aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo. (Animador: Vosso é o Reino, o poder e a glória para sempre).</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo. (Animador: Amém). A paz do Senhor esteja sempre convosco. (Animador: O amor de Cristo nos uniu).</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo. (Animador: Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a).</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Corpo de Cristo me guarde para a vida eterna.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo. (Animador: Senhor, eu não sou digno/a...). O Corpo de Cristo me guarde para a vida eterna.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto da Comunhão 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração depois da Comunhão. (Animador: Amém).</span></div>
@@ -1371,7 +1392,6 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- SCRIPT COM DADOS BLINDADOS COM CRASE -->
     <script>
         var readingsData = {
             '1l_seg_w2': {
@@ -1517,7 +1537,7 @@
             '1l_qui': {
                 title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13',
                 day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conocimiento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
             },
             'sl_qui': {
                 title: 'Salmo Responsorial — Sl 138(139)',
