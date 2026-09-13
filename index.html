@@ -108,29 +108,103 @@
             .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
         }
 
-        /* ESTILOS DE IMPRESSÃO - ATUALIZADOS PARA EVITAR PAGINA EM BRANCO */
+        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
         @media print{
-            @page { margin: 10mm; }
-            html,body{margin:0!important;padding:0!important;height:auto!important;min-height:auto!important;overflow:visible!important;background:#fff!important}
-            body.printing-active > *:not(#print-mount){display:none!important}
-            body.printing-active #print-mount{display:block!important;position:static!important;margin:0!important;padding:0!important;page-break-before:avoid!important;break-before:avoid!important;width:100%!important}
+            @page { margin: 12mm 10mm; size: A4 portrait; }
             
-            .print-sheet-header{text-align:center;border-bottom:1.5px solid #cbd5e1;padding-bottom:4px;margin-bottom:8px; page-break-after: avoid; break-after: avoid;}
-            .print-sheet-header img{max-width:170px;height:auto;margin-bottom:2px}
-            .print-sheet-header h2{margin:0;font-size:12pt;color:#1a365d;text-transform:uppercase; page-break-after: avoid;}
-            .print-sheet-header h3{margin:2px 0 0 0;font-size:10pt;color:#8c6414; page-break-after: avoid;}
-            .print-period-badge{background:#1a365d!important;color:#ffffff!important;display:inline-block;padding:3px 10px;border-radius:4px;font-size:9.5pt;font-weight:bold;margin-top:4px;text-transform:uppercase;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+            html, body {
+                margin: 0 !important;
+                padding: 0 !important;
+                background: #fff !important;
+                color: #000 !important;
+            }
             
-            .print-general-content .card{box-shadow:none!important;border:1px solid #718096!important;border-left:4px solid var(--secondary)!important;margin-bottom:10px!important;padding:8px 10px!important;page-break-inside:avoid!important;background:#ffffff!important}
+            /* Esconde TUDO que não for o bloco de impressão */
+            body > *:not(#print-mount) { display: none !important; }
             
-            .preces-single-page{page-break-after:always!important;break-after:page!important;page-break-inside:avoid!important;padding:0!important;margin:0!important;display:block!important;box-sizing:border-box!important}
-            .preces-single-page:last-child{page-break-after:auto!important;break-after:auto!important}
-            .preces-single-page .time-heading{background:#1a365d!important;color:white!important;padding:4px 6px!important;font-size:10pt!important;font-weight:bold;border-radius:4px;margin-bottom:8px!important;text-align:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-            .preces-single-page .script-text{font-size:10.5pt!important;line-height:1.35!important;padding:2px 6px!important;border-left-width:3px!important}
+            /* Exibe o bloco de impressão corretamente */
+            #print-mount {
+                display: block !important;
+                position: relative !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            /* Correção da Quebra de Página Inicial (Impedia que a programação ficasse em branco) */
+            .print-sheet-header {
+                text-align: center;
+                border-bottom: 2px solid #cbd5e1;
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
             
-            .antifona-print-box{margin-bottom:15px;border:1px solid #ccc;padding:15px;font-size:12pt;line-height:1.5;font-family:'Georgia',serif;page-break-inside:avoid}
-            .antifona-print-box h3{margin:0 0 10px 0;color:#1a365d;border-bottom:1px solid #1a365d;padding-bottom:5px;font-family:Arial,sans-serif;font-size:14pt;text-transform:uppercase}
-            .antifona-print-box p{margin-bottom:12px;text-align:justify}
+            .print-general-content {
+                page-break-before: avoid !important;
+                break-before: avoid !important;
+            }
+            
+            /* Correção do Layout "Esmagado" do Roteiro e Preces (Grid) */
+            .script-block {
+                display: block !important;
+            }
+            .script-row {
+                display: flex !important; /* Desabilita o Grid que quebrava no celular */
+                flex-direction: column !important; /* Coloca a Tag em cima do texto na impressão */
+                margin-bottom: 10px !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+            .script-tag {
+                width: fit-content !important;
+                padding: 2px 8px !important;
+                border-radius: 4px 4px 0 0 !important;
+                font-size: 8pt !important;
+                border-bottom: none !important;
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+            .script-text {
+                width: 100% !important;
+                font-size: 11pt !important;
+                line-height: 1.35 !important;
+                padding: 6px 10px !important;
+                border: 1px solid #cbd5e1 !important;
+                border-left-width: 4px !important; /* Mantém a cor lateral */
+                border-radius: 0 4px 4px 4px !important;
+            }
+
+            /* Correção da Programação Geral (Tabelas) */
+            .print-general-content .card {
+                border: 1px solid #94a3b8 !important;
+                border-left: 5px solid #8c6414 !important;
+                box-shadow: none !important;
+                margin-bottom: 15px !important;
+                padding: 10px !important;
+                page-break-inside: avoid !important;
+            }
+            .tables-grid {
+                display: flex !important;
+                flex-direction: column !important; /* Força uma tabela embaixo da outra na impressão */
+                gap: 10px !important;
+            }
+            table.liturgy-table {
+                width: 100% !important;
+                font-size: 9pt !important;
+            }
+
+            /* Quebra de página isolada para as preces */
+            .preces-single-page {
+                page-break-after: always !important;
+                break-after: page !important;
+                display: block !important;
+            }
+            .preces-single-page:last-child {
+                page-break-after: auto !important;
+                break-after: auto !important;
+            }
         }
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
     </style>
@@ -141,7 +215,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA RESPONSIVO (VERSÃO 13.0)</span></div>
+        <div><span class="version-badge">SISTEMA DE IMPRESSÃO CORRIGIDO (VERSÃO 14.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -171,6 +245,7 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
+            <!-- Segunda 14/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
@@ -217,7 +292,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Próprio dos Santos)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td style="text-align:center;">III / 174</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78)</span></td><td style="text-align:center;">III / 175</td></tr>
@@ -228,7 +303,6 @@
                 </div>
             </div>
 
-            <!-- Terça 15/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
@@ -281,7 +355,6 @@
                 </div>
             </div>
 
-            <!-- Quarta 16/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
@@ -334,7 +407,6 @@
                 </div>
             </div>
 
-            <!-- Quinta 17/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
@@ -387,7 +459,6 @@
                 </div>
             </div>
 
-            <!-- Sexta 18/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
@@ -440,7 +511,6 @@
                 </div>
             </div>
 
-            <!-- Domingo 20/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
@@ -540,7 +610,6 @@
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
-            <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 7 de Setembro de 2026</h2>
@@ -593,7 +662,6 @@
                 </div>
             </div>
 
-            <!-- Terça 08/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 8 de Setembro de 2026</h2>
@@ -650,7 +718,6 @@
                 </div>
             </div>
 
-            <!-- Quarta 09/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 9 de Setembro de 2026</h2>
@@ -703,7 +770,6 @@
                 </div>
             </div>
 
-            <!-- Quinta 10/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 10 de Setembro de 2026</h2>
@@ -756,7 +822,6 @@
                 </div>
             </div>
 
-            <!-- Sexta 11/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
@@ -809,7 +874,6 @@
                 </div>
             </div>
 
-            <!-- Domingo 13/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 12 e 13 de Setembro de 2026</h2>
