@@ -106,9 +106,12 @@
             .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; }
             
             .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
+            
+            /* Correção para o modal de seleção de leituras não ficar estreito demais */
+            .leitura-grid { grid-template-columns: 1fr; }
         }
 
-        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
+        /* ESTILOS DE IMPRESSÃO */
         @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
@@ -119,10 +122,8 @@
                 color: #000 !important;
             }
             
-            /* Esconde TUDO que não for o bloco de impressão */
             body > *:not(#print-mount) { display: none !important; }
             
-            /* Exibe o bloco de impressão corretamente */
             #print-mount {
                 display: block !important;
                 position: relative !important;
@@ -131,7 +132,6 @@
                 padding: 0 !important;
             }
 
-            /* Correção da Quebra de Página Inicial (Impedia que a programação ficasse em branco) */
             .print-sheet-header {
                 text-align: center;
                 border-bottom: 2px solid #cbd5e1;
@@ -146,13 +146,12 @@
                 break-before: avoid !important;
             }
             
-            /* Correção do Layout "Esmagado" do Roteiro e Preces (Grid) */
             .script-block {
                 display: block !important;
             }
             .script-row {
-                display: flex !important; /* Desabilita o Grid que quebrava no celular */
-                flex-direction: column !important; /* Coloca a Tag em cima do texto na impressão */
+                display: flex !important;
+                flex-direction: column !important; 
                 margin-bottom: 10px !important;
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
@@ -172,11 +171,10 @@
                 line-height: 1.35 !important;
                 padding: 6px 10px !important;
                 border: 1px solid #cbd5e1 !important;
-                border-left-width: 4px !important; /* Mantém a cor lateral */
+                border-left-width: 4px !important; 
                 border-radius: 0 4px 4px 4px !important;
             }
 
-            /* Correção da Programação Geral (Tabelas) */
             .print-general-content .card {
                 border: 1px solid #94a3b8 !important;
                 border-left: 5px solid #8c6414 !important;
@@ -187,7 +185,7 @@
             }
             .tables-grid {
                 display: flex !important;
-                flex-direction: column !important; /* Força uma tabela embaixo da outra na impressão */
+                flex-direction: column !important; 
                 gap: 10px !important;
             }
             table.liturgy-table {
@@ -195,7 +193,6 @@
                 font-size: 9pt !important;
             }
 
-            /* Quebra de página isolada para as preces */
             .preces-single-page {
                 page-break-after: always !important;
                 break-after: page !important;
@@ -204,6 +201,38 @@
             .preces-single-page:last-child {
                 page-break-after: auto !important;
                 break-after: auto !important;
+            }
+
+            /* Correção para impressão íntegra das leituras no ambão */
+            .reading-print-block {
+                margin-bottom: 25px;
+                page-break-inside: avoid;
+                border-bottom: 1px dashed #cbd5e1;
+                padding-bottom: 15px;
+                font-family: 'Georgia', serif;
+            }
+            .reading-print-block .leitura-dia {
+                font-size: 10pt;
+                font-weight: bold;
+                color: #1a365d;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                font-family: Arial, sans-serif;
+            }
+            .reading-print-block .leitura-titulo {
+                font-size: 14pt;
+                font-weight: bold;
+                color: #8c6414;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #e2e8f0;
+                padding-bottom: 4px;
+            }
+            .reading-print-block .leitura-texto {
+                font-size: 14pt; /* Letra maior para ler no ambão */
+                line-height: 1.6;
+                text-align: justify;
+                white-space: pre-line; /* Mantém as quebras de parágrafo da Bíblia */
             }
         }
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
@@ -215,7 +244,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA DE IMPRESSÃO CORRIGIDO (VERSÃO 14.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 15.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -245,7 +274,6 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
-            <!-- Segunda 14/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
@@ -303,6 +331,7 @@
                 </div>
             </div>
 
+            <!-- Terça 15/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
@@ -355,6 +384,7 @@
                 </div>
             </div>
 
+            <!-- Quarta 16/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
@@ -407,6 +437,7 @@
                 </div>
             </div>
 
+            <!-- Quinta 17/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
@@ -459,6 +490,7 @@
                 </div>
             </div>
 
+            <!-- Sexta 18/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
@@ -511,6 +543,7 @@
                 </div>
             </div>
 
+            <!-- Domingo 20/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
@@ -610,6 +643,7 @@
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
+            <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 7 de Setembro de 2026</h2>
@@ -662,6 +696,7 @@
                 </div>
             </div>
 
+            <!-- Terça 08/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 8 de Setembro de 2026</h2>
@@ -718,6 +753,7 @@
                 </div>
             </div>
 
+            <!-- Quarta 09/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 9 de Setembro de 2026</h2>
@@ -770,6 +806,7 @@
                 </div>
             </div>
 
+            <!-- Quinta 10/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 10 de Setembro de 2026</h2>
@@ -822,6 +859,7 @@
                 </div>
             </div>
 
+            <!-- Sexta 11/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
@@ -874,6 +912,7 @@
                 </div>
             </div>
 
+            <!-- Domingo 13/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 12 e 13 de Setembro de 2026</h2>
@@ -969,7 +1008,7 @@
 
     </div>
 
-    <!-- ================== MODAIS DO SISTEMA ================== -->
+    <!-- ================== MODAIS ================== -->
 
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
@@ -986,7 +1025,7 @@
             </div>
 
             <h4 style="color:var(--primary); margin: 10px 0 4px; border-bottom:1px solid #cbd5e1; padding-bottom:3px;">Semana 1: 07 a 13 de Setembro (24º Domingo)</h4>
-            <div class="leitura-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="leitura-grid">
                 <div class="leitura-col">
                     <strong>Segunda-feira (07/09)</strong>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_seg"> 1ª Leitura (1Cor 5)</label>
@@ -1028,7 +1067,7 @@
             </div>
 
             <h4 style="color:var(--primary); margin: 15px 0 4px; border-bottom:1px solid #cbd5e1; padding-bottom:3px;">Semana 2: 14 a 20 de Setembro (25º Domingo)</h4>
-            <div class="leitura-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="leitura-grid">
                 <div class="leitura-col">
                     <strong>Segunda-feira (14/09)</strong>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_seg_w2"> 1ª Leitura (Nm 21)</label>
@@ -1807,10 +1846,10 @@
                 const r = readingsData[key];
                 if (r) {
                     readingsHTML += `
-                        <div style="margin-bottom: 20px; page-break-inside: avoid; border-bottom: 1px dashed #cbd5e1; padding-bottom: 12px; font-family: 'Georgia', serif;">
-                            <div style="font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif;">${r.day}</div>
-                            <div style="font-size: 12pt; font-weight: bold; color: #8c6414; margin-bottom: 6px; text-transform: uppercase;">${r.title}</div>
-                            <div style="font-size: 12pt; line-height: 1.5; text-align: justify; white-space: pre-line;">${r.text}</div>
+                        <div class="reading-print-block">
+                            <div class="leitura-dia">${r.day}</div>
+                            <div class="leitura-titulo">${r.title}</div>
+                            <div class="leitura-texto">${r.text}</div>
                         </div>
                     `;
                 }
@@ -1837,7 +1876,7 @@
             }
 
             const printHTML = `
-                <div style="padding: 1cm 0.8cm;">
+                <div style="padding: 0cm 0.5cm;">
                     <div class="print-sheet-header">
                         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
                         <h2>Paróquia Nossa Senhora Auxiliadora</h2>
