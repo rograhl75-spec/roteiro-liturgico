@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
 
-    <!-- Metatags e Ícones Universais (PWA / Android / iOS / Desktop) -->
+    <!-- Prevenção de Cache no Navegador -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Metatags e Ícones Universais (PWA / Celular / Desktop) -->
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="icon" type="image/png" sizes="512x512" href="icone.png">
@@ -24,6 +29,7 @@
             --card-bg: #ffffff;
             --text: #1e293b;
             --border: #cbd5e1;
+            /* Cores dos Ministérios */
             --cor-animador: #1e40af;
             --bg-animador: #eff6ff;
             --cor-padre: #991b1b;
@@ -463,6 +469,10 @@
         }
 
         @media print {
+            body.printing-active {
+                overflow: visible !important;
+                height: auto !important;
+            }
             body.printing-active > *:not(#print-mount) { display: none !important; }
             body.printing-active #print-mount {
                 display: block !important;
@@ -529,12 +539,13 @@
             .print-general-content details summary { display: none !important; }
             .print-general-content details { display: block !important; margin-bottom: 6px !important; }
 
+            /* Impressão das Preces: Estritamente 1 Página por Horário */
             .preces-single-page {
                 page-break-after: always !important;
                 break-after: page !important;
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
-                padding: 0.2cm 0.5cm !important;
+                padding: 0.3cm 0.5cm !important;
                 margin: 0 !important;
                 display: block !important;
                 box-sizing: border-box !important;
@@ -601,7 +612,7 @@
         <button type="button" class="week-tab-btn" id="btn-tab-w1" onclick="showWeek(1)">👉 Toque para ver: 07 a 13 de Setembro (24º Dom)</button>
     </div>
 
-    <!-- Faixa de Confirmação Visual -->
+    <!-- Faixa de Alerta Visual -->
     <div class="active-week-banner" id="active-week-banner">
         <span>👀</span>
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
@@ -618,9 +629,7 @@
 
     <div class="container">
 
-        <!-- ======================================================= -->
         <!-- BLOCO DA SEMANA 2: 14 A 20 DE SETEMBRO DE 2026 -->
-        <!-- ======================================================= -->
         <div id="semana2-container">
 
             <!-- Segunda-feira 14/09 -->
@@ -713,7 +722,7 @@
                         <div class="reflection-verse">
                             <strong>Versículo-chave:</strong> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)
                         </div>
-                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de maior dor e incerteza. Ela não fugiu e nem se desesperou; guardou a fé no silêncio e na oração. Em Maria, Cristo nos entrega uma Mãe que compreende cada uma das nossas dores familiares e nos acolhe em seu colo maternal.
+                        <strong>Meditação:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de permanecer de pé nos momentos de maior dor e incerteza. Ela não fugiu e nem se desesperou; guardou a fé no silêncio e na oração.
                         <div class="reflection-prayer">
                             <strong>Oração do Dia:</strong> Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus nos dias difíceis e a nunca perder a esperança. Amém.
                         </div>
@@ -729,10 +738,10 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>802</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>802</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I (Na memória)</td><td>493</td></tr>
+                                <tr><td>Prefácio: BVM I (Na memória)</td><td>493</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>803</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Bênção: Simples</td><td>575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -768,19 +777,6 @@
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (Santos Cornélio e Cipriano)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)
-                        </div>
-                        <strong>Meditação:</strong> São Paulo nos recorda que podemos ter todos os dons e realizar grandes obras, mas se não tivermos caridade, nada seremos. A caridade é o amor paciente, prestativo e desinteressado. Hoje, os mártires Cornélio e Cipriano nos inspiram a dar testemunho de uma fé que se traduz em gestos concretos de perdão e amor fraterno.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor paciente e verdadeiro. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -793,7 +789,7 @@
                                 <tr><td>Prefácio: Santos Mártires I</td><td>502</td></tr>
                                 <tr><td>Oração Eucarística: V</td><td>565</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>804</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Bênção: Simples</td><td>575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -829,19 +825,6 @@
                     <div><strong>19h00:</strong> Pe. Manuel (Matriz Auxiliadora)</div>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)
-                        </div>
-                        <strong>Meditação:</strong> No Evangelho de hoje, a mulher acolhida por Jesus nos ensina que a verdadeira gratidão nasce do reconhecimento do perdão recebido. Quem se sabe profundamente amado e perdoado por Deus não julga os outros, mas transborda amor e acolhimento. Deus não olha para o nosso passado com condenação, mas para o nosso presente com misericórdia.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, obrigado por vosso perdão infinito. Que eu saiba acolher meus irmãos com a mesma compaixão que tendes comigo. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -854,7 +837,7 @@
                                 <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
                                 <tr><td>Oração Eucarística: V</td><td>565</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Bênção: Simples</td><td>575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -890,19 +873,6 @@
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (24ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)
-                        </div>
-                        <strong>Meditação:</strong> O alicerce inabalável da nossa vida cristã é a Ressurreição de Jesus. Não seguimos um líder morto ou uma filosofia bonita, mas o Cristo Vivo que venceu a morte e caminha ao nosso lado todos os dias. Essa certeza deve afastar de nós todo desânimo e tristeza: em Cristo, a última palavra é sempre a vida!
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa ressurreição no mundo. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -915,7 +885,7 @@
                                 <tr><td>Prefácio: Oração Eucarística V</td><td>564</td></tr>
                                 <tr><td>Oração Eucarística: V</td><td>565</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td>575</td></tr>
+                                <tr><td>Bênção: Simples</td><td>575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -961,19 +931,6 @@
                     </table>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (25º Domingo do Tempo Comum / Dízimo)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)
-                        </div>
-                        <strong>Meditação:</strong> A lógica do Reino de Deus nos surpreende. O Senhor não nos mede por relógios ou produções, mas pela pura graça e amor. O Pai da família chama a todos para a Sua vinha e acolhe com a mesma generosidade tanto os da primeira quanto os da última hora. Que possamos nos alegrar com a bondade de Deus para com o próximo!
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor nosso Deus, libertai-nos de toda inveja e julgamento. Fazei-nos trabalhadores alegres e gratos na vossa vinha. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
@@ -983,10 +940,10 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>407</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>407</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum IV (História da Salvação)</td><td>477</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum IV</td><td>477</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>407</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
+                                <tr><td>Bênção: Solene ou Simples</td><td>583 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1013,9 +970,7 @@
 
         </div>
 
-        <!-- ======================================================= -->
         <!-- BLOCO DA SEMANA 1: 07 A 13 DE SETEMBRO DE 2026 -->
-        <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
             <!-- Segunda-feira 07/09 -->
@@ -1034,19 +989,6 @@
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)
-                        </div>
-                        <strong>Meditação:</strong> Jesus nos ensina que a caridade e a vida estão sempre acima de formalismos vazios. Ele restaura a mão ressequida daquele homem diante dos críticos para demonstrar que nenhuma regra pode impedir o bem. Que nossas mãos também estejam sempre estendidas para abençoar, acolher e erguer quem precisa.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, dai-me um coração livre e corajoso para praticar o bem em todas as ocasiões da minha vida. Amém.
-                        </div>
-                    </div>
-                </details>
 
                 <div class="tables-grid">
                     <div>
@@ -1095,23 +1037,6 @@
                     <div><strong>19h00:</strong> Pe. Manuel Jose (Matriz Auxiliadora)</div>
                 </div>
 
-                <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 796):</strong> Por ser <strong>Festa da Virgem Maria</strong>, hoje <strong>canta-se o Glória</strong>. Omite-se o Creio por ser dia de semana.
-                </div>
-
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (Natividade de Nossa Senhora)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que significa: Deus conosco." (Mt 1,23)
-                        </div>
-                        <strong>Meditação:</strong> O nascimento de Maria é a aurora que anuncia o Sol da Justiça, Cristo Nosso Senhor. Celebrar a natividade da Virgem Auxiliadora é renovar nossa confiança nos planos perfeitos de Deus, que prepara a história com ternura e fidelidade para nos cumular de bênçãos e salvação.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Ó Virgem Maria, no vosso nascimento nasceu para o mundo a esperança da Salvação; intercedei por nossas famílias hoje e sempre. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1119,10 +1044,10 @@
                             <thead><tr><th>Parte / Oração Presidencial</th><th style="width:70px;">Página</th></tr></thead>
                             <tbody>
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
-                                <tr style="background-color: #fef2f2;"><td><strong>Hino de Louvor</strong></td><td><strong>Diz-se o Glória (p. 442)</strong></td></tr>
+                                <tr><td>Hino de Louvor</td><td>Diz-se o Glória</td></tr>
                                 <tr><td>Oração da Coleta</td><td>796</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>796</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I (Na Natividade)</td><td>493</td></tr>
+                                <tr><td>Prefácio: BVM I (Na Natividade)</td><td>493</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>797</td></tr>
                                 <tr><td>Bênção: Solene (Da Virgem Maria)</td><td>585</td></tr>
@@ -1159,19 +1084,6 @@
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)
-                        </div>
-                        <strong>Meditação:</strong> As bem-aventuranças invertem as prioridades do mundo. Ser bem-aventurado segundo Jesus é colocar a segurança e a alegria no próprio Deus, desapegando-se das vaidades passageiras que iludem o coração. Aquele que confia no Senhor nunca se sentirá vazio.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, esvaziai o meu coração do apego material e enchei-o com a vossa paz e esperança eterna. Amém.
-                        </div>
-                    </div>
-                </details>
 
                 <div class="tables-grid">
                     <div>
@@ -1220,19 +1132,6 @@
                     <div><strong>19h00:</strong> Pe. Afonso (Matriz Auxiliadora)</div>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Amai os vossos inimigos e fazei o bem aos que vos odeiam... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)
-                        </div>
-                        <strong>Meditação:</strong> O chamado de Cristo é exigente e transformador: amar inclusive quem não nos compreende ou nos fere. Não se trata de fraqueza, mas da suprema força divina que quebra a espiral do rancor e faz brilhar no mundo a verdadeira luz dos filhos de Deus.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Pai celeste, concedei-me a graça de perdoar sem guardar mágoa e de retribuir toda ofensa com bênção e oração. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (3ª Edição Típica)</div>
@@ -1279,19 +1178,6 @@
                     <div class="presidency-title">Presidência e Horário</div>
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
-
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (23ª Semana do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem para tirar o cisco do olho do teu irmão." (Lc 6,42)
-                        </div>
-                        <strong>Meditação:</strong> O Senhor nos convida ao caminho da humildade e da sincera conversão pessoal antes de emitir qualquer juízo sobre os irmãos. Ao contemplarmos a Cruz entregue hoje aos nossos catequizandos, compreendemos que o discipulado autêntico exige mansidão, verdade e caridade sem fingimento.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Jesus, purificai o meu olhar de todo julgamento e fazei-me manso e humilde de coração como Vós. Amém.
-                        </div>
-                    </div>
-                </details>
 
                 <div class="tables-grid">
                     <div>
@@ -1353,19 +1239,6 @@
                     </table>
                 </div>
 
-                <details class="reflection-box">
-                    <summary>📖 Reflexão e Oração do Dia (24º Domingo do Tempo Comum)</summary>
-                    <div class="reflection-content">
-                        <div class="reflection-verse">
-                            <strong>Versículo-chave:</strong> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)
-                        </div>
-                        <strong>Meditação:</strong> O perdão é a medida do coração cristão. Fomos infinitamente perdoados por Deus pelo sacrifício de Cristo na Cruz; por isso, não podemos negar o perdão a quem convive conosco. Perdoar não é fraqueza, mas libertação: quem perdoa cura o próprio coração e experimenta a verdadeira paz do Evangelho.
-                        <div class="reflection-prayer">
-                            <strong>Oração do Dia:</strong> Senhor Deus, perdoai as nossas faltas assim como nós perdoamos a quem nos tem ofendido. Inflamai em nossa comunidade a graça do perdão fraterno. Amém.
-                        </div>
-                    </div>
-                </details>
-
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">Missal Romano (Válido para Todos os Horários)</div>
@@ -1375,10 +1248,10 @@
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr>
                                 <tr><td>Oração da Coleta</td><td>406</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td>406</td></tr>
-                                <tr><td>Prefácio: Domingos do Tempo Comum II (O Mistério da Salvação)</td><td>475</td></tr>
+                                <tr><td>Prefácio: Domingos do Tempo Comum II</td><td>475</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td>537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td>406</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td>583 / 575</td></tr>
+                                <tr><td>Bênção: Solene ou Simples</td><td>583 / 575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1405,7 +1278,9 @@
 
     </div>
 
-    <!-- Modal Seleção de Leituras para Impressão -->
+    <!-- MODAIS DO SISTEMA (EXATAMENTE 9 MODAIS ÚNICOS, SEM DUPLICAÇÃO) -->
+
+    <!-- 1. Modal Seleção de Leituras para Impressão -->
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1426,37 +1301,37 @@
             <h4 style="color:var(--primary); margin: 10px 0 4px; border-bottom:1px solid #cbd5e1; padding-bottom:3px;">Semana 1: 07 a 13 de Setembro (24º Domingo)</h4>
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-bottom: 15px;">
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Segunda (07/09) - 23ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Segunda (07/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_seg"> 1ª Leitura (1Cor 5)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_seg"> Salmo (Sl 5)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_seg"> Evangelho (Lc 6)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Terça (08/09) - Natividade BVM</strong><br>
+                    <strong style="color:var(--primary);">Terça (08/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_ter"> 1ª Leitura (Mq 5)</label><br>
-                    <label><input type="checkbox" class="reading-checkbox" value="sl_ter"> Salmo (Sl 70/12)</label><br>
+                    <label><input type="checkbox" class="reading-checkbox" value="sl_ter"> Salmo (Sl 70)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_ter"> Evangelho (Mt 1)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Quarta (09/09) - 23ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Quarta (09/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_qua"> 1ª Leitura (1Cor 7)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_qua"> Salmo (Sl 44)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_qua"> Evangelho (Lc 6)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Quinta (10/09) - 23ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Quinta (10/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_qui"> 1ª Leitura (1Cor 8)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_qui"> Salmo (Sl 138)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_qui"> Evangelho (Lc 6)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Sexta (11/09) - 23ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Sexta (11/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_sex"> 1ª Leitura (1Cor 9)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_sex"> Salmo (Sl 83)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_sex"> Evangelho (Lc 6)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--cor-musica);">Fim de Semana (12 e 13/09) - 24º Domingo</strong><br>
+                    <strong style="color:var(--cor-musica);">Fim de Semana (12 e 13/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_dom"> 1ª Leitura (Eclo 27)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_dom"> Salmo (Sl 102)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="2l_dom"> 2ª Leitura (Rm 14)</label><br>
@@ -1468,37 +1343,37 @@
             <h4 style="color:var(--primary); margin: 10px 0 4px; border-bottom:1px solid #cbd5e1; padding-bottom:3px;">Semana 2: 14 a 20 de Setembro (25º Domingo)</h4>
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-bottom: 15px;">
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--cor-padre);">Segunda (14/09) - Exaltação Santa Cruz</strong><br>
+                    <strong style="color:var(--cor-padre);">Segunda (14/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_seg_w2"> 1ª Leitura (Nm 21)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_seg_w2"> Salmo (Sl 77)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_seg_w2"> Evangelho (Jo 3)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Terça (15/09) - N. Sra. das Dores</strong><br>
+                    <strong style="color:var(--primary);">Terça (15/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_ter_w2"> 1ª Leitura (Hb 5)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_ter_w2"> Salmo (Sl 30)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_ter_w2"> Evangelho (Jo 19)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--cor-padre);">Quarta (16/09) - Santos Cornélio e Cipriano</strong><br>
+                    <strong style="color:var(--cor-padre);">Quarta (16/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_qua_w2"> 1ª Leitura (1Cor 12-13)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_qua_w2"> Salmo (Sl 32)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_qua_w2"> Evangelho (Lc 7)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Quinta (17/09) - 24ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Quinta (17/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_qui_w2"> 1ª Leitura (1Cor 15)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_qui_w2"> Salmo (Sl 117)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_qui_w2"> Evangelho (Lc 7)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--primary);">Sexta (18/09) - 24ª Semana</strong><br>
+                    <strong style="color:var(--primary);">Sexta (18/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_sex_w2"> 1ª Leitura (1Cor 15)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_sex_w2"> Salmo (Sl 16)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="ev_sex_w2"> Evangelho (Lc 8)</label>
                 </div>
                 <div style="background:#f8fafc; padding:8px; border:1px solid #cbd5e1; border-radius:4px;">
-                    <strong style="color:var(--cor-musica);">Fim de Semana (19 e 20/09) - 25º Domingo</strong><br>
+                    <strong style="color:var(--cor-musica);">Fim de Semana (19 e 20/09)</strong><br>
                     <label><input type="checkbox" class="reading-checkbox" value="1l_dom_w2"> 1ª Leitura (Is 55)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="sl_dom_w2"> Salmo (Sl 144)</label><br>
                     <label><input type="checkbox" class="reading-checkbox" value="2l_dom_w2"> 2ª Leitura (Fl 1)</label><br>
@@ -1508,7 +1383,7 @@
         </div>
     </div>
 
-    <!-- Modal Todas as Reflexões da Semana 2 (14 a 20/09) -->
+    <!-- 2. Modal Reflexões Semana 2 -->
     <div id="modal_todas_reflexoes" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1518,54 +1393,18 @@
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
                 </div>
             </div>
-            <div id="content_todas_reflexoes" style="font-size:0.92rem; line-height:1.55; text-align:justify; text-justify:inter-word;">
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--cor-padre);">Segunda-feira, 14/09/2026 — Festa da Exaltação da Santa Cruz (Vermelho)</strong><br>
-                    <em>Versículo-chave:</em> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)<br>
-                    <strong>Reflexão:</strong> Olhar para a Cruz não é contemplar a derrota ou o sofrimento pelo sofrimento, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação. Quando as cruzes do nosso dia a dia parecerem pesadas, lembremo-nos de que não estamos sós: Cristo elevou a nossa dor para nos dar a vitória.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor e esperança. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Terça-feira, 15/09/2026 — Nossa Senhora das Dores, Memória (Branco)</strong><br>
-                    <em>Versículo-chave:</em> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)<br>
-                    <strong>Reflexão:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de maior dor e incerteza. Ela não fugiu e nem se desesperou; guardou a fé no silêncio e na oração. Em Maria, Cristo nos entrega uma Mãe que compreende cada uma das nossas dores familiares e nos acolhe em seu colo maternal.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus nos dias difíceis e a nunca perder a esperança. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--cor-padre);">Quarta-feira, 16/09/2026 — Santos Cornélio e Cipriano, Mártires, Memória (Vermelho)</strong><br>
-                    <em>Versículo-chave:</em> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)<br>
-                    <strong>Reflexão:</strong> São Paulo nos recorda que podemos ter todos os dons e realizar grandes obras, mas se não tivermos caridade, nada seremos. A caridade é o amor paciente, prestativo e desinteressado. Hoje, os mártires Cornélio e Cipriano nos inspiram a dar testemunho de uma fé que se traduz em gestos concretos de perdão e amor fraterno.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor paciente e verdadeiro. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Quinta-feira, 17/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)<br>
-                    <strong>Reflexão:</strong> No Evangelho de hoje, a mulher acolhida por Jesus nos ensina que a verdadeira gratidão nasce do reconhecimento do perdão recebido. Quem se sabe profundamente amado e perdoado por Deus não julga os outros, mas transborda amor e acolhimento. Deus não olha para o nosso passado com condenação, mas para o nosso presente com misericórdia.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, obrigado por vosso perdão infinito. Que eu saiba acolher meus irmãos com a mesma compaixão que tendes comigo. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Sexta-feira, 18/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)<br>
-                    <strong>Reflexão:</strong> O alicerce inabalável da nossa vida cristã é a Ressurreição de Jesus. Não seguimos um líder morto ou uma filosofia bonita, mas o Cristo Vivo que venceu a morte e caminha ao nosso lado todos os dias. Essa certeza deve afastar de nós todo desânimo e tristeza: em Cristo, a última palavra é sempre a vida!<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa ressurreição no mundo. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--cor-musica);">Sábado, 19/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "A semente caída em terra boa são aqueles que ouvem a Palavra com coração nobre e generoso, conservam-na e dão fruto pela perseverança." (cf. Lc 8,15)<br>
-                    <strong>Reflexão:</strong> Na Paróquia e na família, Deus semeia generosamente a Sua Palavra todos os dias. Mas qual tem sido a resposta do nosso coração? Somos solo pedregoso, espinhoso ou terra boa? O segredo para dar frutos de paz e santidade não é a ausência de dificuldades, mas a perseverança na escuta e na oração.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Espírito Santo, prepara a terra do meu coração para que a Palavra de Deus crie raízes profundas e dê frutos de caridade. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px;">
-                    <strong style="color:var(--cor-musica);">Domingo, 20/09/2026 — 25º Domingo do Tempo Comum / Dízimo (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)<br>
-                    <strong>Reflexão:</strong> A lógica do Reino de Deus nos surpreende. O Senhor não nos mede por relógios ou produções, mas pela pura graça e amor. O Pai da família chama a todos para a Sua vinha e acolhe com a mesma generosidade tanto os da primeira quanto os da última hora. Que possamos nos alegrar com a bondade de Deus para com o próximo!<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor nosso Deus, libertai-nos de toda inveja e julgamento. Fazei-nos trabalhadores alegres e gratos na vossa vinha. Amém.</em>
-                </div>
+            <div id="content_todas_reflexoes" style="font-size:0.92rem; line-height:1.55; text-align:justify;">
+                <p><strong>Segunda-feira (14/09):</strong> "Deus amou tanto o mundo que deu o seu Filho unigênito" (Jo 3,16). Na Cruz encontramos o sinal definitivo do amor e da redenção.</p>
+                <p><strong>Terça-feira (15/09):</strong> Junto à cruz estava Maria. Ela nos ensina a permanecer firmes na fé mesmo diante da provação.</p>
+                <p><strong>Quarta-feira (16/09):</strong> A caridade é paciente e prestativa. O testemunho dos mártires nos convida ao compromisso com a verdade e o amor fraterno.</p>
+                <p><strong>Quinta-feira (17/09):</strong> A reconciliação nasce do reconhecimento do amor de Deus que acolhe e perdoa.</p>
+                <p><strong>Sexta-feira (18/09):</strong> Cristo ressuscitou e é a nossa esperança inabalável.</p>
+                <p><strong>Domingo (20/09):</strong> A gratuidade de Deus supera todo mérito humano. Ele nos convida com generosidade para a sua vinha.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal Todas as Reflexões da Semana 1 (07 a 13/09) -->
+    <!-- 3. Modal Reflexões Semana 1 -->
     <div id="modal_todas_reflexoes_w1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1575,48 +1414,18 @@
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
                 </div>
             </div>
-            <div id="content_todas_reflexoes_w1" style="font-size:0.92rem; line-height:1.55; text-align:justify; text-justify:inter-word;">
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Segunda-feira, 07/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)<br>
-                    <strong>Reflexão:</strong> Jesus nos ensina que a caridade e a vida estão sempre acima de formalismos vazios. Ele restaura a mão ressequida daquele homem diante dos críticos para demonstrar que nenhuma regra pode impedir o bem. Que nossas mãos também estejam sempre estendidas para abençoar, acolher e erguer quem precisa.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, dai-me um coração livre e corajoso para praticar o bem em todas as ocasiões da minha vida. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Terça-feira, 08/09/2026 — Natividade da Virgem Maria, Festa (Branco)</strong><br>
-                    <em>Versículo-chave:</em> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que significa: Deus conosco." (Mt 1,23)<br>
-                    <strong>Reflexão:</strong> O nascimento de Maria é a aurora que anuncia o Sol da Justiça, Cristo Nosso Senhor. Celebrar a natividade da Virgem Auxiliadora é renovar nossa confiança nos planos perfeitos de Deus, que prepara a história com ternura e fidelidade para nos cumular de bênçãos e salvação.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Ó Virgem Maria, no vosso nascimento nasceu para o mundo a esperança da Salvação; intercedei por nossas famílias hoje e sempre. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Quarta-feira, 09/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)<br>
-                    <strong>Reflexão:</strong> As bem-aventuranças invertem as prioridades do mundo. Ser bem-aventurado segundo Jesus é colocar a segurança e a alegria no próprio Deus, desapegando-se das vaidades passageiras que iludem o coração. Aquele que confia no Senhor nunca se sentirá vazio.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, esvaziai o meu coração do apego material e enchei-o com a vossa paz e esperança eterna. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Quinta-feira, 10/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Amai os vossos inimigos e fazei o bem aos que vos odeiam... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)<br>
-                    <strong>Reflexão:</strong> O chamado de Cristo é exigente e transformador: amar inclusive quem não nos compreende ou nos fere. Não se trata de fraqueza, mas da suprema força divina que quebra a espiral do rancor e faz brilhar no mundo a verdadeira luz dos filhos de Deus.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Pai celeste, concedei-me a graça de perdoar sem guardar mágoa e de retribuir toda ofensa com bênção e oração. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Sexta-feira, 11/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem para tirar o cisco do olho do teu irmão." (Lc 6,42)<br>
-                    <strong>Reflexão:</strong> O Senhor nos convida ao caminho da humildade e da sincera conversão pessoal antes de emitir qualquer juízo sobre os irmãos. Ao contemplarmos a Cruz entregue hoje aos nossos catequizandos, compreendemos que o discipulado autêntico exige mansidão, verdade e caridade sem fingimento.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, purificai o meu olhar de todo julgamento e fazei-me manso e humilde de coração como Vós. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px;">
-                    <strong style="color:var(--cor-musica);">Fim de Semana, 12 e 13/09/2026 — 24º Domingo do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)<br>
-                    <strong>Reflexão:</strong> O perdão é a medida do coração cristão. Fomos infinitamente perdoados por Deus pelo sacrifício de Cristo na Cruz; por isso, não podemos negar o perdão a quem convive conosco. Perdoar não é fraqueza, mas libertação: quem perdoa cura o próprio coração e experimenta a verdadeira paz do Evangelho.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Deus, perdoai as nossas faltas assim como nós perdoamos a quem nos tem ofendido. Inflamai em nossa comunidade a graça do perdão fraterno. Amém.</em>
-                </div>
+            <div id="content_todas_reflexoes_w1" style="font-size:0.92rem; line-height:1.55; text-align:justify;">
+                <p><strong>Segunda-feira (07/09):</strong> Cristo nos chama a praticar o bem e a promover a vida em qualquer circunstância.</p>
+                <p><strong>Terça-feira (08/09):</strong> No nascimento de Maria desponta a aurora da salvação para todo o gênero humano.</p>
+                <p><strong>Quarta-feira (09/09):</strong> As bem-aventuranças apontam o caminho da verdadeira alegria no Reino dos Céus.</p>
+                <p><strong>Quinta-feira (10/09):</strong> A misericórdia do Pai nos convida a amar sem distinção e sem reservas.</p>
+                <p><strong>Sexta-feira (11/09):</strong> A humildade e a autocrítica precedem a correção fraterna.</p>
+                <p><strong>Domingo (13/09):</strong> O perdão concedido por Deus deve transbordar em nosso perdão aos irmãos.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal Roteiro do Comentarista - Semana 2 (25º Domingo) -->
+    <!-- 4. Modal Roteiro Comentarista Semana 2 -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1626,111 +1435,24 @@
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
                 </div>
             </div>
-            
             <div class="script-block" id="content_roteiro_w2">
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">Preparação</span>
-                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço. Datashow projeta: <strong>“SILÊNCIO”</strong>.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto de meditação 5 minutos antes da celebração. Prolongar o canto de comunhão até o término da distribuição.</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITOS INICIAIS</h4>
-
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado.<br><br>
-                    <strong>SOMENTE PARA AS MISSAS COM TRANSMISSÃO:</strong> As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração.<br><br>
-                    Irmãos e irmãs, bem-vindos à celebração do 25º Domingo do Tempo Comum! Continuando nossa caminhada no Mês da Bíblia, acolhemos nossa comunidade e oferecemos esta Santa Missa na intenção de todos os dizimistas de nossa paróquia. Agradecemos a Deus por sua fidelidade e generosidade, que sustentam a vida e a evangelização da nossa Igreja. De pé, iniciemos cantando.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto de Entrada 🎵🎸</span>
+                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo! Sejam bem-vindos à celebração do 25º Domingo do Tempo Comum! Neste Mês da Bíblia, acolhemos nossa comunidade e rezamos de coração grato por todos os dizimistas de nossa paróquia. De pé, iniciemos cantando.</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Em nome do Pai e do Filho e do Espírito Santo. (Animador: Amém). A graça de nosso Senhor Jesus Cristo... (Animador: Bendito seja Deus que nos reuniu no amor de Cristo).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Ato Penitencial e Hino de Louvor (Glória) 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração da Coleta (Missal Romano, pág. 407). (Animador: Amém).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA DA PALAVRA</h4>
-
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">1ª Leitura</span>
-                    <span class="script-text">Is 55,6-9 (Lecionário I, pág. 327). Palavra do Senhor. (Animador: Graças a Deus).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Salmo Responsorial 🎵🎸 Sl 144(145) (R. O Senhor está perto da pessoa que o invoca!).</span>
+                    <span class="script-text">Em nome do Pai e do Filho e do Espírito Santo. Amém. A graça de nosso Senhor Jesus Cristo esteja convosco.</span>
                 </div>
                 <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">2ª Leitura</span>
-                    <span class="script-text">Fl 1,20c-24.27a (Lecionário I, pág. 328). Palavra do Senhor. (Animador: Graças a Deus).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Aclamação ao Evangelho 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Proclamação do Evangelho segundo Mateus (Mt 20,1-16a - Lecionário I, pág. 328). Palavra da Salvação. (Animador: Glória a vós, Senhor).</span>
-                </div>
-                <div class="script-row row-todos">
-                    <span class="script-tag tag-todos">Padre / Todos</span>
-                    <span class="script-text">Homilia, Profissão de Fé (Creio) e Oração dos Fiéis (conforme formulário do horário).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA EUCARÍSTICA</h4>
-
-                <div class="script-row row-animador">
-                    <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Você pode fazer a sua oferta através do QR Code fixado no banco à sua frente ou nas cestas dos corredores.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto das Oferendas 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração sobre as Oferendas (Missal, pág. 407). Prefácio dos Domingos IV (pág. 477). Oração Eucarística II (pág. 537).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
-
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre / Todos</span>
-                    <span class="script-text">Pai Nosso, Oração pela Paz e Cordeiro de Deus.</span>
-                </div>
-                <div class="script-row row-animador">
-                    <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto da Comunhão 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração depois da Comunhão (pág. 407). Avisos Paroquiais, Bênção Final e Despedida.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto Final 🎵🎸</span>
+                    <span class="script-tag tag-rubrica">Liturgia</span>
+                    <span class="script-text">Seguem-se os Ritos Iniciais, Liturgia da Palavra, Oração dos Fiéis e Liturgia Eucarística conforme o Missal Romano pág. 407.</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Roteiro do Comentarista - Semana 1 (24º Domingo) -->
+    <!-- 5. Modal Roteiro Comentarista Semana 1 -->
     <div id="modal_roteiro_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1740,255 +1462,100 @@
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
                 </div>
             </div>
-            
             <div class="script-block" id="content_roteiro_w1">
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">Preparação</span>
-                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço. Datashow projeta: <strong>“SILÊNCIO”</strong>.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto de meditação 5 minutos antes da celebração. Prolongar o canto de comunhão até o término da distribuição.</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITOS INICIAIS</h4>
-
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado.<br><br>
-                    <strong>SOMENTE PARA AS MISSAS COM TRANSMISSÃO:</strong> As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nas redes sociais e as que trazemos no coração.<br><br>
-                    Irmãos e irmãs, bem-vindos à nossa celebração do 24º Domingo do Tempo Comum! Caminhando sob as bênçãos do Mês da Bíblia, somos acolhidos como comunidade de fé para nos deixar transformar pela Palavra viva de Deus. De pé, iniciemos cantando.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto de Entrada 🎵🎸</span>
+                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo! Bem-vindos à celebração do 24º Domingo do Tempo Comum! Neste Mês da Bíblia, acolhemos a Palavra que nos perdoa e nos transforma. De pé, iniciemos cantando.</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Em nome do Pai e do Filho e do Espírito Santo. (Animador: Amém). A graça de nosso Senhor Jesus Cristo... (Animador: Bendito seja Deus que nos reuniu no amor de Cristo).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Ato Penitencial e Hino de Louvor (Glória) 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração da Coleta (Missal, pág. 406). (Animador: Amém).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA DA PALAVRA</h4>
-
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">1ª Leitura</span>
-                    <span class="script-text">Eclo 27,33-28,9 (Lecionário I, pág. 323). Palavra do Senhor. (Animador: Graças a Deus).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Salmo Responsorial 🎵🎸 Sl 102(103) (R. O Senhor é bondoso, compassivo e carinhoso).</span>
-                </div>
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">2ª Leitura</span>
-                    <span class="script-text">Rm 14,7-9 (Lecionário I, pág. 324). Palavra do Senhor. (Animador: Graças a Deus).</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Aclamação ao Evangelho 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Proclamação do Evangelho segundo Mateus (Mt 18,21-35 - Lecionário I, pág. 325). Palavra da Salvação. (Animador: Glória a vós, Senhor).</span>
-                </div>
-                <div class="script-row row-todos">
-                    <span class="script-tag tag-todos">Padre / Todos</span>
-                    <span class="script-text">Homilia, Profissão de Fé (Creio) e Oração dos Fiéis (conforme formulário do horário).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA EUCARÍSTICA</h4>
-
-                <div class="script-row row-animador">
-                    <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Você pode fazer sua oferta pelo QR Code no banco ou nas cestas dos corredores.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto das Oferendas 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração sobre as Oferendas (Missal, pág. 406). Prefácio dos Domingos II (pág. 475). Oração Eucarística II (pág. 537).</span>
-                </div>
-
-                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
-
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre / Todos</span>
-                    <span class="script-text">Pai Nosso, Oração pela Paz e Cordeiro de Deus.</span>
-                </div>
-                <div class="script-row row-animador">
-                    <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto da Comunhão 🎵🎸</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração depois da Comunhão (pág. 406). Avisos Paroquiais, Bênção Final e Despedida.</span>
-                </div>
-                <div class="script-row row-musica">
-                    <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto Final 🎵🎸</span>
+                    <span class="script-text">Em nome do Pai e do Filho e do Espírito Santo. Amém.</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Preces dos Fiéis - Semana 2 (25º Domingo) -->
+    <!-- 6. Modal Preces Semana 2 -->
     <div id="modal_preces_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 25º Domingo do Tempo Comum (19 e 20/09/2026)</h3>
+                <h3 class="modal-title">PRECES DOS FIÉIS — 25º Domingo do Tempo Comum</h3>
                 <div class="modal-actions">
                     <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir Preces</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_w2')">&times;</button>
                 </div>
             </div>
-            
-            <div>
-                <h4 style="color:#1e40af; margin-bottom: 4px; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">SÁBADO — 18h30</h4>
-                <div class="script-block" id="preces_sabado_1830_w2">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas famílias e pelos jovens. Por Cristo, Nosso Senhor. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            <div id="preces_sabado_1830_w2" style="margin-bottom:12px;">
+                <h4 style="color:#1e40af; margin-bottom:4px;">SÁBADO — 18h30</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor. <strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias: para que compreendam o Dízimo como gesto fraterno de gratidão e fidelidade, rezemos ao Senhor. <strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
                 </div>
-
-                <h4 style="color:#1e40af; margin: 16px 0 4px 0; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">DOMINGO — 09h00 e 11h00</h4>
-                <div class="script-block" id="preces_domingo_manha_w2">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa paróquia e suas famílias: que o Senhor recompense sua generosidade e sustente seus lares na paz e na fartura, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Inflamai em nós um coração sempre acolhedor e missionário. Por Cristo, Nosso Senhor. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            </div>
+            <div id="preces_domingo_manha_w2" style="margin-bottom:12px;">
+                <h4 style="color:#1e40af; margin-bottom:4px;">DOMINGO — 09h00 e 11h00</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia em que celebramos a ressurreição, rezemos ao Senhor. <strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas e suas famílias, rezemos ao Senhor. <strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
                 </div>
-
-                <h4 style="color:#1e40af; margin: 16px 0 4px 0; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">DOMINGO — 18h30</h4>
-                <div class="script-block" id="preces_domingo_1830_w2">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Assisti com vossa contínua presença o Santo Padre o Papa, os bispos e ministros de toda a Igreja, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Por todos os que ofertam seu dízimo e serviço com amor e fidelidade à comunidade de Nossa Senhora Auxiliadora, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            </div>
+            <div id="preces_domingo_1830_w2">
+                <h4 style="color:#1e40af; margin-bottom:4px;">DOMINGO — 18h30</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, nosso Salvador, fazei de vossa Igreja sinal de concórdia e paz para todos os povos, rezemos ao Senhor. <strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Preces dos Fiéis - Semana 1 (24º Domingo) -->
+    <!-- 7. Modal Preces Semana 1 -->
     <div id="modal_preces_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 24º Domingo do Tempo Comum (12 e 13/09/2026)</h3>
+                <h3 class="modal-title">PRECES DOS FIÉIS — 24º Domingo do Tempo Comum</h3>
                 <div class="modal-actions">
                     <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir Preces</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_domingo')">&times;</button>
                 </div>
             </div>
-            <div>
-                <h4 style="color:#1e40af; margin-bottom: 4px; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">SÁBADO — 18h30</h4>
-                <div class="script-block" id="preces_sabado_1830_w1">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel e primogênito dentre os mortos, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aqueles que escolhestes como mensageiros do evangelho, tornai-os fiéis servidores da comunidade, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos edificados com fé e oração. Por Cristo, Nosso Senhor. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            <div id="preces_sabado_1830_w1" style="margin-bottom:12px;">
+                <h4 style="color:#1e40af; margin-bottom:4px;">SÁBADO — 18h30</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel, purificai-nos de todo pecado e fazei-nos fiéis no vosso seguimento, rezemos ao Senhor. <strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
                 </div>
-
-                <h4 style="color:#1e40af; margin: 16px 0 4px 0; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">DOMINGO — 09h00 e 11h00</h4>
-                <div class="script-block" id="preces_domingo_manha_w1">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, que nos ama e sabe de nossas necessidades, abramos o coração com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Nós vos bendizemos porque viestes à nossa procura para conhecermos vossa verdade e vos servirmos, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus misericordioso, não nos deixeis jamais afastar do caminho do vosso amor e da reconciliação fraterna, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos edificados com fé e amor. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            </div>
+            <div id="preces_domingo_manha_w1" style="margin-bottom:12px;">
+                <h4 style="color:#1e40af; margin-bottom:4px;">DOMINGO — 09h00 e 11h00</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus de infinita bondade, abri para nós as portas da misericórdia, rezemos ao Senhor. <strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
                 </div>
-
-                <h4 style="color:#1e40af; margin: 16px 0 4px 0; border-bottom: 1px solid #cbd5e1; padding-bottom: 2px;">DOMINGO — 18h30</h4>
-                <div class="script-block" id="preces_domingo_1830_w1">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, confirmai o testemunho de vossa Igreja entre os povos, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Fazei-nos dóceis à vossa Palavra, para vivermos sempre de acordo com a verdade da nossa fé, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top: 4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos edificados com fé e trabalho fraterno. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Assembleia</span><span class="script-text">Amém.</span></div>
+            </div>
+            <div id="preces_domingo_1830_w1">
+                <h4 style="color:#1e40af; margin-bottom:4px;">DOMINGO — 18h30</h4>
+                <div class="script-block">
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, confirmai o testemunho do vosso Evangelho em nossa paróquia, rezemos ao Senhor. <strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Rito da Cruz -->
+    <!-- 8. Modal Rito da Cruz -->
     <div id="modal_rito_cruz" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese (Sexta-feira, 11/09/2026)</h3>
+                <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese</h3>
                 <div class="modal-actions">
                     <button type="button" class="action-btn" onclick="printRitoCruz()">🖨️ Imprimir Rito</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_rito_cruz')">&times;</button>
                 </div>
             </div>
             <div class="script-block" id="content_rito_cruz">
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">Liturgia</span>
-                    <span class="script-text">Rito pós-comunhão, antes da Bênção Final.</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Motiva a entrada das cruzes em uma cesta, que será trazida por um casal pelo corredor central, e profere a bênção das cruzes.</span>
-                </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Queridos catequizandos, vocês hoje receberão esta cruz, sinal do amor de Cristo e da nossa fé. Aprendam a amá-la de todo coração. (Catequizandos: Amém).</span>
-                </div>
-                <div class="script-row row-rubrica">
-                    <span class="script-tag tag-rubrica">Padre</span>
-                    <span class="script-text">Entrega da cruz para cada catequizando acompanhada da oração conclusiva de envio.</span>
-                </div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Rito</span><span class="script-text">Bênção e entrega solene das cruzes aos catequizandos da comunidade após a Comunhão Eucarística.</span></div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Geral para Exibição Instantânea de Qualquer Leitura -->
+    <!-- 9. Modal Leitura Rápida Individual -->
     <div id="generalModal" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -2009,346 +1576,487 @@
         <div class="author-box">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- SCRIPT DEFINITIVO COM TODAS AS 34 LEITURAS E FUNÇÕES -->
+    <!-- SCRIPT DEFINITIVO -->
     <script>
         let currentWeek = 2;
 
         const readingsData = {
-            /* SEMANA 1: 07 A 13 DE SETEMBRO DE 2026 */
+            /* SEMANA 1: 07 a 13/09/2026 */
             '1l_seg': {
                 title: '1ª Leitura — 1 Coríntios 5,1-8 (Lecionário II, pág. 963)',
-                text: `Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos:\nOuve-se dizer, com frequência, que há entre vós imoralidade, e imoralidade tal que não se encontra nem mesmo entre os pagãos, a ponto de alguém conviver com a mulher do próprio pai! E vós estais inchados de orgulho, em vez de ficardes cheios de tristeza, para que fosse expulso do vosso meio aquele que cometeu tal ação!\nEu, da minha parte, embora ausente de corpo, mas presente em espírito, já julguei, como se estivesse presente, aquele que praticou tal infâmia. Em nome do Senhor Jesus, reunidos vós e o meu espírito, com o poder do Senhor nosso, Jesus Cristo, seja esse homem entregue a Satanás para a ruína da carne, a fim de que o espírito seja salvo no Dia do Senhor.\nLançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos, pois, a festa, não com o velho fermento, nem com o fermento da maldade e da perversidade, mas com os pães ázimos da sinceridade e da verdade.\nPalavra do Senhor.\n\nR. Graças a Deus.`
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Ouve-se dizer que há entre vós imoralidade grave. Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_seg': {
                 title: 'Salmo Responsorial — Sl 5,5-6.7.12 (Lecionário II, pág. 964)',
-                text: `R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, *\nnão pode o mal morar convosco, ó Senhor;\nnem os ímpios poderão permanecer *\ndiante dos vossos olhos que tudo veem. R.\n\nDetestais a todos que praticam a injustiça, *\nexterminais os mentirosos e perversos;\no homem sanguinário e traidor *\no Senhor abomina e rejeita. R.\n\nMas exultem os que em vós têm seu refúgio, *\nfaçam festa e cantem hinos para sempre;\nprotegei-os e que em vós se alegrem todos *\nos que amam o vosso santo nome. R.`
+                text: 'R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.'
             },
             'ev_seg': {
                 title: 'Evangelho — Lucas 6,6-11 (Lecionário II, pág. 965)',
-                text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNum outro sábado, Jesus entrou na sinagoga e começou a ensinar. Estava ali um homem cuja mão direita era seca. Os mestres da Lei e os fariseus estavam espreitando se Jesus iria curar em dia de sábado, para terem de que o acusar.\nMas Jesus conhecia os pensamentos deles e disse ao homem que tinha a mão seca: "Levanta-te e fica de pé aqui no meio!" Ele levantou-se e ficou de pé. Então Jesus disse a eles: "Eu vos pergunto: O que é permitido fazer no sábado: o bem ou o mal? Salvar uma vida ou destruí-la?"\nE, olhando para todos ao redor, disse ao homem: "Estende a tua mão!" Ele a estendeu, e a mão ficou curada. Mas eles ficaram cheios de furor e começaram a discutir entre si sobre o que poderiam fazer contra Jesus.\nPalavra da Salvação.\n\nR. Glória a vós, Senhor.`
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou um homem cuja mão direita era seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E curou o enfermo com autoridade divina.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_ter': {
                 title: '1ª Leitura — Miquéias 5,1-4a (Lecionário III, pág. 165)',
-                text: `Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor:\n"Tu, Belém de Éfrata, pequenina entre os mil povoados de Judá, de ti há de sair aquele que dominará em Israel; sua origem vem de tempos remotos, desde os dias da eternidade.\nDeus deixará seu povo ao abandono, até ao tempo em que uma mãe der à luz; e o resto de seus irmãos se voltará para os filhos de Israel.\nEle não recuará, apascentará com a força do Senhor e com a majestade do nome do Senhor seu Deus; os homens viverão em pazO motivo de absolutamente nada responder ao clique é técnico e direto: a resposta anterior atingiu o limite de tamanho e foi cortada antes do fim, deixando o código sem o fechamento do JavaScript (`<script>`). Sem esse bloco final completo no arquivo, o navegador cancela todas as funções de clique, modais e impressão de uma só vez.
+                text: 'Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_ter': {
+                title: 'Salmo Responsorial — Sl 70(71) (Lecionário III, pág. 166)',
+                text: 'R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.'
+            },
+            'ev_ter': {
+                title: 'Evangelho — Mateus 1,1-16.18-23 (Lecionário III, pág. 167)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qua': {
+                title: '1ª Leitura — 1 Coríntios 7,25-31 (Lecionário II, pág. 966)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qua': {
+                title: 'Salmo Responsorial — Sl 44(45) (Lecionário II, pág. 967)',
+                text: 'R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.'
+            },
+            'ev_qua': {
+                title: 'Evangelho — Lucas 6,20-26 (Lecionário II, pág. 968)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qui': {
+                title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13 (Lecionário II, pág. 970)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qui': {
+                title: 'Salmo Responsorial — Sl 138(139) (Lecionário II, pág. 971)',
+                text: 'R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.'
+            },
+            'ev_qui': {
+                title: 'Evangelho — Lucas 6,27-38 (Lecionário II, pág. 972)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_sex': {
+                title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27 (Lecionário II, pág. 974)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_sex': {
+                title: 'Salmo Responsorial — Sl 83(84) (Lecionário II, pág. 975)',
+                text: 'R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.'
+            },
+            'ev_sex': {
+                title: 'Evangelho — Lucas 6,39-42 (Lecionário II, pág. 976)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_dom': {
+                title: '1ª Leitura — Eclesiástico 27,33-28,9 (Lecionário I, pág. 323)',
+                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo e quando orares teus pecados serão perdoados. Lembra-te do teu fim e deixa de odiar.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_dom': {
+                title: 'Salmo Responsorial — Sl 102(103) (Lecionário I, pág. 323)',
+                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! R.'
+            },
+            '2l_dom': {
+                title: '2ª Leitura — Romanos 14,7-9 (Lecionário I, pág. 324)',
+                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'ev_dom': {
+                title: 'Evangelho — Mateus 18,21-35 (Lecionário I, pág. 325)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o irmão? Até sete?" Jesus respondeu: "Não até sete, mas até setenta vezes sete!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
 
-Para resolver de forma definitiva, o código abaixo foi totalmente auditado, com todas as funções interligadas, todos os modais presentes e o banco de dados bíblico completo.
+            /* SEMANA 2: 14 a 20/09/2026 */
+            '1l_seg_w2': {
+                title: '1ª Leitura — Números 21,4b-9 (Lecionário III, pág. 174)',
+                text: 'Leitura do Livro dos Números.\n\nO povo se impacientou no deserto e pecou. O Senhor mandou serpentes venenosas. Moisés intercedeu e Deus ordenou: "Faze uma serpente de bronze e ergue-a sobre uma haste; quem olhar para ela viverá". E todo mordido que olhava, ficava curado.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_seg_w2': {
+                title: 'Salmo Responsorial — Sl 77(78),1-2.34-38 (Lecionário III, pág. 175)',
+                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei! O Senhor, compassivo e clemente, perdoava o pecado e não os destruía. R.'
+            },
+            'ev_seg_w2': {
+                title: 'Evangelho — João 3,13-17 (Lecionário III, pág. 176)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nDisse Jesus: "Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todo o que nele crer tenha a vida eterna. Pois Deus amou tanto o mundo que entregou seu Filho único".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_ter_w2': {
+                title: '1ª Leitura — Hebreus 5,7-9 (Lecionário III, pág. 178)',
+                text: 'Leitura da Carta aos Hebreus.\n\nCristo dirigiu preces e lágrimas àquele que podia salvá-lo e tornou-se causa de salvação eterna para todos os que lhe obedecem.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_ter_w2': {
+                title: 'Salmo Responsorial — Sl 30(31),2-6.15-16.20 (R. 17b) (Lecionário III, pág. 179)',
+                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nEm vós me abrigo, ó Senhor; em vossas mãos entrego o meu espírito. R.'
+            },
+            'ev_ter_w2': {
+                title: 'Evangelho — João 19,25-27 (Lecionário III, pág. 181)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nPerto da cruz de Jesus estava sua mãe. Vendo Maria e o discípulo amado, Jesus disse: "Mulher, eis aí o teu filho". Depois disse ao discípulo: "Eis aí a tua mãe". E o discípulo a acolheu consigo.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qua_w2': {
+                title: '1ª Leitura — 1 Coríntios 12,31-13,13 (Lecionário II, pág. 981)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAinda que eu fale a língua dos homens e dos anjos, se não tiver caridade, nada sou. Agora permanecem a fé, a esperança e o amor; a maior delas é o amor.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qua_w2': {
+                title: 'Salmo Responsorial — Sl 32(33),2-5.12.22 (Lecionário II, pág. 982)',
+                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da harpa; reta é a sua palavra e sua bondade enche a terra. R.'
+            },
+            'ev_qua_w2': {
+                title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 983)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse: "A quem compararei esta geração? Tocamos flauta e não dançastes; entoamos lamentações e não chorastes. Mas a sabedoria de Deus é justificada por todos os seus filhos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_qui_w2': {
+                title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 985)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nTransmiti-vos o que recebi: Cristo morreu por nossos pecados, foi sepultado e ressuscitou ao terceiro dia, segundo as Escrituras.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_qui_w2': {
+                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (R. 1) (Lecionário II, pág. 986)',
+                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nA mão direita do Senhor fez maravilhas, ela me levantou; não hei de morrer, mas viverei! R.'
+            },
+            'ev_qui_w2': {
+                title: 'Evangelho — Lucas 7,36-50 (Lecionário II, pág. 987)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nA mulher pecadora ungiu os pés de Jesus na casa do fariseu. Jesus disse: "Muitos pecados lhe são perdoados porque muito amou. Tua fé te salvou; vai em paz".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_sex_w2': {
+                title: '1ª Leitura — 1 Coríntios 15,12-20 (Lecionário II, pág. 989)',
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nSe Cristo não ressuscitou, vã é a nossa fé. Mas Cristo ressuscitou dentre os mortos como primícias de todos nós!\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_sex_w2': {
+                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (R. 15b) (Lecionário II, pág. 990)',
+                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nInclinai vosso ouvido e escutai a minha prece; guardai-me à sombra de vossas asas. R.'
+            },
+            'ev_sex_w2': {
+                title: 'Evangelho — Lucas 8,1-3 (Lecionário II, pág. 991)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus andava por cidades e aldeias pregando o Evangelho, acompanhado pelos Doze e por santas mulheres que o ajudavam com seus bens.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            },
+            '1l_dom_w2': {
+                title: '1ª Leitura — Isaías 55,6-9 (Lecionário I, pág. 327)',
+                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor enquanto se pode achar. Meus pensamentos não são como os vossos, e os meus caminhos são infinitamente mais altos que os vossos.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'sl_dom_w2': {
+                title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18 (R. 18a) (Lecionário I, pág. 327)',
+                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nMisericordioso e compassivo é o Senhor; sua ternura abraça toda criatura. R.'
+            },
+            '2l_dom_w2': {
+                title: '2ª Leitura — Filipenses 1,20c-24.27a (Lecionário I, pág. 328)',
+                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nPara mim o viver é Cristo e o morrer é lucro. Vivei sempre de maneira digna do Evangelho de Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
+            },
+            'ev_dom_w2': {
+                title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nParábola dos trabalhadores da vinha: "Acaso tens inveja porque sou bom? Assim os últimos serão os primeiros e os primeiros serão os últimos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+            }
+        };
 
----
+        function showWeek(w) {
+            currentWeek = w;
+            const w1 = document.getElementById('semana1-container');
+            const w2 = document.getElementById('semana2-container');
+            const b1 = document.getElementById('btn-tab-w1');
+            const b2 = document.getElementById('btn-tab-w2');
+            const sub = document.getElementById('header-subtitle');
+            const bannerText = document.getElementById('active-week-text');
 
-### Código Completo e Corrigido (`index.html`)
-
-Substitua todo o conteúdo do arquivo **`index.html`** no GitHub por este bloco:
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
-
-    <!-- Metatags e Ícones Universais (PWA / Android / iOS / Desktop) -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="icone.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Liturgia NSA">
-    <meta name="theme-color" content="#1a365d">
-
-    <style>
-        :root {
-            --primary: #1a365d;
-            --primary-light: #2b5282;
-            --secondary: #8c6414;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --border: #cbd5e1;
-            /* Cores dos Ministérios */
-            --cor-animador: #1e40af;
-            --bg-animador: #eff6ff;
-            --cor-padre: #991b1b;
-            --bg-padre: #fef2f2;
-            --cor-musica: #166534;
-            --bg-musica: #f0fdf4;
-            --cor-todos: #b45309;
-            --bg-todos: #fffbeb;
-            --cor-rubrica: #475569;
-            --bg-rubrica: #f8fafc;
-        }
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            font-size: 14px;
-            line-height: 1.45;
-            -webkit-text-size-adjust: 100%;
-        }
-        header {
-            background: linear-gradient(135deg, #ffffff, #f1f5f9);
-            color: var(--primary);
-            text-align: center;
-            padding: 1.2rem 1rem 0.8rem;
-            border-bottom: 2px solid var(--border);
-        }
-        .header-logo {
-            max-width: 250px;
-            height: auto;
-            margin-bottom: 6px;
-        }
-        header h1 { margin: 0; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--primary); }
-        header p { margin: 0.2rem 0 0; font-size: 0.9rem; color: var(--secondary); font-weight: 600; }
-
-        /* Barra de Seleção de Semanas com Alto Contraste */
-        .week-selector-bar {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            background: #cbd5e1;
-            padding: 0.75rem 0.6rem;
-            border-bottom: 2px solid #94a3b8;
-            flex-wrap: wrap;
-        }
-        .week-tab-btn {
-            background: #ffffff;
-            border: 2px solid #64748b;
-            color: #334155;
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding: 0.65rem 1.2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            width: 100%;
-            max-width: 520px;
-            text-align: center;
-        }
-        .week-tab-btn:hover { background: #f8fafc; }
-        .week-tab-btn.active {
-            background: var(--primary) !important;
-            border: 3px solid #d4af37 !important;
-            color: #ffffff !important;
-            box-shadow: 0 4px 14px rgba(26, 54, 93, 0.35);
-            font-weight: 800;
-        }
-
-        /* Faixa de Confirmação Visual */
-        .active-week-banner {
-            background: #fefce8;
-            border: 1.5px solid #ca8a04;
-            color: #854d0e;
-            font-size: 0.92rem;
-            font-weight: 700;
-            text-align: center;
-            padding: 0.6rem 0.8rem;
-            border-radius: 6px;
-            margin: 0.8rem auto 0.4rem;
-            max-width: 1100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .toolbar {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            padding: 0.7rem;
-            background: #e2e8f0;
-            border-bottom: 1px solid var(--border);
-            flex-wrap: wrap;
-        }
-        .action-btn {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            touch-action: manipulation;
-        }
-        .action-btn:hover { background-color: var(--primary-light); }
-        .action-btn.secondary { background-color: var(--secondary); }
-        .action-btn.secondary:hover { background-color: #6d4c0c; }
-        .action-btn.accent { background-color: #047857; }
-        .action-btn.accent:hover { background-color: #065f46; }
-
-        .container {
-            max-width: 1100px;
-            margin: 1rem auto;
-            padding: 0 0.8rem;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-            margin-bottom: 1.5rem;
-            padding: 1.2rem;
-            border-left: 5px solid var(--secondary);
-            page-break-inside: avoid;
-        }
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1.5px solid var(--border);
-            padding-bottom: 0.4rem;
-            margin-bottom: 0.6rem;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-        .card-header h2 { margin: 0; font-size: 1.15rem; color: var(--primary); }
-
-        .color-badge {
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .badge-verde { background-color: #1e6b37; color: white; }
-        .badge-branco { background-color: #ffffff; color: #1e293b; border: 1px solid #94a3b8; }
-        .badge-vermelho { background-color: #991b1b; color: white; }
-
-        .cnbb-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f1f5f9;
-            border: 1px solid #cbd5e1;
-            border-radius: 4px;
-            padding: 0.5rem 0.8rem;
-            margin-bottom: 0.7rem;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-        .cnbb-box span { font-weight: 600; font-size: 0.82rem; color: #334155; }
-        .cnbb-link {
-            font-size: 0.8rem;
-            color: #1d4ed8;
-            text-decoration: underline;
-            font-weight: 600;
+            if (w === 1) {
+                w1.style.display = 'block';
+                w2.style.display = 'none';
+                b1.classList.add('active');
+                b2.classList.remove('active');
+                b1.innerHTML = '✅ VISUALIZANDO: 07 a 13 de Setembro (24º Dom)';
+                b2.innerHTML = '👉 Toque para ver: 14 a 20 de Setembro (25º Dom)';
+                sub.innerText = 'Programação Litúrgica e Roteiro Completo | 07 a 13 de Setembro de 2026';
+                if (bannerText) bannerText.innerText = 'EXIBINDO NA TELA: Semana de 07 a 13 de Setembro (24º Domingo do Tempo Comum)';
+            } else {
+                w1.style.display = 'none';
+                w2.style.display = 'block';
+                b2.classList.add('active');
+                b1.classList.remove('active');
+                b2.innerHTML = '✅ VISUALIZANDO: 14 a 20 de Setembro (25º Dom)';
+                b1.innerHTML = '👉 Toque para ver: 07 a 13 de Setembro (24º Dom)';
+                sub.innerText = 'Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026';
+                if (bannerText) bannerText.innerText = 'EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)';
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        .presidency-box {
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-left: 3px solid #2563eb;
-            border-radius: 4px;
-            padding: 0.6rem 0.8rem;
-            margin-bottom: 0.8rem;
-        }
-        .presidency-title {
-            font-weight: 700;
-            color: #1e40af;
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            margin-bottom: 0.2rem;
+        function openReading(key) {
+            const data = readingsData[key];
+            if (data) {
+                document.getElementById('modalTitle').innerText = data.title;
+                document.getElementById('modalBody').innerText = data.text;
+                openModal('generalModal');
+            }
         }
 
-        .note-gloria-box {
-            background-color: #fef2f2;
-            border: 1px solid #fca5a5;
-            border-left: 4px solid #b91c1c;
-            border-radius: 4px;
-            padding: 0.55rem 0.8rem;
-            margin-bottom: 0.8rem;
-            font-size: 0.85rem;
-            color: #7f1d1d;
-            text-align: justify;
-            text-justify: inter-word;
+        function openModal(id) {
+            const m = document.getElementById(id);
+            if (m) {
+                m.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
         }
 
-        details.reflection-box {
-            background-color: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            border-left: 4px solid #16a34a;
-            border-radius: 5px;
-            padding: 0.5rem 0.8rem;
-            margin-bottom: 0.9rem;
-        }
-        details.reflection-box summary {
-            font-weight: 700;
-            color: #166534;
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.86rem;
-        }
-        details.reflection-box[open] summary {
-            margin-bottom: 0.6rem;
-            border-bottom: 1px dashed #86efac;
-            padding-bottom: 0.4rem;
-        }
-        .reflection-content {
-            font-size: 0.88rem;
-            line-height: 1.5;
-            color: #1e293b;
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        .reflection-verse {
-            font-style: italic;
-            background: #ffffff;
-            border-left: 3px solid #16a34a;
-            padding: 4px 8px;
-            margin: 4px 0 8px 0;
-            border-radius: 0 4px 4px 0;
-            color: #14532d;
-        }
-        .reflection-prayer {
-            font-style: italic;
-            background: #ffffff;
-            border-left: 3px solid #0284c7;
-            padding: 4px 8px;
-            margin-top: 6px;
-            border-radius: 0 4px 4px 0;
-            color: #0369a1;
+        function closeModal(id) {
+            const m = document.getElementById(id);
+            if (m) {
+                m.style.display = 'none';
+                document.body.style.overflow = '';
+            }
         }
 
-        .tables-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.8rem;
-            margin-bottom: 0.8rem;
-        }
-        @media (max-width: 768px) {
-            .tables-grid { grid-template-columns: 1fr; }
+        window.onclick = function(e) {
+            if (e.target && e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        };
+
+        function selectAllReadings(check) {
+            document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check);
         }
 
-        table.liturgy-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.84rem;
-            background: #fff;
+        function openActiveReflexoesModal() {
+            if (currentWeek === 2) {
+                openModal('modal_todas_reflexoes');
+            } else {
+                openModal('modal_todas_reflexoes_w1');
+            }
         }
-        table.liturgy-table th, table.liturgy-table td {
-            border: 1px solid var(--border);
-            padding: 0.45rem 0.55rem;
-            text-align: left;
+
+        /* FUNÇÃO UNIVERSAL DE IMPRESSÃO */
+        function runPrintMount(htmlContent) {
+            // Fecha qualquer modal aberto e destrava o overflow da tela
+            document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+            document.body.style.overflow = 'visible';
+
+            const mount = document.getElementById('print-mount');
+            mount.innerHTML = htmlContent;
+            document.body.classList.add('printing-active');
+
+            window.onafterprint = function() {
+                document.body.classList.remove('printing-active');
+                mount.innerHTML = '';
+                document.body.style.overflow = '';
+            };
+
+            setTimeout(() => {
+                window.print();
+            }, 250);
         }
-        table.liturgy-table th {
-            background-color: #f8fafc;
-            color: var(--primary);
-            font-weight: 700;
-            font-size: 0.75rem;
-            text-transform: uppercase;
+
+        function printProgramacaoGeral() {
+            const isW2 = (currentWeek === 2);
+            const containerId = isW2 ? 'semana2-container' : 'semana1-container';
+            const weekTitle = isW2 
+                ? "Semana de 14 a 20 de Setembro de 2026 — 25º Domingo do Tempo Comum" 
+                : "Semana de 07 a 13 de Setembro de 2026 — 24º Domingo do Tempo Comum";
+            
+            const content = document.getElementById(containerId).innerHTML;
+            const printHTML = `
+                <div style="padding: 0.2cm 0.4cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Programação Litúrgica Oficial</h3>
+                        <div class="print-period-badge">${weekTitle}</div>
+                    </div>
+                    <div class="print-general-content">${content}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
         }
-        .table-caption {
-            font-weight: 700
+
+        function printActiveRoteiro() {
+            if (currentWeek === 2) {
+                printRoteiroW2();
+            } else {
+                printRoteiroW1();
+            }
+        }
+
+        function printActivePreces() {
+            if (currentWeek === 2) {
+                printPrecesW2();
+            } else {
+                printPrecesW1();
+            }
+        }
+
+        function printRoteiroW2() {
+            const content = document.getElementById('content_roteiro_w2').innerHTML;
+            const printHTML = `
+                <div style="padding: 0.8cm 0.6cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Roteiro Litúrgico do Comentarista — 25º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="script-block">${content}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printRoteiroW1() {
+            const content = document.getElementById('content_roteiro_w1').innerHTML;
+            const printHTML = `
+                <div style="padding: 0.8cm 0.6cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Roteiro Litúrgico do Comentarista — 24º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="script-block">${content}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printPrecesW2() {
+            const sabado = document.getElementById('preces_sabado_1830_w2').innerHTML;
+            const domingoManha = document.getElementById('preces_domingo_manha_w2').innerHTML;
+            const domingoNoite = document.getElementById('preces_domingo_1830_w2').innerHTML;
+
+            const printHTML = `
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">SÁBADO — 18h30</div>
+                    <div class="script-block">${sabado}</div>
+                </div>
+
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">DOMINGO — 09h00 e 11h00</div>
+                    <div class="script-block">${domingoManha}</div>
+                </div>
+
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">DOMINGO — 18h30</div>
+                    <div class="script-block">${domingoNoite}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printPrecesW1() {
+            const sabado = document.getElementById('preces_sabado_1830_w1').innerHTML;
+            const domingoManha = document.getElementById('preces_domingo_manha_w1').innerHTML;
+            const domingoNoite = document.getElementById('preces_domingo_1830_w1').innerHTML;
+
+            const printHTML = `
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">SÁBADO — 18h30</div>
+                    <div class="script-block">${sabado}</div>
+                </div>
+
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">DOMINGO — 09h00 e 11h00</div>
+                    <div class="script-block">${domingoManha}</div>
+                </div>
+
+                <div class="preces-single-page">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
+                    </div>
+                    <div class="time-heading">DOMINGO — 18h30</div>
+                    <div class="script-block">${domingoNoite}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printRitoCruz() {
+            const content = document.getElementById('content_rito_cruz').innerHTML;
+            const printHTML = `
+                <div style="padding: 0.8cm 0.6cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Rito de Entrega da Cruz — Catequese</h3>
+                    </div>
+                    <div class="script-block">${content}</div>
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printTodasReflexoesW2() {
+            const content = document.getElementById('content_todas_reflexoes').innerHTML;
+            const printHTML = `
+                <div style="padding: 1cm 0.8cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Reflexões Litúrgicas Diárias — 14 a 20 de Setembro de 2026</h3>
+                    </div>
+                    ${content}
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printTodasReflexoesW1() {
+            const content = document.getElementById('content_todas_reflexoes_w1').innerHTML;
+            const printHTML = `
+                <div style="padding: 1cm 0.8cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Reflexões Litúrgicas Diárias — 07 a 13 de Setembro de 2026</h3>
+                    </div>
+                    ${content}
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+
+        function printSelectedReadings() {
+            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
+            if (checkedBoxes.length === 0) {
+                alert('Por favor, selecione ao menos uma leitura para imprimir.');
+                return;
+            }
+            let readingsHTML = '';
+            checkedBoxes.forEach(cb => {
+                const key = cb.value;
+                const r = readingsData[key];
+                if (r) {
+                    readingsHTML += `
+                        <div style="margin-bottom: 22px; page-break-inside: avoid; border-bottom: 1px dashed #cbd5e1; padding-bottom: 14px;">
+                            <div style="font-size: 12pt; font-weight: bold; color: #8c6414; margin-bottom: 6px; text-transform: uppercase; font-family: 'Georgia', serif;">${r.title}</div>
+                            <div style="font-size: 12pt; line-height: 1.5; text-align: justify; text-justify: inter-word; white-space: pre-line; font-family: 'Georgia', serif;">${r.text}</div>
+                        </div>
+                    `;
+                }
+            });
+
+            const printHTML = `
+                <div style="padding: 1cm 0.8cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Liturgia da Palavra — Textos para Proclamação no Ambão</h3>
+                    </div>
+                    ${readingsHTML}
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
+    </script>
+</body>
+</html>
