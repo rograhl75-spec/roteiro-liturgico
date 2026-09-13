@@ -344,6 +344,7 @@
             border-top: 1px dashed var(--border);
         }
 
+        /* Estrutura dos Ministérios */
         .script-block {
             display: flex;
             flex-direction: column;
@@ -376,6 +377,13 @@
             background: #fff;
             border-radius: 0 4px 4px 0;
             text-align: justify;
+        }
+
+        @media (max-width: 650px) {
+            .script-row { grid-template-columns: 1fr; gap: 2px; }
+            .script-tag { justify-content: flex-start; padding: 3px 8px; width: fit-content; font-size: 0.68rem; border-radius: 4px 4px 0 0; }
+            .script-text { font-size: 11pt; border-left: 3px solid #cbd5e1; border-radius: 0 4px 4px 4px; text-align: justify; }
+            .toolbar button, .week-selector-bar button { width: 100%; justify-content: center; }
         }
 
         .tag-animador { background-color: var(--bg-animador); color: var(--cor-animador); border: 1px solid #bfdbfe; }
@@ -431,6 +439,7 @@
             font-size: 1.4rem;
             cursor: pointer;
             color: #64748b;
+            line-height: 1;
             width: 34px;
             height: 34px;
             border-radius: 4px;
@@ -451,21 +460,27 @@
         #print-mount { display: none; }
 
         @page {
-            margin: 8mm 8mm;
-            size: auto;
+            size: A4 portrait;
+            margin: 8mm;
         }
 
         @media print {
-            body.printing-active {
-                overflow: visible !important;
+            html, body {
+                margin: 0 !important;
+                padding: 0 !important;
                 height: auto !important;
+                min-height: auto !important;
+                overflow: visible !important;
+                background: #fff !important;
             }
             body.printing-active > *:not(#print-mount) { display: none !important; }
             body.printing-active #print-mount {
                 display: block !important;
-                background: white !important;
-                padding: 0 !important;
+                position: static !important;
                 margin: 0 !important;
+                padding: 0 !important;
+                page-break-before: avoid !important;
+                break-before: avoid !important;
                 width: 100% !important;
             }
 
@@ -503,21 +518,18 @@
                 background: #ffffff !important;
             }
 
+            /* Preces: exatamente 1 página por horário */
             .preces-single-page {
                 page-break-after: always !important;
                 break-after: page !important;
                 page-break-inside: avoid !important;
                 break-inside: avoid !important;
-                padding: 0.3cm 0.5cm !important;
+                padding: 0.2cm 0.4cm !important;
                 margin: 0 !important;
                 display: block !important;
                 box-sizing: border-box !important;
             }
             .preces-single-page:last-child { page-break-after: auto !important; break-after: auto !important; }
-            .preces-single-page .print-sheet-header { margin-bottom: 4px !important; padding-bottom: 2px !important; }
-            .preces-single-page .print-sheet-header img { max-width: 120px !important; height: auto; margin-bottom: 2px !important; }
-            .preces-single-page .print-sheet-header h2 { font-size: 10.5pt !important; }
-            .preces-single-page .print-sheet-header h3 { font-size: 9pt !important; }
             .preces-single-page .time-heading {
                 background: #1a365d !important;
                 color: white !important;
@@ -533,7 +545,6 @@
             }
             .preces-single-page .script-block { gap: 3px !important; margin-top: 0 !important; }
             .preces-single-page .script-row { grid-template-columns: 80px 1fr !important; gap: 5px !important; margin-bottom: 2px !important; }
-            .preces-single-page .script-tag { font-size: 0.65rem !important; padding: 2px 4px !important; }
             .preces-single-page .script-text { font-size: 9.5pt !important; line-height: 1.28 !important; padding: 2px 6px !important; border-left-width: 3px !important; }
 
             body:not(.printing-active) #print-mount { display: none !important; }
@@ -586,7 +597,9 @@
 
     <div class="container">
 
-        <!-- BLOCO DA SEMANA 2: 14 A 20 DE SETEMBRO DE 2026 -->
+        <!-- ======================================================= -->
+        <!-- BLOCO DA SEMANA 2: 14 A 20 DE SETEMBRO DE 2026 (ATIVA) -->
+        <!-- ======================================================= -->
         <div id="semana2-container">
 
             <!-- Segunda 14/09 -->
@@ -605,14 +618,14 @@
                     <div><strong>19h00:</strong> Pe. Heriberto (Matriz Auxiliadora)</div>
                 </div>
                 <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se o Glória</strong>. Omite-se o Creio por ser dia ferial.
+                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de <strong>Festa do Senhor</strong>, hoje <strong>canta-se ou recita-se o Hino de Louvor (Glória)</strong> logo após o Ato Penitencial. Como a festa ocorre em dia de semana (segunda-feira), <strong>omite-se o Creio</strong>.
                 </div>
                 <details class="reflection-box">
                     <summary>📖 Reflexão e Oração do Dia (Exaltação da Santa Cruz)</summary>
                     <div class="reflection-content">
                         <div class="reflection-verse"><strong>Versículo-chave:</strong> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)</div>
                         <strong>Meditação:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação. Cristo elevou nossa dor para nos dar a vitória.
-                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz com amor. Amém.</div>
+                        <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor. Amém.</div>
                     </div>
                 </details>
                 <div class="tables-grid">
@@ -719,7 +732,7 @@
                     <summary>📖 Reflexão e Oração do Dia (Santos Cornélio e Cipriano)</summary>
                     <div class="reflection-content">
                         <div class="reflection-verse"><strong>Versículo-chave:</strong> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)</div>
-                        <strong>Meditação:</strong> A caridade é o amor paciente, prestativo e desinteressado. Hoje, os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.
+                        <strong>Meditação:</strong> A caridade é o amor paciente, prestativo e desinteressado. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.
                         <div class="reflection-prayer"><strong>Oração do Dia:</strong> Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor. Amém.</div>
                     </div>
                 </details>
@@ -960,7 +973,9 @@
 
         </div>
 
+        <!-- ======================================================= -->
         <!-- BLOCO DA SEMANA 1: 07 A 13 DE SETEMBRO DE 2026 -->
+        <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
             <!-- Segunda 07/09 -->
@@ -1526,101 +1541,193 @@
             <div class="script-block" id="content_roteiro_w2">
                 <div class="script-row row-rubrica">
                     <span class="script-tag tag-rubrica">Preparação</span>
-                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço Mariano. Datashow projeta: <strong>“SILÊNCIO”</strong>.</span>
+                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço Mariano[cite: 7]. Datashow projeta: <strong>“SILÊNCIO”</strong>[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">O Ministério de Música inicia o canto de meditação 5 minutos antes da Missa. Prolongar o canto de comunhão até o término da distribuição.</span>
+                    <span class="script-text">O Ministério de Música inicia o canto de meditação 5 minutos antes da Missa[cite: 7]. Prolongar o canto de comunhão até o término da distribuição[cite: 7].</span>
                 </div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITOS INICIAIS</h4>
 
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado.<br><br>
-                    <strong>SOMENTE PARA AS MISSAS COM TRANSMISSÃO:</strong> As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração, as quais serão apresentadas no altar do Senhor.<br><br>
-                    Irmãos e irmãs, sejam muito bem-vindos à celebração do 25º Domingo do Tempo Comum! Continuando nossa caminhada no Mês da Bíblia, acolhemos com alegria toda a nossa comunidade e, de modo especial, oferecemos esta Santa Missa na intenção de todos os dizimistas de nossa paróquia. Agradecemos a Deus por sua fidelidade e generosidade, que sustentam a vida e o trabalho evangelizador de nossa Igreja. Que o Senhor nos abençoe e disponha nossos corações para vivermos juntos este momento de comunhão fraterna. De pé, com alegria, iniciemos nossa celebração cantando.</span>
+                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado[cite: 7].<br><br>
+                    <strong>SOMENTE PARA AS MISSAS COM TRANSMISSÃO:</strong> As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração, as quais serão apresentadas no altar do Senhor[cite: 7].<br><br>
+                    Irmãos e irmãs, sejam muito bem-vindos à celebração do 25º Domingo do Tempo Comum! Continuando nossa caminhada no Mês da Bíblia, acolhemos com alegria toda a nossa comunidade e, de modo especial, oferecemos esta Santa Missa na intenção de todos os dizimistas de nossa paróquia[cite: 7]. Agradecemos a Deus por sua fidelidade e generosidade, que sustentam a vida e o trabalho evangelizador de nossa Igreja[cite: 7]. Que o Senhor nos abençoe e disponha nossos corações para vivermos juntos este momento forte de oração e comunhão fraterna[cite: 7]. De pé, com alegria, iniciemos nossa celebração cantando[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto de Entrada 🎵🎸</span>
+                    <span class="script-text">Canto de Entrada 🎵🎸[cite: 7]</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Em nome do Pai ✠ e do Filho e do Espírito Santo. (Animador: Amém). A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco. (Animador: Bendito seja Deus que nos reuniu no amor de Cristo).</span>
+                    <span class="script-text">Em nome do Pai ✠ e do Filho e do Espírito Santo[cite: 7]. (Animador: Amém)[cite: 7]. A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco[cite: 7]. (Animador: Bendito seja Deus que nos reuniu no amor de Cristo)[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Ato Penitencial e Hino de Louvor (Glória) 🎵🎸</span>
+                    <span class="script-text">Ato Penitencial 🎵🎸[cite: 7]</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração da Coleta (Missal Romano, pág. 407). (Animador: Amém).</span>
+                    <span class="script-text">(segue-se a absolvição sacerdotal) Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna[cite: 7]. (Animador: Amém)[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Senhor, tende piedade de nós[cite: 7]. (Animador: Senhor, tende piedade de nós)[cite: 7]. Cristo, tende piedade de nós[cite: 7]. (Animador: Cristo, tende piedade de nós)[cite: 7]. Senhor, tende piedade de nós[cite: 7]. (Animador: Senhor, tende piedade de nós)[cite: 7].</span>
+                </div>
+                <div class="script-row row-musica">
+                    <span class="script-tag tag-musica">Música</span>
+                    <span class="script-text">“Glória a Deus nas alturas” 🎵🎸[cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Oração da Coleta (Missal Romano, pág. 407)[cite: 2, 7]. (Animador: Amém)[cite: 7].</span>
                 </div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA DA PALAVRA</h4>
 
                 <div class="script-row row-rubrica">
                     <span class="script-tag tag-rubrica">1ª Leitura</span>
-                    <span class="script-text">Is 55,6-9 (Lecionário I, pág. 327). Palavra do Senhor. (Animador: Graças a Deus).</span>
+                    <span class="script-text">Is 55,6-9 (Lecionário I, pág. 327)[cite: 7]. Palavra do Senhor[cite: 7]. (Animador: Graças a Deus)[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Salmo Responsorial 🎵🎸 Sl 144(145) (R. O Senhor está perto da pessoa que o invoca!).</span>
+                    <span class="script-text">Salmo Responsorial 🎵🎸 Sl 144(145),2-3.8-9.17-18 (R. 18a)[cite: 7].</span>
                 </div>
                 <div class="script-row row-rubrica">
                     <span class="script-tag tag-rubrica">2ª Leitura</span>
-                    <span class="script-text">Fl 1,20c-24.27a (Lecionário I, pág. 328). Palavra do Senhor. (Animador: Graças a Deus).</span>
+                    <span class="script-text">Fl 1,20c-24.27a (Lecionário I, pág. 328)[cite: 7]. Palavra do Senhor[cite: 7]. (Animador: Graças a Deus)[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Aclamação ao Evangelho 🎵🎸</span>
+                    <span class="script-text">Aclamação ao Evangelho 🎵🎸[cite: 7]</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Proclamação do Evangelho segundo Mateus (Mt 20,1-16a - Lecionário I, pág. 328). Palavra da Salvação. (Animador: Glória a vós, Senhor).</span>
+                    <span class="script-text">O Senhor esteja convosco[cite: 7]. (Animador: Ele está no meio de nós)[cite: 7]. Proclamação do Evangelho de Jesus Cristo segundo Mateus[cite: 7]. (Animador: Glória a vós, Senhor)[cite: 7]. (Mt 20,1-16a)[cite: 7]. Palavra da Salvação[cite: 7]. (Animador: Glória a vós, Senhor)[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Homilia[cite: 7]. Louvado seja o Nosso Senhor Jesus Cristo[cite: 7]. (Animador: Para sempre seja louvado)[cite: 7].</span>
                 </div>
                 <div class="script-row row-todos">
-                    <span class="script-tag tag-todos">Padre / Todos</span>
-                    <span class="script-text">Homilia, Profissão de Fé (Creio) e Oração dos Fiéis (conforme formulário do horário).</span>
+                    <span class="script-tag tag-todos">Todos</span>
+                    <span class="script-text">(Profissão de fé) Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Fará a introdução às preces[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Conforme formulário de preces para cada horário (com a intenção dos dizimistas e a Oração do Jubileu de Diamante)[cite: 4, 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Finaliza as preces[cite: 7]. (Animador: Amém)[cite: 7].</span>
                 </div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">LITURGIA EUCARÍSTICA</h4>
 
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Você pode fazer a sua oferta através do QR Code fixado no banco à sua frente ou nas cestas dos corredores.</span>
+                    <span class="script-text">Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto das Oferendas 🎵🎸</span>
+                    <span class="script-text">Canto das Oferendas 🎵🎸[cite: 7]</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração sobre as Oferendas (Missal, pág. 407). Prefácio dos Domingos IV (pág. 477). Oração Eucarística II (pág. 537).</span>
+                    <span class="script-text">Preparação das oferendas[cite: 7]. Orai, irmãos e irmãs, para que o meu e o vosso sacrifício seja aceito por Deus Pai Todo-Poderoso[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Oração Sobre as Oferendas (Missal Romano, pág. 407)[cite: 2, 7]. (Animador: Amém)[cite: 7]. O Senhor esteja convosco[cite: 7]. (Animador: Ele está no meio de nós)[cite: 7]. Corações ao alto[cite: 7]. (Animador: O nosso coração está em Deus)[cite: 7]. Demos graças ao Senhor, nosso Deus[cite: 7]. (Animador: É nosso dever e nossa salvação)[cite: 7].</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Prefácio dos Domingos do Tempo Comum IV: Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças... cantando a uma só voz[cite: 7]:</span>
+                </div>
+                <div class="script-row row-musica">
+                    <span class="script-tag tag-musica">Música</span>
+                    <span class="script-text">Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas! 🎵🎸[cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Enviai o vosso Espírito Santo![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo: TOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS. Do mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo: TOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM. Mistério da fé![cite: 7]</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos por que nos tornastes dignos de estar aqui na vossa presença e vos servir[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Aceitai, ó Senhor, a nossa oferta![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">O Espírito nos una num só corpo![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro... em comunhão com o nosso Bispo Geremias e todos os ministros do vosso povo[cite: 7].</span>
+                </div>
+                <div class="script-row row-animador">
+                    <span class="script-tag tag-animador">Animador</span>
+                    <span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja![cite: 7]</span>
+                </div>
+                <div class="script-row row-padre">
+                    <span class="script-tag tag-padre">Padre</span>
+                    <span class="script-text">Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda a honra e toda a glória, por todos os séculos dos séculos[cite: 7]. (Animador: Amém)[cite: 7].</span>
                 </div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 2px;">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
 
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre / Todos</span>
-                    <span class="script-text">Pai Nosso, Oração pela Paz, Cordeiro de Deus.</span>
+                    <span class="script-text">Pai nosso que estais nos céus, santificado seja o vosso nome...[cite: 7]</span>
                 </div>
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar.</span>
+                    <span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto da Comunhão 🎵🎸</span>
+                    <span class="script-text">Canto da Comunhão 🎵🎸[cite: 7]</span>
                 </div>
                 <div class="script-row row-padre">
                     <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Oração depois da Comunhão (Missal, pág. 407). Avisos Paroquiais, Bênção Final e Despedida.</span>
+                    <span class="script-text">Oração depois da Comunhão (Missal Romano, pág. 407)[cite: 2, 7]. (Animador: Amém)[cite: 7]. Avisos Paroquiais, Bênção Final e Despedida[cite: 7].</span>
                 </div>
                 <div class="script-row row-musica">
                     <span class="script-tag tag-musica">Música</span>
-                    <span class="script-text">Canto Final 🎵🎸</span>
+                    <span class="script-text">Canto Final 🎵🎸[cite: 7]</span>
                 </div>
             </div>
         </div>
@@ -1639,16 +1746,21 @@
             <div class="script-block" id="content_roteiro_w1">
                 <div class="script-row row-rubrica">
                     <span class="script-tag tag-rubrica">Preparação</span>
-                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a rezar o Terço. Projeção: <strong>“SILÊNCIO”</strong>.</span>
+                    <span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar o Terço[cite: 6]. Datashow projeta: <strong>“SILÊNCIO”</strong>[cite: 6].</span>
                 </div>
                 <div class="script-row row-animador">
                     <span class="script-tag tag-animador">Animador</span>
-                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo! Sejam bem-vindos à celebração do 24º Domingo do Tempo Comum! Neste Mês da Bíblia, somos acolhidos para deixar nossa vida ser moldada pelo perdão e pela Palavra de Deus. De pé, cantemos.</span>
+                    <span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!<br><strong>Assembleia:</strong> Para sempre seja louvado[cite: 6].<br><br>
+                    <strong>SOMENTE PARA AS MISSAS COM TRANSMISSÃO:</strong> As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nas redes sociais e as que trazemos no coração[cite: 6].<br><br>
+                    Irmãos e irmãs, sejam bem-vindos à celebração do 24º Domingo do Tempo Comum! Neste Mês da Bíblia, somos acolhidos para deixar nossa vida ser moldada pelo perdão e pela Palavra de Deus[cite: 6]. De pé, cantemos[cite: 6].</span>
                 </div>
-                <div class="script-row row-padre">
-                    <span class="script-tag tag-padre">Padre</span>
-                    <span class="script-text">Ritos Iniciais, Liturgia da Palavra, Homilia, Creio e Oração dos Fiéis conforme o Missal Romano pág. 406.</span>
-                </div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto de Entrada 🎵🎸[cite: 6]</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Em nome do Pai ✠ e do Filho e do Espírito Santo[cite: 6]. (Animador: Amém)[cite: 6].</span></div>
+                <div class="script-row row-todos"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text">Glória a Deus nas alturas, e paz na terra aos homens por Ele amados... Amém[cite: 6].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração da Coleta (Missal, pág. 406)[cite: 6]. (Animador: Amém)[cite: 6].</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Liturgia Palavra</span><span class="script-text">1ª Leitura: Eclo 27,33-28,9 | Salmo: Sl 102 | 2ª Leitura: Rm 14,7-9 | Evangelho: Mt 18,21-35[cite: 6]. Homilia e Creio[cite: 6]. Preces dos Fiéis por horário[cite: 3, 6].</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Você pode fazer a sua oferta através do QR Code fixado no banco ou se dirigindo às cestas de coleta[cite: 6].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração Eucarística II (pág. 537), Pai Nosso, Comunhão Eucarística, Oração Pós-Comunhão (pág. 406), Bênção Final e Despedida[cite: 6].</span></div>
             </div>
         </div>
     </div>
@@ -1666,40 +1778,49 @@
             <div id="preces_sabado_1830_w2" style="margin-bottom:14px;">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que compreendam o Dízimo como gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos edificados pelo suor, pela fé e pelo amor generoso de nossa comunidade. Por Cristo, Nosso Senhor. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em> / <strong>Animador: Amém.</strong></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:[cite: 4]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a oração de vosso povo!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 4]. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade[cite: 4]. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens[cite: 4]. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos[cite: 4]. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora[cite: 4]. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo[cite: 4]. Amém![cite: 4]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 4].</span></div>
                 </div>
             </div>
             <div id="preces_domingo_manha_w2" style="margin-bottom:14px;">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, sol que ilumina a nossa vida; e aclamemos com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia em que celebramos a vossa ressurreição, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas e suas famílias: que o Senhor recompense sua generosidade e cumule seus lares de paz e bênçãos, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos edificados com amor e serviço aos irmãos. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em> / <strong>Animador: Amém.</strong></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:[cite: 4]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, vós sois nossa vida e salvação!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 4]. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade[cite: 4]. Por Cristo, Nosso Senhor[cite: 4]. Amém![cite: 4]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 4].</span></div>
                 </div>
             </div>
             <div id="preces_domingo_1830_w2">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo, adoremos o Senhor; e peçamos com fé:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo nosso Salvador, fazei de vossa Igreja sinal de unidade e salvação para todos os povos, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Por todos os que ofertam seu dízimo e serviço com amor e fidelidade à comunidade de Nossa Senhora Auxiliadora, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos por estes 60 anos de nossa comunidade paroquial. Que a Auxiliadora dos Cristãos seja o amparo de nossas famílias. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em> / <strong>Animador: Amém.</strong></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:[cite: 4]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor[cite: 4].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Senhor, venha a nós o vosso Reino!</strong>[cite: 4]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 4]. Damos-Vos graças por estes 60 anos[cite: 4]. Amém![cite: 4]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 4]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 4].</span></div>
                 </div>
             </div>
         </div>
@@ -1718,34 +1839,43 @@
             <div id="preces_sabado_1830_w1" style="margin-bottom:14px;">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel, purificai-nos de todo pecado e fazei-nos perseverantes no vosso amor, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, nós Vos bendizemos pelos 60 anos de história da nossa Paróquia Nossa Senhora Auxiliadora. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:[cite: 3]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel e primogênito dentre os mortos, que nos purificastes do pecado com o vosso sangue, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aqueles que escolhestes como mensageiros do vosso evangelho, tornai-os fiéis e zelosos administradores dos mistérios do reino, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi-nos, Senhor, e atendei-nos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 3]. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade[cite: 3]. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens[cite: 3]. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos[cite: 3]. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora[cite: 3]. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo[cite: 3]. Amém![cite: 3]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 3].</span></div>
                 </div>
             </div>
             <div id="preces_domingo_manha_w1" style="margin-bottom:14px;">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, abramos o coração com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus misericordioso, abri para nós as portas do perdão e ensinai-nos a perdoar de coração sincero, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de bondade, nós Vos bendizemos pelos 60 anos de nossa comunidade paroquial. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, que nos ama e sabe do que temos necessidade, abramos o coração com alegria; e o aclamemos com louvores, dizendo:[cite: 3]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Nós vos bendizemos, Deus todo-poderoso e Rei do universo, porque, mesmo sendo pecadores, viestes à nossa procura, para conhecermos vossa verdade e servirmos à vossa majestade, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus, que abristes para nós as portas da vossa misericórdia, não nos deixeis jamais afastar do caminho da vida, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Nós vos louvamos, Senhor, e em vós confiamos!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 3]. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade[cite: 3]. Amém![cite: 3]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 3].</span></div>
                 </div>
             </div>
             <div id="preces_domingo_1830_w1">
                 <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
                 <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, confirmai o testemunho de nossa Igreja na caridade e na paz, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong></span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong> Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em></span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:[cite: 3]</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, que enviastes vosso Filho ao mundo para que em toda parte fosse glorificado o vosso nome, confirmai o testemunho da vossa Igreja entre os povos, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Fazei-nos dóceis à pregação dos apóstolos, para vivermos de acordo com a verdade da nossa fé, nós vos pedimos[cite: 3].</span></div>
+                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text"><strong>R. Ouvi, Senhor, a nossa oração!</strong>[cite: 3]</span></div>
+                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora[cite: 3]. Damos-Vos graças por estes 60 anos[cite: 3]. Amém![cite: 3]</span></div>
+                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text"><em>(O sacerdote conclui as preces)</em>[cite: 3]</span></div>
+                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém[cite: 3].</span></div>
                 </div>
             </div>
         </div>
@@ -1755,16 +1885,20 @@
     <div id="modal_rito_cruz" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese (11/09/2026)</h3>
+                <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese (Sexta-feira, 11/09/2026)</h3>
                 <div class="modal-actions">
                     <button type="button" class="action-btn" onclick="printRitoCruz()">🖨️ Imprimir Rito</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_rito_cruz')">&times;</button>
                 </div>
             </div>
             <div class="script-block" id="content_rito_cruz">
-                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Liturgia</span><span class="script-text">Rito pós-comunhão, antes da Bênção Final.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Motiva a entrada das cruzes trazidas por um casal pelo corredor central e profere a bênção das cruzes.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Queridos catequizandos, recebam esta cruz, sinal do amor de Cristo e da nossa fé cristã. (Catequizandos: Amém).</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Liturgia</span><span class="script-text">Rito pós-comunhão, antes da Bênção Final[cite: 5].</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Catequese</span><span class="script-text">Organiza a entrada das cruzes pelo corredor central, que será levada por um casal[cite: 5].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Motiva a entrada das cruzes em uma cesta, que será trazida por um casal, pelo corredor central[cite: 5].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(abençoa as cruzes) Senhor, Pai Santo, que quisestes fazer da cruz do Vosso Filho fonte de todas as bênçãos e causa de todas as graças, dignai-Vos abençoar estas cruzes e concedei aos que as trouxerem consigo, transformar-se na imagem do Vosso Filho, que vive e reina para sempre[cite: 5].</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Catequese</span><span class="script-text">Organiza os catequizandos para entrar em procissão pelo corredor central em duas filas[cite: 5].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Queridos catequizandos, vocês hoje receberão esta cruz, sinal do amor de Cristo e da nossa fé. Aprendam a amá-la de todo coração[cite: 5]. (Catequizandos: Amém)[cite: 5].</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Deus, criador e salvador das pessoas, por Vosso amor destes a vida a estes nossos irmãos e irmãs. Na misericórdia, os chamastes a Vós. Nós Vos pedimos confiantes, penetrando no íntimo de Seu ser, protegei-os e conservai-os neste Caminho da Iniciação Cristã. Levando ao fim Vosso plano de amor, concedei que se tornem plenamente conscientes e convictos discípulos do Vosso Filho Jesus Cristo, na Unidade do Espírito Santo[cite: 5]. (Animador: Amém)[cite: 5].</span></div>
             </div>
         </div>
     </div>
@@ -1787,88 +1921,88 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- BANCO DE DADOS DA SEMANA ATIVA EMBUTIDO (IMPEDE QUALQUER ALERTA) -->
+    <!-- BANCO DE SEGURANÇA EMBUTIDO (IMPEDE QUALQUER ALERTA NA TELA) -->
     <script>
         var readingsData = {
             '1l_seg_w2': {
                 title: '1ª Leitura — Números 21,4b-9 (Lecionário III, pág. 174)',
-                text: 'Leitura do Livro dos Números.\n\nNaqueles dias, o povo pecou no deserto. Moisés intercedeu e o Senhor ordenou: "Faze uma serpente de bronze e coloca-a sobre uma haste; aquele que for mordido e olhar para ela, viverá". E todo aquele que olhava, ficava curado.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura do Livro dos Números.\n\nNaqueles dias, os filhos de Israel partiram do monte Hor, pelo caminho que leva ao mar Vermelho, para contornarem o país de Edom. Durante a viagem o povo começou a impacientar-se, e se pôs a falar contra Deus e contra Moisés: "Por que nos fizestes sair do Egito para morrermos no deserto? Não há pão, falta água, e já estamos com nojo desse alimento miserável".\nEntão o Senhor mandou contra o povo serpentes venenosas, que os mordiam; e morreu muita gente em Israel. O povo foi a Moisés e disse: "Pecamos, falando contra o Senhor e contra ti. Roga ao Senhor que afaste de nós as serpentes".\nMoisés intercedeu pelo povo, e o Senhor respondeu: "Faze uma serpente de bronze e coloca-a como sinal sobre uma haste; aquele que for mordido e olhar para ela, viverá". Moisés fez a serpente de bronze e colocou-a como sinal sobre uma haste. Quando alguém era mordido por uma serpente e olhava para a serpente de bronze, ficava curado.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_seg_w2': {
                 title: 'Salmo Responsorial — Sl 77(78),1-2.34-38 (Lecionário III, pág. 175)',
-                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei! O Senhor, sempre compassivo, perdoava o pecado e não dava largas à sua ira. R.'
+                text: 'R. Das obras do Senhor, ó meu povo, não te esqueças!\n\nEscuta, ó meu povo, a minha Lei, *\nouve atento as palavras que eu te digo;\nabrirei a minha boca em parábolas, *\nos mistérios do passado lembrarei. R.\n\nQuando os feria, eles então o procuravam, *\nconvertiam-se correndo para ele;\nrecordavam que o Senhor é sua rocha *\ne que Deus, seu Redentor, é o Deus Altíssimo. R.\n\nMas o Senhor, sempre benigno e compassivo, *\nnão os matava e perdoava seu pecado;\nquantas vezes dominou a sua ira *\ne não deu largas à vazão de seu furor. R.'
             },
             'ev_seg_w2': {
                 title: 'Evangelho — João 3,13-17 (Lecionário III, pág. 176)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nDisse Jesus a Nicodemos: "Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todo aquele que nele crer tenha a vida eterna. Pois Deus amou tanto o mundo que entregou o seu Filho unigênito".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, disse Jesus a Nicodemos:\n"Ninguém subiu ao céu, a não ser aquele que desceu do céu, o Filho do Homem. Do mesmo modo como Moisés levantou a serpente no deserto, assim é necessário que o Filho do Homem seja levantado, para que todos os que nele crerem tenham a vida eterna.\nPois Deus amou tanto o mundo, que deu o seu Filho unigênito, para que não morra todo o que nele crer, mas tenha a vida eterna. De fato, Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_ter_w2': {
                 title: '1ª Leitura — Hebreus 5,7-9 (Lecionário III, pág. 178)',
-                text: 'Leitura da Carta aos Hebreus.\n\nCristo dirigiu preces e súplicas com lágrimas àquele que podia salvá-lo da morte e tornou-se causa de salvação eterna para todos os que lhe obedecem.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Carta aos Hebreus.\n\nCristo, nos dias de sua vida terrestre, dirigiu preces e súplicas, com forte clamor e lágrimas, àquele que era capaz de salvá-lo da morte. E foi atendido, por causa de sua entrega a Deus.\nMesmo sendo Filho, aprendeu o que significa a obediência a Deus por aquilo que ele sofreu. Mas, na consumação de sua vida, tornou-se causa de salvação eterna para todos os que lhe obedecem.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_ter_w2': {
-                title: 'Salmo Responsorial — Sl 30(31) (Lecionário III, pág. 179)',
-                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nEm vós ponho minha esperança, ó Senhor; em vossas mãos entrego o meu espírito. R.'
+                title: 'Salmo Responsorial — Sl 30(31),2-6.15-16.20 (R. 17b) (Lecionário III, pág. 179)',
+                text: 'R. Salvai-me pela vossa compaixão, ó Senhor Deus!\n\nSenhor, eu ponho em vós minha esperança; *\nque eu não fique envergonhado eternamente!\nPorque sois justo, defendei-me e libertai-me *\napressai-vos, ó Senhor, em socorrer-me! R.\n\nSede uma rocha protetora para mim, *\num abrigo bem seguro que me salve!\nSim, sois vós a minha rocha e fortaleza; *\npor vossa honra orientai-me e conduzi-me! R.\n\nEm vossas mãos, Senhor, entrego o meu espírito, *\nporque vós me salvareis, ó Deus fiel! R.'
             },
             'ev_ter_w2': {
                 title: 'Evangelho — João 19,25-27 (Lecionário III, pág. 181)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nPerto da cruz de Jesus estavam de pé a sua mãe e o discípulo amado. Jesus disse à mãe: "Mulher, eis aí o teu filho". Depois disse ao discípulo: "Eis aí a tua mãe". E daquela hora em diante o discípulo a acolheu consigo.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo João.\n\nNaquele tempo, perto da cruz de Jesus, estavam de pé a sua mãe, a irmã da sua mãe, Maria de Cléofas, e Maria Madalena.\nJesus, ao ver sua mãe e, ao lado dela, o discípulo que ele amava, disse à mãe: "Mulher, este é o teu filho". Depois disse ao discípulo: "Esta é a tua mãe".\nDaquela hora em diante, o discípulo a acolheu consigo.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_qua_w2': {
                 title: '1ª Leitura — 1 Coríntios 12,31-13,13 (Lecionário II, pág. 981)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAinda que eu fale a língua dos homens e dos anjos, se não tiver caridade, nada sou. Agora permanecem a fé, a esperança e o amor; a maior delas é o amor.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Aspirai aos dons mais elevados. Eu vou ainda mostrar-vos um caminho incomparavelmente superior:\nAinda que eu falasse as línguas dos homens e dos anjos, se não tiver caridade, sou como um bronze que ressoa ou um címbalo que retine. Ainda que eu tivesse o dom da profecia e conhecesse todos os mistérios, se não tiver caridade, nada sou.\nA caridade é paciente, é benigna; não é invejosa, não é vaidosa, não se ensoberbece. A caridade jamais acabará.\nAtualmente permanecem estas três coisas: fé, esperança e caridade. Mas a maior delas é a caridade.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_qua_w2': {
                 title: 'Salmo Responsorial — Sl 32(33),2-5.12.22 (Lecionário II, pág. 982)',
-                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da harpa; reta é a sua palavra e sua bondade enche a terra. R.'
+                text: 'R. Feliz o povo que o Senhor escolheu por sua herança!\n\nDai graças ao Senhor ao som da cítara, *\ncantai-lhe hinos com a harpa de dez cordas!\nEntoai para ele um canto novo, *\ntocai com arte e aclamai com alegria! R.\n\nPois reta é a palavra do Senhor, *\ne tudo o que ele faz merece fé.\nEle ama a retidão e a justiça; *\nda sua bondade está cheia a terra. R.'
             },
             'ev_qua_w2': {
                 title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 983)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse: "A quem compararei esta geração? Tocamos flauta e não dançastes; entoamos lamentações e não chorastes. Mas a sabedoria de Deus é justificada por todos os seus filhos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, disse Jesus:\n"Com quem hei de comparar os homens desta geração? São como crianças sentadas nas praças gritando: \'Tocamos flauta para vós e não dançastes; entoamos lamentações e não chorastes!\'\nPois veio João Batista, que não comia pão nem bebia vinho, e dissestes: \'Ele tem demônio!\' Veio o Filho do Homem, que come e bebe, e dizeis: \'Aí está um comilão e beberrão, amigo de publicanos e pecadores!\' Mas a sabedoria é justificada por todos os seus filhos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_qui_w2': {
                 title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 985)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nTransmiti-vos o que recebi: Cristo morreu por nossos pecados, foi sepultado e ressuscitou ao terceiro dia, segundo as Escrituras.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Quero lembrar-vos o evangelho que vos preguei e que recebestes, no qual estais firmes.\nCom efeito, transmiti-vos aquilo que eu mesmo recebi: que Cristo morreu por nossos pecados, segundo as Escrituras; que foi sepultado; que, ao terceiro dia, ressuscitou, segundo as Escrituras; e que apareceu a Pedro e, depois, aos Doze.\nÉ pela graça de Deus que sou o que sou. É isso o que pregamos e é isso o que crestes.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_qui_w2': {
-                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (R. 1) (Lecionário II, pág. 986)',
-                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nA mão direita do Senhor fez maravilhas, ela me levantou; não hei de morrer, mas viverei! R.'
+                title: 'Salmo Responsorial — Sl 117(118),1-2.16-17.28 (Lecionário II, pág. 986)',
+                text: 'R. Dai graças ao Senhor, porque ele é bom!\n\nDai graças ao Senhor, porque ele é bom! *\nEterna é a sua misericórdia!\nA casa de Israel agora o diga: *\n"Eterna é a sua misericórdia!" R.\n\nA mão direita do Senhor fez maravilhas, *\na mão direita do Senhor me levantou!\nNão morrerei, mas ao contrário, viverei *\npara cantar as grandes obras do Senhor! R.'
             },
             'ev_qui_w2': {
                 title: 'Evangelho — Lucas 7,36-50 (Lecionário II, pág. 987)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nA mulher pecadora ungiu os pés de Jesus na casa do fariseu. Jesus disse: "Muitos pecados lhe são perdoados porque muito amou. Tua fé te salvou; vai em paz".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nUm fariseu convidou Jesus para cear. Certa mulher, conhecida na cidade como pecadora, soube que Ele estava à mesa e trouxe um vaso de alabastro com perfume. Ficando por detrás, chorava aos pés de Jesus; banhou-lhe os pés com lágrimas, enxugava-os com os cabelos, cobria-os de beijos e ungia-os com o bálsamo.\nJesus disse ao fariseu: "Os muitos pecados dela estão perdoados porque ela mostrou muito amor. Aquele a quem pouco se perdoa, pouco amor demonstra". E disse à mulher: "Tua fé te salvou. Vai em paz!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_sex_w2': {
                 title: '1ª Leitura — 1 Coríntios 15,12-20 (Lecionário II, pág. 989)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nSe Cristo não ressuscitou, vã é a nossa fé. Mas Cristo ressuscitou dentre os mortos como primícias de todos nós!\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Se se prega que Cristo ressuscitou dos mortos, como dizem alguns que não há ressurreição dos mortos? Se não há ressurreição, então Cristo não ressuscitou. E se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé.\nMas, na realidade, Cristo ressuscitou dos mortos como primícias dos que morreram.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_sex_w2': {
-                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (R. 15b) (Lecionário II, pág. 990)',
-                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nInclinai vosso ouvido e escutai a minha prece; guardai-me à sombra de vossas asas. R.'
+                title: 'Salmo Responsorial — Sl 16(17),1.6-7.8b.15 (Lecionário II, pág. 990)',
+                text: 'R. Ao despertar, me saciará vossa presença, ó Senhor.\n\nÓ Senhor, ouvi a minha justa causa, *\nescutai-me e atendei o meu clamor!\nInclinai o vosso ouvido à minha prece, *\npois não existe falsidade nos meus lábios! R.\n\nProtegei-me qual dos olhos a pupila, *\ne guardai-me à proteção de vossas asas.\nMas eu verei, justificado, a vossa face, *\ne ao despertar me saciará vossa presença. R.'
             },
             'ev_sex_w2': {
                 title: 'Evangelho — Lucas 8,1-3 (Lecionário II, pág. 991)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus andava por cidades e aldeias pregando o Evangelho, acompanhado pelos Doze e por santas mulheres que o ajudavam com seus bens.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nNaquele tempo, Jesus andava por cidades e povoados, pregando e anunciando a Boa-Nova do Reino de Deus. Os doze iam com ele; e também algumas mulheres que haviam sido curadas de maus espíritos e doenças: Maria, chamada Madalena; Joana, mulher de Cuza, alto funcionário de Herodes; Susana, e várias outras mulheres que ajudavam a Jesus e aos discípulos com os bens que possuíam.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_dom_w2': {
                 title: '1ª Leitura — Isaías 55,6-9 (Lecionário I, pág. 327)',
-                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor enquanto se pode achar. Meus pensamentos não são como os vossos, e os meus caminhos são infinitamente mais altos que os vossos.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura do Livro do Profeta Isaías.\n\nBuscai o Senhor, enquanto pode ser achado; invocai-o, enquanto ele está perto. Abandone o ímpio seu caminho, e o homem injusto, suas maquinações; volte para o Senhor, que terá piedade dele, volte para nosso Deus, que é generoso no perdão.\nMeus pensamentos não são como os vossos pensamentos, e vossos caminhos não são como os meus caminhos, diz o Senhor. Estão meus caminhos tão acima dos vossos caminhos e meus pensamentos acima dos vossos pensamentos, quanto está o céu acima da terra.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_dom_w2': {
                 title: 'Salmo Responsorial — Sl 144(145),2-3.8-9.17-18 (R. 18a) (Lecionário I, pág. 327)',
-                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nMisericordioso e compassivo é o Senhor; sua ternura abraça toda criatura. R.'
+                text: 'R. O Senhor está perto da pessoa que o invoca!\n\nTodos os dias haverei de bendizer-vos, *\nhei de louvar o vosso nome para sempre.\nGrande é o Senhor e muito digno de louvores, *\ne ninguém pode medir sua grandeza. R.\n\nMisericórdia e piedade é o Senhor, *\nele é amor, é paciência, é compaixão.\nO Senhor é muito bom para com todos, *\nsua ternura abraça toda criatura. R.\n\nÉ justo o Senhor em seus caminhos, *\né santo em toda obra que ele faz.\nEle está perto da pessoa que o invoca, *\nde todo aquele que o invoca lealmente. R.'
             },
             '2l_dom_w2': {
                 title: '2ª Leitura — Filipenses 1,20c-24.27a (Lecionário I, pág. 328)',
-                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nPara mim o viver é Cristo e o morrer é lucro. Vivei sempre de maneira digna do Evangelho de Jesus.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Carta de São Paulo aos Filipenses.\n\nIrmãos:\nCristo vai ser glorificado no meu corpo, seja pela minha vida, seja pela minha morte. Pois, para mim, o viver é Cristo e o morrer é lucro. Entretanto, se o viver na carne significa que meu trabalho será frutuoso, neste caso, não sei o que escolher. Sinto-me atraído para os dois lados: tenho o desejo de partir, para estar com Cristo — o que para mim seria de longe o melhor —, mas para vós é mais necessário que eu continue minha vida neste mundo.\nSó uma coisa importa: vivei à altura do Evangelho de Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'ev_dom_w2': {
                 title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nParábola dos trabalhadores da vinha: "Acaso tens inveja porque sou bom? Assim os últimos serão os primeiros e os primeiros serão os últimos".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nJesus contou esta parábola aos discípulos:\n"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha. Fez o mesmo às nove horas, ao meio-dia, às três e às cinco horas da tarde.\nAo entardecer, mandou pagar a todos a diária começando pelos últimos. Os das cinco da tarde receberam uma moeda de prata. Quando chegaram os primeiros, pensavam que receberiam mais; porém, receberam também uma moeda cada um. Murmuravam contra o patrão: \'Estes últimos trabalharam uma hora só, e tu os igualaste a nós, que suportamos o cansaço e o calor o dia inteiro!\'\nO patrão respondeu: \'Amigo, não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Ou estás com inveja porque estou sendo bom?\'\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_seg': {
                 title: '1ª Leitura — 1 Coríntios 5,1-8 (Lecionário II, pág. 963)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos: Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_seg': {
                 title: 'Salmo Responsorial — Sl 5,5-6.7.12 (Lecionário II, pág. 964)',
@@ -1876,76 +2010,28 @@
             },
             'ev_seg': {
                 title: 'Evangelho — Lucas 6,6-11 (Lecionário II, pág. 965)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E curou o enfermo com autoridade divina.\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_ter': {
-                title: '1ª Leitura — Miquéias 5,1-4a (Lecionário III, pág. 165)',
-                text: 'Leitura da Profecia de Miquéias.\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_ter': {
-                title: 'Salmo Responsorial — Sl 70(71) (Lecionário III, pág. 166)',
-                text: 'R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.'
-            },
-            'ev_ter': {
-                title: 'Evangelho — Mateus 1,1-16.18-23 (Lecionário III, pág. 167)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qua': {
-                title: '1ª Leitura — 1 Coríntios 7,25-31 (Lecionário II, pág. 966)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qua': {
-                title: 'Salmo Responsorial — Sl 44(45) (Lecionário II, pág. 967)',
-                text: 'R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.'
-            },
-            'ev_qua': {
-                title: 'Evangelho — Lucas 6,20-26 (Lecionário II, pág. 968)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_qui': {
-                title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13 (Lecionário II, pág. 970)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_qui': {
-                title: 'Salmo Responsorial — Sl 138(139) (Lecionário II, pág. 971)',
-                text: 'R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.'
-            },
-            'ev_qui': {
-                title: 'Evangelho — Lucas 6,27-38 (Lecionário II, pág. 972)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
-            },
-            '1l_sex': {
-                title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27 (Lecionário II, pág. 974)',
-                text: 'Leitura da Primeira Carta de São Paulo aos Coríntios.\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\nPalavra do Senhor.\nR. Graças a Deus.'
-            },
-            'sl_sex': {
-                title: 'Salmo Responsorial — Sl 83(84) (Lecionário II, pág. 975)',
-                text: 'R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.'
-            },
-            'ev_sex': {
-                title: 'Evangelho — Lucas 6,39-42 (Lecionário II, pág. 976)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Lucas.\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E restaurou-lhe a saúde.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             },
             '1l_dom': {
                 title: '1ª Leitura — Eclesiástico 27,33-28,9 (Lecionário I, pág. 323)',
-                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo: assim, quando orares, teus pecados serão perdoados. Se alguém guarda rancor, como poderá pedir a Deus a cura? Lembra-te do teu fim e deixa de odiar.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura do Livro do Eclesiástico.\n\nPerdoa a injustiça do teu próximo: assim, quando orares, teus pecados serão perdoados. Se alguém guarda rancor, como poderá pedir a Deus a cura? Lembra-te do teu fim e deixa de odiar.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'sl_dom': {
                 title: 'Salmo Responsorial — Sl 102(103) (Lecionário I, pág. 323)',
-                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.'
+                text: 'R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não te esqueças de nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.'
             },
             '2l_dom': {
                 title: '2ª Leitura — Romanos 14,7-9 (Lecionário I, pág. 324)',
-                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém dentre nós vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\nPalavra do Senhor.\nR. Graças a Deus.'
+                text: 'Leitura da Carta de São Paulo aos Romanos.\n\nNinguém dentre nós vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\n\nPalavra do Senhor.\nR. Graças a Deus.'
             },
             'ev_dom': {
                 title: 'Evangelho — Mateus 18,21-35 (Lecionário I, pág. 325)',
-                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, até quantas vezes perdoarei o meu irmão? Até sete vezes?" Jesus respondeu: "Não te digo até sete vezes, mas até setenta vezes sete!"\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
+                text: 'Proclamação do Evangelho de Jesus Cristo segundo Mateus.\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o meu irmão? Até sete vezes?" Jesus respondeu: "Não te digo até sete vezes, mas até setenta vezes sete!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.'
             }
         };
     </script>
 
-    <!-- ARQUIVO EXTERNO (SOBREPÕE E COMPLEMENTA SEM RISCO) -->
+    <!-- CARREGAMENTO DO ARQUIVO EXTERNO (SE PRESENTE NO SERVIDOR) -->
     <script src="leituras.js"></script>
 
     <!-- SCRIPT DE CONTROLE E IMPRESSÃO -->
@@ -2238,6 +2324,10 @@
         }
 
         function printSelectedReadings() {
+            if (typeof readingsData === 'undefined') {
+                alert('Aguarde o carregamento do arquivo.');
+                return;
+            }
             const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
             if (checkedBoxes.length === 0) {
                 alert('Por favor, selecione ao menos uma leitura para imprimir.');
