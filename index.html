@@ -69,7 +69,7 @@
         .script-block{display:flex;flex-direction:column;gap:6px;margin-top:0.6rem}
         .script-row{display:grid;grid-template-columns:110px 1fr;gap:8px;align-items:stretch;page-break-inside:avoid}
         .script-tag{font-weight:700;text-transform:uppercase;font-size:0.72rem;padding:4px;border-radius:4px;text-align:center;display:flex;align-items:center;justify-content:center}
-        .script-text{font-size:12pt;line-height:1.42;padding:6px 10px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify}
+        .script-text{font-size:12pt;line-height:1.42;padding:6px 10px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify; transition: font-size 0.2s ease;}
         
         .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
         .row-animador .script-text{border-left-color:var(--cor-animador)} .row-padre .script-text{border-left-color:var(--cor-padre)} .row-musica .script-text{border-left-color:var(--cor-musica)} .row-todos .script-text{border-left-color:var(--cor-todos)} .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;background:#f8fafc}
@@ -79,7 +79,7 @@
         .modal-header-bar{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--border);padding-bottom:0.5rem;margin-bottom:0.8rem;gap:10px}
         .modal-title{margin:0;font-size:1.1rem;color:var(--primary);font-weight:bold}
         .modal-close-btn{background:#f1f5f9;border:1px solid #cbd5e1;font-size:1.4rem;cursor:pointer;color:#64748b;width:34px;height:34px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
-        .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6}
+        .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6; transition: font-size 0.2s ease;}
         
         /* GRID DE SELEÇÃO DE LEITURAS FORÇADO PARA DUAS COLUNAS NO CELULAR */
         .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
@@ -309,7 +309,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 20.0 - FINAL)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL 21.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -322,11 +322,11 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas -->
+    <!-- Barra de Ferramentas - AGORA ABREM NA TELA -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Programação Geral</button>
-        <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Roteiro</button>
-        <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Preces</button>
+        <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
+        <button type="button" class="action-btn" onclick="openActivePrecesModal()">🙏 Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" onclick="openActiveReflexoesModal()">💡 Reflexões</button>
         <button type="button" class="action-btn red" onclick="openModal('modal_rito_cruz')">✝️ Rito da Cruz (11/09)</button>
@@ -704,7 +704,6 @@
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
-            <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 7 de Setembro de 2026</h2>
@@ -757,7 +756,6 @@
                 </div>
             </div>
 
-            <!-- Terça 08/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 8 de Setembro de 2026</h2>
@@ -814,7 +812,6 @@
                 </div>
             </div>
 
-            <!-- Quarta 09/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 9 de Setembro de 2026</h2>
@@ -867,7 +864,6 @@
                 </div>
             </div>
 
-            <!-- Quinta 10/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 10 de Setembro de 2026</h2>
@@ -920,7 +916,6 @@
                 </div>
             </div>
 
-            <!-- Sexta 11/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
@@ -973,7 +968,6 @@
                 </div>
             </div>
 
-            <!-- Domingo 13/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 12 e 13 de Setembro de 2026</h2>
@@ -1272,12 +1266,17 @@
         </div>
     </div>
 
-    <!-- Modais de Roteiro e Preces RESTAURADOS E BLINDADOS -->
+    <!-- Modais de Roteiro e Preces -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">ROTEIRO DO COMENTARISTA — 25º DOMINGO</h3>
-                <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printRoteiroW2()">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
+                </div>
             </div>
             <div class="script-block" id="content_roteiro_w2">
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço Mariano. Datashow projeta: <strong>“SILÊNCIO”</strong>.</span></div>
@@ -1392,7 +1391,12 @@
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">ROTEIRO DO COMENTARISTA — 24º DOMINGO</h3>
-                <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printRoteiroW1()">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
+                </div>
             </div>
             <div class="script-block" id="content_roteiro_w1">
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”.</span></div>
@@ -1412,7 +1416,7 @@
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Ato Penitencial 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(segue-se a absolvição sacerdotal)<br>Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:<br>Senhor, tende piedade de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison):<br>Senhor, tende piedade de nós.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
@@ -1442,7 +1446,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Conforme formulário de preces para cada horário (com a Oração do Jubileu).</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Finaliza as preces.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                
+
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA EUCARÍSTICA</h4>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto das Oferendas 🎵🎸</span></div>
@@ -1472,7 +1476,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós... glória, por todos os séculos dos séculos.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                
+
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador... ousamos dizer:</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus... livrai-nos do mal.</span></div>
@@ -1507,58 +1511,62 @@
     <div id="modal_preces_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 25º Domingo do Tempo Comum</h3>
-                <div class="modal-actions">
-                    <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir Preces</button>
+                <h3 class="modal-title">PRECES DOS FIÉIS — 25º Domingo</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_w2')">&times;</button>
                 </div>
             </div>
-            <div id="preces_sabado_1830_w2" style="margin-bottom:14px;">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+            <div id="content_preces_w2">
+                <div id="preces_sabado_1830_w2" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
-            </div>
-            <div id="preces_domingo_manha_w2" style="margin-bottom:14px;">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div id="preces_domingo_manha_w2" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
-            </div>
-            <div id="preces_domingo_1830_w2">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div id="preces_domingo_1830_w2">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1568,52 +1576,56 @@
     <div id="modal_preces_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 24º Domingo do Tempo Comum</h3>
-                <div class="modal-actions">
-                    <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir Preces</button>
+                <h3 class="modal-title">PRECES DOS FIÉIS — 24º Domingo</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_domingo')">&times;</button>
                 </div>
             </div>
-            <div id="preces_sabado_1830_w1" style="margin-bottom:14px;">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel e primogênito dentre os mortos, que nos purificastes do pecado com o vosso sangue, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aqueles que escolhestes como mensageiros do vosso evangelho, tornai-os fiéis e zelosos administradores dos mistérios do reino, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+            <div id="content_preces_w1">
+                <div id="preces_sabado_1830_w1" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel e primogênito dentre os mortos, que nos purificastes do pecado com o vosso sangue, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aqueles que escolhestes como mensageiros do vosso evangelho, tornai-os fiéis e zelosos administradores dos mistérios do reino, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
-            </div>
-            <div id="preces_domingo_manha_w1" style="margin-bottom:14px;">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, que nos ama e sabe do que temos necessidade, abramos o coração com alegria; e o aclamemos com louvores, dizendo:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Nós vos bendizemos, Deus todo-poderoso e Rei do universo, porque, mesmo sendo pecadores, viestes à nossa procura, para conhecermos vossa verdade e servirmos à vossa majestade, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus, que abristes para nós as portas da vossa misericórdia, não nos deixeis jamais afastar do caminho da vida, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div id="preces_domingo_manha_w1" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, que nos ama e sabe do que temos necessidade, abramos o coração com alegria; e o aclamemos com louvores, dizendo:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Nós vos bendizemos, Deus todo-poderoso e Rei do universo, porque, mesmo sendo pecadores, viestes à nossa procura, para conhecermos vossa verdade e servirmos à vossa majestade, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus, que abristes para nós as portas da vossa misericórdia, não nos deixeis jamais afastar do caminho da vida, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
-            </div>
-            <div id="preces_domingo_1830_w1">
-                <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
-                <div class="script-block">
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, que enviastes vosso Filho ao mundo para que em toda parte fosse glorificado o vosso nome, confirmai o testemunho da vossa Igreja entre os povos, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Fazei-nos dóceis à pregação dos apóstolos, para vivermos de acordo com a verdade da nossa fé, nós vos pedimos.</span></div>
-                    <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                    <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                    <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                    <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div id="preces_domingo_1830_w1">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, que enviastes vosso Filho ao mundo para que em toda parte fosse glorificado o vosso nome, confirmai o testemunho da vossa Igreja entre os povos, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Fazei-nos dóceis à pregação dos apóstolos, para vivermos de acordo com a verdade da nossa fé, nós vos pedimos.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1644,14 +1656,13 @@
         </div>
     </div>
 
-    <!-- Leitura Rápida Com Aumento de Fonte -->
     <div id="generalModal" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 id="modalTitle" class="modal-title"></h3>
                 <div style="display:flex; gap:8px; align-items:center;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1)" style="padding: 4px 10px; font-size: 1rem;">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1)" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'modalBody')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'modalBody')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('generalModal')">&times;</button>
                 </div>
             </div>
@@ -1666,8 +1677,9 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- AQUI A MUDANÇA: Substitui o banco de dados interno pelo novo arquivo externo -->
+    <!-- AQUI ESTÁ O ARQUIVO DE LEITURAS QUE VOCÊ CRIOU -->
     <script src="leituras.js"></script>
+    
     <script>
         let currentWeek = 2; 
 
@@ -1700,22 +1712,34 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        let modalFontSize = 1.05;
-
-        function mudarTamanhoTexto(step) {
-            modalFontSize += (step * 0.15);
-            if(modalFontSize < 0.8) modalFontSize = 0.8;
-            if(modalFontSize > 2.5) modalFontSize = 2.5;
-            document.getElementById('modalBody').style.fontSize = modalFontSize + 'rem';
+        let fontSizes = {};
+        
+        function mudarTamanhoTexto(step, containerId) {
+            if(!fontSizes[containerId]) fontSizes[containerId] = 12; 
+            fontSizes[containerId] += (step * 1.5); 
+            
+            if(fontSizes[containerId] < 8) fontSizes[containerId] = 8;
+            if(fontSizes[containerId] > 28) fontSizes[containerId] = 28;
+            
+            let container = document.getElementById(containerId);
+            if (container) {
+                if (containerId === 'modalBody' || containerId.includes('reflexoes')) {
+                    container.style.fontSize = fontSizes[containerId] + 'pt';
+                } else {
+                    let texts = container.querySelectorAll('.script-text');
+                    texts.forEach(el => el.style.fontSize = fontSizes[containerId] + 'pt');
+                }
+            }
         }
 
         function openReading(key) {
             if (typeof readingsData === 'undefined') { alert('O arquivo leituras.js ainda não foi carregado corretamente.'); return; }
             if (!readingsData[key]) { alert('Erro ao carregar o texto da leitura.'); return; }
-            modalFontSize = 1.05;
-            document.getElementById('modalBody').style.fontSize = modalFontSize + 'rem';
             document.getElementById('modalTitle').innerText = readingsData[key].title;
             document.getElementById('modalBody').innerText = readingsData[key].text;
+            
+            fontSizes['modalBody'] = 14; 
+            document.getElementById('modalBody').style.fontSize = '14pt';
             openModal('generalModal');
         }
 
@@ -1733,7 +1757,20 @@
 
         function selectAllReadings(check) { document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check); }
 
-        function openActiveReflexoesModal() { if (currentWeek === 2) { openModal('modal_todas_reflexoes'); } else { openModal('modal_todas_reflexoes_w1'); } }
+        function openActiveRoteiroModal() {
+            if (currentWeek === 2) openModal('modal_roteiro_w2');
+            else openModal('modal_roteiro_domingo');
+        }
+
+        function openActivePrecesModal() {
+            if (currentWeek === 2) openModal('modal_preces_w2');
+            else openModal('modal_preces_domingo');
+        }
+
+        function openActiveReflexoesModal() { 
+            if (currentWeek === 2) openModal('modal_todas_reflexoes'); 
+            else openModal('modal_todas_reflexoes_w1'); 
+        }
 
         function runPrintMount(htmlContent) {
             document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
@@ -1756,9 +1793,6 @@
             const printHTML = `<div style="padding: 0.2cm 0.4cm;"><div class="print-sheet-header"><img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'"><h2>Paróquia Nossa Senhora Auxiliadora</h2><h3>Programação Litúrgica Oficial</h3><div class="print-period-badge">${weekTitle}</div></div><div class="print-general-content">${document.getElementById(containerId).innerHTML}</div></div>`;
             runPrintMount(printHTML);
         }
-
-        function printActiveRoteiro() { if (currentWeek === 2) { printRoteiroW2(); } else { printRoteiroW1(); } }
-        function printActivePreces() { if (currentWeek === 2) { printPrecesW2(); } else { printPrecesW1(); } }
 
         function printRoteiroW2() {
             const content = document.getElementById('content_roteiro_w2').innerHTML;
