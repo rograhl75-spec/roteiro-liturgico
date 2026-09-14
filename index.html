@@ -81,7 +81,8 @@
         .modal-close-btn{background:#f1f5f9;border:1px solid #cbd5e1;font-size:1.4rem;cursor:pointer;color:#64748b;width:34px;height:34px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
         .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6}
         
-        .leitura-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-bottom:15px}
+        /* GRID DE SELEÇÃO DE LEITURAS FORÇADO PARA DUAS COLUNAS NO CELULAR */
+        .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
         .leitura-col{background:#f8fafc;padding:10px;border:1px solid #cbd5e1;border-radius:6px;display:flex;flex-direction:column;gap:6px}
         .leitura-col strong{color:var(--primary);border-bottom:1px solid #e2e8f0;padding-bottom:4px;margin-bottom:4px}
         .leitura-col label{display:flex;align-items:center;gap:6px;font-size:0.9rem;cursor:pointer}
@@ -207,26 +208,29 @@
                 font-size: 8.5pt !important;
             }
 
-            /* ROTEIRO E PRECES - GARANTINDO O ALINHAMENTO LATERAL */
+            /* ROTEIRO E PRECES - GARANTINDO O ALINHAMENTO LATERAL COM FLEXBOX */
             .script-block { display: block !important; }
             .script-row {
-                display: grid !important; 
-                grid-template-columns: 110px 1fr !important; 
-                gap: 10px !important; 
-                margin-bottom: 8px !important; 
+                display: flex !important;
+                flex-direction: row !important;
+                margin-bottom: 10px !important;
                 page-break-inside: avoid !important;
+                align-items: stretch !important;
             }
             .script-tag {
-                display: flex !important;
-                width: 100% !important;
+                flex: 0 0 100px !important; 
+                box-sizing: border-box !important;
+                margin-right: 10px !important;
                 padding: 4px 6px !important;
                 border-radius: 4px !important;
                 font-size: 8pt !important;
+                display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
             }
             .script-text {
-                width: 100% !important;
+                flex: 1 1 auto !important;
+                box-sizing: border-box !important;
                 font-size: 11pt !important;
                 line-height: 1.35 !important;
                 padding: 6px 10px !important;
@@ -302,7 +306,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 19.0 - FINAL)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -647,7 +651,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
@@ -697,7 +701,6 @@
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
 
-            <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 7 de Setembro de 2026</h2>
@@ -750,7 +753,6 @@
                 </div>
             </div>
 
-            <!-- Terça 08/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 8 de Setembro de 2026</h2>
@@ -807,7 +809,6 @@
                 </div>
             </div>
 
-            <!-- Quarta 09/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 9 de Setembro de 2026</h2>
@@ -860,7 +861,6 @@
                 </div>
             </div>
 
-            <!-- Quinta 10/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 10 de Setembro de 2026</h2>
@@ -913,7 +913,6 @@
                 </div>
             </div>
 
-            <!-- Sexta 11/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 11 de Setembro de 2026</h2>
@@ -966,7 +965,6 @@
                 </div>
             </div>
 
-            <!-- Domingo 13/09 -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 12 e 13 de Setembro de 2026</h2>
@@ -1062,7 +1060,7 @@
 
     </div>
 
-    <!-- ================== MODAIS DO SISTEMA ================== -->
+    <!-- ================== MODAIS ================== -->
 
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
@@ -1289,7 +1287,7 @@
     <!-- AQUI A MUDANÇA: Substitui o banco de dados interno pelo novo arquivo externo -->
     <script src="leituras.js"></script>
     <script>
-        let currentWeek = 2; // Força inicialização na semana 2
+        let currentWeek = 2; 
 
         window.onload = function() {
             showWeek(2); 
