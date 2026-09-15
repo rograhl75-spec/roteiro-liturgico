@@ -67,9 +67,9 @@
         .buttons-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:1.2rem;padding-top:0.8rem;border-top:1px dashed var(--border); width: 100%; clear:both;}
         
         .script-block{display:flex;flex-direction:column;gap:6px;margin-top:0.6rem}
-        .script-row{display:grid;grid-template-columns:110px 1fr;gap:8px;align-items:stretch;page-break-inside:avoid}
-        .script-tag{font-weight:700;text-transform:uppercase;font-size:0.72rem;padding:4px;border-radius:4px;text-align:center;display:flex;align-items:center;justify-content:center}
-        .script-text{font-size:12pt;line-height:1.42;padding:6px 10px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify; transition: font-size 0.2s ease;}
+        .script-row{display:flex;flex-direction:row;gap:10px;margin-bottom:8px;page-break-inside:avoid;align-items:stretch}
+        .script-tag{flex:0 0 110px;font-weight:700;text-transform:uppercase;font-size:0.72rem;padding:4px;border-radius:4px;text-align:center;display:flex;align-items:center;justify-content:center}
+        .script-text{flex:1;font-size:12pt;line-height:1.42;padding:6px 10px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify;transition:font-size 0.2s ease}
         
         .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
         .row-animador .script-text{border-left-color:var(--cor-animador)} .row-padre .script-text{border-left-color:var(--cor-padre)} .row-musica .script-text{border-left-color:var(--cor-musica)} .row-todos .script-text{border-left-color:var(--cor-todos)} .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;background:#f8fafc}
@@ -102,9 +102,9 @@
             .escala-table td { display: block; border-bottom: none; padding: 4px 8px; text-align: left !important; width: auto !important; }
             .p-cel { color: #1e40af; font-size: 1rem; margin-top: 2px; }
             
-            .script-row { grid-template-columns: 1fr; gap: 0; margin-bottom: 8px; }
-            .script-tag { justify-content: flex-start; padding: 5px 12px; width: fit-content; font-size: 0.75rem; border-radius: 6px 6px 0 0; }
-            .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; }
+            .script-row { flex-direction: column; gap: 0; margin-bottom: 8px; }
+            .script-tag { justify-content: flex-start; padding: 5px 12px; width: fit-content; font-size: 0.75rem; border-radius: 6px 6px 0 0; flex:none;}
+            .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; flex:none;}
             
             .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
             
@@ -309,7 +309,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL 22.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 23.0 - CORREÇÃO BÊNÇÃO)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -379,7 +379,7 @@
                                 <tr><td>Prefácio: A vitória da Cruz gloriosa</td><td style="text-align:center;">801</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">802</td></tr>
-                                <tr><td>Bênção: Solene (Paixão) ou Simples</td><td style="text-align:center;">580 / 575</td></tr>
+                                <tr><td>Bênção: Solene (Paixão)</td><td style="text-align:center;">580</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -647,7 +647,7 @@
                                 <tr><td>Prefácio: Domingos do Tempo Comum IV</td><td style="text-align:center;">477</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td style="text-align:center;">583 / 575</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1015,7 +1015,7 @@
                                 <tr><td>Prefácio: Domingos do Tempo Comum II</td><td style="text-align:center;">475</td></tr>
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum) ou Simples</td><td style="text-align:center;">583 / 575</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1482,7 +1482,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós... glória, por todos os séculos dos séculos.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                
+
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador... ousamos dizer:</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus... livrai-nos do mal.</span></div>
