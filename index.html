@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
-    <!-- BIBLIOTECA PARA GERAR PDF NO CELULAR -->
+    <!-- BIBLIOTECA PARA GERAR PDF NO CELULAR/PC -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         :root{--primary:#1a365d;--secondary:#8c6414;--bg:#f8fafc;--card-bg:#ffffff;--text:#1e293b;--border:#cbd5e1;--cor-animador:#1e40af;--bg-animador:#eff6ff;--cor-padre:#991b1b;--bg-padre:#fef2f2;--cor-musica:#166534;--bg-musica:#f0fdf4;--cor-todos:#b45309;--bg-todos:#fffbeb;--cor-rubrica:#475569;--bg-rubrica:#f8fafc}
@@ -90,14 +90,8 @@
         
         #print-mount{display:none}
         
-        /* CONTROLE RESPONSIVO DE BOTÕES */
-        .mobile-only { display: none !important; }
-        .desktop-only { display: inline-flex !important; }
-        
+        /* ADAPTAÇÕES PARA CELULAR / TABLET */
         @media (max-width: 768px) {
-            .mobile-only { display: inline-flex !important; }
-            .desktop-only { display: none !important; }
-            
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .toolbar { flex-direction: column; align-items: stretch; }
             .action-btn { width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 4px; }
@@ -119,7 +113,7 @@
             .leitura-col label { font-size: 0.8rem; }
         }
 
-        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
+        /* ESTILOS DE IMPRESSÃO (BLINDADOS) */
         @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
@@ -142,34 +136,12 @@
                 padding: 0 !important;
             }
 
-            .print-sheet-header {
-                text-align: center;
-                border-bottom: 2px solid #cbd5e1;
-                padding-bottom: 8px;
-                margin-bottom: 12px;
-                page-break-after: avoid !important;
-                break-after: avoid !important;
-            }
-            .print-sheet-header img {
-                width: 180px !important;
-                height: auto !important;
-                max-height: 90px !important;
-                object-fit: contain !important;
-                margin: 0 auto 5px auto !important;
-                display: block !important;
-            }
+            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; page-break-after: avoid !important; break-after: avoid !important; }
+            .print-sheet-header img { width: 180px !important; height: auto !important; max-height: 90px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
             .print-sheet-header h2 { margin:0; font-size:12pt; color:#1a365d; text-transform:uppercase; page-break-after:avoid;}
             .print-sheet-header h3 { margin:2px 0 0 0; font-size:10pt; color:#8c6414; page-break-after:avoid;}
-            
-            .print-period-badge {
-                background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px;
-                border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase;
-            }
-            
-            .print-general-content {
-                page-break-before: avoid !important;
-                break-before: avoid !important;
-            }
+            .print-period-badge { background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px; border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase; }
+            .print-general-content { page-break-before: avoid !important; break-before: avoid !important; }
 
             .presidency-box { margin-bottom: 10px !important; border: 1px solid #cbd5e1 !important; border-top: 3px solid #1a365d !important; }
             .presidency-title { font-size: 8.5pt !important; padding: 4px 6px !important; background-color: #f8fafc !important; }
@@ -226,16 +198,16 @@
         <div>Processando Arquivo...</div>
     </div>
 
-    <!-- MODAL NOVO: PDF PRONTO PARA COMPARTILHAMENTO NATIVO -->
+    <!-- MODAL DE COMPARTILHAMENTO -->
     <div id="modal_share_ready" class="modal" style="z-index: 100000;">
         <div class="modal-content" style="text-align: center; max-width: 350px;">
             <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
             <h3 style="color: #16a34a; margin-top: 0; margin-bottom: 10px; font-size: 1.3rem;">PDF Gerado!</h3>
-            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">O arquivo está pronto. Clique no botão abaixo para enviar o documento pelo WhatsApp ou salvar no celular.</p>
+            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">O arquivo está pronto. Clique no botão abaixo para enviar o documento pelo WhatsApp ou salvar no dispositivo.</p>
             
             <div style="display: flex; flex-direction: column; gap: 12px;">
                 <button id="btn-share-native" class="action-btn whatsapp" style="padding: 14px; font-size: 1.1rem; width: 100%;">📲 Compartilhar Arquivo</button>
-                <button id="btn-download-native" class="action-btn blue" style="padding: 12px; font-size: 1rem; width: 100%;">💾 Salvar na Pasta Downloads</button>
+                <button id="btn-download-native" class="action-btn blue" style="padding: 12px; font-size: 1rem; width: 100%;">💾 Salvar / Baixar</button>
                 <button type="button" class="action-btn secondary" onclick="closeModal('modal_share_ready')" style="padding: 10px; width: 100%; background-color:#94a3b8;">Voltar</button>
             </div>
         </div>
@@ -245,7 +217,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL 25.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL - OFICIAL)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -258,11 +230,10 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas -->
+    <!-- Barra de Ferramentas - TODAS AS OPÇÕES EXIBIDAS SEMPRE -->
     <div class="toolbar">
-        <button type="button" class="action-btn desktop-only" onclick="printProgramacaoGeral()">🖨️ Imprimir Programação</button>
-        <button type="button" class="action-btn whatsapp mobile-only" onclick="shareProgramacaoPDF()">📲 Enviar Programação</button>
-        
+        <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir Prog.</button>
+        <button type="button" class="action-btn whatsapp" onclick="shareProgramacaoPDF()">📲 Baixar/Enviar Prog.</button>
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
         <button type="button" class="action-btn" onclick="openActivePrecesModal()">🙏 Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Leituras e Antífonas</button>
@@ -370,7 +341,6 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">803</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -423,7 +393,6 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">804</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -476,14 +445,13 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">II / 993</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118)</span></td><td style="text-align:center;">II / 994</td></tr>
@@ -529,14 +497,13 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td style="text-align:center;">II / 997</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17)</span></td><td style="text-align:center;">II / 998</td></tr>
@@ -596,7 +563,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
@@ -682,7 +649,6 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -794,7 +760,6 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -848,7 +813,6 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -902,7 +866,6 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1023,8 +986,7 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">SELEÇÃO DE LEITURAS PARA IMPRESSÃO</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn desktop-only" onclick="printSelectedReadings()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareSelectedReadingsPDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printSelectedReadings()">🖨️ Imprimir Selecionadas</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_seletor_leituras')">&times;</button>
                 </div>
             </div>
@@ -1125,7 +1087,7 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (14 a 20/09/2026)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn desktop-only" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn accent desktop-only" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
                     <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
                 </div>
@@ -1176,7 +1138,7 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (07 a 13/09/2026)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn desktop-only" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn accent desktop-only" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
                     <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
                 </div>
@@ -1222,7 +1184,7 @@
         </div>
     </div>
 
-    <!-- Modais de Roteiro e Preces -->
+    <!-- Modais de Roteiro e Preces RESTAURADOS E BLINDADOS -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1638,7 +1600,6 @@
         <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- AQUI ESTÁ O ARQUIVO DE LEITURAS QUE VOCÊ CRIOU -->
     <script src="leituras.js"></script>
     
     <script>
@@ -1733,22 +1694,17 @@
             else openModal('modal_todas_reflexoes_w1'); 
         }
 
-        // ====================================================================
-        // FUNÇÕES ORIGINAIS DE IMPRESSÃO VIA DESKTOP
-        // ====================================================================
-        
         function runPrintMount(htmlContent) {
-            document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
-            document.body.style.overflow = 'visible';
             const mount = document.getElementById('print-mount');
             mount.innerHTML = htmlContent;
             document.body.classList.add('printing-active');
+            
             window.onafterprint = function() {
                 document.body.classList.remove('printing-active');
                 mount.innerHTML = '';
-                document.body.style.overflow = '';
             };
-            setTimeout(() => { window.print(); }, 250);
+            
+            setTimeout(() => { window.print(); }, 150);
         }
 
         function printProgramacaoGeral() {
@@ -1807,10 +1763,6 @@
             runPrintMount(printHTML);
         }
 
-        // ====================================================================
-        // FUNÇÕES DE GERAÇÃO DE PDF NO CELULAR COM "ABRIR" EM NOVO MODAL
-        // ====================================================================
-        
         let currentPdfFile = null;
         let currentPdfUrl = null;
 
@@ -1838,7 +1790,6 @@
             };
 
             try {
-                // Gera o PDF no celular e armazena globalmente
                 const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
                 document.body.removeChild(tempDiv);
                 
@@ -1848,19 +1799,15 @@
                 currentPdfUrl = URL.createObjectURL(pdfBlob);
                 
                 loading.style.display = 'none';
-                
-                // Abre o modal de "Sucesso"
                 openModal('modal_share_ready');
-
             } catch (error) {
                 loading.style.display = 'none';
                 console.error("Erro ao gerar PDF:", error);
-                alert("Ocorreu um erro ao gerar o arquivo PDF no seu celular.");
+                alert("Ocorreu um erro ao gerar o arquivo PDF no seu aparelho.");
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Botão "Compartilhar (WhatsApp)" dentro da janela de Sucesso
             document.getElementById('btn-share-native').addEventListener('click', async () => {
                 if (currentPdfFile) {
                     if (navigator.canShare && navigator.canShare({ files: [currentPdfFile] })) {
@@ -1875,12 +1822,11 @@
                             console.log("Compartilhamento cancelado ou falhou:", err);
                         }
                     } else {
-                        alert("O navegador deste celular não suporta compartilhamento direto de PDF. Por favor, use a opção 'Salvar na Pasta Downloads'.");
+                        alert("Este navegador não suporta compartilhamento direto. Use a opção de Salvar/Baixar.");
                     }
                 }
             });
 
-            // Botão "Salvar (Fallback)" dentro da janela de Sucesso
             document.getElementById('btn-download-native').addEventListener('click', () => {
                 if (currentPdfUrl) {
                     const a = document.createElement('a');
@@ -1890,7 +1836,7 @@
                     a.click();
                     document.body.removeChild(a);
                     closeModal('modal_share_ready');
-                    alert("O arquivo foi salvo na pasta Downloads do seu celular.");
+                    alert("O arquivo foi salvo na pasta Downloads do seu aparelho.");
                 }
             });
         });
@@ -2030,7 +1976,7 @@
             
             const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
             if (checkedBoxes.length === 0) {
-                alert('Por favor, selecione ao menos uma leitura ou antífona para imprimir.');
+                alert('Por favor, selecione ao menos uma leitura ou antífona para enviar.');
                 return;
             }
             
@@ -2080,6 +2026,68 @@
                 <div style="display:block;">${readingsHTML}</div>
             `;
             generateAndSharePDF(htmlContent, 'Leituras_Selecionadas.pdf');
+        }
+        
+        function printSelectedReadings() {
+            if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
+            
+            const antiW1 = document.querySelector('input[value="antifonas_w1"]').checked;
+            const antiW2 = document.querySelector('input[value="antifonas_w2"]').checked;
+            
+            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
+            if (checkedBoxes.length === 0) {
+                alert('Por favor, selecione ao menos uma leitura ou antífona para imprimir.');
+                return;
+            }
+            
+            let readingsHTML = '';
+            checkedBoxes.forEach(cb => {
+                const key = cb.value;
+                if(key === 'antifonas_w1' || key === 'antifonas_w2') return;
+                
+                const r = readingsData[key];
+                if (r) {
+                    readingsHTML += `
+                        <div class="reading-print-block">
+                            <div class="leitura-dia">${r.day}</div>
+                            <div class="leitura-titulo">${r.title}</div>
+                            <div class="leitura-texto">${r.text}</div>
+                        </div>
+                    `;
+                }
+            });
+            
+            if (antiW1) {
+                readingsHTML += `
+                <div class="antifona-print-box">
+                    <h3>Antífonas e Aclamação (24º Domingo do Tempo Comum)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 406)<br>Dai a paz, Senhor, aos que em vós esperam; *<br>ouvi as preces do vosso servo e do vosso povo Israel.</p>
+                    <p><strong>Aclamação ao Evangelho</strong><br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: *<br>que vos ameis uns aos outros assim como eu vos amei.</p>
+                    <p><strong>Antífona de Comunhão</strong><br>Como é preciosa, ó Deus, a vossa graça! *<br>Na sombra de vossas asas os homens encontram abrigo.</p>
+                </div>`;
+            }
+            
+            if (antiW2) {
+                readingsHTML += `
+                <div class="antifona-print-box">
+                    <h3>Antífonas e Aclamação (25º Domingo do Tempo Comum)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
+                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
+                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
+                </div>`;
+            }
+
+            const printHTML = `
+                <div style="padding: 0cm 0.5cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Liturgia da Palavra — Proclamação no Ambão</h3>
+                    </div>
+                    ${readingsHTML}
+                </div>
+            `;
+            runPrintMount(printHTML);
         }
     </script>
 </body>
