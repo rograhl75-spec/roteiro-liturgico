@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
-    <!-- BIBLIOTECA PARA GERAR PDF NO CELULAR/PC -->
+    <!-- BIBLIOTECA PARA GERAR PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         :root{--primary:#1a365d;--secondary:#8c6414;--bg:#f8fafc;--card-bg:#ffffff;--text:#1e293b;--border:#cbd5e1;--cor-animador:#1e40af;--bg-animador:#eff6ff;--cor-padre:#991b1b;--bg-padre:#fef2f2;--cor-musica:#166534;--bg-musica:#f0fdf4;--cor-todos:#b45309;--bg-todos:#fffbeb;--cor-rubrica:#475569;--bg-rubrica:#f8fafc}
@@ -113,7 +113,7 @@
             .leitura-col label { font-size: 0.8rem; }
         }
 
-        /* ESTILOS DE IMPRESSÃO (BLINDADOS) */
+        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
         @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
@@ -136,12 +136,34 @@
                 padding: 0 !important;
             }
 
-            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; page-break-after: avoid !important; break-after: avoid !important; }
-            .print-sheet-header img { width: 180px !important; height: auto !important; max-height: 90px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
+            .print-sheet-header {
+                text-align: center;
+                border-bottom: 2px solid #cbd5e1;
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
+            .print-sheet-header img {
+                width: 180px !important;
+                height: auto !important;
+                max-height: 90px !important;
+                object-fit: contain !important;
+                margin: 0 auto 5px auto !important;
+                display: block !important;
+            }
             .print-sheet-header h2 { margin:0; font-size:12pt; color:#1a365d; text-transform:uppercase; page-break-after:avoid;}
             .print-sheet-header h3 { margin:2px 0 0 0; font-size:10pt; color:#8c6414; page-break-after:avoid;}
-            .print-period-badge { background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px; border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase; }
-            .print-general-content { page-break-before: avoid !important; break-before: avoid !important; }
+            
+            .print-period-badge {
+                background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px;
+                border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase;
+            }
+            
+            .print-general-content {
+                page-break-before: avoid !important;
+                break-before: avoid !important;
+            }
 
             .presidency-box { margin-bottom: 10px !important; border: 1px solid #cbd5e1 !important; border-top: 3px solid #1a365d !important; }
             .presidency-title { font-size: 8.5pt !important; padding: 4px 6px !important; background-color: #f8fafc !important; }
@@ -198,7 +220,7 @@
         <div>Processando Arquivo...</div>
     </div>
 
-    <!-- MODAL DE COMPARTILHAMENTO -->
+    <!-- MODAL NOVO: PDF PRONTO PARA COMPARTILHAMENTO NATIVO -->
     <div id="modal_share_ready" class="modal" style="z-index: 100000;">
         <div class="modal-content" style="text-align: center; max-width: 350px;">
             <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
@@ -217,7 +239,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL - OFICIAL)</span></div>
+        <div><span class="version-badge">SISTEMA PADRONIZADO (VERSÃO FINAL)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -230,10 +252,9 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas - TODAS AS OPÇÕES EXIBIDAS SEMPRE -->
+    <!-- Barra de Ferramentas - APENAS ABREM MODAIS -->
     <div class="toolbar">
-        <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir Prog.</button>
-        <button type="button" class="action-btn whatsapp" onclick="shareProgramacaoPDF()">📲 Baixar/Enviar Prog.</button>
+        <button type="button" class="action-btn" onclick="openActiveProgramacaoModal()">🗓️ Programação</button>
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
         <button type="button" class="action-btn" onclick="openActivePrecesModal()">🙏 Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Leituras e Antífonas</button>
@@ -243,7 +264,6 @@
     </div>
 
     <div class="container">
-
         <!-- ======================================================= -->
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
@@ -451,7 +471,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">II / 993</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118)</span></td><td style="text-align:center;">II / 994</td></tr>
@@ -503,7 +523,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td style="text-align:center;">II / 997</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17)</span></td><td style="text-align:center;">II / 998</td></tr>
@@ -563,7 +583,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
@@ -706,7 +726,6 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">797</td></tr>
-                                <tr><td>Bênção: Solene (Da Virgem Maria)</td><td style="text-align:center;">585</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -979,14 +998,34 @@
 
     </div>
 
-    <!-- ================== MODAIS DO SISTEMA ================== -->
+    <!-- ================== MODAIS ================== -->
 
+    <!-- MODAL NOVO DE PROGRAMAÇÃO GERAL -->
+    <div id="modal_programacao" class="modal">
+        <div class="modal-content" style="max-width:1200px;">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">🗓️ PROGRAMAÇÃO LITÚRGICA</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_programacao')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_programacao')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareProgramacaoPDF()">📲 Enviar PDF</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_programacao')">&times;</button>
+                </div>
+            </div>
+            <div id="content_programacao" class="modal-body" style="background:#f1f5f9; padding: 15px; border-radius:8px;">
+                <!-- Preenchido via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL SELETOR DE LEITURAS -->
     <div id="modal_seletor_leituras" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">SELEÇÃO DE LEITURAS PARA IMPRESSÃO</h3>
+                <h3 class="modal-title">📖 LEITURAS E ANTÍFONAS</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn" onclick="printSelectedReadings()">🖨️ Imprimir Selecionadas</button>
+                    <button type="button" class="action-btn" onclick="previewSelectedReadings()">👀 Visualizar Selecionadas</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_seletor_leituras')">&times;</button>
                 </div>
             </div>
@@ -1081,14 +1120,33 @@
         </div>
     </div>
 
+    <!-- MODAL DE VISUALIZAÇÃO DE LEITURAS (PREVIEW) -->
+    <div id="modal_leituras_view" class="modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">📖 LEITURAS SELECIONADAS</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_leituras_view')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_leituras_view')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printLeiturasFromView()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareLeiturasFromViewPDF()">📲 Enviar PDF</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_leituras_view')">&times;</button>
+                </div>
+            </div>
+            <div id="content_leituras_view" class="modal-body"></div>
+        </div>
+    </div>
+
     <!-- Modais de Reflexões -->
     <div id="modal_todas_reflexoes" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (14 a 20/09/2026)</h3>
-                <div class="modal-actions">
-                    <button type="button" class="action-btn accent desktop-only" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (14 a 20/09)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
                 </div>
             </div>
@@ -1136,10 +1194,12 @@
     <div id="modal_todas_reflexoes_w1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (07 a 13/09/2026)</h3>
-                <div class="modal-actions">
-                    <button type="button" class="action-btn accent desktop-only" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (07 a 13/09)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
                 </div>
             </div>
@@ -1184,16 +1244,16 @@
         </div>
     </div>
 
-    <!-- Modais de Roteiro e Preces RESTAURADOS E BLINDADOS -->
+    <!-- Modais de Roteiro e Preces -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">ROTEIRO DO COMENTARISTA — 25º DOMINGO</h3>
+                <h3 class="modal-title">ROTEIRO — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn desktop-only" onclick="printRoteiroW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRoteiroW2PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printRoteiroW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareRoteiroW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
                 </div>
             </div>
@@ -1309,12 +1369,12 @@
     <div id="modal_roteiro_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">ROTEIRO DO COMENTARISTA — 24º DOMINGO</h3>
+                <h3 class="modal-title">ROTEIRO — 24º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn desktop-only" onclick="printRoteiroW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRoteiroW1PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printRoteiroW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareRoteiroW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
                 </div>
             </div>
@@ -1431,12 +1491,12 @@
     <div id="modal_preces_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 25º Domingo</h3>
+                <h3 class="modal-title">PRECES — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn desktop-only" onclick="printPrecesW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="sharePrecesW2PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="sharePrecesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_w2')">&times;</button>
                 </div>
             </div>
@@ -1497,12 +1557,12 @@
     <div id="modal_preces_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES DOS FIÉIS — 24º Domingo</h3>
+                <h3 class="modal-title">PRECES — 24º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn desktop-only" onclick="printPrecesW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="sharePrecesW1PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="sharePrecesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_domingo')">&times;</button>
                 </div>
             </div>
@@ -1559,8 +1619,8 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese (11/09)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn desktop-only" onclick="printRitoCruz()">🖨️ Imprimir Rito</button>
-                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRitoCruzPDF()">📲 Enviar PDF</button>
+                    <button type="button" class="action-btn" onclick="printRitoCruz()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareRitoCruzPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_rito_cruz')">&times;</button>
                 </div>
             </div>
@@ -1576,6 +1636,23 @@
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Deus, criador e salvador das pessoas, por Vosso amor destes a vida a estes nossos irmãos e irmãs. Na misericórdia, os chamastes a Vós. Nós Vos pedimos confiantes, penetrando no íntimo de Seu ser, protegei-os e conservai-os neste Caminho da Iniciação Cristã. Levando ao fim Vosso plano de amor, concedei que se tornem plenamente conscientes e convictos discípulos do Vosso Filho Jesus Cristo, na Unidade do Espírito Santo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
             </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VISUALIZAÇÃO DE LEITURAS (PREVIEW) -->
+    <div id="modal_leituras_view" class="modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">📖 LEITURAS SELECIONADAS</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_leituras_view')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_leituras_view')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printLeiturasFromView()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareLeiturasFromViewPDF()">📲 Enviar PDF</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_leituras_view')">&times;</button>
+                </div>
+            </div>
+            <div id="content_leituras_view" class="modal-body"></div>
         </div>
     </div>
 
@@ -1645,7 +1722,7 @@
             
             let container = document.getElementById(containerId);
             if (container) {
-                if (containerId === 'modalBody' || containerId.includes('reflexoes')) {
+                if (containerId === 'modalBody' || containerId === 'content_leituras_view' || containerId.includes('reflexoes')) {
                     container.style.fontSize = fontSizes[containerId] + 'pt';
                 } else {
                     let texts = container.querySelectorAll('.script-text');
@@ -1679,6 +1756,13 @@
 
         function selectAllReadings(check) { document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check); }
 
+        function openActiveProgramacaoModal() {
+            const isW2 = (currentWeek === 2);
+            const containerId = isW2 ? 'semana2-container' : 'semana1-container';
+            document.getElementById('content_programacao').innerHTML = document.getElementById(containerId).innerHTML;
+            openModal('modal_programacao');
+        }
+
         function openActiveRoteiroModal() {
             if (currentWeek === 2) openModal('modal_roteiro_w2');
             else openModal('modal_roteiro_domingo');
@@ -1694,24 +1778,86 @@
             else openModal('modal_todas_reflexoes_w1'); 
         }
 
+        function previewSelectedReadings() {
+            if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
+            
+            const antiW1 = document.querySelector('input[value="antifonas_w1"]').checked;
+            const antiW2 = document.querySelector('input[value="antifonas_w2"]').checked;
+            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
+            
+            if (checkedBoxes.length === 0) {
+                alert('Por favor, selecione ao menos uma leitura ou antífona.');
+                return;
+            }
+            
+            let readingsHTML = '';
+            checkedBoxes.forEach(cb => {
+                const key = cb.value;
+                if(key === 'antifonas_w1' || key === 'antifonas_w2') return;
+                
+                const r = readingsData[key];
+                if (r) {
+                    readingsHTML += `
+                        <div class="reading-print-block">
+                            <div class="leitura-dia">${r.day}</div>
+                            <div class="leitura-titulo">${r.title}</div>
+                            <div class="leitura-texto">${r.text}</div>
+                        </div>
+                    `;
+                }
+            });
+            
+            if (antiW1) {
+                readingsHTML += `
+                <div class="antifona-print-box">
+                    <h3>Antífonas e Aclamação (24º Domingo do Tempo Comum)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 406)<br>Dai a paz, Senhor, aos que em vós esperam; *<br>ouvi as preces do vosso servo e do vosso povo Israel.</p>
+                    <p><strong>Aclamação ao Evangelho</strong><br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: *<br>que vos ameis uns aos outros assim como eu vos amei.</p>
+                    <p><strong>Antífona de Comunhão</strong><br>Como é preciosa, ó Deus, a vossa graça! *<br>Na sombra de vossas asas os homens encontram abrigo.</p>
+                </div>`;
+            }
+            
+            if (antiW2) {
+                readingsHTML += `
+                <div class="antifona-print-box">
+                    <h3>Antífonas e Aclamação (25º Domingo do Tempo Comum)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
+                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
+                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
+                </div>`;
+            }
+
+            document.getElementById('content_leituras_view').innerHTML = readingsHTML;
+            fontSizes['content_leituras_view'] = 14;
+            document.getElementById('content_leituras_view').style.fontSize = '14pt';
+            
+            closeModal('modal_seletor_leituras');
+            openModal('modal_leituras_view');
+        }
+
+        // ====================================================================
+        // FUNÇÕES ORIGINAIS DE IMPRESSÃO VIA DESKTOP
+        // ====================================================================
+        
         function runPrintMount(htmlContent) {
+            document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+            document.body.style.overflow = 'visible';
             const mount = document.getElementById('print-mount');
             mount.innerHTML = htmlContent;
             document.body.classList.add('printing-active');
-            
             window.onafterprint = function() {
                 document.body.classList.remove('printing-active');
                 mount.innerHTML = '';
+                document.body.style.overflow = '';
             };
-            
-            setTimeout(() => { window.print(); }, 150);
+            setTimeout(() => { window.print(); }, 250);
         }
 
         function printProgramacaoGeral() {
             const isW2 = (currentWeek === 2);
-            const containerId = isW2 ? 'semana2-container' : 'semana1-container';
+            const content = document.getElementById(isW2 ? 'semana2-container' : 'semana1-container').innerHTML;
             const weekTitle = isW2 ? "Semana de 14 a 20 de Setembro de 2026 — 25º Domingo do Tempo Comum" : "Semana de 07 a 13 de Setembro de 2026 — 24º Domingo do Tempo Comum";
-            const printHTML = `<div style="padding: 0.2cm 0.4cm;"><div class="print-sheet-header"><img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'"><h2>Paróquia Nossa Senhora Auxiliadora</h2><h3>Programação Litúrgica Oficial</h3><div class="print-period-badge">${weekTitle}</div></div><div class="print-general-content">${document.getElementById(containerId).innerHTML}</div></div>`;
+            const printHTML = `<div style="padding: 0.2cm 0.4cm;"><div class="print-sheet-header"><img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'"><h2>Paróquia Nossa Senhora Auxiliadora</h2><h3>Programação Litúrgica Oficial</h3><div class="print-period-badge">${weekTitle}</div></div><div class="print-general-content">${content}</div></div>`;
             runPrintMount(printHTML);
         }
 
@@ -1762,7 +1908,26 @@
             const printHTML = `<div style="padding: 1cm 0.8cm;"><div class="print-sheet-header"><img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'"><h2>Paróquia Nossa Senhora Auxiliadora</h2><h3>Reflexões Litúrgicas Diárias — 07 a 13 de Setembro de 2026</h3></div>${content}</div>`;
             runPrintMount(printHTML);
         }
+        
+        function printLeiturasFromView() {
+            const content = document.getElementById('content_leituras_view').innerHTML;
+            const printHTML = `
+                <div style="padding: 0cm 0.5cm;">
+                    <div class="print-sheet-header">
+                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
+                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
+                        <h3>Liturgia da Palavra — Proclamação no Ambão</h3>
+                    </div>
+                    ${content}
+                </div>
+            `;
+            runPrintMount(printHTML);
+        }
 
+        // ====================================================================
+        // FUNÇÕES CORRIGIDAS: GERAÇÃO DE PDF E COMPARTILHAMENTO NATIVO
+        // ====================================================================
+        
         let currentPdfFile = null;
         let currentPdfUrl = null;
 
@@ -1790,20 +1955,40 @@
             };
 
             try {
-                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
+                const pdfDataUri = await html2pdf().set(opt).from(tempDiv).outputPdf('datauristring');
+                
                 document.body.removeChild(tempDiv);
-                
-                currentPdfFile = new File([pdfBlob], filename, { type: 'application/pdf' });
-                
-                if(currentPdfUrl) URL.revokeObjectURL(currentPdfUrl);
-                currentPdfUrl = URL.createObjectURL(pdfBlob);
-                
                 loading.style.display = 'none';
-                openModal('modal_share_ready');
+
+                if (navigator.share) {
+                    try {
+                        const response = await fetch(pdfDataUri);
+                        const blob = await response.blob();
+                        const file = new File([blob], filename, { type: 'application/pdf' });
+                        
+                        await navigator.share({
+                            title: filename,
+                            text: 'Segue o documento litúrgico:',
+                            files: [file]
+                        });
+                        return; 
+                    } catch(shareErr) {
+                        console.log("Erro no Web Share, fallback para download:", shareErr);
+                    }
+                }
+                
+                const link = document.createElement('a');
+                link.href = pdfDataUri;
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                alert("O arquivo PDF foi salvo na sua pasta de Downloads. Você pode enviá-lo pelo WhatsApp a partir de lá.");
+
             } catch (error) {
                 loading.style.display = 'none';
                 console.error("Erro ao gerar PDF:", error);
-                alert("Ocorreu um erro ao gerar o arquivo PDF no seu aparelho.");
+                alert("Ocorreu um erro ao gerar o arquivo PDF.");
             }
         }
 
@@ -1968,126 +2153,17 @@
             generateAndSharePDF(htmlContent, 'Reflexoes_Semana1.pdf');
         }
 
-        function shareSelectedReadingsPDF() {
-            if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
-            
-            const antiW1 = document.querySelector('input[value="antifonas_w1"]').checked;
-            const antiW2 = document.querySelector('input[value="antifonas_w2"]').checked;
-            
-            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
-            if (checkedBoxes.length === 0) {
-                alert('Por favor, selecione ao menos uma leitura ou antífona para enviar.');
-                return;
-            }
-            
-            let readingsHTML = '';
-            checkedBoxes.forEach(cb => {
-                const key = cb.value;
-                if(key === 'antifonas_w1' || key === 'antifonas_w2') return;
-                
-                const r = readingsData[key];
-                if (r) {
-                    readingsHTML += `
-                        <div class="reading-print-block">
-                            <div class="leitura-dia">${r.day}</div>
-                            <div class="leitura-titulo">${r.title}</div>
-                            <div class="leitura-texto">${r.text}</div>
-                        </div>
-                    `;
-                }
-            });
-            
-            if (antiW1) {
-                readingsHTML += `
-                <div class="antifona-print-box">
-                    <h3>Antífonas e Aclamação (24º Domingo do Tempo Comum)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 406)<br>Dai a paz, Senhor, aos que em vós esperam; *<br>ouvi as preces do vosso servo e do vosso povo Israel.</p>
-                    <p><strong>Aclamação ao Evangelho</strong><br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: *<br>que vos ameis uns aos outros assim como eu vos amei.</p>
-                    <p><strong>Antífona de Comunhão</strong><br>Como é preciosa, ó Deus, a vossa graça! *<br>Na sombra de vossas asas os homens encontram abrigo.</p>
-                </div>`;
-            }
-            
-            if (antiW2) {
-                readingsHTML += `
-                <div class="antifona-print-box">
-                    <h3>Antífonas e Aclamação (25º Domingo do Tempo Comum)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
-                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
-                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
-                </div>`;
-            }
-
+        function shareLeiturasFromViewPDF() {
+            const content = document.getElementById('content_leituras_view').innerHTML;
             const htmlContent = `
                 <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
                     <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Leituras Selecionadas — Proclamação no Ambão</h3>
                 </div>
-                <div style="display:block;">${readingsHTML}</div>
+                <div style="display:block;">${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Leituras_Selecionadas.pdf');
-        }
-        
-        function printSelectedReadings() {
-            if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
-            
-            const antiW1 = document.querySelector('input[value="antifonas_w1"]').checked;
-            const antiW2 = document.querySelector('input[value="antifonas_w2"]').checked;
-            
-            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
-            if (checkedBoxes.length === 0) {
-                alert('Por favor, selecione ao menos uma leitura ou antífona para imprimir.');
-                return;
-            }
-            
-            let readingsHTML = '';
-            checkedBoxes.forEach(cb => {
-                const key = cb.value;
-                if(key === 'antifonas_w1' || key === 'antifonas_w2') return;
-                
-                const r = readingsData[key];
-                if (r) {
-                    readingsHTML += `
-                        <div class="reading-print-block">
-                            <div class="leitura-dia">${r.day}</div>
-                            <div class="leitura-titulo">${r.title}</div>
-                            <div class="leitura-texto">${r.text}</div>
-                        </div>
-                    `;
-                }
-            });
-            
-            if (antiW1) {
-                readingsHTML += `
-                <div class="antifona-print-box">
-                    <h3>Antífonas e Aclamação (24º Domingo do Tempo Comum)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 406)<br>Dai a paz, Senhor, aos que em vós esperam; *<br>ouvi as preces do vosso servo e do vosso povo Israel.</p>
-                    <p><strong>Aclamação ao Evangelho</strong><br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: *<br>que vos ameis uns aos outros assim como eu vos amei.</p>
-                    <p><strong>Antífona de Comunhão</strong><br>Como é preciosa, ó Deus, a vossa graça! *<br>Na sombra de vossas asas os homens encontram abrigo.</p>
-                </div>`;
-            }
-            
-            if (antiW2) {
-                readingsHTML += `
-                <div class="antifona-print-box">
-                    <h3>Antífonas e Aclamação (25º Domingo do Tempo Comum)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
-                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
-                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
-                </div>`;
-            }
-
-            const printHTML = `
-                <div style="padding: 0cm 0.5cm;">
-                    <div class="print-sheet-header">
-                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
-                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
-                        <h3>Liturgia da Palavra — Proclamação no Ambão</h3>
-                    </div>
-                    ${readingsHTML}
-                </div>
-            `;
-            runPrintMount(printHTML);
         }
     </script>
 </body>
