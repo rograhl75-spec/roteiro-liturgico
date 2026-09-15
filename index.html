@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
+    <!-- BIBLIOTECA PARA GERAR PDF NO CELULAR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         :root{--primary:#1a365d;--secondary:#8c6414;--bg:#f8fafc;--card-bg:#ffffff;--text:#1e293b;--border:#cbd5e1;--cor-animador:#1e40af;--bg-animador:#eff6ff;--cor-padre:#991b1b;--bg-padre:#fef2f2;--cor-musica:#166534;--bg-musica:#f0fdf4;--cor-todos:#b45309;--bg-todos:#fffbeb;--cor-rubrica:#475569;--bg-rubrica:#f8fafc}
         *{box-sizing:border-box} body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;font-size:14px;line-height:1.45; -webkit-text-size-adjust: 100%;}
@@ -30,7 +32,7 @@
         
         .toolbar{display:flex;justify-content:center;gap:8px;padding:0.7rem;background:#e2e8f0;border-bottom:1px solid var(--border);flex-wrap:wrap}
         .action-btn{background:var(--primary);color:#fff;border:none;padding:0.5rem 1rem;font-size:0.85rem;font-weight:600;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;justify-content:center}
-        .action-btn:hover{background:var(--primary-light)} .action-btn.secondary{background:var(--secondary)} .action-btn.secondary:hover{background:#6d4c0c} .action-btn.accent{background:#047857} .action-btn.blue{background:#2563eb} .action-btn.red{background:#991b1b} .action-btn.red:hover{background:#7f1d1d}
+        .action-btn:hover{background:var(--primary-light)} .action-btn.secondary{background:var(--secondary)} .action-btn.secondary:hover{background:#6d4c0c} .action-btn.accent{background:#047857} .action-btn.blue{background:#2563eb} .action-btn.red{background:#991b1b} .action-btn.red:hover{background:#7f1d1d} .action-btn.whatsapp{background:#25D366; color:#fff;} .action-btn.whatsapp:hover{background:#128C7E;}
         
         .container{max-width:1100px;margin:1rem auto;padding:0 0.8rem}
         .card{background:var(--card-bg);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06);margin-bottom:1.5rem;padding:1.2rem;border-left:5px solid var(--secondary);page-break-inside:avoid; display:flex; flex-direction:column;}
@@ -76,12 +78,11 @@
         
         .modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.65);justify-content:center;align-items:flex-start;padding:1.5rem 0.8rem;overflow-y:auto}
         .modal-content{background:#fff;padding:1.2rem;border-radius:8px;max-width:950px;width:100%;box-shadow:0 4px 25px rgba(0,0,0,0.25);margin:auto}
-        .modal-header-bar{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--border);padding-bottom:0.5rem;margin-bottom:0.8rem;gap:10px}
+        .modal-header-bar{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--border);padding-bottom:0.5rem;margin-bottom:0.8rem;gap:10px; flex-wrap:wrap;}
         .modal-title{margin:0;font-size:1.1rem;color:var(--primary);font-weight:bold}
         .modal-close-btn{background:#f1f5f9;border:1px solid #cbd5e1;font-size:1.4rem;cursor:pointer;color:#64748b;width:34px;height:34px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
         .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6; transition: font-size 0.2s ease;}
         
-        /* GRID DE SELEÇÃO DE LEITURAS FORÇADO PARA DUAS COLUNAS NO CELULAR */
         .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
         .leitura-col{background:#f8fafc;padding:10px;border:1px solid #cbd5e1;border-radius:6px;display:flex;flex-direction:column;gap:6px}
         .leitura-col strong{color:var(--primary);border-bottom:1px solid #e2e8f0;padding-bottom:4px;margin-bottom:4px}
@@ -89,8 +90,14 @@
         
         #print-mount{display:none}
         
+        /* Oculta botão de WhatsApp no desktop */
+        .mobile-only { display: none !important; }
+        
         /* ADAPTAÇÕES PARA CELULAR / TABLET */
         @media (max-width: 768px) {
+            .mobile-only { display: inline-flex !important; }
+            .desktop-only { display: none !important; }
+            
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .toolbar { flex-direction: column; align-items: stretch; }
             .action-btn { width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 4px; }
@@ -107,15 +114,13 @@
             .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; flex:none;}
             
             .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
-            
-            /* FORÇA DUAS COLUNAS NO CELULAR */
             .leitura-grid { grid-template-columns: repeat(2, 1fr); }
             .leitura-col { padding: 6px; }
             .leitura-col label { font-size: 0.8rem; }
         }
 
-        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
-        @media print{
+        /* ESTILOS DE IMPRESSÃO - PDF GENERATOR CONFIGURATION */
+        @media print {
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
             html, body {
@@ -166,82 +171,21 @@
                 break-before: avoid !important;
             }
 
-            /* ESCALA DE HORÁRIOS COMPACTA NA IMPRESSÃO GERAL PARA NÃO TOMAR A TELA TODA */
-            .presidency-box {
-                margin-bottom: 10px !important;
-                border: 1px solid #cbd5e1 !important;
-                border-top: 3px solid #1a365d !important;
-            }
-            .presidency-title {
-                font-size: 8.5pt !important;
-                padding: 4px 6px !important;
-                background-color: #f8fafc !important;
-            }
-            .escala-table {
-                font-size: 8.5pt !important;
-                line-height: 1.2 !important;
-            }
-            .escala-table td {
-                padding: 3px 6px !important;
-            }
-            .p-hora {
-                font-size: 8pt !important;
-                padding: 1px 4px !important;
-            }
+            .presidency-box { margin-bottom: 10px !important; border: 1px solid #cbd5e1 !important; border-top: 3px solid #1a365d !important; }
+            .presidency-title { font-size: 8.5pt !important; padding: 4px 6px !important; background-color: #f8fafc !important; }
+            .escala-table { font-size: 8.5pt !important; line-height: 1.2 !important; }
+            .escala-table td { padding: 3px 6px !important; }
+            .p-hora { font-size: 8pt !important; padding: 1px 4px !important; }
             
-            .print-general-content .card {
-                border: 1px solid #94a3b8 !important;
-                border-left: 5px solid #8c6414 !important;
-                box-shadow: none !important;
-                margin-bottom: 15px !important;
-                padding: 10px !important;
-                page-break-inside: avoid !important;
-            }
-            .tables-grid {
-                display: flex !important;
-                flex-direction: row !important;
-                justify-content: space-between !important;
-                align-items: flex-start !important;
-            }
-            .tables-grid > div {
-                width: 48% !important;
-            }
-            table.liturgy-table {
-                width: 100% !important;
-                font-size: 8.5pt !important;
-            }
+            .print-general-content .card { border: 1px solid #94a3b8 !important; border-left: 5px solid #8c6414 !important; box-shadow: none !important; margin-bottom: 15px !important; padding: 10px !important; page-break-inside: avoid !important; }
+            .tables-grid { display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: flex-start !important; }
+            .tables-grid > div { width: 48% !important; }
+            table.liturgy-table { width: 100% !important; font-size: 8.5pt !important; }
 
-            /* ROTEIRO E PRECES - GARANTINDO O ALINHAMENTO LATERAL COM FLEXBOX */
             .script-block { display: block !important; }
-            .script-row {
-                display: flex !important;
-                flex-direction: row !important;
-                margin-bottom: 10px !important;
-                page-break-inside: avoid !important;
-                align-items: stretch !important;
-            }
-            .script-tag {
-                flex: 0 0 100px !important; 
-                box-sizing: border-box !important;
-                margin-right: 10px !important;
-                padding: 4px 6px !important;
-                border-radius: 4px !important;
-                font-size: 8pt !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-            }
-            .script-text {
-                flex: 1 1 auto !important;
-                box-sizing: border-box !important;
-                font-size: 11pt !important;
-                line-height: 1.35 !important;
-                padding: 6px 10px !important;
-                border: 1px solid #cbd5e1 !important;
-                border-left-width: 4px !important; 
-                border-radius: 0 4px 4px 4px !important;
-                background-color: #fff !important;
-            }
+            .script-row { display: flex !important; flex-direction: row !important; margin-bottom: 10px !important; page-break-inside: avoid !important; align-items: stretch !important; }
+            .script-tag { flex: 0 0 100px !important; box-sizing: border-box !important; margin-right: 10px !important; padding: 4px 6px !important; border-radius: 4px !important; font-size: 8pt !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+            .script-text { flex: 1 1 auto !important; box-sizing: border-box !important; font-size: 11pt !important; line-height: 1.35 !important; padding: 6px 10px !important; border: 1px solid #cbd5e1 !important; border-left-width: 4px !important; border-radius: 0 4px 4px 4px !important; background-color: #fff !important; }
 
             .tag-animador{background:#eff6ff !important;color:#1e40af !important;border:1px solid #bfdbfe !important;}
             .tag-padre{background:#fef2f2 !important;color:#991b1b !important;border:1px solid #fecaca !important;}
@@ -253,63 +197,40 @@
             .row-musica .script-text{border-left-color:#166534 !important;}
             .row-todos .script-text{border-left-color:#b45309 !important;}
 
-            .preces-single-page {
-                page-break-after: always !important;
-                break-after: page !important;
-                display: block !important;
-            }
-            .preces-single-page:last-child {
-                page-break-after: auto !important;
-                break-after: auto !important;
-            }
+            .preces-single-page { page-break-after: always !important; break-after: page !important; display: block !important; }
+            .preces-single-page:last-child { page-break-after: auto !important; break-after: auto !important; }
 
-            /* IMPRESSÃO DAS LEITURAS COMPLETAS NO AMBÃO - PERMITINDO QUEBRAS LONGAS */
-            .reading-print-block {
-                margin-bottom: 25px;
-                page-break-inside: auto !important; 
-                border-bottom: 1px dashed #cbd5e1;
-                padding-bottom: 15px;
-                font-family: 'Georgia', serif;
-            }
-            .reading-print-block .leitura-dia {
-                font-size: 10pt;
-                font-weight: bold;
-                color: #1a365d;
-                margin-bottom: 4px;
-                text-transform: uppercase;
-                font-family: Arial, sans-serif;
-            }
-            .reading-print-block .leitura-titulo {
-                font-size: 14pt;
-                font-weight: bold;
-                color: #8c6414;
-                margin-bottom: 8px;
-                text-transform: uppercase;
-                border-bottom: 1px solid #e2e8f0;
-                padding-bottom: 4px;
-            }
-            .reading-print-block .leitura-texto {
-                font-size: 14pt; 
-                line-height: 1.6;
-                text-align: justify;
-                white-space: pre-line;
-                page-break-inside: auto !important;
-            }
+            .reading-print-block { margin-bottom: 25px; page-break-inside: auto !important; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; font-family: 'Georgia', serif; }
+            .reading-print-block .leitura-dia { font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
+            .reading-print-block .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 8px; text-transform: uppercase; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
+            .reading-print-block .leitura-texto { font-size: 14pt; line-height: 1.6; text-align: justify; white-space: pre-line; page-break-inside: auto !important; }
             
             .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:12pt; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
             .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:14pt; text-transform:uppercase; }
             .antifona-print-box p { margin-bottom:12px; text-align:justify; }
         }
+        
+        /* Loading Overlay for PDF generation */
+        #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 99999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; }
+        .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
     </style>
 </head>
 <body>
 
+    <!-- Overlay de Carregamento PDF Celular -->
+    <div id="pdf-loading">
+        <div class="spinner"></div>
+        <div>Gerando arquivo PDF, aguarde...</div>
+    </div>
+
     <header>
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO 24.0 - CORREÇÃO MISSAL)</span></div>
+        <div><span class="version-badge">SISTEMA COMPLETO: TELA + PDF WHATSAPP</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -322,9 +243,11 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas -->
+    <!-- Barra de Ferramentas - AGORA ABREM NA TELA -->
     <div class="toolbar">
-        <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Programação Geral</button>
+        <button type="button" class="action-btn desktop-only" onclick="printProgramacaoGeral()">🖨️ Imprimir Programação</button>
+        <button type="button" class="action-btn whatsapp mobile-only" onclick="shareProgramacaoPDF()">📲 Enviar Programação</button>
+        
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
         <button type="button" class="action-btn" onclick="openActivePrecesModal()">🙏 Preces</button>
         <button type="button" class="action-btn secondary" onclick="openModal('modal_seletor_leituras')">📖 Leituras e Antífonas</button>
@@ -648,6 +571,7 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -797,6 +721,7 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">797</td></tr>
+                                <tr><td>Bênção: Solene (Da Virgem Maria)</td><td style="text-align:center;">585</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1016,6 +941,7 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1280,7 +1206,8 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn" onclick="printRoteiroW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printRoteiroW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRoteiroW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
                 </div>
             </div>
@@ -1400,7 +1327,8 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn" onclick="printRoteiroW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printRoteiroW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRoteiroW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
                 </div>
             </div>
@@ -1521,7 +1449,8 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w2')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printPrecesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="sharePrecesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_w2')">&times;</button>
                 </div>
             </div>
@@ -1569,7 +1498,7 @@
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas families e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
@@ -1586,7 +1515,8 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
-                    <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printPrecesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="sharePrecesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_domingo')">&times;</button>
                 </div>
             </div>
@@ -1643,7 +1573,8 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">RITO DE ENTREGA DA CRUZ — Catequese (11/09)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn" onclick="printRitoCruz()">🖨️ Imprimir Rito</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printRitoCruz()">🖨️ Imprimir Rito</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareRitoCruzPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_rito_cruz')">&times;</button>
                 </div>
             </div>
@@ -1778,6 +1709,10 @@
             else openModal('modal_todas_reflexoes_w1'); 
         }
 
+        // ====================================================================
+        // FUNÇÕES ORIGINAIS DE IMPRESSÃO VIA DESKTOP (MANTIDAS INTACTAS)
+        // ====================================================================
+        
         function runPrintMount(htmlContent) {
             document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
             document.body.style.overflow = 'visible';
@@ -1848,6 +1783,175 @@
             runPrintMount(printHTML);
         }
 
+        // ====================================================================
+        // NOVAS FUNÇÕES: GERAÇÃO DE PDF E COMPARTILHAMENTO WHATSAPP NO CELULAR
+        // ====================================================================
+        
+        async function generateAndSharePDF(htmlContent, filename) {
+            const loading = document.getElementById('pdf-loading');
+            loading.style.display = 'flex';
+            
+            // Container temporário para renderizar o PDF
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = htmlContent;
+            
+            // Forçar estilos inline pro PDF ficar idêntico à impressão
+            tempDiv.style.width = '210mm';
+            tempDiv.style.padding = '15mm';
+            tempDiv.style.backgroundColor = '#ffffff';
+            tempDiv.style.color = '#000000';
+            tempDiv.style.fontFamily = 'Arial, sans-serif';
+            
+            document.body.appendChild(tempDiv);
+
+            const opt = {
+                margin:       [5, 5, 5, 5],
+                filename:     filename,
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            try {
+                // Gera o PDF como Blob
+                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
+                
+                // Cria arquivo para compartilhar
+                const file = new File([pdfBlob], filename, { type: 'application/pdf' });
+                
+                // Limpa tempDiv
+                document.body.removeChild(tempDiv);
+                loading.style.display = 'none';
+
+                // Tenta compartilhar nativamente (Funciona no Android/iOS)
+                if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                    await navigator.share({
+                        title: filename,
+                        text: 'Confira o documento litúrgico anexo.',
+                        files: [file]
+                    });
+                } else {
+                    // Fallback: se o navegador não suportar share(), faz o download direto
+                    const url = URL.createObjectURL(pdfBlob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                    alert("Seu navegador não suporta compartilhamento direto. O PDF foi baixado para o seu aparelho.");
+                }
+            } catch (error) {
+                loading.style.display = 'none';
+                console.error("Erro ao gerar PDF:", error);
+                alert("Ocorreu um erro ao gerar o arquivo PDF.");
+            }
+        }
+
+        function shareProgramacaoPDF() {
+            const isW2 = (currentWeek === 2);
+            const containerId = isW2 ? 'semana2-container' : 'semana1-container';
+            const weekTitle = isW2 ? "Semana de 14 a 20 de Setembro de 2026" : "Semana de 07 a 13 de Setembro de 2026";
+            
+            // Oculta os modais abertos no HTML copiado
+            let cleanHtml = document.getElementById(containerId).innerHTML;
+            cleanHtml = cleanHtml.replace(/<details/g, '<div style="display:none;"').replace(/<\/details>/g, '</div>');
+            
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Programação Litúrgica Oficial</h3>
+                    <div style="background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:10pt; margin-top:5px;">${weekTitle}</div>
+                </div>
+                ${cleanHtml}
+            `;
+            generateAndSharePDF(htmlContent, `Programacao_Liturgica_${isW2 ? 'Semana2' : 'Semana1'}.pdf`);
+        }
+
+        function shareRoteiroW2PDF() {
+            const content = document.getElementById('content_roteiro_w2').innerHTML;
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Roteiro Litúrgico do Comentarista — 25º Domingo</h3>
+                </div>
+                <div style="display:block;">${content}</div>
+            `;
+            generateAndSharePDF(htmlContent, 'Roteiro_25_Domingo.pdf');
+        }
+
+        function shareRoteiroW1PDF() {
+            const content = document.getElementById('content_roteiro_w1').innerHTML;
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Roteiro Litúrgico do Comentarista — 24º Domingo</h3>
+                </div>
+                <div style="display:block;">${content}</div>
+            `;
+            generateAndSharePDF(htmlContent, 'Roteiro_24_Domingo.pdf');
+        }
+
+        function sharePrecesW2PDF() {
+            const sabado = document.getElementById('preces_sabado_1830_w2').innerHTML;
+            const dom_manha = document.getElementById('preces_domingo_manha_w2').innerHTML;
+            const dom_noite = document.getElementById('preces_domingo_1830_w2').innerHTML;
+            
+            const header = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; page-break-after: avoid;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
+                </div>
+            `;
+            
+            const htmlContent = `
+                <div style="page-break-after: always;">${header} <div style="margin-bottom:20px;">${sabado}</div></div>
+                <div style="page-break-after: always;">${header} <div style="margin-bottom:20px;">${dom_manha}</div></div>
+                <div>${header} <div>${dom_noite}</div></div>
+            `;
+            generateAndSharePDF(htmlContent, 'Preces_25_Domingo.pdf');
+        }
+
+        function sharePrecesW1PDF() {
+            const sabado = document.getElementById('preces_sabado_1830_w1').innerHTML;
+            const dom_manha = document.getElementById('preces_domingo_manha_w1').innerHTML;
+            const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
+            
+            const header = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; page-break-after: avoid;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
+                </div>
+            `;
+            
+            const htmlContent = `
+                <div style="page-break-after: always;">${header} <div style="margin-bottom:20px;">${sabado}</div></div>
+                <div style="page-break-after: always;">${header} <div style="margin-bottom:20px;">${dom_manha}</div></div>
+                <div>${header} <div>${dom_noite}</div></div>
+            `;
+            generateAndSharePDF(htmlContent, 'Preces_24_Domingo.pdf');
+        }
+
+        function shareRitoCruzPDF() {
+            const content = document.getElementById('content_rito_cruz').innerHTML;
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Rito de Entrega da Cruz — Catequese</h3>
+                </div>
+                <div style="display:block;">${content}</div>
+            `;
+            generateAndSharePDF(htmlContent, 'Rito_da_Cruz_Catequese.pdf');
+        }
+
+        // ====================================================================
+        // FUNÇÃO DE IMPRESSÃO DE LEITURAS (MANTIDA)
+        // ====================================================================
         function printSelectedReadings() {
             if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
             
