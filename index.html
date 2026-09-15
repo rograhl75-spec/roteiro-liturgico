@@ -83,6 +83,7 @@
         .modal-close-btn{background:#f1f5f9;border:1px solid #cbd5e1;font-size:1.4rem;cursor:pointer;color:#64748b;width:34px;height:34px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
         .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6; transition: font-size 0.2s ease;}
         
+        /* GRID DE SELEÇÃO DE LEITURAS FORÇADO PARA DUAS COLUNAS NO CELULAR */
         .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
         .leitura-col{background:#f8fafc;padding:10px;border:1px solid #cbd5e1;border-radius:6px;display:flex;flex-direction:column;gap:6px}
         .leitura-col strong{color:var(--primary);border-bottom:1px solid #e2e8f0;padding-bottom:4px;margin-bottom:4px}
@@ -223,7 +224,7 @@
     <!-- Overlay de Carregamento PDF Celular -->
     <div id="pdf-loading">
         <div class="spinner"></div>
-        <div>Gerando arquivo PDF, aguarde...</div>
+        <div>Gerando e preparando arquivo, aguarde...</div>
     </div>
 
     <header>
@@ -571,7 +572,6 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -941,7 +941,6 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Bênção: Solene (Tempo Comum)</td><td style="text-align:center;">583</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1710,7 +1709,7 @@
         }
 
         // ====================================================================
-        // FUNÇÕES ORIGINAIS DE IMPRESSÃO VIA DESKTOP (MANTIDAS INTACTAS)
+        // FUNÇÕES ORIGINAIS DE IMPRESSÃO VIA DESKTOP
         // ====================================================================
         
         function runPrintMount(htmlContent) {
@@ -1784,18 +1783,16 @@
         }
 
         // ====================================================================
-        // NOVAS FUNÇÕES: GERAÇÃO DE PDF E COMPARTILHAMENTO WHATSAPP NO CELULAR
+        // FUNÇÕES CORRIGIDAS: GERAÇÃO DE PDF E COMPARTILHAMENTO NATIVO
         // ====================================================================
         
         async function generateAndSharePDF(htmlContent, filename) {
             const loading = document.getElementById('pdf-loading');
             loading.style.display = 'flex';
             
-            // Container temporário para renderizar o PDF
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = htmlContent;
             
-            // Forçar estilos inline pro PDF ficar idêntico à impressão
             tempDiv.style.width = '210mm';
             tempDiv.style.padding = '15mm';
             tempDiv.style.backgroundColor = '#ffffff';
@@ -1813,33 +1810,40 @@
             };
 
             try {
-                // Gera o PDF como Blob
-                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
+                // Força a renderização base64 datauristring em vez de blob cru
+                const pdfDataUri = await html2pdf().set(opt).from(tempDiv).outputPdf('datauristring');
                 
-                // Cria arquivo para compartilhar
-                const file = new File([pdfBlob], filename, { type: 'application/pdf' });
-                
-                // Limpa tempDiv
                 document.body.removeChild(tempDiv);
                 loading.style.display = 'none';
 
-                // Tenta compartilhar nativamente (Funciona no Android/iOS)
-                if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                    await navigator.share({
-                        title: filename,
-                        text: 'Confira o documento litúrgico anexo.',
-                        files: [file]
-                    });
-                } else {
-                    // Fallback: se o navegador não suportar share(), faz o download direto
-                    const url = URL.createObjectURL(pdfBlob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = filename;
-                    a.click();
-                    URL.revokeObjectURL(url);
-                    alert("Seu navegador não suporta compartilhamento direto. O PDF foi baixado para o seu aparelho.");
+                // Tenta usar a API Web Share nativa do celular (Para WhatsApp, Telegram, etc)
+                if (navigator.share) {
+                    try {
+                        // Converte Data URI para Blob para a API de Share
+                        const response = await fetch(pdfDataUri);
+                        const blob = await response.blob();
+                        const file = new File([blob], filename, { type: 'application/pdf' });
+                        
+                        await navigator.share({
+                            title: filename,
+                            text: 'Segue o documento litúrgico:',
+                            files: [file]
+                        });
+                        return; // Se der sucesso no share, encerra aqui
+                    } catch(shareErr) {
+                        console.log("Erro no Web Share, fallback para download:", shareErr);
+                    }
                 }
+                
+                // FALLBACK: Faz o download normal se o share não for suportado pelo sistema do usuário
+                const link = document.createElement('a');
+                link.href = pdfDataUri;
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                alert("O arquivo PDF foi salvo na sua pasta de Downloads. Você pode enviá-lo pelo WhatsApp a partir de lá.");
+
             } catch (error) {
                 loading.style.display = 'none';
                 console.error("Erro ao gerar PDF:", error);
@@ -1852,7 +1856,6 @@
             const containerId = isW2 ? 'semana2-container' : 'semana1-container';
             const weekTitle = isW2 ? "Semana de 14 a 20 de Setembro de 2026" : "Semana de 07 a 13 de Setembro de 2026";
             
-            // Oculta os modais abertos no HTML copiado
             let cleanHtml = document.getElementById(containerId).innerHTML;
             cleanHtml = cleanHtml.replace(/<details/g, '<div style="display:none;"').replace(/<\/details>/g, '</div>');
             
@@ -1949,9 +1952,6 @@
             generateAndSharePDF(htmlContent, 'Rito_da_Cruz_Catequese.pdf');
         }
 
-        // ====================================================================
-        // FUNÇÃO DE IMPRESSÃO DE LEITURAS (MANTIDA)
-        // ====================================================================
         function printSelectedReadings() {
             if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
             
