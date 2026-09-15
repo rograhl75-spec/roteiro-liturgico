@@ -31,7 +31,7 @@
         .active-week-banner{background:#fefce8;border:1.5px solid #ca8a04;color:#854d0e;font-size:0.92rem;font-weight:700;text-align:center;padding:0.6rem 0.8rem;border-radius:6px;margin:0.8rem auto 0.4rem;max-width:1100px;display:flex;align-items:center;justify-content:center;gap:8px}
         
         .toolbar{display:flex;justify-content:center;gap:8px;padding:0.7rem;background:#e2e8f0;border-bottom:1px solid var(--border);flex-wrap:wrap}
-        .action-btn{background:var(--primary);color:#fff;border:none;padding:0.5rem 1rem;font-size:0.85rem;font-weight:600;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;justify-content:center}
+        .action-btn{background:var(--primary);color:#fff;border:none;padding:0.5rem 1rem;font-size:0.85rem;font-weight:600;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;justify-content:center; white-space:nowrap;}
         .action-btn:hover{background:var(--primary-light)} .action-btn.secondary{background:var(--secondary)} .action-btn.secondary:hover{background:#6d4c0c} .action-btn.accent{background:#047857} .action-btn.blue{background:#2563eb} .action-btn.red{background:#991b1b} .action-btn.red:hover{background:#7f1d1d} .action-btn.whatsapp{background:#25D366; color:#fff;} .action-btn.whatsapp:hover{background:#128C7E;}
         
         .container{max-width:1100px;margin:1rem auto;padding:0 0.8rem}
@@ -83,7 +83,6 @@
         .modal-close-btn{background:#f1f5f9;border:1px solid #cbd5e1;font-size:1.4rem;cursor:pointer;color:#64748b;width:34px;height:34px;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
         .modal-body{font-size:1.05rem;color:#1e293b;white-space:pre-line;text-align:justify;line-height:1.6; transition: font-size 0.2s ease;}
         
-        /* GRID DE SELEÇÃO DE LEITURAS FORÇADO PARA DUAS COLUNAS NO CELULAR */
         .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
         .leitura-col{background:#f8fafc;padding:10px;border:1px solid #cbd5e1;border-radius:6px;display:flex;flex-direction:column;gap:6px}
         .leitura-col strong{color:var(--primary);border-bottom:1px solid #e2e8f0;padding-bottom:4px;margin-bottom:4px}
@@ -91,10 +90,10 @@
         
         #print-mount{display:none}
         
-        /* Oculta botão de WhatsApp no desktop */
+        /* CONTROLE RESPONSIVO DE BOTÕES */
         .mobile-only { display: none !important; }
+        .desktop-only { display: inline-flex !important; }
         
-        /* ADAPTAÇÕES PARA CELULAR / TABLET */
         @media (max-width: 768px) {
             .mobile-only { display: inline-flex !important; }
             .desktop-only { display: none !important; }
@@ -120,8 +119,8 @@
             .leitura-col label { font-size: 0.8rem; }
         }
 
-        /* ESTILOS DE IMPRESSÃO - PDF GENERATOR CONFIGURATION */
-        @media print {
+        /* ESTILOS DE IMPRESSÃO (CORRIGIDOS PARA O FORMATO A4 E DIAGRAMAÇÃO DO ROTEIRO) */
+        @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
             
             html, body {
@@ -212,8 +211,8 @@
         }
         
         /* Loading Overlay for PDF generation */
-        #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 99999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; }
-        .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px; }
+        #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.1rem; font-weight: bold; }
+        .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 45px; height: 45px; animation: spin 1s linear infinite; margin-bottom: 20px; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         
         footer{text-align:center;padding:1.5rem 1rem;font-size:0.8rem;color:#64748b;border-top:1px solid var(--border);margin-top:2rem;background:#fff}
@@ -221,17 +220,32 @@
 </head>
 <body>
 
-    <!-- Overlay de Carregamento PDF Celular -->
+    <!-- Overlay de Carregamento -->
     <div id="pdf-loading">
         <div class="spinner"></div>
-        <div>Gerando e preparando arquivo, aguarde...</div>
+        <div>Processando Arquivo...</div>
+    </div>
+
+    <!-- MODAL NOVO: PDF PRONTO PARA COMPARTILHAMENTO NATIVO -->
+    <div id="modal_share_ready" class="modal" style="z-index: 100000;">
+        <div class="modal-content" style="text-align: center; max-width: 350px;">
+            <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
+            <h3 style="color: #16a34a; margin-top: 0; margin-bottom: 10px; font-size: 1.3rem;">PDF Gerado!</h3>
+            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">O arquivo está pronto. Clique no botão abaixo para enviar o documento pelo WhatsApp ou salvar no celular.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+                <button id="btn-share-native" class="action-btn whatsapp" style="padding: 14px; font-size: 1.1rem; width: 100%;">📲 Compartilhar Arquivo</button>
+                <button id="btn-download-native" class="action-btn blue" style="padding: 12px; font-size: 1rem; width: 100%;">💾 Salvar na Pasta Downloads</button>
+                <button type="button" class="action-btn secondary" onclick="closeModal('modal_share_ready')" style="padding: 10px; width: 100%; background-color:#94a3b8;">Voltar</button>
+            </div>
+        </div>
     </div>
 
     <header>
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA COMPLETO: TELA + PDF WHATSAPP</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO E RESPONSIVO (VERSÃO FINAL 25.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -244,7 +258,7 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas - AGORA ABREM NA TELA -->
+    <!-- Barra de Ferramentas -->
     <div class="toolbar">
         <button type="button" class="action-btn desktop-only" onclick="printProgramacaoGeral()">🖨️ Imprimir Programação</button>
         <button type="button" class="action-btn whatsapp mobile-only" onclick="shareProgramacaoPDF()">📲 Enviar Programação</button>
@@ -356,6 +370,7 @@
                                 <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">803</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -408,6 +423,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">804</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -460,6 +476,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -512,6 +529,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -664,6 +682,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -775,6 +794,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -828,6 +848,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -881,6 +902,7 @@
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Bênção: Simples (Ordinário)</td><td style="text-align:center;">575</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1001,7 +1023,8 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">SELEÇÃO DE LEITURAS PARA IMPRESSÃO</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn" onclick="printSelectedReadings()">🖨️ Imprimir Selecionadas</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printSelectedReadings()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareSelectedReadingsPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_seletor_leituras')">&times;</button>
                 </div>
             </div>
@@ -1102,7 +1125,8 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (14 a 20/09/2026)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn accent" onclick="printTodasReflexoesW2()">🖨️ Imprimir Reflexões</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
                 </div>
             </div>
@@ -1152,7 +1176,8 @@
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS DIÁRIAS (07 a 13/09/2026)</h3>
                 <div class="modal-actions">
-                    <button type="button" class="action-btn accent" onclick="printTodasReflexoesW1()">🖨️ Imprimir Reflexões</button>
+                    <button type="button" class="action-btn desktop-only" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp mobile-only" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
                 </div>
             </div>
@@ -1197,7 +1222,7 @@
         </div>
     </div>
 
-    <!-- Modais de Roteiro e Preces RESTAURADOS E BLINDADOS -->
+    <!-- Modais de Roteiro e Preces -->
     <div id="modal_roteiro_w2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1409,7 +1434,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós... glória, por todos os séculos dos séculos.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-
+                
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador... ousamos dizer:</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus... livrai-nos do mal.</span></div>
@@ -1783,9 +1808,12 @@
         }
 
         // ====================================================================
-        // FUNÇÕES CORRIGIDAS: GERAÇÃO DE PDF E COMPARTILHAMENTO NATIVO
+        // FUNÇÕES DE GERAÇÃO DE PDF NO CELULAR COM "ABRIR" EM NOVO MODAL
         // ====================================================================
         
+        let currentPdfFile = null;
+        let currentPdfUrl = null;
+
         async function generateAndSharePDF(htmlContent, filename) {
             const loading = document.getElementById('pdf-loading');
             loading.style.display = 'flex';
@@ -1805,51 +1833,67 @@
                 margin:       [5, 5, 5, 5],
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true },
+                html2canvas:  { scale: 2, useCORS: true, windowWidth: 1024 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
             try {
-                // Força a renderização base64 datauristring em vez de blob cru
-                const pdfDataUri = await html2pdf().set(opt).from(tempDiv).outputPdf('datauristring');
-                
+                // Gera o PDF no celular e armazena globalmente
+                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
                 document.body.removeChild(tempDiv);
-                loading.style.display = 'none';
-
-                // Tenta usar a API Web Share nativa do celular (Para WhatsApp, Telegram, etc)
-                if (navigator.share) {
-                    try {
-                        // Converte Data URI para Blob para a API de Share
-                        const response = await fetch(pdfDataUri);
-                        const blob = await response.blob();
-                        const file = new File([blob], filename, { type: 'application/pdf' });
-                        
-                        await navigator.share({
-                            title: filename,
-                            text: 'Segue o documento litúrgico:',
-                            files: [file]
-                        });
-                        return; // Se der sucesso no share, encerra aqui
-                    } catch(shareErr) {
-                        console.log("Erro no Web Share, fallback para download:", shareErr);
-                    }
-                }
                 
-                // FALLBACK: Faz o download normal se o share não for suportado pelo sistema do usuário
-                const link = document.createElement('a');
-                link.href = pdfDataUri;
-                link.download = filename;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                alert("O arquivo PDF foi salvo na sua pasta de Downloads. Você pode enviá-lo pelo WhatsApp a partir de lá.");
+                currentPdfFile = new File([pdfBlob], filename, { type: 'application/pdf' });
+                
+                if(currentPdfUrl) URL.revokeObjectURL(currentPdfUrl);
+                currentPdfUrl = URL.createObjectURL(pdfBlob);
+                
+                loading.style.display = 'none';
+                
+                // Abre o modal de "Sucesso"
+                openModal('modal_share_ready');
 
             } catch (error) {
                 loading.style.display = 'none';
                 console.error("Erro ao gerar PDF:", error);
-                alert("Ocorreu um erro ao gerar o arquivo PDF.");
+                alert("Ocorreu um erro ao gerar o arquivo PDF no seu celular.");
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Botão "Compartilhar (WhatsApp)" dentro da janela de Sucesso
+            document.getElementById('btn-share-native').addEventListener('click', async () => {
+                if (currentPdfFile) {
+                    if (navigator.canShare && navigator.canShare({ files: [currentPdfFile] })) {
+                        try {
+                            await navigator.share({
+                                title: currentPdfFile.name,
+                                text: 'Segue o documento litúrgico:',
+                                files: [currentPdfFile]
+                            });
+                            closeModal('modal_share_ready');
+                        } catch (err) {
+                            console.log("Compartilhamento cancelado ou falhou:", err);
+                        }
+                    } else {
+                        alert("O navegador deste celular não suporta compartilhamento direto de PDF. Por favor, use a opção 'Salvar na Pasta Downloads'.");
+                    }
+                }
+            });
+
+            // Botão "Salvar (Fallback)" dentro da janela de Sucesso
+            document.getElementById('btn-download-native').addEventListener('click', () => {
+                if (currentPdfUrl) {
+                    const a = document.createElement('a');
+                    a.href = currentPdfUrl;
+                    a.download = currentPdfFile.name;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    closeModal('modal_share_ready');
+                    alert("O arquivo foi salvo na pasta Downloads do seu celular.");
+                }
+            });
+        });
 
         function shareProgramacaoPDF() {
             const isW2 = (currentWeek === 2);
@@ -1952,7 +1996,33 @@
             generateAndSharePDF(htmlContent, 'Rito_da_Cruz_Catequese.pdf');
         }
 
-        function printSelectedReadings() {
+        function shareTodasReflexoesW2PDF() {
+            const content = document.getElementById('content_todas_reflexoes').innerHTML;
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Reflexões Litúrgicas Diárias — 14 a 20 de Setembro</h3>
+                </div>
+                <div style="display:block;">${content}</div>
+            `;
+            generateAndSharePDF(htmlContent, 'Reflexoes_Semana2.pdf');
+        }
+
+        function shareTodasReflexoesW1PDF() {
+            const content = document.getElementById('content_todas_reflexoes_w1').innerHTML;
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Reflexões Litúrgicas Diárias — 07 a 13 de Setembro</h3>
+                </div>
+                <div style="display:block;">${content}</div>
+            `;
+            generateAndSharePDF(htmlContent, 'Reflexoes_Semana1.pdf');
+        }
+
+        function shareSelectedReadingsPDF() {
             if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
             
             const antiW1 = document.querySelector('input[value="antifonas_w1"]').checked;
@@ -2001,17 +2071,15 @@
                 </div>`;
             }
 
-            const printHTML = `
-                <div style="padding: 0cm 0.5cm;">
-                    <div class="print-sheet-header">
-                        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" onerror="this.style.display='none'">
-                        <h2>Paróquia Nossa Senhora Auxiliadora</h2>
-                        <h3>Liturgia da Palavra — Proclamação no Ambão</h3>
-                    </div>
-                    ${readingsHTML}
+            const htmlContent = `
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px;">
+                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px;" onerror="this.style.display='none'">
+                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:5px 0; font-size:12pt; color:#8c6414;">Leituras Selecionadas — Proclamação no Ambão</h3>
                 </div>
+                <div style="display:block;">${readingsHTML}</div>
             `;
-            runPrintMount(printHTML);
+            generateAndSharePDF(htmlContent, 'Leituras_Selecionadas.pdf');
         }
     </script>
 </body>
