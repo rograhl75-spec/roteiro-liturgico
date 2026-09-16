@@ -167,7 +167,7 @@
             .reading-print-block { margin-bottom: 25px; page-break-inside: auto !important; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; font-family: 'Georgia', serif; }
             .reading-print-block .leitura-dia { font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
             .reading-print-block .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 8px; text-transform: uppercase; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
-            .reading-print-block .leitura-texto { font-size: 14pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-break: break-word; page-break-inside: auto !important; }
+            .reading-print-block .leitura-texto { font-size: 14pt; line-height: 1.6; text-align: justify; white-space: pre-line; word-wrap: break-word; word-break: break-word; page-break-inside: auto !important; }
             
             .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:12pt; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
             .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:14pt; text-transform:uppercase; }
@@ -190,12 +190,12 @@
         <div>Preparando arquivo PDF, aguarde...</div>
     </div>
 
-    <!-- MODAL NOVO: PDF PRONTO PARA COMPARTILHAMENTO NATIVO -->
+    <!-- MODAL DE COMPARTILHAMENTO -->
     <div id="modal_share_ready" class="modal" style="z-index: 100000;">
         <div class="modal-content" style="text-align: center; max-width: 350px;">
             <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
             <h3 style="color: #16a34a; margin-top: 0; margin-bottom: 10px; font-size: 1.3rem;">PDF Gerado com Sucesso!</h3>
-            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">O arquivo está pronto. Clique no botão abaixo para enviar o documento pelo WhatsApp ou salvar no dispositivo.</p>
+            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">Clique no botão abaixo para enviar pelo WhatsApp ou salvar no dispositivo.</p>
             
             <div style="display: flex; flex-direction: column; gap: 12px;">
                 <button id="btn-share-native" class="action-btn whatsapp" style="padding: 14px; font-size: 1.1rem; width: 100%;">📲 Compartilhar Arquivo</button>
@@ -354,6 +354,7 @@
                     <span class="color-badge badge-vermelho">Vermelho (Memória)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio, papa, e Cipriano, bispo, mártires (Ano II)</div>
+                <div style="margin-bottom: 0.8rem; font-weight: 700; color: #991b1b; background: #fef2f2; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #fca5a5;">⚠️ Observação: Missa de Entrega do ECC</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -1894,30 +1895,34 @@
             
             // INJEÇÃO DE CSS ESPECÍFICA PARA O PDF (Garante que nada seja cortado ou vaze das margens)
             const fullHtml = `
-                <div style="width: 800px; box-sizing: border-box; background: #fff; padding: 20px; text-align: left;">
+                <div style="width: 800px; max-width: 800px; background: #fff; padding: 20px; text-align: left; color: #000;">
                     <style>
+                        /* CSS FOR PDF ONLY */
                         * { box-sizing: border-box; }
                         body { font-family: 'Segoe UI', Arial, sans-serif; color: #000; background: #fff; margin: 0; padding: 0;}
                         
-                        /* Leituras e Salmos (Quebra de página automática) */
-                        .reading-print-block { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
-                        .leitura-dia { font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
-                        .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
-                        .leitura-texto { font-size: 13pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; word-break: break-word; }
-                        .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:12pt; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
-                        .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:14pt; text-transform:uppercase; }
+                        .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
+                        .leitura-dia { font-size: 11pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
+                        .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
+                        .leitura-texto { font-size: 13pt; line-height: 1.5; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
                         
-                        /* Preces, Roteiros e Reflexões */
-                        .script-block { display: block; width: 100%; }
-                        .script-row { display: flex; flex-direction: row; margin-bottom: 10px; width: 100%; page-break-inside: avoid; align-items: stretch;}
-                        .script-tag { flex: 0 0 110px; font-weight: bold; font-size: 8.5pt; text-transform: uppercase; padding: 6px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center;}
-                        .script-text { flex: 1; font-size: 12pt; line-height: 1.45; padding: 8px 12px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; word-break: break-word;}
-                        .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
-                        .row-animador .script-text{border-left-color:#1e40af} .row-padre .script-text{border-left-color:#991b1b} .row-musica .script-text{border-left-color:#166534} .row-todos .script-text{border-left-color:#b45309} .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
+                        /* Fix cut off by explicitly resetting flexbox and floats */
+                        .script-block, .tables-grid { display: block !important; width: 100% !important; }
+                        .script-row { display: flex; flex-direction: row; margin-bottom: 12px; width: 100%; page-break-inside: avoid; align-items: stretch;}
+                        .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 9pt; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center;}
+                        .script-text { flex: 1; font-size: 12pt; line-height: 1.45; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
+                        
+                        /* Table overrides to prevent cut off */
+                        table { width: 100% !important; border-collapse: collapse; table-layout: fixed; }
+                        th, td { word-wrap: break-word; white-space: normal; }
+                        
                         .preces-single-page { page-break-after: always; display: block; width: 100%;}
                         .preces-single-page:last-child { page-break-after: auto; }
                         
-                        /* Programação Geral */
+                        /* Rest of PDF styles */
+                        .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
+                        .row-animador .script-text{border-left-color:#1e40af} .row-padre .script-text{border-left-color:#991b1b} .row-musica .script-text{border-left-color:#166534} .row-todos .script-text{border-left-color:#b45309} .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
+                        
                         .card { margin-bottom: 20px; page-break-inside: avoid; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; padding: 15px; width: 100%; box-sizing: border-box;}
                         .card-header { display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
                         .card-header h2 { margin:0; font-size:13pt; color:#1a365d;}
@@ -1927,15 +1932,13 @@
                         .presidency-title { font-weight: bold; color: #1a365d; background: #f1f5f9; padding: 6px; border-bottom: 1px solid #ccc; font-size: 9.5pt; text-transform: uppercase; }
                         .escala-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
                         .escala-table td { padding: 4px 8px; border-bottom: 1px solid #eee; }
-                        .tables-grid { display: flex; flex-direction: row; justify-content: space-between; gap: 15px; margin-bottom: 15px; width: 100%; box-sizing: border-box;}
-                        .tables-grid > div { width: 48%; }
+                        .tables-grid > div { width: 100%; margin-bottom: 15px;}
                         .table-caption { font-weight: bold; color: #1a365d; margin-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 9.5pt; text-transform: uppercase; }
-                        .liturgy-table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+                        .liturgy-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
                         .liturgy-table th, .liturgy-table td { border: 1px solid #ccc; padding: 6px; text-align: left; }
                         .liturgy-table th { background: #f8fafc; color: #1a365d; }
                         .note-gloria-box { background:#fef2f2; border:1px solid #fca5a5; border-left:4px solid #b91c1c; padding:8px; margin-bottom:10px; font-size:9.5pt;}
                         
-                        /* Cabeçalho do PDF */
                         .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; page-break-after: avoid; }
                         .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
                         .pdf-header-wrap h2 { margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase; }
@@ -1949,26 +1952,27 @@
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = fullHtml;
             
-            // Força a renderização isolada na tela para que o html2canvas não corte a esquerda
+            // Força a renderização isolada na tela para que o html2canvas não corte a esquerda nem a altura
             tempDiv.style.position = 'absolute';
             tempDiv.style.top = '0px';
             tempDiv.style.left = '0px';
             tempDiv.style.width = '800px';
+            tempDiv.style.height = 'max-content'; // Impede o corte de altura
             tempDiv.style.backgroundColor = '#ffffff';
             tempDiv.style.zIndex = '-9999';
             
             document.body.appendChild(tempDiv);
 
-            // Aguarda a renderização do DOM
-            await new Promise(r => setTimeout(r, 200));
+            // Aguarda a renderização completa do DOM
+            await new Promise(r => setTimeout(r, 500));
 
             const opt = {
-                margin:       [10, 10, 10, 10], // Margens de 10mm seguras
+                margin:       10, // Margens em mm
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, windowWidth: 800, scrollX: 0, scrollY: 0 },
+                html2canvas:  { scale: 2, useCORS: true, width: 800, windowWidth: 800, scrollY: 0 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak:    { mode: ['css', 'legacy'] } // Força a quebra correta para evitar cortar salmos longos
+                pagebreak:    { mode: ['css', 'legacy'] }
             };
 
             try {
@@ -1992,6 +1996,7 @@
                 openModal('modal_share_ready');
             } catch (error) {
                 loading.style.display = 'none';
+                if(document.body.contains(tempDiv)) document.body.removeChild(tempDiv);
                 console.error("Erro ao gerar PDF:", error);
                 alert("Ocorreu um erro ao gerar o arquivo PDF.");
             }
