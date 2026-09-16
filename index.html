@@ -128,7 +128,7 @@
         .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;}
         
         /* Modal Window */
-        .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: flex-start; padding: 1.5rem 0.8rem; overflow-y: auto; }
+        .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); justify-content: center; align-items: flex-start; padding: 1.5rem 0.8rem; overflow-y: auto; }
         .modal-content { background: #fff; padding: 1.2rem; border-radius: 8px; max-width: 950px; width: 100%; box-shadow: 0 4px 25px rgba(0,0,0,0.25); margin: auto; }
         .modal-header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid var(--border); padding-bottom: 0.8rem; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px; }
         .modal-title { margin: 0; font-size: 1.2rem; color: var(--primary); font-weight: bold; }
@@ -156,7 +156,7 @@
             .p-cel { color: #1e40af; font-size: 1rem; margin-top: 2px; }
             
             .script-row { flex-direction: column; gap: 0; margin-bottom: 12px; }
-            .script-tag { justify-content: flex-start; padding: 6px 12px; width: fit-content; font-size: 0.8rem; border-radius: 6px 6px 0 0; flex: none; }
+            .script-tag { justify-content: flex-start; padding: 5px 12px; width: fit-content; font-size: 0.8rem; border-radius: 6px 6px 0 0; flex: none; }
             .script-text { border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; flex: none; }
             
             .modal-content { padding: 1rem; width: 100%; margin: 5px; }
@@ -195,7 +195,7 @@
             .leitura-texto { font-size: 12pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
         }
         
-        /* TELA AZUL DE CARREGAMENTO PARA IMPEDIR CORTE DE PDF */
+        /* TELA DE CARREGAMENTO PARA IMPEDIR CORTE DE PDF NO CELULAR */
         #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a365d; z-index: 999999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; text-align: center;}
         .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -205,10 +205,10 @@
 </head>
 <body>
 
-    <!-- Overlay de Carregamento -->
+    <!-- Overlay de Carregamento Fundo Escuro -->
     <div id="pdf-loading">
         <div class="spinner"></div>
-        <div>Preparando PDF Blindado...<br><small style="font-weight:normal; font-size:0.9rem;">Aguarde, mantendo as margens corretas.</small></div>
+        <div>Preparando Arquivo PDF...<br><small style="font-weight:normal; font-size:0.95rem;">Isso leva alguns segundos para blindar as margens.</small></div>
     </div>
 
     <!-- MODAL DE COMPARTILHAMENTO / DOWNLOAD NATIVO -->
@@ -219,8 +219,8 @@
             <p style="font-size: 1rem; color: #475569; margin-bottom: 25px; line-height: 1.5;">O documento litúrgico está pronto. Escolha uma das opções abaixo:</p>
             
             <div style="display: flex; flex-direction: column; gap: 15px;">
-                <button id="btn-share-native" class="action-btn whatsapp" style="padding: 16px; font-size: 1.1rem; width: 100%;">📲 Enviar para o WhatsApp</button>
-                <button id="btn-download-native" class="action-btn blue" style="padding: 14px; font-size: 1.05rem; width: 100%;">💾 Baixar no Aparelho</button>
+                <button id="btn-share-native" class="action-btn whatsapp" style="padding: 16px; font-size: 1.1rem; width: 100%;">📲 Enviar (WhatsApp / Etc)</button>
+                <button id="btn-download-native" class="action-btn blue" style="padding: 14px; font-size: 1.05rem; width: 100%;">💾 Salvar no Aparelho</button>
                 <button type="button" class="action-btn secondary" onclick="closeModal('modal_share_ready')" style="padding: 12px; width: 100%; background-color:#94a3b8;">Voltar</button>
             </div>
         </div>
@@ -371,7 +371,7 @@
                 </div>
             </div>
 
-            <!-- QUARTA -->
+            <!-- QUARTA (COM ECC) -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
@@ -379,7 +379,7 @@
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio, papa, e Cipriano, bispo, mártires (Ano II)</div>
                 
-                <!-- AVISO ECC INSERIDO AQUI CONFORME SOLICITADO -->
+                <!-- AVISO DO ECC ADICIONADO AQUI -->
                 <div class="ecc-box">⚠️ Observação: Missa de Entrega do ECC</div>
                 
                 <div class="presidency-box">
@@ -470,7 +470,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">II / 993</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118)</span></td><td style="text-align:center;">II / 994</td></tr>
@@ -1553,6 +1553,7 @@
         </div>
     </div>
 
+    <!-- PRECES W1 -->
     <div id="modal_preces_domingo" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
@@ -1739,7 +1740,6 @@
             if (m) { m.style.display = 'none'; document.body.style.overflow = ''; }
         }
 
-        // Fecha o modal ao clicar fora
         window.onclick = function(e) { if (e.target && e.target.classList.contains('modal')) { e.target.style.display = 'none'; document.body.style.overflow = ''; } };
 
         function selectAllReadings(check) { document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check); }
@@ -1920,83 +1920,81 @@
 
         async function generateAndSharePDF(contentHtml, filename) {
             const loading = document.getElementById('pdf-loading');
-            loading.style.display = 'flex'; // Cobre a tela toda e protege o carregamento
+            loading.style.display = 'flex'; // Cobre a tela toda
             
-            // Pausa rápida para o navegador renderizar a tela azul
+            // Pausa rápida para o navegador renderizar a tela de carregamento
             await new Promise(r => setTimeout(r, 100));
             
             const tempDiv = document.createElement('div');
             tempDiv.id = 'temp-pdf-container';
             
-            // Coloca o container na tela para não ficar "em branco", mas embaixo da tela azul de loading
+            // CRÍTICO: Para o celular não cortar e não gerar PDF em branco, o div TEM que estar na área visível da tela
+            // mas nós escondemos ele COLOCANDO-O ATRÁS do aviso de "Carregando" (z-index menor).
             tempDiv.style.position = 'absolute';
             tempDiv.style.top = '0px';
             tempDiv.style.left = '0px';
             tempDiv.style.width = '800px'; 
-            tempDiv.style.backgroundColor = '#ffffff';
-            tempDiv.style.zIndex = '10'; // Fica abaixo da tela de loading que é 999999
-            tempDiv.style.color = '#000000';
-            tempDiv.style.textAlign = 'left';
+            tempDiv.style.zIndex = '999990'; // Fica abaixo da tela de loading que é 999999
+            tempDiv.style.background = '#ffffff';
             
-            // O CSS Injetado blinda o conteúdo do PDF, formatando como A4 perfeito sem quebrar margens
+            // O CSS Injetado blinda o conteúdo do PDF, formatando como A4 perfeito
             const fullHtml = `
-                <style>
-                    #temp-pdf-container * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
-                    .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; }
-                    .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
-                    .pdf-header-wrap h2 { margin:0; font-size:18px; color:#1a365d; text-transform:uppercase; }
-                    .pdf-header-wrap h3 { margin:5px 0; font-size:15px; color:#8c6414; }
-                    .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:12px; margin-top:5px; text-transform:uppercase; }
-                    
-                    /* Roteiros e Preces */
-                    .script-row { display: flex; flex-direction: row; margin-bottom: 12px; align-items: stretch; width: 100%; page-break-inside: avoid;}
-                    .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 12px; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center; margin-right: 15px;}
-                    .script-text { flex: 1; font-size: 16px; line-height: 1.5; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
-                    
-                    /* Leituras e Salmos */
-                    .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
-                    .leitura-dia { font-size: 14px; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
-                    .leitura-titulo { font-size: 18px; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
-                    .leitura-texto { font-size: 16px; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
-                    .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:16px; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
-                    .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:18px; text-transform:uppercase; }
-                    
-                    /* Cores das tags */
-                    .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} 
-                    .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} 
-                    .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} 
-                    .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} 
-                    .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
-                    .row-animador .script-text{border-left-color:#1e40af} 
-                    .row-padre .script-text{border-left-color:#991b1b} 
-                    .row-musica .script-text{border-left-color:#166534} 
-                    .row-todos .script-text{border-left-color:#b45309} 
-                    .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
-                    
-                    /* Tabelas e Programação Geral */
-                    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 15px; page-break-inside: auto;}
-                    tr { page-break-inside: avoid; page-break-after: auto; }
-                    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; word-wrap: break-word; }
-                    th { background: #f8fafc; color: #1a365d; }
-                    .table-caption { font-weight: bold; color: #1a365d; margin-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 13px; text-transform: uppercase; }
-                    
-                    .card { margin-bottom: 20px; padding: 15px; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; page-break-inside: avoid; }
-                    .card-header { display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
-                    .card-header h2 { margin:0; font-size:18px; color:#1a365d;}
-                    .color-badge { display: inline-block; padding: 3px 8px; font-size: 11px; border-radius: 4px; font-weight: bold; margin-left: 10px; }
-                    .badge-verde{background:#1e6b37;color:#fff} .badge-branco{background:#fff;color:#1e293b;border:1px solid #94a3b8} .badge-vermelho{background:#991b1b;color:#fff}
-                    .presidency-box { border: 1px solid #ccc; margin-bottom: 15px; border-top: 3px solid #1a365d; border-radius: 4px; overflow:hidden;}
-                    .presidency-title { font-weight: bold; color: #1a365d; background: #f1f5f9; padding: 6px; border-bottom: 1px solid #ccc; font-size: 13px; text-transform: uppercase; }
-                    .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #991b1b; border-radius: 4px; padding: 0.6rem 0.8rem; margin-bottom: 1rem; font-size: 14px; font-weight: 700; color: #991b1b; display: inline-block; }
-                    
-                    .tables-grid { display: flex; flex-direction: row; justify-content: space-between; gap: 15px; margin-bottom: 15px; width: 100%; box-sizing: border-box;}
-                    .tables-grid > div { width: 48%; }
-                    .note-gloria-box { background:#fef2f2; border:1px solid #fca5a5; border-left:4px solid #b91c1c; padding:8px; margin-bottom:10px; font-size:13px;}
-                    
-                    .preces-single-page { page-break-after: always; display: block; width: 100%; }
-                    .preces-single-page:last-child { page-break-after: auto; }
-                </style>
-                <div style="padding: 20px;">
+                <div style="width: 800px; max-width: 800px; background: #fff; padding: 20px; color: #000; text-align: left;">
+                    <style>
+                        /* RESET E FONTES */
+                        * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif !important; }
+                        body { margin: 0; padding: 0; background: #fff; }
+                        
+                        /* CABEÇALHO */
+                        .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; }
+                        .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
+                        .pdf-header-wrap h2 { margin:0; font-size:18px; color:#1a365d; text-transform:uppercase; font-weight:bold;}
+                        .pdf-header-wrap h3 { margin:5px 0; font-size:15px; color:#8c6414; }
+                        .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:12px; margin-top:5px; text-transform:uppercase; }
+                        
+                        /* TABELAS E PROGRAMAÇÃO */
+                        table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 15px;}
+                        th, td { border: 1px solid #cbd5e1; padding: 8px; text-align: left; }
+                        th { background: #f8fafc; color: #1a365d; font-weight: bold; }
+                        .table-caption { font-weight: bold; color: #1a365d; margin-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 13px; text-transform: uppercase; }
+                        .card { margin-bottom: 20px; padding: 15px; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; }
+                        .card-header h2 { margin: 0; font-size: 18px; color: #1a365d; }
+                        .presidency-box { border: 1px solid #cbd5e1; margin-bottom: 15px; border-top: 3px solid #1a365d; border-radius: 4px; overflow:hidden;}
+                        .presidency-title { font-weight: bold; color: #1a365d; background: #f1f5f9; padding: 6px; border-bottom: 1px solid #cbd5e1; font-size: 13px; text-transform: uppercase; }
+                        
+                        /* ROTEIROS E PRECES */
+                        .script-block { display: block; width: 100%; }
+                        .script-row { display: flex; flex-direction: row; margin-bottom: 12px; align-items: stretch; width: 100%; page-break-inside: avoid;}
+                        .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 11px; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center; margin-right: 15px;}
+                        .script-text { flex: 1; font-size: 15px; line-height: 1.5; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; }
+                        
+                        /* CORES DAS TAGS */
+                        .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} 
+                        .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} 
+                        .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} 
+                        .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} 
+                        .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
+                        .row-animador .script-text{border-left-color:#1e40af} 
+                        .row-padre .script-text{border-left-color:#991b1b} 
+                        .row-musica .script-text{border-left-color:#166534} 
+                        .row-todos .script-text{border-left-color:#b45309} 
+                        .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
+                        
+                        /* LEITURAS E SALMOS */
+                        .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #cbd5e1; page-break-inside: auto; }
+                        .leitura-dia { font-size: 13px; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
+                        .leitura-titulo { font-size: 17px; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
+                        .leitura-texto { font-size: 15px; line-height: 1.6; text-align: justify; white-space: pre-wrap; }
+                        .antifona-print-box { margin-bottom:15px; border:1px solid #cbd5e1; padding:15px; font-size:15px; line-height:1.5; page-break-inside:avoid; }
+                        .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-size:16px; text-transform:uppercase; }
+                        
+                        /* QUEBRA DE PÁGINA */
+                        .preces-single-page { page-break-after: always; display: block; width: 100%;}
+                        .preces-single-page:last-child { page-break-after: auto; }
+                        
+                        /* AVISOS E DESTAQUES */
+                        .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #991b1b; border-radius: 4px; padding: 8px 12px; margin-bottom: 15px; font-size: 14px; font-weight: bold; color: #991b1b; display: inline-block; }
+                    </style>
                     ${contentHtml}
                 </div>
             `;
@@ -2004,23 +2002,28 @@
             tempDiv.innerHTML = fullHtml;
             document.body.appendChild(tempDiv);
             
-            // Pausa um pouco maior para garantir a pintura de todas as imagens antes de converter
+            // Faz o scroll da página subir pra garantir que o celular consiga fotografar o documento do início
+            const originalScroll = window.scrollY;
+            window.scrollTo(0, 0);
+            
+            // Aguarda o navegador desenhar a tela e baixar as fontes/imagens (CRÍTICO)
             await new Promise(r => setTimeout(r, 600));
 
             const opt = {
-                margin:       10, 
+                margin:       10, // Margem de segurança pro texto não colar na borda do PDF
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true },
-                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak:    { mode: ['css', 'legacy'] }
+                html2canvas:  { scale: 2, useCORS: true, windowWidth: 800, width: 800, scrollY: 0, scrollX: 0 },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
             try {
-                // Utilizando a API Blob nativa
+                // Geração do PDF no formato Blob (nativo)
                 const pdfBlob = await html2pdf().set(opt).from(tempDiv).output('blob');
                 
+                // Limpa o temporário e restaura a rolagem
                 document.body.removeChild(tempDiv);
+                window.scrollTo(0, originalScroll);
                 
                 currentPdfFile = new File([pdfBlob], filename, { type: 'application/pdf' });
                 
@@ -2028,17 +2031,17 @@
                 currentPdfUrl = URL.createObjectURL(pdfBlob);
                 
                 loading.style.display = 'none';
-                
                 openModal('modal_share_ready');
             } catch (error) {
                 loading.style.display = 'none';
                 if(document.body.contains(tempDiv)) document.body.removeChild(tempDiv);
+                window.scrollTo(0, originalScroll);
                 console.error("Erro ao gerar PDF:", error);
-                alert("Ocorreu um erro ao gerar o arquivo PDF.");
+                alert("Ocorreu um erro ao gerar o PDF. Tente novamente.");
             }
         }
 
-        // Lógicas dos Botões dentro do Modal de Sucesso
+        // Lógicas dos Botões dentro do Modal de Sucesso (Salvar/WhatsApp)
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('btn-share-native').addEventListener('click', async () => {
                 if (currentPdfFile) {
@@ -2046,7 +2049,7 @@
                         try {
                             await navigator.share({
                                 title: currentPdfFile.name,
-                                text: 'Documento Litúrgico - Paróquia N. Sra. Auxiliadora:',
+                                text: 'Documento Litúrgico - Paróquia Nossa Senhora Auxiliadora',
                                 files: [currentPdfFile]
                             });
                             closeModal('modal_share_ready');
@@ -2054,7 +2057,7 @@
                             console.log("Compartilhamento cancelado:", err);
                         }
                     } else {
-                        alert("Este navegador não suporta compartilhamento direto. Use a opção 'Salvar na Pasta'.");
+                        alert("O seu celular não suporta o envio direto. Use a opção 'Salvar na Pasta' para enviar no WhatsApp em seguida.");
                     }
                 }
             });
@@ -2068,7 +2071,7 @@
                     a.click();
                     document.body.removeChild(a);
                     closeModal('modal_share_ready');
-                    alert("O arquivo foi salvo na pasta Downloads do seu dispositivo.");
+                    alert("Salvo com sucesso na sua pasta Downloads.");
                 }
             });
         });
@@ -2126,7 +2129,7 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w2').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap">
+                <div class="pdf-header-wrap" style="page-break-after: avoid;">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
@@ -2146,7 +2149,7 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap">
+                <div class="pdf-header-wrap" style="page-break-after: avoid;">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
