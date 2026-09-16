@@ -1,105 +1,6 @@
 const readingsData = {
     // ==========================================
-    // SEMANA 1: 07 A 13 DE SETEMBRO (24º DOMINGO)
-    // ==========================================
-    '1l_seg': {
-        title: '1ª Leitura — 1 Coríntios 5,1-8',
-        day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-        text: `Leitura da Primeira Carta de São Paulo aos Coríntios 5,1-8\n\nIrmãos: É geral o boato de que há fornicação entre vós, e fornicação tal, que não se encontra nem mesmo entre os pagãos: um de vós vive com a mulher de seu pai. E vós andais cheios de orgulho, quando deveríeis antes estar de luto, a fim de que fosse tirado do meio de vós o que cometeu tal ação!\n\nQuanto a mim, ausente de corpo mas presente em espírito, já julguei, como se estivesse presente, aquele que assim procedeu. Em nome de nosso Senhor Jesus, estando reunidos vós e o meu espírito, com o poder de nosso Senhor Jesus, seja esse homem entregue a Satanás para a ruína da carne, a fim de que o espírito seja salvo no dia do Senhor.\n\nNão é bom o vosso motivo de glória! Não sabeis que um pouco de fermento leveda a massa toda? Lançai fora o velho fermento, para que sejais uma massa nova, já que sois pães ázimos. Pois o nosso cordeiro pascal, Cristo, já foi imolado. Celebremos a festa com os pães da sinceridade e da verdade.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_seg': {
-        title: 'Salmo Responsorial — Sl 5',
-        day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-        text: `R. Conduzi-me, ó Senhor, na vossa justiça!\n\nNão sois um Deus a quem agrade a iniquidade, nem os ímpios poderão permanecer diante dos vossos olhos. Exultem os que em vós têm seu refúgio e cantem de alegria para sempre. R.`
-    },
-    'ev_seg': {
-        title: 'Evangelho — Lucas 6,6-11',
-        day: 'Segunda-feira (07/09) — 23ª Semana do Tempo Comum',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 6,6-11\n\nJesus entrou na sinagoga em dia de sábado e curou o homem da mão seca. Perguntou aos fariseus: "É permitido no sábado fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" E restaurou-lhe a saúde.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-    '1l_ter': {
-        title: '1ª Leitura — Miquéias 5,1-4a',
-        day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-        text: `Leitura da Profecia de Miquéias 5,1-4a\n\nAssim diz o Senhor: "Tu, Belém de Éfrata, pequenina entre os povoados de Judá, de ti sairá aquele que governará meu povo. Ele apascentará com a força do Senhor e será a Paz".\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_ter': {
-        title: 'Salmo Responsorial — Sl 70(71)',
-        day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-        text: `R. Exulto de alegria no Senhor.\n\nSois meu apoio desde o ventre de minha mãe, meu refúgio e fortaleza para sempre. R.`
-    },
-    'ev_ter': {
-        title: 'Evangelho — Mateus 1,1-16.18-23',
-        day: 'Terça-feira (08/09) — Natividade de Nossa Senhora',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 1,1-16.18-23\n\nEis que o anjo apareceu em sonho a José e disse: "Não tenhas medo de receber Maria, pois o que nela foi gerado vem do Espírito Santo. Ela dará à luz um filho e tu lhe darás o nome de Jesus, Emanuel: Deus conosco".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-    '1l_qua': {
-        title: '1ª Leitura — 1 Coríntios 7,25-31',
-        day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-        text: `Leitura da Primeira Carta de São Paulo aos Coríntios 7,25-31\n\nIrmãos, o tempo é breve. Os que usam deste mundo vivam como se não usassem plenamente, pois a figura deste mundo passa.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_qua': {
-        title: 'Salmo Responsorial — Sl 44(45)',
-        day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-        text: `R. Escutai, minha filha, olhai, ouvi isto!\n\nO Rei se encantará com a vossa beleza; prestai-lhe homenagem, Ele é vosso Senhor. R.`
-    },
-    'ev_qua': {
-        title: 'Evangelho — Lucas 6,20-26',
-        day: 'Quarta-feira (09/09) — 23ª Semana do Tempo Comum',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 6,20-26\n\nJesus disse aos discípulos: "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus! Bem-aventurados vós que agora tendes fome, porque sereis saciados!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-    '1l_qui': {
-        title: '1ª Leitura — 1 Coríntios 8,1b-7.11-13',
-        day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-        text: `Leitura da Primeira Carta de São Paulo aos Coríntios 8,1b-7.11-13\n\nO conhecimento envaidece, mas o amor edifica. Para nós há um só Deus, o Pai, e um só Senhor, Jesus Cristo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_qui': {
-        title: 'Salmo Responsorial — Sl 138(139)',
-        day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-        text: `R. Conduzi-me no caminho para a vida, ó Senhor!\n\nSenhor, vós me sondais e me conheceis, guardais os meus passos e os meus caminhos. R.`
-    },
-    'ev_qui': {
-        title: 'Evangelho — Lucas 6,27-38',
-        day: 'Quinta-feira (10/09) — 23ª Semana do Tempo Comum',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 6,27-38\n\n"Amai os vossos inimigos, fazei o bem aos que vos odeiam e sede misericordiosos como vosso Pai celeste é misericordioso. Não julgueis e não sereis julgados".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-    '1l_sex': {
-        title: '1ª Leitura — 1 Coríntios 9,16-19.22b-27',
-        day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-        text: `Leitura da Primeira Carta de São Paulo aos Coríntios 9,16-19.22b-27\n\nAnunciar o evangelho não é glória para mim, mas uma necessidade: ai de mim se não evangelizar! Fiz-me tudo para todos, para salvar alguns a qualquer custo.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_sex': {
-        title: 'Salmo Responsorial — Sl 83(84)',
-        day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-        text: `R. Quão amável, ó Senhor, é vossa casa!\n\nMinha alma anseia pelos átrios do Senhor; meu coração e meu ser exultam no Deus vivo! R.`
-    },
-    'ev_sex': {
-        title: 'Evangelho — Lucas 6,39-42',
-        day: 'Sexta-feira (11/09) — 23ª Semana do Tempo Comum',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 6,39-42\n\n"Pode um cego guiar outro cego? Tira primeiro a trave do teu olho para depois enxergar o cisco no olho do teu irmão".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-    '1l_dom': {
-        title: '1ª Leitura — Eclesiástico 27,33-28,9',
-        day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-        text: `Leitura do Livro do Eclesiástico 27,33-28,9\n\nPerdoa a injustiça do teu próximo e quando orares teus pecados serão perdoados. Lembra-te do teu fim e deixa de odiar.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'sl_dom': {
-        title: 'Salmo Responsorial — Sl 102(103)',
-        day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-        text: `R. O Senhor é bondoso, compassivo e carinhoso.\n\nBendize, ó minha alma, ao Senhor, e não esqueças nenhum de seus favores! Ele perdoa toda culpa e cura toda enfermidade. R.`
-    },
-    '2l_dom': {
-        title: '2ª Leitura — Romanos 14,7-9',
-        day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-        text: `Leitura da Carta de São Paulo aos Romanos 14,7-9\n\nNinguém vive nem morre para si mesmo: se vivemos ou morremos, pertencemos ao Senhor Jesus. Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.\n\nPalavra do Senhor.\nR. Graças a Deus.`
-    },
-    'ev_dom': {
-        title: 'Evangelho — Mateus 18,21-35',
-        day: 'Domingo (13/09) — 24º Domingo do Tempo Comum',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 18,21-35\n\nPedro perguntou: "Senhor, quantas vezes devo perdoar o irmão? Até sete?" Jesus respondeu: "Não até sete, mas até setenta vezes sete!"\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    },
-
-    // ==========================================
-    // SEMANA 2: 14 A 20 DE SETEMBRO (25º DOMINGO)
+    // BLOCO 1: 14 A 20 DE SETEMBRO (25º DOMINGO)
     // ==========================================
     '1l_seg_w2': {
         title: '1ª Leitura — Números 21,4b-9',
@@ -195,5 +96,104 @@ const readingsData = {
         title: 'Evangelho — Mateus 20,1-16a',
         day: 'Domingo (20/09) — 25º Domingo do Tempo Comum',
         text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 20,1-16a\n\nNaquele tempo, Jesus contou esta parábola a seus discípulos:\n"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha.\n\nÀs nove horas da manhã, o patrão saiu de novo, viu outros que estavam na praça, desocupados, e lhes disse: 'Ide também vós para a minha vinha! E eu vos pagarei o que for justo'. E eles foram.\n\nO patrão saiu de novo ao meio-dia e às três horas da tarde, e fez a mesma coisa. Saindo outra vez pelas cinco horas da tarde, encontrou outros que estavam na praça, e lhes disse: 'Por que estais aí o dia inteiro desocupados?' Eles responderam: 'Porque ninguém nos contratou'. O patrão lhes disse: 'Ide vós também para a minha vinha'.\n\nQuando chegou a tarde, o patrão disse ao administrador: 'Chama os trabalhadores e paga-lhes uma diária a todos, começando pelos últimos até os primeiros!' Vieram os que tinham sido contratados às cinco da tarde e cada um recebeu uma moeda de prata. Em seguida vieram os que foram contratados primeiro, e pensavam que iam receber mais. Porém, cada um deles também recebeu uma moeda de prata.\n\nAo receberem o pagamento, começaram a resmungar contra o patrão: 'Estes últimos trabalharam uma hora só, e tu os igualaste a nós, que suportamos o cansaço e o calor o dia inteiro'.\n\nEntão o patrão disse a um deles: 'Amigo, eu não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Eu quero dar a este que foi contratado por último o mesmo que dei a ti. Por acaso não tenho o direito de fazer o que quero com aquilo que me pertence? Ou estás com inveja, porque estou sendo bom?'\n\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+
+    // ==========================================
+    // BLOCO 2: 21 A 27 DE SETEMBRO (26º DOMINGO)
+    // ==========================================
+    '1l_seg_w3': {
+        title: '1ª Leitura — Efésios 4,1-7.11-13',
+        day: 'Segunda-feira (21/09) — São Mateus, Apóstolo e Evangelista',
+        text: `Leitura da Carta de São Paulo aos Efésios 4,1-7.11-13\n\nIrmãos, eu, prisioneiro no Senhor, vos exorto a caminhardes de acordo com a vocação que recebestes: Com toda a humildade e mansidão, suportai-vos uns aos outros com paciência, no amor. Aplicai-vos a guardar a unidade do espírito pelo vínculo da paz. Há um só Corpo e um só Espírito, como também é uma só a esperança à qual fostes chamados. Há um só Senhor, uma só fé, um só batismo, um só Deus e Pai de todos, que reina sobre todos, age por meio de todos e permanece em todos. Cada um de nós recebeu a graça na medida em que Cristo lha deu. E foi ele quem instituiu alguns como apóstolos, outros como profetas, outros ainda como evangelistas, outros, enfim, como pastores e mestres. Assim, ele capacitou os santos para o ministério, para edificar o corpo de Cristo, até que cheguemos todos juntos à unidade da fé e do conhecimento do Filho de Deus, ao estado do homem perfeito e à estatura de Cristo em sua plenitude.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_seg_w3': {
+        title: 'Salmo Responsorial — Sl 18(19A)',
+        day: 'Segunda-feira (21/09) — São Mateus, Apóstolo e Evangelista',
+        text: `R. Seu som ressoa e se espalha em toda a terra.\n\nOs céus proclamam a glória do Senhor, e o firmamento, a obra de suas mãos; o dia ao dia transmite esta mensagem, a noite à noite publica esta notícia. R.\n\nNão são discursos nem frases ou palavras, nem são vozes que possam ser ouvidas; seu som ressoa e se espalha em toda a terra, chega aos confins do universo a sua voz. R.`
+    },
+    'ev_seg_w3': {
+        title: 'Evangelho — Mateus 9,9-13',
+        day: 'Segunda-feira (21/09) — São Mateus, Apóstolo e Evangelista',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 9,9-13\n\nNaquele tempo, Jesus viu um homem chamado Mateus, sentado na coletoria de impostos, e disse-lhe: "Segue-me!" Ele se levantou e seguiu a Jesus. Enquanto Jesus estava à mesa, em casa de Mateus, vieram muitos cobradores de impostos e pecadores e sentaram-se à mesa com Jesus e seus discípulos. Alguns fariseus viram isso e perguntaram aos discípulos: "Por que vosso mestre come com os cobradores de impostos e pecadores?" Jesus ouviu a pergunta e respondeu: "Aqueles que têm saúde não precisam de médico, mas sim os doentes. Aprendei, pois, o que significa: 'Quero misericórdia e não sacrifício'. De fato, eu não vim para chamar os justos, mas os pecadores".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+    '1l_ter_w3': {
+        title: '1ª Leitura — Provérbios 21,1-6.10-13',
+        day: 'Terça-feira (22/09) — 25ª Semana do Tempo Comum',
+        text: `Leitura do Livro dos Provérbios 21,1-6.10-13\n\nO coração do rei nas mãos do Senhor é como água corrente; ele o dirige para onde quer. O homem pensa que o seu caminho é sempre reto, mas é o Senhor quem sonda os corações. Praticar a justiça e o direito é mais agradável ao Senhor do que os sacrifícios. Olhar arrogante e coração orgulhoso, a lâmpada dos malvados não é senão o pecado. Os projetos do homem aplicado produzem abundância, mas todos os apressados só alcançam indigência. Tesouros adquiridos com língua mentirosa são ilusão passageira dos que procuram a morte. A alma do malvado deseja o mal, ele olha sem piedade para o seu próximo. Quando se castiga o zombador, aprende o imbecil, e quando o sábio é instruído, ele adquire mais saber. O justo observa a casa do ímpio e leva os ímpios à desgraça. Quem tapa os ouvidos ao clamor do pobre, também há de clamar, mas não será ouvido.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_ter_w3': {
+        title: 'Salmo Responsorial — Sl 118(119)',
+        day: 'Terça-feira (22/09) — 25ª Semana do Tempo Comum',
+        text: `R. Guiai-me, Senhor, no caminho de vossos preceitos!\n\nFeliz o homem sem pecado em seu caminho, que na lei do Senhor Deus vai progredindo! R.\n\nFazei-me conhecer vossos caminhos, e então meditarei vossos prodígios! R.\n\nEscolhi seguir a trilha da verdade, diante de mim eu coloquei vossos preceitos. R.\n\nDai-me o saber, e cumprirei a vossa lei, e de todo o coração a guardarei. R.\n\nGuiai meus passos no caminho que traçastes, pois só nele encontrarei felicidade. R.\n\nCumprirei constantemente a vossa lei; para sempre, eternamente a cumprirei! R.`
+    },
+    'ev_ter_w3': {
+        title: 'Evangelho — Lucas 8,19-21',
+        day: 'Terça-feira (22/09) — 25ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 8,19-21\n\nNaquele tempo, a mãe e os irmãos de Jesus aproximaram-se, mas não podiam chegar perto dele, por causa da multidão. Então anunciaram a Jesus: "Tua mãe e teus irmãos estão aí fora e querem te ver". Jesus respondeu: "Minha mãe e meus irmãos são aqueles que ouvem a Palavra de Deus, e a põem em prática".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+    '1l_qua_w3': {
+        title: '1ª Leitura — Provérbios 30,5-9',
+        day: 'Quarta-feira (23/09) — São Pio de Pietrelcina',
+        text: `Leitura do Livro dos Provérbios 30,5-9\n\nA Palavra de Deus é comprovada. Ele é um escudo para os que nele se abrigam. Não acrescentes nada às suas palavras, para que ele não te repreenda e passes por mentiroso! Duas coisas eu te pedi; não mas recuses, antes de eu morrer: afasta de mim a falsidade e a mentira, não me dês pobreza nem riqueza, mas concede-me o pão que me é necessário. Não aconteça que, saciado, eu te renegue e diga: "Quem é o Senhor?" Ou que, empobrecido, eu me ponha a roubar e profane o nome de meu Deus.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_qua_w3': {
+        title: 'Salmo Responsorial — Sl 118 (119)',
+        day: 'Quarta-feira (23/09) — São Pio de Pietrelcina',
+        text: `R. Vossa palavra é uma luz para os meus passos!\n\nAfastai-me do caminho da mentira e dai-me a vossa lei como um presente! R.\n\nA lei de vossa boca, para mim, vale mais do que milhões em ouro e prata. R.\n\nÉ eterna, ó Senhor, vossa palavra, ela é tão firme e estável como o céu. R.\n\nDe todo mau caminho afasto os passos, para que eu siga fielmente as vossas ordens. R.\n\nDe vossa lei eu recebi inteligência, por isso odeio os caminhos da mentira. R.\n\nEu odeio e detesto a falsidade, porém amo vossas leis e mandamentos! R.`
+    },
+    'ev_qua_w3': {
+        title: 'Evangelho — Lucas 9,1-6',
+        day: 'Quarta-feira (23/09) — São Pio de Pietrelcina',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 9,1-6\n\nNaquele tempo, Jesus convocou os Doze, deu-lhes poder e autoridade sobre todos os demônios e para curar doenças, enviou-os a proclamar o Reino de Deus e a curar os enfermos. E disse-lhes: "Não leveis nada para o caminho: nem cajado, nem sacola, nem pão, nem dinheiro, nem mesmo duas túnicas. Em qualquer casa onde entrardes, ficai aí; e daí é que partireis de novo. Todos aqueles que não vos acolherem, ao sairdes daquela cidade, sacudi a poeira dos vossos pés, como protesto contra eles". Os discípulos partiram e percorriam os povoados, anunciando a Boa-Nova e fazendo curas em todos os lugares.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+    '1l_qui_w3': {
+        title: '1ª Leitura — Eclesiastes 1,2-11',
+        day: 'Quinta-feira (24/09) — 25ª Semana do Tempo Comum',
+        text: `Leitura do Livro do Eclesiastes 1,2-11\n\n"Vaidade das vaidades, diz o Eclesiastes, vaidade das vaidades! Tudo é vaidade". Que proveito tira o homem de todo o trabalho com o qual se afadiga debaixo do sol? Uma geração passa, outra lhe sucede, enquanto a terra permanece sempre a mesma. O sol se levanta, o sol se deita, apressando-se para voltar ao seu lugar, donde novamente torna a levantar-se. Dirigindo-se para o sul e voltando para o norte, ora para cá, ora para lá, vai soprando o vento, para retomar novamente o seu curso. Todos os rios correm para o mar, e contudo o mar não transborda; voltam ao lugar de onde saíram para tornarem a correr. Tudo é penoso, difícil para o homem explicar. A vista não se cansa de ver, nem o ouvido se farta de ouvir. O que foi, será; o que aconteceu, acontecerá: não há nada de novo debaixo do sol. Uma coisa da qual se diz: "Eis aqui algo de novo", também esta já existiu nos séculos que nos precederam. Não há memória do que aconteceu no passado, nem também haverá lembrança do que acontecer, entre aqueles que viverão depois.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_qui_w3': {
+        title: 'Salmo Responsorial — Sl 89(90)',
+        day: 'Quinta-feira (24/09) — 25ª Semana do Tempo Comum',
+        text: `R. Ó Senhor, vós fostes sempre um refúgio para nós.\n\nVós fazeis voltar ao pó todo mortal, quando dizeis: "Voltai ao pó, filhos de Adão!" Pois mil anos para vós são como ontem, qual vigília de uma noite que passou. R.\n\nEles passam como o sono da manhã, são iguais à erva verde pelos campos: De manhã ela floresce vicejante, mas à tarde é cortada e logo seca. R.\n\nEnsinai-nos a contar os nossos dias, e dai ao nosso coração sabedoria! Senhor, voltai-vos! Até quando tardareis? Tende piedade e compaixão de vossos servos! R.\n\nSaciai-nos de manhã com vosso amor, e exultaremos de alegria todo o dia! Que a bondade do Senhor e nosso Deus repouse sobre nós e nos conduza! Tornai fecundo, ó Senhor, nosso trabalho. R.`
+    },
+    'ev_qui_w3': {
+        title: 'Evangelho — Lucas 9,7-9',
+        day: 'Quinta-feira (24/09) — 25ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 9,7-9\n\nNaquele tempo, o tetrarca Herodes ouviu falar de tudo o que estava acontecendo, e ficou perplexo, porque alguns diziam que João Batista tinha ressuscitado dos mortos. Outros diziam que Elias tinha aparecido; outros ainda, que um dos antigos profetas tinha ressuscitado. Então Herodes disse: "Eu mandei degolar João. Quem é esse homem, sobre quem ouço falar essas coisas?" E procurava ver Jesus.\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+    '1l_sex_w3': {
+        title: '1ª Leitura — Eclesiastes 3,1-11',
+        day: 'Sexta-feira (25/09) — 25ª Semana do Tempo Comum',
+        text: `Leitura do Livro do Eclesiastes 3,1-11\n\nTudo tem seu tempo. Há um momento oportuno para tudo que acontece debaixo do céu. Tempo de nascer e tempo de morrer; tempo de plantar e tempo de colher a planta. Tempo de matar e tempo de salvar; tempo de destruir e tempo de construir. Tempo de chorar e tempo de rir; tempo de lamentar e tempo de dançar. Tempo de atirar pedras e tempo de as amontoar; tempo de abraçar e tempo de se separar. Tempo de buscar e tempo de perder; tempo de guardar e tempo de esbanjar. Tempo de rasgar e tempo de costurar; tempo de calar e tempo de falar. Tempo de amar e tempo de odiar; tempo de guerra e tempo de paz. Que proveito tira o trabalhador de seu esforço? Observei a tarefa que Deus impôs aos homens, para que nela se ocupassem. As coisas que ele fez são todas boas no tempo oportuno. Além disso, ele dispôs que fossem permanentes; no entanto o homem jamais chega a conhecer o princípio e o fim da ação que Deus realiza.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_sex_w3': {
+        title: 'Salmo Responsorial — Sl 143(144)',
+        day: 'Sexta-feira (25/09) — 25ª Semana do Tempo Comum',
+        text: `R. Bendito seja o Senhor, meu rochedo!\n\nBendito seja o Senhor, meu rochedo. Ele é meu amor, meu refúgio, libertador, fortaleza e abrigo; É meu escudo: é nele que espero. R.\n\nQue é o homem, Senhor, para vós? Por que dele cuidais tanto assim, e no filho do homem pensais? Como o sopro de vento é o homem, os seus dias são sombra que passa. R.`
+    },
+    'ev_sex_w3': {
+        title: 'Evangelho — Lucas 9,18-22',
+        day: 'Sexta-feira (25/09) — 25ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 9,18-22\n\nAconteceu que Jesus estava rezando num lugar retirado, e os discípulos estavam com ele. Então Jesus perguntou-lhes: "Quem diz o povo que eu sou?" Eles responderam: "Uns dizem que és João Batista; outros, que és Elias; mas outros acham que és algum dos antigos profetas que ressuscitou". Mas Jesus perguntou: "E vós, quem dizeis que eu sou?" Pedro respondeu: "O Cristo de Deus". Mas Jesus proibiu-lhes severamente que contassem isso a alguém. E acrescentou: "O Filho do Homem deve sofrer muito, ser rejeitado pelos anciãos, pelos sumos sacerdotes e doutores da Lei, deve ser morto e ressuscitar no terceiro dia".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+    },
+    '1l_dom_w3': {
+        title: '1ª Leitura — Ezequiel 18,25-28',
+        day: 'Domingo (27/09) — 26º Domingo do Tempo Comum',
+        text: `Leitura da Profecia de Ezequiel 18,25-28\n\nAssim diz o Senhor: Vós andais dizendo: "A conduta do Senhor não é correta". Ouvi, vós da casa de Israel: É a minha conduta que não é correta, ou antes é a vossa conduta que não é correta? Quando um justo se desvia da justiça, pratica o mal e morre, é por causa do mal praticado que ele morre. Quando um ímpio se arrepende da maldade que praticou e observa o direito e a justiça, conserva a própria vida. Arrependendo-se de todos os seus pecados, com certeza viverá; não morrerá.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'sl_dom_w3': {
+        title: 'Salmo Responsorial — Sl 24,4bc-5.6-7.8-9 (R. 6a)',
+        day: 'Domingo (27/09) — 26º Domingo do Tempo Comum',
+        text: `R. Recordai, Senhor meu Deus, vossa ternura e compaixão!\n\nMostrai-me, ó Senhor, vossos caminhos, e fazei-me conhecer a vossa estrada! Vossa verdade me oriente e me conduza, porque sois o Deus da minha salvação; em vós espero, ó Senhor, todos os dias! R.\n\nRecordai, Senhor meu Deus, vossa ternura e a vossa compaixão que são eternas! Não recordeis os meus pecados quando jovem, nem vos lembreis de minhas faltas e delitos! De mim lembrai-vos, porque sois misericórdia e sois bondade sem limites, ó Senhor! R.\n\nO Senhor é piedade e retidão, e reconduz ao bom caminho os pecadores. Ele dirige os humildes na justiça, e aos pobres ele ensina o seu caminho. R.`
+    },
+    '2l_dom_w3': {
+        title: '2ª Leitura — Filipenses 2,1-11',
+        day: 'Domingo (27/09) — 26º Domingo do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Filipenses 2,1-11\n\nIrmãos: Se existe consolação na vida em Cristo, se existe alento no mútuo amor, se existe comunhão no Espírito, se existe ternura e compaixão, tornai então completa a minha alegria: aspirai à mesma coisa, unidos no mesmo amor; vivei em harmonia, procurando a unidade. Nada façais por competição ou vanglória, mas, com humildade, cada um julgue que o outro é mais importante, e não cuide somente do que é seu, mas também do que é do outro. Tende entre vós o mesmo sentimento que existe em Cristo Jesus. Jesus Cristo, existindo em condition divina, não fez do ser igual a Deus uma usurpação, mas esvaziou-se a si mesmo, assumindo a condição de escravo e tornando-se igual aos homens. Encontrado com aspecto humano, humilhou-se a si mesmo, fazendo-se obediente até à morte, e morte de cruz. Por isso, Deus o exaltou acima de tudo e lhe deu o Nome que está acima de todo nome. Assim, ao nome de Jesus, todo joelho se dobre no céu, na terra e abaixo da terra, e toda língua proclame: "Jesus Cristo é o Senhor!" — para a glória de Deus Pai.\n\nPalavra do Senhor.\nR. Graças a Deus.`
+    },
+    'ev_dom_w3': {
+        title: 'Evangelho — Mateus 21,28-32',
+        day: 'Domingo (27/09) — 26º Domingo do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 21,28-32\n\nNaquele tempo, Jesus disse aos sacerdotes e anciãos do povo: "Que vos parece? Um homem tinha dois filhos. Dirigindo-se ao primeiro, ele disse: 'Filho, vai trabalhar hoje na vinha!' O filho respondeu: 'Não quero'. Mas depois mudou de opinião e foi. O pai dirigiu-se ao outro filho e disse a mesma coisa. Este respondeu: 'Sim, senhor, eu vou'. Mas não foi. Qual dos dois fez a vontade do pai?" Os sumos sacerdotes e os anciãos do povo responderam: "O primeiro". Então Jesus lhes disse: "Em verdade vos digo, que os cobradores de impostos e as prostitutas vos precedem no Reino de Deus. Porque João veio até vós, num caminho de justiça, e vós não acreditastes nele. Ao contrário, os cobradores de impostos e as prostitutas creram nele. Vós, porém, mesmo vendo isso, não vos arrependestes para crer nele".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
     }
 };
