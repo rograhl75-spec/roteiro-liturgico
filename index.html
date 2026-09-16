@@ -11,11 +11,14 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
-    <!-- BIBLIOTECA PARA GERAR PDF NO CELULAR/PC -->
+    
+    <!-- BIBLIOTECA PARA GERAR PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <style>
         :root{--primary:#1a365d;--secondary:#8c6414;--bg:#f8fafc;--card-bg:#ffffff;--text:#1e293b;--border:#cbd5e1;--cor-animador:#1e40af;--bg-animador:#eff6ff;--cor-padre:#991b1b;--bg-padre:#fef2f2;--cor-musica:#166534;--bg-musica:#f0fdf4;--cor-todos:#b45309;--bg-todos:#fffbeb;--cor-rubrica:#475569;--bg-rubrica:#f8fafc}
-        *{box-sizing:border-box} body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;font-size:14px;line-height:1.45; -webkit-text-size-adjust: 100%;}
+        *{box-sizing:border-box} 
+        body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;font-size:14px;line-height:1.45;}
         
         header{background:linear-gradient(135deg,#ffffff,#f1f5f9);text-align:center;padding:1.2rem 1rem 0.8rem;border-bottom:2px solid var(--border)}
         .header-logo{max-width:250px;height:auto;margin-bottom:6px}
@@ -25,35 +28,37 @@
         
         .week-selector-bar{display:flex;justify-content:center;gap:10px;background:#cbd5e1;padding:0.75rem 0.6rem;border-bottom:2px solid #94a3b8;flex-wrap:wrap}
         .week-tab-btn{background:#fff;border:2px solid #64748b;color:#334155;font-size:0.95rem;font-weight:600;padding:0.65rem 1.2rem;border-radius:8px;cursor:pointer;transition:all 0.25s ease;width:100%;max-width:520px;text-align:center}
-        .week-tab-btn:hover{background:#f8fafc}
         .week-tab-btn.active{background:var(--primary)!important;border:3px solid #d4af37!important;color:#fff!important;font-weight:800;box-shadow:0 4px 14px rgba(26,54,93,0.35)}
         
         .active-week-banner{background:#fefce8;border:1.5px solid #ca8a04;color:#854d0e;font-size:0.92rem;font-weight:700;text-align:center;padding:0.6rem 0.8rem;border-radius:6px;margin:0.8rem auto 0.4rem;max-width:1100px;display:flex;align-items:center;justify-content:center;gap:8px}
         
         .toolbar{display:flex;justify-content:center;gap:8px;padding:0.7rem;background:#e2e8f0;border-bottom:1px solid var(--border);flex-wrap:wrap}
         .action-btn{background:var(--primary);color:#fff;border:none;padding:0.5rem 1rem;font-size:0.85rem;font-weight:600;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;justify-content:center; white-space:nowrap;}
-        .action-btn:hover{background:var(--primary-light)} .action-btn.secondary{background:var(--secondary)} .action-btn.secondary:hover{background:#6d4c0c} .action-btn.accent{background:#047857} .action-btn.blue{background:#2563eb} .action-btn.red{background:#991b1b} .action-btn.red:hover{background:#7f1d1d} .action-btn.whatsapp{background:#25D366; color:#fff;} .action-btn.whatsapp:hover{background:#128C7E;}
+        .action-btn:hover{background:var(--primary-light)} 
+        .action-btn.secondary{background:var(--secondary)} 
+        .action-btn.accent{background:#047857} 
+        .action-btn.blue{background:#2563eb} 
+        .action-btn.red{background:#991b1b} 
+        .action-btn.whatsapp{background:#25D366; color:#fff;} 
         
         .container{max-width:1100px;margin:1rem auto;padding:0 0.8rem}
-        .card{background:var(--card-bg);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06);margin-bottom:1.5rem;padding:1.2rem;border-left:5px solid var(--secondary);page-break-inside:avoid; display:flex; flex-direction:column;}
-        .card-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--border);padding-bottom:0.4rem;margin-bottom:0.6rem;flex-wrap:wrap;gap:6px}
+        .card{background:var(--card-bg);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.06);margin-bottom:1.5rem;padding:1.2rem;border-left:5px solid var(--secondary);}
+        .card-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1.5px solid var(--border);padding-bottom:0.4rem;margin-bottom:0.6rem;flex-wrap:wrap;}
         .card-header h2{margin:0;font-size:1.15rem;color:var(--primary)}
         
-        .color-badge{padding:0.2rem 0.6rem;border-radius:4px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+        .color-badge{padding:0.2rem 0.6rem;border-radius:4px;font-size:0.75rem;font-weight:700;text-transform:uppercase;}
         .badge-verde{background:#1e6b37;color:#fff} .badge-branco{background:#fff;color:#1e293b;border:1px solid #94a3b8} .badge-vermelho{background:#991b1b;color:#fff}
         
-        .presidency-box{background:#fff;border:1px solid #cbd5e1;border-top:4px solid var(--primary);border-radius:6px;margin-bottom:1.2rem;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
-        .presidency-title{color:var(--primary);font-size:0.85rem;font-weight:800;text-transform:uppercase;padding:0.6rem 0.8rem;border-bottom:1px solid #e2e8f0;background:#f8fafc;letter-spacing:0.5px}
+        .presidency-box{background:#fff;border:1px solid #cbd5e1;border-top:4px solid var(--primary);border-radius:6px;margin-bottom:1.2rem;}
+        .presidency-title{color:var(--primary);font-size:0.85rem;font-weight:800;text-transform:uppercase;padding:0.6rem 0.8rem;border-bottom:1px solid #e2e8f0;background:#f8fafc;}
         .escala-table{width:100%;border-collapse:collapse} 
         .escala-table td{padding:0.5rem 0.8rem;border-bottom:1px solid #f1f5f9;vertical-align:middle;font-size:0.9rem} 
-        .escala-table tr:last-child td{border-bottom:none} .escala-table tr:hover{background-color:#f8fafc}
-        .p-dia{font-weight:700;color:#1e293b} .p-hora{background:#eff6ff;color:#1e40af;font-weight:700;padding:2px 6px;border-radius:4px;display:inline-block;margin-left:4px}
+        .p-dia{font-weight:700;color:#1e293b} .p-hora{background:#eff6ff;color:#1e40af;font-weight:700;padding:2px 6px;border-radius:4px;margin-left:4px}
         .p-loc{color:#475569} .p-cel{font-weight:600;color:#0f172a;text-align:right}
         
         .note-gloria-box{background:#fef2f2;border:1px solid #fca5a5;border-left:4px solid #b91c1c;border-radius:4px;padding:0.55rem 0.8rem;margin-bottom:0.8rem;font-size:0.85rem;color:#7f1d1d}
         details.reflection-box{background:#f0fdf4;border:1px solid #bbf7d0;border-left:4px solid #16a34a;border-radius:5px;padding:0.5rem 0.8rem;margin-bottom:0.9rem}
-        details.reflection-box summary{font-weight:700;color:#166534;cursor:pointer;outline:none;display:flex;align-items:center;gap:6px;font-size:0.86rem}
-        details.reflection-box[open] summary{margin-bottom:0.6rem;border-bottom:1px dashed #86efac;padding-bottom:0.4rem}
+        details.reflection-box summary{font-weight:700;color:#166534;cursor:pointer;}
         .reflection-content{font-size:0.88rem;line-height:1.5;color:#1e293b;text-align:justify}
         .reflection-verse{font-style:italic;background:#ffffff;border-left:3px solid #16a34a;padding:4px 8px;margin:4px 0 8px 0;border-radius:0 4px 4px 0;color:#14532d}
         .reflection-prayer{font-style:italic;background:#ffffff;border-left:3px solid #0284c7;padding:4px 8px;margin-top:6px;border-radius:0 4px 4px 0;color:#0369a1}
@@ -62,19 +67,25 @@
         table.liturgy-table{width:100%;border-collapse:collapse;font-size:0.84rem;background:#fff}
         table.liturgy-table th, table.liturgy-table td{border:1px solid var(--border);padding:6px 8px;text-align:left}
         table.liturgy-table th{background:#f8fafc;color:var(--primary);font-weight:700;font-size:0.75rem;text-transform:uppercase}
-        .table-caption{font-weight:700;color:var(--primary);font-size:0.8rem;text-transform:uppercase;margin-bottom:0.3rem;border-bottom:1px solid var(--border);padding-bottom:0.15rem}
-        .clickable-ref{color:#1d4ed8;cursor:pointer;text-decoration:underline;font-weight:600;padding:1px 3px;display:inline-block}
-        .clickable-ref:hover{color:#1e40af}
-        
-        .buttons-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:1.2rem;padding-top:0.8rem;border-top:1px dashed var(--border); width: 100%; clear:both;}
+        .table-caption{font-weight:700;color:var(--primary);font-size:0.8rem;text-transform:uppercase;margin-bottom:0.3rem;}
+        .clickable-ref{color:#1d4ed8;cursor:pointer;text-decoration:underline;font-weight:600;}
         
         .script-block{display:flex;flex-direction:column;gap:6px;margin-top:0.6rem}
-        .script-row{display:flex;flex-direction:row;gap:10px;margin-bottom:8px;page-break-inside:avoid;align-items:stretch}
+        .script-row{display:flex;flex-direction:row;gap:10px;margin-bottom:8px;}
         .script-tag{flex:0 0 110px;font-weight:700;text-transform:uppercase;font-size:0.72rem;padding:4px;border-radius:4px;text-align:center;display:flex;align-items:center;justify-content:center}
         .script-text{flex:1;font-size:12pt;line-height:1.42;padding:6px 10px;border-left:3.5px solid #cbd5e1;background:#fff;border-radius:0 4px 4px 0;text-align:justify;transition:font-size 0.2s ease}
         
-        .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
-        .row-animador .script-text{border-left-color:var(--cor-animador)} .row-padre .script-text{border-left-color:var(--cor-padre)} .row-musica .script-text{border-left-color:var(--cor-musica)} .row-todos .script-text{border-left-color:var(--cor-todos)} .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;background:#f8fafc}
+        .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} 
+        .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} 
+        .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} 
+        .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} 
+        .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
+        
+        .row-animador .script-text{border-left-color:var(--cor-animador)} 
+        .row-padre .script-text{border-left-color:var(--cor-padre)} 
+        .row-musica .script-text{border-left-color:var(--cor-musica)} 
+        .row-todos .script-text{border-left-color:var(--cor-todos)} 
+        .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;}
         
         .modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.65);justify-content:center;align-items:flex-start;padding:1.5rem 0.8rem;overflow-y:auto}
         .modal-content{background:#fff;padding:1.2rem;border-radius:8px;max-width:950px;width:100%;box-shadow:0 4px 25px rgba(0,0,0,0.25);margin:auto}
@@ -85,18 +96,14 @@
         
         .leitura-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:12px;margin-bottom:15px}
         .leitura-col{background:#f8fafc;padding:10px;border:1px solid #cbd5e1;border-radius:6px;display:flex;flex-direction:column;gap:6px}
-        .leitura-col strong{color:var(--primary);border-bottom:1px solid #e2e8f0;padding-bottom:4px;margin-bottom:4px}
-        .leitura-col label{display:flex;align-items:center;gap:6px;font-size:0.9rem;cursor:pointer}
         
         #print-mount{display:none}
         
-        /* ADAPTAÇÕES PARA CELULAR / TABLET */
         @media (max-width: 768px) {
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .toolbar { flex-direction: column; align-items: stretch; }
             .action-btn { width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 4px; }
             .week-selector-bar { flex-direction: column; }
-            .week-tab-btn { padding: 12px; font-size: 1rem; }
             
             .escala-table tr { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 2px solid #e2e8f0; }
             .escala-table tr:last-child { border-bottom: none; }
@@ -105,70 +112,37 @@
             
             .script-row { flex-direction: column; gap: 0; margin-bottom: 8px; }
             .script-tag { justify-content: flex-start; padding: 5px 12px; width: fit-content; font-size: 0.75rem; border-radius: 6px 6px 0 0; flex:none;}
-            .script-text { font-size: 11.5pt; border-left: 4px solid #cbd5e1; border-radius: 0 6px 6px 6px; padding: 12px; flex:none;}
+            .script-text { font-size: 11.5pt; border-radius: 0 6px 6px 6px; padding: 12px; flex:none;}
             
             .modal-content { padding: 1rem; width: calc(100% - 10px); margin: 5px; }
             .leitura-grid { grid-template-columns: repeat(2, 1fr); }
-            .leitura-col { padding: 6px; }
-            .leitura-col label { font-size: 0.8rem; }
         }
 
-        /* ESTILOS DE IMPRESSÃO (NATIVO PC) */
         @media print{
             @page { margin: 12mm 10mm; size: A4 portrait; }
-            
-            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
             body > *:not(#print-mount) { display: none !important; }
-            
             #print-mount { display: block !important; position: relative !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
-
-            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; page-break-after: avoid !important; break-after: avoid !important; }
-            .print-sheet-header img { width: 180px !important; height: auto !important; max-height: 90px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
-            .print-sheet-header h2 { margin:0; font-size:12pt; color:#1a365d; text-transform:uppercase; page-break-after:avoid;}
-            .print-sheet-header h3 { margin:2px 0 0 0; font-size:10pt; color:#8c6414; page-break-after:avoid;}
-            .print-period-badge { background:#1a365d !important; color:#ffffff !important; display:inline-block; padding:3px 10px; border-radius:4px; font-size:9.5pt; font-weight:bold; margin-top:4px; text-transform:uppercase; }
-            .print-general-content { page-break-before: avoid !important; break-before: avoid !important; }
-
-            .presidency-box { margin-bottom: 10px !important; border: 1px solid #cbd5e1 !important; border-top: 3px solid #1a365d !important; }
-            .presidency-title { font-size: 8.5pt !important; padding: 4px 6px !important; background-color: #f8fafc !important; }
-            .escala-table { font-size: 8.5pt !important; line-height: 1.2 !important; }
-            .escala-table td { padding: 3px 6px !important; }
-            .p-hora { font-size: 8pt !important; padding: 1px 4px !important; }
             
-            .print-general-content .card { border: 1px solid #94a3b8 !important; border-left: 5px solid #8c6414 !important; box-shadow: none !important; margin-bottom: 15px !important; padding: 10px !important; page-break-inside: avoid !important; }
-            .tables-grid { display: flex !important; flex-direction: row !important; justify-content: space-between !important; align-items: flex-start !important; }
-            .tables-grid > div { width: 48% !important; }
-            table.liturgy-table { width: 100% !important; font-size: 8.5pt !important; }
-
+            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; }
+            .print-sheet-header img { width: 180px !important; height: auto !important; max-height: 90px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
+            .print-sheet-header h2 { margin:0; font-size:12pt; color:#1a365d; text-transform:uppercase; }
+            .print-sheet-header h3 { margin:2px 0 0 0; font-size:10pt; color:#8c6414; }
+            
             .script-block { display: block !important; }
-            .script-row { display: flex !important; flex-direction: row !important; margin-bottom: 10px !important; page-break-inside: avoid !important; align-items: stretch !important; }
-            .script-tag { flex: 0 0 100px !important; box-sizing: border-box !important; margin-right: 10px !important; padding: 4px 6px !important; border-radius: 4px !important; font-size: 8pt !important; display: flex !important; align-items: center !important; justify-content: center !important; }
-            .script-text { flex: 1 1 auto !important; box-sizing: border-box !important; font-size: 11pt !important; line-height: 1.35 !important; padding: 6px 10px !important; border: 1px solid #cbd5e1 !important; border-left-width: 4px !important; border-radius: 0 4px 4px 4px !important; background-color: #fff !important; }
+            .script-row { display: flex !important; flex-direction: row !important; margin-bottom: 10px !important; page-break-inside: avoid !important; }
+            .script-tag { flex: 0 0 100px !important; margin-right: 10px !important; padding: 4px 6px !important; border-radius: 4px !important; font-size: 8pt !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+            .script-text { flex: 1 1 auto !important; font-size: 11pt !important; line-height: 1.35 !important; padding: 6px 10px !important; border: 1px solid #cbd5e1 !important; border-left-width: 4px !important; border-radius: 0 4px 4px 4px !important; }
 
-            .tag-animador{background:#eff6ff !important;color:#1e40af !important;border:1px solid #bfdbfe !important;}
-            .tag-padre{background:#fef2f2 !important;color:#991b1b !important;border:1px solid #fecaca !important;}
-            .tag-musica{background:#f0fdf4 !important;color:#166534 !important;border:1px solid #bbf7d0 !important;}
-            .tag-todos{background:#fffbeb !important;color:#b45309 !important;border:1px solid #fde68a !important;}
-            .tag-rubrica{background:#f8fafc !important;color:#475569 !important;border:1px dashed #cbd5e1 !important;}
-            .row-animador .script-text{border-left-color:#1e40af !important;}
-            .row-padre .script-text{border-left-color:#991b1b !important;}
-            .row-musica .script-text{border-left-color:#166534 !important;}
-            .row-todos .script-text{border-left-color:#b45309 !important;}
-
-            .preces-single-page { page-break-after: always !important; break-after: page !important; display: block !important; }
-            .preces-single-page:last-child { page-break-after: auto !important; break-after: auto !important; }
-
-            .reading-print-block { margin-bottom: 25px; page-break-inside: auto !important; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; font-family: 'Georgia', serif; }
-            .reading-print-block .leitura-dia { font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
+            .reading-print-block { margin-bottom: 25px; page-break-inside: auto !important; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; }
+            .reading-print-block .leitura-dia { font-size: 10pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
             .reading-print-block .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 8px; text-transform: uppercase; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
-            .reading-print-block .leitura-texto { font-size: 14pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-break: break-word; page-break-inside: auto !important; }
+            .reading-print-block .leitura-texto { font-size: 14pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-break: break-word; }
             
             .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:12pt; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
             .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:14pt; text-transform:uppercase; }
-            .antifona-print-box p { margin-bottom:12px; text-align:justify; }
         }
         
-        /* Loading Overlay for PDF generation */
         #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.1rem; font-weight: bold; }
         .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 45px; height: 45px; animation: spin 1s linear infinite; margin-bottom: 20px; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -178,32 +152,16 @@
 </head>
 <body>
 
-    <!-- Overlay de Carregamento -->
     <div id="pdf-loading">
         <div class="spinner"></div>
-        <div>Preparando arquivo PDF, aguarde...</div>
-    </div>
-
-    <!-- MODAL DE COMPARTILHAMENTO -->
-    <div id="modal_share_ready" class="modal" style="z-index: 100000;">
-        <div class="modal-content" style="text-align: center; max-width: 350px;">
-            <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
-            <h3 style="color: #16a34a; margin-top: 0; margin-bottom: 10px; font-size: 1.3rem;">PDF Gerado com Sucesso!</h3>
-            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">Clique no botão abaixo para enviar pelo WhatsApp ou salvar no dispositivo.</p>
-            
-            <div style="display: flex; flex-direction: column; gap: 12px;">
-                <button id="btn-share-native" class="action-btn whatsapp" style="padding: 14px; font-size: 1.1rem; width: 100%;">📲 Compartilhar Arquivo</button>
-                <button id="btn-download-native" class="action-btn blue" style="padding: 12px; font-size: 1rem; width: 100%;">💾 Salvar na Pasta</button>
-                <button type="button" class="action-btn secondary" onclick="closeModal('modal_share_ready')" style="padding: 10px; width: 100%; background-color:#94a3b8;">Voltar</button>
-            </div>
-        </div>
+        <div>Processando Arquivo PDF...</div>
     </div>
 
     <header>
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO PDF (VERSÃO FINAL 28.0)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO: TELA E COMPARTILHAMENTO WHATSAPP</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -216,7 +174,7 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas -->
+    <!-- BOTÕES PRINCIPAIS: Abrem as janelas (modais) -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="openActiveProgramacaoModal()">🗓️ Programação</button>
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
@@ -232,6 +190,7 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
+            <!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
@@ -290,6 +249,7 @@
                 </div>
             </div>
 
+            <!-- TERÇA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
@@ -342,13 +302,16 @@
                 </div>
             </div>
 
+            <!-- QUARTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
                     <span class="color-badge badge-vermelho">Vermelho (Memória)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio, papa, e Cipriano, bispo, mártires (Ano II)</div>
-                <div style="margin-bottom: 0.8rem; font-weight: 700; color: #991b1b; background: #fef2f2; padding: 4px 8px; border-radius: 4px; display: inline-block; border: 1px solid #fca5a5;">⚠️ Observação: Missa de Entrega do ECC</div>
+                <!-- OBSERVAÇÃO DO ECC ADICIONADA AQUI -->
+                <div style="margin-bottom: 0.8rem; font-weight: 700; color: #991b1b; background: #fef2f2; padding: 6px 10px; border-radius: 4px; display: inline-block; border: 1px solid #fca5a5;">⚠️ Observação: Missa de Entrega do ECC</div>
+                
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -395,6 +358,7 @@
                 </div>
             </div>
 
+            <!-- QUINTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
@@ -447,6 +411,7 @@
                 </div>
             </div>
 
+            <!-- SEXTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
@@ -499,6 +464,7 @@
                 </div>
             </div>
 
+            <!-- FIM DE SEMANA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
@@ -548,7 +514,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
@@ -597,7 +563,6 @@
         <!-- SEMANA 1: 07 A 13 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
-
             <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
@@ -965,7 +930,7 @@
 
     <!-- ================== MODAIS ================== -->
 
-    <!-- MODAL NOVO DE PROGRAMAÇÃO GERAL -->
+    <!-- MODAL DE PROGRAMAÇÃO GERAL -->
     <div id="modal_programacao" class="modal">
         <div class="modal-content" style="max-width:1200px;">
             <div class="modal-header-bar">
@@ -979,7 +944,6 @@
                 </div>
             </div>
             <div id="content_programacao" class="modal-body" style="background:#f1f5f9; padding: 15px; border-radius:8px;">
-                <!-- Preenchido via JS -->
             </div>
         </div>
     </div>
@@ -1099,6 +1063,113 @@
                 </div>
             </div>
             <div id="content_leituras_view" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Modais de Reflexões -->
+    <div id="modal_todas_reflexoes" class="modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (14 a 20/09)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
+                </div>
+            </div>
+            <div id="content_todas_reflexoes" class="modal-body">
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--cor-padre);">Segunda-feira, 14/09/2026 — Festa da Exaltação da Santa Cruz (Vermelho)</strong><br>
+                    <em>Versículo-chave:</em> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)<br>
+                    <strong>Reflexão:</strong> Olhar para a Cruz não é contemplar a derrota, mas o cume do amor desmedido de Deus por nós. Na Cruz, Jesus transformou o instrumento de condenação em árvore da vida e porto de salvação.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, que pela vossa Santa Cruz redimistes o mundo, dai-me forças para carregar a minha cruz de cada dia com amor e esperança. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Terça-feira, 15/09/2026 — Nossa Senhora das Dores, Memória (Branco)</strong><br>
+                    <em>Versículo-chave:</em> "Junto à cruz de Jesus estavam de pé sua mãe e a irmã de sua mãe..." (Jo 19,25)<br>
+                    <strong>Reflexão:</strong> Ao pé da Cruz, Maria nos ensina a dignidade de 'permanecer de pé' nos momentos de incerteza. Guardou a fé no silêncio e acolheu a missão de ser Mãe da Igreja.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Nossa Senhora das Dores, ensina-me a permanecer fiel junto a Jesus e a nunca perder a esperança. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--cor-padre);">Quarta-feira, 16/09/2026 — Santos Cornélio e Cipriano, Mártires (Vermelho)</strong><br>
+                    <em>Versículo-chave:</em> "Permanecem estas três: a fé, a esperança e a caridade. Mas a maior delas é a caridade." (1Cor 13,13)<br>
+                    <strong>Reflexão:</strong> A caridade é o amor paciente, prestativo e desinteressado. Os mártires Cornélio e Cipriano nos inspiram a dar testemunho de fé com união e misericórdia fraterna.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor, purificai o meu coração de todo egoísmo e fazei-me instrumento do vosso amor verdadeiro. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Quinta-feira, 17/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Teus pecados estão perdoados... Tua fé te salvou. Vai em paz!" (Lc 7,48.50)<br>
+                    <strong>Reflexão:</strong> A gratidão autêntica nasce do reconhecimento do perdão divino. Quem se sabe perdoado acolhe os outros sem julgar.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, obrigado por vosso perdão infinito. Que eu acolha meus irmãos com profunda compaixão. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Sexta-feira, 18/09/2026 — 24ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Se Cristo não ressuscitou, a nossa pregação é vã e vã é também a vossa fé." (1Cor 15,14)<br>
+                    <strong>Reflexão:</strong> O alicerce inabalável da vida cristã é a Ressurreição. Cristo Vivo caminha conosco; Nele a última palavra é sempre a vida.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Jesus Ressuscitado, renovai em mim a alegria da fé e fazei-me testemunha viva da vossa vitória. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px;">
+                    <strong style="color:var(--cor-musica);">Domingo, 20/09/2026 — 25º Domingo do Tempo Comum / Dízimo (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Meus pensamentos não são como os vossos pensamentos, nem vossos caminhos como os meus caminhos." (Is 55,8)<br>
+                    <strong>Reflexão:</strong> A lógica do Reino é pura graça e gratuidade. O Senhor chama a todos e derrama Sua bondade sobre os operários da primeira e da última hora.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor nosso Deus, libertai-nos da inveja e fazei-nos trabalhadores gratos na vossa vinha. Amém.</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_todas_reflexoes_w1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (07 a 13/09)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes_w1')" style="padding: 4px 10px; font-size: 1rem;">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes_w1')" style="padding: 4px 10px; font-size: 1rem;">A-</button>
+                    <button type="button" class="action-btn" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
+                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
+                </div>
+            </div>
+            <div id="content_todas_reflexoes_w1" class="modal-body">
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Segunda-feira, 07/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)<br>
+                    <strong>Reflexão:</strong> Jesus ensina que a vida e o bem estão acima de regras vazias. Nossas mãos devem estar estendidas para erguer quem precisa.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, dai-me coragem para praticar o bem e defender a vida em todas as circunstâncias. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Terça-feira, 08/09/2026 — Natividade da Virgem Maria, Festa (Branco)</strong><br>
+                    <em>Versículo-chave:</em> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel." (Mt 1,23)<br>
+                    <strong>Reflexão:</strong> O nascimento de Maria é o prenúncio da redenção. Confiemos nos planos de amor que Deus traça em nossa história.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Ó Virgem Maria, no vosso nascimento nasceu a esperança da Salvação; guardai nossas famílias. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Quarta-feira, 09/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)<br>
+                    <strong>Reflexão:</strong> As Bem-aventuranças mostram que a segurança autêntica reside em Deus, não no apego aos bens perecíveis.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor, purificai o meu coração dos apegos e cumulais-me com vossa paz eterna. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Quinta-feira, 10/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Amai os vossos inimigos... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)<br>
+                    <strong>Reflexão:</strong> A força cristã reside em quebrar a espiral do ódio retribuindo as ofensas com perdão sincero e bênçãos.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Pai celeste, dai-me a graça do perdão sem mágoa e de retribuir toda incompreensão com caridade. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
+                    <strong style="color:var(--primary);">Sexta-feira, 11/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem." (Lc 6,42)<br>
+                    <strong>Reflexão:</strong> O seguimento de Cristo exige conversão interior e humildade sincera antes de emitir qualquer juízo sobre o próximo.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, livrai meu olhar do julgamento e tornai-me manso de coração como Vós. Amém.</em>
+                </div>
+                <div style="margin-bottom:14px;">
+                    <strong style="color:var(--cor-musica);">Domingo, 13/09/2026 — 24º Domingo do Tempo Comum (Verde)</strong><br>
+                    <em>Versículo-chave:</em> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)<br>
+                    <strong>Reflexão:</strong> Fomos imensamente perdoados por Deus; por isso, o perdão não é opcional, mas o selo da verdadeira libertação do coração.<br>
+                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Deus, perdoai nossas faltas assim como nós perdoamos a quem nos ofendeu. Amém.</em>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1372,67 +1443,43 @@
         }
 
         // ====================================================================
-        // MOTOR DE GERAÇÃO DE PDF (BLINDADO CONTRA DESCONFIGURAÇÃO) E WHATSAPP
+        // GERAÇÃO DE PDF E COMPARTILHAMENTO WHATSAPP BLINDADO
         // ====================================================================
         
-        let currentPdfFile = null;
-        let currentPdfUrl = null;
-
         async function generateAndSharePDF(contentHtml, filename) {
             const loading = document.getElementById('pdf-loading');
             loading.style.display = 'flex';
             
-            // INJEÇÃO DE CSS ESPECÍFICA PARA O PDF (Garante que nada seja cortado ou vaze das margens)
             const fullHtml = `
-                <div style="width: 800px; max-width: 800px; background: #fff; padding: 20px; text-align: left; color: #000;">
+                <div style="width: 800px; padding: 40px; font-family: Arial, sans-serif; background: #ffffff; color: #000000; text-align: left;">
                     <style>
-                        /* CSS FOR PDF ONLY */
                         * { box-sizing: border-box; }
-                        body { font-family: 'Segoe UI', Arial, sans-serif; color: #000; background: #fff; margin: 0; padding: 0;}
-                        
                         .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
-                        .leitura-dia { font-size: 11pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; font-family: Arial, sans-serif; }
-                        .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
-                        .leitura-texto { font-size: 13pt; line-height: 1.5; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
+                        .leitura-dia { font-size: 14px; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
+                        .leitura-titulo { font-size: 18px; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
+                        .leitura-texto { font-size: 16px; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
                         
-                        /* Fix cut off by explicitly resetting flexbox and floats */
-                        .script-block, .tables-grid { display: block !important; width: 100% !important; }
+                        .script-block { display: block; width: 100%; }
                         .script-row { display: flex; flex-direction: row; margin-bottom: 12px; width: 100%; page-break-inside: avoid; align-items: stretch;}
-                        .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 9pt; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center;}
-                        .script-text { flex: 1; font-size: 12pt; line-height: 1.45; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
+                        .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 12px; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center; margin-right:15px;}
+                        .script-text { flex: 1; font-size: 16px; line-height: 1.5; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
                         
-                        /* Table overrides to prevent cut off */
-                        table { width: 100% !important; border-collapse: collapse; table-layout: fixed; }
-                        th, td { word-wrap: break-word; white-space: normal; }
-                        
-                        .preces-single-page { page-break-after: always; display: block; width: 100%;}
-                        .preces-single-page:last-child { page-break-after: auto; }
-                        
-                        /* Rest of PDF styles */
                         .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
                         .row-animador .script-text{border-left-color:#1e40af} .row-padre .script-text{border-left-color:#991b1b} .row-musica .script-text{border-left-color:#166534} .row-todos .script-text{border-left-color:#b45309} .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
                         
-                        .card { margin-bottom: 20px; page-break-inside: avoid; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; padding: 15px; width: 100%; box-sizing: border-box;}
-                        .card-header { display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
-                        .card-header h2 { margin:0; font-size:13pt; color:#1a365d;}
-                        .color-badge { display: inline-block; padding: 3px 8px; font-size: 8pt; border-radius: 4px; font-weight: bold; margin-left: 10px; }
-                        .badge-verde{background:#1e6b37;color:#fff} .badge-branco{background:#fff;color:#1e293b;border:1px solid #94a3b8} .badge-vermelho{background:#991b1b;color:#fff}
-                        .presidency-box { border: 1px solid #ccc; margin-bottom: 15px; border-top: 3px solid #1a365d; border-radius: 4px; overflow:hidden;}
-                        .presidency-title { font-weight: bold; color: #1a365d; background: #f1f5f9; padding: 6px; border-bottom: 1px solid #ccc; font-size: 9.5pt; text-transform: uppercase; }
-                        .escala-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
-                        .escala-table td { padding: 4px 8px; border-bottom: 1px solid #eee; }
-                        .tables-grid > div { width: 100%; margin-bottom: 15px;}
-                        .table-caption { font-weight: bold; color: #1a365d; margin-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 9.5pt; text-transform: uppercase; }
-                        .liturgy-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
-                        .liturgy-table th, .liturgy-table td { border: 1px solid #ccc; padding: 6px; text-align: left; }
-                        .liturgy-table th { background: #f8fafc; color: #1a365d; }
-                        .note-gloria-box { background:#fef2f2; border:1px solid #fca5a5; border-left:4px solid #b91c1c; padding:8px; margin-bottom:10px; font-size:9.5pt;}
+                        table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 15px;}
+                        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+                        th { background: #f8fafc; color: #1a365d; }
+                        .card { margin-bottom: 20px; padding: 15px; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; }
                         
                         .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; page-break-after: avoid; }
                         .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
-                        .pdf-header-wrap h2 { margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase; }
-                        .pdf-header-wrap h3 { margin:5px 0; font-size:11pt; color:#8c6414; }
-                        .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:9.5pt; margin-top:5px; text-transform:uppercase; }
+                        .pdf-header-wrap h2 { margin:0; font-size:18px; color:#1a365d; text-transform:uppercase; }
+                        .pdf-header-wrap h3 { margin:5px 0; font-size:15px; color:#8c6414; }
+                        .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:12px; margin-top:5px; text-transform:uppercase; }
+                        
+                        .preces-single-page { page-break-after: always; display: block; width: 100%;}
+                        .preces-single-page:last-child { page-break-after: auto; }
                     </style>
                     ${contentHtml}
                 </div>
@@ -1440,91 +1487,51 @@
             
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = fullHtml;
-            
-            // Força a renderização isolada na tela para que o html2canvas não corte a esquerda nem a altura
             tempDiv.style.position = 'absolute';
-            tempDiv.style.top = '0px';
-            tempDiv.style.left = '0px';
+            tempDiv.style.top = '0';
+            tempDiv.style.left = '-2000px'; 
             tempDiv.style.width = '800px';
-            tempDiv.style.height = 'max-content'; // Impede o corte de altura
-            tempDiv.style.backgroundColor = '#ffffff';
-            tempDiv.style.zIndex = '-9999';
-            
             document.body.appendChild(tempDiv);
 
-            // Aguarda a renderização completa do DOM
-            await new Promise(r => setTimeout(r, 500));
-
             const opt = {
-                margin:       10, // Margens em mm
+                margin:       0, 
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, width: 800, windowWidth: 800, scrollY: 0 },
-                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak:    { mode: ['css', 'legacy'] }
+                html2canvas:  { scale: 2, useCORS: true, windowWidth: 800 },
+                jsPDF:        { unit: 'px', format: [800, 1131], orientation: 'portrait' } 
             };
 
             try {
-                const pdfDataUri = await html2pdf().set(opt).from(tempDiv).outputPdf('datauristring');
+                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
                 document.body.removeChild(tempDiv);
                 
-                // Converte DataUri para Blob
-                const byteString = atob(pdfDataUri.split(',')[1]);
-                const ab = new ArrayBuffer(byteString.length);
-                const ia = new Uint8Array(ab);
-                for (let i = 0; i < byteString.length; i++) {
-                    ia[i] = byteString.charCodeAt(i);
-                }
-                const pdfBlob = new Blob([ab], { type: 'application/pdf' });
-                currentPdfFile = new File([pdfBlob], filename, { type: 'application/pdf' });
+                const file = new File([pdfBlob], filename, { type: 'application/pdf' });
                 
-                if(currentPdfUrl) URL.revokeObjectURL(currentPdfUrl);
-                currentPdfUrl = URL.createObjectURL(pdfBlob);
-                
-                loading.style.display = 'none';
-                openModal('modal_share_ready');
-            } catch (error) {
-                loading.style.display = 'none';
-                if(document.body.contains(tempDiv)) document.body.removeChild(tempDiv);
-                console.error("Erro ao gerar PDF:", error);
-                alert("Ocorreu um erro ao gerar o arquivo PDF.");
-            }
-        }
-
-        // Lógicas dos Botões dentro do Modal de Sucesso
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('btn-share-native').addEventListener('click', async () => {
-                if (currentPdfFile) {
-                    if (navigator.canShare && navigator.canShare({ files: [currentPdfFile] })) {
-                        try {
-                            await navigator.share({
-                                title: currentPdfFile.name,
-                                text: 'Documento Litúrgico Paróquia N. Sra. Auxiliadora:',
-                                files: [currentPdfFile]
-                            });
-                            closeModal('modal_share_ready');
-                        } catch (err) {
-                            console.log("Compartilhamento cancelado:", err);
-                        }
-                    } else {
-                        alert("Este navegador não suporta compartilhamento direto. Use a opção 'Salvar na Pasta'.");
-                    }
-                }
-            });
-
-            document.getElementById('btn-download-native').addEventListener('click', () => {
-                if (currentPdfUrl) {
+                if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                    await navigator.share({
+                        title: filename,
+                        text: 'Documento Litúrgico - Paróquia N. Sra. Auxiliadora',
+                        files: [file]
+                    });
+                } else {
+                    const url = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
-                    a.href = currentPdfUrl;
-                    a.download = currentPdfFile.name;
+                    a.href = url;
+                    a.download = filename;
                     document.body.appendChild(a);
                     a.click();
                     document.body.removeChild(a);
-                    closeModal('modal_share_ready');
-                    alert("O arquivo foi salvo na pasta Downloads do seu dispositivo.");
+                    URL.revokeObjectURL(url);
+                    alert("O arquivo foi salvo na pasta de Downloads.");
                 }
-            });
-        });
+            } catch (error) {
+                if(document.body.contains(tempDiv)) document.body.removeChild(tempDiv);
+                console.error("Erro ao gerar PDF:", error);
+                alert("Ocorreu um erro ao gerar o arquivo PDF.");
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
 
         // ================== FUNÇÕES DE COMPARTILHAR PDF ==================
         function shareProgramacaoPDF() {
@@ -1579,7 +1586,7 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w2').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap">
+                <div class="pdf-header-wrap" style="page-break-after: avoid;">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
@@ -1599,7 +1606,7 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap">
+                <div class="pdf-header-wrap" style="page-break-after: avoid;">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
