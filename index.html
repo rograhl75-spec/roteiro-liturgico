@@ -16,9 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
     
-    <!-- Biblioteca para geração do PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <style>
         :root {
             --primary: #1a365d;
@@ -61,23 +58,27 @@
             padding: 1.2rem 1rem 0.8rem;
             border-bottom: 2px solid var(--border);
         }
+        
         .header-logo {
             max-width: 250px;
             height: auto;
             margin-bottom: 6px;
         }
+        
         header h1 {
             margin: 0;
             font-size: 1.35rem;
             text-transform: uppercase;
             color: var(--primary);
         }
+        
         header p {
             margin: 0.2rem 0 0;
             font-size: 0.9rem;
             color: var(--secondary);
             font-weight: 600;
         }
+        
         .version-badge {
             display: inline-block;
             background: #16a34a;
@@ -99,6 +100,7 @@
             border-bottom: 2px solid #94a3b8;
             flex-wrap: wrap;
         }
+        
         .week-tab-btn {
             background: #fff;
             border: 2px solid #64748b;
@@ -113,9 +115,11 @@
             max-width: 520px;
             text-align: center;
         }
+        
         .week-tab-btn:hover {
             background: #f8fafc;
         }
+        
         .week-tab-btn.active {
             background: var(--primary) !important;
             border: 3px solid #d4af37 !important;
@@ -151,6 +155,7 @@
             border-bottom: 1px solid var(--border);
             flex-wrap: wrap;
         }
+        
         .action-btn {
             background: var(--primary);
             color: #fff;
@@ -166,15 +171,34 @@
             justify-content: center;
             text-decoration: none;
         }
-        .action-btn:hover { background: var(--primary-light); }
-        .action-btn.secondary { background: var(--secondary); }
-        .action-btn.secondary:hover { background: #6d4c0c; }
-        .action-btn.accent { background: #047857; }
-        .action-btn.blue { background: #2563eb; }
-        .action-btn.red { background: #991b1b; }
-        .action-btn.red:hover { background: #7f1d1d; }
-        .action-btn.whatsapp { background: #25D366; color: #fff; }
-        .action-btn.whatsapp:hover { background: #128C7E; }
+        
+        .action-btn:hover { 
+            background: var(--primary-light); 
+        }
+        
+        .action-btn.secondary { 
+            background: var(--secondary); 
+        }
+        
+        .action-btn.secondary:hover { 
+            background: #6d4c0c; 
+        }
+        
+        .action-btn.accent { 
+            background: #047857; 
+        }
+        
+        .action-btn.blue { 
+            background: #2563eb; 
+        }
+        
+        .action-btn.red { 
+            background: #991b1b; 
+        }
+        
+        .action-btn.red:hover { 
+            background: #7f1d1d; 
+        }
         
         /* ================== CARDS E CONTEÚDO ================== */
         .container {
@@ -182,6 +206,7 @@
             margin: 1rem auto;
             padding: 0 0.8rem;
         }
+        
         .card {
             background: var(--card-bg);
             border-radius: 6px;
@@ -192,6 +217,7 @@
             display: flex;
             flex-direction: column;
         }
+        
         .card-header {
             display: flex;
             justify-content: space-between;
@@ -202,6 +228,7 @@
             flex-wrap: wrap;
             gap: 6px;
         }
+        
         .card-header h2 {
             margin: 0;
             font-size: 1.15rem;
@@ -215,6 +242,7 @@
             font-weight: 700;
             text-transform: uppercase;
         }
+        
         .badge-verde { background: #1e6b37; color: #fff; }
         .badge-branco { background: #fff; color: #1e293b; border: 1px solid #94a3b8; }
         .badge-vermelho { background: #991b1b; color: #fff; }
@@ -226,6 +254,7 @@
             border-radius: 6px;
             margin-bottom: 1.2rem;
         }
+        
         .presidency-title {
             color: var(--primary);
             font-size: 0.85rem;
@@ -235,19 +264,32 @@
             border-bottom: 1px solid #e2e8f0;
             background: #f8fafc;
         }
+        
         .escala-table {
             width: 100%;
             border-collapse: collapse;
         }
+        
         .escala-table td {
             padding: 0.5rem 0.8rem;
             border-bottom: 1px solid #f1f5f9;
             vertical-align: middle;
             font-size: 0.9rem;
         }
-        .escala-table tr:last-child td { border-bottom: none; }
-        .escala-table tr:hover { background-color: #f8fafc; }
-        .p-dia { font-weight: 700; color: #1e293b; }
+        
+        .escala-table tr:last-child td { 
+            border-bottom: none; 
+        }
+        
+        .escala-table tr:hover { 
+            background-color: #f8fafc; 
+        }
+        
+        .p-dia { 
+            font-weight: 700; 
+            color: #1e293b; 
+        }
+        
         .p-hora {
             background: #eff6ff;
             color: #1e40af;
@@ -257,8 +299,16 @@
             display: inline-block;
             margin-left: 4px;
         }
-        .p-loc { color: #475569; }
-        .p-cel { font-weight: 600; color: #0f172a; text-align: right; }
+        
+        .p-loc { 
+            color: #475569; 
+        }
+        
+        .p-cel { 
+            font-weight: 600; 
+            color: #0f172a; 
+            text-align: right; 
+        }
         
         /* Destaques e Observações */
         .note-gloria-box {
@@ -271,6 +321,7 @@
             font-size: 0.85rem;
             color: #7f1d1d;
         }
+        
         .ecc-box {
             background: #fef2f2;
             border: 1px solid #fca5a5;
@@ -292,6 +343,7 @@
             padding: 0.5rem 0.8rem;
             margin-bottom: 0.9rem;
         }
+        
         details.reflection-box summary {
             font-weight: 700;
             color: #166534;
@@ -301,11 +353,13 @@
             gap: 6px;
             font-size: 0.86rem;
         }
+        
         details.reflection-box[open] summary {
             margin-bottom: 0.6rem;
             border-bottom: 1px dashed #86efac;
             padding-bottom: 0.4rem;
         }
+        
         .reflection-content {
             font-size: 0.88rem;
             line-height: 1.5;
@@ -313,6 +367,7 @@
             text-align: justify;
             margin-top: 8px;
         }
+        
         .reflection-verse {
             font-style: italic;
             background: #ffffff;
@@ -322,6 +377,7 @@
             border-radius: 0 4px 4px 0;
             color: #14532d;
         }
+        
         .reflection-prayer {
             font-style: italic;
             background: #ffffff;
@@ -339,17 +395,20 @@
             margin-bottom: 0.8rem;
             align-items: start;
         }
+        
         table.liturgy-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.84rem;
             background: #fff;
         }
+        
         table.liturgy-table th, table.liturgy-table td {
             border: 1px solid var(--border);
             padding: 6px 8px;
             text-align: left;
         }
+        
         table.liturgy-table th {
             background: #f8fafc;
             color: var(--primary);
@@ -357,6 +416,7 @@
             font-size: 0.75rem;
             text-transform: uppercase;
         }
+        
         .table-caption {
             font-weight: 700;
             color: var(--primary);
@@ -366,6 +426,7 @@
             border-bottom: 1px solid var(--border);
             padding-bottom: 0.15rem;
         }
+        
         .clickable-ref {
             color: #1d4ed8;
             cursor: pointer;
@@ -374,6 +435,7 @@
             padding: 1px 3px;
             display: inline-block;
         }
+        
         .clickable-ref:hover {
             color: #1e40af;
         }
@@ -385,12 +447,14 @@
             gap: 6px;
             margin-top: 0.6rem;
         }
+        
         .script-row {
             display: flex;
             flex-direction: row;
             gap: 10px;
             margin-bottom: 8px;
         }
+        
         .script-tag {
             flex: 0 0 110px;
             font-weight: 700;
@@ -403,6 +467,7 @@
             align-items: center;
             justify-content: center;
         }
+        
         .script-text {
             flex: 1;
             font-size: 12pt;
@@ -415,17 +480,17 @@
             transition: font-size 0.2s ease;
         }
         
-        .tag-animador{background:var(--bg-animador);color:var(--cor-animador);border:1px solid #bfdbfe} 
-        .tag-padre{background:var(--bg-padre);color:var(--cor-padre);border:1px solid #fecaca} 
-        .tag-musica{background:var(--bg-musica);color:var(--cor-musica);border:1px solid #bbf7d0} 
-        .tag-todos{background:var(--bg-todos);color:var(--cor-todos);border:1px solid #fde68a} 
-        .tag-rubrica{background:var(--bg-rubrica);color:var(--cor-rubrica);border:1px dashed #cbd5e1}
+        .tag-animador { background: var(--bg-animador); color: var(--cor-animador); border: 1px solid #bfdbfe; }
+        .tag-padre { background: var(--bg-padre); color: var(--cor-padre); border: 1px solid #fecaca; }
+        .tag-musica { background: var(--bg-musica); color: var(--cor-musica); border: 1px solid #bbf7d0; }
+        .tag-todos { background: var(--bg-todos); color: var(--cor-todos); border: 1px solid #fde68a; }
+        .tag-rubrica { background: var(--bg-rubrica); color: var(--cor-rubrica); border: 1px dashed #cbd5e1; }
         
-        .row-animador .script-text{border-left-color:var(--cor-animador)} 
-        .row-padre .script-text{border-left-color:var(--cor-padre)} 
-        .row-musica .script-text{border-left-color:var(--cor-musica)} 
-        .row-todos .script-text{border-left-color:var(--cor-todos)} 
-        .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;}
+        .row-animador .script-text { border-left-color: var(--cor-animador); }
+        .row-padre .script-text { border-left-color: var(--cor-padre); }
+        .row-musica .script-text { border-left-color: var(--cor-musica); }
+        .row-todos .script-text { border-left-color: var(--cor-todos); }
+        .row-rubrica .script-text { border-left-color: var(--cor-rubrica); font-style: italic; }
         
         /* Modal Window */
         .modal {
@@ -442,6 +507,7 @@
             padding: 1.5rem 0.8rem;
             overflow-y: auto;
         }
+        
         .modal-content {
             background: #fff;
             padding: 1.2rem;
@@ -451,6 +517,7 @@
             box-shadow: 0 4px 25px rgba(0,0,0,0.25);
             margin: auto;
         }
+        
         .modal-header-bar {
             display: flex;
             justify-content: space-between;
@@ -461,12 +528,14 @@
             flex-wrap: wrap;
             gap: 10px;
         }
+        
         .modal-title {
             margin: 0;
             font-size: 1.2rem;
             color: var(--primary);
             font-weight: bold;
         }
+        
         .modal-close-btn {
             background: #f1f5f9;
             border: 1px solid #cbd5e1;
@@ -481,6 +550,7 @@
             justify-content: center;
             font-weight: bold;
         }
+        
         .modal-body {
             font-size: 1.05rem;
             color: #1e293b;
@@ -490,10 +560,37 @@
         }
         
         /* Grid de Leituras */
-        .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 15px; }
-        .leitura-col { background: #f8fafc; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; display: flex; flex-direction: column; gap: 6px; }
-        .leitura-col strong { color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; margin-bottom: 4px; }
-        .leitura-col label { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer; }
+        .leitura-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 12px; 
+            margin-bottom: 15px; 
+        }
+        
+        .leitura-col { 
+            background: #f8fafc; 
+            padding: 10px; 
+            border: 1px solid #cbd5e1; 
+            border-radius: 6px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 6px; 
+        }
+        
+        .leitura-col strong { 
+            color: var(--primary); 
+            border-bottom: 1px solid #e2e8f0; 
+            padding-bottom: 4px; 
+            margin-bottom: 4px; 
+        }
+        
+        .leitura-col label { 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+            font-size: 0.9rem; 
+            cursor: pointer; 
+        }
         
         #print-mount { display: none; }
         
@@ -518,7 +615,7 @@
             .leitura-grid { grid-template-columns: 1fr; }
         }
 
-        /* ================== IMPRESSÃO FÍSICA NO COMPUTADOR ================== */
+        /* ================== IMPRESSÃO FÍSICA E PDF NATIVO ================== */
         @media print {
             @page { margin: 12mm 10mm; size: A4 portrait; }
             html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
@@ -548,7 +645,7 @@
             .leitura-dia { font-size: 11pt; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
             .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; }
             .leitura-texto { font-size: 12pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
-            .ecc-box { background: #fffbeb; border: 1px solid #fde68a; border-left: 4px solid #b45309; border-radius: 4px; padding: 0.5rem 1rem; margin-bottom: 1rem; font-size: 12pt; font-weight: bold; color: #991b1b; text-align: center; }
+            .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #991b1b; border-radius: 4px; padding: 0.5rem 1rem; margin-bottom: 1rem; font-size: 12pt; font-weight: bold; color: #991b1b; text-align: center; }
         }
         
         footer {
@@ -568,7 +665,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO: TELA E COMPARTILHAMENTO NATIVO</span></div>
+        <div><span class="version-badge">SISTEMA SUPER LEVE E NATIVO (V-31)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -597,6 +694,7 @@
         <!-- SEMANA 2: 14 A 20 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana2-container">
+            <!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 14 de Setembro de 2026</h2>
@@ -655,6 +753,7 @@
                 </div>
             </div>
 
+            <!-- TERÇA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Terça-feira, 15 de Setembro de 2026</h2>
@@ -707,6 +806,7 @@
                 </div>
             </div>
 
+            <!-- QUARTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quarta-feira, 16 de Setembro de 2026</h2>
@@ -714,8 +814,8 @@
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio, papa, e Cipriano, bispo, mártires (Ano II)</div>
                 
-                <div style="margin-bottom: 0.8rem; font-weight: 700; color: #991b1b; background: #fef2f2; padding: 6px 10px; border-radius: 4px; display: inline-block; border: 1px solid #fca5a5;">⚠️ Observação: Missa de Entrega do ECC</div>
-
+                <div class="ecc-box">⚠️ Observação: Missa de Entrega do ECC</div>
+                
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
@@ -762,6 +862,7 @@
                 </div>
             </div>
 
+            <!-- QUINTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Quinta-feira, 17 de Setembro de 2026</h2>
@@ -803,7 +904,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">II / 993</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118)</span></td><td style="text-align:center;">II / 994</td></tr>
@@ -814,6 +915,7 @@
                 </div>
             </div>
 
+            <!-- SEXTA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Sexta-feira, 18 de Setembro de 2026</h2>
@@ -843,19 +945,19 @@
                             <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
                             <tbody>
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
                                 <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
                                 <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Semanal)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td style="text-align:center;">II / 997</td></tr>
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17)</span></td><td style="text-align:center;">II / 998</td></tr>
@@ -866,6 +968,7 @@
                 </div>
             </div>
 
+            <!-- FIM DE SEMANA -->
             <div class="card">
                 <div class="card-header">
                     <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
@@ -915,7 +1018,7 @@
                     <div>
                         <div class="table-caption">Liturgia da Palavra (Lecionário Dominical)</div>
                         <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Referência Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
                                 <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
                                 <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
@@ -1342,7 +1445,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_programacao')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_programacao')">A-</button>
                     <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareProgramacaoPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_programacao')">&times;</button>
                 </div>
             </div>
@@ -1460,7 +1562,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_leituras_view')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_leituras_view')">A-</button>
                     <button type="button" class="action-btn" onclick="printLeiturasFromView()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareLeiturasFromViewPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_leituras_view')">&times;</button>
                 </div>
             </div>
@@ -1477,7 +1578,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes')">A-</button>
                     <button type="button" class="action-btn" onclick="printTodasReflexoesW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes')">&times;</button>
                 </div>
             </div>
@@ -1530,7 +1630,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_todas_reflexoes_w1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_todas_reflexoes_w1')">A-</button>
                     <button type="button" class="action-btn" onclick="printTodasReflexoesW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareTodasReflexoesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_todas_reflexoes_w1')">&times;</button>
                 </div>
             </div>
@@ -1584,7 +1683,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w2')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w2')">A-</button>
                     <button type="button" class="action-btn" onclick="printRoteiroW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareRoteiroW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_w2')">&times;</button>
                 </div>
             </div>
@@ -1705,7 +1803,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_w1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_w1')">A-</button>
                     <button type="button" class="action-btn" onclick="printRoteiroW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareRoteiroW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_domingo')">&times;</button>
                 </div>
             </div>
@@ -1827,7 +1924,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w2')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w2')">A-</button>
                     <button type="button" class="action-btn" onclick="printPrecesW2()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="sharePrecesW2PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_w2')">&times;</button>
                 </div>
             </div>
@@ -1843,7 +1939,7 @@
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a oração de vosso povo!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas minhas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
@@ -1892,7 +1988,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_w1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_w1')">A-</button>
                     <button type="button" class="action-btn" onclick="printPrecesW1()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="sharePrecesW1PDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_domingo')">&times;</button>
                 </div>
             </div>
@@ -1952,7 +2047,6 @@
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_rito_cruz')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_rito_cruz')">A-</button>
                     <button type="button" class="action-btn" onclick="printRitoCruz()">🖨️ Imprimir</button>
-                    <button type="button" class="action-btn whatsapp" onclick="shareRitoCruzPDF()">📲 Enviar PDF</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_rito_cruz')">&times;</button>
                 </div>
             </div>
@@ -1986,19 +2080,14 @@
         </div>
     </div>
 
-    <!-- ==================================================================== -->
-    <!-- MOTOR DE PDF, WHATSAPP E MODAIS (A SOLUÇÃO NATIVA)                   -->
-    <!-- ==================================================================== -->
-    
-    <!-- TELA DE AVISO (FALLBACK NATIVO) -->
-    <div id="pdf-loading" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a365d; z-index: 999999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; text-align: center;">
-        <div style="border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px;"></div>
-        <div>Processando Envio...<br><small style="font-weight:normal; font-size:0.95rem;">Aguarde, por favor.</small></div>
-        <style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
-    </div>
-
     <div id="print-mount" style="display:none;"></div>
 
+    <footer>
+        <div>Paróquia Nossa Senhora Auxiliadora — Arquidiocese de Londrina</div>
+        <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
+    </footer>
+
+    <!-- BIBLIOTECAS JS -->
     <script src="leituras.js"></script>
     
     <script>
@@ -2156,7 +2245,7 @@
             }
         }
 
-        // ================= IMPRESSÃO FÍSICA (PC E CELULAR) =================
+        // ================= IMPRESSÃO FÍSICA (PC E CELULAR NATIVO) =================
         function runPrintMount(htmlContent) {
             document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
             document.body.style.overflow = 'visible';
@@ -2208,84 +2297,6 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
             const header = getHeaderHtml('Oração dos Fiéis — 24º Domingo do Tempo Comum');
             runPrintMount(`<div style="page-break-after:always;">${header}<div>${sabado}</div></div><div style="page-break-after:always;">${header}<div>${dom_manha}</div></div><div>${header}<div>${dom_noite}</div></div>`);
-        }
-
-        // ================= SOLUÇÃO NATIVA GARANTIDA PARA ENVIAR PDF NO CELULAR =================
-        // Como o html2canvas trava por limite de memória nos roteiros longos (causando o PDF vazio),
-        // este método chama o modo NATIVO da própria ferramenta de Imprimir.
-        async function generateAndSharePDF(contentHtml, filename) {
-            const loading = document.getElementById('pdf-loading');
-            loading.style.display = 'flex';
-            
-            await new Promise(r => setTimeout(r, 600));
-            loading.style.display = 'none';
-
-            // Alerta informativo garantindo a excelente experiência do usuário.
-            alert("Aviso do Sistema:\n\nComo o roteiro é longo, gerar o PDF em segundo plano no celular pode corromper o arquivo.\n\nPara garantir que o seu roteiro saia PERFEITO, vamos usar o modo de Impressão Nativa.\n\n👉 Selecione 'Salvar como PDF' na próxima tela para enviar pelo WhatsApp.");
-            
-            // Reutilizamos a função de Imprimir que você confirmou que funciona maravilhosamente bem!
-            runPrintMount(`<div style="padding:0.5cm;">${contentHtml}</div>`);
-        }
-
-        // ================== CHAMADAS DOS BOTÕES "ENVIAR PDF" (Agora seguras) ==================
-        function getPdfHeaderHtml(title, subtitle) {
-            return `
-                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; page-break-after: avoid;">
-                    <img src="Selo Auxiliadora 60 anos_Ano 3.png" style="width: 180px; max-height: 90px; object-fit: contain; margin-bottom: 5px;" onerror="this.style.display='none'">
-                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
-                    <h3 style="margin:4px 0 0 0; font-size:11pt; color:#8c6414;">${title}</h3>
-                    ${subtitle ? `<div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:10pt; font-weight:bold; margin-top:6px;">${subtitle}</div>` : ''}
-                </div>
-            `;
-        }
-
-        function shareProgramacaoPDF() {
-            const isW2 = (currentWeek === 2);
-            const containerId = isW2 ? 'semana2-container' : 'semana1-container';
-            const weekTitle = isW2 ? "Semana de 14 a 20 de Setembro de 2026" : "Semana de 07 a 13 de Setembro de 2026";
-            let cleanHtml = document.getElementById(containerId).innerHTML;
-            cleanHtml = cleanHtml.replace(/<details/g, '<div style="display:none;"').replace(/<\/details>/g, '</div>');
-            generateAndSharePDF(getPdfHeaderHtml('Programação Litúrgica Oficial', weekTitle) + cleanHtml, `Programacao_${isW2 ? 'Semana2' : 'Semana1'}.pdf`);
-        }
-
-        function shareRoteiroW2PDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Roteiro Litúrgico — 25º Domingo') + `<div>${document.getElementById('content_roteiro_w2').innerHTML}</div>`, 'Roteiro_25_Domingo.pdf');
-        }
-
-        function shareRoteiroW1PDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Roteiro Litúrgico — 24º Domingo') + `<div>${document.getElementById('content_roteiro_w1').innerHTML}</div>`, 'Roteiro_24_Domingo.pdf');
-        }
-
-        function sharePrecesW2PDF() {
-            const sabado = document.getElementById('preces_sabado_1830_w2').innerHTML;
-            const dom_manha = document.getElementById('preces_domingo_manha_w2').innerHTML;
-            const dom_noite = document.getElementById('preces_domingo_1830_w2').innerHTML;
-            const header = getPdfHeaderHtml('Oração dos Fiéis — 25º Domingo do Tempo Comum');
-            generateAndSharePDF(`<div style="page-break-after:always;">${header}<div>${sabado}</div></div><div style="page-break-after:always;">${header}<div>${dom_manha}</div></div><div>${header}<div>${dom_noite}</div></div>`, 'Preces_25_Domingo.pdf');
-        }
-
-        function sharePrecesW1PDF() {
-            const sabado = document.getElementById('preces_sabado_1830_w1').innerHTML;
-            const dom_manha = document.getElementById('preces_domingo_manha_w1').innerHTML;
-            const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
-            const header = getPdfHeaderHtml('Oração dos Fiéis — 24º Domingo do Tempo Comum');
-            generateAndSharePDF(`<div style="page-break-after:always;">${header}<div>${sabado}</div></div><div style="page-break-after:always;">${header}<div>${dom_manha}</div></div><div>${header}<div>${dom_noite}</div></div>`, 'Preces_24_Domingo.pdf');
-        }
-
-        function shareRitoCruzPDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Rito de Entrega da Cruz — Catequese') + `<div>${document.getElementById('content_rito_cruz').innerHTML}</div>`, 'Rito_Cruz.pdf');
-        }
-
-        function shareTodasReflexoesW2PDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Reflexões Litúrgicas — 14 a 20 de Setembro') + `<div>${document.getElementById('content_todas_reflexoes').innerHTML}</div>`, 'Reflexoes_Semana2.pdf');
-        }
-
-        function shareTodasReflexoesW1PDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Reflexões Litúrgicas — 07 a 13 de Setembro') + `<div>${document.getElementById('content_todas_reflexoes_w1').innerHTML}</div>`, 'Reflexoes_Semana1.pdf');
-        }
-
-        function shareLeiturasFromViewPDF() {
-            generateAndSharePDF(getPdfHeaderHtml('Leituras Selecionadas — Proclamação no Ambão') + `<div>${document.getElementById('content_leituras_view').innerHTML}</div>`, 'Leituras_Selecionadas.pdf');
         }
     </script>
 </body>
