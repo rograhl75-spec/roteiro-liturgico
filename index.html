@@ -96,6 +96,13 @@
         .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
         .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
         
+        details.reflection-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #22c55e; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1.2rem; transition: all 0.2s ease; }
+        details.reflection-box summary { font-weight: 700; color: #166534; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; outline: none; }
+        details.reflection-box summary::-webkit-details-marker { display: none; }
+        .reflection-content { font-size: 0.9rem; line-height: 1.6; color: #334155; text-align: justify; margin-top: 10px; border-top: 1px dashed #86efac; padding-top: 10px; }
+        .reflection-verse { font-style: italic; background: #ffffff; border-left: 3px solid #22c55e; padding: 6px 10px; margin: 0 0 10px 0; border-radius: 0 6px 6px 0; color: #14532d; font-weight: 500; }
+        .reflection-prayer { font-style: italic; background: #f0f9ff; border-left: 3px solid #0ea5e9; padding: 6px 10px; margin-top: 10px; border-radius: 0 6px 6px 0; color: #0369a1; font-weight: 500; }
+        
         .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
         table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
         table.liturgy-table th, table.liturgy-table td { border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); padding: 8px 10px; text-align: left; }
@@ -518,6 +525,37 @@
                         </table>
                     </div>
                 </div>
+                <div class="tables-grid" style="margin-top: 0.8rem;">
+                    <div>
+                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 407)</small></td>
+                                    <td>A salvação do povo sou eu, diz o Senhor: * de qualquer tribulação em que clamarem por mim, eu os ouvirei e serei seu Deus para sempre.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aclamação</strong><br><small>(cf. At 16,14b)</small></td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; * para que possamos acolher a palavra do vosso Filho!</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comunhão</strong><br><small>(Sl 118 / Jo 10)</small></td>
+                                    <td>Os vossos mandamentos vós nos destes para serem fielmente observados. Que seja firme a minha vida em cumprir vossa vontade!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Meus pensamentos não são como os vossos pensamentos.</td></tr>
+                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Para mim, o viver é Cristo.</td></tr>
+                                <tr><td><strong>EVANGELHO</strong><br>Estás com inveja porque eu estou sendo bom?</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -801,6 +839,37 @@
                                 <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w3')">Sl 24</span></td><td style="text-align:center;">I / 330</td></tr>
                                 <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w3')">Fl 2,1-11</span></td><td style="text-align:center;">I / 332</td></tr>
                                 <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w3')">Mt 21,28-32</span></td><td style="text-align:center;">I / 333</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tables-grid" style="margin-top: 0.8rem;">
+                    <div>
+                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 408)</small></td>
+                                    <td>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aclamação</strong><br><small>(Jo 10,27)</small></td>
+                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz, minha voz estão elas a escutar; eu conheço, então, minhas ovelhas, que me seguem, comigo a caminhar!</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comunhão</strong><br><small>(Sl 118,49-50)</small></td>
+                                    <td>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Quando o ímpio se arrepende da maldade que praticou, conserva a própria vida.</td></tr>
+                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Tende entre vós o mesmo sentimento que existe em Cristo Jesus.</td></tr>
+                                <tr><td><strong>EVANGELHO</strong><br>Os cobradores de impostos e as prostitutas vão entrar antes de vós no Reino do céu.</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -1576,8 +1645,22 @@
                 }
             });
             
-            if (anti1) { readingsHTML += `<div style="margin-bottom:15px; border:1px solid #ccc; padding:15px; font-family:serif;"><h3>Antífonas (25º Domingo)</h3><p><strong>Entrada:</strong> A salvação do povo sou eu...</p></div>`; }
-            if (anti2) { readingsHTML += `<div style="margin-bottom:15px; border:1px solid #ccc; padding:15px; font-family:serif;"><h3>Antífonas (26º Domingo)</h3><p><strong>Entrada:</strong> Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos...</p></div>`; }
+            if (anti1) { readingsHTML += `
+                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
+                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (25º Domingo)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
+                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
+                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
+                </div>`; 
+            }
+            if (anti2) { readingsHTML += `
+                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
+                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (26º Domingo)</h3>
+                    <p><strong>Antífona de Entrada</strong> (p. 408)<br>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</p>
+                    <p><strong>Aclamação ao Evangelho</strong> (Jo 10,27)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz,<br>minha voz estão elas a escutar;<br>eu conheço, então, minhas ovelhas,<br>que me seguem, comigo a caminhar!</p>
+                    <p><strong>Antífona de Comunhão</strong> (Sl 118,49-50)<br>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</p>
+                </div>`; 
+            }
 
             const viewDiv = document.getElementById('content_leituras_view');
             if(viewDiv) {
