@@ -90,8 +90,14 @@
         
         #print-mount{display:none}
         
-        /* ADAPTAÇÕES PARA CELULAR / TABLET */
+        /* CONTROLE RESPONSIVO DE BOTÕES */
+        .mobile-only { display: none !important; }
+        .desktop-only { display: inline-flex !important; }
+        
         @media (max-width: 768px) {
+            .mobile-only { display: inline-flex !important; }
+            .desktop-only { display: none !important; }
+            
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .toolbar { flex-direction: column; align-items: stretch; }
             .action-btn { width: 100%; padding: 12px; font-size: 1rem; margin-bottom: 4px; }
@@ -184,12 +190,12 @@
         <div>Preparando arquivo PDF, aguarde...</div>
     </div>
 
-    <!-- MODAL DE COMPARTILHAMENTO -->
+    <!-- MODAL NOVO: PDF PRONTO PARA COMPARTILHAMENTO NATIVO -->
     <div id="modal_share_ready" class="modal" style="z-index: 100000;">
         <div class="modal-content" style="text-align: center; max-width: 350px;">
             <div style="font-size: 3.5rem; margin-bottom: 5px;">✅</div>
             <h3 style="color: #16a34a; margin-top: 0; margin-bottom: 10px; font-size: 1.3rem;">PDF Gerado com Sucesso!</h3>
-            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">Clique no botão abaixo para enviar pelo WhatsApp ou salvar no dispositivo.</p>
+            <p style="font-size: 0.95rem; color: #475569; margin-bottom: 20px; line-height:1.4;">O arquivo está pronto. Clique no botão abaixo para enviar o documento pelo WhatsApp ou salvar no dispositivo.</p>
             
             <div style="display: flex; flex-direction: column; gap: 12px;">
                 <button id="btn-share-native" class="action-btn whatsapp" style="padding: 14px; font-size: 1.1rem; width: 100%;">📲 Compartilhar Arquivo</button>
@@ -203,7 +209,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA FINAL E PADRONIZADO (VERSÃO OFICIAL)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO PDF (VERSÃO FINAL 28.0)</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -216,7 +222,7 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas - APENAS ABREM MODAIS -->
+    <!-- Barra de Ferramentas -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="openActiveProgramacaoModal()">🗓️ Programação</button>
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
@@ -1888,7 +1894,7 @@
             
             // INJEÇÃO DE CSS ESPECÍFICA PARA O PDF (Garante que nada seja cortado ou vaze das margens)
             const fullHtml = `
-                <div style="width: 100%; box-sizing: border-box; background: #fff; padding: 0;">
+                <div style="width: 800px; box-sizing: border-box; background: #fff; padding: 20px; text-align: left;">
                     <style>
                         * { box-sizing: border-box; }
                         body { font-family: 'Segoe UI', Arial, sans-serif; color: #000; background: #fff; margin: 0; padding: 0;}
@@ -1942,13 +1948,25 @@
             
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = fullHtml;
+            
+            // Força a renderização isolada na tela para que o html2canvas não corte a esquerda
+            tempDiv.style.position = 'absolute';
+            tempDiv.style.top = '0px';
+            tempDiv.style.left = '0px';
+            tempDiv.style.width = '800px';
+            tempDiv.style.backgroundColor = '#ffffff';
+            tempDiv.style.zIndex = '-9999';
+            
             document.body.appendChild(tempDiv);
+
+            // Aguarda a renderização do DOM
+            await new Promise(r => setTimeout(r, 200));
 
             const opt = {
                 margin:       [10, 10, 10, 10], // Margens de 10mm seguras
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, letterRendering: true, windowWidth: 1024 },
+                html2canvas:  { scale: 2, useCORS: true, windowWidth: 800, scrollX: 0, scrollY: 0 },
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
                 pagebreak:    { mode: ['css', 'legacy'] } // Força a quebra correta para evitar cortar salmos longos
             };
