@@ -125,7 +125,7 @@
         .row-padre .script-text{border-left-color:var(--cor-padre)} 
         .row-musica .script-text{border-left-color:var(--cor-musica)} 
         .row-todos .script-text{border-left-color:var(--cor-todos)} 
-        .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;background:#f8fafc}
+        .row-rubrica .script-text{border-left-color:var(--cor-rubrica);font-style:italic;}
         
         /* Modal Window */
         .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: flex-start; padding: 1.5rem 0.8rem; overflow-y: auto; }
@@ -195,8 +195,8 @@
             .leitura-texto { font-size: 12pt; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
         }
         
-        /* Loading Overlay for PDF generation */
-        #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 99999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; text-align: center;}
+        /* TELA AZUL DE CARREGAMENTO PARA IMPEDIR CORTE DE PDF */
+        #pdf-loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1a365d; z-index: 999999; color: white; justify-content: center; align-items: center; flex-direction: column; font-size: 1.2rem; font-weight: bold; text-align: center;}
         .spinner { border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; border-top: 4px solid #fff; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         
@@ -208,7 +208,7 @@
     <!-- Overlay de Carregamento -->
     <div id="pdf-loading">
         <div class="spinner"></div>
-        <div>Preparando arquivo PDF blindado...<br><small style="font-weight:normal; font-size:0.9rem;">Isso pode levar alguns segundos.</small></div>
+        <div>Preparando PDF Blindado...<br><small style="font-weight:normal; font-size:0.9rem;">Aguarde, mantendo as margens corretas.</small></div>
     </div>
 
     <!-- MODAL DE COMPARTILHAMENTO / DOWNLOAD NATIVO -->
@@ -220,7 +220,7 @@
             
             <div style="display: flex; flex-direction: column; gap: 15px;">
                 <button id="btn-share-native" class="action-btn whatsapp" style="padding: 16px; font-size: 1.1rem; width: 100%;">📲 Enviar para o WhatsApp</button>
-                <button id="btn-download-native" class="action-btn blue" style="padding: 14px; font-size: 1.05rem; width: 100%;">💾 Baixar no Celular / Computador</button>
+                <button id="btn-download-native" class="action-btn blue" style="padding: 14px; font-size: 1.05rem; width: 100%;">💾 Baixar no Aparelho</button>
                 <button type="button" class="action-btn secondary" onclick="closeModal('modal_share_ready')" style="padding: 12px; width: 100%; background-color:#94a3b8;">Voltar</button>
             </div>
         </div>
@@ -230,7 +230,7 @@
         <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Programação Litúrgica e Roteiro Completo | 14 a 20 de Setembro de 2026</p>
-        <div><span class="version-badge">SISTEMA BLINDADO: TELA, PC E WHATSAPP (V-30)</span></div>
+        <div><span class="version-badge">SISTEMA BLINDADO: TELA, PC E WHATSAPP</span></div>
     </header>
 
     <div class="week-selector-bar">
@@ -243,7 +243,7 @@
         <span id="active-week-text">EXIBINDO NA TELA: Semana de 14 a 20 de Setembro (25º Domingo do Tempo Comum)</span>
     </div>
 
-    <!-- Barra de Ferramentas - ABRE SOMENTE MODAIS (Sem ações diretas no Mobile) -->
+    <!-- Barra de Ferramentas - ABRE SOMENTE MODAIS -->
     <div class="toolbar">
         <button type="button" class="action-btn" onclick="openActiveProgramacaoModal()">🗓️ Programação</button>
         <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
@@ -379,7 +379,7 @@
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio, papa, e Cipriano, bispo, mártires (Ano II)</div>
                 
-                <!-- AVISO ECC INSERIDO AQUI -->
+                <!-- AVISO ECC INSERIDO AQUI CONFORME SOLICITADO -->
                 <div class="ecc-box">⚠️ Observação: Missa de Entrega do ECC</div>
                 
                 <div class="presidency-box">
@@ -633,6 +633,7 @@
         <!-- SEMANA 1: 07 A 13 DE SETEMBRO DE 2026                   -->
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
+
             <!-- Segunda 07/09 -->
             <div class="card">
                 <div class="card-header">
@@ -1738,6 +1739,7 @@
             if (m) { m.style.display = 'none'; document.body.style.overflow = ''; }
         }
 
+        // Fecha o modal ao clicar fora
         window.onclick = function(e) { if (e.target && e.target.classList.contains('modal')) { e.target.style.display = 'none'; document.body.style.overflow = ''; } };
 
         function selectAllReadings(check) { document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check); }
@@ -1910,7 +1912,7 @@
         }
 
         // ====================================================================
-        // GERAÇÃO DE PDF E COMPARTILHAMENTO WHATSAPP BLINDADO
+        // GERAÇÃO DE PDF E COMPARTILHAMENTO WHATSAPP BLINDADO CONTRA CORTES
         // ====================================================================
         
         let currentPdfFile = null;
@@ -1918,93 +1920,158 @@
 
         async function generateAndSharePDF(contentHtml, filename) {
             const loading = document.getElementById('pdf-loading');
-            loading.style.display = 'flex';
+            loading.style.display = 'flex'; // Cobre a tela toda e protege o carregamento
             
+            // Pausa rápida para o navegador renderizar a tela azul
+            await new Promise(r => setTimeout(r, 100));
+            
+            const tempDiv = document.createElement('div');
+            tempDiv.id = 'temp-pdf-container';
+            
+            // Coloca o container na tela para não ficar "em branco", mas embaixo da tela azul de loading
+            tempDiv.style.position = 'absolute';
+            tempDiv.style.top = '0px';
+            tempDiv.style.left = '0px';
+            tempDiv.style.width = '800px'; 
+            tempDiv.style.backgroundColor = '#ffffff';
+            tempDiv.style.zIndex = '10'; // Fica abaixo da tela de loading que é 999999
+            tempDiv.style.color = '#000000';
+            tempDiv.style.textAlign = 'left';
+            
+            // O CSS Injetado blinda o conteúdo do PDF, formatando como A4 perfeito sem quebrar margens
             const fullHtml = `
-                <div style="width: 800px; max-width: 800px; background: #fff; padding: 20px; text-align: left; color: #000;">
-                    <style>
-                        /* CSS FOR PDF ONLY */
-                        * { box-sizing: border-box; }
-                        body { font-family: 'Segoe UI', Arial, sans-serif; color: #000; background: #fff; margin: 0; padding: 0;}
-                        
-                        .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
-                        .leitura-dia { font-size: 14px; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
-                        .leitura-titulo { font-size: 18px; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
-                        .leitura-texto { font-size: 16px; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
-                        
-                        .script-block { display: block; width: 100%; }
-                        .script-row { display: flex; flex-direction: row; margin-bottom: 12px; width: 100%; page-break-inside: avoid; align-items: stretch;}
-                        .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 12px; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center; margin-right:15px;}
-                        .script-text { flex: 1; font-size: 16px; line-height: 1.5; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
-                        
-                        .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
-                        .row-animador .script-text{border-left-color:#1e40af} .row-padre .script-text{border-left-color:#991b1b} .row-musica .script-text{border-left-color:#166534} .row-todos .script-text{border-left-color:#b45309} .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
-                        
-                        table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 15px;}
-                        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-                        th { background: #f8fafc; color: #1a365d; }
-                        .card { margin-bottom: 20px; padding: 15px; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; }
-                        
-                        .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; page-break-after: avoid; }
-                        .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
-                        .pdf-header-wrap h2 { margin:0; font-size:18px; color:#1a365d; text-transform:uppercase; }
-                        .pdf-header-wrap h3 { margin:5px 0; font-size:15px; color:#8c6414; }
-                        .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:12px; margin-top:5px; text-transform:uppercase; }
-                        
-                        .preces-single-page { page-break-after: always; display: block; width: 100%;}
-                        .preces-single-page:last-child { page-break-after: auto; }
-                    </style>
+                <style>
+                    #temp-pdf-container * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+                    .pdf-header-wrap { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; }
+                    .pdf-header-wrap img { width: 150px; max-height: 80px; object-fit: contain; margin-bottom: 10px; }
+                    .pdf-header-wrap h2 { margin:0; font-size:18px; color:#1a365d; text-transform:uppercase; }
+                    .pdf-header-wrap h3 { margin:5px 0; font-size:15px; color:#8c6414; }
+                    .pdf-period-badge { background:#1a365d; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; font-size:12px; margin-top:5px; text-transform:uppercase; }
+                    
+                    /* Roteiros e Preces */
+                    .script-row { display: flex; flex-direction: row; margin-bottom: 12px; align-items: stretch; width: 100%; page-break-inside: avoid;}
+                    .script-tag { flex: 0 0 120px; font-weight: bold; font-size: 12px; text-transform: uppercase; padding: 8px; border-radius: 4px; text-align: center; display:flex; align-items:center; justify-content:center; margin-right: 15px;}
+                    .script-text { flex: 1; font-size: 16px; line-height: 1.5; padding: 10px 14px; border: 1px solid #cbd5e1; border-left-width: 4px; border-radius: 0 4px 4px 0; background-color: #fff; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
+                    
+                    /* Leituras e Salmos */
+                    .reading-print-block { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: auto; }
+                    .leitura-dia { font-size: 14px; font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase; }
+                    .leitura-titulo { font-size: 18px; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase; }
+                    .leitura-texto { font-size: 16px; line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word; }
+                    .antifona-print-box { margin-bottom:15px; border:1px solid #ccc; padding:15px; font-size:16px; line-height:1.5; font-family:'Georgia',serif; page-break-inside:avoid; }
+                    .antifona-print-box h3 { margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; font-family:Arial,sans-serif; font-size:18px; text-transform:uppercase; }
+                    
+                    /* Cores das tags */
+                    .tag-animador{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe} 
+                    .tag-padre{background:#fef2f2;color:#991b1b;border:1px solid #fecaca} 
+                    .tag-musica{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0} 
+                    .tag-todos{background:#fffbeb;color:#b45309;border:1px solid #fde68a} 
+                    .tag-rubrica{background:#f8fafc;color:#475569;border:1px dashed #cbd5e1}
+                    .row-animador .script-text{border-left-color:#1e40af} 
+                    .row-padre .script-text{border-left-color:#991b1b} 
+                    .row-musica .script-text{border-left-color:#166534} 
+                    .row-todos .script-text{border-left-color:#b45309} 
+                    .row-rubrica .script-text{border-left-color:#475569;font-style:italic;}
+                    
+                    /* Tabelas e Programação Geral */
+                    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 15px; page-break-inside: auto;}
+                    tr { page-break-inside: avoid; page-break-after: auto; }
+                    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; word-wrap: break-word; }
+                    th { background: #f8fafc; color: #1a365d; }
+                    .table-caption { font-weight: bold; color: #1a365d; margin-bottom: 5px; border-bottom: 1px solid #ccc; font-size: 13px; text-transform: uppercase; }
+                    
+                    .card { margin-bottom: 20px; padding: 15px; border: 1px solid #cbd5e1; border-left: 5px solid #8c6414; page-break-inside: avoid; }
+                    .card-header { display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 10px; }
+                    .card-header h2 { margin:0; font-size:18px; color:#1a365d;}
+                    .color-badge { display: inline-block; padding: 3px 8px; font-size: 11px; border-radius: 4px; font-weight: bold; margin-left: 10px; }
+                    .badge-verde{background:#1e6b37;color:#fff} .badge-branco{background:#fff;color:#1e293b;border:1px solid #94a3b8} .badge-vermelho{background:#991b1b;color:#fff}
+                    .presidency-box { border: 1px solid #ccc; margin-bottom: 15px; border-top: 3px solid #1a365d; border-radius: 4px; overflow:hidden;}
+                    .presidency-title { font-weight: bold; color: #1a365d; background: #f1f5f9; padding: 6px; border-bottom: 1px solid #ccc; font-size: 13px; text-transform: uppercase; }
+                    .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #991b1b; border-radius: 4px; padding: 0.6rem 0.8rem; margin-bottom: 1rem; font-size: 14px; font-weight: 700; color: #991b1b; display: inline-block; }
+                    
+                    .tables-grid { display: flex; flex-direction: row; justify-content: space-between; gap: 15px; margin-bottom: 15px; width: 100%; box-sizing: border-box;}
+                    .tables-grid > div { width: 48%; }
+                    .note-gloria-box { background:#fef2f2; border:1px solid #fca5a5; border-left:4px solid #b91c1c; padding:8px; margin-bottom:10px; font-size:13px;}
+                    
+                    .preces-single-page { page-break-after: always; display: block; width: 100%; }
+                    .preces-single-page:last-child { page-break-after: auto; }
+                </style>
+                <div style="padding: 20px;">
                     ${contentHtml}
                 </div>
             `;
             
-            const tempDiv = document.createElement('div');
             tempDiv.innerHTML = fullHtml;
-            tempDiv.style.position = 'absolute';
-            tempDiv.style.top = '0';
-            tempDiv.style.left = '-2000px'; 
-            tempDiv.style.width = '800px';
             document.body.appendChild(tempDiv);
+            
+            // Pausa um pouco maior para garantir a pintura de todas as imagens antes de converter
+            await new Promise(r => setTimeout(r, 600));
 
             const opt = {
-                margin:       0, 
+                margin:       10, 
                 filename:     filename,
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, windowWidth: 800 },
-                jsPDF:        { unit: 'px', format: [800, 1131], orientation: 'portrait' } 
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak:    { mode: ['css', 'legacy'] }
             };
 
             try {
-                const pdfBlob = await html2pdf().set(opt).from(tempDiv).outputPdf('blob');
+                // Utilizando a API Blob nativa
+                const pdfBlob = await html2pdf().set(opt).from(tempDiv).output('blob');
+                
                 document.body.removeChild(tempDiv);
                 
-                const file = new File([pdfBlob], filename, { type: 'application/pdf' });
+                currentPdfFile = new File([pdfBlob], filename, { type: 'application/pdf' });
                 
-                if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                    await navigator.share({
-                        title: filename,
-                        text: 'Documento Litúrgico - Paróquia N. Sra. Auxiliadora',
-                        files: [file]
-                    });
-                } else {
-                    const url = URL.createObjectURL(pdfBlob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = filename;
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                    alert("O arquivo foi salvo na pasta de Downloads.");
-                }
+                if(currentPdfUrl) URL.revokeObjectURL(currentPdfUrl);
+                currentPdfUrl = URL.createObjectURL(pdfBlob);
+                
+                loading.style.display = 'none';
+                
+                openModal('modal_share_ready');
             } catch (error) {
+                loading.style.display = 'none';
                 if(document.body.contains(tempDiv)) document.body.removeChild(tempDiv);
                 console.error("Erro ao gerar PDF:", error);
                 alert("Ocorreu um erro ao gerar o arquivo PDF.");
-            } finally {
-                loading.style.display = 'none';
             }
         }
+
+        // Lógicas dos Botões dentro do Modal de Sucesso
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('btn-share-native').addEventListener('click', async () => {
+                if (currentPdfFile) {
+                    if (navigator.canShare && navigator.canShare({ files: [currentPdfFile] })) {
+                        try {
+                            await navigator.share({
+                                title: currentPdfFile.name,
+                                text: 'Documento Litúrgico - Paróquia N. Sra. Auxiliadora:',
+                                files: [currentPdfFile]
+                            });
+                            closeModal('modal_share_ready');
+                        } catch (err) {
+                            console.log("Compartilhamento cancelado:", err);
+                        }
+                    } else {
+                        alert("Este navegador não suporta compartilhamento direto. Use a opção 'Salvar na Pasta'.");
+                    }
+                }
+            });
+
+            document.getElementById('btn-download-native').addEventListener('click', () => {
+                if (currentPdfUrl) {
+                    const a = document.createElement('a');
+                    a.href = currentPdfUrl;
+                    a.download = currentPdfFile.name;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    closeModal('modal_share_ready');
+                    alert("O arquivo foi salvo na pasta Downloads do seu dispositivo.");
+                }
+            });
+        });
 
         // ================== FUNÇÕES DE COMPARTILHAR PDF ==================
         function shareProgramacaoPDF() {
@@ -2035,7 +2102,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Roteiro Litúrgico do Comentarista — 25º Domingo</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Roteiro_25_Domingo.pdf');
         }
@@ -2048,7 +2115,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Roteiro Litúrgico do Comentarista — 24º Domingo</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Roteiro_24_Domingo.pdf');
         }
@@ -2059,15 +2126,15 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w2').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap" style="page-break-after: avoid;">
+                <div class="pdf-header-wrap">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 25º Domingo do Tempo Comum</h3>
                 </div>
             `;
             const htmlContent = `
-                <div class="preces-single-page">${header} <div style="margin-bottom:20px;">${sabado}</div></div>
-                <div class="preces-single-page">${header} <div style="margin-bottom:20px;">${dom_manha}</div></div>
+                <div class="preces-single-page">${header} <div>${sabado}</div></div>
+                <div class="preces-single-page">${header} <div>${dom_manha}</div></div>
                 <div class="preces-single-page">${header} <div>${dom_noite}</div></div>
             `;
             generateAndSharePDF(htmlContent, 'Preces_25_Domingo.pdf');
@@ -2079,15 +2146,15 @@
             const dom_noite = document.getElementById('preces_domingo_1830_w1').innerHTML;
             
             const header = `
-                <div class="pdf-header-wrap" style="page-break-after: avoid;">
+                <div class="pdf-header-wrap">
                     <img src="Selo Auxiliadora 60 anos_Ano 3.png" onerror="this.style.display='none'">
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Oração dos Fiéis — 24º Domingo do Tempo Comum</h3>
                 </div>
             `;
             const htmlContent = `
-                <div class="preces-single-page">${header} <div style="margin-bottom:20px;">${sabado}</div></div>
-                <div class="preces-single-page">${header} <div style="margin-bottom:20px;">${dom_manha}</div></div>
+                <div class="preces-single-page">${header} <div>${sabado}</div></div>
+                <div class="preces-single-page">${header} <div>${dom_manha}</div></div>
                 <div class="preces-single-page">${header} <div>${dom_noite}</div></div>
             `;
             generateAndSharePDF(htmlContent, 'Preces_24_Domingo.pdf');
@@ -2101,7 +2168,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Rito de Entrega da Cruz — Catequese</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Rito_da_Cruz_Catequese.pdf');
         }
@@ -2114,7 +2181,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Reflexões Litúrgicas Diárias — 14 a 20 de Setembro</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Reflexoes_Semana2.pdf');
         }
@@ -2127,7 +2194,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Reflexões Litúrgicas Diárias — 07 a 13 de Setembro</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Reflexoes_Semana1.pdf');
         }
@@ -2140,7 +2207,7 @@
                     <h2>Paróquia Nossa Senhora Auxiliadora</h2>
                     <h3>Leituras Selecionadas — Proclamação no Ambão</h3>
                 </div>
-                <div style="display:block;">${content}</div>
+                <div>${content}</div>
             `;
             generateAndSharePDF(htmlContent, 'Leituras_Selecionadas.pdf');
         }
