@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
 
-    <!-- BIBLIOTECA PARA GERAR PDF -->
+    <!-- BIBLIOTECA PARA GERAR PDF (Resolve o problema do arquivo vazio) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
@@ -156,7 +156,7 @@
         #btn-topo { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; font-size: 14px; font-weight: bold; border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0.9; transition: opacity 0.3s; }
         #btn-topo:hover { opacity: 1; background-color: #2c4a7c; }
 
-        /* RESPONSIVIDADE CELULAR */
+        /* RESPONSIVIDADE */
         @media (max-width: 850px) {
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .leitura-grid { grid-template-columns: 1fr 1fr; }
@@ -179,68 +179,36 @@
             #btn-topo { bottom: 15px; right: 15px; padding: 10px 14px; }
         }
 
-        /* ================= IMPRESSÃO E PDF (DIAGRAMAÇÃO 1 DIA POR PÁGINA) ================= */
+        /* IMPRESSÃO */
         @media print {
-            @page { margin: 12mm; size: A4 portrait; }
-            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; font-size: 10.5pt; }
+            @page { margin: 12mm 10mm; size: A4 portrait; }
+            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
             body > *:not(#print-mount) { display: none !important; }
             #print-mount { display: block !important; position: relative !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
-            
-            /* Título do Relatório */
-            .print-sheet-header { text-align: center; border-bottom: 2px solid #1a365d; padding-bottom: 6px; margin-bottom: 12px; page-break-after: avoid; }
-            .print-sheet-header img { width: 140px !important; height: auto !important; max-height: 60px !important; object-fit: contain !important; margin: 0 auto 4px auto !important; display: block !important; }
-            .print-sheet-header h2 { margin: 0; font-size: 12pt; color: #1a365d; text-transform: uppercase; font-family: "Segoe UI", sans-serif; font-weight: 800; }
-            .print-sheet-header h3 { margin: 3px 0 0 0; font-size: 10pt; color: #8c6414; font-family: "Segoe UI", sans-serif; font-weight: 600; }
-            
-            /* FORÇAR EXATAMENTE 1 DIA (CARD) POR PÁGINA */
-            .card { 
-                page-break-before: always; 
-                page-break-after: always;
-                page-break-inside: avoid;
-                border: none !important; 
-                box-shadow: none !important; 
-                margin: 0 !important; 
-                padding: 0 !important; 
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-            }
-            .card:first-child { page-break-before: avoid; }
-            
-            /* Cabeçalho do Cartão */
-            .card-header { border-bottom: 2px solid #8c6414; padding-bottom: 4px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: baseline; }
-            .card-header h2 { font-size: 13.5pt; color: #1a365d; margin: 0; font-weight: bold; font-family: "Segoe UI", sans-serif; }
-            .color-badge { border: 1px solid #1a365d; background: #fff !important; color: #1a365d !important; font-size: 9pt; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
-            
-            /* Escala de Presidência */
-            .presidency-box { border: 1px solid #cbd5e1; background: #fff; border-radius: 4px; margin-bottom: 10px; }
-            .presidency-title { background: #f1f5f9 !important; border-bottom: 1px solid #cbd5e1; color: #1a365d; font-size: 9.5pt; padding: 4px 8px; font-weight: bold; font-family: "Segoe UI", sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .escala-table { width: 100%; border-collapse: collapse; }
-            .escala-table td { border-bottom: 1px solid #e2e8f0; color: #000; font-size: 9.5pt; padding: 5px 8px; }
-            .escala-table tr:last-child td { border-bottom: none; }
-            .p-hora { border: 1px solid #cbd5e1; background: transparent; color: #000; padding: 1px 4px; border-radius: 4px; font-weight: bold; font-size: 9pt; }
-            
-            /* Avisos */
-            .note-gloria-box, .ecc-box { border: 1px solid #cbd5e1; background: #fff; color: #991b1b; padding: 6px 10px; font-size: 9.5pt; margin-bottom: 10px; border-left: 4px solid #991b1b; border-radius: 4px; }
-            
-            /* Tabelas Lado a Lado perfeitamente proporcionadas */
-            .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 3%; margin-bottom: 10px; width: 100%; }
-            .tables-grid > div { width: 48.5%; }
-            
-            table.liturgy-table { width: 100%; font-size: 9pt; border-collapse: collapse; border: 1px solid #cbd5e1; }
-            table.liturgy-table th, table.liturgy-table td { border: 1px solid #cbd5e1; padding: 5px 6px; color: #000; }
-            table.liturgy-table th { background: #f1f5f9 !important; color: #1a365d !important; font-weight: bold; text-align: left; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            .table-caption { font-size: 9.5pt; font-weight: bold; color: #1a365d; border-bottom: 1.5px solid #1a365d; margin-bottom: 4px; padding-bottom: 2px; font-family: "Segoe UI", sans-serif; text-transform: uppercase; }
-            
-            .clickable-ref { color: #000; text-decoration: none; font-weight: bold; background: transparent; padding: 0; }
-            
-            /* Leituras Individuais Selecionadas */
-            .reading-print-block { margin-bottom: 20px; border-bottom: 1px solid #cbd5e1; padding-bottom: 15px; page-break-inside: avoid; }
+            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px; page-break-after: avoid; }
+            .print-sheet-header img { width: 160px !important; height: auto !important; max-height: 80px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
+            .print-sheet-header h2 { margin: 0; font-size: 14pt; color: #1a365d; text-transform: uppercase; font-family: sans-serif; }
+            .print-sheet-header h3 { margin: 4px 0 0 0; font-size: 11pt; color: #8c6414; font-family: sans-serif; }
+            .card { border: 1px solid #94a3b8; border-left: 4px solid #8c6414; margin-bottom: 20px; padding: 12px; page-break-inside: avoid; border-radius: 0; box-shadow: none; }
+            .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 4%; }
+            .tables-grid > div { width: 48%; }
+            table.liturgy-table { width: 100%; font-size: 9pt; border: 1px solid #000; border-radius: 0; }
+            table.liturgy-table th, table.liturgy-table td { border: 1px solid #000; padding: 4px 6px; color: #000; }
+            table.liturgy-table th { background: #f0f0f0; color: #000; }
+            .script-row { display: flex; flex-direction: row; margin-bottom: 8px; page-break-inside: avoid; border: 1px solid #000; box-shadow: none; border-radius: 0; }
+            .script-tag { flex: 0 0 100px; padding: 4px; font-size: 8pt; display: flex; align-items: center; justify-content: center; background: #e2e8f0; color: #000; border-right: 1px solid #000; }
+            .script-text { flex: 1; font-size: 11pt; padding: 6px 10px; border: none; color: #000; }
+            .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: auto; }
             .leitura-dia { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: sans-serif; }
-            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #8c6414; margin-bottom: 6px; border-bottom: 2px solid #8c6414; padding-bottom: 2px; font-family: serif; }
+            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: serif; }
             .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; white-space: pre-wrap; word-wrap: break-word; font-family: serif; color: #000; }
+            .presidency-box { border: 1px solid #000; background: transparent; border-radius: 0; }
+            .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
+            .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
+            .color-badge { border: 1px solid #000; background: transparent !important; color: #000 !important; }
         }
+        
+        footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #64748b; border-top: 1px solid var(--border); margin-top: 3rem; background: #fff; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -253,9 +221,9 @@
     </header>
 
     <div class="week-selector-bar">
-        <button type="button" class="week-tab-btn" id="btn-tab-w1" data-title="07 a 13 Set. (24º Dom)" data-full="Semana de 07 a 13 de Setembro de 2026 (24º Domingo)" onclick="showWeek(1)">Carregando...</button>
-        <button type="button" class="week-tab-btn" id="btn-tab-w2" data-title="14 a 20 Set. (25º Dom)" data-full="Semana de 14 a 20 de Setembro de 2026 (25º Domingo)" onclick="showWeek(2)">Carregando...</button>
-        <button type="button" class="week-tab-btn" id="btn-tab-w3" data-title="21 a 27 Set. (26º Dom)" data-full="Semana de 21 a 27 de Setembro de 2026 (26º Domingo)" onclick="showWeek(3)">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-w1" data-title="14 a 20 Set. (25º Dom)" data-full="Semana de 14 a 20 de Setembro de 2026 (25º Domingo)" onclick="showWeek(1)">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-w2" data-title="21 a 27 Set. (26º Dom)" data-full="Semana de 21 a 27 de Setembro de 2026 (26º Domingo)" onclick="showWeek(2)">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-w3" data-title="28 Set a 04 Out. (27º Dom)" data-full="Semana de 28 de Setembro a 04 de Outubro de 2026 (27º Domingo)" onclick="showWeek(3)">Carregando...</button>
     </div>
 
     <div class="active-week-banner" id="active-week-banner">
@@ -275,331 +243,9 @@
     <div class="container">
         
         <!-- ======================================================= -->
-        <!-- BLOCO 1: 07 A 13 DE SETEMBRO (24º DOMINGO)              -->
+        <!-- BLOCO 1 (SEMANA ATUAL): 14 A 20 DE SETEMBRO (25º DOM)   -->
         <!-- ======================================================= -->
         <div id="semana1-container" style="display:none;">
-            <!-- SEGUNDA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Segunda-feira, 7 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum (Ano II - Par)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano (3ª Edição Típica)</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg')">1Cor 5,1-8</span></td><td style="text-align:center;">II / 963</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg')">Sl 5</span></td><td style="text-align:center;">II / 964</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg')">Lc 6,6-11</span></td><td style="text-align:center;">II / 965</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TERÇA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Terça-feira, 8 de Setembro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Festa)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Natividade da Bem-Aventurada Virgem Maria, Festa</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel Jose</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica:</strong> Por ser Festa da Virgem Maria, hoje <strong>canta-se o Glória</strong> logo após o Ato Penitencial. Omite-se o Creio.
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">796</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">796</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I</td><td style="text-align:center;">493</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">797</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter')">Mq 5,1-4a</span></td><td style="text-align:center;">III / 165</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_ter')">Sl 70(71)</span></td><td style="text-align:center;">III / 166</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter')">Mt 1,18-23</span></td><td style="text-align:center;">III / 167</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUARTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quarta-feira, 9 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua')">1Cor 7,25-31</span></td><td style="text-align:center;">II / 966</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qua')">Sl 44(45)</span></td><td style="text-align:center;">II / 967</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua')">Lc 6,20-26</span></td><td style="text-align:center;">II / 968</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUINTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quinta-feira, 10 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Afonso</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui')">1Cor 8,1b-7</span></td><td style="text-align:center;">II / 970</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui')">Sl 138(139)</span></td><td style="text-align:center;">II / 971</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui')">Lc 6,27-38</span></td><td style="text-align:center;">II / 972</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SEXTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Sexta-feira, 11 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 23ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">405</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">405</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">405</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex')">1Cor 9,16-19</span></td><td style="text-align:center;">II / 974</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex')">Sl 83(84)</span></td><td style="text-align:center;">II / 975</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex')">Lc 6,39-42</span></td><td style="text-align:center;">II / 976</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FIM DE SEMANA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Fim de Semana: 12 e 13 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Domingo)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 24º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Jubileu</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Diác. Rogério</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
-                                <tr style="background:#f0fdf4;"><td><strong>Profissão de Fé (Creio)</strong></td><td style="text-align:center;"><strong>443</strong></td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Prefácio: Domingos Tempo Comum II</td><td style="text-align:center;">475</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom')">Eclo 27,33-28,9</span></td><td style="text-align:center;">I / 323</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_dom')">Sl 102(103)</span></td><td style="text-align:center;">I / 323</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom')">Rm 14,7-9</span></td><td style="text-align:center;">I / 324</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom')">Mt 18,21-35</span></td><td style="text-align:center;">I / 325</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tables-grid" style="margin-top: 0.8rem;">
-                    <div>
-                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 406)</small></td>
-                                    <td>Dai a paz, Senhor, aos que em vós esperam; * ouvi as preces do vosso servo e do vosso povo Israel.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Aclamação</strong></td>
-                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: * que vos ameis uns aos outros assim como eu vos amei.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Comunhão</strong></td>
-                                    <td>Como é preciosa, ó Deus, a vossa graça! * Na sombra de vossas asas os homens encontram abrigo.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Perdoa a injustiça cometida por teu próximo; quando orares, teus pecados serão perdoados.</td></tr>
-                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Quer vivamos, quer morramos, pertencemos ao Senhor.</td></tr>
-                                <tr><td><strong>EVANGELHO</strong><br>Não te digo perdoar até sete vezes, mas até setenta vezes sete.</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================================================= -->
-        <!-- BLOCO 2: 14 A 20 DE SETEMBRO (25º DOMINGO)              -->
-        <!-- ======================================================= -->
-        <div id="semana2-container" style="display:none;">
             <!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
@@ -637,7 +283,7 @@
                         </table>
                     </div>
                     <div>
-                        <div class="table-caption">📖 Liturgia da Palavra (Próprio dos Santos)</div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
@@ -921,9 +567,9 @@
         </div>
 
         <!-- ======================================================= -->
-        <!-- BLOCO 3 (PRÓXIMA SEMANA): 21 A 27 DE SETEMBRO (26º DOM) -->
+        <!-- BLOCO 2 (PRÓXIMA SEMANA): 21 A 27 DE SETEMBRO (26º DOM) -->
         <!-- ======================================================= -->
-        <div id="semana3-container" style="display:none;">
+        <div id="semana2-container" style="display:none;">
             <!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
@@ -1241,6 +887,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- ======================================================= -->
+        <!-- BLOCO 3 (TEMPLANTE FUTURO): 28 SET A 04 OUT             -->
+        <!-- ======================================================= -->
+        <div id="semana3-container" style="display:none;">
+            <div class="card" style="text-align:center; padding: 3rem;">
+                <h2 style="color:var(--primary);">Semana de 28 de Setembro a 04 de Outubro</h2>
+                <p style="font-size:1.1rem; color:#64748b;">Este espaço está pronto para receber os dados da 3ª semana no próximo adiantamento.</p>
+            </div>
+        </div>
     </div>
 
 
@@ -1282,51 +938,6 @@
             
             <!-- Checkboxes Bloco 1 -->
             <div id="leituras_semana_1" class="leituras-bloco" style="display:none;">
-                <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Selecione para Imprimir: 07 a 13 de Setembro (24º Domingo)</h4>
-                <div class="leitura-grid">
-                    <div class="leitura-col">
-                        <strong>Segunda-feira (07/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_seg"> 1ª Leitura (1Cor 5)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_seg"> Salmo (Sl 5)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_seg"> Evangelho (Lc 6)</label>
-                    </div>
-                    <div class="leitura-col">
-                        <strong>Terça-feira (08/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_ter"> 1ª Leitura (Mq 5)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_ter"> Salmo (Sl 70)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_ter"> Evangelho (Mt 1)</label>
-                    </div>
-                    <div class="leitura-col">
-                        <strong>Quarta-feira (09/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_qua"> 1ª Leitura (1Cor 7)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_qua"> Salmo (Sl 44)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_qua"> Evangelho (Lc 6)</label>
-                    </div>
-                    <div class="leitura-col">
-                        <strong>Quinta-feira (10/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_qui"> 1ª Leitura (1Cor 8)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_qui"> Salmo (Sl 138)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_qui"> Evangelho (Lc 6)</label>
-                    </div>
-                    <div class="leitura-col">
-                        <strong>Sexta-feira (11/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_sex"> 1ª Leitura (1Cor 9)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_sex"> Salmo (Sl 83)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_sex"> Evangelho (Lc 6)</label>
-                    </div>
-                    <div class="leitura-col">
-                        <strong style="color:var(--secondary)">Fim de Semana (13/09)</strong>
-                        <label><input type="checkbox" class="reading-checkbox" value="1l_dom"> 1ª Leitura (Eclo 27)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="sl_dom"> Salmo (Sl 102)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="2l_dom"> 2ª Leitura (Rm 14)</label>
-                        <label><input type="checkbox" class="reading-checkbox" value="ev_dom"> Evangelho (Mt 18)</label>
-                        <label style="color:var(--primary); font-weight:bold; margin-top:4px;"><input type="checkbox" class="reading-checkbox" value="antifonas_0"> 🎵 Antífonas e Aclamação</label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Checkboxes Bloco 2 -->
-            <div id="leituras_semana_2" class="leituras-bloco" style="display:none;">
                 <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Selecione para Imprimir: 14 a 20 de Setembro (25º Domingo)</h4>
                 <div class="leitura-grid">
                     <div class="leitura-col">
@@ -1370,8 +981,8 @@
                 </div>
             </div>
             
-            <!-- Checkboxes Bloco 3 -->
-            <div id="leituras_semana_3" class="leituras-bloco" style="display:none;">
+            <!-- Checkboxes Bloco 2 -->
+            <div id="leituras_semana_2" class="leituras-bloco" style="display:none;">
                 <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Selecione para Imprimir: 21 a 27 de Setembro (26º Domingo)</h4>
                 <div class="leitura-grid">
                     <div class="leitura-col">
@@ -1415,6 +1026,14 @@
                 </div>
             </div>
             
+            <!-- Checkboxes Bloco 3 (Vazio) -->
+            <div id="leituras_semana_3" class="leituras-bloco" style="display:none;">
+                <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Bloco 3: 28 de Setembro a 04 de Outubro</h4>
+                <div class="leitura-grid">
+                    <p style="grid-column: 1 / -1; color:#64748b; font-style: italic;">Nenhuma leitura carregada para este período ainda.</p>
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -1422,7 +1041,7 @@
     <div id="modal_reflexoes_1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (07 a 13/09)</h3>
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (14 a 20/09)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_1')">A-</button>
@@ -1432,59 +1051,6 @@
                 </div>
             </div>
             <div id="content_reflexoes_1" class="modal-body">
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Segunda-feira, 07/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "O que é permitido no sábado: fazer o bem ou fazer o mal? Salvar uma vida ou destruí-la?" (Lc 6,9)<br>
-                    <strong>Reflexão:</strong> Jesus ensina que a vida e o bem estão acima de regras vazias. Nossas mãos devem estar estendidas para erguer quem precisa.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, dai-me coragem para praticar o bem e defender a vida em todas as circunstâncias. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Terça-feira, 08/09/2026 — Natividade da Virgem Maria, Festa (Branco)</strong><br>
-                    <em>Versículo-chave:</em> "Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel." (Mt 1,23)<br>
-                    <strong>Reflexão:</strong> O nascimento de Maria é o prenúncio da redenção. Confiemos nos planos de amor que Deus traça em nossa história.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Ó Virgem Maria, no vosso nascimento nasceu a esperança da Salvação; guardai nossas famílias. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Quarta-feira, 09/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Bem-aventurados vós, os pobres, porque vosso é o Reino de Deus!" (Lc 6,20)<br>
-                    <strong>Reflexão:</strong> As Bem-aventuranças mostram que a segurança autêntica reside em Deus, não no apego aos bens perecíveis.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor, purificai o meu coração dos apegos e cumulais-me com vossa paz eterna. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Quinta-feira, 10/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Amai os vossos inimigos... sede misericordiosos como vosso Pai é misericordioso." (Lc 6,27.36)<br>
-                    <strong>Reflexão:</strong> A força cristã reside em quebrar a espiral do ódio retribuindo as ofensas com perdão sincero e bênçãos.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Pai celeste, dai-me a graça do perdão sem mágoa e de retribuir toda incompreensão com caridade. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
-                    <strong style="color:var(--primary);">Sexta-feira, 11/09/2026 — 23ª Semana do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Tira primeiro a trave do teu próprio olho, e então enxergarás bem." (Lc 6,42)<br>
-                    <strong>Reflexão:</strong> O seguimento de Cristo exige conversão interior e humildade sincera antes de emitir qualquer juízo sobre o próximo.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Jesus, livrai meu olhar do julgamento e tornai-me manso de coração como Vós. Amém.</em>
-                </div>
-                <div style="margin-bottom:14px;">
-                    <strong style="color:var(--cor-musica);">Domingo, 13/09/2026 — 24º Domingo do Tempo Comum (Verde)</strong><br>
-                    <em>Versículo-chave:</em> "Não te digo perdoar até sete vezes, mas até setenta vezes sete vezes." (Mt 18,22)<br>
-                    <strong>Reflexão:</strong> Fomos imensamente perdoados por Deus; por isso, o perdão não é opcional, mas o selo da verdadeira libertação do coração.<br>
-                    <strong style="color:#0369a1;">Oração do Dia:</strong> <em>Senhor Deus, perdoai nossas faltas assim como nós perdoamos a quem nos ofendeu. Amém.</em>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="modal_reflexoes_2" class="modal">
-        <div class="modal-content">
-            <div class="modal-header-bar">
-                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (14 a 20/09)</h3>
-                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_2')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_reflexoes_2', 'Reflexoes_Liturgicas')">📄 Enviar PDF / WhatsApp</button>
-                    <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_2')">&times;</button>
-                </div>
-            </div>
-            <div id="content_reflexoes_2" class="modal-body">
                 <div style="margin-bottom:14px; border-bottom:1px dashed #cbd5e1; padding-bottom:10px;">
                     <strong style="color:var(--cor-padre);">Segunda-feira, 14/09/2026 — Festa da Exaltação da Santa Cruz (Vermelho)</strong><br>
                     <em>Versículo-chave:</em> "Deus não enviou o seu Filho ao mundo para condenar o mundo, mas para que o mundo seja salvo por ele." (Jo 3,17)<br>
@@ -1525,20 +1091,20 @@
         </div>
     </div>
     
-    <div id="modal_reflexoes_3" class="modal">
+    <div id="modal_reflexoes_2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (21 a 27/09)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_3')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_3')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_reflexoes_3', 'Reflexoes_Liturgicas')">📄 Enviar PDF / WhatsApp</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_2')">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_2')">A-</button>
+                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_reflexoes_2', 'Reflexoes_Liturgicas')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_3')">&times;</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_2')">&times;</button>
                 </div>
             </div>
-            <div id="content_reflexoes_3" class="modal-body">
-                <p><em>[Adicione as reflexões da Semana de 21 a 27 aqui no mesmo formato HTML]</em></p>
+            <div id="content_reflexoes_2" class="modal-body">
+                <p><em>[Adicione as reflexões da Semana 2 aqui no mesmo formato HTML da semana 1]</em></p>
             </div>
         </div>
     </div>
@@ -1547,7 +1113,7 @@
     <div id="modal_roteiro_1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">ROTEIRO — 24º DOMINGO</h3>
+                <h3 class="modal-title">ROTEIRO — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_1')">A-</button>
@@ -1564,7 +1130,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!</span></div>
                 <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Para sempre seja louvado.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">SOMENTE PARA AS MISSAS COM TRANSMISSÃO:<br>As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração, as quais serão apresentadas no altar do Senhor.</span></div>
-                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Irmãos e irmãs, sejam muito bem-vindos à celebração do 24º Domingo do Tempo Comum! Caminhando sob as bênçãos do Mês da Bíblia, somos acolhidos como comunidade de fé para nos deixar instruir e transformar pela Palavra viva de Deus. Que o Espírito Santo disponha nossos corações a viver esta Santa Missa com profunda alegria, renovando nosso compromisso de amor e comunhão fraterna. De pé, com alegria, iniciemos a nossa celebração cantando.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Irmãos e irmãs, sejam muito bem-vindos à celebração do 25º Domingo do Tempo Comum! Continuando nossa caminhada no Mês da Bíblia, acolhemos com alegria toda a nossa comunidade e, de modo especial, oferecemos esta Santa Missa na intenção de todos os dizimistas de nossa paróquia. Agradecemos a Deus por sua fidelidade e generosidade, que sustentam a vida e o trabalho evangelizador de nossa Igreja. Que o Senhor nos abençoe e disponha nossos corações para vivermos juntos este momento forte de oração e comunhão fraterna. De pé, com alegria, iniciemos nossa celebração cantando.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto de Entrada 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Em nome do Pai ✠ e do Filho e do Espírito Santo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
@@ -1574,23 +1140,28 @@
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Ato Penitencial 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(segue-se a absolvição sacerdotal)<br>Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor, tende piedade de nós. (E invocações Cristo/Senhor se não cantadas).</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cristo, tende piedade de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Senhor, tende piedade de nós.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Telão</span><span class="script-text">Glória a Deus nas alturas, e paz na terra aos homens por Ele amados. Senhor Deus, rei dos céus, Deus Pai todo-poderoso. Nós vos louvamos, nós vos bendizemos, nós vos adoramos, nós vos glorificamos, nós vos damos graças por vossa imensa glória. Senhor Jesus Cristo, Filho Unigênito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais o pecado do mundo, tende piedade de nós. Vós que tirais o pecado do mundo, acolhei a nossa súplica. Vós que estais à direita do Pai, tende piedade de nós. Só vós sois o Santo, só vós o Senhor, só vós o Altíssimo, Jesus Cristo, com o Espírito Santo, na glória de Deus Pai. Amém.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração da Coleta.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
 
                 <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA DA PALAVRA</h4>
-                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">1ª Leitura</span><span class="script-text">Eclo 27,33-28,9. Palavra do Senhor.</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">1ª Leitura</span><span class="script-text">Is 55,6-9. Palavra do Senhor.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
-                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Salmo Responsorial 🎵🎸 Sl 102(103),1-2.3-4.9-10.11-12 (R. 8).</span></div>
-                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">2ª Leitura</span><span class="script-text">Rm 14,7-9. Palavra do Senhor.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Salmo Responsorial 🎵🎸 Sl 144(145),2-3.8-9.17-18 (R. 18a).</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">2ª Leitura</span><span class="script-text">Fl 1,20c-24.27a. Palavra do Senhor.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Aclamação ao Evangelho 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Senhor esteja convosco.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Ele está no meio de nós.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Proclamação do Evangelho de Jesus Cristo segundo Mateus.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Glória a vós, Senhor.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(Mt 18,21-35). Palavra da Salvação.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(Mt 20,1-16a). Palavra da Salvação.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Glória a vós, Senhor.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Homilia. Louvado seja o Nosso Senhor Jesus Cristo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Para sempre seja louvado.</span></div>
@@ -1613,7 +1184,7 @@
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">O nosso coração está em Deus.</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Demos graças ao Senhor, nosso Deus.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">É nosso dever e nossa salvação.</span></div>
-                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Prefácio dos Domingos do Tempo Comum II: Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças... cantando a uma só voz:</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Prefácio dos Domingos do Tempo Comum IV: Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças... cantando a uma só voz:</span></div>
                 <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas! 🎵🎸</span></div>
                 <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo.</span></div>
                 <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Enviai o vosso Espírito Santo!</span></div>
@@ -1660,11 +1231,125 @@
         </div>
     </div>
 
+    <div id="modal_roteiro_2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">ROTEIRO — 26º DOMINGO</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_2')">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_2')">A-</button>
+                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_roteiro_2', 'Roteiro_Missa')">📄 Enviar PDF / WhatsApp</button>
+                    <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_2')">&times;</button>
+                </div>
+            </div>
+            <div class="script-block" id="content_roteiro_2">
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, convida a comunidade a rezar um ou dois mistérios do Terço Mariano. O datashow deverá colocar a orientação: “SILÊNCIO”.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">O Ministério de Música inicia o canto de meditação 5 minutos antes.</span></div>
+                
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITOS INICIAIS</h4>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Louvado seja o Nosso Senhor Jesus Cristo!</span></div>
+                <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Para sempre seja louvado.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">SOMENTE PARA AS MISSAS COM TRANSMISSÃO:<br>As intenções desta Santa Missa são (ler intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos no coração, as quais serão apresentadas no altar do Senhor.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Reunidos como família de Deus e alimentados pela Sua Palavra neste Mês da Bíblia, a liturgia de hoje nos convida a examinar a sinceridade do nosso coração. Mais do que belas palavras, o Senhor deseja de nós atitudes concretas de fé, humildade e conversão no dia a dia. Acolhendo com alegria todos os fiéis e visitantes de nossa comunidade, disponhamos o nosso coração para celebrar com amor esta Santa Missa. De pé, iniciemos nossa celebração cantando.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto de Entrada 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Em nome do Pai ✠ e do Filho e do Espírito Santo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Bendito seja Deus que nos reuniu no amor de Cristo.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Ato Penitencial 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(segue-se a absolvição sacerdotal)<br>Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor, tende piedade de nós. (E invocações Cristo/Senhor se não cantadas no Ato).</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Telão</span><span class="script-text">Glória a Deus nas alturas, e paz na terra aos homens por Ele amados... Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração da Coleta.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA DA PALAVRA</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">1ª Leitura</span><span class="script-text">Ez 18,25-28. Palavra do Senhor.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Salmo Responsorial 🎵🎸 Sl 24,4bc-5.6-7.8-9 (R. 6a).</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">2ª Leitura</span><span class="script-text">Fl 2,1-11. Palavra do Senhor.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Aclamação ao Evangelho 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Senhor esteja convosco.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Ele está no meio de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Proclamação do Evangelho de Jesus Cristo segundo Mateus.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Glória a vós, Senhor.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(Mt 21,28-32). Palavra da Salvação.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Glória a vós, Senhor.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Homilia. Louvado seja o Nosso Senhor Jesus Cristo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Para sempre seja louvado.</span></div>
+                <div class="script-row row-todos"><span class="script-tag tag-todos">Padre/Anim</span><span class="script-text">(Profissão de fé)<br>Creio em Deus Pai todo-poderoso... na ressurreição da carne, na vida eterna. Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Fará a introdução às preces.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Conforme formulário de preces para cada horário.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Finaliza as preces.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA EUCARÍSTICA</h4>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Você pode fazer a sua oferta através do QR Code fixado no banco à sua frente ou nas cestas de coleta.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto das Oferendas 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Preparação das oferendas. Orai, irmãos e irmãs...</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Receba o Senhor por tuas mãos este sacrifício...</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração Sobre as Oferendas.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Senhor esteja convosco.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Ele está no meio de nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Corações ao alto.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">O nosso coração está em Deus.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Demos graças ao Senhor, nosso Deus.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">É nosso dever e nossa salvação.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Prefácio dos Domingos do Tempo Comum V... cantando a uma só voz:</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Santo, Santo, Santo... 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo... Corpo e ✠ Sangue de nosso Senhor Jesus Cristo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Enviai o vosso Espírito Santo!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Estando para ser entregue... FAZEI ISTO EM MEMÓRIA DE MIM. Mistério da fé!</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressureição. Vinde, Senhor Jesus!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Celebrando, pois, o memorial da morte... vos servir.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aceitai, ó Senhor, a nossa oferta!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Suplicantes, vos pedimos... num só corpo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">O Espírito nos una num só corpo!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja... com o Papa Leão, o Bispo Geremias.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Lembrai-vos, ó Pai, da vossa Igreja!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Lembrai-vos também... na luz da vossa face.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Concedei-lhes, ó Senhor, a luz eterna!</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Enfim, nós vos pedimos, tende piedade de todos nós... glória, por todos os séculos dos séculos.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Obedientes à palavra do Salvador...</span></div>
+                <div class="script-row row-todos"><span class="script-tag tag-todos">Assembleia</span><span class="script-text">Pai nosso que estais nos céus...</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Livrai-nos de todos os males... Jesus Cristo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Vosso é o Reino, o poder e a glória para sempre.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Senhor Jesus Cristo... Vós que sois Deus com o Pai e o Espírito Santo.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">A paz do Senhor esteja sempre convosco.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">O amor de Cristo nos uniu.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Cordeiro de Deus, que tirais o pecado do mundo...</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus...</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Senhor, eu não sou digno/a de que entreis em minha morada...</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Corpo de Cristo me guarde para a vida eterna.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto da Comunhão 🎵🎸</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Oração depois da Comunhão.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Avisos Paroquiais / Aniversariantes / Benção dos Pães.<br><br>Nossa Senhora Auxiliadora!</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Rogai por nós.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">O Senhor esteja convosco! E a benção de Deus todo-poderoso...</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ide em paz e o Senhor vos acompanhe.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Graças a Deus.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">Canto Final 🎵🎸</span></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modais Preces Dinâmicos -->
     <div id="modal_preces_1" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES — 24º DOMINGO</h3>
+                <h3 class="modal-title">PRECES — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_1')">A-</button>
@@ -1675,65 +1360,6 @@
             </div>
             <div id="content_preces_1">
                 <div id="preces_sabado_1" style="margin-bottom:14px;">
-                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
-                    <div class="script-block">
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Testemunha fiel e primogênito dentre os mortos, que nos purificastes do pecado com o vosso sangue, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Aqueles que escolhestes como mensageiros do vosso evangelho, tornai-os fiéis e zelosos administradores dos mistérios do reino, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi-nos, Senhor, e atendei-nos!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                    </div>
-                </div>
-                <div id="preces_domingo_manha_1" style="margin-bottom:14px;">
-                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
-                    <div class="script-block">
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus de todo poder e bondade, que nos ama e sabe do que temos necessidade, abramos o coração com alegria; e o aclamemos com louvores, dizendo:</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Nós vos bendizemos, Deus todo-poderoso e Rei do universo, porque, mesmo sendo pecadores, viestes à nossa procura, para conhecermos vossa verdade e servirmos à vossa majestade, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Deus, que abristes para nós as portas da vossa misericórdia, não nos deixeis jamais afastar do caminho da vida, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Nós vos louvamos, Senhor, e em vós confiamos!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                    </div>
-                </div>
-                <div id="preces_domingo_noite_1">
-                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
-                    <div class="script-block">
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pai e Senhor do universo, que enviastes vosso Filho ao mundo para que em toda parte fosse glorificado o vosso nome, confirmai o testemunho da vossa Igreja entre os povos, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Fazei-nos dóceis à pregação dos apóstolos, para vivermos de acordo com a verdade da nossa fé, nós vos pedimos.</span></div>
-                        <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Ouvi, Senhor, a nossa oração!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
-                        <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
-                        <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="modal_preces_2" class="modal">
-        <div class="modal-content">
-            <div class="modal-header-bar">
-                <h3 class="modal-title">PRECES — 25º DOMINGO</h3>
-                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_2')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_preces_2', 'Preces_Missa')">📄 Enviar PDF / WhatsApp</button>
-                    <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_2')">&times;</button>
-                </div>
-            </div>
-            <div id="content_preces_2">
-                <div id="preces_sabado_2" style="margin-bottom:14px;">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:</span></div>
@@ -1749,7 +1375,7 @@
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
                 </div>
-                <div id="preces_domingo_manha_2" style="margin-bottom:14px;">
+                <div id="preces_domingo_manha_1" style="margin-bottom:14px;">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:</span></div>
@@ -1760,12 +1386,12 @@
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, vós sois nossa vida e salvação!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>[Ler a Oração do Jubileu conforme tela/folheto]</span></div>
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
                 </div>
-                <div id="preces_domingo_noite_2">
+                <div id="preces_domingo_noite_1">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:</span></div>
@@ -1776,7 +1402,7 @@
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Pelos dizimistas de nossa comunidade e por todas as famílias que partilham com amor o fruto de seu trabalho: para que, contemplando a generosidade do Senhor da Vinha, que a todos acolhe e sustenta, compreendam o Dízimo como um gesto fraterno de gratidão e fidelidade ao Evangelho, rezemos ao Senhor.</span></div>
                         <div class="script-row row-todos"><span class="script-tag tag-todos">Todos</span><span class="script-text">R. Senhor, venha a nós o vosso Reino!</span></div>
-                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>Deus de infinita bondade, Nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade. Nós Vos suplicamos: Inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos. Confiantes na Virgem Maria, Com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providência, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora. Por Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!</span></div>
+                        <div class="script-row row-todos" style="margin-top:4px;"><span class="script-tag tag-todos">Todos / Telão</span><span class="script-text"><strong>Oração do Jubileu de Diamante:</strong><br>[Ler a Oração do Jubileu conforme tela/folheto]</span></div>
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">(O sacerdote conclui as preces)</span></div>
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
@@ -1785,20 +1411,20 @@
         </div>
     </div>
     
-    <div id="modal_preces_3" class="modal">
+    <div id="modal_preces_2" class="modal">
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">PRECES — 26º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_3')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_3')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_preces_3', 'Preces_Missa')">📄 Enviar PDF / WhatsApp</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_2')">A+</button>
+                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_2')">A-</button>
+                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_preces_2', 'Preces_Missa')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_3')">&times;</button>
+                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_2')">&times;</button>
                 </div>
             </div>
-            <div id="content_preces_3">
-                <div id="preces_sabado_3" style="margin-bottom:14px;">
+            <div id="content_preces_2">
+                <div id="preces_sabado_2" style="margin-bottom:14px;">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Demos graças a Deus que auxilia e protege o povo que escolheu como sua herança para que viva feliz. Recordando seu amor, aclamemos dizendo:</span></div>
@@ -1812,7 +1438,7 @@
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
                 </div>
-                <div id="preces_domingo_manha_3" style="margin-bottom:14px;">
+                <div id="preces_domingo_manha_2" style="margin-bottom:14px;">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Demos graças a nosso Salvador, que veio a este mundo para ser Deus-conosco; e o aclamemos, dizendo:</span></div>
@@ -1826,7 +1452,7 @@
                         <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">Amém.</span></div>
                     </div>
                 </div>
-                <div id="preces_domingo_noite_3">
+                <div id="preces_domingo_noite_2">
                     <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
                     <div class="script-block">
                         <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">Louvor e honra a Cristo que vive eternamente para interceder por nós, e que dá a salvação àqueles que, por seu intermédio, se aproximam de Deus. Firmes nesta fé, imploremos:</span></div>
@@ -2010,7 +1636,6 @@
         function previewSelectedReadings() {
             if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
             
-            const anti0 = document.querySelector('input[value="antifonas_0"]')?.checked;
             const anti1 = document.querySelector('input[value="antifonas_1"]')?.checked;
             const anti2 = document.querySelector('input[value="antifonas_2"]')?.checked;
             const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
@@ -2033,14 +1658,6 @@
                 }
             });
             
-            if (anti0) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
-                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (24º Domingo)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 406)<br>Dai a paz, Senhor, aos que em vós esperam; *<br>ouvi as preces do vosso servo e do vosso povo Israel.</p>
-                    <p><strong>Aclamação ao Evangelho</strong><br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Dou-vos um mandamento novo: *<br>que vos ameis uns aos outros assim como eu vos amei.</p>
-                    <p><strong>Antífona de Comunhão</strong><br>Como é preciosa, ó Deus, a vossa graça! *<br>Na sombra de vossas asas os homens encontram abrigo.</p>
-                </div>`; 
-            }
             if (anti1) { readingsHTML += `
                 <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
                     <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (25º Domingo)</h3>
@@ -2096,14 +1713,14 @@
         }
         function printActiveRoteiro() {
             const content = document.getElementById('content_roteiro_' + currentWeek).innerHTML;
-            const domingos = {1: '24º Domingo', 2: '25º Domingo', 3: '26º Domingo'};
+            const domingos = {1: '25º Domingo', 2: '26º Domingo', 3: '27º Domingo'};
             runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Roteiro Litúrgico — ' + (domingos[currentWeek] || ''))}<div>${content}</div></div>`);
         }
         function printActivePreces() {
             const sab = document.getElementById('preces_sabado_' + currentWeek).innerHTML;
             const dManha = document.getElementById('preces_domingo_manha_' + currentWeek).innerHTML;
             const dNoite = document.getElementById('preces_domingo_noite_' + currentWeek).innerHTML;
-            const domingos = {1: '24º Domingo', 2: '25º Domingo', 3: '26º Domingo'};
+            const domingos = {1: '25º Domingo', 2: '26º Domingo', 3: '27º Domingo'};
             const header = getHeaderHtml('Oração dos Fiéis — ' + domingos[currentWeek]);
             runPrintMount(`<div style="page-break-after:always;">${header}<div>${sab}</div></div><div style="page-break-after:always;">${header}<div>${dManha}</div></div><div>${header}<div>${dNoite}</div></div>`);
         }
@@ -2126,7 +1743,7 @@
             const fileName = baseFileName + '_S' + currentWeek;
             
             const opt = {
-                margin:       [10, 10, 15, 10],
+                margin:       [10, 10, 15, 10], // top, left, bottom, right
                 filename:     fileName + '.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
                 html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
@@ -2134,11 +1751,13 @@
             };
 
             try {
+                // 1. Gera o PDF em "Blob" (memória temporária)
                 const pdfBlob = await html2pdf().set(opt).from(element).output('blob');
                 const file = new File([pdfBlob], fileName + '.pdf', { type: 'application/pdf' });
                 
                 document.body.style.cursor = originalCursor;
 
+                // 2. Tenta abrir a janela de compartilhamento nativa (No Celular)
                 if (navigator.canShare && navigator.canShare({ files: [file] })) {
                     try {
                         await navigator.share({
@@ -2146,8 +1765,11 @@
                             title: fileName,
                             text: 'Segue o arquivo litúrgico em PDF gerado pelo sistema.'
                         });
-                    } catch(e) {}
+                    } catch(e) {
+                        // Usuário fechou o menu, ignorar
+                    }
                 } else {
+                    // 3. Se for PC ou navegador incompatível, baixa o PDF automático
                     const blobUrl = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
                     a.href = blobUrl;
