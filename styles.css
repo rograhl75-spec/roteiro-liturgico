@@ -1,0 +1,47 @@
+/* Camada de estilo extraída para a migração gradual.
+ * As regras existentes continuam funcionando enquanto o index.html legado
+ * é migrado por partes. Estas regras corrigem foco, navegação e impressão.
+ */
+
+:root {
+  --focus-ring: #f59e0b;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+button,
+a,
+[tabindex] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.clickable-ref {
+  border: 0;
+  font: inherit;
+}
+
+.modal[aria-hidden="true"] {
+  visibility: hidden;
+}
+
+.modal[aria-hidden="false"] {
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
