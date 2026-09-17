@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roteiro Litúrgico — Refatoração incremental</title>
+    <meta name="theme-color" content="#1a365d" />
+    <link rel="icon" type="image/png" href="icone.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img
+        src="Selo Auxiliadora 60 anos_Ano 3.png"
+        alt="Selo 60 anos da Paróquia Nossa Senhora Auxiliadora"
+        class="header-logo"
+      />
+
+      <h1>Paróquia Nossa Senhora Auxiliadora</h1>
+      <p id="header-subtitle">Carregando programação...</p>
+      <span class="version-badge">SISTEMA DINÂMICO MULTI-SEMANAS</span>
+    </header>
+
+    <nav
+      id="week-selector"
+      class="week-selector-bar"
+      aria-label="Selecionar semana litúrgica"
+    ></nav>
+
+    <div id="active-week-banner" class="active-week-banner" aria-live="polite">
+      <span aria-hidden="true">👀</span>
+      <span id="active-week-text">Carregando semana...</span>
+    </div>
+
+    <nav class="toolbar" aria-label="Ações da aplicação">
+      <button type="button" data-action="programacao">🗓️ Programação</button>
+      <button type="button" data-action="roteiro">📖 Roteiro</button>
+      <button type="button" data-action="preces">🙏 Preces</button>
+      <button type="button" data-action="leituras">📖 Leituras e Antífonas</button>
+      <button type="button" data-action="reflexoes">💡 Reflexões</button>
+      <a
+        href="https://www.cnbb.org.br/liturgia-diaria/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🔗 Liturgia CNBB
+      </a>
+    </nav>
+
+    <main id="app" class="container">
+      <p class="loading-state">Carregando conteúdo...</p>
+    </main>
+
+    <div id="modal-root"></div>
+    <button id="btn-topo" type="button" aria-label="Voltar ao topo">↑ Topo</button>
+
+    <footer>
+      Paróquia Nossa Senhora Auxiliadora
+    </footer>
+
+    <script>
+      window.liturgiaData = window.liturgiaData || {
+        semanas: [],
+        leituras: {}
+      };
+    </script>
+    <script src="leituras.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
