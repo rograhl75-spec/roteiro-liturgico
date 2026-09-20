@@ -1732,32 +1732,65 @@
             runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Leituras Selecionadas — Ambão')}<div>${document.getElementById('content_leituras_view').innerHTML}</div></div>`); 
         }
 
-        // ================= GERADOR DE PDF PARA O WHATSAPP =================
+     // ================= GERADOR DE PDF PARA O WHATSAPP =================
         async function shareOrDownloadPDF(contentId, baseFileName) {
             alert('Preparando o seu PDF... Por favor, aguarde a tela carregar. Isso leva de 2 a 5 segundos.');
             
             const originalCursor = document.body.style.cursor;
             document.body.style.cursor = 'wait';
             
-            const element = document.getElementById(contentId);
+            // 1. CLONAR O ELEMENTO PARA FORA DO MODAL
+            // Isso evita que o html2canvas corte textos grandes por conta da barra de rolagem
+            const originalElement = document.getElementById(contentId);
+            const clone = originalElement.cloneNode(true);
+            
+            // 2. CRIAR UM CONTAINER TEMPORÁRIO (Livre e expansível)
+            const tempContainer = document.createElement('div');
+            tempContainer.style.width = '800px'; // Força uma largura fixa para padronizar o layout do PDF
+            tempContainer.style.padding = '20px';
+            tempContainer.style.background = '#fff';
+            tempContainer.style.position = 'absolute';
+            tempContainer.style.left = '-9999px'; // Mantém fora da tela do usuário
+            tempContainer.style.top = '0';
+            tempContainer.style.color = '#000'; // Garante que a fonte ficará escura no PDF
+            
+            // 3. ADICIONAR UM CABEÇALHO PERSONALIZADO AO PDF
+            const activeBtn = document.getElementById('btn-tab-w' + currentWeek);
+            const subtitle = activeBtn ? activeBtn.getAttribute('data-title') : '';
+            const headerHTML = `
+                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px;">
+                    <h2 style="margin:0; font-size:16pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:4px 0 0 0; font-size:12pt; color:#8c6414;">${baseFileName.replace(/_/g, ' ')}</h3>
+                    <div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:10pt; font-weight:bold; margin-top:6px;">${subtitle}</div>
+                </div>
+            `;
+            tempContainer.innerHTML = headerHTML;
+            tempContainer.appendChild(clone);
+            
+            // Adiciona no body para que a biblioteca renderize por inteiro
+            document.body.appendChild(tempContainer);
+            
             const fileName = baseFileName + '_S' + currentWeek;
             
             const opt = {
-                margin:       [10, 10, 15, 10], // top, left, bottom, right
+                margin:       [10, 10, 15, 10], // Margens: topo, esquerda, fundo, direita
                 filename:     fileName + '.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
+                html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollY: 0 },
+                pagebreak:    { mode: 'css' }, // Informa ao gerador para respeitar quebras naturais
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
             try {
-                // 1. Gera o PDF em "Blob" (memória temporária)
-                const pdfBlob = await html2pdf().set(opt).from(element).output('blob');
+                // Gera o PDF em "Blob" (memória temporária) a partir do clone completo
+                const pdfBlob = await html2pdf().set(opt).from(tempContainer).output('blob');
                 const file = new File([pdfBlob], fileName + '.pdf', { type: 'application/pdf' });
                 
+                // Limpeza e retorno do cursor ao normal
+                document.body.removeChild(tempContainer);
                 document.body.style.cursor = originalCursor;
 
-                // 2. Tenta abrir a janela de compartilhamento nativa (No Celular)
+                // Tenta abrir a janela de compartilhamento nativa (No Celular)
                 if (navigator.canShare && navigator.canShare({ files: [file] })) {
                     try {
                         await navigator.share({
@@ -1769,7 +1802,7 @@
                         // Usuário fechou o menu, ignorar
                     }
                 } else {
-                    // 3. Se for PC ou navegador incompatível, baixa o PDF automático
+                    // Se for PC ou navegador incompatível, baixa o PDF automático
                     const blobUrl = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
                     a.href = blobUrl;
@@ -1783,9 +1816,10 @@
                 }
             } catch (err) {
                 console.error(err);
+                if(document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
                 document.body.style.cursor = originalCursor;
                 alert('Ocorreu um erro ao tentar gerar o PDF. Verifique sua conexão.');
-            }
+           }
         }
     </script>
 </body>
