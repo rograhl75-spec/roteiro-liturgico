@@ -15,9 +15,6 @@
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
-
-    <!-- BIBLIOTECA PARA GERAR PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
         :root {
@@ -99,7 +96,7 @@
         .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
         .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
         
-        /* Adicionado page-break-inside: avoid para evitar cortes no PDF */
+        /* Evita cortes no PDF */
         .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
         .script-tag { flex: 0 0 120px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 8px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.5px; }
         .script-text { flex: 1; font-size: 11pt; line-height: 1.5; padding: 10px 14px; background: #fff; text-align: justify; transition: font-size 0.2s ease; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
@@ -134,7 +131,7 @@
         .modal-close-btn { background: #f8fafc; border: 1px solid #cbd5e1; font-size: 1.5rem; cursor: pointer; color: #64748b; width: 40px; height: 40px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; transition: all 0.15s ease; }
         .modal-close-btn:hover { background: #e2e8f0; color: #0f172a; }
         
-        /* Corrigido para garantir parágrafos perfeitos na leitura do modal e impressão */
+        /* Garante parágrafos perfeitos na leitura do modal e impressão */
         .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: normal; word-wrap: break-word; }
         
         .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
@@ -903,7 +900,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_programacao')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_programacao')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_programacao', 'Programacao_Liturgica')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_programacao')">&times;</button>
                 </div>
@@ -1036,7 +1032,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_reflexoes_1', 'Reflexoes_Liturgicas')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_1')">&times;</button>
                 </div>
@@ -1089,7 +1084,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_2')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_reflexoes_2', 'Reflexoes_Liturgicas')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_2')">&times;</button>
                 </div>
@@ -1108,7 +1102,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_roteiro_1', 'Roteiro_Missa')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_1')">&times;</button>
                 </div>
@@ -1229,7 +1222,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_2')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_roteiro_2', 'Roteiro_Missa')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_2')">&times;</button>
                 </div>
@@ -1344,7 +1336,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_1')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_preces_1', 'Preces_Missa')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_1')">&times;</button>
                 </div>
@@ -1409,7 +1400,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_2')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_preces_2', 'Preces_Missa')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_2')">&times;</button>
                 </div>
@@ -1485,7 +1475,6 @@
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_leituras_view')">A+</button>
                     <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_leituras_view')">A-</button>
-                    <button type="button" class="action-btn" onclick="shareOrDownloadPDF('content_leituras_view', 'Leituras_Selecionadas')">📄 Enviar PDF / WhatsApp</button>
                     <button type="button" class="action-btn" onclick="printLeiturasFromView()">🖨️ Imprimir</button>
                     <button type="button" class="modal-close-btn" onclick="closeModal('modal_leituras_view')">&times;</button>
                 </div>
@@ -1729,92 +1718,6 @@
             runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Leituras Selecionadas — Ambão')}<div>${document.getElementById('content_leituras_view').innerHTML}</div></div>`); 
         }
 
-        // ================= GERADOR DE PDF PARA O WHATSAPP =================
-        async function shareOrDownloadPDF(contentId, baseFileName) {
-            alert('Preparando o seu PDF... Por favor, aguarde alguns segundos enquanto processamos o texto.');
-            
-            const originalCursor = document.body.style.cursor;
-            document.body.style.cursor = 'wait';
-            
-            const originalElement = document.getElementById(contentId);
-            const activeBtn = document.getElementById('btn-tab-w' + currentWeek);
-            const subtitle = activeBtn ? activeBtn.getAttribute('data-title') : '';
-            
-            // ATENÇÃO: Criamos um container invisível mas fisicamente anexado na posição 0,0 do documento.
-            // Uso de left: -9999px buga o html2canvas no Safari e Mobile, resultando em páginas em branco.
-            const tempContainer = document.createElement('div');
-            tempContainer.style.position = 'absolute';
-            tempContainer.style.top = '0';
-            tempContainer.style.left = '0';
-            tempContainer.style.width = '800px'; 
-            tempContainer.style.padding = '30px';
-            tempContainer.style.background = '#ffffff';
-            tempContainer.style.color = '#000000';
-            tempContainer.style.zIndex = '-9999'; // Mantém atrás da tela, invisível para o usuário
-            
-            tempContainer.innerHTML = `
-                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 20px;">
-                    <h2 style="margin:0; font-size:18pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
-                    <h3 style="margin:6px 0 0 0; font-size:14pt; color:#8c6414;">${baseFileName.replace(/_/g, ' ')}</h3>
-                    <div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:11pt; font-weight:bold; margin-top:8px;">${subtitle}</div>
-                </div>
-                <div style="font-size: 13pt; line-height: 1.6; text-align: justify; background: #ffffff;">
-                    ${originalElement.innerHTML}
-                </div>
-            `;
-            
-            document.body.appendChild(tempContainer);
-            
-            const fileName = baseFileName + '_S' + currentWeek;
-            
-            const opt = {
-                margin:       [10, 10, 15, 10], // Margens
-                filename:     fileName + '.pdf',
-                image:        { type: 'jpeg', quality: 1 },
-                html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollY: 0, windowWidth: 800 },
-                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }, // Evita que o PDF divida palavras ou parágrafos ao meio
-                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            try {
-                // Time-out mágico necessário para garantir que o Mobile pinte a div antes de tirar a "foto"
-                await new Promise(resolve => setTimeout(resolve, 300));
-
-                const pdfBlob = await html2pdf().set(opt).from(tempContainer).output('blob');
-                const file = new File([pdfBlob], fileName + '.pdf', { type: 'application/pdf' });
-                
-                document.body.removeChild(tempContainer);
-                document.body.style.cursor = originalCursor;
-
-                if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                    try {
-                        await navigator.share({
-                            files: [file],
-                            title: fileName,
-                            text: 'Segue o arquivo litúrgico em PDF gerado pelo sistema.'
-                        });
-                    } catch(e) {
-                        console.log("Compartilhamento cancelado", e);
-                    }
-                } else {
-                    const blobUrl = URL.createObjectURL(pdfBlob);
-                    const a = document.createElement('a');
-                    a.href = blobUrl;
-                    a.download = fileName + '.pdf';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(blobUrl);
-                    
-                    alert('Arquivo baixado no seu dispositivo! Agora é só anexá-lo no WhatsApp.');
-                }
-            } catch (err) {
-                console.error(err);
-                if(document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
-                document.body.style.cursor = originalCursor;
-                alert('Ocorreu um erro ao tentar gerar o PDF. Verifique sua conexão e tente novamente.');
-            }
-        }
     </script>
 </body>
 </html>
