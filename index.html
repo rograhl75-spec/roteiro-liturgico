@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
 
-    <!-- BIBLIOTECA PARA GERAR PDF (Resolve o problema do arquivo vazio e cortes) -->
+    <!-- BIBLIOTECA PARA GERAR PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
@@ -99,27 +99,8 @@
         .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
         .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
         
-        details.reflection-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #22c55e; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1.2rem; transition: all 0.2s ease; }
-        details.reflection-box summary { font-weight: 700; color: #166534; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; outline: none; }
-        details.reflection-box summary::-webkit-details-marker { display: none; }
-        .reflection-content { font-size: 0.9rem; line-height: 1.6; color: #334155; text-align: justify; margin-top: 10px; border-top: 1px dashed #86efac; padding-top: 10px; }
-        .reflection-verse { font-style: italic; background: #ffffff; border-left: 3px solid #22c55e; padding: 6px 10px; margin: 0 0 10px 0; border-radius: 0 6px 6px 0; color: #14532d; font-weight: 500; }
-        .reflection-prayer { font-style: italic; background: #f0f9ff; border-left: 3px solid #0ea5e9; padding: 6px 10px; margin-top: 10px; border-radius: 0 6px 6px 0; color: #0369a1; font-weight: 500; }
-        
-        .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
-        table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
-        table.liturgy-table th, table.liturgy-table td { border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); padding: 8px 10px; text-align: left; }
-        table.liturgy-table th:last-child, table.liturgy-table td:last-child { border-right: none; }
-        table.liturgy-table tr:last-child td { border-bottom: none; }
-        table.liturgy-table th { background: #f1f5f9; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        table.liturgy-table td { background: #ffffff; color: #334155; }
-        .table-caption { font-weight: 700; color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px; }
-        .clickable-ref { color: #2563eb; cursor: pointer; text-decoration: none; font-weight: 600; padding: 2px 6px; background: #eff6ff; border-radius: 4px; display: inline-block; transition: background 0.15s ease; }
-        .clickable-ref:hover { background: #dbeafe; color: #1e40af; }
-        
-        /* ROTEIROS E MODAIS */
-        .script-block { display: flex; flex-direction: column; gap: 8px; margin-top: 0.8rem; }
-        .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; }
+        /* Adicionado page-break-inside: avoid para evitar cortes no PDF */
+        .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
         .script-tag { flex: 0 0 120px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 8px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.5px; }
         .script-text { flex: 1; font-size: 11pt; line-height: 1.5; padding: 10px 14px; background: #fff; text-align: justify; transition: font-size 0.2s ease; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
         
@@ -135,13 +116,26 @@
         .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
         .row-rubrica .script-text { border-left: 3px solid #64748b; font-style: italic; background: #f8fafc; color: #475569; }
         
+        .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
+        table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
+        table.liturgy-table th, table.liturgy-table td { border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+        table.liturgy-table th:last-child, table.liturgy-table td:last-child { border-right: none; }
+        table.liturgy-table tr:last-child td { border-bottom: none; }
+        table.liturgy-table th { background: #f1f5f9; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        table.liturgy-table td { background: #ffffff; color: #334155; }
+        .table-caption { font-weight: 700; color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px; }
+        .clickable-ref { color: #2563eb; cursor: pointer; text-decoration: none; font-weight: 600; padding: 2px 6px; background: #eff6ff; border-radius: 4px; display: inline-block; transition: background 0.15s ease; }
+        .clickable-ref:hover { background: #dbeafe; color: #1e40af; }
+        
         .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); justify-content: center; align-items: flex-start; padding: 2rem 1rem; overflow-y: auto; backdrop-filter: blur(2px); }
         .modal-content { background: #fff; padding: 1.5rem; border-radius: 10px; max-width: 1000px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: auto; position: relative; }
         .modal-header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 10px; }
         .modal-title { margin: 0; font-size: 1.25rem; color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
         .modal-close-btn { background: #f8fafc; border: 1px solid #cbd5e1; font-size: 1.5rem; cursor: pointer; color: #64748b; width: 40px; height: 40px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; transition: all 0.15s ease; }
         .modal-close-btn:hover { background: #e2e8f0; color: #0f172a; }
-        .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: pre-wrap; word-wrap: break-word; }
+        
+        /* Corrigido para garantir parágrafos perfeitos na leitura do modal e impressão */
+        .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: normal; word-wrap: break-word; }
         
         .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
         .leitura-col { background: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
@@ -152,11 +146,9 @@
         
         #print-mount { display: none; }
         
-        /* BOTÃO VOLTAR AO TOPO */
         #btn-topo { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; font-size: 14px; font-weight: bold; border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0.9; transition: opacity 0.3s; }
         #btn-topo:hover { opacity: 1; background-color: #2c4a7c; }
 
-        /* RESPONSIVIDADE */
         @media (max-width: 850px) {
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
             .leitura-grid { grid-template-columns: 1fr 1fr; }
@@ -179,7 +171,6 @@
             #btn-topo { bottom: 15px; right: 15px; padding: 10px 14px; }
         }
 
-        /* IMPRESSÃO */
         @media print {
             @page { margin: 12mm 10mm; size: A4 portrait; }
             html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
@@ -192,16 +183,16 @@
             .card { border: 1px solid #94a3b8; border-left: 4px solid #8c6414; margin-bottom: 20px; padding: 12px; page-break-inside: avoid; border-radius: 0; box-shadow: none; }
             .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 4%; }
             .tables-grid > div { width: 48%; }
-            table.liturgy-table { width: 100%; font-size: 9pt; border: 1px solid #000; border-radius: 0; }
+            table.liturgy-table { width: 100%; font-size: 9pt; border: 1px solid #000; border-radius: 0; page-break-inside: avoid; }
             table.liturgy-table th, table.liturgy-table td { border: 1px solid #000; padding: 4px 6px; color: #000; }
             table.liturgy-table th { background: #f0f0f0; color: #000; }
             .script-row { display: flex; flex-direction: row; margin-bottom: 8px; page-break-inside: avoid; border: 1px solid #000; box-shadow: none; border-radius: 0; }
             .script-tag { flex: 0 0 100px; padding: 4px; font-size: 8pt; display: flex; align-items: center; justify-content: center; background: #e2e8f0; color: #000; border-right: 1px solid #000; }
             .script-text { flex: 1; font-size: 11pt; padding: 6px 10px; border: none; color: #000; }
-            .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: auto; }
+            .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: avoid; }
             .leitura-dia { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: sans-serif; }
             .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: serif; }
-            .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; white-space: pre-wrap; word-wrap: break-word; font-family: serif; color: #000; }
+            .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; font-family: serif; color: #000; }
             .presidency-box { border: 1px solid #000; background: transparent; border-radius: 0; }
             .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
             .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
@@ -1520,10 +1511,8 @@
         let currentWeek = 1; 
         let fontSizes = {};
 
-        // Inicia na Semana 1
         window.onload = function() { showWeek(1); };
         
-        // Controle do botão topo
         window.onscroll = function() {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 document.getElementById("btn-topo").style.display = "block";
@@ -1598,7 +1587,6 @@
             } 
         };
 
-        // ================= FUNÇÕES DA BARRA DE FERRAMENTAS =================
         function openActiveProgramacaoModal() {
             const containerId = 'semana' + currentWeek + '-container';
             const contentDiv = document.getElementById('content_programacao');
@@ -1620,16 +1608,14 @@
             openModal('modal_seletor_leituras');
         }
 
-        // LEITURAS JS - FORMATADAS PARA PDF
         function openReading(key) {
             if (typeof readingsData === 'undefined') { alert('O arquivo leituras.js ainda não foi carregado corretamente.'); return; }
             if (!readingsData[key]) { alert('Erro ao carregar o texto da leitura.'); return; }
             document.getElementById('modalTitle').innerText = readingsData[key].title;
             
-            // NOVO: Transforma as quebras de linha simples em <br> e quebras duplas em parágrafos <p>
             const formatText = readingsData[key].text
                 .split('\n\n')
-                .map(p => `<p style="margin: 0 0 12px 0;">${p.replace(/\n/g, '<br>')}</p>`)
+                .map(p => `<p style="margin: 0 0 12px 0; page-break-inside: avoid;">${p.replace(/\n/g, '<br>')}</p>`)
                 .join('');
                 
             document.getElementById('modalBody').innerHTML = formatText;
@@ -1655,14 +1641,13 @@
                 if(key.includes('antifonas')) return;
                 const r = readingsData[key];
                 if (r) {
-                    // NOVO: Estrutura o texto em parágrafos reais para o gerador de PDF não cortar palavras
                     const formatText = r.text
                         .split('\n\n')
-                        .map(p => `<p style="margin: 0 0 10px 0;">${p.replace(/\n/g, '<br>')}</p>`)
+                        .map(p => `<p style="margin: 0 0 10px 0; page-break-inside: avoid;">${p.replace(/\n/g, '<br>')}</p>`)
                         .join('');
 
                     readingsHTML += `
-                        <div class="reading-print-block" style="margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc;">
+                        <div class="reading-print-block" style="margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: avoid;">
                             <div class="leitura-dia" style="font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase;">${r.day}</div>
                             <div class="leitura-titulo" style="font-size: 1.2rem; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase;">${r.title}</div>
                             <div class="leitura-texto" style="line-height: 1.6; text-align: justify; word-wrap: break-word;">${formatText}</div>
@@ -1698,7 +1683,6 @@
             }
         }
 
-        // ================= IMPRESSÃO FÍSICA =================
         function runPrintMount(htmlContent) {
             document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
             document.body.style.overflow = 'visible';
@@ -1747,37 +1731,37 @@
 
         // ================= GERADOR DE PDF PARA O WHATSAPP =================
         async function shareOrDownloadPDF(contentId, baseFileName) {
-            alert('Preparando o seu PDF... Por favor, aguarde a tela carregar. Isso leva de 2 a 5 segundos.');
+            alert('Preparando o seu PDF... Por favor, aguarde alguns segundos enquanto processamos o texto.');
             
             const originalCursor = document.body.style.cursor;
             document.body.style.cursor = 'wait';
             
-            // 1. CLONAR O ELEMENTO PARA FORA DO MODAL
             const originalElement = document.getElementById(contentId);
-            const clone = originalElement.cloneNode(true);
-            
-            // 2. CRIAR UM CONTAINER TEMPORÁRIO
-            const tempContainer = document.createElement('div');
-            tempContainer.style.width = '800px'; 
-            tempContainer.style.padding = '20px';
-            tempContainer.style.background = '#fff';
-            tempContainer.style.position = 'absolute';
-            tempContainer.style.left = '-9999px'; 
-            tempContainer.style.top = '0';
-            tempContainer.style.color = '#000'; 
-            
-            // 3. ADICIONAR UM CABEÇALHO PERSONALIZADO AO PDF
             const activeBtn = document.getElementById('btn-tab-w' + currentWeek);
             const subtitle = activeBtn ? activeBtn.getAttribute('data-title') : '';
-            const headerHTML = `
-                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px;">
-                    <h2 style="margin:0; font-size:16pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
-                    <h3 style="margin:4px 0 0 0; font-size:12pt; color:#8c6414;">${baseFileName.replace(/_/g, ' ')}</h3>
-                    <div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:10pt; font-weight:bold; margin-top:6px;">${subtitle}</div>
+            
+            // ATENÇÃO: Criamos um container invisível mas fisicamente anexado na posição 0,0 do documento.
+            // Uso de left: -9999px buga o html2canvas no Safari e Mobile, resultando em páginas em branco.
+            const tempContainer = document.createElement('div');
+            tempContainer.style.position = 'absolute';
+            tempContainer.style.top = '0';
+            tempContainer.style.left = '0';
+            tempContainer.style.width = '800px'; 
+            tempContainer.style.padding = '30px';
+            tempContainer.style.background = '#ffffff';
+            tempContainer.style.color = '#000000';
+            tempContainer.style.zIndex = '-9999'; // Mantém atrás da tela, invisível para o usuário
+            
+            tempContainer.innerHTML = `
+                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 20px;">
+                    <h2 style="margin:0; font-size:18pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
+                    <h3 style="margin:6px 0 0 0; font-size:14pt; color:#8c6414;">${baseFileName.replace(/_/g, ' ')}</h3>
+                    <div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:11pt; font-weight:bold; margin-top:8px;">${subtitle}</div>
+                </div>
+                <div style="font-size: 13pt; line-height: 1.6; text-align: justify; background: #ffffff;">
+                    ${originalElement.innerHTML}
                 </div>
             `;
-            tempContainer.innerHTML = headerHTML;
-            tempContainer.appendChild(clone);
             
             document.body.appendChild(tempContainer);
             
@@ -1786,14 +1770,16 @@
             const opt = {
                 margin:       [10, 10, 15, 10], // Margens
                 filename:     fileName + '.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollY: 0 },
-                // NOVO: Regra rígida para não fatiar os textos e pular página corretamente
-                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }, 
+                image:        { type: 'jpeg', quality: 1 },
+                html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollY: 0, windowWidth: 800 },
+                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }, // Evita que o PDF divida palavras ou parágrafos ao meio
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
             try {
+                // Time-out mágico necessário para garantir que o Mobile pinte a div antes de tirar a "foto"
+                await new Promise(resolve => setTimeout(resolve, 300));
+
                 const pdfBlob = await html2pdf().set(opt).from(tempContainer).output('blob');
                 const file = new File([pdfBlob], fileName + '.pdf', { type: 'application/pdf' });
                 
@@ -1807,7 +1793,9 @@
                             title: fileName,
                             text: 'Segue o arquivo litúrgico em PDF gerado pelo sistema.'
                         });
-                    } catch(e) {}
+                    } catch(e) {
+                        console.log("Compartilhamento cancelado", e);
+                    }
                 } else {
                     const blobUrl = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
@@ -1824,7 +1812,7 @@
                 console.error(err);
                 if(document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
                 document.body.style.cursor = originalCursor;
-                alert('Ocorreu um erro ao tentar gerar o PDF. Verifique sua conexão.');
+                alert('Ocorreu um erro ao tentar gerar o PDF. Verifique sua conexão e tente novamente.');
             }
         }
     </script>
