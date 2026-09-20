@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
 
-    <!-- BIBLIOTECA PARA GERAR PDF (Resolve o problema do arquivo vazio) -->
+    <!-- BIBLIOTECA PARA GERAR PDF (Resolve o problema do arquivo vazio e cortes) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
@@ -1620,12 +1620,19 @@
             openModal('modal_seletor_leituras');
         }
 
-        // LEITURAS JS
+        // LEITURAS JS - FORMATADAS PARA PDF
         function openReading(key) {
             if (typeof readingsData === 'undefined') { alert('O arquivo leituras.js ainda não foi carregado corretamente.'); return; }
             if (!readingsData[key]) { alert('Erro ao carregar o texto da leitura.'); return; }
             document.getElementById('modalTitle').innerText = readingsData[key].title;
-            document.getElementById('modalBody').innerText = readingsData[key].text;
+            
+            // NOVO: Transforma as quebras de linha simples em <br> e quebras duplas em parágrafos <p>
+            const formatText = readingsData[key].text
+                .split('\n\n')
+                .map(p => `<p style="margin: 0 0 12px 0;">${p.replace(/\n/g, '<br>')}</p>`)
+                .join('');
+                
+            document.getElementById('modalBody').innerHTML = formatText;
             fontSizes['modalBody'] = 14; 
             document.getElementById('modalBody').style.fontSize = '14pt';
             openModal('generalModal');
@@ -1648,30 +1655,36 @@
                 if(key.includes('antifonas')) return;
                 const r = readingsData[key];
                 if (r) {
+                    // NOVO: Estrutura o texto em parágrafos reais para o gerador de PDF não cortar palavras
+                    const formatText = r.text
+                        .split('\n\n')
+                        .map(p => `<p style="margin: 0 0 10px 0;">${p.replace(/\n/g, '<br>')}</p>`)
+                        .join('');
+
                     readingsHTML += `
                         <div class="reading-print-block" style="margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc;">
                             <div class="leitura-dia" style="font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase;">${r.day}</div>
                             <div class="leitura-titulo" style="font-size: 1.2rem; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase;">${r.title}</div>
-                            <div class="leitura-texto" style="line-height: 1.6; text-align: justify; white-space: pre-wrap; word-wrap: break-word;">${r.text}</div>
+                            <div class="leitura-texto" style="line-height: 1.6; text-align: justify; word-wrap: break-word;">${formatText}</div>
                         </div>
                     `;
                 }
             });
             
             if (anti1) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
+                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif; page-break-inside: avoid;">
                     <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (25º Domingo)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
-                    <p><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
-                    <p><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
+                    <p style="margin:0 0 10px 0;"><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
+                    <p style="margin:0 0 10px 0;"><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
+                    <p style="margin:0;"><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
                 </div>`; 
             }
             if (anti2) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif;">
+                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif; page-break-inside: avoid;">
                     <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (26º Domingo)</h3>
-                    <p><strong>Antífona de Entrada</strong> (p. 408)<br>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</p>
-                    <p><strong>Aclamação ao Evangelho</strong> (Jo 10,27)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz,<br>minha voz estão elas a escutar;<br>eu conheço, então, minhas ovelhas,<br>que me seguem, comigo a caminhar!</p>
-                    <p><strong>Antífona de Comunhão</strong> (Sl 118,49-50)<br>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</p>
+                    <p style="margin:0 0 10px 0;"><strong>Antífona de Entrada</strong> (p. 408)<br>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</p>
+                    <p style="margin:0 0 10px 0;"><strong>Aclamação ao Evangelho</strong> (Jo 10,27)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz,<br>minha voz estão elas a escutar;<br>eu conheço, então, minhas ovelhas,<br>que me seguem, comigo a caminhar!</p>
+                    <p style="margin:0;"><strong>Antífona de Comunhão</strong> (Sl 118,49-50)<br>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</p>
                 </div>`; 
             }
 
@@ -1732,7 +1745,7 @@
             runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Leituras Selecionadas — Ambão')}<div>${document.getElementById('content_leituras_view').innerHTML}</div></div>`); 
         }
 
-     // ================= GERADOR DE PDF PARA O WHATSAPP =================
+        // ================= GERADOR DE PDF PARA O WHATSAPP =================
         async function shareOrDownloadPDF(contentId, baseFileName) {
             alert('Preparando o seu PDF... Por favor, aguarde a tela carregar. Isso leva de 2 a 5 segundos.');
             
@@ -1740,19 +1753,18 @@
             document.body.style.cursor = 'wait';
             
             // 1. CLONAR O ELEMENTO PARA FORA DO MODAL
-            // Isso evita que o html2canvas corte textos grandes por conta da barra de rolagem
             const originalElement = document.getElementById(contentId);
             const clone = originalElement.cloneNode(true);
             
-            // 2. CRIAR UM CONTAINER TEMPORÁRIO (Livre e expansível)
+            // 2. CRIAR UM CONTAINER TEMPORÁRIO
             const tempContainer = document.createElement('div');
-            tempContainer.style.width = '800px'; // Força uma largura fixa para padronizar o layout do PDF
+            tempContainer.style.width = '800px'; 
             tempContainer.style.padding = '20px';
             tempContainer.style.background = '#fff';
             tempContainer.style.position = 'absolute';
-            tempContainer.style.left = '-9999px'; // Mantém fora da tela do usuário
+            tempContainer.style.left = '-9999px'; 
             tempContainer.style.top = '0';
-            tempContainer.style.color = '#000'; // Garante que a fonte ficará escura no PDF
+            tempContainer.style.color = '#000'; 
             
             // 3. ADICIONAR UM CABEÇALHO PERSONALIZADO AO PDF
             const activeBtn = document.getElementById('btn-tab-w' + currentWeek);
@@ -1767,30 +1779,27 @@
             tempContainer.innerHTML = headerHTML;
             tempContainer.appendChild(clone);
             
-            // Adiciona no body para que a biblioteca renderize por inteiro
             document.body.appendChild(tempContainer);
             
             const fileName = baseFileName + '_S' + currentWeek;
             
             const opt = {
-                margin:       [10, 10, 15, 10], // Margens: topo, esquerda, fundo, direita
+                margin:       [10, 10, 15, 10], // Margens
                 filename:     fileName + '.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
                 html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollY: 0 },
-                pagebreak:    { mode: 'css' }, // Informa ao gerador para respeitar quebras naturais
+                // NOVO: Regra rígida para não fatiar os textos e pular página corretamente
+                pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }, 
                 jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
             try {
-                // Gera o PDF em "Blob" (memória temporária) a partir do clone completo
                 const pdfBlob = await html2pdf().set(opt).from(tempContainer).output('blob');
                 const file = new File([pdfBlob], fileName + '.pdf', { type: 'application/pdf' });
                 
-                // Limpeza e retorno do cursor ao normal
                 document.body.removeChild(tempContainer);
                 document.body.style.cursor = originalCursor;
 
-                // Tenta abrir a janela de compartilhamento nativa (No Celular)
                 if (navigator.canShare && navigator.canShare({ files: [file] })) {
                     try {
                         await navigator.share({
@@ -1798,11 +1807,8 @@
                             title: fileName,
                             text: 'Segue o arquivo litúrgico em PDF gerado pelo sistema.'
                         });
-                    } catch(e) {
-                        // Usuário fechou o menu, ignorar
-                    }
+                    } catch(e) {}
                 } else {
-                    // Se for PC ou navegador incompatível, baixa o PDF automático
                     const blobUrl = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
                     a.href = blobUrl;
@@ -1819,7 +1825,7 @@
                 if(document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
                 document.body.style.cursor = originalCursor;
                 alert('Ocorreu um erro ao tentar gerar o PDF. Verifique sua conexão.');
-           }
+            }
         }
     </script>
 </body>
