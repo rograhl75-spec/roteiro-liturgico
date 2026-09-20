@@ -148,7 +148,7 @@ const readingsData = {
     'ev_qua_w2': {
         title: 'Evangelho — Lucas 7,31-35 (Lecionário II, pág. 991)',
         day: 'Quarta-feira (16/09) — Santos Cornélio e Cipriano',
-        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 7,31-35\n\nNaquele tempo, disse Jesus: "Com quem hei de comparar os homens desta geração? Com quem eles se parecem? São como crianças que se sentam nas praças, e se dirigem aos colegas, dizendo: 'Tocamos flauta para vós e não dançastes; fizemos lamentações e não chorastes!'\n\nPois veio João Batista, que não comia pão nem bebia vinho, e vós dissestes: 'Ele está com um demônio!' Veio o Filho do Homem, que come e bebe, e vós dizeis: 'Ele é um comilão e beberrão, amigo dos publicanos e dos pecadores!' Mas a sabedoria foi justificada por todos os seus filhos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 7,31-35\n\nNaquele tempo, disse Jesus: "Com quem hei de comparar os homens desta generation? Com quem eles se parecem? São como crianças que se sentam nas praças, e se dirigem aos colegas, dizendo: 'Tocamos flauta para vós e não dançastes; fizemos lamentações e não chorastes!'\n\nPois veio João Batista, que não comia pão nem bebia vinho, e vós dissestes: 'Ele está com um demônio!' Veio o Filho do Homem, que come e bebe, e vós dizeis: 'Ele é um comilão e beberrão, amigo dos publicanos e dos pecadores!' Mas a sabedoria foi justificada por todos os seus filhos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
     },
     '1l_qui_w2': {
         title: '1ª Leitura — 1 Coríntios 15,1-11 (Lecionário II, pág. 993)',
@@ -199,8 +199,9 @@ const readingsData = {
         title: 'Evangelho — Mateus 20,1-16a (Lecionário I, pág. 328)',
         day: 'Fim de Semana (19 e 20/09) — 25º Domingo',
         text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 20,1-16a\n\nNaquele tempo, Jesus contou esta parábola a seus discípulos:\n"O Reino dos Céus é como a história do patrão que saiu de madrugada para contratar trabalhadores para a sua vinha. Combinou com os trabalhadores uma moeda de prata por dia, e os mandou para a vinha.\n\nQuando chegou a tarde, o patrão disse ao administrador: 'Chama os trabalhadores e paga-lhes uma diária a todos, começando pelos últimos até os primeiros!' Vieram os que tinham sido contratados às cinco da tarde e cada um recebeu uma moeda de prata. Em seguida vieram os que foram contratados primeiro, e pensavam que iam receber mais. Porém, cada um deles também recebeu uma moeda de prata.\n\nApesar de terem resmungado, o patrão respondeu: 'Amigo, eu não fui injusto contigo. Não combinamos uma moeda de prata? Toma o que é teu e volta para casa! Eu quero dar a este que foi contratado por último o mesmo que dei a ti. Por acaso não tenho o direito de fazer o que quero com aquilo que me pertence? Ou estás com inveja, porque estou sendo bom?'\n\nAssim, os últimos serão os primeiros, e os primeiros serão os últimos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
-    }
-/* =======================================================
+    }, // <-- FALTAVA ESTA VÍRGULA AQUI!
+
+    /* =======================================================
        SEMANA 3: 21 A 27 DE SETEMBRO DE 2026 (26º DOMINGO)
        ======================================================= */
     '1l_seg_w3': {
