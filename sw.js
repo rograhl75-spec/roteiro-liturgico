@@ -57,6 +57,11 @@ self.addEventListener('fetch', (event) => {
 
         return networkResponse;
       });
+    }).catch(() => {
+      if (event.request.mode === 'navigate') {
+        return caches.match('./index.html');
+      }
+      return caches.match(event.request);
     })
   );
 });

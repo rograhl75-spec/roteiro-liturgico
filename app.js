@@ -297,6 +297,18 @@ function openActiveLeiturasModal(trigger) {
   openModal('modal_seletor_leituras', trigger);
 }
 
+function showMessageModal(message, trigger, title = 'Aviso') {
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+  if (!modalTitle || !modalBody) return;
+
+  modalTitle.textContent = title;
+  modalBody.textContent = message;
+  fontSizes.modalBody = 12;
+  modalBody.style.fontSize = '12pt';
+  openModal('generalModal', trigger);
+}
+
 function createReadingParagraphs(text) {
   const fragment = document.createDocumentFragment();
   const paragraphs = (text || '').split('\n\n');
@@ -322,13 +334,13 @@ function createReadingParagraphs(text) {
 
 function openReading(key, trigger) {
   if (typeof window.readingsData === 'undefined') {
-    alert('O arquivo leituras.js ainda não foi carregado corretamente.');
+    showMessageModal('O arquivo leituras.js ainda não foi carregado corretamente.', trigger, 'Erro de carregamento');
     return;
   }
 
   const reading = window.readingsData[key];
   if (!reading) {
-    alert('Leitura não encontrada para esta referência. Verifique a programação desta semana.');
+    showMessageModal('Leitura não encontrada para esta referência. Verifique a programação desta semana.', trigger, 'Leitura não encontrada');
     return;
   }
 
@@ -389,13 +401,13 @@ function createAntifonaBlock(typeKey) {
 
 function previewSelectedReadings() {
   if (typeof window.readingsData === 'undefined') {
-    alert('Aguarde o carregamento do arquivo de leituras.');
+    showMessageModal('Aguarde o carregamento do arquivo de leituras.', document.activeElement, 'Aguarde');
     return;
   }
 
   const selected = Array.from(document.querySelectorAll('.reading-checkbox:checked')).map((checkbox) => checkbox.value);
   if (selected.length === 0) {
-    alert('Por favor, selecione ao menos uma leitura ou antífona.');
+    showMessageModal('Por favor, selecione ao menos uma leitura ou antífona.', document.activeElement, 'Seleção necessária');
     return;
   }
 
