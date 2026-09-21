@@ -111,7 +111,7 @@ const duplicates = Array.from(counts.entries()).filter(([, count]) => count > 1)
 const readingKeys = new Set(Object.keys(readingsData));
 const references = [];
 weeks.forEach((week) => {
-  const readingRefRegex = /data-reading-key="([^"]+)"/g;
+  const readingRefRegex = /data-reading-key\s*=\s*["']([^"']+)["']/g;
   let refMatch;
   while ((refMatch = readingRefRegex.exec(week.programacaoHtml || '')) !== null) {
     references.push(refMatch[1]);

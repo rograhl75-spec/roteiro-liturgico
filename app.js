@@ -250,6 +250,9 @@ function openActiveProgramacaoModal(trigger) {
   if (!sourceDiv || !contentDiv) return;
 
   const cloned = sourceDiv.cloneNode(true);
+  cloned.removeAttribute('role');
+  cloned.removeAttribute('aria-labelledby');
+  cloned.removeAttribute('hidden');
   cloned.querySelectorAll('[id]').forEach((node) => {
     node.removeAttribute('id');
   });
@@ -634,11 +637,18 @@ function registerServiceWorker() {
     return;
   }
 
-  window.addEventListener('load', () => {
+  const register = () => {
     navigator.serviceWorker.register('./sw.js').catch(() => {
       // Falha silenciosa para manter a experiência estática
     });
-  });
+  };
+
+  if (document.readyState === 'complete') {
+    register();
+    return;
+  }
+
+  window.addEventListener('load', register, { once: true });
 }
 
 function initializeModalLabels() {
