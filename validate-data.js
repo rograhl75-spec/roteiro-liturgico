@@ -11,11 +11,11 @@ const leiturasContent = fs.readFileSync(leiturasPath, 'utf8');
 const programacaoSource = fs.readFileSync(programacaoPath, 'utf8');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
 
-const keyRegex = /'([^']+)'\s*:\s*\{/g;
+const keyRegex = /(?:['"]([^'"]+)['"]|([A-Za-z_$][\w$]*))\s*:\s*\{/g;
 const keys = [];
 let match;
 while ((match = keyRegex.exec(leiturasContent)) !== null) {
-  keys.push(match[1]);
+  keys.push(match[1] || match[2]);
 }
 
 const counts = new Map();

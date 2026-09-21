@@ -82,8 +82,15 @@ function sanitizeTrustedHtml(htmlString) {
         element.removeAttribute(attribute.name);
       }
 
-      if ((name === 'href' || name === 'src') && value.startsWith('javascript:')) {
-        element.removeAttribute(attribute.name);
+      if (name === 'href' || name === 'src') {
+        const normalized = value.replace(/\s+/g, '');
+        if (
+          normalized.startsWith('javascript:') ||
+          normalized.startsWith('data:') ||
+          normalized.startsWith('vbscript:')
+        ) {
+          element.removeAttribute(attribute.name);
+        }
       }
     });
   });
@@ -242,8 +249,16 @@ function openActiveProgramacaoModal(trigger) {
   const contentDiv = document.getElementById('content_programacao');
   if (!sourceDiv || !contentDiv) return;
 
+  const cloned = sourceDiv.cloneNode(true);
+  cloned.querySelectorAll('[id]').forEach((node) => {
+    node.removeAttribute('id');
+  });
+  if (cloned.id) {
+    cloned.removeAttribute('id');
+  }
+
   contentDiv.textContent = '';
-  contentDiv.appendChild(sourceDiv.cloneNode(true));
+  contentDiv.appendChild(cloned);
   openModal('modal_programacao', trigger);
 }
 
@@ -449,8 +464,9 @@ function previewSelectedReadings() {
   fontSizes.content_leituras_view = 14;
   viewDiv.style.fontSize = '14pt';
 
+  const trigger = modalFocusReturn.get('modal_seletor_leituras') || document.activeElement;
   closeModal('modal_seletor_leituras');
-  openModal('modal_leituras_view');
+  openModal('modal_leituras_view', trigger);
 }
 
 function runPrintMount(nodeBuilder) {

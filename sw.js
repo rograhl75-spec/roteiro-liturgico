@@ -1,12 +1,15 @@
 const CACHE_VERSION = 'roteiro-liturgico-v1';
-const ASSETS_TO_CACHE = [
+const REQUIRED_ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './programacao.js',
   './leituras.js',
-  './manifest.json',
+  './manifest.json'
+];
+
+const OPTIONAL_ASSETS = [
   './icone.png',
   './icone.svg',
   './Selo Auxiliadora 60 anos_Ano 3.png'
@@ -14,11 +17,10 @@ const ASSETS_TO_CACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_VERSION).then((cache) =>
-      Promise.allSettled(
-        ASSETS_TO_CACHE.map((asset) => cache.add(asset))
-      )
-    )
+    caches.open(CACHE_VERSION).then(async (cache) => {
+      await cache.addAll(REQUIRED_ASSETS);
+      await Promise.allSettled(OPTIONAL_ASSETS.map((asset) => cache.add(asset)));
+    })
   );
   self.skipWaiting();
 });
