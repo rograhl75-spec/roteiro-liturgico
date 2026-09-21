@@ -498,10 +498,16 @@ function runPrintMount(nodeBuilder) {
   mount.hidden = false;
   mount.appendChild(nodeBuilder());
 
-  window.addEventListener('afterprint', () => {
+  let cleanedUp = false;
+  const cleanup = () => {
+    if (cleanedUp) return;
+    cleanedUp = true;
     mount.textContent = '';
     mount.hidden = true;
-  }, { once: true });
+  };
+
+  window.addEventListener('afterprint', cleanup, { once: true });
+  setTimeout(cleanup, 2000);
 
   setTimeout(() => {
     window.print();
