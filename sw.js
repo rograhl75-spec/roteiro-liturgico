@@ -14,7 +14,11 @@ const ASSETS_TO_CACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_VERSION).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_VERSION).then((cache) =>
+      Promise.allSettled(
+        ASSETS_TO_CACHE.map((asset) => cache.add(asset))
+      )
+    )
   );
   self.skipWaiting();
 });

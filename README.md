@@ -33,7 +33,7 @@ npm run validate:data
 A validação verifica:
 - duplicidade de chaves em `leituras.js`;
 - referências de leituras usadas em `programacao.js` mas ausentes em `leituras.js`;
-- presença dos painéis esperados de semana no `index.html`.
+- presença das abas esperadas de semana no `index.html` (os painéis são renderizados dinamicamente pelo `app.js`).
 
 ## Deploy no GitHub Pages
 

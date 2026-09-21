@@ -65,6 +65,32 @@ function getCurrentWeek() {
   return getWeeks().find((week) => week.id === currentWeekId) || getWeeks()[0] || null;
 }
 
+function sanitizeTrustedHtml(htmlString) {
+  const template = document.createElement('template');
+  template.innerHTML = htmlString;
+
+  template.content.querySelectorAll('script').forEach((scriptNode) => {
+    scriptNode.remove();
+  });
+
+  template.content.querySelectorAll('*').forEach((element) => {
+    Array.from(element.attributes).forEach((attribute) => {
+      const name = attribute.name.toLowerCase();
+      const value = attribute.value.trim().toLowerCase();
+
+      if (name.startsWith('on')) {
+        element.removeAttribute(attribute.name);
+      }
+
+      if ((name === 'href' || name === 'src') && value.startsWith('javascript:')) {
+        element.removeAttribute(attribute.name);
+      }
+    });
+  });
+
+  return template.content;
+}
+
 function createTrustedSection(week) {
   const section = document.createElement('section');
   section.id = `week-panel-${week.id}`;
@@ -72,9 +98,7 @@ function createTrustedSection(week) {
   section.setAttribute('role', 'tabpanel');
   section.setAttribute('aria-labelledby', `btn-tab-${week.id}`);
 
-  const template = document.createElement('template');
-  template.innerHTML = week.programacaoHtml;
-  section.appendChild(template.content.cloneNode(true));
+  section.appendChild(sanitizeTrustedHtml(week.programacaoHtml).cloneNode(true));
   return section;
 }
 
@@ -443,10 +467,10 @@ function runPrintMount(nodeBuilder) {
   mount.hidden = false;
   mount.appendChild(nodeBuilder());
 
-  window.onafterprint = () => {
+  window.addEventListener('afterprint', () => {
     mount.textContent = '';
     mount.hidden = true;
-  };
+  }, { once: true });
 
   setTimeout(() => {
     window.print();
