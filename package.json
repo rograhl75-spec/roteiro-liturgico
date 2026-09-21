@@ -1,0 +1,8 @@
+{
+  "name": "roteiro-liturgico",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate:data": "node validate-data.js"
+  }
+}

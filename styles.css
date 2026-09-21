@@ -1,0 +1,222 @@
+:root {
+            --primary: #1a365d;
+            --secondary: #8c6414;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --border: #cbd5e1;
+            --cor-animador: #1e40af;
+            --bg-animador: #eff6ff;
+            --cor-padre: #991b1b;
+            --bg-padre: #fef2f2;
+            --cor-musica: #166534;
+            --bg-musica: #f0fdf4;
+            --cor-todos: #b45309;
+            --bg-todos: #fffbeb;
+            --cor-rubrica: #475569;
+            --bg-rubrica: #f8fafc;
+        }
+
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        header { background: linear-gradient(135deg, #ffffff, #f1f5f9); text-align: center; padding: 1.5rem 1rem 1rem; border-bottom: 2px solid var(--border); }
+        .header-logo { max-width: 250px; height: auto; margin-bottom: 8px; }
+        header h1 { margin: 0; font-size: 1.4rem; text-transform: uppercase; color: var(--primary); letter-spacing: 0.5px; }
+        header p { margin: 0.4rem 0 0; font-size: 0.95rem; color: var(--secondary); font-weight: 600; }
+        .version-badge { display: inline-block; background: #16a34a; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 12px; margin-top: 8px; letter-spacing: 0.5px; }
+        
+        /* NAVEGAÇÃO MULTI-SEMANAS */
+        .week-selector-bar { display: flex; justify-content: center; gap: 10px; background: #e2e8f0; padding: 1rem 0.6rem; border-bottom: 2px solid #cbd5e1; flex-wrap: wrap; }
+        .week-tab-btn { background: #fff; border: 1px solid #94a3b8; color: #475569; font-size: 0.95rem; font-weight: 600; padding: 0.75rem 1rem; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; width: 100%; max-width: 350px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .week-tab-btn:hover { background: #f8fafc; border-color: #64748b; }
+        .week-tab-btn.active { background: var(--primary) !important; border: 2px solid #d4af37 !important; color: #fff !important; font-weight: 700; box-shadow: 0 4px 12px rgba(26,54,93,0.25); transform: translateY(-1px); }
+        
+        .active-week-banner { background: #fefce8; border: 1px solid #eab308; color: #854d0e; font-size: 0.95rem; font-weight: 700; text-align: center; padding: 0.7rem 1rem; border-radius: 6px; margin: 1rem auto 0.5rem; max-width: 1100px; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 1px 3px rgba(234, 179, 8, 0.1); }
+        
+        /* BARRA DE FERRAMENTAS */
+        .toolbar { display: flex; justify-content: center; gap: 8px; padding: 0.8rem; background: #ffffff; border-bottom: 1px solid var(--border); flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .action-btn { background: var(--primary); color: #fff; border: none; padding: 0.65rem 1.1rem; font-size: 0.9rem; font-weight: 600; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; justify-content: center; text-decoration: none; transition: background 0.15s ease; }
+        .action-btn:hover { background: #2c4a7c; }
+        .action-btn.secondary { background: var(--secondary); }
+        .action-btn.secondary:hover { background: #735210; }
+        .action-btn.accent { background: #047857; }
+        .action-btn.accent:hover { background: #065f46; }
+        .action-btn.blue { background: #2563eb; }
+        .action-btn.red { background: #dc2626; }
+        
+        /* CARDS E CONTEÚDO */
+        .container { max-width: 1100px; margin: 1.5rem auto; padding: 0 0.8rem; }
+        .card { background: var(--card-bg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 1.8rem; padding: 1.5rem; border-left: 5px solid var(--secondary); display: flex; flex-direction: column; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 8px; }
+        .card-header h2 { margin: 0; font-size: 1.2rem; color: var(--primary); font-weight: 700; }
+        .color-badge { padding: 0.25rem 0.7rem; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .badge-verde { background: #16a34a; color: #fff; }
+        .badge-branco { background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; }
+        .badge-vermelho { background: #dc2626; color: #fff; }
+        
+        .presidency-box { background: #f8fafc; border: 1px solid #cbd5e1; border-top: 3px solid var(--primary); border-radius: 6px; margin-bottom: 1.2rem; overflow: hidden; }
+        .presidency-title { color: var(--primary); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; background: #f1f5f9; letter-spacing: 0.5px; }
+        .escala-table { width: 100%; border-collapse: collapse; }
+        .escala-table td { padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; vertical-align: middle; font-size: 0.9rem; }
+        .p-dia { font-weight: 700; color: #334155; }
+        .p-hora { background: #dbeafe; color: #1e40af; font-weight: 700; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-left: 6px; font-size: 0.85rem; }
+        .p-loc { color: #475569; }
+        .p-cel { font-weight: 700; color: #0f172a; text-align: right; }
+        
+        .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
+        .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
+        
+        /* Evita cortes no PDF */
+        .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
+        .script-tag { flex: 0 0 120px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 8px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.5px; }
+        .script-text { flex: 1; font-size: 11pt; line-height: 1.5; padding: 10px 14px; background: #fff; text-align: justify; transition: font-size 0.2s ease; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
+        
+        .tag-animador { background: var(--cor-animador); color: #fff; }
+        .tag-padre { background: var(--cor-padre); color: #fff; }
+        .tag-musica { background: var(--cor-musica); color: #fff; }
+        .tag-todos { background: var(--cor-todos); color: #fff; }
+        .tag-rubrica { background: #64748b; color: #fff; }
+        
+        .row-animador .script-text { border-left: 3px solid var(--cor-animador); }
+        .row-padre .script-text { border-left: 3px solid var(--cor-padre); }
+        .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
+        .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
+        .row-rubrica .script-text { border-left: 3px solid #64748b; font-style: italic; background: #f8fafc; color: #475569; }
+        
+        .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
+        table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
+        table.liturgy-table th, table.liturgy-table td { border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+        table.liturgy-table th:last-child, table.liturgy-table td:last-child { border-right: none; }
+        table.liturgy-table tr:last-child td { border-bottom: none; }
+        table.liturgy-table th { background: #f1f5f9; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        table.liturgy-table td { background: #ffffff; color: #334155; }
+        .table-caption { font-weight: 700; color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px; }
+        .clickable-ref { color: #2563eb; cursor: pointer; text-decoration: none; font-weight: 600; padding: 2px 6px; background: #eff6ff; border-radius: 4px; display: inline-block; transition: background 0.15s ease; }
+        .clickable-ref:hover { background: #dbeafe; color: #1e40af; }
+        
+        .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); justify-content: center; align-items: flex-start; padding: 2rem 1rem; overflow-y: auto; backdrop-filter: blur(2px); }
+        .modal-content { background: #fff; padding: 1.5rem; border-radius: 10px; max-width: 1000px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: auto; position: relative; }
+        .modal-header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 10px; }
+        .modal-title { margin: 0; font-size: 1.25rem; color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+        .modal-close-btn { background: #f8fafc; border: 1px solid #cbd5e1; font-size: 1.5rem; cursor: pointer; color: #64748b; width: 40px; height: 40px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; transition: all 0.15s ease; }
+        .modal-close-btn:hover { background: #e2e8f0; color: #0f172a; }
+        
+        /* Garante parágrafos perfeitos na leitura do modal e impressão */
+        .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: normal; word-wrap: break-word; }
+        
+        .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+        .leitura-col { background: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
+        .leitura-col:hover { border-color: #94a3b8; }
+        .leitura-col strong { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 6px; font-size: 0.95rem; }
+        .leitura-col label { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer; color: #475569; padding: 2px 0; }
+        .leitura-col input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
+        
+        #print-mount { display: none; }
+        
+        #btn-topo { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; font-size: 14px; font-weight: bold; border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0.9; transition: opacity 0.3s; }
+        #btn-topo:hover { opacity: 1; background-color: #2c4a7c; }
+
+        @media (max-width: 850px) {
+            .tables-grid { grid-template-columns: 1fr; gap: 15px; }
+            .leitura-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .toolbar { flex-direction: column; align-items: stretch; padding: 1rem; gap: 10px; }
+            .action-btn { width: 100%; padding: 14px; font-size: 1rem; }
+            .week-selector-bar { flex-direction: column; padding: 1rem; }
+            .week-tab-btn { padding: 14px; font-size: 1rem; max-width: 100%; }
+            .escala-table tr { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 2px solid #e2e8f0; }
+            .escala-table td { display: block; border-bottom: none; padding: 4px 8px; }
+            .p-cel { color: #1e40af; font-size: 1rem; margin-top: 4px; text-align: left; }
+            .script-row { flex-direction: column; gap: 0; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+            .script-tag { justify-content: flex-start; padding: 8px 12px; width: 100%; font-size: 0.85rem; border-radius: 6px 6px 0 0; flex: none; }
+            .script-text { border-left: none; border-radius: 0 0 6px 6px; padding: 15px; flex: none; }
+            .modal { padding: 1rem 0.5rem; }
+            .modal-content { padding: 1.2rem; width: 100%; border-radius: 8px; }
+            .leitura-grid { grid-template-columns: 1fr; }
+            #btn-topo { bottom: 15px; right: 15px; padding: 10px 14px; }
+        }
+
+        @media print {
+            @page { margin: 12mm 10mm; size: A4 portrait; }
+            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
+            body > *:not(#print-mount) { display: none !important; }
+            #print-mount { display: block !important; position: relative !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
+            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px; page-break-after: avoid; }
+            .print-sheet-header img { width: 160px !important; height: auto !important; max-height: 80px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
+            .print-sheet-header h2 { margin: 0; font-size: 14pt; color: #1a365d; text-transform: uppercase; font-family: sans-serif; }
+            .print-sheet-header h3 { margin: 4px 0 0 0; font-size: 11pt; color: #8c6414; font-family: sans-serif; }
+            .card { border: 1px solid #94a3b8; border-left: 4px solid #8c6414; margin-bottom: 20px; padding: 12px; page-break-inside: avoid; border-radius: 0; box-shadow: none; }
+            .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 4%; }
+            .tables-grid > div { width: 48%; }
+            table.liturgy-table { width: 100%; font-size: 9pt; border: 1px solid #000; border-radius: 0; page-break-inside: avoid; }
+            table.liturgy-table th, table.liturgy-table td { border: 1px solid #000; padding: 4px 6px; color: #000; }
+            table.liturgy-table th { background: #f0f0f0; color: #000; }
+            .script-row { display: flex; flex-direction: row; margin-bottom: 8px; page-break-inside: avoid; border: 1px solid #000; box-shadow: none; border-radius: 0; }
+            .script-tag { flex: 0 0 100px; padding: 4px; font-size: 8pt; display: flex; align-items: center; justify-content: center; background: #e2e8f0; color: #000; border-right: 1px solid #000; }
+            .script-text { flex: 1; font-size: 11pt; padding: 6px 10px; border: none; color: #000; }
+            .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: avoid; }
+            .leitura-dia { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: sans-serif; }
+            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: serif; }
+            .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; font-family: serif; color: #000; }
+            .presidency-box { border: 1px solid #000; background: transparent; border-radius: 0; }
+            .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
+            .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
+            .color-badge { border: 1px solid #000; background: transparent !important; color: #000 !important; }
+        }
+        
+        footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #64748b; border-top: 1px solid var(--border); margin-top: 3rem; background: #fff; line-height: 1.6; }
+
+
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 12000; background: #ffffff; color: #1a365d; padding: 0.75rem 1rem; border: 2px solid #1a365d; border-radius: 6px; font-weight: 700; text-decoration: none; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.week-selector-bar[role="tablist"] { align-items: stretch; }
+.week-tab-btn[role="tab"] { outline-offset: 2px; }
+
+button:focus-visible,
+.action-btn:focus-visible,
+.week-tab-btn:focus-visible,
+.clickable-ref:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+.modal[hidden] { display: none !important; }
+.modal[aria-hidden="false"] { display: flex; }
+
+.tables-grid > div,
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 850px) {
+    table.liturgy-table {
+        min-width: 620px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.footer-contact { font-weight: 600; color: #334155; margin-top: 0.3rem; }

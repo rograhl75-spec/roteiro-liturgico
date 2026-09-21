@@ -2,1220 +2,59 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
-    
-    <!-- Evitar cache -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    
-    <!-- Ícones e PWA -->
+
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="icone.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icone.png">
     <meta name="theme-color" content="#1a365d">
-    
-    <style>
-        :root {
-            --primary: #1a365d;
-            --secondary: #8c6414;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --border: #cbd5e1;
-            --cor-animador: #1e40af;
-            --bg-animador: #eff6ff;
-            --cor-padre: #991b1b;
-            --bg-padre: #fef2f2;
-            --cor-musica: #166534;
-            --bg-musica: #f0fdf4;
-            --cor-todos: #b45309;
-            --bg-todos: #fffbeb;
-            --cor-rubrica: #475569;
-            --bg-rubrica: #f8fafc;
-        }
 
-        * { box-sizing: border-box; }
-        
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            font-size: 14.5px;
-            line-height: 1.5;
-            -webkit-text-size-adjust: 100%;
-        }
-        
-        header { background: linear-gradient(135deg, #ffffff, #f1f5f9); text-align: center; padding: 1.5rem 1rem 1rem; border-bottom: 2px solid var(--border); }
-        .header-logo { max-width: 250px; height: auto; margin-bottom: 8px; }
-        header h1 { margin: 0; font-size: 1.4rem; text-transform: uppercase; color: var(--primary); letter-spacing: 0.5px; }
-        header p { margin: 0.4rem 0 0; font-size: 0.95rem; color: var(--secondary); font-weight: 600; }
-        .version-badge { display: inline-block; background: #16a34a; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 12px; margin-top: 8px; letter-spacing: 0.5px; }
-        
-        /* NAVEGAÇÃO MULTI-SEMANAS */
-        .week-selector-bar { display: flex; justify-content: center; gap: 10px; background: #e2e8f0; padding: 1rem 0.6rem; border-bottom: 2px solid #cbd5e1; flex-wrap: wrap; }
-        .week-tab-btn { background: #fff; border: 1px solid #94a3b8; color: #475569; font-size: 0.95rem; font-weight: 600; padding: 0.75rem 1rem; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; width: 100%; max-width: 350px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-        .week-tab-btn:hover { background: #f8fafc; border-color: #64748b; }
-        .week-tab-btn.active { background: var(--primary) !important; border: 2px solid #d4af37 !important; color: #fff !important; font-weight: 700; box-shadow: 0 4px 12px rgba(26,54,93,0.25); transform: translateY(-1px); }
-        
-        .active-week-banner { background: #fefce8; border: 1px solid #eab308; color: #854d0e; font-size: 0.95rem; font-weight: 700; text-align: center; padding: 0.7rem 1rem; border-radius: 6px; margin: 1rem auto 0.5rem; max-width: 1100px; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 1px 3px rgba(234, 179, 8, 0.1); }
-        
-        /* BARRA DE FERRAMENTAS */
-        .toolbar { display: flex; justify-content: center; gap: 8px; padding: 0.8rem; background: #ffffff; border-bottom: 1px solid var(--border); flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .action-btn { background: var(--primary); color: #fff; border: none; padding: 0.65rem 1.1rem; font-size: 0.9rem; font-weight: 600; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; justify-content: center; text-decoration: none; transition: background 0.15s ease; }
-        .action-btn:hover { background: #2c4a7c; }
-        .action-btn.secondary { background: var(--secondary); }
-        .action-btn.secondary:hover { background: #735210; }
-        .action-btn.accent { background: #047857; }
-        .action-btn.accent:hover { background: #065f46; }
-        .action-btn.blue { background: #2563eb; }
-        .action-btn.red { background: #dc2626; }
-        
-        /* CARDS E CONTEÚDO */
-        .container { max-width: 1100px; margin: 1.5rem auto; padding: 0 0.8rem; }
-        .card { background: var(--card-bg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 1.8rem; padding: 1.5rem; border-left: 5px solid var(--secondary); display: flex; flex-direction: column; }
-        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 8px; }
-        .card-header h2 { margin: 0; font-size: 1.2rem; color: var(--primary); font-weight: 700; }
-        .color-badge { padding: 0.25rem 0.7rem; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-        .badge-verde { background: #16a34a; color: #fff; }
-        .badge-branco { background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; }
-        .badge-vermelho { background: #dc2626; color: #fff; }
-        
-        .presidency-box { background: #f8fafc; border: 1px solid #cbd5e1; border-top: 3px solid var(--primary); border-radius: 6px; margin-bottom: 1.2rem; overflow: hidden; }
-        .presidency-title { color: var(--primary); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; background: #f1f5f9; letter-spacing: 0.5px; }
-        .escala-table { width: 100%; border-collapse: collapse; }
-        .escala-table td { padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; vertical-align: middle; font-size: 0.9rem; }
-        .p-dia { font-weight: 700; color: #334155; }
-        .p-hora { background: #dbeafe; color: #1e40af; font-weight: 700; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-left: 6px; font-size: 0.85rem; }
-        .p-loc { color: #475569; }
-        .p-cel { font-weight: 700; color: #0f172a; text-align: right; }
-        
-        .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
-        .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
-        
-        /* Evita cortes no PDF */
-        .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
-        .script-tag { flex: 0 0 120px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 8px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.5px; }
-        .script-text { flex: 1; font-size: 11pt; line-height: 1.5; padding: 10px 14px; background: #fff; text-align: justify; transition: font-size 0.2s ease; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
-        
-        .tag-animador { background: var(--cor-animador); color: #fff; }
-        .tag-padre { background: var(--cor-padre); color: #fff; }
-        .tag-musica { background: var(--cor-musica); color: #fff; }
-        .tag-todos { background: var(--cor-todos); color: #fff; }
-        .tag-rubrica { background: #64748b; color: #fff; }
-        
-        .row-animador .script-text { border-left: 3px solid var(--cor-animador); }
-        .row-padre .script-text { border-left: 3px solid var(--cor-padre); }
-        .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
-        .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
-        .row-rubrica .script-text { border-left: 3px solid #64748b; font-style: italic; background: #f8fafc; color: #475569; }
-        
-        .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
-        table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
-        table.liturgy-table th, table.liturgy-table td { border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); padding: 8px 10px; text-align: left; }
-        table.liturgy-table th:last-child, table.liturgy-table td:last-child { border-right: none; }
-        table.liturgy-table tr:last-child td { border-bottom: none; }
-        table.liturgy-table th { background: #f1f5f9; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        table.liturgy-table td { background: #ffffff; color: #334155; }
-        .table-caption { font-weight: 700; color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px; }
-        .clickable-ref { color: #2563eb; cursor: pointer; text-decoration: none; font-weight: 600; padding: 2px 6px; background: #eff6ff; border-radius: 4px; display: inline-block; transition: background 0.15s ease; }
-        .clickable-ref:hover { background: #dbeafe; color: #1e40af; }
-        
-        .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); justify-content: center; align-items: flex-start; padding: 2rem 1rem; overflow-y: auto; backdrop-filter: blur(2px); }
-        .modal-content { background: #fff; padding: 1.5rem; border-radius: 10px; max-width: 1000px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: auto; position: relative; }
-        .modal-header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 10px; }
-        .modal-title { margin: 0; font-size: 1.25rem; color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
-        .modal-close-btn { background: #f8fafc; border: 1px solid #cbd5e1; font-size: 1.5rem; cursor: pointer; color: #64748b; width: 40px; height: 40px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; transition: all 0.15s ease; }
-        .modal-close-btn:hover { background: #e2e8f0; color: #0f172a; }
-        
-        /* Garante parágrafos perfeitos na leitura do modal e impressão */
-        .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: normal; word-wrap: break-word; }
-        
-        .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
-        .leitura-col { background: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
-        .leitura-col:hover { border-color: #94a3b8; }
-        .leitura-col strong { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 6px; font-size: 0.95rem; }
-        .leitura-col label { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer; color: #475569; padding: 2px 0; }
-        .leitura-col input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
-        
-        #print-mount { display: none; }
-        
-        #btn-topo { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; font-size: 14px; font-weight: bold; border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0.9; transition: opacity 0.3s; }
-        #btn-topo:hover { opacity: 1; background-color: #2c4a7c; }
-
-        @media (max-width: 850px) {
-            .tables-grid { grid-template-columns: 1fr; gap: 15px; }
-            .leitura-grid { grid-template-columns: 1fr 1fr; }
-        }
-
-        @media (max-width: 600px) {
-            .toolbar { flex-direction: column; align-items: stretch; padding: 1rem; gap: 10px; }
-            .action-btn { width: 100%; padding: 14px; font-size: 1rem; }
-            .week-selector-bar { flex-direction: column; padding: 1rem; }
-            .week-tab-btn { padding: 14px; font-size: 1rem; max-width: 100%; }
-            .escala-table tr { display: flex; flex-direction: column; padding: 10px 0; border-bottom: 2px solid #e2e8f0; }
-            .escala-table td { display: block; border-bottom: none; padding: 4px 8px; }
-            .p-cel { color: #1e40af; font-size: 1rem; margin-top: 4px; text-align: left; }
-            .script-row { flex-direction: column; gap: 0; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-            .script-tag { justify-content: flex-start; padding: 8px 12px; width: 100%; font-size: 0.85rem; border-radius: 6px 6px 0 0; flex: none; }
-            .script-text { border-left: none; border-radius: 0 0 6px 6px; padding: 15px; flex: none; }
-            .modal { padding: 1rem 0.5rem; }
-            .modal-content { padding: 1.2rem; width: 100%; border-radius: 8px; }
-            .leitura-grid { grid-template-columns: 1fr; }
-            #btn-topo { bottom: 15px; right: 15px; padding: 10px 14px; }
-        }
-
-        @media print {
-            @page { margin: 12mm 10mm; size: A4 portrait; }
-            html, body { margin: 0 !important; padding: 0 !important; background: #fff !important; color: #000 !important; }
-            body > *:not(#print-mount) { display: none !important; }
-            #print-mount { display: block !important; position: relative !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
-            .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px; page-break-after: avoid; }
-            .print-sheet-header img { width: 160px !important; height: auto !important; max-height: 80px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
-            .print-sheet-header h2 { margin: 0; font-size: 14pt; color: #1a365d; text-transform: uppercase; font-family: sans-serif; }
-            .print-sheet-header h3 { margin: 4px 0 0 0; font-size: 11pt; color: #8c6414; font-family: sans-serif; }
-            .card { border: 1px solid #94a3b8; border-left: 4px solid #8c6414; margin-bottom: 20px; padding: 12px; page-break-inside: avoid; border-radius: 0; box-shadow: none; }
-            .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 4%; }
-            .tables-grid > div { width: 48%; }
-            table.liturgy-table { width: 100%; font-size: 9pt; border: 1px solid #000; border-radius: 0; page-break-inside: avoid; }
-            table.liturgy-table th, table.liturgy-table td { border: 1px solid #000; padding: 4px 6px; color: #000; }
-            table.liturgy-table th { background: #f0f0f0; color: #000; }
-            .script-row { display: flex; flex-direction: row; margin-bottom: 8px; page-break-inside: avoid; border: 1px solid #000; box-shadow: none; border-radius: 0; }
-            .script-tag { flex: 0 0 100px; padding: 4px; font-size: 8pt; display: flex; align-items: center; justify-content: center; background: #e2e8f0; color: #000; border-right: 1px solid #000; }
-            .script-text { flex: 1; font-size: 11pt; padding: 6px 10px; border: none; color: #000; }
-            .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: avoid; }
-            .leitura-dia { font-size: 10pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: sans-serif; }
-            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: serif; }
-            .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; font-family: serif; color: #000; }
-            .presidency-box { border: 1px solid #000; background: transparent; border-radius: 0; }
-            .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
-            .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
-            .color-badge { border: 1px solid #000; background: transparent !important; color: #000 !important; }
-        }
-        
-        footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #64748b; border-top: 1px solid var(--border); margin-top: 3rem; background: #fff; line-height: 1.6; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
     <header>
-        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" onerror="this.style.display='none'">
+        <img src="Selo Auxiliadora 60 anos_Ano 3.png" alt="Selo 60 Anos" class="header-logo" id="header-logo">
         <h1>Paróquia Nossa Senhora Auxiliadora</h1>
         <p id="header-subtitle">Carregando programação...</p>
         <div><span class="version-badge">SISTEMA DINÂMICO MULTI-SEMANAS</span></div>
     </header>
 
-    <div class="week-selector-bar">
-        <button type="button" class="week-tab-btn" id="btn-tab-w1" data-title="14 a 20 Set. (25º Dom)" data-full="Semana de 14 a 20 de Setembro de 2026 (25º Domingo)" onclick="showWeek(1)">Carregando...</button>
-        <button type="button" class="week-tab-btn" id="btn-tab-w2" data-title="21 a 27 Set. (26º Dom)" data-full="Semana de 21 a 27 de Setembro de 2026 (26º Domingo)" onclick="showWeek(2)">Carregando...</button>
-        <button type="button" class="week-tab-btn" id="btn-tab-w3" data-title="28 Set a 04 Out. (27º Dom)" data-full="Semana de 28 de Setembro a 04 de Outubro de 2026 (27º Domingo)" onclick="showWeek(3)">Carregando...</button>
-    </div>
+    <nav class="week-selector-bar" role="tablist" aria-label="Selecionar semana">
+        <button type="button" class="week-tab-btn" id="btn-tab-2026-09-14" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-14" data-action="show-week" data-week-id="2026-09-14">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-2026-09-21" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-21" data-action="show-week" data-week-id="2026-09-21">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-2026-09-28" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-28" data-action="show-week" data-week-id="2026-09-28">Carregando...</button>
+    </nav>
 
     <div class="active-week-banner" id="active-week-banner">
         <span>👀</span>
         <span id="active-week-text">EXIBINDO NA TELA...</span>
     </div>
 
-    <div class="toolbar">
-        <button type="button" class="action-btn" onclick="openActiveProgramacaoModal()">🗓️ Programação</button>
-        <button type="button" class="action-btn" onclick="openActiveRoteiroModal()">📖 Roteiro</button>
-        <button type="button" class="action-btn" onclick="openActivePrecesModal()">🙏 Preces</button>
-        <button type="button" class="action-btn secondary" onclick="openActiveLeiturasModal()">📖 Leituras e Antífonas</button>
-        <button type="button" class="action-btn accent" onclick="openActiveReflexoesModal()">💡 Reflexões</button>
-        <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" class="action-btn blue">🔗 Liturgia CNBB</a>
+    <div class="toolbar" aria-label="Ações principais">
+        <button type="button" class="action-btn" data-action="open-active-programacao">🗓️ Programação</button>
+        <button type="button" class="action-btn" data-action="open-active-roteiro">📖 Roteiro</button>
+        <button type="button" class="action-btn" data-action="open-active-preces">🙏 Preces</button>
+        <button type="button" class="action-btn secondary" data-action="open-active-leituras">📖 Leituras e Antífonas</button>
+        <button type="button" class="action-btn accent" data-action="open-active-reflexoes">💡 Reflexões</button>
+        <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" rel="noopener noreferrer" class="action-btn blue">🔗 Liturgia CNBB</a>
     </div>
 
-    <div class="container">
-        
-        <!-- ======================================================= -->
-        <!-- BLOCO 1 (SEMANA ATUAL): 14 A 20 DE SETEMBRO (25º DOM)   -->
-        <!-- ======================================================= -->
-        <div id="semana1-container" style="display:none;">
-            <!-- SEGUNDA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Segunda-feira, 14 de Setembro de 2026</h2>
-                    <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Exaltação da Santa Cruz, Festa (Ano A)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano (pág. 800; IGMR 53):</strong> Por se tratar de Festa do Senhor, hoje <strong>canta-se o Glória</strong> logo após o Ato Penitencial. Como a festa ocorre em dia de semana, <strong>omite-se o Creio</strong>.
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano (3ª Edição Típica)</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">800</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">800</td></tr>
-                                <tr><td>Prefácio: A vitória da Cruz gloriosa</td><td style="text-align:center;">801</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">802</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w2')">Nm 21,4b-9</span></td><td style="text-align:center;">III / 169</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w2')">Sl 77(78)</span></td><td style="text-align:center;">III / 170</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg_w2')">Jo 3,13-17</span></td><td style="text-align:center;">III / 171</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+    <main id="main-content" class="container">
+        <section id="weeks-root" aria-label="Programação semanal"></section>
+    </main>
 
-            <!-- TERÇA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Terça-feira, 15 de Setembro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Nossa Senhora das Dores, Memória</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">802</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">802</td></tr>
-                                <tr><td>Prefácio: Bem-Aventurada Virgem Maria I ou II</td><td style="text-align:center;">493 ou 494</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">803</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter_w2')">Hb 5,7-9</span></td><td style="text-align:center;">III / 172</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_ter_w2')">Sl 30(31)</span></td><td style="text-align:center;">III / 172</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter_w2')">Jo 19,25-27</span></td><td style="text-align:center;">III / 175</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUARTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quarta-feira, 16 de Setembro de 2026</h2>
-                    <span class="color-badge badge-vermelho">Vermelho (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Cornélio e Cipriano, Memória</div>
-                <div class="ecc-box">⚠️ Observação: Missa de Entrega do ECC</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">803</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">804</td></tr>
-                                <tr><td>Prefácio: Santos Mártires I</td><td style="text-align:center;">502</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">804</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua_w2')">1Cor 12,31-13,13</span></td><td style="text-align:center;">II / 989</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qua_w2')">Sl 32(33)</span></td><td style="text-align:center;">II / 990</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua_w2')">Lc 7,31-35</span></td><td style="text-align:center;">II / 991</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUINTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quinta-feira, 17 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 24ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w2')">1Cor 15,1-11</span></td><td style="text-align:center;">II / 993</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w2')">Sl 117(118)</span></td><td style="text-align:center;">II / 994</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui_w2')">Lc 7,36-50</span></td><td style="text-align:center;">II / 994</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SEXTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Sexta-feira, 18 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 24ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">406</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">406</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">406</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w2')">1Cor 15,12-20</span></td><td style="text-align:center;">II / 997</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w2')">Sl 16(17)</span></td><td style="text-align:center;">II / 998</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex_w2')">Lc 8,1-3</span></td><td style="text-align:center;">II / 999</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FIM DE SEMANA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Fim de Semana: 19 e 20 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Domingo)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 25º Domingo do Tempo Comum (Ano A) | Mês da Bíblia | Domingo do Dízimo | Jubileu</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Afonso</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">17h45</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora <small>(Enc. ECC)</small></td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">407</td></tr>
-                                <tr style="background:#f0fdf4;"><td><strong>Profissão de Fé (Creio)</strong></td><td style="text-align:center;"><strong>443</strong></td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Prefácio: Domingos Tempo Comum IV</td><td style="text-align:center;">477</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w2')">Is 55,6-9</span></td><td style="text-align:center;">I / 327</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w2')">Sl 144(145)</span></td><td style="text-align:center;">I / 327</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w2')">Fl 1,20c-24.27a</span></td><td style="text-align:center;">I / 328</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w2')">Mt 20,1-16a</span></td><td style="text-align:center;">I / 328</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tables-grid" style="margin-top: 0.8rem;">
-                    <div>
-                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 407)</small></td>
-                                    <td>A salvação do povo sou eu, diz o Senhor: * de qualquer tribulação em que clamarem por mim, eu os ouvirei e serei seu Deus para sempre.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Aclamação</strong><br><small>(cf. At 16,14b)</small></td>
-                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; * para que possamos acolher a palavra do vosso Filho!</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Comunhão</strong><br><small>(Sl 118 / Jo 10)</small></td>
-                                    <td>Os vossos mandamentos vós nos destes para serem fielmente observados. Que seja firme a minha vida em cumprir vossa vontade!</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Meus pensamentos não são como os vossos pensamentos.</td></tr>
-                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Para mim, o viver é Cristo.</td></tr>
-                                <tr><td><strong>EVANGELHO</strong><br>Estás com inveja porque eu estou sendo bom?</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================================================= -->
-        <!-- BLOCO 2 (SEMANA 2): 21 A 27 DE SETEMBRO (26º DOM) -->
-        <!-- ======================================================= -->
-        <div id="semana2-container" style="display:none;">
-            <!-- SEGUNDA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Segunda-feira, 21 de Setembro de 2026</h2>
-                    <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: São Mateus, Apóstolo e Evangelista, Festa (Ano A)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica do Missal Romano:</strong> Por se tratar de Festa de Apóstolo, hoje <strong>canta-se o Glória</strong> logo após o Ato Penitencial. Omite-se o Creio.
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano (3ª Edição Típica)</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">807</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">807</td></tr>
-                                <tr><td>Prefácio: Apóstolos</td><td style="text-align:center;">498 ou 499</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">808</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra (Próprio dos Santos)</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w3')">Ef 4,1-7.11-13</span></td><td style="text-align:center;">III / 177</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w3')">Sl 18(19A)</span></td><td style="text-align:center;">III / 177</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg_w3')">Mt 9,9-13</span></td><td style="text-align:center;">III / 178</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TERÇA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Terça-feira, 22 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 25ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">407</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter_w3')">Pr 21,1-6.10-13</span></td><td style="text-align:center;">II / 1009</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_ter_w3')">Sl 118(119)</span></td><td style="text-align:center;">II / 1010</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter_w3')">Lc 8,19-21</span></td><td style="text-align:center;">II / 1010</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUARTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quarta-feira, 23 de Setembro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: São Pio de Pietrelcina, presbítero, Memória</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">808</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407 ou 927</td></tr>
-                                <tr><td>Prefácio: Pastores ou Religiosos</td><td style="text-align:center;">504 ou 508</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407 ou 927</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua_w3')">Pr 30,5-9</span></td><td style="text-align:center;">II / 1013</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qua_w3')">Sl 118(119)</span></td><td style="text-align:center;">II / 1013</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua_w3')">Lc 9,1-6</span></td><td style="text-align:center;">II / 1014</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUINTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quinta-feira, 24 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 25ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">407</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w3')">Ecl 1,2-11</span></td><td style="text-align:center;">II / 1016</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w3')">Sl 89(90)</span></td><td style="text-align:center;">II / 1017</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui_w3')">Lc 9,7-9</span></td><td style="text-align:center;">II / 1018</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SEXTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Sexta-feira, 25 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 25ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">407</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">407</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">407</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w3')">Ecl 3,1-11</span></td><td style="text-align:center;">II / 1020</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w3')">Sl 143(144)</span></td><td style="text-align:center;">II / 1021</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex_w3')">Lc 9,18-22</span></td><td style="text-align:center;">II / 1021</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FIM DE SEMANA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Fim de Semana: 26 e 27 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Domingo)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 26º Domingo do Tempo Comum (Ano A) | Jubileu</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">408</td></tr>
-                                <tr style="background:#f0fdf4;"><td><strong>Profissão de Fé (Creio)</strong></td><td style="text-align:center;"><strong>443</strong></td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">408</td></tr>
-                                <tr><td>Prefácio: Domingos Tempo Comum V</td><td style="text-align:center;">478</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">408</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w3')">Ez 18,25-28</span></td><td style="text-align:center;">I / 330</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w3')">Sl 24</span></td><td style="text-align:center;">I / 330</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w3')">Fl 2,1-11</span></td><td style="text-align:center;">I / 332</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w3')">Mt 21,28-32</span></td><td style="text-align:center;">I / 333</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tables-grid" style="margin-top: 0.8rem;">
-                    <div>
-                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(Missal p. 408)</small></td>
-                                    <td>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Aclamação</strong><br><small>(Jo 10,27)</small></td>
-                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz, minha voz estão elas a escutar; eu conheço, então, minhas ovelhas, que me seguem, comigo a caminhar!</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Comunhão</strong><br><small>(Sl 118,49-50)</small></td>
-                                    <td>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>Quando o ímpio se arrepende da maldade que praticou, conserva a própria vida.</td></tr>
-                                <tr><td><strong>SEGUNDA LEITURA</strong><br>Tende entre vós o mesmo sentimento que existe em Cristo Jesus.</td></tr>
-                                <tr><td><strong>EVANGELHO</strong><br>Os cobradores de impostos e as prostitutas vão entrar antes de vós no Reino do céu.</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================================================= -->
-        <!-- BLOCO 3 (SEMANA 3): 28 SET A 04 OUT (27º DOM)           -->
-        <!-- ======================================================= -->
-        <div id="semana3-container" style="display:none;">
-            <!-- SEGUNDA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Segunda-feira, 28 de Setembro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Ferial)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 26ª Semana do Tempo Comum (Ano II)</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">408</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">408</td></tr>
-                                <tr><td>Prefácio: Oração Eucarística V</td><td style="text-align:center;">564</td></tr>
-                                <tr><td>Oração Eucarística: V</td><td style="text-align:center;">565</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">408</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_seg_w4')">Jó 1,6-22</span></td><td style="text-align:center;">II / 1027</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_seg_w4')">Sl 16(17)</span></td><td style="text-align:center;">II / 1029</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_seg_w4')">Lc 9,46-50</span></td><td style="text-align:center;">II / 1030</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TERÇA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Terça-feira, 29 de Setembro de 2026</h2>
-                    <span class="color-badge badge-vermelho">Vermelho (Festa)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Miguel, Gabriel e Rafael, Arcanjos, Festa</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="note-gloria-box">
-                    <strong>Orientação Litúrgica:</strong> Por se tratar de Festa, hoje <strong>canta-se o Glória</strong> logo após o Ato Penitencial. Omite-se o Creio.
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">812</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">813</td></tr>
-                                <tr><td>Prefácio: Anjos</td><td style="text-align:center;">813</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">814</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_ter_w4')">Ap 12,7-12a</span></td><td style="text-align:center;">III / 180</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_ter_w4')">Sl 137(138)</span></td><td style="text-align:center;">III / 181</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_ter_w4')">Jo 1,47-51</span></td><td style="text-align:center;">III / 181</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUARTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quarta-feira, 30 de Setembro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: São Jerônimo, presbítero e doutor da Igreja, Memória</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">814</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">815</td></tr>
-                                <tr><td>Prefácio: Doutores da Igreja</td><td style="text-align:center;">506 ou 507</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">815</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qua_w4')">Jó 9,1-12.14-16</span></td><td style="text-align:center;">II / 1036</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qua_w4')">Sl 87(88)</span></td><td style="text-align:center;">II / 1037</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qua_w4')">Lc 9,57-62</span></td><td style="text-align:center;">II / 1037</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUINTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Quinta-feira, 01 de Outubro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santa Teresa do Menino Jesus, Memória</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">816</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">816</td></tr>
-                                <tr><td>Prefácio: Virgens ou Religiosos</td><td style="text-align:center;">508</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">817</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_qui_w4')">Jó 19,21-27</span></td><td style="text-align:center;">II / 1040</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_qui_w4')">Sl 26(27)</span></td><td style="text-align:center;">II / 1041</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_qui_w4')">Lc 10,1-12</span></td><td style="text-align:center;">II / 1041</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SEXTA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Sexta-feira, 02 de Outubro de 2026</h2>
-                    <span class="color-badge badge-branco">Branco (Memória)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santos Anjos da Guarda, Memória | 1ª Sexta-feira do Mês</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">05h30</span></td><td class="p-loc">Matriz (Missa Votiva Sagrado Coração)</td><td class="p-cel">Pe. Manuel</td></tr>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">12h00</span></td><td class="p-loc">Matriz (Missa Votiva Sagrado Coração)</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h30</span></td><td class="p-loc">Matriz (Adoração Solene)</td><td class="p-cel">Pe. Heriberto</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">817</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">817</td></tr>
-                                <tr><td>Prefácio: Anjos</td><td style="text-align:center;">818</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">818</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_sex_w4')">Ex 23,20-23a</span></td><td style="text-align:center;">III / 184</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_sex_w4')">Sl 90(91)</span></td><td style="text-align:center;">III / 184</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_sex_w4')">Mt 18,1-5.10</span></td><td style="text-align:center;">III / 185</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FIM DE SEMANA -->
-            <div class="card">
-                <div class="card-header">
-                    <h2>Fim de Semana: 03 e 04 de Outubro de 2026</h2>
-                    <span class="color-badge badge-verde">Verde (Domingo)</span>
-                </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 27º Domingo do Tempo Comum (Ano A) | Mês Missionário | Jubileu</div>
-                <div class="presidency-box">
-                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                    <table class="escala-table">
-                        <tbody>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Djhon</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="tables-grid">
-                    <div>
-                        <div class="table-caption">📌 Missal Romano</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
-                            <tbody>
-                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
-                                <tr style="background:#fef2f2;"><td><strong>Hino de Louvor (Glória)</strong></td><td style="text-align:center;"><strong>442</strong></td></tr>
-                                <tr><td>Oração da Coleta</td><td style="text-align:center;">409</td></tr>
-                                <tr style="background:#f0fdf4;"><td><strong>Profissão de Fé (Creio)</strong></td><td style="text-align:center;"><strong>443</strong></td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">409</td></tr>
-                                <tr><td>Prefácio: Domingos Tempo Comum VI</td><td style="text-align:center;">479</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
-                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">409</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📖 Liturgia da Palavra</div>
-                        <table class="liturgy-table">
-                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
-                            <tbody>
-                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" onclick="openReading('1l_dom_w4')">Is 5,1-7</span></td><td style="text-align:center;">I / 335</td></tr>
-                                <tr><td>Salmo</td><td><span class="clickable-ref" onclick="openReading('sl_dom_w4')">Sl 79(80)</span></td><td style="text-align:center;">I / 335</td></tr>
-                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" onclick="openReading('2l_dom_w4')">Fl 4,6-9</span></td><td style="text-align:center;">I / 337</td></tr>
-                                <tr><td>Evangelho</td><td><span class="clickable-ref" onclick="openReading('ev_dom_w4')">Mt 21,33-43</span></td><td style="text-align:center;">I / 338</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tables-grid" style="margin-top: 0.8rem;">
-                    <div>
-                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr>
-                                    <td style="width: 120px;"><strong>Entrada</strong><br><small>(cf. Est 4,17)</small></td>
-                                    <td>Ao vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Aclamação</strong><br><small>(cf. Jo 15,16)</small></td>
-                                    <td><em>Aleluia, Aleluia, Aleluia.</em><br>V. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Comunhão</strong><br><small>(Lm 3,25)</small></td>
-                                    <td>O Senhor é bom para quem nele confia, para a alma que o procura.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
-                        <table class="liturgy-table">
-                            <tbody>
-                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>A vinha do Senhor dos exércitos é a casa de Israel.</td></tr>
-                                <tr><td><strong>SEGUNDA LEITURA</strong><br>O Deus da paz estará convosco.</td></tr>
-                                <tr><td><strong>EVANGELHO</strong><br>O Reino de Deus será entregue a um povo que produzirá frutos.</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ==================================================================== -->
-    <!-- MODAIS GLOBAIS DO SISTEMA                                            -->
-    <!-- ==================================================================== -->
-    
-    <!-- Programação Modal -->
-    <div id="modal_programacao" class="modal">
+<div id="modal_programacao" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content" style="max-width:1200px;">
             <div class="modal-header-bar">
                 <h3 class="modal-title">🗓️ PROGRAMAÇÃO LITÚRGICA</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_programacao')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_programacao')">A-</button>
-                    <button type="button" class="action-btn" onclick="printProgramacaoGeral()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_programacao')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_programacao">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_programacao">A-</button>
+                    <button type="button" class="action-btn" data-action="print-programacao-geral">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_programacao">&times;</button>
                 </div>
             </div>
             <div id="content_programacao" class="modal-body" style="background:#f8fafc; padding: 15px; border-radius:8px;"></div>
@@ -1223,18 +62,18 @@
     </div>
 
     <!-- Leitura Visualização e Seleção Modal -->
-    <div id="modal_seletor_leituras" class="modal">
+    <div id="modal_seletor_leituras" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 LEITURAS E ANTÍFONAS</h3>
                 <div class="modal-actions" style="display: flex; gap: 8px;">
-                    <button type="button" class="action-btn" onclick="previewSelectedReadings()">👀 Visualizar Selecionadas</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_seletor_leituras')">&times;</button>
+                    <button type="button" class="action-btn" data-action="preview-selected-readings">👀 Visualizar Selecionadas</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_seletor_leituras">&times;</button>
                 </div>
             </div>
             <div style="display:flex; gap:10px; margin-bottom:15px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0;">
-                <button type="button" class="action-btn blue" onclick="selectAllReadings(true)">Marcar Todas</button>
-                <button type="button" class="action-btn secondary" onclick="selectAllReadings(false)">Desmarcar Todas</button>
+                <button type="button" class="action-btn blue" data-action="select-all-readings" data-check="true">Marcar Todas</button>
+                <button type="button" class="action-btn secondary" data-action="select-all-readings" data-check="false">Desmarcar Todas</button>
             </div>
             
             <!-- Checkboxes Bloco 1 -->
@@ -1376,15 +215,15 @@
     </div>
 
     <!-- Modais de Reflexões Dinâmicos -->
-    <div id="modal_reflexoes_1" class="modal">
+    <div id="modal_reflexoes_1" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (14 a 20/09)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_1')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_1')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_reflexoes_1">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_reflexoes_1">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-reflexoes">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_reflexoes_1">&times;</button>
                 </div>
             </div>
             <div id="content_reflexoes_1" class="modal-body">
@@ -1428,15 +267,15 @@
         </div>
     </div>
     
-    <div id="modal_reflexoes_2" class="modal">
+    <div id="modal_reflexoes_2" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (21 a 27/09)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_2')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_2')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_reflexoes_2">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_reflexoes_2">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-reflexoes">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_reflexoes_2">&times;</button>
                 </div>
             </div>
             <div id="content_reflexoes_2" class="modal-body">
@@ -1445,15 +284,15 @@
         </div>
     </div>
 
-    <div id="modal_reflexoes_3" class="modal">
+    <div id="modal_reflexoes_3" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (28/09 a 04/10)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_reflexoes_3')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_reflexoes_3')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveReflexoes()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_reflexoes_3')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_reflexoes_3">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_reflexoes_3">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-reflexoes">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_reflexoes_3">&times;</button>
                 </div>
             </div>
             <div id="content_reflexoes_3" class="modal-body">
@@ -1463,15 +302,15 @@
     </div>
 
     <!-- Modais de Roteiro Dinâmicos -->
-    <div id="modal_roteiro_1" class="modal">
+    <div id="modal_roteiro_1" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">ROTEIRO — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_1')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_1')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_1">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_1">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-roteiro">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_1">&times;</button>
                 </div>
             </div>
             <div class="script-block" id="content_roteiro_1">
@@ -1581,15 +420,15 @@
         </div>
     </div>
 
-    <div id="modal_roteiro_2" class="modal">
+    <div id="modal_roteiro_2" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">ROTEIRO — 26º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_2')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_2')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_2">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_2">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-roteiro">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_2">&times;</button>
                 </div>
             </div>
             <div class="script-block" id="content_roteiro_2">
@@ -1694,15 +533,15 @@
         </div>
     </div>
 
-    <div id="modal_roteiro_3" class="modal">
+    <div id="modal_roteiro_3" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">ROTEIRO — 27º DOMINGO (Mês Missionário)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_roteiro_3')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_roteiro_3')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActiveRoteiro()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_roteiro_3')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_3">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_3">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-roteiro">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_3">&times;</button>
                 </div>
             </div>
             <div class="script-block" id="content_roteiro_3">
@@ -1808,15 +647,15 @@
     </div>
 
     <!-- Modais Preces Dinâmicos -->
-    <div id="modal_preces_1" class="modal">
+    <div id="modal_preces_1" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">PRECES — 25º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_1')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_1')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_1')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_preces_1">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_preces_1">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-preces">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_preces_1">&times;</button>
                 </div>
             </div>
             <div id="content_preces_1">
@@ -1872,15 +711,15 @@
         </div>
     </div>
     
-    <div id="modal_preces_2" class="modal">
+    <div id="modal_preces_2" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">PRECES — 26º DOMINGO</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_2')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_2')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_2')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_preces_2">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_preces_2">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-preces">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_preces_2">&times;</button>
                 </div>
             </div>
             <div id="content_preces_2">
@@ -1930,15 +769,15 @@
         </div>
     </div>
 
-    <div id="modal_preces_3" class="modal">
+    <div id="modal_preces_3" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">PRECES — 27º DOMINGO (Mês Missionário)</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_preces_3')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_preces_3')">A-</button>
-                    <button type="button" class="action-btn" onclick="printActivePreces()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_preces_3')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_preces_3">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_preces_3">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-preces">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_preces_3">&times;</button>
                 </div>
             </div>
             <div id="content_preces_3">
@@ -1990,14 +829,14 @@
 
 
     <!-- MODAL LER LEITURA INDIVIDUAL -->
-    <div id="generalModal" class="modal">
+    <div id="generalModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 id="modalTitle" class="modal-title"></h3>
                 <div style="display:flex; gap:8px; align-items:center;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'modalBody')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'modalBody')">A-</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('generalModal')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="modalBody">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="modalBody">A-</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="generalModal">&times;</button>
                 </div>
             </div>
             <div id="modalBody" class="modal-body"></div>
@@ -2005,265 +844,35 @@
     </div>
 
     <!-- MODAL VISUALIZAÇÃO SELEÇÃO LEITURAS -->
-    <div id="modal_leituras_view" class="modal">
+    <div id="modal_leituras_view" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
                 <h3 class="modal-title">📖 LEITURAS SELECIONADAS</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(1, 'content_leituras_view')">A+</button>
-                    <button type="button" class="action-btn secondary" onclick="mudarTamanhoTexto(-1, 'content_leituras_view')">A-</button>
-                    <button type="button" class="action-btn" onclick="printLeiturasFromView()">🖨️ Imprimir</button>
-                    <button type="button" class="modal-close-btn" onclick="closeModal('modal_leituras_view')">&times;</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_leituras_view">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_leituras_view">A-</button>
+                    <button type="button" class="action-btn" data-action="print-leituras-view">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_leituras_view">&times;</button>
                 </div>
             </div>
             <div id="content_leituras_view" class="modal-body"></div>
         </div>
     </div>
 
-    <div id="print-mount" style="display:none;"></div>
+    <div id="print-mount" hidden></div>
     
     <!-- Botão Topo -->
-    <button id="btn-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️ Topo</button>
+    <button id="btn-topo" data-action="back-to-top" aria-label="Voltar ao topo">⬆️ Topo</button>
 
     <footer>
         <div>Paróquia Nossa Senhora Auxiliadora — Arquidiocese de Londrina</div>
-        <div style="font-weight:600; color:#334155; margin-top:0.3rem;">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
+        <div class="footer-contact">Elaborado por: Diácono Rogério Grahl | Tel: (43) 98848-6888 | E-mail: rograhl75@gmail.com</div>
     </footer>
 
-    <!-- SCRIPT DE LEITURAS -->
-    <script src="leituras.js"></script>
     
-    <script>
-        let currentWeek = 1; 
-        let fontSizes = {};
 
-        window.onload = function() { showWeek(1); };
-        
-        window.onscroll = function() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                document.getElementById("btn-topo").style.display = "block";
-            } else {
-                document.getElementById("btn-topo").style.display = "none";
-            }
-        };
-
-        function showWeek(w) {
-            currentWeek = w;
-            
-            for(let i = 1; i <= 3; i++) {
-                const cont = document.getElementById('semana' + i + '-container');
-                const btn = document.getElementById('btn-tab-w' + i);
-                
-                if(cont) cont.style.display = (i === w) ? 'block' : 'none';
-                
-                if(btn) {
-                    if(i === w) {
-                        btn.classList.add('active');
-                        btn.innerHTML = '✅ VISUALIZANDO: ' + btn.getAttribute('data-title');
-                    } else {
-                        btn.classList.remove('active');
-                        btn.innerHTML = '👉 ' + btn.getAttribute('data-title');
-                    }
-                }
-            }
-            
-            const sub = document.getElementById('header-subtitle');
-            const bannerText = document.getElementById('active-week-text');
-            const activeBtn = document.getElementById('btn-tab-w' + w);
-            
-            if (activeBtn) {
-                const fullTitle = activeBtn.getAttribute('data-full');
-                if(sub) sub.innerText = 'Programação Litúrgica e Roteiro Completo | ' + fullTitle;
-                if(bannerText) bannerText.innerText = 'EXIBINDO NA TELA: ' + fullTitle;
-            }
-            
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function mudarTamanhoTexto(step, containerId) {
-            if(!fontSizes[containerId]) fontSizes[containerId] = 12; 
-            fontSizes[containerId] += (step * 1.5); 
-            if(fontSizes[containerId] < 8) fontSizes[containerId] = 8;
-            if(fontSizes[containerId] > 28) fontSizes[containerId] = 28;
-            
-            let container = document.getElementById(containerId);
-            if (container) {
-                if (containerId === 'modalBody' || containerId === 'content_leituras_view' || containerId.includes('reflexoes') || containerId.includes('programacao')) {
-                    container.style.fontSize = fontSizes[containerId] + 'pt';
-                } else {
-                    let texts = container.querySelectorAll('.script-text');
-                    texts.forEach(el => el.style.fontSize = fontSizes[containerId] + 'pt');
-                }
-            }
-        }
-
-        function openModal(id) {
-            const m = document.getElementById(id);
-            if (m) { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
-        }
-
-        function closeModal(id) {
-            const m = document.getElementById(id);
-            if (m) { m.style.display = 'none'; document.body.style.overflow = ''; }
-        }
-
-        window.onclick = function(e) { 
-            if (e.target && e.target.classList.contains('modal')) { 
-                e.target.style.display = 'none'; document.body.style.overflow = ''; 
-            } 
-        };
-
-        function openActiveProgramacaoModal() {
-            const containerId = 'semana' + currentWeek + '-container';
-            const contentDiv = document.getElementById('content_programacao');
-            const sourceDiv = document.getElementById(containerId);
-            if(contentDiv && sourceDiv) {
-                contentDiv.innerHTML = sourceDiv.innerHTML;
-                openModal('modal_programacao');
-            }
-        }
-        function openActiveRoteiroModal() { openModal('modal_roteiro_' + currentWeek); }
-        function openActivePrecesModal() { openModal('modal_preces_' + currentWeek); }
-        function openActiveReflexoesModal() { openModal('modal_reflexoes_' + currentWeek); }
-        
-        function openActiveLeiturasModal() {
-            document.querySelectorAll('.leituras-bloco').forEach(b => b.style.display = 'none');
-            selectAllReadings(false);
-            const activeBlock = document.getElementById('leituras_semana_' + currentWeek);
-            if(activeBlock) activeBlock.style.display = 'block';
-            openModal('modal_seletor_leituras');
-        }
-
-        function openReading(key) {
-            if (typeof readingsData === 'undefined') { alert('O arquivo leituras.js ainda não foi carregado corretamente.'); return; }
-            if (!readingsData[key]) { alert('Erro ao carregar o texto da leitura.'); return; }
-            document.getElementById('modalTitle').innerText = readingsData[key].title;
-            
-            const formatText = readingsData[key].text
-                .split('\n\n')
-                .map(p => `<p style="margin: 0 0 12px 0; page-break-inside: avoid;">${p.replace(/\n/g, '<br>')}</p>`)
-                .join('');
-                
-            document.getElementById('modalBody').innerHTML = formatText;
-            fontSizes['modalBody'] = 14; 
-            document.getElementById('modalBody').style.fontSize = '14pt';
-            openModal('generalModal');
-        }
-
-        function selectAllReadings(check) { document.querySelectorAll('.reading-checkbox').forEach(cb => cb.checked = check); }
-
-        function previewSelectedReadings() {
-            if (typeof readingsData === 'undefined') { alert('Aguarde o carregamento do arquivo de leituras.'); return; }
-            
-            const anti1 = document.querySelector('input[value="antifonas_1"]')?.checked;
-            const anti2 = document.querySelector('input[value="antifonas_2"]')?.checked;
-            const anti3 = document.querySelector('input[value="antifonas_3"]')?.checked;
-            const checkedBoxes = document.querySelectorAll('.reading-checkbox:checked');
-            
-            if (checkedBoxes.length === 0 && !anti1 && !anti2 && !anti3) { alert('Por favor, selecione ao menos uma leitura ou antífona.'); return; }
-            
-            let readingsHTML = '';
-            checkedBoxes.forEach(cb => {
-                const key = cb.value;
-                if(key.includes('antifonas')) return;
-                const r = readingsData[key];
-                if (r) {
-                    const formatText = r.text
-                        .split('\n\n')
-                        .map(p => `<p style="margin: 0 0 10px 0; page-break-inside: avoid;">${p.replace(/\n/g, '<br>')}</p>`)
-                        .join('');
-
-                    readingsHTML += `
-                        <div class="reading-print-block" style="margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; page-break-inside: avoid;">
-                            <div class="leitura-dia" style="font-weight: bold; color: #1a365d; margin-bottom: 4px; text-transform: uppercase;">${r.day}</div>
-                            <div class="leitura-titulo" style="font-size: 1.2rem; font-weight: bold; color: #8c6414; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px; text-transform: uppercase;">${r.title}</div>
-                            <div class="leitura-texto" style="line-height: 1.6; text-align: justify; word-wrap: break-word;">${formatText}</div>
-                        </div>
-                    `;
-                }
-            });
-            
-            if (anti1) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif; page-break-inside: avoid;">
-                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (25º Domingo)</h3>
-                    <p style="margin:0 0 10px 0;"><strong>Antífona de Entrada</strong> (p. 407)<br>A salvação do povo sou eu, diz o Senhor: *<br>de qualquer tribulação em que clamarem por mim,<br>eu os ouvirei *<br>e serei seu Deus para sempre.</p>
-                    <p style="margin:0 0 10px 0;"><strong>Aclamação ao Evangelho</strong> (cf. At 16,14b)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Vinde abrir o nosso coração, Senhor; *<br>ó Senhor, abri o nosso coração,<br>e, então, do vosso filho a palavra, *<br>poderemos acolher com muito amor!</p>
-                    <p style="margin:0;"><strong>Antífona de Comunhão</strong> (Sl 118 / Jo 10)<br>Os vossos mandamentos vós nos destes, *<br>para serem fielmente observados.<br>Que seja bem firme a minha vida *<br>em cumprir vossa vontade e vossa lei!</p>
-                </div>`; 
-            }
-            if (anti2) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif; page-break-inside: avoid;">
-                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (26º Domingo)</h3>
-                    <p style="margin:0 0 10px 0;"><strong>Antífona de Entrada</strong> (p. 408)<br>Senhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.</p>
-                    <p style="margin:0 0 10px 0;"><strong>Aclamação ao Evangelho</strong> (Jo 10,27)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Minhas ovelhas escutam a minha voz,<br>minha voz estão elas a escutar;<br>eu conheço, então, minhas ovelhas,<br>que me seguem, comigo a caminhar!</p>
-                    <p style="margin:0;"><strong>Antífona de Comunhão</strong> (Sl 118,49-50)<br>Lembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.</p>
-                </div>`; 
-            }
-            if (anti3) { readingsHTML += `
-                <div class="antifona-print-box" style="margin-bottom:15px; border:1px solid #ccc; padding:15px; line-height:1.5; font-family:'Georgia',serif; page-break-inside: avoid;">
-                    <h3 style="margin:0 0 10px 0; color:#1a365d; border-bottom:1px solid #1a365d; padding-bottom:5px; text-transform:uppercase;">Antífonas e Aclamação (27º Domingo)</h3>
-                    <p style="margin:0 0 10px 0;"><strong>Antífona de Entrada</strong> (cf. Est 4,17)<br>Ao vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.</p>
-                    <p style="margin:0 0 10px 0;"><strong>Aclamação ao Evangelho</strong> (cf. Jo 15,16)<br><em>Aleluia, Aleluia, Aleluia.</em><br>V. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.</p>
-                    <p style="margin:0;"><strong>Antífona de Comunhão</strong> (Lm 3,25)<br>O Senhor é bom para quem nele confia, para a alma que o procura.</p>
-                </div>`; 
-            }
-
-            const viewDiv = document.getElementById('content_leituras_view');
-            if(viewDiv) {
-                viewDiv.innerHTML = readingsHTML;
-                fontSizes['content_leituras_view'] = 14;
-                viewDiv.style.fontSize = '14pt';
-                closeModal('modal_seletor_leituras');
-                openModal('modal_leituras_view');
-            }
-        }
-
-        function runPrintMount(htmlContent) {
-            document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
-            document.body.style.overflow = 'visible';
-            const mount = document.getElementById('print-mount');
-            if(mount) { mount.innerHTML = htmlContent; mount.style.display = 'block'; }
-            window.onafterprint = function() { if(mount) { mount.innerHTML = ''; mount.style.display = 'none'; } };
-            setTimeout(() => { window.print(); }, 150);
-        }
-
-        function getHeaderHtml(title, subtitle = null) {
-            return `
-                <div style="text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 12px; page-break-after: avoid;">
-                    <h2 style="margin:0; font-size:14pt; color:#1a365d; text-transform:uppercase;">Paróquia Nossa Senhora Auxiliadora</h2>
-                    <h3 style="margin:4px 0 0 0; font-size:11pt; color:#8c6414;">${title}</h3>
-                    ${subtitle ? `<div style="background:#1a365d; color:#ffffff; display:inline-block; padding:4px 10px; border-radius:4px; font-size:10pt; font-weight:bold; margin-top:6px;">${subtitle}</div>` : ''}
-                </div>
-            `;
-        }
-
-        function printProgramacaoGeral() {
-            const content = document.getElementById('semana' + currentWeek + '-container').innerHTML;
-            const activeBtn = document.getElementById('btn-tab-w' + currentWeek);
-            const title = activeBtn ? activeBtn.getAttribute('data-full') : 'Programação da Semana';
-            runPrintMount(`<div style="padding:0.2cm;">${getHeaderHtml('Programação Litúrgica Oficial', title)}<div>${content}</div></div>`);
-        }
-        function printActiveRoteiro() {
-            const content = document.getElementById('content_roteiro_' + currentWeek).innerHTML;
-            const domingos = {1: '25º Domingo', 2: '26º Domingo', 3: '27º Domingo'};
-            runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Roteiro Litúrgico — ' + (domingos[currentWeek] || ''))}<div>${content}</div></div>`);
-        }
-        function printActivePreces() {
-            const sab = document.getElementById('preces_sabado_' + currentWeek).innerHTML;
-            const dManha = document.getElementById('preces_domingo_manha_' + currentWeek).innerHTML;
-            const dNoite = document.getElementById('preces_domingo_noite_' + currentWeek).innerHTML;
-            const domingos = {1: '25º Domingo', 2: '26º Domingo', 3: '27º Domingo'};
-            const header = getHeaderHtml('Oração dos Fiéis — ' + domingos[currentWeek]);
-            runPrintMount(`<div style="page-break-after:always;">${header}<div>${sab}</div></div><div style="page-break-after:always;">${header}<div>${dManha}</div></div><div>${header}<div>${dNoite}</div></div>`);
-        }
-        function printActiveReflexoes() {
-            const content = document.getElementById('content_reflexoes_' + currentWeek).innerHTML;
-            runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Reflexões Litúrgicas')}<div>${content}</div></div>`);
-        }
-        function printLeiturasFromView() { 
-            runPrintMount(`<div style="padding:0.5cm;">${getHeaderHtml('Leituras Selecionadas — Ambão')}<div>${document.getElementById('content_leituras_view').innerHTML}</div></div>`); 
-        }
-
-    </script>
+    <script src="leituras.js" defer></script>
+    <script src="programacao.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
