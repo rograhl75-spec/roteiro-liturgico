@@ -299,6 +299,101 @@ const readingsData = {
         day: 'Fim de Semana (03 e 04/10) — 27º Domingo',
         text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 21,33-43\n\nNaquele tempo, Jesus disse aos sumos sacerdotes e aos anciãos do povo:\n"Escutai esta outra parábola: Certo proprietário plantou uma vinha, pôs uma cerca em volta, fez nela um lagar para esmagar as uvas, e construiu uma torre de guarda. Depois, arrendou-a a vinhateiros, e viajou para o estrangeiro.\n\nQuando chegou o tempo da colheita, o proprietário mandou seus empregados aos vinhateiros para receber seus frutos.\nOs vinhateiros, porém, agarraram os empregados, espancaram a um, mataram a outro, e ao terceiro apedrejaram.\n\nO proprietário mandou de novo outros empregados, em maior número do que os primeiros. Mas eles os trataram da mesma forma.\n\nFinalmente, o proprietário enviou-lhes o seu filho, pensando: 'Ao meu filho eles vão respeitar'.\nOs vinhateiros, porém, ao verem o filho, disseram entre si: 'Este é o herdeiro. Vinde, vamos matá-lo e tomar posse da sua herança!'\nEntão agarraram o filho, jogaram-no para fora da vinha e o mataram.\n\nPois bem, quando o dono da vinha voltar, o que fará com esses vinhateiros?"\n\nOs sumos sacerdotes e os anciãos do povo responderam: "Com certeza mandará matar de modo violento esses perversos e arrendará a vinha a outros vinhateiros, que lhe entregarão os frutos no tempo certo".\n\nEntão Jesus lhes disse: "Vós nunca lestes nas Escrituras: 'A pedra que os construtores rejeitaram tornou-se a pedra angular; isto foi feito pelo Senhor e é maravilhoso aos nossos olhos?'\n\nPor isso, eu vos digo: o Reino de Deus vos será tirado e será entregue a um povo que produzirá frutos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
     },
+    '1l_seg_w5': {
+        title: '1ª Leitura — 05/10/2026 (PREENCHER)',
+        day: 'Segunda-feira (05/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+    },
+    'sl_seg_w5': {
+        title: 'Salmo Responsorial — 05/10/2026 (PREENCHER)',
+        day: 'Segunda-feira (05/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    'ev_seg_w5': {
+        title: 'Evangelho — 05/10/2026 (PREENCHER)',
+        day: 'Segunda-feira (05/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
+    '1l_ter_w5': {
+        title: '1ª Leitura — 06/10/2026 (PREENCHER)',
+        day: 'Terça-feira (06/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+    },
+    'sl_ter_w5': {
+        title: 'Salmo Responsorial — 06/10/2026 (PREENCHER)',
+        day: 'Terça-feira (06/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    'ev_ter_w5': {
+        title: 'Evangelho — 06/10/2026 (PREENCHER)',
+        day: 'Terça-feira (06/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
+    '1l_qua_w5': {
+        title: '1ª Leitura — 07/10/2026 (PREENCHER)',
+        day: 'Quarta-feira (07/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+    },
+    'sl_qua_w5': {
+        title: 'Salmo Responsorial — 07/10/2026 (PREENCHER)',
+        day: 'Quarta-feira (07/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    'ev_qua_w5': {
+        title: 'Evangelho — 07/10/2026 (PREENCHER)',
+        day: 'Quarta-feira (07/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
+    '1l_qui_w5': {
+        title: '1ª Leitura — 08/10/2026 (PREENCHER)',
+        day: 'Quinta-feira (08/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+    },
+    'sl_qui_w5': {
+        title: 'Salmo Responsorial — 08/10/2026 (PREENCHER)',
+        day: 'Quinta-feira (08/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    'ev_qui_w5': {
+        title: 'Evangelho — 08/10/2026 (PREENCHER)',
+        day: 'Quinta-feira (08/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
+    '1l_sex_w5': {
+        title: '1ª Leitura — 09/10/2026 (PREENCHER)',
+        day: 'Sexta-feira (09/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+    },
+    'sl_sex_w5': {
+        title: 'Salmo Responsorial — 09/10/2026 (PREENCHER)',
+        day: 'Sexta-feira (09/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    'ev_sex_w5': {
+        title: 'Evangelho — 09/10/2026 (PREENCHER)',
+        day: 'Sexta-feira (09/10/2026)',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
+    '1l_dom_w5': {
+        title: '1ª Leitura — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
+        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
+        text: `PREENCHER: cole aqui o texto integral da 1ª leitura do DOCX.`
+    },
+    'sl_dom_w5': {
+        title: 'Salmo Responsorial — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
+        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
+        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+    },
+    '2l_dom_w5': {
+        title: '2ª Leitura — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
+        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
+        text: `PREENCHER: cole aqui o texto integral da 2ª leitura do DOCX.`
+    },
+    'ev_dom_w5': {
+        title: 'Evangelho — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
+        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
+        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+    },
 };
 
 window.readingsData = readingsData;
