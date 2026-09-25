@@ -16,7 +16,7 @@ Site estático para programação litúrgica semanal, roteiro, preces, reflexõe
 ## Como editar os dados litúrgicos
 
 1. Atualize as semanas em `programacao.js` no array `programacaoData.weeks`:
-   - `id`: use data estável (`YYYY-MM-DD`), ex.: `2026-09-14`.
+   - `id`: use data estável (`YYYY-MM-DD`), ex.: `2026-09-21`.
    - `shortTitle` e `fullTitle`: textos da aba e do banner.
    - `programacaoHtml`: conteúdo completo da semana (programação, celebrações, tabelas, antífonas e referências).
 2. Atualize/adicione leituras em `leituras.js` mantendo chaves únicas.
