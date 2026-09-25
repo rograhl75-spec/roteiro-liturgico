@@ -1,26 +1,9 @@
-const WEEK_ID_FALLBACK = '2026-09-14';
+const WEEK_ID_FALLBACK = '2026-09-21';
 let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
 const antifonasData = {
-  antifonas_1: {
-    title: 'Antífonas e Aclamação (25º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: '(p. 407)\nA salvação do povo sou eu, diz o Senhor: *\nde qualquer tribulação em que clamarem por mim,\neu os ouvirei *\ne serei seu Deus para sempre.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: '(cf. At 16,14b)\nAleluia, Aleluia, Aleluia.\nV. Vinde abrir o nosso coração, Senhor; *\nó Senhor, abri o nosso coração,\ne, então, do vosso filho a palavra, *\npoderemos acolher com muito amor!'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: '(Sl 118 / Jo 10)\nOs vossos mandamentos vós nos destes, *\npara serem fielmente observados.\nQue seja bem firme a minha vida *\nem cumprir vossa vontade e vossa lei!'
-      }
-    ]
-  },
   antifonas_2: {
     title: 'Antífonas e Aclamação (26º Domingo)',
     items: [
