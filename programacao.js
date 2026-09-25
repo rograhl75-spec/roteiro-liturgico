@@ -645,7 +645,330 @@ const programacaoData = {
                     </div>
                 </div>
             </div>`
+
     },
+    {
+      legacyWeek: 4,
+      id: '2026-10-05',
+      shortTitle: '05 a 11 Out. (28º Dom)',
+      fullTitle: 'Semana de 05 a 11 de Outubro de 2026 (28º Domingo do Tempo Comum)',
+      programacaoHtml: `<!-- SEGUNDA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Segunda-feira, 05 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">A DEFINIR</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_seg_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_seg_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_seg_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TERÇA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Terça-feira, 06 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Terça</span> <span class="p-hora">A DEFINIR</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_ter_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_ter_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_ter_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUARTA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Quarta-feira, 07 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">A DEFINIR</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qua_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qua_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qua_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUINTA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Quinta-feira, 08 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Quinta</span> <span class="p-hora">A DEFINIR</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qui_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qui_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qui_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEXTA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Sexta-feira, 09 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Sexta</span> <span class="p-hora">A DEFINIR</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_sex_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_sex_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_sex_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM DE SEMANA -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Fim de semana: 10 e 11 de Outubro de 2026</h2>
+                    <span class="color-badge badge-branco">Cor litúrgica: A DEFINIR</span>
+                </div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 28º Domingo do Tempo Comum, Ano A — PREENCHER PELO DOCX</div>
+                <div class="presidency-box">
+                    <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
+                    <table class="escala-table">
+                        <tbody>
+                            <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">PREENCHER PELO DOCX</td><td class="p-cel">PREENCHER PELO DOCX</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tables-grid">
+                    <div>
+                        <div class="table-caption">📌 Missal Romano</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th>Parte / Oração Presidencial</th><th style="width:85px; text-align:center;">Página</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Hino de Louvor (Glória, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração da Coleta</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Profissão de Fé (Creio, quando aplicável)</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Prefácio</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração Eucarística</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📖 Liturgia da Palavra</div>
+                        <table class="liturgy-table">
+                            <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
+                            <tbody>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_dom_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_dom_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>2ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="2l_dom_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_dom_w5">PREENCHER PELO DOCX</span></td><td style="text-align:center;">A DEFINIR</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tables-grid" style="margin-top: 0.8rem;">
+                    <div>
+                        <div class="table-caption">🎵 Antífonas e Canto Interlecionais</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 120px;"><strong>Entrada</strong></td>
+                                    <td>PREENCHER PELO DOCX / FONTE AUTORIZADA</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aclamação</strong></td>
+                                    <td>PREENCHER PELO DOCX / FONTE AUTORIZADA</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comunhão</strong></td>
+                                    <td>PREENCHER PELO DOCX / FONTE AUTORIZADA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <div class="table-caption">📺 Citações Telão (PASCOM)</div>
+                        <table class="liturgy-table">
+                            <tbody>
+                                <tr><td><strong>PRIMEIRA LEITURA</strong><br>PREENCHER PELO DOCX</td></tr>
+                                <tr><td><strong>SEGUNDA LEITURA</strong><br>PREENCHER PELO DOCX</td></tr>
+                                <tr><td><strong>EVANGELHO</strong><br>PREENCHER PELO DOCX</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>`
+    }
   ]
 };
 window.programacaoData = programacaoData;

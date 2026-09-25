@@ -25,6 +25,7 @@
     <nav class="week-selector-bar" role="tablist" aria-label="Selecionar semana">
         <button type="button" class="week-tab-btn" id="btn-tab-2026-09-21" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-21" data-action="show-week" data-week-id="2026-09-21">Carregando...</button>
         <button type="button" class="week-tab-btn" id="btn-tab-2026-09-28" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-28" data-action="show-week" data-week-id="2026-09-28">Carregando...</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-2026-10-05" role="tab" aria-selected="false" aria-controls="week-panel-2026-10-05" data-action="show-week" data-week-id="2026-10-05">Carregando...</button>
     </nav>
 
     <div class="active-week-banner" id="active-week-banner">
@@ -164,6 +165,51 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Checkboxes Bloco 4 -->
+            <div id="leituras_semana_4" class="leituras-bloco" style="display:none;">
+                <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Selecione para Imprimir: 05 a 11 de Outubro (28º Domingo)</h4>
+                <div class="leitura-grid">
+                    <div class="leitura-col">
+                        <strong>Segunda-feira (05/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_seg_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_seg_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_seg_w5"> Evangelho</label>
+                    </div>
+                    <div class="leitura-col">
+                        <strong>Terça-feira (06/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_ter_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_ter_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_ter_w5"> Evangelho</label>
+                    </div>
+                    <div class="leitura-col">
+                        <strong>Quarta-feira (07/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_qua_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_qua_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_qua_w5"> Evangelho</label>
+                    </div>
+                    <div class="leitura-col">
+                        <strong>Quinta-feira (08/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_qui_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_qui_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_qui_w5"> Evangelho</label>
+                    </div>
+                    <div class="leitura-col">
+                        <strong>Sexta-feira (09/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_sex_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_sex_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_sex_w5"> Evangelho</label>
+                    </div>
+                    <div class="leitura-col">
+                        <strong style="color:var(--secondary)">Fim de Semana (10 e 11/10)</strong>
+                        <label><input type="checkbox" class="reading-checkbox" value="1l_dom_w5"> 1ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="sl_dom_w5"> Salmo</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="2l_dom_w5"> 2ª Leitura</label>
+                        <label><input type="checkbox" class="reading-checkbox" value="ev_dom_w5"> Evangelho</label>
+                        <label style="color:var(--primary); font-weight:bold; margin-top:4px;"><input type="checkbox" class="reading-checkbox" value="antifonas_4"> 🎵 Antífonas e Aclamação</label>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </div>
@@ -199,6 +245,24 @@
             </div>
             <div id="content_reflexoes_3" class="modal-body">
                 <p><em>[Adicione as reflexões da Semana 3 aqui no mesmo formato HTML da semana 1]</em></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal_reflexoes_4" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">📖 REFLEXÕES LITÚRGICAS (05 a 11/10)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_reflexoes_4">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_reflexoes_4">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-reflexoes">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_reflexoes_4">&times;</button>
+                </div>
+            </div>
+            <div id="content_reflexoes_4" class="modal-body">
+                <p><em>PREENCHER PELO DOCX / material de reflexões autorizado para 05 a 11 de outubro de 2026.</em></p>
             </div>
         </div>
     </div>
@@ -432,6 +496,41 @@
         </div>
     </div>
 
+
+    <div id="modal_roteiro_4" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">ROTEIRO — 28º DOMINGO DO TEMPO COMUM</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_4">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_4">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-roteiro">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_4">&times;</button>
+                </div>
+            </div>
+            <div class="script-block" id="content_roteiro_4">
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Observação</span><span class="script-text">Inserir aqui avisos prévios, ambientação e orientações iniciais do roteiro DOCX.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITOS INICIAIS</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Ritos Iniciais</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+                <div class="script-row row-musica"><span class="script-tag tag-musica">Música</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA DA PALAVRA</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Palavra</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+                <div class="script-row row-animador"><span class="script-tag tag-animador">Animador</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">LITURGIA EUCARÍSTICA</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Eucaristia</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+                <div class="script-row row-padre"><span class="script-tag tag-padre">Padre</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+
+                <h4 style="margin: 10px 0 2px 0; color:var(--primary); border-bottom: 1px solid var(--border);">RITO DA COMUNHÃO E ENCERRAMENTO</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Comunhão</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Encerramento</span><span class="script-text">PREENCHER PELO ROTEIRO DOCX.</span></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modais Preces Dinâmicos -->
     <div id="modal_preces_2" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
@@ -549,6 +648,50 @@
         </div>
     </div>
 
+
+
+    <div id="modal_preces_4" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">PRECES — 28º DOMINGO DO TEMPO COMUM</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_preces_4">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_preces_4">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-preces">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_preces_4">&times;</button>
+                </div>
+            </div>
+            <div id="content_preces_4">
+                <div id="preces_sabado_4" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">SÁBADO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Introdução</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Resposta</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Intenções</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Conclusão</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                    </div>
+                </div>
+                <div id="preces_domingo_manha_4" style="margin-bottom:14px;">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 09h00 e 11h00</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Introdução</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Resposta</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Intenções</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Conclusão</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                    </div>
+                </div>
+                <div id="preces_domingo_noite_4">
+                    <h4 style="color:#1e40af; margin-bottom:4px; border-bottom:1px solid #cbd5e1; padding-bottom:2px;">DOMINGO — 18h30</h4>
+                    <div class="script-block">
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Introdução</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-todos"><span class="script-tag tag-todos">Resposta</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-animador"><span class="script-tag tag-animador">Intenções</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                        <div class="script-row row-padre"><span class="script-tag tag-padre">Conclusão</span><span class="script-text">PREENCHER PELO DOCX.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- MODAL LER LEITURA INDIVIDUAL -->
     <div id="generalModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>

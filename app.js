@@ -37,6 +37,23 @@ const antifonasData = {
         text: '(Lm 3,25)\nO Senhor é bom para quem nele confia, para a alma que o procura.'
       }
     ]
+  },
+  antifonas_4: {
+    title: 'Antífonas e Aclamação (28º Domingo)',
+    items: [
+      {
+        label: 'Antífona de Entrada',
+        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
+      },
+      {
+        label: 'Aclamação ao Evangelho',
+        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
+      },
+      {
+        label: 'Antífona de Comunhão',
+        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
+      }
+    ]
   }
 };
 
