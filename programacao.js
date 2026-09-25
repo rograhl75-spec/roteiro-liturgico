@@ -578,7 +578,7 @@ const programacaoData = {
                             <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Maike</td></tr>
                             <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
                             <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Maike</td></tr>
+                            <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
                         </tbody>
                     </table>
                 </div>
