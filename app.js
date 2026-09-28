@@ -678,22 +678,51 @@ function handleScrollButton() {
 }
 
 function registerServiceWorker() {
-  if (!('serviceWorker' in navigator)) {
-    return;
-  }
+  if (!('serviceWorker' in navigator)) return;
 
-  const register = () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {
-      // Falha silenciosa para manter a experiência estática
-    });
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+
+  const showUpdateBanner = (worker) => {
+    if (document.getElementById('update-banner')) return;
+    const bar = document.createElement('div');
+    bar.id = 'update-banner';
+    bar.setAttribute('role', 'alert');
+    bar.innerHTML = '<span>🔄 Nova versão disponível</span>';
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.textContent = 'Atualizar';
+    btn.addEventListener('click', () => worker.postMessage('SKIP_WAITING'));
+    bar.appendChild(btn);
+    document.body.appendChild(bar);
   };
 
-  if (document.readyState === 'complete') {
-    register();
-    return;
-  }
+  const register = () => {
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then((reg) => {
+      if (reg.waiting && navigator.serviceWorker.controller) showUpdateBanner(reg.waiting);
 
-  window.addEventListener('load', register, { once: true });
+      reg.addEventListener('updatefound', () => {
+        const nw = reg.installing;
+        if (!nw) return;
+        nw.addEventListener('statechange', () => {
+          if (nw.state === 'installed' && navigator.serviceWorker.controller) showUpdateBanner(nw);
+        });
+      });
+
+      // Verifica atualizações ao voltar para o app e a cada 30 min
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') reg.update();
+      });
+      setInterval(() => reg.update(), 30 * 60 * 1000);
+    }).catch(() => {});
+  };
+
+  if (document.readyState === 'complete') register();
+  else window.addEventListener('load', register, { once: true });
 }
 
 function initializeModalLabels() {
