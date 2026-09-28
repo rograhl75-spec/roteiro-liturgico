@@ -532,6 +532,11 @@ const programacaoData = {
                         </tbody>
                     </table>
                 </div>
+                <p>
+                    <a href="adoracao-eucaristica-2026-10-02.pdf" target="_blank" rel="noopener noreferrer">
+                        📄 Abrir roteiro da Adoração Eucarística — 02/10/2026, às 19h30
+                    </a>
+                </p>
                 <div class="tables-grid">
                     <div>
                         <div class="table-caption">📌 Missal Romano</div>
