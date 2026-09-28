@@ -3,42 +3,7 @@ let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
-const antifonasData = {
-  antifonas_3: {
-    title: 'Antífonas e Aclamação (27º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: '(cf. Est 4,17)\nAo vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: '(cf. Jo 15,16)\nAleluia, Aleluia, Aleluia.\nV. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: '(Lm 3,25)\nO Senhor é bom para quem nele confia, para a alma que o procura.'
-      }
-    ]
-  },
-  antifonas_4: {
-    title: 'Antífonas e Aclamação (28º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      }
-    ]
-  }
-};
+const antifonasData = window.antifonasData || {};
 
 function getWeeks() {
   return (window.programacaoData && Array.isArray(window.programacaoData.weeks)) ? window.programacaoData.weeks : [];
@@ -371,16 +336,66 @@ function createAntifonaBlock(typeKey) {
   wrap.appendChild(title);
 
   antifona.items.forEach((item, idx) => {
-    const p = document.createElement('p');
-    p.style.margin = idx === antifona.items.length - 1 ? '0' : '0 0 10px 0';
+    const block = document.createElement('div');
+    block.style.margin = idx === antifona.items.length - 1 ? '0' : '0 0 10px 0';
 
     const strong = document.createElement('strong');
     strong.textContent = item.label;
-    p.appendChild(strong);
-    p.appendChild(document.createTextNode(` ${item.text}`));
+    block.appendChild(strong);
 
-    wrap.appendChild(p);
+    if (item.reference) {
+      const ref = document.createElement('div');
+      ref.textContent = item.reference;
+      block.appendChild(ref);
+    }
+
+    if (Array.isArray(item.options) && item.options.length > 0) {
+      item.options.forEach((option, optionIndex) => {
+        const optionRef = document.createElement('div');
+        optionRef.style.marginTop = optionIndex === 0 ? '6px' : '10px';
+        optionRef.style.fontStyle = 'italic';
+        optionRef.textContent = optionIndex === 0 ? (option.reference || '') : `Ou: ${option.reference || ''}`;
+        block.appendChild(optionRef);
+
+        const optionText = document.createElement('div');
+        optionText.style.whiteSpace = 'pre-line';
+        optionText.textContent = option.text || '';
+        block.appendChild(optionText);
+      });
+    } else {
+      const text = document.createElement('div');
+      text.style.whiteSpace = 'pre-line';
+      text.style.marginTop = '4px';
+      text.textContent = item.text || '';
+      block.appendChild(text);
+    }
+
+    wrap.appendChild(block);
   });
+
+  if (antifona.citations) {
+    const citationsHeader = document.createElement('h4');
+    citationsHeader.style.margin = '12px 0 8px 0';
+    citationsHeader.style.color = '#1a365d';
+    citationsHeader.style.borderTop = '1px dashed #ccc';
+    citationsHeader.style.paddingTop = '8px';
+    citationsHeader.textContent = 'Citações PASCOM';
+    wrap.appendChild(citationsHeader);
+
+    const citationRows = [
+      ['PRIMEIRA LEITURA', antifona.citations.primeiraLeitura],
+      ['SEGUNDA LEITURA', antifona.citations.segundaLeitura],
+      ['EVANGELHO', antifona.citations.evangelho]
+    ];
+
+    citationRows.forEach(([label, value]) => {
+      if (!value) return;
+      const row = document.createElement('p');
+      row.style.margin = '0 0 8px 0';
+      row.innerHTML = `<strong>${label}</strong><br>${value}`;
+      wrap.appendChild(row);
+    });
+  }
 
   return wrap;
 }

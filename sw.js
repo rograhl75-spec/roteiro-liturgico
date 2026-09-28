@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'roteiro-liturgico-v1';
+const CACHE_VERSION = 'roteiro-liturgico-v2';
 const REQUIRED_ASSETS = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const REQUIRED_ASSETS = [
   './app.js',
   './programacao.js',
   './leituras.js',
+  './antifonas.js',
   './manifest.json'
 ];
 
