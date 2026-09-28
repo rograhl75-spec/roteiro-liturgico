@@ -4,13 +4,13 @@ const REQUIRED_ASSETS = [
   './index.html',
   './styles.css',
   './app.js',
-  './antifonas.js',
   './programacao.js',
   './leituras.js',
   './manifest.json'
 ];
 
 const OPTIONAL_ASSETS = [
+  './antifonas.js',
   './icone.png',
   './icone.svg',
   './Selo Auxiliadora 60 anos_Ano 3.png'
