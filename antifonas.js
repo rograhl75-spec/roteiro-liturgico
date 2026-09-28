@@ -4,15 +4,18 @@ const antifonasData = {
     items: [
       {
         label: 'Antífona de Entrada',
-        text: '(cf. Est 4,17)\nAo vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.'
+        reference: 'Cf. Est 4,17',
+        text: 'Ao vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.'
       },
       {
         label: 'Aclamação ao Evangelho',
-        text: '(cf. Jo 15,16)\nAleluia, Aleluia, Aleluia.\nV. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.'
+        reference: 'Cf. Jo 15,16',
+        text: 'Aleluia, Aleluia, Aleluia.\nV. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.'
       },
       {
         label: 'Antífona de Comunhão',
-        text: '(Lm 3,25)\nO Senhor é bom para quem nele confia, para a alma que o procura.'
+        reference: 'Lm 3,25',
+        text: 'O Senhor é bom para quem nele confia, para a alma que o procura.'
       }
     ]
   },

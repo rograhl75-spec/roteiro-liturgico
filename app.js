@@ -315,10 +315,8 @@ function selectAllReadings(check) {
 
 function createAntifonaBlock(typeKey) {
   if (!antifonasData) {
-    const errorWrap = document.createElement('div');
-    errorWrap.className = 'antifona-print-box';
-    errorWrap.textContent = 'Não foi possível carregar antifonas.js. Verifique os assets da aplicação.';
-    return errorWrap;
+    console.error('Não foi possível carregar antifonas.js. Verifique os assets da aplicação.');
+    return null;
   }
 
   const antifona = antifonasData[typeKey];
