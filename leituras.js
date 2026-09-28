@@ -891,30 +891,7 @@ por toda a minha vida;
 e na casa do Senhor habitarei * 
 d 
 pelos tempos infinitos. R. 
- 
- 
-SEGUNDA LEITURA 
-Tudo posso naquele que me dá força. 
-Leitura da Carta de São Paulo aos Filipenses 4,12-14.19-20 
- 
-Irmãos: 
-12 
-Sei viver na miséria e sei viver na abundância. 
-Eu aprendi o segredo de viver em toda e qualquer situação, 
-estando farto ou passando fome, 
-tendo de sobra ou sofrendo necessidade. 
-13 
-Tudo posso naquele que me dá força. 
-14 
-No entanto, fizestes bem em compartilhar 
-as minhas dificuldades. 
-19 
-O meu Deus proverá esplendidamente com sua riqueza 
-a todas as vossas necessidades, em Cristo Jesus. 
-20 
-Ao nosso Deus e Pai 
-a glória pelos séculos dos séculos. Amém. 
-Palavra do Senhor.`
+ `
     },
     '2l_dom_w5': {
         title: '2ª Leitura — Filipenses 4,12-14.19-20 (Lecionário I, pág. 339)',

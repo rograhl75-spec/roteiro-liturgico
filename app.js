@@ -392,7 +392,11 @@ function createAntifonaBlock(typeKey) {
       if (!value) return;
       const row = document.createElement('p');
       row.style.margin = '0 0 8px 0';
-      row.innerHTML = `<strong>${label}</strong><br>${value}`;
+      const strong = document.createElement('strong');
+      strong.textContent = label;
+      row.appendChild(strong);
+      row.appendChild(document.createElement('br'));
+      row.appendChild(document.createTextNode(value));
       wrap.appendChild(row);
     });
   }
