@@ -201,99 +201,780 @@ const readingsData = {
         text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 21,33-43\n\nNaquele tempo, Jesus disse aos sumos sacerdotes e aos anciãos do povo:\n"Escutai esta outra parábola: Certo proprietário plantou uma vinha, pôs uma cerca em volta, fez nela um lagar para esmagar as uvas, e construiu uma torre de guarda. Depois, arrendou-a a vinhateiros, e viajou para o estrangeiro.\n\nQuando chegou o tempo da colheita, o proprietário mandou seus empregados aos vinhateiros para receber seus frutos.\nOs vinhateiros, porém, agarraram os empregados, espancaram a um, mataram a outro, e ao terceiro apedrejaram.\n\nO proprietário mandou de novo outros empregados, em maior número do que os primeiros. Mas eles os trataram da mesma forma.\n\nFinalmente, o proprietário enviou-lhes o seu filho, pensando: 'Ao meu filho eles vão respeitar'.\nOs vinhateiros, porém, ao verem o filho, disseram entre si: 'Este é o herdeiro. Vinde, vamos matá-lo e tomar posse da sua herança!'\nEntão agarraram o filho, jogaram-no para fora da vinha e o mataram.\n\nPois bem, quando o dono da vinha voltar, o que fará com esses vinhateiros?"\n\nOs sumos sacerdotes e os anciãos do povo responderam: "Com certeza mandará matar de modo violento esses perversos e arrendará a vinha a outros vinhateiros, que lhe entregarão os frutos no tempo certo".\n\nEntão Jesus lhes disse: "Vós nunca lestes nas Escrituras: 'A pedra que os construtores rejeitaram tornou-se a pedra angular; isto foi feito pelo Senhor e é maravilhoso aos nossos olhos?'\n\nPor isso, eu vos digo: o Reino de Deus vos será tirado e será entregue a um povo que produzirá frutos".\n\nPalavra da Salvação.\nR. Glória a vós, Senhor.`
     },
     '1l_seg_w5': {
-        title: '1ª Leitura — 05/10/2026 (PREENCHER)',
-        day: 'Segunda-feira (05/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+        title: '1ª Leitura — Gálatas 1,6-12 (Lecionário II, pág. 1053)',
+        day: 'Segunda-feira (05/10) — 27ª Semana do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Gálatas 1,6-12 
+ 
+ 
+Irmãos, 
+6 
+admiro-me de terdes abandonado tão depressa 
+aquele que vos chamou, na graça de Cristo, 
+e de terdes passado para um outro evangelho. 
+7 
+Não que haja outro evangelho, 
+mas algumas pessoas vos estão perturbando 
+e querendo mudar o evangelho de Cristo. 
+8 
+Pois bem, mesmo que nós ou um anjo vindo do céu 
+vos pregasse um evangelho 
+diferente daquele que vos pregamos, seja excomungado. 
+9 
+Como já dissemos e agora repito: 
+Se alguém vos pregar um evangelho 
+diferente daquele que recebestes, seja excomungado. 
+10 
+
+Será que eu estou buscando a aprovação dos homens 
+ou a aprovação de Deus? 
+Ou estou procurando agradar aos homens? 
+Se eu ainda estivesse preocupado 
+em agradar aos homens, 
+não seria servo de Cristo. 
+11 
+Irmãos, asseguro-vos 
+que o evangelho pregado por mim 
+não é conforme a critérios humanos. 
+12 
+Com efeito, não o recebi nem aprendi de homem algum, 
+mas por revelação de Jesus Cristo. 
+Palavra do Senhor.`
     },
     'sl_seg_w5': {
-        title: 'Salmo Responsorial — 05/10/2026 (PREENCHER)',
-        day: 'Segunda-feira (05/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Salmo Responsorial — Sl 110(111),1-2.7-8.9 e 10c (R. 5b) (Lecionário II, pág. 1054)',
+        day: 'Segunda-feira (05/10) — 27ª Semana do Tempo Comum',
+        text: `R. O Senhor se lembra sempre da Aliança. 
+ 
+Ou: Aleluia, Aleluia, Aleluia 
+1 
+Eu agradeço a Deus de todo o coração * 
+junto com todos os seus justos reunidos! 
+2 
+Que grandiosas são as obras do Senhor, * 
+elas merecem todo o amor e admiração! R. 
+ 
+7 
+Suas obras são verdade e são justiça, * 
+seus preceitos, todos eles, são estáveis, 
+8 
+
+confirmados para sempre e pelos séculos, * 
+realizados na verdade e retidão. R. 
+ 
+9 
+Enviou libertação para o seu povo, * 
+confirmou sua Aliança para sempre. 
+Seu nome é santo e é digno de respeito. * 
+10c 
+Permaneça eternamente o seu louvor. R.`
     },
     'ev_seg_w5': {
-        title: 'Evangelho — 05/10/2026 (PREENCHER)',
-        day: 'Segunda-feira (05/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Lucas 10,25-37 (Lecionário II, pág. 1055)',
+        day: 'Segunda-feira (05/10) — 27ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 10,25-37 
+ 
+Naquele tempo, 
+25 
+um mestre da Lei se levantou 
+e, querendo pôr Jesus em dificuldade, 
+perguntou: 
+"Mestre, que devo fazer 
+para receber em herança a vida eterna?" 
+26 
+Jesus lhe disse: 
+
+"O que está escrito na Lei? 
+Como lês?" 
+27 
+Ele então respondeu: 
+"Amarás o Senhor, teu Deus, 
+de todo o teu coração e com toda a tua alma, 
+com toda a tua força e com toda a tua inteligência; 
+e ao teu próximo como a ti mesmo!" 
+28 
+Jesus lhe disse: 
+"Tu respondeste corretamente. 
+Faze isso e viverás". 
+29 
+Ele, porém, querendo justificar-se, 
+disse a Jesus: 
+"E quem é o meu próximo?" 
+30 
+Jesus respondeu: 
+"Certo homem descia de Jerusalém para Jericó 
+e caiu nas mãos de assaltantes. 
+Estes arrancaram-lhe tudo, espancaram-no, 
+e foram-se embora deixando-o quase morto. 
+31 
+Por acaso, um sacerdote 
+estava descendo por aquele caminho. 
+Quando viu o homem, 
+seguiu adiante, pelo outro lado. 
+32 
+O mesmo aconteceu com um levita: 
+chegou ao lugar, viu o homem 
+e seguiu adiante, pelo outro lado. 
+33 
+
+Mas um samaritano que estava viajando, 
+chegou perto dele, viu e sentiu compaixão. 
+34 
+Aproximou-se dele e fez curativos, 
+derramando óleo e vinho nas feridas. 
+Depois colocou o homem em seu próprio animal 
+e levou-o a uma pensão, onde cuidou dele. 
+35 
+No dia seguinte, pegou duas moedas de prata 
+e entregou-as ao dono da pensão, recomendando: 
+"Toma conta dele! 
+Quando eu voltar, 
+vou pagar o que tiveres gasto a mais'. 
+E Jesus perguntou: 
+36 
+"Na tua opinião, qual dos três foi o próximo do homem 
+que caiu nas mãos dos assaltantes?" 
+37 
+Ele respondeu: 
+"Aquele que usou de misericórdia para com ele". 
+Então Jesus lhe disse: 
+"Vai e faze a mesma coisa". 
+Palavra da Salvação.`
     },
     '1l_ter_w5': {
-        title: '1ª Leitura — 06/10/2026 (PREENCHER)',
-        day: 'Terça-feira (06/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+        title: '1ª Leitura — Gálatas 1,13-24 (Lecionário II, pág. 1058)',
+        day: 'Terça-feira (06/10) — 27ª Semana do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Gálatas 1,13-24 
+ 
+ 
+Irmãos, 
+13 
+certamente ouvistes falar 
+como foi outrora a minha conduta no judaísmo, 
+com que excessos perseguia 
+e devastava a Igreja de Deus 
+14 
+e como progredia no judaísmo 
+mais do que muitos judeus de minha idade, 
+mostrando-me extremamente zeloso 
+das tradições paternas. 
+15 
+Quando, porém, 
+aquele que me separou desde o ventre materno 
+e me chamou por sua graça 
+16 
+se dignou revelar-me o seu Filho, 
+para que eu o pregasse entre os pagãos, 
+não consultei carne nem sangue 
+
+17 
+nem subi, logo, a Jerusalém 
+para estar com os que eram apóstolos antes de mim. 
+Pelo contrário, parti para a Arábia 
+e, depois, voltei ainda a Damasco. 
+18 
+Três anos mais tarde, fui a Jerusalém 
+para conhecer Cefas 
+e fiquei com ele quinze dias. 
+19 
+E não estive com nenhum outro apóstolo, 
+a não ser Tiago, o irmão do Senhor. 
+20 
+Escrevendo estas coisas, 
+afirmo diante de Deus que não estou mentindo. 
+21 
+Depois, fui para as regiões da Síria e da Cilícia. 
+22 
+Ainda não era pessoalmente conhecido 
+das igrejas da Judéia que estão em Cristo. 
+23 
+Apenas tinham ouvido dizer que 
+"aquele que, antes, nos perseguia, 
+está agora pregando a fé 
+que, antes, procurava destruir". 
+24 
+E glorificavam a Deus por minha causa. 
+Palavra do Senhor.`
     },
     'sl_ter_w5': {
-        title: 'Salmo Responsorial — 06/10/2026 (PREENCHER)',
-        day: 'Terça-feira (06/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Salmo Responsorial — Sl 138(139),1-3.13-14ab.14c-15 (R. 24b) (Lecionário II, pág. 1059)',
+        day: 'Terça-feira (06/10) — 27ª Semana do Tempo Comum',
+        text: `R. Conduzi-me no caminho para a vida, ó Senhor! 
+1 
+Senhor, vós me sondais e conheceis, * 
+2 
+sabeis quando me sento ou me levanto; 
+de longe penetrais meus pensamentos, † 
+3 
+percebeis quando me deito e quando eu ando, * 
+os meus caminhos vos são todos conhecidos. R. 
+ 
+13 
+Fostes vós que me formastes as entranhas, * 
+e no seio de minha mãe vós me tecestes. 
+14a 
+Eu vos louvo e vos dou graças, ó Senhor, † 
+porque de modo admirável me formastes! * 
+b 
+Que prodígio e maravilha as vossas obras! R. 
+ 
+c 
+Até o mais íntimo, Senhor me conheceis; * 
+15 
+nenhuma sequer de minhas fibras ignoráveis; 
+quando eu era modelado ocultamente, * 
+era formado nas entranhas subterrâneas. R.`
     },
     'ev_ter_w5': {
-        title: 'Evangelho — 06/10/2026 (PREENCHER)',
-        day: 'Terça-feira (06/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Lucas 10,38-42 (Lecionário II, pág. 1059)',
+        day: 'Terça-feira (06/10) — 27ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 10,38-42 
+ 
+Naquele tempo, 
+38 
+Jesus entrou num povoado, 
+e certa mulher, de nome Marta, 
+recebeu-o em sua casa. 
+39 
+Sua irmã, chamada Maria, 
+sentou-se aos pés do Senhor, 
+e escutava a sua palavra. 
+40 
+Marta, porém, estava ocupada com muitos afazeres. 
+Ela aproximou-se e disse: 
+"Senhor, não te importas que minha irmã 
+me deixe sozinha, com todo o serviço? 
+Manda que ela me venha ajudar!" 
+41 
+O Senhor, porém, lhe respondeu: 
+"Marta, Marta! Tu te preocupas 
+e andas agitada por muitas coisas. 
+42 
+Porém, uma só coisa é necessária. 
+Maria escolheu a melhor parte 
+e esta não lhe será tirada". 
+Palavra da Salvação.`
     },
     '1l_qua_w5': {
-        title: '1ª Leitura — 07/10/2026 (PREENCHER)',
-        day: 'Quarta-feira (07/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+        title: '1ª Leitura — Atos 1,12-14 (Lecionário III, n. 1, pág. 257)',
+        day: 'Quarta-feira (07/10) — Nossa Senhora do Rosário (Memória)',
+        text: `Leitura dos Atos dos Apóstolos 1,12-14 
+ 
+ 
+Depois que Jesus subiu ao céu, 
+12 
+os apóstolos voltaram para Jerusalém, 
+vindo do monte das Oliveiras, 
+que fica perto de Jerusalém, 
+a mais ou menos um quilômetro. 
+13 
+Entraram na cidade e subiram para a sala de cima, 
+onde costumavam ficar. 
+Eram Pedro e João, Tiago e André, Filipe e Tomé, 
+Bartolomeu e Mateus, Tiago, filho de Alfeu, 
+Simão Zelota e Judas, filho de Tiago. 
+14 
+Todos eles perseveravam na oração em comum, 
+junto com algumas mulheres, entre as quais Maria, 
+mãe de Jesus, e com os irmãos de Jesus. 
+Palavra do Senhor.`
     },
     'sl_qua_w5': {
-        title: 'Salmo Responsorial — 07/10/2026 (PREENCHER)',
-        day: 'Quarta-feira (07/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Cântico — Lc 1,46-47.48-49.50-51.52-53.54-55 (R. 49) (Lecionário III, n. 5, pág. 261)',
+        day: 'Quarta-feira (07/10) — Nossa Senhora do Rosário (Memória)',
+        text: `R. O Poderoso fez por mim maravilhas, 
+  e Santo é o seu nome. 
+ou: Bendita sejais, ó Virgem Maria; 
+   trouxestes no ventre a Palavra eterna! 
+46 
+A minh'alma engrandece ao Senhor, * 
+47 
+e se alegrou o meu espírito em Deus, meu Salvador, R. 
+ 
+48 
+pois, ele viu a pequenez de sua serva, * 
+desde agora as gerações hão de chamar-me de bendita. 
+49 
+O Poderoso fez por mim maravilhas * 
+e Santo é o seu nome! R. 
+ 
+50 
+Seu amor, de geração em geração, * 
+chega a todos que o respeitam. 
+51 
+Demonstrou o poder de seu braço, * 
+dispersou os orgulhosos. R. 
+ 
+52 
+Derrubou os poderosos de seus tronos * 
+e os humildes exaltou. 
+53 
+
+De bens saciou os famintos * 
+e despediu, sem nada, os ricos. R. 
+ 
+54 
+Acolheu Israel, seu servidor, * 
+fiel ao seu amor, 
+55 
+como havia prometido aos nossos pais, * 
+em favor de Abraão e de seus filhos, para sempre. R.`
     },
     'ev_qua_w5': {
-        title: 'Evangelho — 07/10/2026 (PREENCHER)',
-        day: 'Quarta-feira (07/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Lucas 1,26-38 (Lecionário III, n. 4, pág. 269)',
+        day: 'Quarta-feira (07/10) — Nossa Senhora do Rosário (Memória)',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 1,26-38 
+ 
+Naquele tempo, 
+26 
+o anjo Gabriel foi enviado por Deus 
+a uma cidade da Galileia, chamada Nazaré, 
+27 
+a uma virgem, prometida em casamento 
+a um homem chamado José. 
+Ele era descendente de Davi 
+e o nome da virgem era Maria. 
+28 
+O anjo entrou onde ela estava e disse: 
+"Alegra-te, cheia de graça, o Senhor está contigo!" 
+29 
+
+Maria ficou perturbada com estas palavras 
+e começou a pensar qual seria o significado da saudação. 
+30 
+O anjo, então, disse-lhe: 
+"Não tenhas medo, Maria, 
+porque encontraste graça diante de Deus. 
+31 
+Eis que conceberás e darás à luz um filho, 
+a quem porás o nome de Jesus. 
+32 
+Ele será grande, 
+será chamado Filho do Altíssimo, 
+e o Senhor Deus lhe dará o trono de seu pai Davi. 
+33 
+Ele reinará para sempre 
+sobre os descendentes de Jacó, 
+e o seu reino não terá fim". 
+34 
+Maria perguntou ao anjo: 
+"Como acontecerá isso, 
+se eu não conheço homem algum?" 
+35 
+O anjo respondeu: 
+"O Espírito virá sobre ti, 
+e o poder do Altíssimo te cobrirá com sua sombra. 
+Por isso, o menino que vai nascer 
+será chamado Santo, Filho de Deus. 
+36 
+Também Isabel, tua parenta, 
+concebeu um filho na velhice. 
+Este já é o sexto mês daquela 
+que era considerada estéril, 
+
+37 
+porque para Deus nada é impossível". 
+38 
+Maria, então, disse: 
+"Eis aqui a serva do Senhor; 
+faça-se em mim segundo a tua palavra!" 
+E o anjo retirou-se. 
+Palavra da Salvação.`
     },
     '1l_qui_w5': {
-        title: '1ª Leitura — 08/10/2026 (PREENCHER)',
-        day: 'Quinta-feira (08/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+        title: '1ª Leitura — Gálatas 3,1-5 (Lecionário II, pág. 1066)',
+        day: 'Quinta-feira (08/10) — 27ª Semana do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Gálatas 3,1-5 
+ 
+1 
+Ó gálatas insensatos, 
+quem é que vos fascinou? 
+Diante de vossos olhos, 
+não foi acaso representado, 
+como que ao vivo, 
+Jesus Cristo crucificado? 
+2 
+Só isto quero saber de vós: 
+Recebestes o Espírito pela prática da Lei 
+ou pela fé através da pregação? 
+3 
+Sois assim tão insensatos? 
+A ponto de, 
+depois de terdes começado pelo espírito, 
+quererdes terminar pela carne? 
+4 
+Foi acaso em vão que sofrestes tanto? 
+Se é que foi mesmo em vão! 
+5 
+
+Aquele que vos dá generosamente o Espírito 
+e realiza milagres entre vós, 
+faz isso porque praticais a Lei 
+ou porque crestes, através da pregação? 
+Palavra do Senhor.`
     },
     'sl_qui_w5': {
-        title: 'Salmo Responsorial — 08/10/2026 (PREENCHER)',
-        day: 'Quinta-feira (08/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Cântico — Lc 1,69-70.71-72.73 e 75 (R. cf. 68) (Lecionário II, pág. 1066)',
+        day: 'Quinta-feira (08/10) — 27ª Semana do Tempo Comum',
+        text: `R. Bendito seja o Senhor Deus de Israel, 
+   porque a seu povo visitou e libertou! 
+69 
+Fez surgir um poderoso Salvador * 
+na casa de Davi, seu servidor, 
+70 
+como falara pela boca de seus santos, * 
+os profetas desde os tempos mais antigos. R. 
+ 
+71 
+para salvar-nos do poder dos inimigos * 
+e da mão de todos quantos nos odeiam. 
+72 
+Assim mostrou misericórdia a nossos pais, * 
+recordando a sua santa Aliança. R. 
+ 
+73 
+e o juramento a Abraão, o nosso pai, * 
+de conceder-nos 74que, libertos do inimigo, 
+ 
+a ele nós sirvamos sem temor † 
+75 
+
+em santidade e em justiça diante dele, * 
+enquanto perdurarem nossos dias. R.`
     },
     'ev_qui_w5': {
-        title: 'Evangelho — 08/10/2026 (PREENCHER)',
-        day: 'Quinta-feira (08/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Lucas 11,5-13 (Lecionário II, pág. 1067)',
+        day: 'Quinta-feira (08/10) — 27ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,5-13 
+ 
+Naquele tempo, disse Jesus aos seus discípulos: 
+5 
+"Se um de vós tiver um amigo 
+e for procurá-lo à meia-noite 
+e lhe disser: 
+'Amigo, empresta-me três pães, 
+6 
+porque um amigo meu chegou de viagem 
+e nada tenho para lhe oferecer', 
+7 
+e se o outro responder lá de dentro: 
+'Não me incomodes! 
+Já tranquei a porta, 
+e meus filhos e eu já estamos deitados; 
+não me posso levantar para te dar os pães'; 
+8 
+eu vos declaro: 
+mesmo que o outro não se levante 
+
+para dá-los porque é seu amigo, 
+vai levantar-se 
+ao menos por causa da impertinência dele 
+e lhe dará quanto for necessário. 
+9 
+Portanto, eu vos digo: 
+pedi e recebereis; 
+procurai e encontrareis; 
+batei e vos será aberto. 
+10 
+Pois quem pede, recebe; 
+quem procura, encontra; 
+e, para quem bate, se abrirá. 
+11 
+Será que algum de vós que é pai, 
+se o filho pedir um peixe, 
+lhe dará uma cobra? 
+12 
+Ou ainda, se pedir um ovo, 
+lhe dará um escorpião? 
+13 
+Ora, se vós que sois maus, 
+sabeis dar coisas boas aos vossos filhos, 
+quanto mais o Pai do Céu dará o Espírito Santo 
+aos que o pedirem!" 
+Palavra da Salvação.`
     },
     '1l_sex_w5': {
-        title: '1ª Leitura — 09/10/2026 (PREENCHER)',
-        day: 'Sexta-feira (09/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral da leitura do DOCX.`
+        title: '1ª Leitura — Gálatas 3,7-14 (Lecionário II, pág. 1069)',
+        day: 'Sexta-feira (09/10) — 27ª Semana do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Gálatas 3,7-14 
+ 
+ 
+Irmãos, 
+7 
+ficai pois cientes que os que creem 
+é que são verdadeiros filhos de Abraão. 
+8 
+E a Escritura, 
+prevendo que Deus justificaria as nações pagãs pela fé, 
+anunciou, muito antes, a Abraão: 
+"Em ti serão abençoadas todas as nações". 
+9 
+Portanto, os crentes são abençoados 
+com o crente Abraão. 
+10 
+Aliás, todos os que põem sua confiança na prática da Lei 
+estão ameaçados pela maldição, 
+porque está escrito: 
+"Maldito quem não cumprir perseverantemente 
+tudo o que está escrito no livro da Lei". 
+
+11 
+Pela Lei ninguém se justifica perante Deus; 
+isso é evidente porque o justo vive da fé. 
+12 
+E a Lei não se funda na fé mas no cumprimento: 
+Aquele que cumpre a Lei, por ela viverá. 
+13 
+Cristo resgatou-nos da maldição da Lei, 
+fazendo-se maldição por nós, 
+pois está escrito: 
+'Maldito todo aquele que é suspenso no madeiro!' 
+14 
+Assim a bênção de Abraão 
+se estendeu aos pagãos em Cristo Jesus 
+e pela fé recebemos a promessa do Espírito. 
+Palavra do Senhor.`
     },
     'sl_sex_w5': {
-        title: 'Salmo Responsorial — 09/10/2026 (PREENCHER)',
-        day: 'Sexta-feira (09/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Salmo Responsorial — Sl 110(111),1-2.3-4.5-6 (R. 5b) (Lecionário II, pág. 1070)',
+        day: 'Sexta-feira (09/10) — 27ª Semana do Tempo Comum',
+        text: `R. O Senhor se lembra sempre da Aliança! 
+Ou: Aleluia, Aleluia, Aleluia. 
+ 
+1 
+Eu agradeço a Deus de todo o coração * 
+junto com todos os seus justos reunidos! 
+2 
+Que grandiosas são as obras do Senhor, * 
+elas merecem todo o amor e admiração! R. 
+ 
+3 
+Que beleza e esplendor são os seus feitos! * 
+Sua justiça permanece eternamente! 
+
+4 
+O Senhor bom e clemente nos deixou * 
+a lembrança de suas grandes maravilhas. R. 
+ 
+5 
+Ele dá o alimento aos que o temem * 
+e jamais esquecerá sua Aliança. 
+6 
+ao seu povo manifesta seu poder, * 
+dando a ele a herança das nações. R.`
     },
     'ev_sex_w5': {
-        title: 'Evangelho — 09/10/2026 (PREENCHER)',
-        day: 'Sexta-feira (09/10/2026)',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Lucas 11,15-26 (Lecionário II, pág. 1071)',
+        day: 'Sexta-feira (09/10) — 27ª Semana do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,15-26 
+ 
+Naquele tempo, Jesus estava expulsando um demônio. 
+15 
+Mas alguns disseram: 
+"É por Belzebu, o príncipe dos demônios, 
+que ele expulsa os demônios". 
+16 
+Outros, para tentar Jesus, 
+pediam-lhe um sinal do céu. 
+
+17 
+Mas, conhecendo seus pensamentos, 
+Jesus disse-lhes: 
+"Todo reino dividido contra si mesmo será destruído; 
+e cairá uma casa por cima da outra. 
+18 
+Ora, se até Satanás está dividido contra si mesmo, 
+como poderá sobreviver o seu reino? 
+Vós dizeis que é por Belzebu 
+que eu expulso os demônios. 
+19 
+Se é por meio de Belzebu 
+que eu expulso demônios, 
+vossos filhos os expulsam por meio de quem? 
+Por isso, eles mesmos serão vossos juízes. 
+20 
+Mas, se é pelo dedo de Deus 
+que eu expulso os demônios, 
+então chegou para vós o Reino de Deus. 
+21 
+Quando um homem forte e bem armado 
+guarda a própria casa, 
+seus bens estão seguros. 
+22 
+Mas, quando chega um homem mais forte do que ele, 
+vence-o, arranca-lhe a armadura na qual ele confiava, 
+e reparte o que roubou. 
+23 
+Quem não está comigo, está contra mim. 
+E quem não recolhe comigo, dispersa. 
+24 
+
+Quando o espírito mau sai de um homem, 
+fica vagando em lugares desertos, 
+à procura de repouso; 
+não o encontrando, ele diz: 
+'Vou voltar para minha casa de onde saí'. 
+25 
+Quando ele chega, 
+encontra a casa varrida e arrumada. 
+26 
+Então ele vai, e traz consigo 
+outros sete espíritos piores do que ele. 
+E, entrando, instalam-se aí. 
+No fim, esse homem 
+fica em condição pior do que antes". 
+Palavra da Salvação.`
     },
     '1l_dom_w5': {
-        title: '1ª Leitura — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
-        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
-        text: `PREENCHER: cole aqui o texto integral da 1ª leitura do DOCX.`
+        title: '1ª Leitura — Isaías 25,6-10a (Lecionário I, pág. 338)',
+        day: 'Fim de Semana (10 e 11/10) — 28º Domingo do Tempo Comum',
+        text: `Leitura do Livro do Profeta Isaías 25, 6-10a 
+6 
+O Senhor dos exércitos dará neste monte, 
+para todos os povos, 
+um banquete de ricas iguarias, regado com vinho puro, 
+servido de pratos deliciosos e dos mais finos vinhos. 
+7 
+Ele removerá, neste monte, 
+a ponta da cadeia que ligava todos os povos, 
+a teia em que tinha envolvido todas as nações. 
+8 
+O Senhor Deus eliminará para sempre a morte 
+e enxugará as lágrimas de todas as faces 
+e acabará com a desonra do seu povo em toda a terra; 
+o Senhor o disse. 
+9 
+Naquele dia, se dirá: "Este é o nosso Deus, 
+esperamos nele, até que nos salvou; 
+este é o Senhor, nele temos confiado: 
+vamos alegrar-nos e exultar por nos ter salvo". 
+10a 
+
+E a mão do Senhor repousará sobre este monte. 
+Palavra do Senhor.`
     },
     'sl_dom_w5': {
-        title: 'Salmo Responsorial — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
-        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
-        text: `PREENCHER: cole aqui o texto integral do salmo do DOCX.`
+        title: 'Salmo Responsorial — Sl 22(23),1-3a.3b-4.5-6 (R. 6cd) (Lecionário I, pág. 338)',
+        day: 'Fim de Semana (10 e 11/10) — 28º Domingo do Tempo Comum',
+        text: `R. Na casa do Senhor habitarei, eternamente. 
+ 
+1 
+O Senhor é o pastor que me conduz; * 
+não me falta coisa alguma. 
+2 
+Pelos prados e campinas verdejantes * 
+ele me leva a descansar. 
+Para as águas repousantes me encaminha, * 
+3a 
+e restaura as minhas forças. R. 
+ 
+ b 
+Ele me guia no caminho mais seguro, * 
+pela honra do seu nome. 
+4 
+Mesmo que eu passe pelo vale tenebroso, * 
+nenhum mal eu temerei; 
+ 
+estais comigo com bastão e com cajado; * 
+eles me dão a segurança! R. 
+ 
+5 
+Preparais à minha frente uma mesa, * 
+bem à vista do inimigo, 
+e com óleo vós ungis minha cabeça; * 
+o meu cálice transborda. R. 
+ 
+
+6 
+Felicidade e todo bem hão de seguir-me * 
+por toda a minha vida; 
+ c 
+e na casa do Senhor habitarei * 
+d 
+pelos tempos infinitos. R. 
+ `
     },
     '2l_dom_w5': {
-        title: '2ª Leitura — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
-        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
-        text: `PREENCHER: cole aqui o texto integral da 2ª leitura do DOCX.`
+        title: '2ª Leitura — Filipenses 4,12-14.19-20 (Lecionário I, pág. 339)',
+        day: 'Fim de Semana (10 e 11/10) — 28º Domingo do Tempo Comum',
+        text: `Leitura da Carta de São Paulo aos Filipenses 4,12-14.19-20 
+ 
+Irmãos: 
+12 
+Sei viver na miséria e sei viver na abundância. 
+Eu aprendi o segredo de viver em toda e qualquer situação, 
+estando farto ou passando fome, 
+tendo de sobra ou sofrendo necessidade. 
+13 
+Tudo posso naquele que me dá força. 
+14 
+No entanto, fizestes bem em compartilhar 
+as minhas dificuldades. 
+19 
+O meu Deus proverá esplendidamente com sua riqueza 
+a todas as vossas necessidades, em Cristo Jesus. 
+20 
+Ao nosso Deus e Pai 
+a glória pelos séculos dos séculos. Amém. 
+Palavra do Senhor.`
     },
     'ev_dom_w5': {
-        title: 'Evangelho — 10 e 11/10/2026 (28º Domingo do Tempo Comum)',
-        day: 'Fim de Semana (10 e 11/10/2026) — 28º Domingo do Tempo Comum',
-        text: `PREENCHER: cole aqui o texto integral do evangelho do DOCX.`
+        title: 'Evangelho — Mateus 22,1-14 (Lecionário I, pág. 340)',
+        day: 'Fim de Semana (10 e 11/10) — 28º Domingo do Tempo Comum',
+        text: `Proclamação do Evangelho de Jesus Cristo segundo Mateus 22,1-14 
+ 
+ 
+Naquele tempo, 
+1 
+Jesus voltou a falar em parábolas 
+aos sumos sacerdotes e aos anciãos do povo, dizendo: 
+2 
+"O Reino dos Céus é como a história do rei 
+que preparou a festa de casamento do seu filho. 
+3 
+E mandou os seus empregados 
+para chamar os convidados para a festa, 
+mas estes não quiseram vir. 
+4 
+O rei mandou outros empregados, dizendo: 
+'Dizei aos convidados: já preparei o banquete, 
+os bois e os animais cevados já foram abatidos 
+e tudo está pronto. Vinde para a festa!' 
+5 
+Mas os convidados não deram a menor atenção: 
+um foi para o seu campo, outro para os seus negócios, 
+
+6 
+outros agarraram os empregados, 
+bateram neles e os mataram. 
+7 
+O rei ficou indignado e mandou suas tropas 
+para matar aqueles assassinos e incendiar a cidade deles. 
+8 
+Em seguida, o rei disse aos empregados: 
+'A festa de casamento está pronta, 
+mas os convidados não foram dignos dela. 
+9 
+Portanto, ide até às encruzilhadas dos caminhos 
+e convidai para a festa todos os que encontrardes'. 
+10 
+Então os empregados saíram pelos caminhos 
+e reuniram todos os que encontraram, maus e bons. 
+E a sala da festa ficou cheia de convidados. 
+11 
+Quando o rei entrou para ver os convidados, 
+observou aí um homem que não estava usando traje de festa 
+12 
+e perguntou-lhe: 'Amigo, 
+como entraste aqui sem o traje de festa?' 
+Mas o homem nada respondeu. 
+13 
+Então o rei disse aos que serviam: 
+'Amarrai os pés e as mãos desse homem 
+e jogai-o fora, na escuridão! 
+Aí haverá choro e ranger de dentes'. 
+14 
+Por que muitos são chamados, e poucos são escolhidos". 
+Palavra da Salvação.`
     },
 };
 
