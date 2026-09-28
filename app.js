@@ -344,7 +344,10 @@ function createAntifonaBlock(typeKey) {
     block.appendChild(strong);
 
     if (item.reference) {
-      const ref = document.createElement('div');
+      const ref = document.createElement('small');
+      ref.style.display = 'block';
+      ref.style.marginTop = '4px';
+      ref.style.fontStyle = 'italic';
       ref.textContent = item.reference;
       block.appendChild(ref);
     }
@@ -354,8 +357,10 @@ function createAntifonaBlock(typeKey) {
         const optionRef = document.createElement('div');
         optionRef.style.marginTop = optionIndex === 0 ? '6px' : '10px';
         optionRef.style.fontStyle = 'italic';
-        optionRef.textContent = optionIndex === 0 ? (option.reference || '') : `Ou: ${option.reference || ''}`;
-        block.appendChild(optionRef);
+        if (option.reference) {
+          optionRef.textContent = optionIndex === 0 ? option.reference : `Ou: ${option.reference}`;
+          block.appendChild(optionRef);
+        }
 
         const optionText = document.createElement('div');
         optionText.style.whiteSpace = 'pre-line';
