@@ -3,7 +3,9 @@ let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
-const antifonasData = window.antifonasData;
+function getAntifonasData() {
+  return window.antifonasData || null;
+}
 
 function getWeeks() {
   return (window.programacaoData && Array.isArray(window.programacaoData.weeks)) ? window.programacaoData.weeks : [];
@@ -314,6 +316,7 @@ function selectAllReadings(check) {
 }
 
 function createAntifonaBlock(typeKey) {
+  const antifonasData = getAntifonasData();
   if (!antifonasData) {
     console.error('Não foi possível carregar antifonas.js. Verifique os assets da aplicação.');
     return null;
