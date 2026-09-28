@@ -1,26 +1,9 @@
-const WEEK_ID_FALLBACK = '2026-09-21';
+const WEEK_ID_FALLBACK = '2026-09-28';
 let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
 const antifonasData = {
-  antifonas_2: {
-    title: 'Antífonas e Aclamação (26º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: '(p. 408)\nSenhor, tudo o que fizestes conosco, com razão o fizestes, pois pecamos contra vós e não obedecemos aos vossos mandamentos. Mas honrai o vosso nome, tratando-nos segundo a vossa misericórdia.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: '(Jo 10,27)\nAleluia, Aleluia, Aleluia.\nV. Minhas ovelhas escutam a minha voz,\nminha voz estão elas a escutar;\neu conheço, então, minhas ovelhas,\nque me seguem, comigo a caminhar!'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: '(Sl 118,49-50)\nLembrai-vos, Senhor, da vossa palavra ao vosso servo, pela qual me destes esperança. Na minha aflição ela é o meu consolo.'
-      }
-    ]
-  },
   antifonas_3: {
     title: 'Antífonas e Aclamação (27º Domingo)',
     items: [
