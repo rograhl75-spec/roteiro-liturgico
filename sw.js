@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'roteiro-liturgico-v1';
+const CACHE_VERSION = 'roteiro-liturgico-v2';
 const REQUIRED_ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,7 @@ const REQUIRED_ASSETS = [
 ];
 
 const OPTIONAL_ASSETS = [
+  './antifonas.js',
   './icone.png',
   './icone.svg',
   './Selo Auxiliadora 60 anos_Ano 3.png'

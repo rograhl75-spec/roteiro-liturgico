@@ -3,45 +3,12 @@ let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
-const antifonasData = {
-  antifonas_3: {
-    title: 'Antífonas e Aclamação (27º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: '(cf. Est 4,17)\nAo vosso poder, Senhor, tudo está sujeito, e não há quem possa resistir à vossa vontade, porque sois o criador de todas as coisas, do céu e da terra e de tudo que eles contêm; vós sois o Senhor do universo.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: '(cf. Jo 15,16)\nAleluia, Aleluia, Aleluia.\nV. Eu vos escolhi, foi do meio do mundo, a fim de que deis um fruto que dure.'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: '(Lm 3,25)\nO Senhor é bom para quem nele confia, para a alma que o procura.'
-      }
-    ]
-  },
-  antifonas_4: {
-    title: 'Antífonas e Aclamação (28º Domingo)',
-    items: [
-      {
-        label: 'Antífona de Entrada',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      },
-      {
-        label: 'Aclamação ao Evangelho',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      },
-      {
-        label: 'Antífona de Comunhão',
-        text: 'PREENCHER PELO DOCX / FONTE AUTORIZADA.'
-      }
-    ]
-  }
-};
-
 function getWeeks() {
   return (window.programacaoData && Array.isArray(window.programacaoData.weeks)) ? window.programacaoData.weeks : [];
+}
+
+function getAntifonasData() {
+  return (window.antifonasData && typeof window.antifonasData === 'object') ? window.antifonasData : {};
 }
 
 function getCurrentWeek() {
@@ -348,9 +315,62 @@ function selectAllReadings(check) {
   });
 }
 
+function buildReferenceNode(reference, prefix = null) {
+  if (!reference) {
+    return null;
+  }
+
+  const line = document.createElement('div');
+  line.style.margin = '4px 0 8px 0';
+  line.style.fontSize = '0.95em';
+  line.style.color = '#475569';
+
+  if (prefix) {
+    const strong = document.createElement('strong');
+    strong.textContent = `${prefix} `;
+    line.appendChild(strong);
+  }
+
+  const small = document.createElement('small');
+  small.textContent = reference;
+  line.appendChild(small);
+  return line;
+}
+
+function buildAntifonaTextNode(text) {
+  const block = document.createElement('div');
+  block.style.margin = '0';
+  block.appendChild(createReadingParagraphs(text || ''));
+  return block;
+}
+
 function createAntifonaBlock(typeKey) {
-  const antifona = antifonasData[typeKey];
-  if (!antifona) return null;
+  const antifona = getAntifonasData()[typeKey];
+  if (!antifona) {
+    const fallback = document.createElement('div');
+    fallback.className = 'antifona-print-box';
+    fallback.style.marginBottom = '15px';
+    fallback.style.border = '1px solid #ccc';
+    fallback.style.padding = '15px';
+    fallback.style.lineHeight = '1.5';
+    fallback.style.fontFamily = "'Georgia',serif";
+    fallback.style.pageBreakInside = 'avoid';
+
+    const title = document.createElement('h3');
+    title.style.margin = '0 0 10px 0';
+    title.style.color = '#1a365d';
+    title.style.borderBottom = '1px solid #1a365d';
+    title.style.paddingBottom = '5px';
+    title.style.textTransform = 'uppercase';
+    title.textContent = 'Antífonas e PASCOM indisponíveis';
+    fallback.appendChild(title);
+
+    const message = document.createElement('p');
+    message.textContent = 'Este conteúdo ainda não está disponível no cache atual. Recarregue a página com conexão para concluir a atualização dos dados desta semana.';
+    fallback.appendChild(message);
+
+    return fallback;
+  }
 
   const wrap = document.createElement('div');
   wrap.className = 'antifona-print-box';
@@ -370,17 +390,53 @@ function createAntifonaBlock(typeKey) {
   title.textContent = antifona.title;
   wrap.appendChild(title);
 
-  antifona.items.forEach((item, idx) => {
-    const p = document.createElement('p');
-    p.style.margin = idx === antifona.items.length - 1 ? '0' : '0 0 10px 0';
+  const hasCitations = Array.isArray(antifona.citations) && antifona.citations.length > 0;
 
+  antifona.items.forEach((item, idx) => {
+    const section = document.createElement('section');
+    section.style.margin = idx === antifona.items.length - 1 && !hasCitations ? '0' : '0 0 16px 0';
     const strong = document.createElement('strong');
     strong.textContent = item.label;
-    p.appendChild(strong);
-    p.appendChild(document.createTextNode(` ${item.text}`));
+    section.appendChild(strong);
 
-    wrap.appendChild(p);
+    if (Array.isArray(item.options) && item.options.length > 0) {
+      item.options.forEach((option, optionIndex) => {
+        const referenceNode = buildReferenceNode(option.reference, optionIndex === 0 ? null : 'Ou:');
+        if (referenceNode) {
+          section.appendChild(referenceNode);
+        }
+        section.appendChild(buildAntifonaTextNode(option.text));
+      });
+    } else {
+      const referenceNode = buildReferenceNode(item.reference);
+      if (referenceNode) {
+        section.appendChild(referenceNode);
+      }
+      section.appendChild(buildAntifonaTextNode(item.text));
+    }
+
+    wrap.appendChild(section);
   });
+
+  if (hasCitations) {
+    const citationsTitle = document.createElement('h4');
+    citationsTitle.style.margin = '10px 0';
+    citationsTitle.style.color = '#1a365d';
+    citationsTitle.style.textTransform = 'uppercase';
+    citationsTitle.textContent = 'Citações Telão (PASCOM)';
+    wrap.appendChild(citationsTitle);
+
+    antifona.citations.forEach((citation, idx) => {
+      const citationWrap = document.createElement('div');
+      citationWrap.style.margin = idx === antifona.citations.length - 1 ? '0' : '0 0 10px 0';
+
+      const citationLabel = document.createElement('strong');
+      citationLabel.textContent = citation.label;
+      citationWrap.appendChild(citationLabel);
+      citationWrap.appendChild(buildAntifonaTextNode(citation.text));
+      wrap.appendChild(citationWrap);
+    });
+  }
 
   return wrap;
 }

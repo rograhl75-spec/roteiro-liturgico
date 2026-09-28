@@ -8,6 +8,7 @@ Site estático para programação litúrgica semanal, roteiro, preces, reflexõe
 - `styles.css`: estilos da aplicação (inclusive foco visível, tablist e ajustes mobile/print).
 - `programacao.js`: dados estruturados por semana (`id` por data ISO) e conteúdo renderizado no painel semanal.
 - `leituras.js`: base de leituras (`readingsData`) sem chaves duplicadas.
+- `antifonas.js`: antífonas, aclamações e citações da PASCOM por semana.
 - `app.js`: renderização dinâmica, eventos, modais, impressão, acessibilidade e registro do service worker.
 - `manifest.json`: metadados PWA.
 - `sw.js`: cache offline de assets locais.
@@ -20,7 +21,8 @@ Site estático para programação litúrgica semanal, roteiro, preces, reflexõe
    - `shortTitle` e `fullTitle`: textos da aba e do banner.
    - `programacaoHtml`: conteúdo completo da semana (programação, celebrações, tabelas, antífonas e referências).
 2. Atualize/adicione leituras em `leituras.js` mantendo chaves únicas.
-3. Garanta que cada `data-reading-key="..."` usado em `programacaoHtml` exista em `readingsData`.
+3. Atualize as antífonas e citações em `antifonas.js`.
+4. Garanta que cada `data-reading-key="..."` usado em `programacaoHtml` exista em `readingsData`.
 
 ## Validação
 
@@ -42,6 +44,7 @@ Como é um site estático, publique a branch no GitHub Pages (root do repositór
 - `index.html`
 - `styles.css`
 - `app.js`
+- `antifonas.js`
 - `programacao.js`
 - `leituras.js`
 - `manifest.json`
