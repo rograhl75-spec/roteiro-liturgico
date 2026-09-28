@@ -4,22 +4,32 @@ const REQUIRED_ASSETS = [
   './index.html',
   './styles.css',
   './app.js',
+  './antifonas.js',
   './programacao.js',
   './leituras.js',
   './manifest.json'
 ];
 
 const OPTIONAL_ASSETS = [
-  './antifonas.js',
   './icone.png',
   './icone.svg',
   './Selo Auxiliadora 60 anos_Ano 3.png'
 ];
 
+const TRANSITION_TOLERANT_ASSETS = new Set(['./antifonas.js']);
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_VERSION).then(async (cache) => {
-      await cache.addAll(REQUIRED_ASSETS);
+      await Promise.all(REQUIRED_ASSETS.map(async (asset) => {
+        try {
+          await cache.add(asset);
+        } catch (error) {
+          if (!TRANSITION_TOLERANT_ASSETS.has(asset)) {
+            throw error;
+          }
+        }
+      }));
       await Promise.allSettled(OPTIONAL_ASSETS.map((asset) => cache.add(asset)));
     })
   );
