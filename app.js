@@ -3,7 +3,7 @@ let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 
-const antifonasData = window.antifonasData || {};
+const antifonasData = window.antifonasData;
 
 function getWeeks() {
   return (window.programacaoData && Array.isArray(window.programacaoData.weeks)) ? window.programacaoData.weeks : [];
@@ -314,6 +314,13 @@ function selectAllReadings(check) {
 }
 
 function createAntifonaBlock(typeKey) {
+  if (!antifonasData) {
+    const errorWrap = document.createElement('div');
+    errorWrap.className = 'antifona-print-box';
+    errorWrap.textContent = 'Não foi possível carregar antifonas.js. Verifique os assets da aplicação.';
+    return errorWrap;
+  }
+
   const antifona = antifonasData[typeKey];
   if (!antifona) return null;
 
