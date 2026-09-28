@@ -346,7 +346,31 @@ function buildAntifonaTextNode(text) {
 
 function createAntifonaBlock(typeKey) {
   const antifona = getAntifonasData()[typeKey];
-  if (!antifona) return null;
+  if (!antifona) {
+    const fallback = document.createElement('div');
+    fallback.className = 'antifona-print-box';
+    fallback.style.marginBottom = '15px';
+    fallback.style.border = '1px solid #ccc';
+    fallback.style.padding = '15px';
+    fallback.style.lineHeight = '1.5';
+    fallback.style.fontFamily = "'Georgia',serif";
+    fallback.style.pageBreakInside = 'avoid';
+
+    const title = document.createElement('h3');
+    title.style.margin = '0 0 10px 0';
+    title.style.color = '#1a365d';
+    title.style.borderBottom = '1px solid #1a365d';
+    title.style.paddingBottom = '5px';
+    title.style.textTransform = 'uppercase';
+    title.textContent = 'Antífonas e PASCOM indisponíveis';
+    fallback.appendChild(title);
+
+    const message = document.createElement('p');
+    message.textContent = 'Este conteúdo ainda não está disponível no cache atual. Recarregue a página com conexão para concluir a atualização dos dados desta semana.';
+    fallback.appendChild(message);
+
+    return fallback;
+  }
 
   const wrap = document.createElement('div');
   wrap.className = 'antifona-print-box';
