@@ -1,4 +1,4 @@
-const antifonasData = {
+window.antifonasData = {
   antifonas_3: {
     title: 'Antífonas, Aclamação e PASCOM — 27º Domingo do Tempo Comum',
     items: [
@@ -80,5 +80,3 @@ const antifonasData = {
     ]
   }
 };
-
-window.antifonasData = antifonasData;
