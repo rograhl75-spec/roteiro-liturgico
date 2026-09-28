@@ -752,7 +752,18 @@
     
 
     <script src="leituras.js" defer></script>
-    <script src="antifonas.js" defer></script>
+    <script>
+        window.antifonasData = window.antifonasData || {};
+        (function () {
+            const antifonasScript = document.createElement('script');
+            antifonasScript.src = 'antifonas.js';
+            antifonasScript.async = false;
+            antifonasScript.onerror = function () {
+                window.antifonasData = window.antifonasData || {};
+            };
+            document.head.appendChild(antifonasScript);
+        })();
+    </script>
     <script src="programacao.js" defer></script>
     <script src="app.js" defer></script>
 </body>
