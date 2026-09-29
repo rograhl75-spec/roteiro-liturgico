@@ -112,7 +112,7 @@ function showWeek(weekId, options = { focusTab: false }) {
   const subtitle = document.getElementById('header-subtitle');
   const activeWeekText = document.getElementById('active-week-text');
   if (subtitle) {
-    subtitle.textContent = `Programação Litúrgica e Roteiro Completo | ${selectedWeek.fullTitle}`;
+    subtitle.textContent = 'Roteiro da Adoração Solene';
   }
   if (activeWeekText) {
     activeWeekText.textContent = `EXIBINDO NA TELA: ${selectedWeek.fullTitle}`;
