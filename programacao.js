@@ -112,7 +112,7 @@ const programacaoData = {
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
                         <tbody>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Augustin Mukamba</td></tr>
+                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Diác. Rogério Grahl (Celebração da Palavra)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -124,11 +124,6 @@ const programacaoData = {
                             <tbody>
                                 <tr><td>Ritos Iniciais (Ordinário)</td><td style="text-align:center;">430</td></tr>
                                 <tr><td>Oração da Coleta</td><td style="text-align:center;">814</td></tr>
-                                <tr><td style="color:#64748b;">Profissão de Fé (Creio) <small>(Omite-se)</small></td><td style="text-align:center;">—</td></tr>
-                                <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">815</td></tr>
-                                <tr><td>Prefácio: Doutores da Igreja</td><td style="text-align:center;">506 ou 507</td></tr>
-                                <tr><td>Oração Eucarística: II</td><td style="text-align:center;">537</td></tr>
-                                <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">815</td></tr>
                             </tbody>
                         </table>
