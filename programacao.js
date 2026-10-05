@@ -346,7 +346,7 @@ const programacaoData = {
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table">
                         <tbody>
-                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Lairton</td></tr>
+                            <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Laurindo</td></tr>
                         </tbody>
                     </table>
                 </div>
