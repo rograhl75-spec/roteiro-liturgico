@@ -815,7 +815,7 @@ R. Graças a Deus.`
 
 Escutai, minha filha, olhai, ouvi isto: “Esquecei vosso povo e a casa paterna!” Que o Rei se encante com vossa beleza! Prestai-lhe homenagem: é vosso Senhor! R.
 
-O povo de Tiro vos traz seus presentes, os grandes do povo vos pedem favores. Majestosa, a princesa real vem chegando, vestida de ricos brocados de ouro.
+O povo de Tiro vos traz seus presentes, os grandes do povo vos pedem favores. Majestosa, a princesa real vem chegando, vestida de ricos brocados de ouro. R.
 
 Em vestes vistosas ao Rei se dirige, e as virgens amigas lhe formam cortejo; entre cantos de festa e com grande alegria, ingressam, então, no palácio real. R.`
     },
