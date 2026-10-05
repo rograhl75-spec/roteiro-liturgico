@@ -441,7 +441,7 @@ const programacaoData = {
                     <table class="escala-table">
                         <tbody>
                             <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Matriz Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
-                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Santuário Nossa Senhora Aparecida — Londrina (novena)</td><td class="p-cel">Pe. Heriberto</td></tr>
+                            <tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h30</span></td><td class="p-loc">Santuário Nossa Senhora Aparecida — Londrina (novena)</td><td class="p-cel">Pe. Heriberto</td></tr>
                         </tbody>
                     </table>
                 </div>
