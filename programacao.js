@@ -329,6 +329,8 @@ const programacaoData = {
       id: '2026-10-12',
       shortTitle: '12 a 18 Out. (Nossa Sra. Aparecida)',
       fullTitle: 'Semana de 12 a 18 de Outubro de 2026 (29º Domingo do Tempo Comum)',
+      roteiroLabel: '📖 Roteiro 29º Domingo',
+      roteiroExtras: ['aparecida'],
       programacaoHtml: `<!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
@@ -336,7 +338,7 @@ const programacaoData = {
                     <span class="color-badge badge-branco">Branco (Solenidade)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade, Ano A</div>
-                <div class="note-gloria-box"><strong>Roteiro litúrgico:</strong> Celebração solene de Nossa Senhora Aparecida. <a href="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf" target="_blank" rel="noopener">Abrir roteiro completo (PDF)</a>. O roteiro também está disponível no botão “Roteiro”.</div>
+                <div class="note-gloria-box"><strong>Roteiro litúrgico:</strong> Celebração solene de Nossa Senhora Aparecida. <a href="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf" target="_blank" rel="noopener">Abrir roteiro completo (PDF)</a>. O roteiro também está disponível no botão “Roteiro 12/10 (Aparecida)”.</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>

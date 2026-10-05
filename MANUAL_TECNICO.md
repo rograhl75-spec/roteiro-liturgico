@@ -133,6 +133,8 @@ IDs importantes incluem:
 
 Os botões utilizam atributos `data-action`, tratados por `handleActionClick()` em `app.js`.
 
+Quando uma semana tem mais de um roteiro, use `roteiroLabel` (texto do botão principal) e `roteiroExtras` (ex.: `['aparecida']`) na semana em `programacao.js`. Cada chave extra precisa de um botão na barra com `data-roteiro-key` e de um modal `modal_roteiro_<semana>_<chave>` com conteúdo `content_roteiro_<semana>_<chave>`.
+
 ---
 
 ## 8. Impressão e acessibilidade

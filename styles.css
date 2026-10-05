@@ -206,6 +206,7 @@ input:focus-visible {
 }
 
 .modal[hidden] { display: none !important; }
+.action-btn[hidden] { display: none !important; }
 .modal[aria-hidden="false"] { display: flex; }
 
 .tables-grid > div,
