@@ -342,7 +342,7 @@ const programacaoData = {
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
-                        <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">11h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr>
+                        <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">11h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
                     </tbody></table>
                 </div>
                 <div class="tables-grid">
@@ -355,8 +355,8 @@ const programacaoData = {
                                 <tr><td>Hino de Louvor (Glória)</td><td style="text-align:center;">442</td></tr>
                                 <tr><td>Oração da Coleta</td><td style="text-align:center;">827</td></tr>
                                 <tr><td>Oração sobre as Oferendas</td><td style="text-align:center;">827</td></tr>
-                                <tr><td>Prefácio</td><td style="text-align:center;">828</td></tr>
-                                <tr><td>Oração Eucarística II</td><td style="text-align:center;">536</td></tr>
+                                <tr><td>Prefácio: Mistério de Maria e da Igreja</td><td style="text-align:center;">828</td></tr>
+                                <tr><td>Oração Eucarística II</td><td style="text-align:center;">537</td></tr>
                                 <tr><td>Rito da Comunhão</td><td style="text-align:center;">569</td></tr>
                                 <tr><td>Oração depois da Comunhão</td><td style="text-align:center;">829</td></tr>
                                 <tr><td>Bênção Solene</td><td style="text-align:center;">585</td></tr>
@@ -394,49 +394,46 @@ const programacaoData = {
                         </tbody></table>
                     </div>
                 </div>
-                <div class="note-gloria-box">Observação das fontes: o quadro de Lecionários registra Est 5,1-2;7,2b-3 e Ap 12,1-5.13a.15-16a, enquanto o texto integral das leituras registra Est 5,1b-2 e Ap 12,1.5.13a.15-16a.</div>
             </div>
 
             <!-- TERÇA -->
             <div class="card">
-                <div class="card-header"><h2>Terça-feira, 13 de Outubro de 2026</h2><span class="color-badge">Cor não informada nas fontes</span></div>
+                <div class="card-header"><h2>Terça-feira, 13 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 28ª Semana do Tempo Comum (Ano Par II)</div>
-                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Manuel</td></tr></tbody></table></div>
+                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Terça</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr></tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
                         <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>410</td></tr><tr><td>Oração sobre as Oferendas</td><td>410</td></tr><tr><td>Prefácio da Oração Eucarística V</td><td>564</td></tr><tr><td>Oração Eucarística V</td><td>564</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>410</td></tr>
                     </tbody></table></div>
                     <div><div class="table-caption">📖 Liturgia da Palavra</div><table class="liturgy-table"><thead><tr><th>Momento</th><th>Ref. Bíblica</th><th>Lec. / Pág.</th></tr></thead><tbody>
-                        <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_ter_w6">Gl 5,1-6</span></td><td>II / 1081</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_ter_w6">Sl 118(119),41-48</span></td><td>II / 1081</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_ter_w6">Lc 11,37-41</span></td><td>II / 1082</td></tr>
+                        <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_ter_w6">Gl 5,1-6</span></td><td>II / 1081</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_ter_w6">Sl 118(119),41.43.44.45.47.48 (R. 41a)</span></td><td>II / 1081</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_ter_w6">Lc 11,37-41</span></td><td>II / 1082</td></tr>
                     </tbody></table></div>
                 </div>
-                <div class="note-gloria-box">Observação das fontes: o quadro de Lecionários registra Sl 118(119),41-48; o texto integral das leituras seleciona os versículos 41.43.44.45.47.48.</div>
             </div>
 
             <!-- QUARTA -->
             <div class="card">
-                <div class="card-header"><h2>Quarta-feira, 14 de Outubro de 2026</h2><span class="color-badge">Cor não informada nas fontes</span></div>
+                <div class="card-header"><h2>Quarta-feira, 14 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 28ª Semana do Tempo Comum (Ano Par II)</div>
-                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr></tbody></table></div>
+                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Quarta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr></tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
                         <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>410</td></tr><tr><td>Oração sobre as Oferendas</td><td>410</td></tr><tr><td>Prefácio da Oração Eucarística V</td><td>564</td></tr><tr><td>Oração Eucarística V</td><td>564</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>410</td></tr>
                     </tbody></table></div>
                     <div><div class="table-caption">📖 Liturgia da Palavra</div><table class="liturgy-table"><thead><tr><th>Momento</th><th>Ref. Bíblica</th><th>Lec. / Pág.</th></tr></thead><tbody>
-                        <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qua_w6">Gl 5,18-25</span></td><td>II / 1084</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qua_w6">Sl 1</span></td><td>II / 1085</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qua_w6">Lc 11,42-46</span></td><td>II / 1086</td></tr>
+                        <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qua_w6">Gl 5,18-25</span></td><td>II / 1084</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qua_w6">Sl 1,1-2.3.4 e 6 (R. cf. Jo 8,12)</span></td><td>II / 1085</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qua_w6">Lc 11,42-46</span></td><td>II / 1086</td></tr>
                     </tbody></table></div>
                 </div>
-                <div class="note-gloria-box">Observação das fontes: o quadro de Lecionários registra Sl 1; o texto integral das leituras registra Sl 1,1-2.3.4.6.</div>
             </div>
 
             <!-- QUINTA -->
             <div class="card">
-                <div class="card-header"><h2>Quinta-feira, 15 de Outubro de 2026</h2><span class="color-badge">Cor não informada nas fontes</span></div>
+                <div class="card-header"><h2>Quinta-feira, 15 de Outubro de 2026</h2><span class="color-badge badge-branco">Branco (Memória)</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Santa Teresa de Jesus, virgem e doutora da Igreja, Memória</div>
-                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Manuel</td></tr></tbody></table></div>
+                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Quinta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr></tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
-                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>830</td></tr><tr><td>Oração sobre as Oferendas</td><td>830</td></tr><tr><td>Prefácio das Virgens/Religiosos</td><td>508</td></tr><tr><td>Oração Eucarística II</td><td>536</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>830</td></tr>
+                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>830</td></tr><tr><td>Oração sobre as Oferendas</td><td>830</td></tr><tr><td>Prefácio das Virgens/Religiosos</td><td>508</td></tr><tr><td>Oração Eucarística II</td><td>537</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>830</td></tr>
                     </tbody></table></div>
                     <div><div class="table-caption">📖 Liturgia da Palavra</div><table class="liturgy-table"><thead><tr><th>Momento</th><th>Ref. Bíblica</th><th>Lec. / Pág.</th></tr></thead><tbody>
                         <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qui_w6">Ef 1,1-10</span></td><td>II / 1088</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qui_w6">Sl 97(98),1.2-3ab.3cd-4.5-6</span></td><td>II / 1089</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qui_w6">Lc 11,47-54</span></td><td>II / 1090</td></tr>
@@ -446,9 +443,9 @@ const programacaoData = {
 
             <!-- SEXTA -->
             <div class="card">
-                <div class="card-header"><h2>Sexta-feira, 16 de Outubro de 2026</h2><span class="color-badge">Cor não informada nas fontes</span></div>
+                <div class="card-header"><h2>Sexta-feira, 16 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 28ª Semana do Tempo Comum (Ano Par II)</div>
-                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr></tbody></table></div>
+                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody><tr><td><span class="p-dia">Sexta</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr></tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
                         <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>410</td></tr><tr><td>Oração sobre as Oferendas</td><td>410</td></tr><tr><td>Prefácio da Oração Eucarística V</td><td>564</td></tr><tr><td>Oração Eucarística V</td><td>564</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>410</td></tr>
@@ -461,18 +458,18 @@ const programacaoData = {
 
             <!-- FIM DE SEMANA -->
             <div class="card">
-                <div class="card-header"><h2>Fim de semana: 17 e 18 de Outubro de 2026</h2><span class="color-badge">Cor a confirmar — cabeçalho da fonte divergente</span></div>
+                <div class="card-header"><h2>Fim de semana: 17 e 18 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29º Domingo do Tempo Comum, Ano A</div>
                 <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody>
-                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela</td><td class="p-cel">Pe. Rafael</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Local não informado na escala</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Rafael</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
                 </tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
-                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Hino de Louvor (Glória)</td><td>442</td></tr><tr><td>Oração da Coleta</td><td>411</td></tr><tr><td>Oração sobre as Oferendas</td><td>411</td></tr><tr><td>Prefácio dos Domingos do Tempo Comum VIII</td><td>481</td></tr><tr><td>Oração Eucarística II</td><td>536</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>411</td></tr>
+                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Hino de Louvor (Glória)</td><td>442</td></tr><tr><td>Oração da Coleta</td><td>411</td></tr><tr><td>Oração sobre as Oferendas</td><td>411</td></tr><tr><td>Prefácio dos Domingos do Tempo Comum VIII</td><td>481</td></tr><tr><td>Oração Eucarística II</td><td>537</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>411</td></tr>
                     </tbody></table></div>
                     <div><div class="table-caption">📖 Liturgia da Palavra</div><table class="liturgy-table"><thead><tr><th>Momento</th><th>Ref. Bíblica</th><th>Lec. / Pág.</th></tr></thead><tbody>
                         <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_dom_w6">Is 45,1.4-6</span></td><td>I / 342</td></tr><tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_dom_w6">Sl 95(96),1.2a.3.4-5.7-8.9-10a.c</span></td><td>I / 342</td></tr><tr><td>2ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="2l_dom_w6">1Ts 1,1-5b</span></td><td>I / 343</td></tr><tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_dom_w6">Mt 22,15-21</span></td><td>I / 344</td></tr>
@@ -490,7 +487,7 @@ const programacaoData = {
                         <tr><td><strong>EVANGELHO</strong><br>Dai, pois, a César o que é de César e a Deus o que é de Deus.</td></tr>
                     </tbody></table></div>
                 </div>
-                <div class="note-gloria-box">Observação das fontes: o cabeçalho repetido no roteiro fornecido identifica “27º Domingo”, 03–04/10 e cor verde, mas o nome do arquivo, as datas e as leituras correspondem ao 29º Domingo (17–18/10). A cor não pode ser confirmada. O roteiro indica Oração Eucarística II na pág. 537; o quadro do Missal indica pág. 536.</div>
+                <div class="note-gloria-box">Em 18/10, omite-se a Festa de São Lucas, Evangelista.</div>
             </div>`
     }
   ]
