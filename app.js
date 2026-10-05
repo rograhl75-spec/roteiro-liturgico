@@ -118,7 +118,33 @@ function showWeek(weekId, options = { focusTab: false }) {
     activeWeekText.textContent = `EXIBINDO NA TELA: ${selectedWeek.fullTitle}`;
   }
 
+  updateRoteiroButtons(selectedWeek);
+
   window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+}
+
+function updateRoteiroButtons(week) {
+  const defaultButton = document.querySelector('.toolbar [data-action="open-active-roteiro"]');
+  if (!defaultButton) return;
+
+  document.querySelectorAll('.toolbar .roteiro-split-btn').forEach((button) => {
+    button.remove();
+  });
+
+  const roteiros = Array.isArray(week.roteiros) ? week.roteiros : [];
+  defaultButton.style.display = roteiros.length > 0 ? 'none' : '';
+
+  let anchor = defaultButton;
+  roteiros.forEach((roteiro) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'action-btn roteiro-split-btn';
+    button.dataset.action = 'open-roteiro';
+    button.dataset.modalId = roteiro.modalId;
+    button.textContent = roteiro.label;
+    anchor.after(button);
+    anchor = button;
+  });
 }
 
 function prefersReducedMotion() {
@@ -599,17 +625,17 @@ function printProgramacaoGeral() {
   });
 }
 
-function printActiveRoteiro() {
+function printActiveRoteiro(contentId, printTitle) {
   const week = getCurrentWeek();
   if (!week) return;
 
-  const content = document.getElementById(`content_roteiro_${week.legacyWeek}`);
+  const content = document.getElementById(contentId || `content_roteiro_${week.legacyWeek}`);
   if (!content) return;
 
   runPrintMount(() => {
     const wrapper = document.createElement('div');
     wrapper.style.padding = '0.5cm';
-    wrapper.appendChild(buildHeaderNode(`Roteiro Litúrgico — ${week.shortTitle}`));
+    wrapper.appendChild(buildHeaderNode(`Roteiro Litúrgico — ${printTitle || week.shortTitle}`));
     wrapper.appendChild(content.cloneNode(true));
     return wrapper;
   });
@@ -761,6 +787,9 @@ function handleActionClick(event) {
     case 'open-active-roteiro':
       openActiveRoteiroModal(target);
       break;
+    case 'open-roteiro':
+      openModal(target.dataset.modalId, target);
+      break;
     case 'open-active-preces':
       openActivePrecesModal(target);
       break;
@@ -789,7 +818,7 @@ function handleActionClick(event) {
       printProgramacaoGeral();
       break;
     case 'print-active-roteiro':
-      printActiveRoteiro();
+      printActiveRoteiro(target.dataset.contentId, target.dataset.printTitle);
       break;
     case 'print-active-preces':
       printActivePreces();

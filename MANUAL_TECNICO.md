@@ -133,6 +133,8 @@ IDs importantes incluem:
 
 Os botões utilizam atributos `data-action`, tratados por `handleActionClick()` em `app.js`.
 
+Quando uma semana tiver mais de um roteiro, defina `roteiros: [{ modalId, label }]` na semana em `programacao.js`. O botão **📖 Roteiro** padrão é substituído por um botão para cada item, abrindo o modal indicado em `modalId`.
+
 ---
 
 ## 8. Impressão e acessibilidade

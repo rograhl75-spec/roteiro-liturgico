@@ -329,6 +329,10 @@ const programacaoData = {
       id: '2026-10-12',
       shortTitle: '12 a 18 Out. (Nossa Sra. Aparecida)',
       fullTitle: 'Semana de 12 a 18 de Outubro de 2026 (29º Domingo do Tempo Comum)',
+      roteiros: [
+        { modalId: 'modal_roteiro_5', label: '📖 Roteiro 29º Domingo' },
+        { modalId: 'modal_roteiro_5_aparecida', label: '📖 Roteiro 12/10 (Aparecida)' }
+      ],
       programacaoHtml: `<!-- SEGUNDA -->
             <div class="card">
                 <div class="card-header">
