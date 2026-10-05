@@ -1,4 +1,4 @@
-const WEEK_ID_FALLBACK = '2026-09-28';
+const WEEK_ID_FALLBACK = '2026-10-05';
 let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();

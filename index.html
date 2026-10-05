@@ -23,8 +23,8 @@
     </header>
 
     <nav class="week-selector-bar" role="tablist" aria-label="Selecionar semana">
-        <button type="button" class="week-tab-btn" id="btn-tab-2026-09-28" role="tab" aria-selected="false" aria-controls="week-panel-2026-09-28" data-action="show-week" data-week-id="2026-09-28">28 Set. a 04 Out. (27º Dom)</button>
         <button type="button" class="week-tab-btn" id="btn-tab-2026-10-05" role="tab" aria-selected="false" aria-controls="week-panel-2026-10-05" data-action="show-week" data-week-id="2026-10-05">05 a 11 Out. (28º Dom)</button>
+        <button type="button" class="week-tab-btn" id="btn-tab-2026-10-12" role="tab" aria-selected="false" aria-controls="week-panel-2026-10-12" data-action="show-week" data-week-id="2026-10-12">12 a 18 Out. (Nossa Sra. Aparecida)</button>
     </nav>
 
     <div class="active-week-banner" id="active-week-banner">
@@ -38,7 +38,6 @@
         <button type="button" class="action-btn" data-action="open-active-preces">🙏 Preces</button>
         <button type="button" class="action-btn secondary" data-action="open-active-leituras">📖 Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" data-action="open-active-reflexoes">💡 Reflexões</button>
-        <a href="adoracao-eucaristica-2026-10-02.pdf" target="_blank" rel="noopener noreferrer" class="action-btn blue">🕊️ Adoração Eucarística</a>
         <a href="https://www.cnbb.org.br/liturgia-diaria/" target="_blank" rel="noopener noreferrer" class="action-btn blue">🔗 Liturgia CNBB</a>
     </div>
 
@@ -164,6 +163,10 @@
                         <label style="color:var(--primary); font-weight:bold; margin-top:4px;"><input type="checkbox" class="reading-checkbox" value="antifonas_4"> 🎵 Antífonas, Aclamação e PASCOM</label>
                     </div>
                 </div>
+            </div>
+            <div id="leituras_semana_5" class="leituras-bloco" style="display:none;">
+                <h4 style="color:var(--primary); margin: 0 0 10px 0; font-size:1.1rem;">Selecione para Imprimir: 12 a 18 de Outubro</h4>
+                <p>Espaço reservado para as leituras da semana de 12 a 18 de outubro de 2026.</p>
             </div>
             
         </div>
@@ -708,6 +711,55 @@
         </div>
     </div>
 </div>
+
+    <div id="modal_roteiro_5" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">ROTEIRO — 12 a 18 de Outubro</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn" data-action="print-active-roteiro">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_5">&times;</button>
+                </div>
+            </div>
+            <div class="script-block" id="content_roteiro_5">
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Roteiro</span><span class="script-text">Espaço reservado para o roteiro litúrgico de segunda-feira, 12 de outubro de 2026 — Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade, Ano A.</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_preces_5" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">PRECES — 12 a 18 de Outubro</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn" data-action="print-active-preces">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_preces_5">&times;</button>
+                </div>
+            </div>
+            <div id="content_preces_5">
+                <div id="preces_sabado_5"><p>Espaço reservado para as preces do fim de semana de 17 e 18 de outubro de 2026.</p></div>
+                <div id="preces_domingo_manha_5"><p>Espaço reservado para as preces do fim de semana de 17 e 18 de outubro de 2026.</p></div>
+                <div id="preces_domingo_noite_5"><p>Espaço reservado para as preces do fim de semana de 17 e 18 de outubro de 2026.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_reflexoes_5" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">REFLEXÕES LITÚRGICAS (12 a 18/10)</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_reflexoes_5">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_reflexoes_5">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-reflexoes">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_reflexoes_5">&times;</button>
+                </div>
+            </div>
+            <div id="content_reflexoes_5" class="modal-body">
+                <p><em>Espaço reservado para as reflexões da semana de 12 a 18 de outubro de 2026.</em></p>
+            </div>
+        </div>
+    </div>
 
     <!-- MODAL LER LEITURA INDIVIDUAL -->
     <div id="generalModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
