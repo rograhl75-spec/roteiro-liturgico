@@ -123,8 +123,12 @@ function showWeek(weekId, options = { focusTab: false }) {
   window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
 }
 
+function getRoteiroExtras(week) {
+  return Array.isArray(week.roteiroExtras) ? week.roteiroExtras : [];
+}
+
 function getRoteiroSuffix(week, roteiroKey) {
-  const extras = Array.isArray(week.roteiroExtras) ? week.roteiroExtras : [];
+  const extras = getRoteiroExtras(week);
   return roteiroKey && extras.includes(roteiroKey) ? `${week.legacyWeek}_${roteiroKey}` : `${week.legacyWeek}`;
 }
 
@@ -134,7 +138,7 @@ function updateRoteiroButtons(week) {
     mainButton.textContent = week.roteiroLabel || '📖 Roteiro';
   }
 
-  const extras = Array.isArray(week.roteiroExtras) ? week.roteiroExtras : [];
+  const extras = getRoteiroExtras(week);
   document.querySelectorAll('.toolbar [data-action="open-active-roteiro"][data-roteiro-key]').forEach((button) => {
     button.hidden = !extras.includes(button.dataset.roteiroKey);
   });
