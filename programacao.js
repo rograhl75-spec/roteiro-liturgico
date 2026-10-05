@@ -333,10 +333,10 @@ const programacaoData = {
             <div class="card">
                 <div class="card-header">
                     <h2>Segunda-feira, 12 de Outubro de 2026</h2>
-                    <span class="color-badge">Cor não informada nas fontes</span>
+                    <span class="color-badge badge-branco">Branco (Solenidade)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade, Ano A</div>
-                <div class="note-gloria-box"><strong>Roteiro litúrgico:</strong> Roteiro ainda não disponibilizado. O botão “Roteiro” permanece reservado para inclusão quando o documento específico de 12/10 for fornecido.</div>
+                <div class="note-gloria-box"><strong>Roteiro litúrgico:</strong> Celebração solene de Nossa Senhora Aparecida. <a href="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf" target="_blank" rel="noopener">Abrir roteiro completo (PDF)</a>. O roteiro também está disponível no botão “Roteiro”.</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
