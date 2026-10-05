@@ -34,7 +34,8 @@
 
     <div class="toolbar" aria-label="Ações principais">
         <button type="button" class="action-btn" data-action="open-active-programacao">🗓️ Programação</button>
-        <button type="button" class="action-btn" data-action="open-active-roteiro">📖 Roteiro</button>
+        <button type="button" class="action-btn" id="btn-roteiro-principal" data-action="open-active-roteiro">📖 Roteiro</button>
+        <button type="button" class="action-btn" id="btn-roteiro-aparecida" data-action="open-active-roteiro" data-roteiro-key="aparecida" hidden>📖 Roteiro 12/10 (Aparecida)</button>
         <button type="button" class="action-btn" data-action="open-active-preces">🙏 Preces</button>
         <button type="button" class="action-btn secondary" data-action="open-active-leituras">📖 Leituras e Antífonas</button>
         <button type="button" class="action-btn accent" data-action="open-active-reflexoes">💡 Reflexões</button>
@@ -753,10 +754,29 @@
     </div>
 </div>
 
+    <div id="modal_roteiro_5_aparecida" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <h3 class="modal-title">ROTEIRO — 12/10 NOSSA SENHORA APARECIDA</h3>
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_5_aparecida">A+</button>
+                    <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_5_aparecida">A-</button>
+                    <button type="button" class="action-btn" data-action="print-active-roteiro" data-roteiro-key="aparecida">🖨️ Imprimir</button>
+                    <button type="button" class="modal-close-btn" data-action="close-modal" data-modal-id="modal_roteiro_5_aparecida">&times;</button>
+                </div>
+            </div>
+            <div class="script-block" id="content_roteiro_5_aparecida">
+                <h4 style="margin:10px 0 2px;color:var(--primary);border-bottom:1px solid var(--border);">SEGUNDA-FEIRA, 12 DE OUTUBRO — APARECIDA</h4>
+                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Roteiro</span><span class="script-text">Roteiro original da celebração solene de Nossa Senhora Aparecida. <a href="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf" target="_blank" rel="noopener">Abrir ou baixar o PDF completo</a>.</span></div>
+                <iframe title="Roteiro completo da Solenidade de Nossa Senhora Aparecida — 12 de outubro de 2026" src="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf#view=FitH" style="width:100%;height:75vh;min-height:360px;border:1px solid var(--border);border-radius:8px;"></iframe>
+            </div>
+        </div>
+    </div>
+
     <div id="modal_roteiro_5" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
         <div class="modal-content">
             <div class="modal-header-bar">
-                <h3 class="modal-title">ROTEIRO — APARECIDA E 29º DOMINGO DO TEMPO COMUM</h3>
+                <h3 class="modal-title">ROTEIRO — 29º DOMINGO DO TEMPO COMUM</h3>
                 <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                     <button type="button" class="action-btn secondary" data-action="text-size" data-step="1" data-target="content_roteiro_5">A+</button>
                     <button type="button" class="action-btn secondary" data-action="text-size" data-step="-1" data-target="content_roteiro_5">A-</button>
@@ -765,10 +785,6 @@
                 </div>
             </div>
             <div class="script-block" id="content_roteiro_5">
-                <h4 style="margin:10px 0 2px;color:var(--primary);border-bottom:1px solid var(--border);">SEGUNDA-FEIRA, 12 DE OUTUBRO — APARECIDA</h4>
-                <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Roteiro</span><span class="script-text">Roteiro original da celebração solene de Nossa Senhora Aparecida. <a href="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf" target="_blank" rel="noopener">Abrir ou baixar o PDF completo</a>.</span></div>
-                <iframe title="Roteiro completo da Solenidade de Nossa Senhora Aparecida — 12 de outubro de 2026" src="./BEM-AVENTURADA%20VIRGEM%20MARIA%20DA%20CONCEI%C3%87%C3%83O%20APARECIDA%2C%20SOLENIDADE%20-%2012%2010%202026%2011h00.pdf#view=FitH" style="width:100%;height:75vh;min-height:360px;border:1px solid var(--border);border-radius:8px;"></iframe>
-
                 <h4 style="margin:10px 0 2px;color:var(--primary);border-bottom:1px solid var(--border);">17 E 18 DE OUTUBRO — 29º DOMINGO DO TEMPO COMUM</h4>
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Nota da fonte</span><span class="script-text">O cabeçalho repetido no PDF diz “27º DOMINGO TEMPO COMUM – 03 E 04 OUTUBRO 2026 – COR VERDE”. O nome do arquivo, as datas e as leituras do roteiro indicam o 29º Domingo, 17 e 18 de outubro. A cor não pode ser confirmada por este cabeçalho divergente.</span></div>
                 <div class="script-row row-rubrica"><span class="script-tag tag-rubrica">Preparação</span><span class="script-text">O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”.</span></div>

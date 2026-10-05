@@ -118,7 +118,26 @@ function showWeek(weekId, options = { focusTab: false }) {
     activeWeekText.textContent = `EXIBINDO NA TELA: ${selectedWeek.fullTitle}`;
   }
 
+  updateRoteiroButtons(selectedWeek);
+
   window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+}
+
+function getRoteiroSuffix(week, roteiroKey) {
+  const extras = Array.isArray(week.roteiroExtras) ? week.roteiroExtras : [];
+  return roteiroKey && extras.includes(roteiroKey) ? `${week.legacyWeek}_${roteiroKey}` : `${week.legacyWeek}`;
+}
+
+function updateRoteiroButtons(week) {
+  const mainButton = document.getElementById('btn-roteiro-principal');
+  if (mainButton) {
+    mainButton.textContent = week.roteiroLabel || '📖 Roteiro';
+  }
+
+  const extras = Array.isArray(week.roteiroExtras) ? week.roteiroExtras : [];
+  document.querySelectorAll('.toolbar [data-action="open-active-roteiro"][data-roteiro-key]').forEach((button) => {
+    button.hidden = !extras.includes(button.dataset.roteiroKey);
+  });
 }
 
 function prefersReducedMotion() {
@@ -218,7 +237,7 @@ function openActiveProgramacaoModal(trigger) {
 function openActiveRoteiroModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
-  openModal(`modal_roteiro_${week.legacyWeek}`, trigger);
+  openModal(`modal_roteiro_${getRoteiroSuffix(week, trigger && trigger.dataset.roteiroKey)}`, trigger);
 }
 
 function openActivePrecesModal(trigger) {
@@ -599,11 +618,11 @@ function printProgramacaoGeral() {
   });
 }
 
-function printActiveRoteiro() {
+function printActiveRoteiro(roteiroKey) {
   const week = getCurrentWeek();
   if (!week) return;
 
-  const content = document.getElementById(`content_roteiro_${week.legacyWeek}`);
+  const content = document.getElementById(`content_roteiro_${getRoteiroSuffix(week, roteiroKey)}`);
   if (!content) return;
 
   runPrintMount(() => {
@@ -789,7 +808,7 @@ function handleActionClick(event) {
       printProgramacaoGeral();
       break;
     case 'print-active-roteiro':
-      printActiveRoteiro();
+      printActiveRoteiro(target.dataset.roteiroKey);
       break;
     case 'print-active-preces':
       printActivePreces();
