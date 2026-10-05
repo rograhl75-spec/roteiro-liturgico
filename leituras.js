@@ -796,6 +796,286 @@ Porque muitos são chamados, e poucos são escolhidos".
 Palavra da Salvação.
 R. Glória a vós, Senhor.`
     },
+    '1l_seg_w6': {
+        title: '1ª Leitura — Ester 5,1b-2; 7,2b-3 (Lecionário I, pág. 1044)',
+        day: 'Segunda-feira (12/10) — Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade',
+        text: `Concede-me a vida do meu povo - eis o meu desejo!
+
+Leitura do Livro de Ester 5,1b-2; 7,2b-3
+
+Ester revestiu-se com vestes de rainha e foi colocar-se no vestíbulo interno do palácio real, frente à residência do rei. O rei estava sentado no trono real, na sala do trono, frente à entrada. Ao ver a rainha Ester parada no vestíbulo, olhou para ela com agrado e estendeu-lhe o cetro de ouro que tinha na mão, e Ester aproximou-se para tocar a ponta do cetro. Então, o rei lhe disse: “O que me pedes, Ester; o que queres que eu faça? Ainda que me pedisses a metade do meu reino, ela te seria concedida.” Ester respondeu-lhe: “Se ganhei as tuas boas graças, ó rei, e se for de teu agrado, concede-me a vida — eis o meu pedido! — e a vida do meu povo — eis o meu desejo!”
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_seg_w6': {
+        title: 'Salmo Responsorial — Salmo 44(45),11-12a.12b-13.14-15a.15b-16 (Lecionário I, pág. 1044)',
+        day: 'Segunda-feira (12/10) — Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade',
+        text: `R. Escutai, minha filha, olhai, ouvi isto: que o Rei se encante com vossa beleza!
+
+Escutai, minha filha, olhai, ouvi isto: “Esquecei vosso povo e a casa paterna!” Que o Rei se encante com vossa beleza! Prestai-lhe homenagem: é vosso Senhor! R.
+
+O povo de Tiro vos traz seus presentes, os grandes do povo vos pedem favores. Majestosa, a princesa real vem chegando, vestida de ricos brocados de ouro.
+
+Em vestes vistosas ao Rei se dirige, e as virgens amigas lhe formam cortejo; entre cantos de festa e com grande alegria, ingressam, então, no palácio real. R.`
+    },
+    '2l_seg_w6': {
+        title: '2ª Leitura — Apocalipse 12,1.5.13a.15-16a (Lecionário I, pág. 1045)',
+        day: 'Segunda-feira (12/10) — Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade',
+        text: `Um grande sinal apareceu no céu.
+
+Leitura do Livro do Apocalipse de São João 12,1.5.13a.15-16a
+
+Apareceu no céu um grande sinal: uma mulher vestida do sol, tendo a lua debaixo dos pés e sobre a cabeça uma coroa de doze estrelas. E ela deu à luz um filho homem, que veio para governar todas as nações com cetro de ferro. Mas o filho foi levado para junto de Deus e do seu trono. Quando viu que tinha sido expulso para a terra, o dragão começou a perseguir a mulher que tinha dado à luz o menino. A serpente, então, vomitou como um rio de água atrás da mulher, a fim de a submergir. A terra, porém, veio em socorro da mulher.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'ev_seg_w6': {
+        title: 'Evangelho — João 2,1-11 (Lecionário I, pág. 1046)',
+        day: 'Segunda-feira (12/10) — Bem-aventurada Virgem Maria da Conceição Aparecida, Solenidade',
+        text: `Aclamação ao Evangelho — Jo 2,5b
+
+R. Aleluia, Aleluia, Aleluia.
+V. Disse a mãe de Jesus aos serventes: “Fazei tudo o que Ele disser!”
+
+Evangelho
+Fazei o que ele vos disser.
+
+Proclamação do Evangelho de Jesus Cristo segundo João 2,1-11
+
+Naquele tempo, houve um casamento em Caná da Galileia. A mãe de Jesus estava presente. Também Jesus e seus discípulos tinham sido convidados para o casamento. Como o vinho veio a faltar, a mãe de Jesus lhe disse: “Eles não têm mais vinho.” Jesus respondeu-lhe: “Mulher, por que dizes isto a mim? Minha hora ainda não chegou.” Sua mãe disse aos que estavam servindo: “Fazei o que ele vos disser.” Estavam seis talhas de pedra colocadas aí para a purificação que os judeus costumam fazer. Em cada uma delas cabiam mais ou menos cem litros. Jesus disse aos que estavam servindo: “Enchei as talhas de água.” Encheram-nas até a boca. Jesus disse: “Agora tirai e levai ao mestre-sala.” E eles levaram. O mestre-sala experimentou a água, que se tinha transformado em vinho. Ele não sabia de onde vinha, mas os que estavam servindo sabiam, pois eram eles que tinham tirado a água. O mestre-sala chamou então o noivo e lhe disse: “Todo mundo serve primeiro o vinho melhor e, quando os convidados já estão embriagados, serve o vinho menos bom. Mas tu guardaste o vinho melhor até agora!” Este foi o início dos sinais de Jesus. Ele o realizou em Caná da Galileia e manifestou a sua glória, e seus discípulos creram nele.
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_ter_w6': {
+        title: '1ª Leitura — Gálatas 5,1-6 (Lecionário II, pág. 1081)',
+        day: 'Terça-feira (13/10) — 28ª Semana do Tempo Comum',
+        text: `Observar ou não a circuncisão não tem valor algum; o que vale é a fé agindo pela caridade.
+
+Leitura da Carta de São Paulo aos Gálatas 5,1-6
+
+Irmãos, é para a liberdade que Cristo nos libertou. Ficai pois firmes e não vos deixeis amarrar de novo ao jugo da escravidão. Eis que eu, Paulo, vos digo que Cristo não será de nenhum proveito para vós, se vos deixardes circuncidar. Mais uma vez, atesto a todo homem circuncidado que ele está obrigado a observar toda a Lei. Vós que procurais a vossa justificação na Lei, rompestes com Cristo, decaístes da graça. Quanto a nós, que nos deixamos conduzir pelo Espírito, é da fé que aguardamos a justificação, objeto de nossa esperança. Com efeito, em Jesus Cristo, o que vale é a fé agindo pela caridade; observar ou não a circuncisão não tem valor algum.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_ter_w6': {
+        title: 'Salmo Responsorial — Salmo 118(119),41.43.44.45.47.48 (Lecionário II, pág. 1081)',
+        day: 'Terça-feira (13/10) — 28ª Semana do Tempo Comum',
+        text: `R. Senhor, que desça sobre mim a vossa graça!
+
+Senhor, que desça sobre mim a vossa graça e a vossa salvação que prometestes! R.
+
+Não retireis vossa verdade de meus lábios, pois eu confio em vossos justos julgamentos! R.
+
+Cumprirei constantemente a vossa lei; para sempre, eternamente a cumprirei! R.
+
+É amplo e agradável meu caminho, porque busco e pesquiso as vossas ordens. R.
+
+Muito me alegro com os vossos mandamentos, que eu amo, amo tanto, mais que tudo! R.
+
+Elevarei as minhas mãos para louvar-vos e com prazer meditarei vossa vontade. R.`
+    },
+    'ev_ter_w6': {
+        title: 'Evangelho — Lucas 11,37-41 (Lecionário II, pág. 1082)',
+        day: 'Terça-feira (13/10) — 28ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Hb 4,12
+
+R. Aleluia, Aleluia, Aleluia.
+V. A palavra do Senhor é viva e eficaz: ela julga os pensamentos e as intenções do coração.
+
+Evangelho
+Dai esmola do que vós possuís e tudo ficará puro para vós.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,37-41
+
+Naquele tempo, enquanto Jesus falava, um fariseu convidou-o para jantar com ele. Jesus entrou e pôs-se à mesa. O fariseu ficou admirado ao ver que Jesus não tivesse lavado as mãos antes da refeição. O Senhor disse ao fariseu: “Vós fariseus, limpais o copo e o prato por fora, mas o vosso interior está cheio de roubos e maldades. Insensatos! Aquele que fez o exterior não fez também o interior? Antes, dai esmola do que vós possuís e tudo ficará puro para vós.”
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_qua_w6': {
+        title: '1ª Leitura — Gálatas 5,18-25 (Lecionário II, pág. 1084)',
+        day: 'Quarta-feira (14/10) — 28ª Semana do Tempo Comum',
+        text: `Os que pertencem a Jesus Cristo crucificaram a carne com suas paixões.
+
+Leitura da Carta de São Paulo aos Gálatas 5,18-25
+
+Irmãos, se sois conduzidos pelo Espírito, então não estais sob o jugo da Lei. São bem conhecidas as obras da carne: fornicação, libertinagem, devassidão, idolatria, feitiçaria, inimizades, contendas, ciúmes, iras, intrigas, discórdias, facções, invejas, bebedeiras, orgias, e coisas semelhantes a estas. Eu vos previno, como aliás já o fiz: os que praticam essas coisas não herdarão o reino de Deus. Porém, o fruto do Espírito é: caridade, alegria, paz, longanimidade, benignidade, bondade, lealdade, mansidão, continência. Contra estas coisas não existe lei. Os que pertencem a Jesus Cristo crucificaram a carne com suas paixões e seus maus desejos. Se vivemos pelo Espírito, procedamos também segundo o Espírito, corretamente.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_qua_w6': {
+        title: 'Salmo Responsorial — Salmo 1,1-2.3.4.6 (Lecionário II, pág. 1085)',
+        day: 'Quarta-feira (14/10) — 28ª Semana do Tempo Comum',
+        text: `R. Senhor, quem vos seguir, terá a luz da vida!
+
+Feliz é todo aquele que não anda conforme os conselhos dos perversos; que não entra no caminho dos malvados, nem junto aos zombadores vai sentar-se; mas encontra seu prazer na lei de Deus e a medita, dia e noite, sem cessar. R.
+
+Eis que ele é semelhante a uma árvore que à beira da torrente está plantada; ela sempre dá seus frutos a seu tempo, e jamais as suas folhas vão murchar. Eis que tudo o que ele faz vai prosperar. R.
+
+Mas bem outra é a sorte dos perversos. Ao contrário, são iguais à palha seca espalhada e dispersada pelo vento. Pois Deus vigia o caminho dos eleitos, mas a estrada dos malvados leva à morte. R.`
+    },
+    'ev_qua_w6': {
+        title: 'Evangelho — Lucas 11,42-46 (Lecionário II, pág. 1086)',
+        day: 'Quarta-feira (14/10) — 28ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Jo 10,27
+
+R. Aleluia, Aleluia, Aleluia.
+V. Minhas ovelhas escutam minha voz, eu as conheço e elas me seguem.
+
+Evangelho
+Aí de vós, fariseus; ai de vós também, mestres da Lei.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,42-46
+
+Naquele tempo, disse o Senhor: “Ai de vós, fariseus, porque pagais o dízimo da hortelã, da arruda e de todas as outras ervas, mas deixais de lado a justiça e o amor de Deus. Vós deveríeis praticar isso, sem deixar de lado aquilo. Ai de vós, fariseus, porque gostais do lugar de honra nas sinagogas, e de serdes cumprimentados nas praças públicas. Ai de vós, porque sois como túmulos que não se veem, sobre os quais os homens andam sem saber.” Um mestre da Lei tomou a palavra e disse: “Mestre, falando assim, insultas-nos também a nós!” Jesus respondeu: “Ai de vós também, mestres da Lei, porque colocais sobre os homens cargas insuportáveis, e vós mesmos não tocais nessas cargas, nem com um só dedo.”
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_qui_w6': {
+        title: '1ª Leitura — Efésios 1,1-10 (Lecionário II, pág. 1088)',
+        day: 'Quinta-feira (15/10) — Santa Teresa de Jesus, Memória',
+        text: `Em Cristo, ele nos escolheu, antes da fundação do mundo.
+
+Início da Carta de São Paulo aos Efésios 1,1-10
+
+Paulo, apóstolo de Cristo Jesus pela vontade de Deus, aos santos e fiéis em Cristo Jesus: a vós, graça e paz, da parte de Deus, nosso Pai, e do Senhor Jesus Cristo. Bendito seja Deus, Pai de nosso Senhor Jesus Cristo. Ele nos abençoou com toda a bênção do seu Espírito em virtude de nossa união com Cristo, no céu. Em Cristo, ele nos escolheu, antes da fundação do mundo, para que sejamos santos e irrepreensíveis sob o seu olhar, no amor. Ele nos predestinou para sermos seus filhos adotivos por intermédio de Jesus Cristo, conforme a decisão da sua vontade, para o louvor da sua glória e da graça com que ele nos cumulou no seu Bem-amado. Pelo seu sangue, nós somos libertados. Nele, as nossas faltas são perdoadas, segundo a riqueza da sua graça, que Deus derramou profusamente sobre nós, abrindo-nos a toda a sabedoria e prudência. Ele nos fez conhecer o mistério da sua vontade, o desígnio benevolente que de antemão determinou em si mesmo, para levar à plenitude o tempo estabelecido e recapitular em Cristo, o universo inteiro: tudo o que está nos céus e tudo o que está sobre a terra.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_qui_w6': {
+        title: 'Salmo Responsorial — Salmo 97(98),1.2-3ab.3cd-4.5-6 (Lecionário II, pág. 1089)',
+        day: 'Quinta-feira (15/10) — Santa Teresa de Jesus, Memória',
+        text: `R. O Senhor fez conhecer seu poder salvador perante as nações.
+
+Cantai ao Senhor Deus um canto novo, porque ele fez prodígios! Sua mão e o seu braço forte e santo alcançaram-lhe a vitória. R.
+
+O Senhor fez conhecer a salvação, e às nações, sua justiça; recordou o seu amor sempre fiel pela casa de Israel. R.
+
+Os confins do universo contemplaram a salvação do nosso Deus. Aclamai o Senhor Deus, ó terra inteira, alegrai-vos e exultai! R.
+
+Cantai salmos ao Senhor ao som da harpa e da cítara suave! Aclamai, com os clarins e as trombetas, ao Senhor, o nosso Rei! R.`
+    },
+    'ev_qui_w6': {
+        title: 'Evangelho — Lucas 11,47-54 (Lecionário II, pág. 1090)',
+        day: 'Quinta-feira (15/10) — Santa Teresa de Jesus, Memória',
+        text: `Aclamação ao Evangelho — Jo 14,6
+
+R. Aleluia, Aleluia, Aleluia.
+V. Sou o Caminho, a Verdade e a Vida, ninguém vem ao Pai, senão por mim.
+
+Evangelho
+Será pedida conta do sangue de todos os profetas, desde o sangue de Abel até o sangue de Zacarias.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,47-54
+
+Naquele tempo, disse o Senhor: “Ai de vós, porque construís os túmulos dos profetas; no entanto, foram vossos pais que os mataram. Com isso, vós sois testemunhas e aprovais as obras de vossos pais, pois eles mataram os profetas e vós construís os túmulos. É por isso que a sabedoria de Deus afirmou: Eu lhes enviarei profetas e apóstolos, e eles matarão e perseguirão alguns deles, a fim de que se peçam contas a esta geração do sangue de todos os profetas, derramado desde a criação do mundo, desde o sangue de Abel até o sangue de Zacarias, que foi morto entre o altar e o santuário. Sim, eu vos digo: serão pedidas contas disso a esta geração. Ai de vós, mestres da Lei, porque tomastes a chave da ciência. Vós mesmos não entrastes, e ainda impedistes os que queriam entrar.” Quando Jesus saiu daí, os mestres da Lei e os fariseus começaram a tratá-lo mal, e a provocá-lo sobre muitos pontos. Armavam ciladas, para pegá-lo de surpresa, por qualquer palavra que saísse de sua boca.
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_sex_w6': {
+        title: '1ª Leitura — Efésios 1,11-14 (Lecionário II, pág. 1092)',
+        day: 'Sexta-feira (16/10) — 28ª Semana do Tempo Comum',
+        text: `Os que colocaram a sua esperança em Cristo, nele foram marcados com o selo do Espírito Santo.
+
+Leitura da Carta de São Paulo aos Efésios 1,11-14
+
+Irmãos, em Cristo nós recebemos a nossa parte. Segundo o projeto daquele que conduz tudo conforme a decisão de sua vontade, nós fomos predestinados a sermos, para o louvor de sua glória, os que de antemão colocaram a sua esperança em Cristo. Nele também vós ouvistes a palavra da verdade, o evangelho que vos salva. Nele, ainda, acreditastes e fostes marcados com o selo do Espírito prometido, o Espírito Santo, o que é o penhor da nossa herança para a redenção do povo que ele adquiriu, para o louvor da sua glória.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_sex_w6': {
+        title: 'Salmo Responsorial — Salmo 32(33),1-2.4-5.12-13 (Lecionário II, pág. 1092)',
+        day: 'Sexta-feira (16/10) — 28ª Semana do Tempo Comum',
+        text: `R. Feliz o povo que o Senhor escolheu por sua herança!
+
+Ó justos, alegrai-vos no Senhor! Aos retos fica bem glorificá-lo. Dai graças ao Senhor ao som da harpa, na lira de dez cordas celebrai-o! R.
+
+Pois reta é a palavra do Senhor, e tudo o que ele faz merece fé. Deus ama o direito e a justiça, transborda em toda a terra a sua graça. R.
+
+Feliz o povo cujo Deus é o Senhor, e a nação que escolheu por sua herança! Dos altos céus o Senhor olha e observa; ele se inclina para olhar todos os homens. R.`
+    },
+    'ev_sex_w6': {
+        title: 'Evangelho — Lucas 12,1-7 (Lecionário II, pág. 1093)',
+        day: 'Sexta-feira (16/10) — 28ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho
+
+R. Aleluia, Aleluia, Aleluia.
+V. Sobre nós venha, Senhor, a vossa graça, da mesma forma que em vós nós esperamos!
+
+Evangelho
+Até mesmo os cabelos de vossa cabeça estão todos contados.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,1-7
+
+Naquele tempo, milhares de pessoas se reuniram, a ponto de uns pisarem os outros. Jesus começou a falar, primeiro a seus discípulos: “Tomai cuidado com o fermento dos fariseus, que é a hipocrisia. Não há nada de escondido, que não venha a ser revelado, e não há nada de oculto que não venha a ser conhecido. Portanto, tudo o que tiverdes dito na escuridão, será ouvido à luz do dia; e o que tiverdes pronunciado ao pé do ouvido, no quarto, será proclamado sobre os telhados. Pois bem, meus amigos, eu vos digo: não tenhais medo daqueles que matam o corpo, não podendo fazer mais do que isto. Vou mostrar-vos a quem deveis temer: temei aquele que, depois de tirar a vida, tem o poder de lançar-vos no inferno. Sim, eu vos digo, a este temei. Não se vendem cinco pardais por uma pequena quantia? No entanto, nenhum deles é esquecido por Deus. Até mesmo os cabelos de vossa cabeça estão todos contados. Não tenhais medo! Vós valeis mais do que muitos pardais.”
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_dom_w6': {
+        title: '1ª Leitura — Isaías 45,1.4-6 (Lecionário I, pág. 342)',
+        day: 'Fim de Semana (17 e 18/10) — 29º Domingo do Tempo Comum',
+        text: `Tomei Ciro pela mão direita, para que submeta os povos ao seu domínio.
+
+Leitura do Livro do Profeta Isaías 45,1.4-6
+
+Isto diz o Senhor sobre Ciro, seu Ungido: “Tomei-o pela mão para submeter os povos ao seu domínio, dobrar o orgulho dos reis, abrir todas as portas à sua marcha, e para não deixar trancar os portões. Por causa de meu servo Jacó, e de meu eleito Israel, chamei-te pelo nome; reservei-te, e não me reconheceste. Eu sou o Senhor, não existe outro: fora de mim não há deus. Armei-te guerreiro, sem me reconheceres, para que todos saibam, do oriente ao ocidente, que fora de mim outro não existe. Eu sou o Senhor, não há outro.”
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_dom_w6': {
+        title: 'Salmo Responsorial — Salmo 95(96),1.2a.3.4-5.7-8.9-10a.c (Lecionário I, pág. 342)',
+        day: 'Fim de Semana (17 e 18/10) — 29º Domingo do Tempo Comum',
+        text: `R. Ó família das nações, dai ao Senhor poder e glória!
+
+Cantai ao Senhor Deus um canto novo, cantai ao Senhor Deus, ó terra inteira! Manifestai a sua glória entre as nações, e entre os povos do universo seus prodígios! R.
+
+Pois Deus é grande e muito digno de louvor, é mais terrível e maior que os outros deuses, porque um nada são os deuses dos pagãos. Foi o Senhor e nosso Deus quem fez os céus. R.
+
+Ó família das nações, dai ao Senhor, ó nações, dai ao Senhor poder e glória, dai-lhe a glória que é devida ao seu nome! Oferecei um sacrifício nos seus átrios. R.
+
+Adorai-o no esplendor da santidade, terra inteira, estremecei diante dele! Publicai entre as nações: “Reina o Senhor!” pois os povos ele julga com justiça. R.`
+    },
+    '2l_dom_w6': {
+        title: '2ª Leitura — 1ª Tessalonicenses 1,1-5b (Lecionário I, pág. 343)',
+        day: 'Fim de Semana (17 e 18/10) — 29º Domingo do Tempo Comum',
+        text: `Recordamo-nos sem cessar da vossa fé, da caridade e da esperança.
+
+Leitura da Primeira Carta de São Paulo aos Tessalonicenses 1,1-5b
+
+Paulo, Silvano e Timóteo, à Igreja dos tessalonicenses, reunida em Deus Pai e no Senhor Jesus Cristo: a vós, graça e paz! Damos graças a Deus por todos vós, lembrando-vos sempre em nossas orações. Diante de Deus, nosso Pai, recordamos sem cessar a atuação da vossa fé, o esforço da vossa caridade e a firmeza da vossa esperança em nosso Senhor Jesus Cristo. Sabemos, irmãos amados por Deus, que sois do número dos escolhidos. Porque o nosso evangelho não chegou até vós somente por meio de palavras, mas também mediante a força que é o Espírito Santo; e isso, com toda a abundância.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'ev_dom_w6': {
+        title: 'Evangelho — Mateus 22,15-21 (Lecionário I, pág. 344)',
+        day: 'Fim de Semana (17 e 18/10) — 29º Domingo do Tempo Comum',
+        text: `Aclamação ao Evangelho — cf. Fl 2,15d.16a
+
+R. Aleluia, Aleluia, Aleluia.
+V. Como astros no mundo, vós resplandeçais, mensagem de vida ao mundo anunciando, da vida a palavra, com fé, proclameis, quais astros luzentes no mundo brilheis.
+
+Evangelho
+Dai, pois, a César o que é de César e a Deus o que é de Deus.
+
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 22,15-21
+
+Naquele tempo, os fariseus fizeram um plano para apanhar Jesus em alguma palavra. Então mandaram os seus discípulos, junto com alguns do partido de Herodes, para dizerem a Jesus: “Mestre, sabemos que és verdadeiro e que, de fato, ensinas o caminho de Deus. Não te deixas influenciar pela opinião dos outros, pois não julgas um homem pelas aparências. Dize-nos, pois, o que pensas: É lícito ou não pagar imposto a César?” Jesus percebeu a maldade deles e disse: “Hipócritas! Por que me preparais uma armadilha? Mostrai-me a moeda do imposto!” Levaram-lhe então a moeda. E Jesus disse: “De quem é a figura e a inscrição desta moeda?” Eles responderam: “De César.” Jesus então lhes disse: “Dai pois a César o que é de César, e a Deus o que é de Deus.”
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
 };
 
 window.readingsData = readingsData;
