@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "validate:data": "node validate-data.js"
+    "validate:data": "node validate-data.js",
+    "version": "node build-version.js"
   }
 }

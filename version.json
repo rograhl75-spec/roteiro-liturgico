@@ -1,0 +1,16 @@
+{
+  "version": "c384d0ad863db23a73906261ca1592fd5dc8b0731b19d6863a57add16e81f63a",
+  "files": {
+    "./index.html": "1c178ca693bfc7f580cc115d103e63fdc27e63a46962207839dceee7bdff9a0d",
+    "./styles.css": "d3f0c1bffb414d8509c49ad69951a0767a2b819c4460a43220e46b3fd6452705",
+    "./app.js": "2292b9c16757e7ea421d0d36d4e4a0c9cab7fef1860ee1ff8d30fb504da4398d",
+    "./programacao.js": "fa0c9abc880727791ea74b40fa5a253d9f86848250b91c4bbc9ae385cd32db35",
+    "./leituras.js": "53d7e2428a9ccebdbf67693eac28a9b96eb9ffba6e8435cc783fa2a708d5ff4b",
+    "./antifonas.js": "886b8632b3abbb68619ff0057060ba099d3629597b669cafb65acb79feaec048",
+    "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",
+    "./sw.js": "068cfd081489bb413cc896696f88877841c4d75e241abafae47b9af8e8d2c0a7",
+    "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",
+    "./icone.svg": "29e67c935ec3b53d8a58354e7bcfb6cdd64d934ccd9cf83af1f27cf7eaa7b063",
+    "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93"
+  }
+}
