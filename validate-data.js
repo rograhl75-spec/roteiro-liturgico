@@ -7,11 +7,13 @@ const leiturasPath = path.join(root, 'leituras.js');
 const programacaoPath = path.join(root, 'programacao.js');
 const indexPath = path.join(root, 'index.html');
 const antifonasPath = path.join(root, 'antifonas.js');
+const appPath = path.join(root, 'app.js');
 
 const leiturasSource = fs.readFileSync(leiturasPath, 'utf8');
 const programacaoSource = fs.readFileSync(programacaoPath, 'utf8');
 const antifonasSource = fs.readFileSync(antifonasPath, 'utf8');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
+const appSource = fs.readFileSync(appPath, 'utf8');
 
 function runInSandbox(source, fileName) {
   const sandbox = { window: {} };
@@ -222,6 +224,13 @@ if (thirtiethSundayWeek) {
     if (!condition) issues.push(`Semana 19–25/10/2026: ${message}`);
   };
   const requiredReadingKeys = ['1l_dom_w7', 'sl_dom_w7', '2l_dom_w7', 'ev_dom_w7'];
+  const weekdayReadingKeys = [
+    '1l_seg_w7', 'sl_seg_w7', 'ev_seg_w7',
+    '1l_ter_w7', 'sl_ter_w7', 'ev_ter_w7',
+    '1l_qua_w7', 'sl_qua_w7', 'ev_qua_w7',
+    '1l_qui_w7', 'sl_qui_w7', 'ev_qui_w7',
+    '1l_sex_w7', 'sl_sex_w7', 'ev_sex_w7'
+  ];
   const precesModal = indexContent.split('<div id="modal_preces_6"')[1]
     ?.split('<div id="modal_reflexoes_6"')[0] || '';
   const roteiroModal = indexContent.split('<div id="modal_roteiro_6"')[1]
@@ -246,6 +255,19 @@ if (thirtiethSundayWeek) {
     && html.includes('346')
     && html.includes('347'),
   'as quatro leituras dominicais e as páginas do Lecionário devem estar integradas');
+  expect(weekdayReadingKeys.every((key) => {
+    const reading = readingsData[key];
+    return reading && reading.text.length > 100
+      && html.includes(`data-reading-key="${key}"`)
+      && indexContent.includes(`value="${key}"`);
+  }),
+  'as quinze leituras dos dias úteis devem ter texto completo, link e opção de seleção');
+  expect(['Segunda-feira (19/10)', 'Terça-feira (20/10)', 'Quarta-feira (21/10)',
+    'Quinta-feira (22/10)', 'Sexta-feira (23/10)', 'Fim de Semana (24 e 25/10)']
+    .every((day) => indexContent.includes(day))
+    && ['1l_dom_w7', 'sl_dom_w7', '2l_dom_w7', 'ev_dom_w7']
+      .every((key) => indexContent.includes(`value="${key}"`)),
+  'o seletor deve agrupar cada dia útil e as leituras do fim de semana');
   expect(antifonasSource.includes('antifonas_7')
     && ['Cf. Sl 104,3-4', 'Cf. Jo 14,23', 'Cf. Sl 19,6', 'Ef 5,2',
       'Se fizerdes algum mal à viúva e ao órfão',
@@ -261,12 +283,18 @@ if (thirtiethSundayWeek) {
       '4. RITO DA COMUNHÃO', '5. RITOS DE ENCERRAMENTO']
       .every((text) => roteiroModal.includes(text))
     && roteiroModal.includes('print-active-roteiro')
+    && roteiroModal.includes('roteiro-section-title')
+    && !roteiroModal.includes('<pre class="script-text"')
     && roteiroPdfs.some((file) => fs.existsSync(path.join(root, file))),
   'o roteiro integral e seu PDF-fonte devem estar disponíveis em modal imprimível');
   expect(indexContent.includes('id="leituras_semana_6"')
     && indexContent.includes('value="antifonas_7"')
     && indexContent.includes('print-active-preces')
-    && indexContent.includes('id="btn-tab-2026-10-19"'),
+    && indexContent.includes('data-action="preview-selected-readings"')
+    && indexContent.includes('data-action="print-leituras-view"')
+    && indexContent.includes('id="btn-tab-2026-10-19"')
+    && ['openActiveLeiturasModal', 'previewSelectedReadings', 'printLeiturasFromView',
+      'createAntifonaBlock', 'openReading'].every((name) => appSource.includes(`function ${name}(`)),
   'a semana deve estar acessível na aba e nos seletores imprimíveis');
 }
 

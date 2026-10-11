@@ -100,6 +100,8 @@
         .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
         .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
         .row-rubrica .script-text { border-left: 3px solid #64748b; font-style: italic; background: #f8fafc; color: #475569; }
+        .roteiro-integral { display: block; margin: 0 0 12px; font-family: inherit; }
+        .roteiro-section-title { display: block; margin: 1.2rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid #cbd5e1; color: var(--primary); font-size: 1.05em; }
         
         .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
         table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }

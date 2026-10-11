@@ -502,7 +502,7 @@ const programacaoData = {
                     <h2>Segunda-feira, 19 de Outubro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30ª Semana do Tempo Comum (Ano A)</div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -530,9 +530,9 @@ const programacaoData = {
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td>Ef 2,1-10</td><td style="text-align:center;">II / 1099</td></tr>
-                                <tr><td>Salmo</td><td>Sl 99(100),2.3.4.5 (R. 3b)</td><td style="text-align:center;">II / 1100</td></tr>
-                                <tr><td>Evangelho</td><td>Lc 12,13-21</td><td style="text-align:center;">II / 1100</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_seg_w7">Ef 2,1-10</span></td><td style="text-align:center;">II / 1099</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_seg_w7">Sl 99(100),2.3.4.5 (R. 3b)</span></td><td style="text-align:center;">II / 1100</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_seg_w7">Lc 12,13-21</span></td><td style="text-align:center;">II / 1100</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -545,7 +545,7 @@ const programacaoData = {
                     <h2>Terça-feira, 20 de Outubro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30ª Semana do Tempo Comum (Ano A)</div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -573,9 +573,9 @@ const programacaoData = {
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td>Ef 2,12-22</td><td style="text-align:center;">II / 1103</td></tr>
-                                <tr><td>Salmo</td><td>Sl 84(85),9ab-10.11-12.13-14 (R. cf. 9)</td><td style="text-align:center;">II / 1104</td></tr>
-                                <tr><td>Evangelho</td><td>Lc 12,35-38</td><td style="text-align:center;">II / 1105</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_ter_w7">Ef 2,12-22</span></td><td style="text-align:center;">II / 1103</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_ter_w7">Sl 84(85),9ab-10.11-12.13-14 (R. cf. 9)</span></td><td style="text-align:center;">II / 1104</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_ter_w7">Lc 12,35-38</span></td><td style="text-align:center;">II / 1105</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -588,7 +588,7 @@ const programacaoData = {
                     <h2>Quarta-feira, 21 de Outubro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30ª Semana do Tempo Comum (Ano A)</div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -616,9 +616,9 @@ const programacaoData = {
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td>Ef 3,2-12</td><td style="text-align:center;">II / 1107</td></tr>
-                                <tr><td>Salmo</td><td>Is 12,2-3.4bcd.5-6 (R. 3)</td><td style="text-align:center;">II / 1108</td></tr>
-                                <tr><td>Evangelho</td><td>Lc 12,39-48</td><td style="text-align:center;">II / 1109</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qua_w7">Ef 3,2-12</span></td><td style="text-align:center;">II / 1107</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qua_w7">Is 12,2-3.4bcd.5-6 (R. cf. 3)</span></td><td style="text-align:center;">II / 1108</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qua_w7">Lc 12,39-48</span></td><td style="text-align:center;">II / 1109</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -631,7 +631,7 @@ const programacaoData = {
                     <h2>Quinta-feira, 22 de Outubro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30ª Semana do Tempo Comum (Ano A)</div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -659,9 +659,9 @@ const programacaoData = {
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td>Ef 3,14-21</td><td style="text-align:center;">II / 1111</td></tr>
-                                <tr><td>Salmo</td><td>Sl 32(33),1-2.4-5.11-12.18-19 (R. 5b)</td><td style="text-align:center;">II / 1112</td></tr>
-                                <tr><td>Evangelho</td><td>Lc 12,49-53</td><td style="text-align:center;">II / 1113</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_qui_w7">Ef 3,14-21</span></td><td style="text-align:center;">II / 1111</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_qui_w7">Sl 32(33),1-2.4-5.11-12.18-19 (R. 5b)</span></td><td style="text-align:center;">II / 1112</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_qui_w7">Lc 12,49-53</span></td><td style="text-align:center;">II / 1113</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -674,7 +674,7 @@ const programacaoData = {
                     <h2>Sexta-feira, 23 de Outubro de 2026</h2>
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
-                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30ª Semana do Tempo Comum (Ano A)</div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -702,9 +702,9 @@ const programacaoData = {
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
-                                <tr><td>1ª Leitura</td><td>Ef 4,1-6</td><td style="text-align:center;">II / 1114</td></tr>
-                                <tr><td>Salmo</td><td>Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)</td><td style="text-align:center;">II / 1115</td></tr>
-                                <tr><td>Evangelho</td><td>Lc 12,54-59</td><td style="text-align:center;">II / 1116</td></tr>
+                                <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_sex_w7">Ef 4,1-6</span></td><td style="text-align:center;">II / 1114</td></tr>
+                                <tr><td>Salmo</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_sex_w7">Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)</span></td><td style="text-align:center;">II / 1115</td></tr>
+                                <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_sex_w7">Lc 12,54-59</span></td><td style="text-align:center;">II / 1116</td></tr>
                             </tbody>
                         </table>
                     </div>
