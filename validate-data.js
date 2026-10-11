@@ -169,6 +169,42 @@ if (correctedWeek) {
   expect(domingoContent.includes('29º Domingo do Tempo Comum — 17 e 18 de outubro de 2026 — Cor verde')
     && !domingoContent.includes('cabeçalho divergente'),
     'o roteiro dominical deve refletir o cabeçalho corrigido');
+  const precesModal = indexContent.split('<div id="modal_preces_5"')[1]?.split('<div id="modal_reflexoes_5"')[0] || '';
+  const assembleiaPrayer = 'Deus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.';
+  const prayerSections = [
+    ['preces_sabado_5', 'preces_domingo_manha_5', [
+      'SÁBADO — 17/10 — 18h30', 'Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:',
+      'R. Ouvi, Senhor, a oração de vosso povo!', 'Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, nós vos pedimos.',
+      'Daí a todos os povos fazerem parte do vosso Reino, para que sejam salvos, nós vos pedimos.'
+    ]],
+    ['preces_domingo_manha_5', 'preces_domingo_noite_5', [
+      'DOMINGO — 18/10 — 09h00 e 11h00', 'Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:',
+      'R. Senhor, vós sois nossa vida e salvação!', 'Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, nós vos pedimos.',
+      'Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, nós vos pedimos.'
+    ]],
+    ['preces_domingo_noite_5', null, [
+      'DOMINGO — 18/10 — 18h30', 'Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:',
+      'R. Senhor, venha a nós o vosso Reino!', 'Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, nós vos pedimos.',
+      'Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, nós vos pedimos.'
+    ]]
+  ].map(([start, end, requiredTexts]) => {
+    const startIndex = precesModal.indexOf(`<div id="${start}"`);
+    const endIndex = end ? precesModal.indexOf(`<div id="${end}"`, startIndex + 1) : precesModal.length;
+    return { content: startIndex < 0 || endIndex < 0 ? '' : precesModal.slice(startIndex, endIndex), requiredTexts };
+  });
+  expect(prayerSections.every(({ content, requiredTexts }) =>
+    requiredTexts.every((text) => content.includes(text))
+      && content.includes(assembleiaPrayer)
+      && content.includes('Amém!')
+      && content.includes('São João Bosco, rogai por nós!')
+      && content.includes('São Domingos Sávio, rogai por nós!')
+      && content.includes('Finaliza as preces.')
+      && content.includes('Oração da Assembleia Paroquial 2026')
+      && content.includes('>Telão</span>')),
+  'as três celebrações devem conter as preces da fonte atual, oração paroquial e conclusão');
+  expect((precesModal.split(assembleiaPrayer).length - 1) === 3
+    && !precesModal.includes('Jubileu de Diamante'),
+  'a oração da Assembleia Paroquial deve substituir a versão antiga nas três celebrações');
   [html, aparecidaContent, domingoContent].forEach((content) => {
     for (const match of content.matchAll(/href="\.\/([^"]+\.pdf)"/g)) {
       const file = decodeURIComponent(match[1]);
