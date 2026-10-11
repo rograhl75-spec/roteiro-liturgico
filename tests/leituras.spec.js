@@ -12,6 +12,44 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
 
+test('header hides redundant details and uses a compact logo', async ({ page }) => {
+  const styles = await page.evaluate(() => ({
+    logoMaxWidth: getComputedStyle(document.querySelector('#header-logo')).maxWidth,
+    subtitleDisplay: getComputedStyle(document.querySelector('#header-subtitle')).display,
+    badgeDisplay: getComputedStyle(document.querySelector('.version-badge')).display
+  }));
+
+  expect(styles).toEqual({
+    logoMaxWidth: '120px',
+    subtitleDisplay: 'none',
+    badgeDisplay: 'none'
+  });
+});
+
+test('roteiros for Sundays 26 through 30 are present and week 30 opens its roteiro', async ({ page }) => {
+  const structure = await page.evaluate(() => {
+    const titles = ['26º DOMINGO', '27º DOMINGO', '28º DOMINGO', '29º DOMINGO', '30º DOMINGO'];
+    const modals = titles.map((title, index) => {
+      const modalId = `modal_roteiro_${index + 2}`;
+      const modal = document.getElementById(modalId);
+      const content = document.getElementById(`content_roteiro_${index + 2}`);
+      return Boolean(modal && content && content.textContent.trim()
+        && modal.textContent.includes(title)
+        && modal.querySelector(`[data-modal-id="${modalId}"]`));
+    });
+    const week = window.programacaoData.weeks.find(item => item.id === '2026-10-19');
+    return { modals, legacyWeek: week?.legacyWeek };
+  });
+
+  expect(structure).toEqual({ modals: [true, true, true, true, true], legacyWeek: 6 });
+
+  await page.locator('#btn-tab-2026-10-19').click();
+  await page.locator('#btn-roteiro-principal').click();
+  await expect(page.locator('#modal_roteiro_6')).toBeVisible();
+  await expect(page.locator('#content_roteiro_6'))
+    .toContainText('30º Domingo do Tempo Comum — 24 e 25 de outubro de 2026');
+});
+
 test('reading blocks are siblings with unique IDs and effectively visible daily groups', async ({ page }) => {
   const structure = await page.evaluate(() => {
     const blocks = [...document.querySelectorAll('.leituras-bloco')];

@@ -31,10 +31,9 @@
         }
         
         header { background: linear-gradient(135deg, #ffffff, #f1f5f9); text-align: center; padding: 1.5rem 1rem 1rem; border-bottom: 2px solid var(--border); }
-        .header-logo { max-width: 250px; height: auto; margin-bottom: 8px; }
+        .header-logo { max-width: 120px; height: auto; margin-bottom: 8px; }
         header h1 { margin: 0; font-size: 1.4rem; text-transform: uppercase; color: var(--primary); letter-spacing: 0.5px; }
-        header p { margin: 0.4rem 0 0; font-size: 0.95rem; color: var(--secondary); font-weight: 600; }
-        .version-badge { display: inline-block; background: #16a34a; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 12px; margin-top: 8px; letter-spacing: 0.5px; }
+        header p, .version-badge { display: none; }
         .update-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; padding: 0.7rem; border-bottom: 1px solid var(--border); }
         #update-status { font-weight: 600; color: #166534; }
         #update-status[data-state="updating"] { color: var(--primary); }
