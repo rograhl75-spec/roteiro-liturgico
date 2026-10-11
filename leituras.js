@@ -1076,6 +1076,526 @@ Naquele tempo, os fariseus fizeram um plano para apanhar Jesus em alguma palavra
 Palavra da Salvação.
 R. Glória a vós, Senhor.`
     },
+    '1l_seg_w7': {
+        title: '1ª Leitura — Efésios 2,1-10 (Lecionário II, pág. 1099)',
+        day: 'Segunda-feira (19/10) — 29ª Semana do Tempo Comum',
+        text: `PRIMEIRA LEITURA
+Ele nos deu a vida com Cristo,
+e nos fez sentar nos céus.
+Leitura da Carta de São Paulo aos Efésios 2,1-10
+
+Irmãos,
+1
+vós estáveis mortos por causa de vossas faltas e pecados,
+2
+nos quais vivíeis outrora, quando seguíeis o deus deste mundo,
+o príncipe que reina entre o céu e a terra, o espírito que age agora entre os rebeldes.
+3
+Nós éramos deste número, todos nós. Outrora nos abandonávamos às paixões da carne;
+satisfazíamos os seus desejos, seguíamos os seus caprichos e éramos por natureza,
+como os demais, filhos da ira.
+4
+Mas Deus é rico em misericórdia. Por causa do grande amor com que nos amou,
+5
+quando estávamos mortos por causa das nossas faltas, ele nos deu a vida com Cristo.
+É por graça que vós sois salvos!
+6
+Deus nos ressuscitou com Cristo e nos fez sentar nos céus
+em virtude de nossa união com Jesus Cristo.
+7
+Assim, pela bondade que nos demonstrou em Jesus Cristo,
+Deus quis mostrar, através dos séculos futuros, a incomparável riqueza da sua graça.
+8
+Com efeito, é pela graça que sois salvos, mediante a fé.
+E isso não vem de vós; é dom de Deus!
+9
+Não vem das obras, para que ninguém se orgulhe.
+10
+Pois é ele quem nos fez; nós fomos criados em Jesus Cristo para as obras boas,
+que Deus preparou de antemão para que nós as praticássemos.
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_seg_w7': {
+        title: 'Salmo Responsorial — Sl 99(100),2.3.4.5 (R. 3b) (Lecionário II, pág. 1100)',
+        day: 'Segunda-feira (19/10) — 29ª Semana do Tempo Comum',
+        text: `R. O Senhor mesmo nos fez, e somos seus.
+
+2
+Aclamai o Senhor, ó terra inteira, †
+servi ao Senhor com alegria, *
+ide a ele cantando jubilosos! R.
+
+3
+Sabei que o Senhor, só ele, é Deus, †
+Ele mesmo nos fez, e somos seus, *
+nós somos seu povo e seu rebanho. R.
+
+4
+Entrai por suas portas dando graças, †
+e em seus átrios com hinos de louvor; *
+dai-lhe graças, seu nome bendizei! R.
+
+5
+Sim, é bom o Senhor e nosso Deus, †
+sua bondade perdura para sempre, *
+seu amor é fiel eternamente! R.`
+    },
+    'ev_seg_w7': {
+        title: 'Evangelho — Lucas 12,13-21 (Lecionário II, pág. 1100)',
+        day: 'Segunda-feira (19/10) — 29ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Mt 5,3
+
+R. Aleluia, Aleluia, Aleluia.
+V. Felizes os humildes de espírito,
+    porque deles é o Reino dos Céus.
+
+EVANGELHO
+E para quem ficará o que tu acumulaste?
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,13-21
+
+Naquele tempo,
+13
+alguém, do meio da multidão, disse a Jesus:
+"Mestre, dize ao meu irmão que reparta a herança comigo".
+14
+Jesus respondeu:
+"Homem, quem me encarregou de julgar ou de dividir vossos bens?"
+15
+E disse-lhes:
+"Atenção! Tomai cuidado contra todo tipo de ganância,
+porque, mesmo que alguém tenha muitas coisas,
+a vida de um homem não consiste na abundância de bens".
+16
+E contou-lhes uma parábola:
+"A terra de um homem rico deu uma grande colheita.
+17
+Ele pensava consigo mesmo:
+'O que vou fazer? Não tenho onde guardar minha colheita'.
+18
+Então resolveu:
+'Já sei o que fazer! Vou derrubar meus celeiros e construir maiores;
+neles vou guardar todo o meu trigo, junto com os meus bens.
+19
+Então poderei dizer a mim mesmo: Meu caro, tu tens uma boa reserva para muitos anos.
+Descansa, come, bebe, aproveita!'
+20
+Mas Deus lhe disse: 'Louco! Ainda nesta noite, pedirão de volta a tua vida.
+E para quem ficará o que tu acumulaste?'
+21
+Assim acontece com quem ajunta tesouros para si mesmo,
+mas não é rico diante de Deus".
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_ter_w7': {
+        title: '1ª Leitura — Efésios 2,12-22 (Lecionário II, pág. 1103)',
+        day: 'Terça-feira (20/10) — 29ª Semana do Tempo Comum',
+        text: `PRIMEIRA LEITURA
+Ele é a nossa paz: do que era dividido, ele fez uma unidade.
+Leitura da Carta de São Paulo aos Efésios 2,12-22
+
+Irmãos,
+12
+naquele tempo, éreis sem Messias, privados de cidadania em Israel,
+estranhos às alianças da promessa, sem esperança e sem Deus no mundo.
+13
+Mas agora, em Jesus Cristo, vós que outrora estáveis longe,
+vos tornastes próximos, pelo sangue de Cristo.
+14
+Ele, de fato, é a nossa paz: do que era dividido, ele fez uma unidade.
+Em sua carne ele destruiu o muro de separação: a inimizade.
+15
+Ele aboliu a Lei com seus mandamentos e decretos. Ele quis, assim,
+a partir do judeu e do pagão, criar em si um só homem novo, estabelecendo a paz.
+16
+Quis reconciliá-los com Deus, ambos em um só corpo, por meio da cruz;
+assim ele destruiu em si mesmo a inimizade.
+17
+Ele veio anunciar a paz a vós que estáveis longe, e a paz aos que estavam próximos.
+18
+É graças a ele que uns e outros, em um só Espírito, temos acesso junto ao Pai.
+19
+Assim, já não sois mais estrangeiros nem migrantes, mas concidadãos dos santos.
+Sois da família de Deus.
+20
+Vós fostes integrados no edifício que tem como fundamento os apóstolos e os profetas,
+e o próprio Jesus Cristo como pedra principal.
+21
+É nele que toda a construção se ajusta e se eleva para formar um templo santo no Senhor.
+22
+E vós também sois integrados nesta construção,
+para vos tornardes morada de Deus pelo Espírito.
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_ter_w7': {
+        title: 'Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. cf. 9) (Lecionário II, pág. 1104)',
+        day: 'Terça-feira (20/10) — 29ª Semana do Tempo Comum',
+        text: `R. O Senhor anunciará a paz para o seu povo.
+
+9a
+Quero ouvir o que o Senhor irá falar:*
+b
+é a paz que ele vai anunciar;
+10
+Está perto a salvação dos que o temem, *
+e a glória habitará em nossa terra. R.
+
+11
+A verdade e o amor se encontrarão,*
+a justiça e a paz se abraçarão;
+12
+da terra brotará a fidelidade,*
+e a justiça olhará dos altos céus. R.
+
+13
+O Senhor nos dará tudo o que é bom,*
+e a nossa terra nos dará suas colheitas;
+14
+a justiça andará na sua frente*
+e a salvação há de seguir os passos seus. R.`
+    },
+    'ev_ter_w7': {
+        title: 'Evangelho — Lucas 12,35-38 (Lecionário II, pág. 1105)',
+        day: 'Terça-feira (20/10) — 29ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Lc 21,36
+
+R. Aleluia, Aleluia, Aleluia.
+V. Vigiai e orai para ficardes de pé,
+    ante o Filho do Homem!
+
+EVANGELHO
+Felizes os empregados que o senhor encontrar acordados quando chegar.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,35-38
+
+Naquele tempo, disse Jesus aos seus discípulos:
+35
+"Que vossos rins estejam cingidos e as lâmpadas acesas.
+36
+Sede como homens que estão esperando seu senhor voltar de uma festa de casamento,
+para lhe abrirem, imediatamente, a porta, logo que ele chegar e bater.
+37
+Felizes os empregados que o senhor encontrar acordados quando chegar.
+Em verdade eu vos digo: Ele mesmo vai cingir-se,
+fazê-los sentar-se à mesa e, passando, os servirá.
+38
+E caso ele chegue à meia-noite ou às três da madrugada,
+felizes serão, se assim os encontrar!"
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_qua_w7': {
+        title: '1ª Leitura — Efésios 3,2-12 (Lecionário II, pág. 1107)',
+        day: 'Quarta-feira (21/10) — 29ª Semana do Tempo Comum',
+        text: `PRIMEIRA LEITURA
+O mistério de Cristo, Deus acaba de o revelar agora:
+os pagãos são admitidos à mesma herança.
+Leitura da Carta de São Paulo aos Efésios 3,2-12
+
+Irmãos,
+2
+se ao menos soubésseis da graça que Deus me concedeu
+para realizar o seu plano a vosso respeito,
+3
+como, por revelação, tive conhecimento do mistério,
+tal como o esbocei rapidamente.
+Ao ler-me, podeis conhecer a percepção que eu tenho do mistério de Cristo.
+5
+Este mistério, Deus não o fez conhecer aos homens das gerações passadas,
+mas acaba de o revelar agora, pelo Espírito, aos seus santos apóstolos e profetas:
+6
+os pagãos são admitidos à mesma herança, são membros do corpo,
+são associados à mesma promessa em Jesus Cristo, por meio do Evangelho.
+7
+Disto eu fui feito ministro pelo dom da graça que Deus me concedeu
+no exercício do seu poder.
+8
+Eu, que sou o último de todos os santos, recebi esta graça de anunciar aos pagãos
+a insondável riqueza de Cristo
+9
+e de mostrar a todos como Deus realiza o mistério desde sempre escondido nele,
+o criador do universo.
+10
+Assim, doravante, as autoridades e poderes nos céus conhecem, graças à Igreja,
+a multiforme sabedoria de Deus,
+11
+de acordo com o desígnio eterno que ele executou em Jesus Cristo, nosso Senhor.
+12
+Em Cristo nós temos, pela fé nele, a liberdade de nos aproximarmos de Deus
+com toda a confiança.
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_qua_w7': {
+        title: 'Salmo Responsorial — Is 12,2-3.4bcd.5-6 (R. cf. 3) (Lecionário II, pág. 1108)',
+        day: 'Quarta-feira (21/10) — 29ª Semana do Tempo Comum',
+        text: `R. Com alegria bebereis do manancial da salvação.
+
+2
+Eis o Deus, meu Salvador, eu confio e nada temo; †
+o Senhor é minha força, meu louvor e salvação.*
+3
+Com alegria bebereis do manancial da salvação. R.
+
+4b
+e direis naquele dia: "Dai louvores ao Senhor, †
+4c
+invocai seu santo nome, anunciai suas maravilhas,*
+4d
+entre os povos proclamai que seu nome é o mais sublime. R.
+
+5
+Louvai cantando ao nosso Deus, que fez prodígios e portentos,*
+publicai em toda a terra suas grandes maravilhas!
+6
+Exultai cantando alegres, habitantes de Sião,*
+porque é grande em vosso meio o Deus Santo de Israel!" R.`
+    },
+    'ev_qua_w7': {
+        title: 'Evangelho — Lucas 12,39-48 (Lecionário II, pág. 1109)',
+        day: 'Quarta-feira (21/10) — 29ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Mt 24,42a.44
+
+R. Aleluia, Aleluia, Aleluia.
+V. Vigiai, diz Jesus, vigiai,
+    pois, no dia em que não esperais,
+    o vosso Senhor há de vir.
+
+EVANGELHO
+A quem muito foi dado, muito será pedido.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,39-48
+
+Naquele tempo, disse Jesus aos seus discípulos:
+39
+"Ficai certos: se o dono da casa soubesse a hora em que o ladrão iria chegar,
+não deixaria que arrombasse a sua casa.
+40
+Vós também ficai preparados! Porque o Filho do Homem vai chegar
+na hora em que menos o esperardes".
+41
+Então Pedro disse: "Senhor, tu contas esta parábola para nós ou para todos?"
+42
+E o Senhor respondeu:
+"Quem é o administrador fiel e prudente que o senhor vai colocar
+à frente do pessoal de sua casa para dar comida a todos na hora certa?
+43
+Feliz o empregado que o patrão, ao chegar, encontrar agindo assim!
+44
+Em verdade eu vos digo: o senhor lhe confiará a administração de todos os seus bens.
+45
+Porém, se aquele empregado pensar: 'Meu patrão está demorando',
+e começar a espancar os criados e as criadas, e a comer, a beber e a embriagar-se,
+46
+o senhor daquele empregado chegará num dia inesperado e numa hora imprevista,
+ele o partirá ao meio e o fará participar do destino dos infiéis.
+47
+Aquele empregado que, conhecendo a vontade do senhor,
+nada preparou, nem agiu conforme a sua vontade, será chicoteado muitas vezes.
+48
+Porém, o empregado que não conhecia essa vontade e fez coisas que merecem castigo,
+será chicoteado poucas vezes.
+A quem muito foi dado, muito será pedido;
+a quem muito foi confiado, muito mais será exigido!
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_qui_w7': {
+        title: '1ª Leitura — Efésios 3,14-21 (Lecionário II, pág. 1111)',
+        day: 'Quinta-feira (22/10) — 29ª Semana do Tempo Comum',
+        text: `PRIMEIRA LEITURA
+Que estejais enraizados e fundados no amor,
+a fim de que sejais cumulados até receber toda a plenitude de Deus.
+Leitura da Carta de São Paulo aos Efésios 3,14-21
+
+Irmãos,
+14
+eu dobro os joelhos diante do Pai,
+15
+de quem toda e qualquer família recebe seu nome, no céu e sobre a terra.
+16
+Que ele vos conceda, segundo a riqueza da sua glória,
+serdes robustecidos, por seu Espírito, quanto ao homem interior,
+17
+que ele faça habitar, pela fé, Cristo em vossos corações,
+que estejais enraizados e fundados no amor.
+18
+Tereis assim a capacidade de compreender, com todos os santos,
+qual a largura, o comprimento, a altura, a profundidade,
+19
+e de conhecer o amor de Cristo, que ultrapassa todo o conhecimento,
+a fim de que sejais cumulados até receber toda a plenitude de Deus.
+20
+Àquele que tudo pode realizar superabundantemente,
+e muito mais do que nós pedimos ou concebemos, e cujo poder atua em nós,
+21
+a ele a glória, na Igreja e em Jesus Cristo,
+por todas as gerações, para sempre. Amém.
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_qui_w7': {
+        title: 'Salmo Responsorial — Sl 32(33),1-2.4-5.11-12.18-19 (R. 5b) (Lecionário II, pág. 1112)',
+        day: 'Quinta-feira (22/10) — 29ª Semana do Tempo Comum',
+        text: `R. Transborda em toda a terra a bondade do Senhor!
+
+1
+Ó justos, alegrai-vos no Senhor! *
+aos retos fica bem glorificá-lo.
+2
+Dai graças ao Senhor ao som da harpa, *
+na lira de dez cordas celebrai-o! R.
+4
+Pois reta é a palavra do Senhor, *
+e tudo o que ele faz merece fé.
+5
+Deus ama o direito e a justiça, *
+transborda em toda a terra a sua graça. R.
+11
+Mas os desígnios do Senhor são para sempre, †
+e os pensamentos que ele traz no coração, *
+de geração em geração, vão perdurar.
+12
+Feliz o povo cujo Deus é o Senhor, *
+e a nação que escolheu por sua herança! R.
+18
+Mas o Senhor pousa o olhar sobre os que o temem, *
+e que confiam esperando em seu amor,
+19
+para da morte libertar as suas vidas *
+e alimentá-los quando é tempo de penúria. R.`
+    },
+    'ev_qui_w7': {
+        title: 'Evangelho — Lucas 12,49-53 (Lecionário II, pág. 1113)',
+        day: 'Quinta-feira (22/10) — 29ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Fl 3,8-9
+
+R. Aleluia, Aleluia, Aleluia.
+V. Eu tudo considero como perda e como lixo,
+    a fim de eu ganhar Cristo e ser achado nele!
+
+EVANGELHO
+Não vim trazer a paz mas a divisão.
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,49-53
+
+Naquele tempo, disse Jesus a seus discípulos:
+49
+"Eu vim para lançar fogo sobre a terra, e como gostaria que já estivesse aceso!
+50
+Devo receber um batismo, e como estou ansioso até que isto se cumpra!
+51
+Vós pensais que eu vim trazer a paz sobre a terra?
+Pelo contrário, eu vos digo, vim trazer divisão.
+52
+Pois, daqui em diante, numa família de cinco pessoas,
+três ficarão divididas contra duas e duas contra três;
+53
+ficarão divididos: o pai contra o filho e o filho contra o pai;
+a mãe contra a filha e a filha contra a mãe;
+a sogra contra a nora e a nora contra a sogra".
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
+    '1l_sex_w7': {
+        title: '1ª Leitura — Efésios 4,1-6 (Lecionário II, pág. 1114)',
+        day: 'Sexta-feira (23/10) — 29ª Semana do Tempo Comum',
+        text: `PRIMEIRA LEITURA
+Há um só corpo, um só Senhor, uma só fé, um só batismo.
+Leitura da Carta de São Paulo aos Efésios 4,1-6
+
+Irmãos,
+1
+eu, prisioneiro no Senhor, vos exorto a caminhardes de acordo com a vocação
+que recebestes:
+2
+Com toda a humildade e mansidão, suportai-vos uns aos outros com paciência, no amor.
+3
+Aplicai-vos a guardar a unidade do espírito pelo vínculo da paz.
+4
+Há um só Corpo e um só Espírito, como também é uma só a esperança
+à qual fostes chamados.
+5
+Há um só Senhor, uma só fé, um só batismo,
+6
+um só Deus e Pai de todos, que reina sobre todos,
+age por meio de todos e permanece em todos.
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_sex_w7': {
+        title: 'Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6) (Lecionário II, pág. 1115)',
+        day: 'Sexta-feira (23/10) — 29ª Semana do Tempo Comum',
+        text: `R. É assim a geração dos que buscam vossa face,
+  ó Senhor, Deus de Israel.
+
+1
+Ao Senhor pertence a terra e o que ela encerra,*
+o mundo inteiro com os seres que o povoam;
+2
+porque ele a tornou firme sobre os mares,*
+e sobre as águas a mantém inabalável. R.
+3
+"Quem subirá até o monte do Senhor,*
+quem ficará em sua santa habitação?"
+4a
+"Quem tem mãos puras e inocente coração,*
+4b
+quem não dirige sua mente para o crime. R.
+5
+Sobre este desce a bênção do Senhor*
+e a recompensa de seu Deus e Salvador".
+6
+"É assim a geração dos que o procuram,*
+e do Deus de Israel buscam a face". R.`
+    },
+    'ev_sex_w7': {
+        title: 'Evangelho — Lucas 12,54-59 (Lecionário II, pág. 1116)',
+        day: 'Sexta-feira (23/10) — 29ª Semana do Tempo Comum',
+        text: `Aclamação ao Evangelho — Cf. Mt 11,25
+
+R. Aleluia, Aleluia, Aleluia.
+V. Graças te dou, ó Pai, Senhor do céu e da terra,
+  pois revelaste os mistérios do teu reino aos pequeninos,
+  escondendo-os aos doutores!
+
+EVANGELHO
+Vós sabeis interpretar o aspecto da terra e do céu.
+Como é que não sabeis interpretar o tempo presente?
+
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,54-59
+
+Naquele tempo,
+54
+Jesus dizia às multidões:
+"Quando vedes uma nuvem vinda do ocidente, logo dizeis que vem chuva.
+E assim acontece.
+55
+Quando sentis soprar o vento do sul, logo dizeis que vai fazer calor.
+E assim acontece.
+56
+Hipócritas! Vós sabeis interpretar o aspecto da terra e do céu.
+Como é que não sabeis interpretar o tempo presente?
+57
+Por que não julgais por vós mesmos o que é justo?
+58
+Quando, pois, tu vais com o teu adversário apresentar-te diante do magistrado,
+procura resolver o caso com ele enquanto estais a caminho.
+Senão ele te levará ao juiz, o juiz te entregará ao guarda,
+e o guarda te jogará na cadeia.
+59
+Eu te digo: daí tu não sairás, enquanto não pagares o último centavo".
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
     '1l_dom_w7': {
         title: '1ª Leitura — Êxodo 22,20-26 (Lecionário I, pág. 345)',
         day: 'Domingo (25/10) — 30º Domingo do Tempo Comum',
