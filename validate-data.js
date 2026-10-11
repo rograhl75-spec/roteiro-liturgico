@@ -6,9 +6,11 @@ const root = __dirname;
 const leiturasPath = path.join(root, 'leituras.js');
 const programacaoPath = path.join(root, 'programacao.js');
 const indexPath = path.join(root, 'index.html');
+const antifonasPath = path.join(root, 'antifonas.js');
 
 const leiturasSource = fs.readFileSync(leiturasPath, 'utf8');
 const programacaoSource = fs.readFileSync(programacaoPath, 'utf8');
+const antifonasSource = fs.readFileSync(antifonasPath, 'utf8');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
 
 function runInSandbox(source, fileName) {
@@ -211,6 +213,61 @@ if (correctedWeek) {
       expect(fs.existsSync(path.join(root, file)), `PDF vinculado ausente: ${file}`);
     }
   });
+}
+
+const thirtiethSundayWeek = weeks.find((week) => week.id === '2026-10-19');
+if (thirtiethSundayWeek) {
+  const html = thirtiethSundayWeek.programacaoHtml;
+  const expect = (condition, message) => {
+    if (!condition) issues.push(`Semana 19–25/10/2026: ${message}`);
+  };
+  const requiredReadingKeys = ['1l_dom_w7', 'sl_dom_w7', '2l_dom_w7', 'ev_dom_w7'];
+  const precesModal = indexContent.split('<div id="modal_preces_6"')[1]
+    ?.split('<div id="modal_reflexoes_6"')[0] || '';
+  const roteiroModal = indexContent.split('<div id="modal_roteiro_6"')[1]
+    ?.split('<div id="modal_preces_6"')[0] || '';
+  const roteiroPdfs = Array.from(roteiroModal.matchAll(/href="\.\/([^"]+\.pdf)"/g),
+    ([, file]) => decodeURIComponent(file));
+
+  expect(thirtiethSundayWeek.legacyWeek === 6
+    && thirtiethSundayWeek.shortTitle === '30º Domingo'
+    && thirtiethSundayWeek.fullTitle === '30º Domingo do Tempo Comum — 19 a 25 de outubro',
+  'a semana deve usar o título e os identificadores legados da nova aba');
+  expect((html.match(/class="p-hora"/g) || []).length === 10
+    && html.includes('Capela São Domingos Sávio')
+    && html.includes('Pe. Djhon')
+    && html.includes('09h00')
+    && html.includes('11h00'),
+  'a escala deve listar as dez celebrações, locais e celebrantes');
+  expect(requiredReadingKeys.every((key) =>
+    readingKeys.has(key) && html.includes(`data-reading-key="${key}"`))
+    && html.includes('Lecionário I')
+    && html.includes('345')
+    && html.includes('346')
+    && html.includes('347'),
+  'as quatro leituras dominicais e as páginas do Lecionário devem estar integradas');
+  expect(antifonasSource.includes('antifonas_7')
+    && ['Cf. Sl 104,3-4', 'Cf. Jo 14,23', 'Cf. Sl 19,6', 'Ef 5,2',
+      'Se fizerdes algum mal à viúva e ao órfão',
+      'Amarás o Senhor teu Deus, e ao teu próximo como a ti mesmo.']
+      .every((text) => antifonasSource.includes(text)),
+  'as antífonas, opções de comunhão, aclamação e citações PASCOM devem constar');
+  expect(['preces_sabado_6', 'preces_domingo_manha_6', 'preces_domingo_noite_6',
+    '18h30 e 19h00', '09h00 e 11h00', 'Finaliza as preces.', 'Amém.']
+    .every((text) => precesModal.includes(text)),
+  'as preces devem cobrir os horários da fonte e explicar o formulário usado no sábado às 19h');
+  expect(roteiroModal.includes('content_roteiro_6')
+    && ['1. RITOS INICIAIS', '2. LITURGIA DA PALAVRA', '3. LITURGIA EUCARÍSTICA',
+      '4. RITO DA COMUNHÃO', '5. RITOS DE ENCERRAMENTO']
+      .every((text) => roteiroModal.includes(text))
+    && roteiroModal.includes('print-active-roteiro')
+    && roteiroPdfs.some((file) => fs.existsSync(path.join(root, file))),
+  'o roteiro integral e seu PDF-fonte devem estar disponíveis em modal imprimível');
+  expect(indexContent.includes('id="leituras_semana_6"')
+    && indexContent.includes('value="antifonas_7"')
+    && indexContent.includes('print-active-preces')
+    && indexContent.includes('id="btn-tab-2026-10-19"'),
+  'a semana deve estar acessível na aba e nos seletores imprimíveis');
 }
 
 if (issues.length) {

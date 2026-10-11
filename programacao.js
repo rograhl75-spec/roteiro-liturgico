@@ -489,6 +489,53 @@ const programacaoData = {
                 </div>
                 <div class="note-gloria-box">Em 18/10, omite-se a Festa de São Lucas, Evangelista.</div>
             </div>`
+    },
+    {
+      legacyWeek: 6,
+      id: '2026-10-19',
+      shortTitle: '30º Domingo',
+      fullTitle: '30º Domingo do Tempo Comum — 19 a 25 de outubro',
+      roteiroLabel: 'Roteiro da Missa',
+      programacaoHtml: `<div class="card">
+                <div class="card-header"><h2>Semana de 19 a 25 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
+                <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30º Domingo do Tempo Comum (Ano A). Em 25/10, omite-se a Memória de Santo Antônio de Sant’Ana Galvão, religioso.</div>
+                <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody>
+                    <tr><td><span class="p-dia">Segunda, 19/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Terça, 20/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr>
+                    <tr><td><span class="p-dia">Quarta, 21/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Quinta, 22/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Afonso</td></tr>
+                    <tr><td><span class="p-dia">Sexta, 23/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Sábado, 24/10</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Sábado, 24/10</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Djhon</td></tr>
+                    <tr><td><span class="p-dia">Domingo, 25/10</span> <span class="p-hora">09h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Domingo, 25/10</span> <span class="p-hora">11h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Domingo, 25/10</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                </tbody></table></div>
+                <div class="tables-grid">
+                    <div><div class="table-caption">📌 Missal Romano — dias de semana (19 a 23/10)</div><table class="liturgy-table"><tbody>
+                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Oração da Coleta</td><td>411</td></tr><tr><td>Oração sobre as Oferendas</td><td>411</td></tr><tr><td>Prefácio / Oração Eucarística V</td><td>564 / 565</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>411</td></tr>
+                    </tbody></table></div>
+                    <div><div class="table-caption">📖 Liturgia da Palavra — dias de semana</div><table class="liturgy-table"><thead><tr><th>Data</th><th>Leituras</th><th>Lecionário / páginas</th></tr></thead><tbody>
+                        <tr><td>Segunda, 19/10</td><td>Ef 2,1-10; Sl 99(100),2.3.4.5 (R. 3b); Lc 12,13-21</td><td>II / 1099–1100</td></tr>
+                        <tr><td>Terça, 20/10</td><td>Ef 2,12-22; Sl 84(85),9ab-10.11-12.13-14 (R. cf. 9); Lc 12,35-38</td><td>II / 1103–1105</td></tr>
+                        <tr><td>Quarta, 21/10</td><td>Ef 3,2-12; Is 12,2-3.4bcd.5-6 (R. 3); Lc 12,39-48</td><td>II / 1107–1109</td></tr>
+                        <tr><td>Quinta, 22/10</td><td>Ef 3,14-21; Sl 32(33),1-2.4-5.11-12.18-19 (R. 5b); Lc 12,49-53</td><td>II / 1111–1113</td></tr>
+                        <tr><td>Sexta, 23/10</td><td>Ef 4,1-6; Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6); Lc 12,54-59</td><td>II / 1114–1116</td></tr>
+                    </tbody></table></div>
+                </div>
+                <div class="tables-grid">
+                    <div><div class="table-caption">📌 Missal Romano — 30º Domingo</div><table class="liturgy-table"><tbody>
+                        <tr><td>Ritos Iniciais (Ordinário)</td><td>430</td></tr><tr><td>Hino de Louvor (Glória)</td><td>442</td></tr><tr><td>Oração da Coleta</td><td>412</td></tr><tr><td>Oração sobre as Oferendas</td><td>412</td></tr><tr><td>Prefácio dos Domingos do Tempo Comum VI</td><td>479</td></tr><tr><td>Oração Eucarística II</td><td>537</td></tr><tr><td>Rito da Comunhão</td><td>569</td></tr><tr><td>Oração depois da Comunhão</td><td>412</td></tr>
+                    </tbody></table></div>
+                    <div><div class="table-caption">📖 Leituras do Domingo — Lecionário I</div><table class="liturgy-table"><thead><tr><th>Momento</th><th>Referência</th><th>Página</th></tr></thead><tbody>
+                        <tr><td>1ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="1l_dom_w7">Ex 22,20-26</span></td><td>345</td></tr>
+                        <tr><td>Salmo Responsorial</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="sl_dom_w7">Sl 17(18),2-3a.3bc-4.47.51ab (R. 2)</span></td><td>345</td></tr>
+                        <tr><td>2ª Leitura</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="2l_dom_w7">1Ts 1,5c-10</span></td><td>346</td></tr>
+                        <tr><td>Aclamação ao Evangelho</td><td>Jo 14,23</td><td>346</td></tr>
+                        <tr><td>Evangelho</td><td><span class="clickable-ref" data-action="open-reading" data-reading-key="ev_dom_w7">Mt 22,34-40</span></td><td>347</td></tr>
+                    </tbody></table></div>
+                </div>
+            </div>`
     }
   ]
 };

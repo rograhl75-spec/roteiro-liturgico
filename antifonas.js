@@ -158,5 +158,47 @@ window.antifonasData = {
         text: 'Dai, pois, a César o que é de César e a Deus o que é de Deus.'
       }
     ]
+  },
+  antifonas_7: {
+    title: 'Antífonas - 30º Domingo',
+    items: [
+      {
+        label: 'Antífona de Entrada',
+        reference: 'Cf. Sl 104,3-4',
+        text: 'Exulte o coração que busca a Deus!\nProcurai o Senhor Deus e seu poder,\nbuscai constantemente a sua face.'
+      },
+      {
+        label: 'Aclamação ao Evangelho',
+        reference: 'Cf. Jo 14,23',
+        text: 'R. Aleluia, aleluia, aleluia.\nV. Se alguém me ama, guardará a minha palavra,\ne meu Pai o amará, e a ele nós viremos.'
+      },
+      {
+        label: 'Antífona de Comunhão',
+        options: [
+          {
+            reference: 'Cf. Sl 19,6',
+            text: 'Nós nos alegraremos na vossa salvação e no nome do nosso Deus exultaremos.'
+          },
+          {
+            reference: 'Ef 5,2',
+            text: 'Cristo nos amou e se entregou a Deus por nós em oblação de suave odor.'
+          }
+        ]
+      }
+    ],
+    citations: [
+      {
+        label: 'Primeira Leitura',
+        text: 'Se fizerdes algum mal à viúva e ao órfão, minha cólera se inflamará contra vós.'
+      },
+      {
+        label: 'Segunda Leitura',
+        text: 'Vós vos convertestes, abandonando os falsos deuses, para servir a Deus, esperando o seu Filho.'
+      },
+      {
+        label: 'Evangelho',
+        text: 'Amarás o Senhor teu Deus, e ao teu próximo como a ti mesmo.'
+      }
+    ]
   }
 };
