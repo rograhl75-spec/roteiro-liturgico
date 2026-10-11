@@ -28,11 +28,17 @@ test('header hides redundant details and uses a compact logo', async ({ page }) 
 
 test('roteiros for Sundays 26 through 30 are present and week 30 opens its roteiro', async ({ page }) => {
   const structure = await page.evaluate(() => {
-    const titles = ['26º DOMINGO', '27º DOMINGO', '28º DOMINGO', '29º DOMINGO', '30º DOMINGO'];
-    const modals = titles.map((title, index) => {
-      const modalId = `modal_roteiro_${index + 2}`;
+    const roteiroModals = [
+      ['modal_roteiro_2', 'content_roteiro_2', '26º DOMINGO'],
+      ['modal_roteiro_3', 'content_roteiro_3', '27º DOMINGO'],
+      ['modal_roteiro_4', 'content_roteiro_4', '28º DOMINGO'],
+      ['modal_roteiro_5_aparecida', 'content_roteiro_5_aparecida', 'NOSSA SENHORA APARECIDA'],
+      ['modal_roteiro_5', 'content_roteiro_5', '29º DOMINGO'],
+      ['modal_roteiro_6', 'content_roteiro_6', '30º DOMINGO']
+    ];
+    const modals = roteiroModals.map(([modalId, contentId, title]) => {
       const modal = document.getElementById(modalId);
-      const content = document.getElementById(`content_roteiro_${index + 2}`);
+      const content = document.getElementById(contentId);
       return Boolean(modal && content && content.textContent.trim()
         && modal.textContent.includes(title)
         && modal.querySelector(`[data-modal-id="${modalId}"]`));
@@ -41,7 +47,7 @@ test('roteiros for Sundays 26 through 30 are present and week 30 opens its rotei
     return { modals, legacyWeek: week?.legacyWeek };
   });
 
-  expect(structure).toEqual({ modals: [true, true, true, true, true], legacyWeek: 6 });
+  expect(structure).toEqual({ modals: [true, true, true, true, true, true], legacyWeek: 6 });
 
   await page.locator('#btn-tab-2026-10-19').click();
   await page.locator('#btn-roteiro-principal').click();
