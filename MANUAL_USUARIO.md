@@ -100,26 +100,24 @@ No iPhone, a instalação na tela inicial deve ser feita pelo Safari. Outros nav
 
 ## 6. Como atualizar o aplicativo
 
-Quando houver uma nova versão, pode aparecer na parte inferior da tela a mensagem:
+O botão **Buscar atualização** fica sempre disponível. Com internet, toque nele para verificar se existe uma publicação nova.
 
-> 🔄 Nova versão disponível — Atualizar
+O aplicativo também verifica automaticamente ao abrir, ao voltar a ficar visível, ao recuperar a conexão e a cada cinco minutos enquanto estiver ativo. O navegador pode suspender essas verificações quando o aplicativo está em segundo plano.
 
-Toque em **Atualizar**. A página será recarregada com os conteúdos novos.
+Uma atualização só é aplicada depois que todos os arquivos da nova versão foram baixados e conferidos. Se a conexão falhar, a versão anterior é preservada.
 
-### Se o aviso não aparecer
+Para não interromper uma leitura ou impressão, a troca fica bloqueada enquanto houver qualquer janela de conteúdo (modal) aberta ou uma impressão em andamento, inclusive em outra aba ou janela do aplicativo. Feche essas janelas e termine ou cancele a impressão para permitir a atualização.
 
-Faça o seguinte:
+Se uma interrupção da janela de impressão deixar a atualização pendente mesmo depois de fechá-la, feche e reabra o aplicativo ou a aba afetada. Por segurança, não há cancelamento automático por tempo.
 
-1. confirme que o celular está conectado à internet;
-2. feche o aplicativo ou a aba do navegador;
-3. abra o site diretamente pelo navegador;
-4. aguarde alguns segundos;
-5. abra novamente pelo ícone da tela inicial.
+Ao recarregar para trocar de versão, o aplicativo restaura a semana selecionada, o tamanho das letras, a posição de rolagem e o foco, quando o elemento correspondente ainda existir na nova versão.
 
-Se ainda aparecer conteúdo antigo, faça uma atualização manual da página:
+### Se o conteúdo ainda estiver antigo
 
-- **Android/Chrome:** abra o menu e toque em atualizar;
-- **iPhone/Safari:** toque no botão de recarregar ao lado da barra de endereço.
+1. Confirme a conexão à internet.
+2. Use **Buscar atualização** e aguarde a verificação.
+3. Feche as janelas de conteúdo em todas as abas e termine a impressão.
+4. Se necessário, abra o endereço online diretamente no navegador e tente novamente.
 
 Usuários que instalaram uma versão muito antiga podem precisar abrir o endereço online uma vez antes que as atualizações automáticas funcionem.
 
@@ -148,7 +146,7 @@ Dependendo do aparelho, você poderá:
 
 ## 8. Uso sem internet
 
-O aplicativo pode continuar funcionando com alguns arquivos já carregados, mesmo sem internet.
+Depois de carregar e validar uma versão completa com internet, o aplicativo pode usar essa versão sem conexão. O indicador **offline** informa quando o navegador está sem internet; não significa que conteúdos novos foram baixados.
 
 Entretanto:
 
@@ -167,7 +165,7 @@ Abra a página novamente com internet. Se necessário, feche o navegador e reabr
 
 ### O conteúdo está antigo
 
-Use o botão **Atualizar** do aviso ou recarregue a página diretamente pelo navegador.
+Use **Buscar atualização** com internet. Feche todas as janelas de conteúdo, inclusive em outras abas, e termine a impressão para permitir a troca de versão.
 
 ### O ícone abre uma versão antiga
 
@@ -202,4 +200,4 @@ Avise a equipe responsável pelo site. Pode ser necessário corrigir o cadastro 
 3. Abra Programação, Roteiro, Preces, Leituras ou Reflexões.
 4. Use A+ ou A- para ajustar o texto.
 5. Toque em Imprimir quando necessário.
-6. Toque em Atualizar sempre que aparecer o aviso de nova versão.
+6. Use **Buscar atualização** com internet antes da celebração.

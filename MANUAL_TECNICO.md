@@ -33,6 +33,9 @@ Não abra o projeto usando apenas `file://`. O Service Worker exige HTTPS ou `lo
 | `manifest.json` | Metadados e configuração instalável do PWA. |
 | `sw.js` | Cache, fallback offline e atualização dos assets. |
 | `validate-data.js` | Validação de chaves, referências e estrutura esperada. |
+| `build-version.js` | Geração determinística dos metadados de publicação usando somente módulos nativos do Node.js. |
+| `version.json` | Identificador da publicação e hashes SHA-256 dos arquivos públicos. |
+| `.github/workflows/pages.yml` | Validação, geração dos metadados e implantação no Pages. |
 | `package.json` | Scripts de desenvolvimento e validação. |
 
 ---
@@ -42,13 +45,11 @@ Não abra o projeto usando apenas `file://`. O Service Worker exige HTTPS ou `lo
 ```bash
 git clone https://github.com/rograhl75-spec/roteiro-liturgico.git
 cd roteiro-liturgico
-npm install
-npx http-server .
+npm run validate:data
+npm run version
 ```
 
-Abra o endereço local informado, normalmente `http://localhost:8080`.
-
-Também é possível usar a extensão Live Server do Visual Studio Code.
+Sirva a pasta usando um servidor HTTP local já disponível, como a extensão Live Server do Visual Studio Code, e abra o endereço informado. Os scripts de validação e publicação não precisam de dependências npm.
 
 ---
 
@@ -203,32 +204,27 @@ Também teste manualmente:
 
 ## 10. Service Worker e atualizações
 
-`sw.js` controla o cache do PWA.
+`sw.js` mantém snapshots completos e validados da publicação. Não há número de cache a incrementar manualmente.
 
-O comportamento atual é:
+### Metadados e integridade
 
-- HTML, JavaScript, CSS e JSON usam estratégia network-first;
-- imagens usam cache-first;
-- em caso de falha de rede, o cache é usado como fallback;
-- uma nova instalação aguarda o usuário escolher **Atualizar**;
-- `app.js` detecta o Service Worker aguardando e mostra o banner de atualização;
-- a página verifica atualizações ao voltar a ficar visível e periodicamente.
+Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige `index.html`, `styles.css`, `app.js`, `programacao.js`, `leituras.js`, `antifonas.js`, `manifest.json`, `sw.js`, `icone.png`, `icone.svg` e `Selo Auxiliadora 60 anos_Ano 3.png`.
 
-### Incrementar a versão do cache
+O `version.json` contém `{ "version": "...", "files": { "./index.html": "...", ... } }`. Cada valor em `files` é o SHA-256 dos bytes publicados do arquivo. Para calcular `version`, o gerador remove as tags `<meta name="app-version">` do HTML, calcula os hashes na ordem fixa declarada em `build-version.js` e aplica SHA-256 ao `JSON.stringify` desse mapa. Depois insere a meta com o identificador e recalcula o hash real de `index.html` em `files`. Isso evita uma referência circular e torna execuções repetidas idempotentes.
 
-Altere a constante quando o conteúdo publicado mudar:
+O Service Worker confere todos os arquivos contra esses hashes antes de preparar o novo snapshot. Publicação incompleta, resposta inválida ou falha de rede não substitui o snapshot anterior. SHA-256 garante consistência dos arquivos com o manifesto, não uma assinatura independente da origem: HTTPS continua necessário.
 
-```javascript
-const CACHE_VERSION = 'roteiro-liturgico-v3';
-```
+### Carregamento e troca segura
 
-Para a próxima versão:
-
-```javascript
-const CACHE_VERSION = 'roteiro-liturgico-v4';
-```
-
-A versão deve ser incrementada sempre que uma alteração publicada puder deixar arquivos antigos no cache. Quando o Copilot publicar uma alteração no projeto, deve tratar essa atualização de cache no mesmo conjunto de mudanças, quando aplicável.
+- HTML, JavaScript, CSS e JSON usam network-first **somente quando a resposta corresponde ao hash do snapshot em uso**; caso contrário, usa-se a cópia validada em cache. Isso impede misturar código ou dados de publicações diferentes.
+- Imagens usam cache-first dentro do snapshot validado.
+- A meta `app-version` identifica a versão carregada pela página.
+- `app.js` e o worker coordenam a preparação e a ativação com as mensagens `PREPARE_UPDATE` e `ACTIVATE_UPDATE`.
+- A ativação exige uma verificação de segurança de todos os clientes abertos: nenhum modal aberto e nenhuma impressão em andamento. Uma aba ocupada impede a troca para todas as abas.
+- A segurança da impressão aguarda o evento `afterprint`, sem cancelamento automático por tempo. Se uma interrupção do diálogo impedir esse evento e deixar a atualização pendente, feche e reabra o aplicativo ou a aba afetada.
+- Após a troca, a seleção da semana, tamanho da fonte, rolagem e foco são restaurados quando seus destinos continuam disponíveis.
+- A busca ocorre na abertura, no retorno à visibilidade, no evento `online` e a cada cinco minutos; navegadores podem suspender temporizadores em segundo plano.
+- O botão permanente **Buscar atualização** permite uma busca explícita. O indicador offline informa o estado de conexão.
 
 ### `updateViaCache: 'none'`
 
@@ -244,14 +240,19 @@ Isso reduz o risco de o navegador reutilizar uma cópia antiga do próprio Servi
 
 ## 11. Publicação no GitHub Pages
 
-Configuração recomendada:
+Configuração obrigatória uma única vez:
 
 1. abra **Settings** do repositório;
 2. acesse **Pages**;
-3. escolha publicação a partir de uma branch;
-4. selecione `main` e `/root`;
-5. salve;
-6. aguarde a publicação.
+3. em **Build and deployment → Source**, selecione **GitHub Actions** (não publicação a partir de uma branch);
+4. confira as permissões e proteções do ambiente `github-pages`;
+5. publique um commit em `main` ou execute o workflow manualmente em **Actions → Publicar no GitHub Pages → Run workflow**.
+
+O workflow roda em cada push para `main` e por `workflow_dispatch`. Primeiro executa `npm run validate:data`, depois `npm run version`, separa somente os arquivos públicos e envia/implanta o artefato estático. Assim, toda publicação gera metadados automaticamente, mesmo quando somente dados ou imagens mudaram. Os arquivos gerados ficam no artefato; o workflow não faz commit no repositório.
+
+As ações estão fixadas por SHA imutável. O job de geração recebe somente leitura do repositório; apenas o job de implantação recebe `pages: write` e `id-token: write`.
+
+Para publicação local ou de branch fora desse workflow, execute `npm run validate:data` e **`npm run version` após todas as edições finais**, então publique o HTML modificado junto com `version.json` e todos os assets correspondentes. Não altere assets depois de gerar os hashes sem executar novamente o gerador.
 
 Arquivos necessários:
 
@@ -263,7 +264,9 @@ Arquivos necessários:
 - `antifonas.js`;
 - `manifest.json`;
 - `sw.js`;
+- `version.json`;
 - imagens e ícones referenciados.
+- PDFs referenciados pelo HTML e pela programação (copiados para o artefato pelo workflow).
 
 ---
 
@@ -280,9 +283,15 @@ Arquivos necessários:
 - [ ] Modais testados.
 - [ ] Impressão testada.
 - [ ] Fonte mínima de 12pt confirmada na impressão.
-- [ ] Cache versionado quando necessário.
+- [ ] Metadados gerados automaticamente no workflow, ou `npm run version` executado após as últimas edições na publicação manual.
 - [ ] Service Worker testado com uma versão antiga instalada.
+- [ ] Snapshot anterior preservado ao simular download incompleto ou hash incorreto.
+- [ ] Atualização bloqueada por cada modal e pela impressão, inclusive em outra aba.
+- [ ] Semana, fonte, rolagem e foco restaurados após a troca.
+- [ ] Busca automática e botão Buscar atualização conferidos; indicador offline conferido.
 - [ ] GitHub Pages atualizado.
+
+Os testes em **aparelhos Android reais e iPhone/Safari reais**, tanto no navegador quanto no PWA instalado, são manuais e devem ser executados pela equipe. Este checklist não afirma que esses aparelhos já foram testados.
 
 ---
 
@@ -294,7 +303,7 @@ Verifique o caminho de `styles.css`, a publicação do commit e o cache do naveg
 
 ### Conteúdo antigo no celular
 
-Confirme o incremento de `CACHE_VERSION`, abra o endereço online, aguarde o banner e toque em **Atualizar**.
+Confira se o workflow publicou com sucesso e se `version.json` corresponde aos assets servidos. Abra online e use **Buscar atualização**. Feche todos os modais e termine a impressão em todas as abas. Se um hash não conferir, corrija a publicação e gere novamente os metadados; não apague o snapshot anterior para forçar uma atualização incompleta.
 
 ### Ícone continua antigo
 
@@ -328,7 +337,7 @@ Processo recomendado:
 2. validar;
 3. testar no computador e no celular;
 4. testar a impressão;
-5. incrementar o cache quando necessário;
+5. deixar o workflow gerar metadados, ou executar `npm run version` após as últimas edições para publicação manual;
 6. publicar;
 7. verificar o GitHub Pages;
 8. confirmar atualização em uma instalação antiga.

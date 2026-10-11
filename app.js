@@ -2,6 +2,13 @@ const WEEK_ID_FALLBACK = '2026-10-05';
 let currentWeekId = WEEK_ID_FALLBACK;
 const fontSizes = {};
 const modalFocusReturn = new Map();
+let printing = false;
+let resumeUpdate = () => {};
+let savedUpdateState = null;
+try {
+  savedUpdateState = JSON.parse(sessionStorage.getItem('roteiro-update-state'));
+  sessionStorage.removeItem('roteiro-update-state');
+} catch (error) {}
 
 function getWeeks() {
   return (window.programacaoData && Array.isArray(window.programacaoData.weeks)) ? window.programacaoData.weeks : [];
@@ -120,7 +127,9 @@ function showWeek(weekId, options = { focusTab: false }) {
 
   updateRoteiroButtons(selectedWeek);
 
-  window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+  if (!options.preserveScroll) {
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+  }
 }
 
 function getRoteiroExtras(week) {
@@ -205,6 +214,7 @@ function closeModal(id) {
     trigger.focus();
   }
   modalFocusReturn.delete(id);
+  setTimeout(() => resumeUpdate(), 0);
 }
 
 function closeTopModal() {
@@ -547,6 +557,7 @@ function previewSelectedReadings() {
 }
 
 function runPrintMount(nodeBuilder) {
+  printing = true;
   document.querySelectorAll('.modal').forEach((modal) => {
     modal.hidden = true;
     modal.setAttribute('aria-hidden', 'true');
@@ -554,7 +565,7 @@ function runPrintMount(nodeBuilder) {
   document.body.style.overflow = 'visible';
 
   const mount = document.getElementById('print-mount');
-  if (!mount) return;
+  if (!mount) { printing = false; return; }
 
   mount.textContent = '';
   mount.hidden = false;
@@ -566,13 +577,17 @@ function runPrintMount(nodeBuilder) {
     cleanedUp = true;
     mount.textContent = '';
     mount.hidden = true;
+    printing = false;
+    resumeUpdate();
   };
 
   window.addEventListener('afterprint', cleanup, { once: true });
-  setTimeout(cleanup, 2000);
-
   setTimeout(() => {
-    window.print();
+    try {
+      window.print();
+    } catch (error) {
+      cleanup();
+    }
   }, 150);
 }
 
@@ -701,51 +716,160 @@ function handleScrollButton() {
 }
 
 function registerServiceWorker() {
-  if (!('serviceWorker' in navigator)) return;
-
+  const status = document.getElementById('update-status');
+  const button = document.getElementById('check-update');
+  const setStatus = (text, state = 'ready') => {
+    status.textContent = text;
+    status.dataset.state = state;
+  };
+  if (!('serviceWorker' in navigator)) {
+    setStatus('Atualização automática indisponível neste navegador', 'error');
+    button.addEventListener('click', () => window.location.reload());
+    return;
+  }
+  const localVersion = document.querySelector('meta[name="app-version"]')?.content;
+  const contextSafe = () => !printing &&
+    !Array.from(document.querySelectorAll('.modal')).some((modal) => !modal.hidden);
+  const safe = () => contextSafe() && document.visibilityState === 'visible';
+  let registration;
+  let pending;
+  let checking = false;
+  let activating = false;
+  let activatedVersion;
   let refreshing = false;
-  navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (refreshing) return;
+  const reloadSafely = () => {
+    if (!activatedVersion || activatedVersion === localVersion || refreshing) return;
+    if (!safe()) { setStatus('Atualização pronta — será aplicada ao fechar o conteúdo', 'pending'); return; }
+    try {
+      sessionStorage.setItem('roteiro-update-state', JSON.stringify({
+        week: currentWeekId, fonts: fontSizes, scroll: window.scrollY,
+        focus: document.activeElement && document.activeElement.id,
+        focusAction: document.activeElement?.dataset.action,
+        readings: Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+          .map((input) => input.value)
+      }));
+    } catch (error) {
+      setStatus('Permita o armazenamento para preservar sua seleção ao atualizar', 'error');
+      return;
+    }
     refreshing = true;
     window.location.reload();
+  };
+  const send = (worker, message) => new Promise((resolve, reject) => {
+    const channel = new MessageChannel();
+    const timer = setTimeout(() => {
+      channel.port1.close();
+      reject(new Error('Tempo limite da atualização'));
+    }, 240000);
+    channel.port1.onmessage = (event) => {
+      clearTimeout(timer);
+      channel.port1.close();
+      if (event.data.error) reject(new Error(event.data.error));
+      else resolve(event.data);
+    };
+    worker.postMessage(message, [channel.port2]);
   });
-
-  const showUpdateBanner = (worker) => {
-    if (document.getElementById('update-banner')) return;
-    const bar = document.createElement('div');
-    bar.id = 'update-banner';
-    bar.setAttribute('role', 'alert');
-    bar.innerHTML = '<span>🔄 Nova versão disponível</span>';
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.textContent = 'Atualizar';
-    btn.addEventListener('click', () => worker.postMessage('SKIP_WAITING'));
-    bar.appendChild(btn);
-    document.body.appendChild(bar);
+  const identify = () => {
+    navigator.serviceWorker.controller?.postMessage({ type: 'CLIENT_VERSION', version: localVersion });
   };
-
-  const register = () => {
-    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then((reg) => {
-      if (reg.waiting && navigator.serviceWorker.controller) showUpdateBanner(reg.waiting);
-
-      reg.addEventListener('updatefound', () => {
-        const nw = reg.installing;
-        if (!nw) return;
-        nw.addEventListener('statechange', () => {
-          if (nw.state === 'installed' && navigator.serviceWorker.controller) showUpdateBanner(nw);
+  navigator.serviceWorker.addEventListener('message', (event) => {
+    if (event.data.type === 'CHECK_UPDATE_SAFE') {
+      event.ports[0]?.postMessage(contextSafe());
+    } else if (event.data.type === 'VERSION_ACTIVATED') {
+      activatedVersion = event.data.version;
+      reloadSafely();
+    }
+  });
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    identify();
+    check();
+  });
+  const applyPending = async () => {
+    reloadSafely();
+    if (!pending || activating || refreshing) return;
+    if (!safe()) {
+      setStatus('Atualização pronta — será aplicada ao fechar o conteúdo', 'pending');
+      return;
+    }
+    activating = true;
+    try {
+      const result = await send(pending.worker, {
+        type: 'ACTIVATE_UPDATE', version: pending.version,
+        waiting: registration.waiting === pending.worker
+      });
+      if (result.deferred) {
+        setStatus('Atualização pronta — aguardando outras janelas do aplicativo', 'pending');
+      } else if (result.activating) {
+        setStatus('Atualizando — ativando versão validada', 'updating');
+        pending = null;
+      } else {
+        activatedVersion = pending.version;
+        pending = null;
+        reloadSafely();
+      }
+    } catch (error) {
+      setStatus('Não foi possível atualizar — versão anterior preservada', 'error');
+    } finally {
+      activating = false;
+    }
+  };
+  resumeUpdate = applyPending;
+  const check = async () => {
+    if (checking || refreshing) return;
+    if (!navigator.onLine) {
+      setStatus('Sem internet — usando conteúdo salvo', 'offline');
+      return;
+    }
+    checking = true;
+    button.disabled = true;
+    setStatus('Atualizando — verificando arquivos', 'updating');
+    try {
+      if (!registration) {
+        registration = await navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' });
+        identify();
+      }
+      await registration.update();
+      if (registration.installing) {
+        await new Promise((resolve, reject) => {
+          const worker = registration.installing;
+          worker.addEventListener('statechange', () => {
+            if (worker.state === 'installed' || worker.state === 'activated') resolve();
+            if (worker.state === 'redundant') reject(new Error('Instalação incompleta'));
+          });
         });
-      });
-
-      // Verifica atualizações ao voltar para o app e a cada 30 min
-      document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') reg.update();
-      });
-      setInterval(() => reg.update(), 30 * 60 * 1000);
-    }).catch(() => {});
+      }
+      const worker = registration.waiting || registration.active;
+      if (!worker) throw new Error('Atualização indisponível');
+      const { metadata } = await send(worker, { type: 'PREPARE_UPDATE' });
+      if (metadata.version !== localVersion || registration.waiting) {
+        pending = { worker, version: metadata.version };
+        await applyPending();
+      } else {
+        setStatus('Atualizado');
+      }
+    } catch (error) {
+      setStatus(navigator.onLine ? 'Não foi possível atualizar — usando conteúdo salvo' :
+        'Sem internet — usando conteúdo salvo', navigator.onLine ? 'error' : 'offline');
+    } finally {
+      checking = false;
+      button.disabled = false;
+    }
   };
-
-  if (document.readyState === 'complete') register();
-  else window.addEventListener('load', register, { once: true });
+  button.addEventListener('click', check);
+  window.addEventListener('beforeprint', () => { printing = true; });
+  window.addEventListener('afterprint', () => {
+    printing = false;
+    setTimeout(() => resumeUpdate(), 0);
+  });
+  window.addEventListener('offline', () => setStatus('Sem internet — usando conteúdo salvo', 'offline'));
+  window.addEventListener('online', check);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') { applyPending(); check(); }
+  });
+  setInterval(() => {
+    if (document.visibilityState === 'visible') { applyPending(); check(); }
+  }, 5 * 60 * 1000);
+  check();
 }
 
 function initializeModalLabels() {
@@ -837,7 +961,26 @@ function init() {
 
   const weeks = getWeeks();
   if (weeks.length > 0) {
-    showWeek(weeks[0].id);
+    const selected = weeks.find((week) => week.id === savedUpdateState?.week) || weeks[0];
+    showWeek(selected.id, { preserveScroll: Boolean(savedUpdateState) });
+    if (savedUpdateState) {
+      Object.entries(savedUpdateState.fonts || {}).forEach(([id, size]) => {
+        if (typeof size !== 'number' || size < 8 || size > 28) return;
+        fontSizes[id] = size;
+        const element = document.getElementById(id);
+        if (element) element.style.fontSize = `${size}pt`;
+      });
+      document.getElementById(savedUpdateState.focus)?.focus({ preventScroll: true });
+      if (!savedUpdateState.focus && savedUpdateState.focusAction) {
+        Array.from(document.querySelectorAll('[data-action]'))
+          .find((element) => element.dataset.action === savedUpdateState.focusAction && !element.hidden)
+          ?.focus({ preventScroll: true });
+      }
+      document.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+        input.checked = (savedUpdateState.readings || []).includes(input.value);
+      });
+      requestAnimationFrame(() => window.scrollTo({ top: savedUpdateState.scroll || 0, behavior: 'instant' }));
+    }
   }
 
   document.addEventListener('click', handleActionClick);

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head><meta name="app-version" content="c384d0ad863db23a73906261ca1592fd5dc8b0731b19d6863a57add16e81f63a">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roteiro Litúrgico - Paróquia Nossa Senhora Auxiliadora</title>
@@ -21,6 +21,11 @@
         <p id="header-subtitle">Roteiro da Adoração Solene</p>
         <div><span class="version-badge">SISTEMA DINÂMICO MULTI-SEMANAS</span></div>
     </header>
+
+    <div class="update-controls">
+        <span id="update-status" role="status" aria-live="polite" data-state="updating">Verificando atualização…</span>
+        <button type="button" id="check-update" class="action-btn">Buscar atualização</button>
+    </div>
 
     <nav class="week-selector-bar" role="tablist" aria-label="Selecionar semana">
         <button type="button" class="week-tab-btn" id="btn-tab-2026-10-05" role="tab" aria-selected="false" aria-controls="week-panel-2026-10-05" data-action="show-week" data-week-id="2026-10-05">05 a 11 Out. (28º Dom)</button>
@@ -1147,18 +1152,7 @@
     
 
     <script src="leituras.js" defer></script>
-    <script>
-        window.antifonasData = window.antifonasData || {};
-        (function () {
-            const antifonasScript = document.createElement('script');
-            antifonasScript.src = 'antifonas.js';
-            antifonasScript.async = false;
-            antifonasScript.onerror = function () {
-                window.antifonasData = window.antifonasData || {};
-            };
-            document.head.appendChild(antifonasScript);
-        })();
-    </script>
+    <script src="antifonas.js" defer></script>
     <script src="programacao.js" defer></script>
     <script src="app.js" defer></script>
 </body>
