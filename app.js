@@ -266,6 +266,11 @@ function openActiveReflexoesModal(trigger) {
   openModal(`modal_reflexoes_${week.legacyWeek}`, trigger);
 }
 
+function getActiveLeiturasBlock() {
+  const week = getCurrentWeek();
+  return week ? document.getElementById(`leituras_semana_${week.legacyWeek}`) : null;
+}
+
 function openActiveLeiturasModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
@@ -275,10 +280,16 @@ function openActiveLeiturasModal(trigger) {
   });
   selectAllReadings(false);
 
-  const activeBlock = document.getElementById(`leituras_semana_${week.legacyWeek}`);
-  if (activeBlock) {
-    activeBlock.style.display = 'block';
+  const activeBlock = getActiveLeiturasBlock();
+  if (!activeBlock || !activeBlock.querySelector('.reading-checkbox')) {
+    showMessageModal(
+      `Não há opções de leituras para a semana ${week.id} (bloco leituras_semana_${week.legacyWeek} ausente ou vazio). Verifique a atualização do aplicativo e os dados desta semana.`,
+      trigger,
+      'Leituras indisponíveis'
+    );
+    return;
   }
+  activeBlock.style.display = 'block';
 
   openModal('modal_seletor_leituras', trigger);
 }
@@ -343,7 +354,7 @@ function openReading(key, trigger) {
 }
 
 function selectAllReadings(check) {
-  document.querySelectorAll('.reading-checkbox').forEach((checkbox) => {
+  getActiveLeiturasBlock()?.querySelectorAll('.reading-checkbox').forEach((checkbox) => {
     checkbox.checked = Boolean(check);
   });
 }
@@ -480,7 +491,7 @@ function previewSelectedReadings() {
     return;
   }
 
-  const selected = Array.from(document.querySelectorAll('.reading-checkbox:checked')).map((checkbox) => checkbox.value);
+  const selected = Array.from(getActiveLeiturasBlock()?.querySelectorAll('.reading-checkbox:checked') || []).map((checkbox) => checkbox.value);
   if (selected.length === 0) {
     showMessageModal('Por favor, selecione ao menos uma leitura ou antífona.', document.activeElement, 'Seleção necessária');
     return;

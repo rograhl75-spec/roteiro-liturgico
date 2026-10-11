@@ -4,6 +4,10 @@
   "private": true,
   "scripts": {
     "validate:data": "node validate-data.js",
+    "test:browser": "playwright test",
     "version": "node build-version.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0"
   }
 }
