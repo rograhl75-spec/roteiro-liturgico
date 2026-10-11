@@ -747,7 +747,7 @@ const programacaoData = {
                         </table>
                     </div>
                     <div>
-                        <div class="table-caption">📖 Liturgia da Palavra — 30º Domingo</div>
+                        <div class="table-caption">📖 Liturgia da Palavra — 30º Domingo (Lecionário I)</div>
                         <table class="liturgy-table">
                             <thead><tr><th style="width:26%;">Momento</th><th style="width:44%;">Ref. Bíblica</th><th style="width:30%; text-align:center;">Lec. / Pág.</th></tr></thead>
                             <tbody>
