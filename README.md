@@ -30,6 +30,16 @@ Aplicação web da Paróquia Nossa Senhora Auxiliadora para consultar a programa
 - `sw.js`: cache e atualização do aplicativo;
 - `validate-data.js`: validação dos dados.
 
+## Validação
+
+Execute `npm run validate:data` para verificar os dados. Para as regressões de DOM,
+seleção por semana e impressão em Chromium headless, execute `npm ci`,
+`npx playwright install chromium` e `npm run test:browser` (requer Python 3 para
+servir o site localmente). Para usar um Chromium já instalado, defina
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` com o caminho do executável.
+Os testes verificam mídia de impressão e geração de PDF; não substituem testes
+físicos em celulares ou impressoras.
+
 ## Repositório
 
 - **Repositório:** `rograhl75-spec/roteiro-liturgico`
