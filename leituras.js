@@ -1076,6 +1076,146 @@ Naquele tempo, os fariseus fizeram um plano para apanhar Jesus em alguma palavra
 Palavra da Salvação.
 R. Glória a vós, Senhor.`
     },
+    '1l_dom_w7': {
+        title: '1ª Leitura — Êxodo 22,20-26 (Lecionário I, pág. 345)',
+        day: 'Domingo (25/10) — 30º Domingo do Tempo Comum',
+        text: `Se fizerdes algum mal à viúva e ao órfão, minha cólera se inflamará contra vós.
+
+Leitura do Livro do Êxodo 22,20-26
+
+Assim diz o Senhor:
+20
+Não oprimas nem maltrates o estrangeiro,
+pois vós fostes estrangeiros na terra do Egito.
+21
+Não façais mal algum à viúva nem ao órfão.
+22
+Se os maltratardes, gritarão por mim,
+e eu ouvirei o seu clamor.
+23
+Minha cólera, então, se inflamará
+e eu vos matarei à espada;
+vossas mulheres ficarão viúvas
+e órfãos os vossos filhos.
+24
+Se emprestares dinheiro a alguém do meu povo,
+a um pobre que vive ao teu lado,
+não sejas um usurário,
+dele cobrando juros.
+25
+Se tomares como penhor o manto do teu próximo,
+deverás devolvê-lo antes do pôr do sol.
+26
+Pois é a única veste que tem para o seu corpo,
+e coberta que ele tem para dormir.
+Se clamar por mim, eu o ouvirei,
+porque sou misericordioso.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'sl_dom_w7': {
+        title: 'Salmo Responsorial — Salmo 17(18),2-3a.3bc-4.47.51ab (Lecionário I, pág. 345)',
+        day: 'Domingo (25/10) — 30º Domingo do Tempo Comum',
+        text: `R. Eu vos amo, ó Senhor, sois minha força e salvação.
+
+2
+Eu vos amo, ó Senhor! Sois minha força, *
+3a
+minha rocha, meu refúgio e Salvador!
+Ó meu Deus, sois o rochedo que me abriga, *
+minha força e poderosa salvação. R.
+
+3bc
+Ó meu Deus, sois o rochedo que me abriga *
+sois meu escudo e proteção: em vós espero!
+4
+Invocarei o meu Senhor: a ele a glória! *
+e dos meus perseguidores serei salvo! R.
+
+47
+Viva o Senhor! Bendito seja o meu Rochedo! *
+E louvado seja Deus, meu Salvador!
+51ab
+Concedeis ao vosso rei grandes vitórias *
+e mostrais misericórdia ao vosso Ungido. R.`
+    },
+    '2l_dom_w7': {
+        title: '2ª Leitura — 1 Tessalonicenses 1,5c-10 (Lecionário I, pág. 346)',
+        day: 'Domingo (25/10) — 30º Domingo do Tempo Comum',
+        text: `Vós vos convertestes, abandonando os falsos deuses, para servir a Deus, esperando o seu Filho.
+
+Leitura da Primeira Carta de São Paulo aos Tessalonicenses 1,5c-10
+
+Irmãos:
+5c
+Sabeis de que maneira procedemos entre vós,
+para o vosso bem.
+6
+E vós vos tornastes imitadores nossos e do Senhor,
+acolhendo a Palavra com a alegria do Espírito Santo,
+apesar de tantas tribulações.
+7
+Assim vos tornastes modelo
+para todos os fiéis da Macedônia e da Acaia.
+8
+Com efeito, a partir de vós,
+a Palavra do Senhor não se divulgou apenas
+na Macedônia e na Acaia,
+mas a vossa fé em Deus propagou-se por toda parte.
+Assim, nós já nem precisamos de falar,
+9
+pois as pessoas mesmas contam como vós nos acolhestes
+e como vos convertestes, abandonando os falsos deuses,
+para servir ao Deus vivo e verdadeiro,
+10
+esperando dos céus o seu Filho,
+a quem ele ressuscitou dentre os mortos:
+Jesus, que nos livra do castigo que está por vir.
+
+Palavra do Senhor.
+R. Graças a Deus.`
+    },
+    'ev_dom_w7': {
+        title: 'Evangelho — Mateus 22,34-40 (Lecionário I, pág. 347)',
+        day: 'Domingo (25/10) — 30º Domingo do Tempo Comum',
+        text: `Aclamação ao Evangelho — Jo 14,23
+
+R. Aleluia, Aleluia, Aleluia.
+V. Se alguém me ama, guardará a minha palavra,
+    e meu Pai o amará, e a ele nós viremos.
+
+Evangelho
+Amarás o Senhor teu Deus, e ao teu próximo como a ti mesmo.
+
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 22,34-40
+
+Naquele tempo,
+34
+Os fariseus ouviram dizer que Jesus
+tinha feito calar os saduceus.
+Então eles se reuniram em grupo,
+35
+e um deles perguntou a Jesus, para experimentá-lo:
+36
+\"Mestre, qual é o maior mandamento da Lei?\"
+37
+Jesus respondeu:
+\"'Amarás o Senhor teu Deus
+de todo o teu coração, de toda a tua alma,
+e de todo o teu entendimento!'
+38
+Esse é o maior e o primeiro mandamento.
+39
+O segundo é semelhante a esse:
+'Amarás ao teu próximo como a ti mesmo'.
+40
+Toda a Lei e os profetas
+dependem desses dois mandamentos\".
+
+Palavra da Salvação.
+R. Glória a vós, Senhor.`
+    },
 };
 
 window.readingsData = readingsData;
