@@ -248,6 +248,8 @@ if (thirtiethSundayWeek) {
     && html.includes('09h00')
     && html.includes('11h00'),
   'a escala deve listar as dez celebrações, locais e celebrantes');
+  expect(html.includes('<span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Laurindo</td>'),
+  'a missa de segunda-feira às 19h deve ser celebrada por Pe. Laurindo conforme o PDF atualizado');
   expect(requiredReadingKeys.every((key) =>
     readingKeys.has(key) && html.includes(`data-reading-key="${key}"`))
     && html.includes('Lecionário I')
