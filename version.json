@@ -1,10 +1,10 @@
 {
-  "version": "4872447dd10199ef81a71e65b1eb9d00959cf45065b100004b09ed4f252f35c3",
+  "version": "ee456c25dcbead0ee3d30f06560b3d399dea93d0f55f043b12f1fb424e05bc72",
   "files": {
-    "./index.html": "67e7bcb5ead5602402d3d1cda35a17e0f5d5af0aaa8aa77312341c7998a37e42",
+    "./index.html": "426919f3b5034e3f73dd3fe44487c56965a6cfbf90011b9637a217c8ebbd72a6",
     "./styles.css": "eb15e24a572b6faba4228380108ea3999fee8c3f1ba78104f3b1c545b8e3693b",
     "./app.js": "45667435ac9bf91585ec039210d4b7653e1e4c854a12851e74f612f8c620d444",
-    "./programacao.js": "af19a196fc4cb049ba5d7f693bb02bcde731db724cd9385f7962b4ef69745f5a",
+    "./programacao.js": "769ba41cd51b2c06fcb3f6709d55706cf5109640ed9de59b7bee31d8b87e7c5e",
     "./leituras.js": "a1f95143e71f4cdf8bad8e87aba955e88aa0877b3a15ec5f668d567e7e22ffc5",
     "./antifonas.js": "f39db575008b4750f764b176d8323e8d0f6798828bdf105435aa475d917d26c8",
     "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",

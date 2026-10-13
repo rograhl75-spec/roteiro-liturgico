@@ -26,6 +26,34 @@ test('header hides redundant details and uses a compact logo', async ({ page }) 
   });
 });
 
+test('October 19–25 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
+  await page.locator('#btn-tab-2026-10-19').click();
+
+  const parish = 'Paróquia Nossa Senhora Auxiliadora';
+  const expectedRows = [
+    ['Segunda 19h00', parish, 'Pe. Laurindo'],
+    ['Terça 19h00', parish, 'Pe. Manuel'],
+    ['Quarta 19h00', parish, 'Pe. Heriberto'],
+    ['Quinta 19h00', parish, 'Pe. Afonso'],
+    ['Sexta 19h00', parish, 'Pe. Heriberto'],
+    ['Sábado 18h30', parish, 'Pe. Heriberto'],
+    ['Sábado 19h00', 'Capela São Domingos Sávio', 'Pe. Djhon'],
+    ['Domingo 09h00', parish, 'Pe. Heriberto'],
+    ['Domingo 11h00', parish, 'Pe. Heriberto'],
+    ['Domingo 18h30', parish, 'Pe. Heriberto']
+  ];
+  const readRows = (locator) => locator.locator('.escala-table tr').evaluateAll(rows =>
+    rows.map(row => Array.from(row.cells, cell => cell.textContent.trim()))
+  );
+
+  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+  expect(await readRows(page.locator('#week-panel-2026-10-19'))).toEqual(expectedRows);
+
+  await page.locator('[data-action="open-active-programacao"]').click();
+  await expect(page.locator('#modal_programacao')).toBeVisible();
+  expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
+});
+
 test('roteiros for Sundays 26 through 30 are present and week 30 opens its roteiro', async ({ page }) => {
   const structure = await page.evaluate(() => {
     const roteiroModals = [

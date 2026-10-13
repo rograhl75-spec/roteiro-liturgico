@@ -506,7 +506,7 @@ const programacaoData = {
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
-                        <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                        <tr><td><span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Laurindo</td></tr>
                     </tbody></table>
                 </div>
                 <div class="tables-grid">
