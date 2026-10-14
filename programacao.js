@@ -169,7 +169,7 @@ const programacaoData = {
     {
       legacyWeek: 6,
       id: '2026-10-19',
-      shortTitle: '30º Domingo',
+      shortTitle: '19 a 25 de outubro — 30ª semana (30º Domingo)',
       fullTitle: '30º Domingo do Tempo Comum — 19 a 25 de outubro',
       roteiroLabel: 'Roteiro da Missa',
       programacaoHtml: `<!-- SEGUNDA -->

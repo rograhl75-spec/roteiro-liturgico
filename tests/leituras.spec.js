@@ -56,6 +56,31 @@ test('October 5–11 week is removed while the remaining weeks still load', asyn
   await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
 });
 
+test('October 19–25 tab keeps the period and week in both selection states', async ({ page }) => {
+  const tab = page.locator('#btn-tab-2026-10-19');
+  const label = '19 a 25 de outubro — 30ª semana (30º Domingo)';
+
+  await expect(tab).toHaveText(`👉 ${label}`);
+  await expect(tab).toHaveAttribute('aria-selected', 'false');
+
+  await tab.click();
+  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
+  await expect(tab).toHaveAttribute('aria-selected', 'true');
+  await expect(tab).toHaveClass('week-tab-btn active');
+  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+
+  await page.locator('#btn-tab-2026-10-12').click();
+  await expect(tab).toHaveText(`👉 ${label}`);
+  await expect(tab).toHaveAttribute('aria-selected', 'false');
+  await expect(page.locator('#week-panel-2026-10-19')).toBeHidden();
+  await expect(page.locator('#btn-tab-2026-10-12'))
+    .toHaveText('✅ VISUALIZANDO: 12 a 18 Out. (Nossa Sra. Aparecida)');
+
+  await tab.click();
+  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
+  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+});
+
 test('October 19–25 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
   await page.locator('#btn-tab-2026-10-19').click();
 

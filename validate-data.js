@@ -239,7 +239,7 @@ if (thirtiethSundayWeek) {
     ([, file]) => decodeURIComponent(file));
 
   expect(thirtiethSundayWeek.legacyWeek === 6
-    && thirtiethSundayWeek.shortTitle === '30º Domingo'
+    && thirtiethSundayWeek.shortTitle === '19 a 25 de outubro — 30ª semana (30º Domingo)'
     && thirtiethSundayWeek.fullTitle === '30º Domingo do Tempo Comum — 19 a 25 de outubro',
   'a semana deve usar o título e os identificadores legados da nova aba');
   expect((html.match(/class="p-hora"/g) || []).length === 10
