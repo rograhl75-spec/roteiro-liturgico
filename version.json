@@ -1,12 +1,12 @@
 {
-  "version": "ee456c25dcbead0ee3d30f06560b3d399dea93d0f55f043b12f1fb424e05bc72",
+  "version": "1b5269548c77dc25af0f4af35a85e6f015735544338a6a6e516a3946d80c2819",
   "files": {
-    "./index.html": "426919f3b5034e3f73dd3fe44487c56965a6cfbf90011b9637a217c8ebbd72a6",
+    "./index.html": "4427d49ef659443b54ed3f04f2997a28850fe9aa65dc200dc56567ff79443bec",
     "./styles.css": "eb15e24a572b6faba4228380108ea3999fee8c3f1ba78104f3b1c545b8e3693b",
-    "./app.js": "45667435ac9bf91585ec039210d4b7653e1e4c854a12851e74f612f8c620d444",
-    "./programacao.js": "769ba41cd51b2c06fcb3f6709d55706cf5109640ed9de59b7bee31d8b87e7c5e",
-    "./leituras.js": "a1f95143e71f4cdf8bad8e87aba955e88aa0877b3a15ec5f668d567e7e22ffc5",
-    "./antifonas.js": "f39db575008b4750f764b176d8323e8d0f6798828bdf105435aa475d917d26c8",
+    "./app.js": "e6fc79bae9d20c247abd49874f684a98575213be4aef75d454cb50794269668c",
+    "./programacao.js": "b3665b0a872f324b50d449d9ef5fd8463175fad01aebbae138fe249063c65114",
+    "./leituras.js": "89bbcbab742225780e6ecb2c30d731216ce5b3dc2b27b64e72ba1fca2a16f627",
+    "./antifonas.js": "a1e97a6491418fb1c1e7cf8a3b872f5da5185e36b2b1c768ef05a94afbece91d",
     "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",
     "./sw.js": "068cfd081489bb413cc896696f88877841c4d75e241abafae47b9af8e8d2c0a7",
     "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",

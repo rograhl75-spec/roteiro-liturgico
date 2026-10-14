@@ -26,6 +26,36 @@ test('header hides redundant details and uses a compact logo', async ({ page }) 
   });
 });
 
+test('October 5–11 week is removed while the remaining weeks still load', async ({ page }) => {
+  const state = await page.evaluate(() => ({
+    weekIds: window.programacaoData.weeks.map(week => week.id),
+    staleElements: [
+      'btn-tab-2026-10-05',
+      'week-panel-2026-10-05',
+      'leituras_semana_4',
+      'modal_reflexoes_4',
+      'modal_roteiro_4',
+      'modal_preces_4'
+    ].filter(id => document.getElementById(id)),
+    staleReadingKeys: Object.keys(window.readingsData).filter(key => key.endsWith('_w5')),
+    staleAntiphon: Boolean(window.antifonasData.antifonas_4),
+    staleText: /05 a 11|05\/10|10 e 11\/10|28º DOMINGO/i.test(document.body.textContent),
+    currentWeek: document.querySelector('.week-tab-btn.active')?.dataset.weekId
+  }));
+
+  expect(state).toEqual({
+    weekIds: ['2026-10-12', '2026-10-19'],
+    staleElements: [],
+    staleReadingKeys: [],
+    staleAntiphon: false,
+    staleText: false,
+    currentWeek: '2026-10-12'
+  });
+
+  await page.locator('#btn-tab-2026-10-19').click();
+  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+});
+
 test('October 19–25 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
   await page.locator('#btn-tab-2026-10-19').click();
 
@@ -54,12 +84,11 @@ test('October 19–25 schedule matches the updated PDF on the page and in the mo
   expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
 });
 
-test('roteiros for Sundays 26 through 30 are present and week 30 opens its roteiro', async ({ page }) => {
+test('remaining Sunday roteiros are present and week 30 opens its roteiro', async ({ page }) => {
   const structure = await page.evaluate(() => {
     const roteiroModals = [
       ['modal_roteiro_2', 'content_roteiro_2', '26º DOMINGO'],
       ['modal_roteiro_3', 'content_roteiro_3', '27º DOMINGO'],
-      ['modal_roteiro_4', 'content_roteiro_4', '28º DOMINGO'],
       ['modal_roteiro_5_aparecida', 'content_roteiro_5_aparecida', 'NOSSA SENHORA APARECIDA'],
       ['modal_roteiro_5', 'content_roteiro_5', '29º DOMINGO'],
       ['modal_roteiro_6', 'content_roteiro_6', '30º DOMINGO']
@@ -75,7 +104,7 @@ test('roteiros for Sundays 26 through 30 are present and week 30 opens its rotei
     return { modals, legacyWeek: week?.legacyWeek };
   });
 
-  expect(structure).toEqual({ modals: [true, true, true, true, true, true], legacyWeek: 6 });
+  expect(structure).toEqual({ modals: [true, true, true, true, true], legacyWeek: 6 });
 
   await page.locator('#btn-tab-2026-10-19').click();
   await page.locator('#btn-roteiro-principal').click();
@@ -127,7 +156,7 @@ test('select all, deselect and preview exclude checked boxes from inactive weeks
   await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
   await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(20);
   await expect(page.locator('#leituras_semana_5 input:checked')).toHaveCount(22);
-  await expect(page.locator('#leituras_semana_3 input:checked, #leituras_semana_4 input:checked')).toHaveCount(0);
+  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(0);
   await page.getByRole('button', { name: 'Desmarcar Todas', exact: true }).click();
   await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(0);
   await expect(page.locator('#leituras_semana_5 input:checked')).toHaveCount(22);
