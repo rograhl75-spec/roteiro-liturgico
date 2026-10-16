@@ -3,7 +3,8 @@ const STATE_CACHE = 'roteiro-liturgico-state';
 const ASSETS = [
   './index.html', './styles.css', './app.js',
   './programacao.js', './leituras.js', './antifonas.js', './manifest.json',
-  './sw.js', './icone.png', './icone.svg', './Selo Auxiliadora 60 anos_Ano 3.png'
+  './sw.js', './icone.png', './icone.svg', './Selo Auxiliadora 60 anos_Ano 3.png',
+  './RITO DE ENTREGA DO CREIO.pdf'
 ];
 const clientVersions = new Map();
 let preparing;

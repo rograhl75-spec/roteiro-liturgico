@@ -351,6 +351,7 @@ const programacaoData = {
                     <span class="color-badge badge-verde">Verde (Ferial)</span>
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29ª Semana do Tempo Comum (Ano Par II)</div>
+                <div class="note-gloria-box rito-creio-occurrence"><strong>Rito de Entrega do Creio — Paróquia Nossa Senhora Auxiliadora, 23/10.</strong> <a class="action-btn" href="./RITO%20DE%20ENTREGA%20DO%20CREIO.pdf" target="_blank" rel="noopener">📄 Abrir PDF para impressão</a></div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>
@@ -395,6 +396,7 @@ const programacaoData = {
                 </div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 30º Domingo do Tempo Comum (Ano A)</div>
                 <div class="note-gloria-box">Em 25/10, omite-se a Memória de Santo Antônio de Sant’Ana Galvão, religioso.</div>
+                <div class="note-gloria-box rito-creio-occurrence"><strong>Rito de Entrega do Creio — Capela São Domingos Sávio, 24/10.</strong> <a class="action-btn" href="./RITO%20DE%20ENTREGA%20DO%20CREIO.pdf" target="_blank" rel="noopener">📄 Abrir PDF para impressão</a></div>
                 <div class="presidency-box">
                     <div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                     <table class="escala-table"><tbody>

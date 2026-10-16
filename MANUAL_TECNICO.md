@@ -208,7 +208,7 @@ Também teste manualmente:
 
 ### Metadados e integridade
 
-Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige `index.html`, `styles.css`, `app.js`, `programacao.js`, `leituras.js`, `antifonas.js`, `manifest.json`, `sw.js`, `icone.png`, `icone.svg` e `Selo Auxiliadora 60 anos_Ano 3.png`.
+Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige `index.html`, `styles.css`, `app.js`, `programacao.js`, `leituras.js`, `antifonas.js`, `manifest.json`, `sw.js`, `icone.png`, `icone.svg`, `Selo Auxiliadora 60 anos_Ano 3.png` e `RITO DE ENTREGA DO CREIO.pdf`.
 
 O `version.json` contém `{ "version": "...", "files": { "./index.html": "...", ... } }`. Cada valor em `files` é o SHA-256 dos bytes publicados do arquivo. Para calcular `version`, o gerador remove as tags `<meta name="app-version">` do HTML, calcula os hashes na ordem fixa declarada em `build-version.js` e aplica SHA-256 ao `JSON.stringify` desse mapa. Depois insere a meta com o identificador e recalcula o hash real de `index.html` em `files`. Isso evita uma referência circular e torna execuções repetidas idempotentes.
 
