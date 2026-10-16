@@ -1,16 +1,17 @@
 {
-  "version": "ddc9535c0b19fd620ac770676288540bc60a3fe27b7376c1080761b2d4cce157",
+  "version": "4bd6c4e8bbc5cf893960a43fd662ef289b550616f4e8f1763b9d80b6f31fb7f1",
   "files": {
-    "./index.html": "35d94f6c8c41791fc64de775d8b84f8b3b05aa74efc2b1529ad55ddbc11de722",
+    "./index.html": "942fcf2628ef5ec3d7a06b30178e89fdb5dd89dd5dbb9a2530cba761943dd62d",
     "./styles.css": "eb15e24a572b6faba4228380108ea3999fee8c3f1ba78104f3b1c545b8e3693b",
     "./app.js": "e6fc79bae9d20c247abd49874f684a98575213be4aef75d454cb50794269668c",
-    "./programacao.js": "fb7c26b53a7c11f9bf4f1192f6afc9ac166bcc99596068b451946082abef94ea",
+    "./programacao.js": "77139309b92aaf184852c4a210a27b7cdec2533a53c92f2af330ca07c870f3fd",
     "./leituras.js": "89bbcbab742225780e6ecb2c30d731216ce5b3dc2b27b64e72ba1fca2a16f627",
     "./antifonas.js": "a1e97a6491418fb1c1e7cf8a3b872f5da5185e36b2b1c768ef05a94afbece91d",
     "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",
-    "./sw.js": "068cfd081489bb413cc896696f88877841c4d75e241abafae47b9af8e8d2c0a7",
+    "./sw.js": "9c3c90623d2293777bcd76ac94c3d979e4f961735dc0ff356678b9a524d477bb",
     "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",
     "./icone.svg": "29e67c935ec3b53d8a58354e7bcfb6cdd64d934ccd9cf83af1f27cf7eaa7b063",
-    "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93"
+    "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93",
+    "./RITO DE ENTREGA DO CREIO.pdf": "44acd1effb3fa8229fce03d3c272838b31891dabccd04f7ab471e762bdd1a9ba"
   }
 }

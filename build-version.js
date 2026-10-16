@@ -15,7 +15,8 @@ const assets = [
     'sw.js',
     'icone.png',
     'icone.svg',
-    'Selo Auxiliadora 60 anos_Ano 3.png'
+    'Selo Auxiliadora 60 anos_Ano 3.png',
+    'RITO DE ENTREGA DO CREIO.pdf'
 ];
 
 function sha256(content) {

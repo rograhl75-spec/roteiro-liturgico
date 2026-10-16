@@ -109,6 +109,27 @@ test('October 19–25 schedule matches the updated PDF on the page and in the mo
   expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
 });
 
+test('Creio rite PDF is available for printing at the parish and chapel dates', async ({ page }) => {
+  await page.locator('#btn-tab-2026-10-19').click();
+
+  const schedule = page.locator('#week-panel-2026-10-19');
+  for (const [location, date] of [
+    ['Paróquia Nossa Senhora Auxiliadora', '23/10'],
+    ['Capela São Domingos Sávio', '24/10']
+  ]) {
+    const occurrence = schedule.locator('.rito-creio-occurrence').filter({ hasText: location });
+    await expect(occurrence).toContainText(date);
+    const link = occurrence.getByRole('link', { name: '📄 Abrir PDF para impressão' });
+    await expect(link).toHaveAttribute('href', './RITO%20DE%20ENTREGA%20DO%20CREIO.pdf');
+    await expect(link).toHaveAttribute('target', '_blank');
+  }
+
+  const response = await page.request.get('/RITO%20DE%20ENTREGA%20DO%20CREIO.pdf');
+  expect(response.ok()).toBe(true);
+  expect(response.headers()['content-type']).toContain('application/pdf');
+  expect((await response.body()).subarray(0, 5).toString()).toBe('%PDF-');
+});
+
 test('remaining Sunday roteiros are present and week 30 opens its roteiro', async ({ page }) => {
   const structure = await page.evaluate(() => {
     const roteiroModals = [
