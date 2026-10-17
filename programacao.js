@@ -137,11 +137,11 @@ const programacaoData = {
                 <div class="card-header"><h2>Fim de semana: 17 e 18 de Outubro de 2026</h2><span class="color-badge badge-verde">Verde</span></div>
                 <div style="margin-bottom: 0.5rem; font-weight: 600;">Celebração: 29º Domingo do Tempo Comum, Ano A</div>
                 <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div><table class="escala-table"><tbody>
-                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Rafael</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
-                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Heriberto</td></tr>
+                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Rafael</td></tr>
+                    <tr><td><span class="p-dia">Sábado</span> <span class="p-hora">19h00</span></td><td class="p-loc">Capela São Domingos Sávio</td><td class="p-cel">Pe. Afonso</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">09h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Manuel</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">11h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Lairton</td></tr>
+                    <tr><td><span class="p-dia">Domingo</span> <span class="p-hora">18h30</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Laurindo</td></tr>
                 </tbody></table></div>
                 <div class="tables-grid">
                     <div><div class="table-caption">📌 Missal Romano</div><table class="liturgy-table"><tbody>
