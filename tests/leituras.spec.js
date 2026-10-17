@@ -109,6 +109,34 @@ test('October 19–25 schedule matches the updated PDF on the page and in the mo
   expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
 });
 
+test('October 12–18 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
+  await page.locator('#btn-tab-2026-10-12').click();
+
+  const parish = 'Paróquia Nossa Senhora Auxiliadora';
+  const expectedRows = [
+    ['Segunda 11h00', parish, 'Pe. Heriberto'],
+    ['Terça 19h00', parish, 'Pe. Manuel'],
+    ['Quarta 19h00', parish, 'Pe. Heriberto'],
+    ['Quinta 19h00', parish, 'Pe. Manuel'],
+    ['Sexta 19h00', parish, 'Pe. Heriberto'],
+    ['Sábado 18h30', parish, 'Pe. Rafael'],
+    ['Sábado 19h00', 'Capela São Domingos Sávio', 'Pe. Afonso'],
+    ['Domingo 09h00', parish, 'Pe. Manuel'],
+    ['Domingo 11h00', parish, 'Pe. Lairton'],
+    ['Domingo 18h30', parish, 'Pe. Laurindo']
+  ];
+  const readRows = (locator) => locator.locator('.escala-table tr').evaluateAll(rows =>
+    rows.map(row => Array.from(row.cells, cell => cell.textContent.trim()))
+  );
+
+  await expect(page.locator('#week-panel-2026-10-12')).toBeVisible();
+  expect(await readRows(page.locator('#week-panel-2026-10-12'))).toEqual(expectedRows);
+
+  await page.locator('[data-action="open-active-programacao"]').click();
+  await expect(page.locator('#modal_programacao')).toBeVisible();
+  expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
+});
+
 test('Creio rite PDF is available for printing at the parish and chapel dates', async ({ page }) => {
   await page.locator('#btn-tab-2026-10-19').click();
 
