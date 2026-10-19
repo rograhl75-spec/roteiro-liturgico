@@ -100,7 +100,7 @@ if (!readingsData || typeof readingsData !== 'object') {
   process.exit(1);
 }
 
-const programacaoWindow = runInSandbox(programacaoSource, 'programacao.js');
+const programacaoWindow = runInSandbox(`${antifonasSource}\n${programacaoSource}`, 'programacao.js');
 const weeks = programacaoWindow.programacaoData?.weeks;
 if (!Array.isArray(weeks)) {
   console.error('Validação falhou:\n- Não foi possível carregar programacaoData.weeks de programacao.js');
@@ -252,8 +252,14 @@ if (allSaintsWeek) {
     && runInSandbox(antifonasSource, 'antifonas.js').antifonasData?.antifonas_8,
   'roteiro, preces, antífonas e indicação sobre reflexões devem estar disponíveis');
   expect(['31º Domingo do Tempo Comum', '843 (tabela); 844 (roteiro)',
-    '30 10 A 01 11', '19h00', 'não contém linha para 31/10'].every(text => html.includes(text)),
+    '19h00', 'não contém linha para 31/10'].every(text => html.includes(text)),
   'as divergências e lacunas das fontes devem permanecer explícitas');
+  expect(html.includes('Fim de semana: 31 de Outubro e 1 de Novembro de 2026')
+    && html.includes('Alegremo-nos todos no Senhor')
+    && html.includes('Citações Telão (PASCOM)')
+    && indexContent.includes('TODOS OS SANTOS, SOLENIDADE – 31 10 A 01 11 2026')
+    && !/30 10 A 01 11/.test(html + indexContent),
+  'o fim de semana deve reunir as datas corrigidas, antífonas e citações');
   const pdfs = Array.from(html.matchAll(/href="\.\/([^"]+\.pdf)"/g),
     ([, file]) => decodeURIComponent(file));
   expect(pdfs.length === 7 && pdfs.every(file => fs.existsSync(path.join(root, file))),
