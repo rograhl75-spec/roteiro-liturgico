@@ -68,9 +68,11 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await expect(weekend).toHaveCount(1);
     await expect(weekend.locator('.card-header h2')).toHaveText('Fim de semana: 31 de Outubro e 1 de Novembro de 2026');
     await expect(weekend.locator('.badge-branco')).toHaveText('Branca (Solenidade)');
+    await expect(weekend).toContainText('missa noturna de 31/10 em 1ª Véspera');
     await expect(weekend.locator('[data-date="2026-11-01"]')).toHaveCount(1);
-    await expect(weekend.locator('.note-gloria-box')).toHaveCount(2);
-    await expect(weekend.locator('.note-gloria-box').last()).toContainText('No domingo, 01/11, a missa das 18h30 será solene');
+    await expect(weekend.locator('.note-gloria-box')).toHaveCount(0);
+    await expect(weekend).not.toContainText('Fontes e observações');
+    await expect(weekend).not.toContainText('Nota das fontes');
     for (const selector of ['.card-header', '.presidency-box', '.escala-table tr', '.tables-grid', '.liturgy-table']) {
       expect(await weekend.locator(selector).count()).toBe(await previous.locator(selector).count());
     }
@@ -103,7 +105,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
   });
 }
 
-test('source references, missal pages and unresolved differences remain explicit', async ({ page }) => {
+test('source references and missal pages remain available without explanatory notes', async ({ page }) => {
   await openWeek(page);
   const expected = [
     ['II / 1123', 'II / 1124', 'II / 1125'],
@@ -122,9 +124,10 @@ test('source references, missal pages and unresolved differences remain explicit
       await expect(day).toContainText('413');
     }
   }
-  await expect(page.locator(`${week} [data-date="2026-10-31"]`)).toContainText('31º Domingo do Tempo Comum');
+  await expect(page.locator(`${week} [data-date="2026-10-31"]`)).toContainText('missa noturna de 31/10 em 1ª Véspera');
   await expect(page.locator(`${week} [data-date="2026-10-30"]`)).toContainText('Féria do Tempo Comum');
-  await expect(page.locator(`${week} .card[data-date="2026-10-31"]`)).toContainText('18h30 será solene');
+  await expect(page.locator(`${week} .card[data-date="2026-10-31"]`)).toContainText('Ap 7,2-4.9-14');
+  await expect(page.locator(`${week} .card[data-date="2026-10-31"]`)).toContainText('843 (tabela); 844 (roteiro)');
   for (const file of sources) {
     const link = page.locator(`${week} a`).filter({ hasText: file });
     await expect(link).toHaveCount(1);
@@ -177,7 +180,7 @@ test('complete readings, weekday acclamations and All Saints antiphons can be se
   expect(pdf.length).toBeGreaterThan(10000);
 });
 
-test('All Saints roteiro, prayer forms and source gaps are accessible without replacing previous content', async ({ page }) => {
+test('All Saints roteiro and weekend prayer forms are accessible without annotations', async ({ page }) => {
   await openWeek(page);
   await page.locator('#btn-roteiro-principal').click();
   const roteiro = page.locator('#content_roteiro_7');
@@ -185,6 +188,8 @@ test('All Saints roteiro, prayer forms and source gaps are accessible without re
   await expect(roteiro.locator('.roteiro-source-text')).toContainText('TODOS OS SANTOS, SOLENIDADE – 31 10 A 01 11 2026');
   await expect(roteiro).not.toContainText('30 10');
   await expect(roteiro).not.toContainText('30/10');
+  await expect(roteiro).not.toContainText('Conferência');
+  await expect(roteiro).not.toContainText('Há conflito entre as fontes');
   for (const text of ['SILÊNCIO', 'purificação', '1. RITOS INICIAIS', '2. LITURGIA DA PALAVRA',
     '3. LITURGIA EUCARÍSTICA', '4. RITO DA COMUNHÃO', '5. RITOS DE ENCERRAMENTO',
     'TOMAI, TODOS', 'Papa Leão', 'Geremias', 'Deus, glória e exultação dos Santos']) {
@@ -194,13 +199,21 @@ test('All Saints roteiro, prayer forms and source gaps are accessible without re
   await page.locator('[data-action="open-active-preces"]').click();
   const preces = page.locator('#content_preces_7');
   for (const text of ['31/10', '01/11', '09h00 e 11h00', '18h30',
-    'Salvai-nos, Senhor, por intercessão de vossos santos!', '19h00']) {
+    'Salvai-nos, Senhor, por intercessão de vossos santos!']) {
     await expect(preces).toContainText(text);
   }
+  await expect(preces.locator('h4')).toHaveText([
+    'SÁBADO — 31/10/2026 — 18h30',
+    'DOMINGO — 01/11/2026 — 09h00 e 11h00',
+    'DOMINGO — 01/11/2026 — 18h30'
+  ]);
+  await expect(preces).not.toContainText('19h00');
+  await expect(preces).not.toContainText('Não há formulário');
+  await expect(preces).not.toContainText('Lacuna da fonte');
   expect((await preces.innerText()).match(/Oração da Assembleia Paroquial 2026/g)).toHaveLength(3);
   await page.locator('#modal_preces_7 [data-action="close-modal"]').click();
   await page.locator('[data-action="open-active-reflexoes"]').click();
-  await expect(page.locator('#content_reflexoes_7')).toContainText('não foram fornecidas reflexões litúrgicas');
+  await expect(page.locator('#content_reflexoes_7')).toBeEmpty();
   await page.keyboard.press('Escape');
   await page.locator('#btn-tab-2026-10-19').click();
   await page.locator('#btn-roteiro-principal').click();

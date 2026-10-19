@@ -226,6 +226,10 @@ const allSaintsWeek = weeks.find((week) => week.id === '2026-10-26');
 if (!allSaintsWeek) issues.push('Semana 26/10–01/11/2026: programação ausente');
 if (allSaintsWeek) {
   const html = allSaintsWeek.programacaoHtml;
+  const precesModal = indexContent.split('<div id="modal_preces_7"')[1]
+    ?.split('<div id="modal_reflexoes_7"')[0] || '';
+  const reflexoesModal = indexContent.split('<div id="modal_reflexoes_7"')[1]
+    ?.split('</div>')[0] || '';
   const expect = (condition, message) => {
     if (!condition) issues.push(`Semana 26/10–01/11/2026: ${message}`);
   };
@@ -251,9 +255,22 @@ if (allSaintsWeek) {
     && indexContent.includes('value="antifonas_8"')
     && runInSandbox(antifonasSource, 'antifonas.js').antifonasData?.antifonas_8,
   'roteiro, preces, antífonas e indicação sobre reflexões devem estar disponíveis');
-  expect(['31º Domingo do Tempo Comum', '843 (tabela); 844 (roteiro)',
-    '19h00', 'não contém linha para 31/10'].every(text => html.includes(text)),
-  'as divergências e lacunas das fontes devem permanecer explícitas');
+  expect(html.includes('missa noturna de 31/10 em 1ª Véspera')
+    && html.includes('Ap 7,2-4.9-14')
+    && html.includes('843 (tabela); 844 (roteiro)'),
+  '31/10 deve celebrar a Solenidade em 1ª Véspera com as leituras e páginas do fim de semana');
+  expect(!html.includes('Fontes e observações')
+    && !html.includes('Nota das fontes')
+    && html.includes('Documentos originais')
+    && !indexContent.includes('Conferência</span>')
+    && !indexContent.includes('Há conflito entre as fontes'),
+  'as observações da semana devem ser removidas sem eliminar os links dos documentos');
+  expect(['preces_sabado_7', 'preces_domingo_manha_7', 'preces_domingo_noite_7']
+    .every(id => precesModal.includes(`id="${id}"`))
+    && !/(Segunda|Terça|Quarta|Quinta|Sexta)-feira/.test(precesModal)
+    && !/(Lacuna da fonte|Não há formulário|não foram fornecidos)/i.test(precesModal)
+    && !reflexoesModal.includes('Lacuna das fontes'),
+  'preces devem conter apenas os formulários de fim de semana e não exibir avisos de lacunas');
   expect(html.includes('Fim de semana: 31 de Outubro e 1 de Novembro de 2026')
     && html.includes('Alegremo-nos todos no Senhor')
     && html.includes('Citações Telão (PASCOM)')
