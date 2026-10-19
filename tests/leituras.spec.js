@@ -44,40 +44,63 @@ test('October 5–11 week is removed while the remaining weeks still load', asyn
   }));
 
   expect(state).toEqual({
-    weekIds: ['2026-10-12', '2026-10-19'],
+    weekIds: ['2026-10-19'],
     staleElements: [],
     staleReadingKeys: [],
     staleAntiphon: false,
     staleText: false,
-    currentWeek: '2026-10-12'
+    currentWeek: '2026-10-19'
   });
 
   await page.locator('#btn-tab-2026-10-19').click();
   await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
 });
 
-test('October 19–25 tab keeps the period and week in both selection states', async ({ page }) => {
+test('October 12–18 week and its content are completely removed', async ({ page }) => {
+  const state = await page.evaluate(() => ({
+    weekIds: window.programacaoData.weeks.map(week => week.id),
+    staleElements: [
+      'btn-tab-2026-10-12',
+      'week-panel-2026-10-12',
+      'leituras_semana_5',
+      'modal_reflexoes_5',
+      'modal_roteiro_5',
+      'modal_roteiro_5_aparecida',
+      'modal_preces_5'
+    ].filter(id => document.getElementById(id)),
+    staleReadingKeys: Object.keys(window.readingsData).filter(key => key.endsWith('_w6')),
+    staleAntiphons: ['antifonas_5', 'antifonas_6'].filter(key => window.antifonasData[key]),
+    staleText: /12 a 18|12\/10|17 e 18|29º DOMINGO|NOSSA SENHORA APARECIDA/i.test(document.body.textContent),
+    staleLinks: [...document.querySelectorAll('a[href]')].map(link => decodeURIComponent(link.getAttribute('href')))
+      .filter(href => /12 a 18|12 OUTUBRO|12 10 2026|17 E 18|29º DOMINGO/i.test(href)),
+    currentWeek: document.querySelector('.week-tab-btn.active')?.dataset.weekId
+  }));
+
+  expect(state).toEqual({
+    weekIds: ['2026-10-19'],
+    staleElements: [],
+    staleReadingKeys: [],
+    staleAntiphons: [],
+    staleText: false,
+    staleLinks: [],
+    currentWeek: '2026-10-19'
+  });
+  await expect(page.locator('.week-tab-btn')).toHaveCount(1);
+  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+  await expect(page.locator('#btn-roteiro-aparecida')).toHaveCount(0);
+});
+
+test('October 19–25 tab stays selected when it is the only week', async ({ page }) => {
   const tab = page.locator('#btn-tab-2026-10-19');
   const label = '19 a 25 de outubro — 30ª semana (30º Domingo)';
 
-  await expect(tab).toHaveText(`👉 ${label}`);
-  await expect(tab).toHaveAttribute('aria-selected', 'false');
+  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
+  await expect(tab).toHaveAttribute('aria-selected', 'true');
 
   await tab.click();
   await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
   await expect(tab).toHaveAttribute('aria-selected', 'true');
   await expect(tab).toHaveClass('week-tab-btn active');
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
-
-  await page.locator('#btn-tab-2026-10-12').click();
-  await expect(tab).toHaveText(`👉 ${label}`);
-  await expect(tab).toHaveAttribute('aria-selected', 'false');
-  await expect(page.locator('#week-panel-2026-10-19')).toBeHidden();
-  await expect(page.locator('#btn-tab-2026-10-12'))
-    .toHaveText('✅ VISUALIZANDO: 12 a 18 Out. (Nossa Sra. Aparecida)');
-
-  await tab.click();
-  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
   await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
 });
 
@@ -103,34 +126,6 @@ test('October 19–25 schedule matches the updated PDF on the page and in the mo
 
   await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
   expect(await readRows(page.locator('#week-panel-2026-10-19'))).toEqual(expectedRows);
-
-  await page.locator('[data-action="open-active-programacao"]').click();
-  await expect(page.locator('#modal_programacao')).toBeVisible();
-  expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
-});
-
-test('October 12–18 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
-  await page.locator('#btn-tab-2026-10-12').click();
-
-  const parish = 'Paróquia Nossa Senhora Auxiliadora';
-  const expectedRows = [
-    ['Segunda 11h00', parish, 'Pe. Heriberto'],
-    ['Terça 19h00', parish, 'Pe. Manuel'],
-    ['Quarta 19h00', parish, 'Pe. Heriberto'],
-    ['Quinta 19h00', parish, 'Pe. Manuel'],
-    ['Sexta 19h00', parish, 'Pe. Heriberto'],
-    ['Sábado 18h30', parish, 'Pe. Rafael'],
-    ['Sábado 19h00', 'Capela São Domingos Sávio', 'Pe. Afonso'],
-    ['Domingo 09h00', parish, 'Pe. Manuel'],
-    ['Domingo 11h00', parish, 'Pe. Lairton'],
-    ['Domingo 18h30', parish, 'Pe. Laurindo']
-  ];
-  const readRows = (locator) => locator.locator('.escala-table tr').evaluateAll(rows =>
-    rows.map(row => Array.from(row.cells, cell => cell.textContent.trim()))
-  );
-
-  await expect(page.locator('#week-panel-2026-10-12')).toBeVisible();
-  expect(await readRows(page.locator('#week-panel-2026-10-12'))).toEqual(expectedRows);
 
   await page.locator('[data-action="open-active-programacao"]').click();
   await expect(page.locator('#modal_programacao')).toBeVisible();
@@ -163,8 +158,6 @@ test('remaining Sunday roteiros are present and week 30 opens its roteiro', asyn
     const roteiroModals = [
       ['modal_roteiro_2', 'content_roteiro_2', '26º DOMINGO'],
       ['modal_roteiro_3', 'content_roteiro_3', '27º DOMINGO'],
-      ['modal_roteiro_5_aparecida', 'content_roteiro_5_aparecida', 'NOSSA SENHORA APARECIDA'],
-      ['modal_roteiro_5', 'content_roteiro_5', '29º DOMINGO'],
       ['modal_roteiro_6', 'content_roteiro_6', '30º DOMINGO']
     ];
     const modals = roteiroModals.map(([modalId, contentId, title]) => {
@@ -178,7 +171,7 @@ test('remaining Sunday roteiros are present and week 30 opens its roteiro', asyn
     return { modals, legacyWeek: week?.legacyWeek };
   });
 
-  expect(structure).toEqual({ modals: [true, true, true, true, true], legacyWeek: 6 });
+  expect(structure).toEqual({ modals: [true, true, true], legacyWeek: 6 });
 
   await page.locator('#btn-tab-2026-10-19').click();
   await page.locator('#btn-roteiro-principal').click();
@@ -203,9 +196,7 @@ test('reading blocks are siblings with unique IDs and effectively visible daily 
 
   for (const [week, legacy, count] of [
     ['2026-10-19', 6, 20],
-    ['2026-10-12', 5, 22],
-    ['2026-10-19', 6, 20],
-    ['2026-10-12', 5, 22]
+    ['2026-10-19', 6, 20]
   ]) {
     await openWeek(page, week);
     const block = page.locator(`#leituras_semana_${legacy}`);
@@ -220,20 +211,17 @@ test('reading blocks are siblings with unique IDs and effectively visible daily 
 });
 
 test('select all, deselect and preview exclude checked boxes from inactive weeks', async ({ page }) => {
-  await openWeek(page, '2026-10-12');
-  await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
-  await expect(page.locator('#leituras_semana_5 input:checked')).toHaveCount(22);
-  await expect(page.locator('.reading-checkbox:checked')).toHaveCount(22);
-  await page.locator(`${selector} [data-action="close-modal"]`).click();
+  await page.locator('#leituras_semana_3 input').evaluateAll(inputs => {
+    inputs.forEach(input => { input.checked = true; });
+  });
 
   await openWeek(page, '2026-10-19');
   await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
   await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(20);
-  await expect(page.locator('#leituras_semana_5 input:checked')).toHaveCount(22);
-  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(0);
+  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(20);
   await page.getByRole('button', { name: 'Desmarcar Todas', exact: true }).click();
   await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(0);
-  await expect(page.locator('#leituras_semana_5 input:checked')).toHaveCount(22);
+  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(20);
   await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
   await page.locator('[data-action="preview-selected-readings"]').click();
   await expect(page.locator(`${view} .reading-print-block`)).toHaveCount(19);
@@ -245,14 +233,14 @@ test('select all, deselect and preview exclude checked boxes from inactive weeks
   const normalize = text => text.replace(/\s+/g, ' ').trim();
   expect(renderedTexts.map(normalize)).toEqual(texts.map(normalize));
   await expect(page.locator(view)).toContainText('Cf. Sl 104,3-4');
-  const inactiveTitle = await page.evaluate(() => window.readingsData['1l_seg_w6'].title);
+  const inactiveTitle = await page.evaluate(() => window.readingsData['1l_seg_w4'].title);
   await expect(page.locator(view)).not.toContainText(inactiveTitle);
 });
 
 test('individual readings and antiphons reach a nonempty A4 print document', async ({ page }) => {
   for (const [week, legacy, suffix] of [
-    ['2026-10-19', 6, 7], ['2026-10-12', 5, 6],
-    ['2026-10-19', 6, 7], ['2026-10-12', 5, 6]
+    ['2026-10-19', 6, 7],
+    ['2026-10-19', 6, 7]
   ]) {
     await openWeek(page, week);
     const keys = [`1l_seg_w${suffix}`, `ev_sex_w${suffix}`, `ev_dom_w${suffix}`, `antifonas_${suffix}`];
