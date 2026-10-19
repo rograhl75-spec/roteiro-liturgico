@@ -70,6 +70,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await expect(weekend.locator('.badge-branco')).toHaveText('Branca (Solenidade)');
     await expect(weekend.locator('[data-date="2026-11-01"]')).toHaveCount(1);
     await expect(weekend.locator('.note-gloria-box')).toHaveCount(2);
+    await expect(weekend.locator('.note-gloria-box').last()).toContainText('No domingo, 01/11, a missa das 18h30 será solene');
     for (const selector of ['.card-header', '.presidency-box', '.escala-table tr', '.tables-grid', '.liturgy-table']) {
       expect(await weekend.locator(selector).count()).toBe(await previous.locator(selector).count());
     }

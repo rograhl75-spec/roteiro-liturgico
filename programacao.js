@@ -368,7 +368,7 @@ const programacaoData = {
             celebracao: 'Todos os Santos, Solenidade',
             escala: [['09h00', paroquia, 'Pe. Heriberto'], ['11h00', paroquia, 'Pe. Laurindo'], ['18h30', paroquia, 'Pe. Heriberto']],
             leituras: leiturasSantos,
-            nota: 'A missa das 18h30 será solene. O roteiro orienta cantos mais alongados na entrada, aclamação ao Evangelho e ofertório, e preparação da liturgia e dos coroinhas como Missa Solene.'
+            nota: 'No domingo, 01/11, a missa das 18h30 será solene. O roteiro orienta cantos mais alongados na entrada, aclamação ao Evangelho e ofertório, e preparação da liturgia e dos coroinhas como Missa Solene.'
           }
         ];
         const tabela = (titulo, cabecalho, linhas) => `<div><div class="table-caption">${titulo}</div>
