@@ -90,6 +90,19 @@ test('source references, missal pages and unresolved differences remain explicit
   }
 });
 
+test('date navigation also targets unique days inside the schedule modal', async ({ page }) => {
+  await openWeek(page);
+  await page.locator('[data-action="open-active-programacao"]').click();
+  const modal = page.locator('#modal_programacao');
+  for (const date of dates) {
+    const target = `programacao-dia-${date}`;
+    await modal.locator(`a[href="#${target}"]`).click();
+    await expect(modal.locator(`#${target}`)).toBeInViewport();
+    await expect(page.locator(`#dia-${date}`)).toHaveCount(1);
+    await expect(page.locator(`#${target}`)).toHaveCount(1);
+  }
+});
+
 test('complete readings, weekday acclamations and All Saints antiphons can be selected and printed', async ({ page }) => {
   await openWeek(page);
   await page.locator('[data-action="open-active-leituras"]').click();
@@ -139,7 +152,7 @@ test('All Saints roteiro, prayer forms and source gaps are accessible without re
   expect((await preces.innerText()).match(/Oração da Assembleia Paroquial 2026/g)).toHaveLength(3);
   await page.locator('#modal_preces_7 [data-action="close-modal"]').click();
   await page.locator('[data-action="open-active-reflexoes"]').click();
-  await expect(page.locator('#content_reflexoes_7')).toContainText('Não há reflexões');
+  await expect(page.locator('#content_reflexoes_7')).toContainText('não foram fornecidas reflexões litúrgicas');
   await page.keyboard.press('Escape');
   await page.locator('#btn-tab-2026-10-19').click();
   await page.locator('#btn-roteiro-principal').click();
@@ -164,10 +177,11 @@ test.describe('offline snapshot', () => {
     await expect(page.locator(`${week} [data-date]`)).toHaveCount(7);
     await page.locator(`${week} [data-reading-key="s8_dom_ev"]`).first().click();
     await expect(page.locator('#modalBody')).toContainText('Bem-aventurados');
-    const responses = await page.evaluate(async files => Promise.all(files.map(async file => {
-      const response = await fetch(`./${encodeURIComponent(file)}`);
+    const urls = sources.flatMap(file => [`./${file}`, `./${encodeURIComponent(file)}`]);
+    const responses = await page.evaluate(async urls => Promise.all(urls.map(async url => {
+      const response = await fetch(url);
       return { ok: response.ok, signature: (await response.text()).slice(0, 5) };
-    })), sources);
-    expect(responses).toEqual(sources.map(() => ({ ok: true, signature: '%PDF-' })));
+    })), urls);
+    expect(responses).toEqual(urls.map(() => ({ ok: true, signature: '%PDF-' })));
   });
 });

@@ -1,14 +1,14 @@
 {
-  "version": "92df5591f2f704df951b35198555b2d9d3106e13072c6582544f69687c7d5650",
+  "version": "70f484c7baea7977f0440438691d2397bc81cca56f9489c2f8a526bc1f0d8577",
   "files": {
-    "./index.html": "0147fdc89c3eee9312bfa82f970ec2deb79bd9ee76a9371f54bc5d42f52f64bd",
+    "./index.html": "af5b24e35b07b6831b71868f71e0ce5affa3df093840f1306c83c29f0fcef095",
     "./styles.css": "eb15e24a572b6faba4228380108ea3999fee8c3f1ba78104f3b1c545b8e3693b",
-    "./app.js": "99bbe2f0ea563c07f457d5644277df40574e4d768c179a37b7d415a039ba1a53",
+    "./app.js": "9db8ae1466ffae21c124ba4369ab874eec1d88f4b69479182a9ee23b40aa1509",
     "./programacao.js": "367078b3e6a07e9b4fa77eb8b792737fe1678f998e7b0ef9129a67434d829684",
     "./leituras.js": "c2cf5f87e543422834c3d6a3643bce2c67c863443e1f1d98bc2fe4a13afd6cc9",
     "./antifonas.js": "8fb6076411013b82cff1cf430694339494a2dc8b2ded356b9517042495c98501",
     "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",
-    "./sw.js": "74c2fb8de7c142b3e973e0e9eceb3ce34544458861d3461209cfad4311b2fc34",
+    "./sw.js": "52e85f620353ef2ea4a47a7c66aafb3464f2c9527e8a63eeaf5d5114ca80b7d6",
     "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",
     "./icone.svg": "29e67c935ec3b53d8a58354e7bcfb6cdd64d934ccd9cf83af1f27cf7eaa7b063",
     "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93",

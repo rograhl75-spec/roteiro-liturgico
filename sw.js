@@ -187,6 +187,10 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(download(url));
     return;
   }
+  let pathname = url.pathname;
+  try {
+    pathname = decodeURIComponent(pathname);
+  } catch (error) {}
   event.respondWith((async () => {
     const active = await readState('active');
     if (!active) return fetch(request);
@@ -204,7 +208,7 @@ self.addEventListener('fetch', (event) => {
     const metadataResponse = await cache.match(new URL('./version.json', self.registration.scope));
     const metadata = metadataResponse ? await metadataResponse.json() : active;
     const asset = navigation ? './index.html' : ASSETS.find((item) =>
-      new URL(item, self.registration.scope).pathname === url.pathname);
+      decodeURIComponent(new URL(item, self.registration.scope).pathname) === pathname);
     const cacheUrl = asset ? new URL(asset, self.registration.scope) : url;
     const cached = await cache.match(cacheUrl);
     const isCode = navigation || /\.(html|js|css|json)$/.test(url.pathname);
