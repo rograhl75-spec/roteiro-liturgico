@@ -1,17 +1,24 @@
 {
-  "version": "5703aa3cc30babe80c7a0a8c21ec0dd0a87c60484a148b8bee0e8428f09c2924",
+  "version": "70f484c7baea7977f0440438691d2397bc81cca56f9489c2f8a526bc1f0d8577",
   "files": {
-    "./index.html": "96a11f482096893a5910ce3d75afc58ac24ee597e57eaa81c3598a179f61c17e",
+    "./index.html": "af5b24e35b07b6831b71868f71e0ce5affa3df093840f1306c83c29f0fcef095",
     "./styles.css": "eb15e24a572b6faba4228380108ea3999fee8c3f1ba78104f3b1c545b8e3693b",
-    "./app.js": "99bbe2f0ea563c07f457d5644277df40574e4d768c179a37b7d415a039ba1a53",
-    "./programacao.js": "c157a46b1cfd4389e3d9443b8c2fe0e2912f18c6f570791f5318fd406ae9846a",
-    "./leituras.js": "9b53833bff3f8b9e35cc4907f787f297910f1428fb568e0592225fb914c7a31c",
-    "./antifonas.js": "1273d1c3aeb9f2dfecb3d0b0295fc89b680e1398d6497082e39fe8803c0b2a59",
+    "./app.js": "9db8ae1466ffae21c124ba4369ab874eec1d88f4b69479182a9ee23b40aa1509",
+    "./programacao.js": "367078b3e6a07e9b4fa77eb8b792737fe1678f998e7b0ef9129a67434d829684",
+    "./leituras.js": "c2cf5f87e543422834c3d6a3643bce2c67c863443e1f1d98bc2fe4a13afd6cc9",
+    "./antifonas.js": "8fb6076411013b82cff1cf430694339494a2dc8b2ded356b9517042495c98501",
     "./manifest.json": "ac13f28028abdd3a76a0e4d1c21f1a2cbc748ba8e98117468c8f2ac01a50d28c",
-    "./sw.js": "9c3c90623d2293777bcd76ac94c3d979e4f961735dc0ff356678b9a524d477bb",
+    "./sw.js": "52e85f620353ef2ea4a47a7c66aafb3464f2c9527e8a63eeaf5d5114ca80b7d6",
     "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",
     "./icone.svg": "29e67c935ec3b53d8a58354e7bcfb6cdd64d934ccd9cf83af1f27cf7eaa7b063",
     "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93",
-    "./RITO DE ENTREGA DO CREIO.pdf": "44acd1effb3fa8229fce03d3c272838b31891dabccd04f7ab471e762bdd1a9ba"
+    "./RITO DE ENTREGA DO CREIO.pdf": "44acd1effb3fa8229fce03d3c272838b31891dabccd04f7ab471e762bdd1a9ba",
+    "./Escala Padres 26 outubro a 01 novembro 2026.pdf": "e487c395a711776d5a591562fe7b47497db91257dec549b02d0bdffd9fe31dcc",
+    "./Leituras de 26 de outubro a 1 de novembro 2026.pdf": "274575e917dbe43b80b175db5906936d037605a00a110ddee0f3fcd63305591d",
+    "./Leituras e Lecionarios - 26 Outubro a 1 Novembro 2026.pdf": "50a431e91559724351278fd773829b16fcb3dea0bc4aa8864a4d4a5f59958c0e",
+    "./Missal - 25 outubro a 1 novembro 2026.pdf": "4f117cbe4bdcb7c4e77bb3ada26570c5dacbc9b70021a4aaba7a3cfa536d4c47",
+    "./Todos os Santos, Solenidade - 31 10 E 01 11 2026 - ANO A.pdf": "dc4e7c5c09bed63df1831ded5e493dc880f3a3dfb85cf4424277b25b81aa99b3",
+    "./Antífona da entrada e comunhão - Todos os Santos, Solenidade.pdf": "b0e5396731151f9dd59574fc93e4887f7c6d231d0c89edbb5632dc06ef059c75",
+    "./PRECES - SOLENIDADE DE TODOS OS SANTOS.pdf": "81bffe26ba275085299905f03efdbaf82cef49309238f10b8fbfd9b2bab2e5f3"
   }
 }

@@ -222,6 +222,44 @@ if (thirtiethSundayWeek) {
   'a semana deve estar acessível na aba e nos seletores imprimíveis');
 }
 
+const allSaintsWeek = weeks.find((week) => week.id === '2026-10-26');
+if (!allSaintsWeek) issues.push('Semana 26/10–01/11/2026: programação ausente');
+if (allSaintsWeek) {
+  const html = allSaintsWeek.programacaoHtml;
+  const expect = (condition, message) => {
+    if (!condition) issues.push(`Semana 26/10–01/11/2026: ${message}`);
+  };
+  const dates = ['2026-10-26', '2026-10-27', '2026-10-28', '2026-10-29',
+    '2026-10-30', '2026-10-31', '2026-11-01'];
+  const keys = ['seg', 'ter', 'qua', 'qui', 'sex'].flatMap(day =>
+    ['l1', 'sal', 'acl', 'ev'].map(part => `s8_${day}_${part}`))
+    .concat(['s8_dom_l1', 's8_dom_sal', 's8_dom_l2', 's8_dom_ev']);
+  expect(allSaintsWeek.legacyWeek === 7 && dates.every(date =>
+    html.includes(`data-date="${date}"`) && html.includes(`href="#dia-${date}"`)),
+  'os sete dias devem estar integrados à navegação');
+  expect((html.match(/class="p-hora"/g) || []).length === 10
+    && html.includes('Pe. Rafael') && html.includes('Pe. Laurindo')
+    && html.includes('Capela São Domingos Sávio'),
+  'a escala deve conter as dez missas e os celebrantes atualizados');
+  expect(keys.every(key => readingsData[key]?.text.length > 50
+    && html.includes(`data-reading-key="${key}"`)
+    && indexContent.includes(`value="${key}"`)),
+  'todas as leituras e aclamações devem ter texto, referência clicável e seleção');
+  expect(['leituras_semana_7', 'modal_roteiro_7', 'content_roteiro_7',
+    'modal_preces_7', 'content_preces_7', 'modal_reflexoes_7']
+    .every(id => indexContent.includes(`id="${id}"`))
+    && indexContent.includes('value="antifonas_8"')
+    && runInSandbox(antifonasSource, 'antifonas.js').antifonasData?.antifonas_8,
+  'roteiro, preces, antífonas e indicação sobre reflexões devem estar disponíveis');
+  expect(['31º Domingo do Tempo Comum', '843 (tabela); 844 (roteiro)',
+    '30 10 A 01 11', '19h00', 'não contém linha para 31/10'].every(text => html.includes(text)),
+  'as divergências e lacunas das fontes devem permanecer explícitas');
+  const pdfs = Array.from(html.matchAll(/href="\.\/([^"]+\.pdf)"/g),
+    ([, file]) => decodeURIComponent(file));
+  expect(pdfs.length === 7 && pdfs.every(file => fs.existsSync(path.join(root, file))),
+    'os sete PDFs-fonte devem manter seus nomes originais e links válidos');
+}
+
 if (issues.length) {
   console.error('Validação falhou:\n- ' + issues.join('\n- '));
   process.exit(1);

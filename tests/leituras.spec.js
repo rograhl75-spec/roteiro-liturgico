@@ -44,7 +44,7 @@ test('October 5–11 week is removed while the remaining weeks still load', asyn
   }));
 
   expect(state).toEqual({
-    weekIds: ['2026-10-19'],
+    weekIds: ['2026-10-19', '2026-10-26'],
     staleElements: [],
     staleReadingKeys: [],
     staleAntiphon: false,
@@ -77,7 +77,7 @@ test('October 12–18 week and its content are completely removed', async ({ pag
   }));
 
   expect(state).toEqual({
-    weekIds: ['2026-10-19'],
+    weekIds: ['2026-10-19', '2026-10-26'],
     staleElements: [],
     staleReadingKeys: [],
     staleAntiphons: [],
@@ -85,12 +85,12 @@ test('October 12–18 week and its content are completely removed', async ({ pag
     staleLinks: [],
     currentWeek: '2026-10-19'
   });
-  await expect(page.locator('.week-tab-btn')).toHaveCount(1);
+  await expect(page.locator('.week-tab-btn')).toHaveCount(2);
   await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
   await expect(page.locator('#btn-roteiro-aparecida')).toHaveCount(0);
 });
 
-test('October 19–25 tab stays selected when it is the only week', async ({ page }) => {
+test('October 19–25 tab stays selected without forcing the future week', async ({ page }) => {
   const tab = page.locator('#btn-tab-2026-10-19');
   const label = '19 a 25 de outubro — 30ª semana (30º Domingo)';
 

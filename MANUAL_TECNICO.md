@@ -210,6 +210,8 @@ Também teste manualmente:
 
 Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige `index.html`, `styles.css`, `app.js`, `programacao.js`, `leituras.js`, `antifonas.js`, `manifest.json`, `sw.js`, `icone.png`, `icone.svg`, `Selo Auxiliadora 60 anos_Ano 3.png` e `RITO DE ENTREGA DO CREIO.pdf`.
 
+Os sete PDFs-fonte da semana de 26/10 a 01/11/2026 também integram o snapshot offline. Ao incluir documentos nesse snapshot, mantenha as listas de assets de `build-version.js` e `sw.js` alinhadas e preserve os nomes originais.
+
 O `version.json` contém `{ "version": "...", "files": { "./index.html": "...", ... } }`. Cada valor em `files` é o SHA-256 dos bytes publicados do arquivo. Para calcular `version`, o gerador remove as tags `<meta name="app-version">` do HTML, calcula os hashes na ordem fixa declarada em `build-version.js` e aplica SHA-256 ao `JSON.stringify` desse mapa. Depois insere a meta com o identificador e recalcula o hash real de `index.html` em `files`. Isso evita uma referência circular e torna execuções repetidas idempotentes.
 
 O Service Worker confere todos os arquivos contra esses hashes antes de preparar o novo snapshot. Publicação incompleta, resposta inválida ou falha de rede não substitui o snapshot anterior. SHA-256 garante consistência dos arquivos com o manifesto, não uma assinatura independente da origem: HTTPS continua necessário.

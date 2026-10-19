@@ -242,6 +242,13 @@ function openActiveProgramacaoModal(trigger) {
   if (cloned.id) {
     cloned.removeAttribute('id');
   }
+  cloned.querySelectorAll('[data-date]').forEach((day) => {
+    const sourceId = `dia-${day.dataset.date}`;
+    day.id = `programacao-${sourceId}`;
+    cloned.querySelectorAll(`a[href="#${sourceId}"]`).forEach((link) => {
+      link.setAttribute('href', `#${day.id}`);
+    });
+  });
 
   contentDiv.textContent = '';
   contentDiv.appendChild(cloned);
