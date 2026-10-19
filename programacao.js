@@ -358,17 +358,15 @@ const programacaoData = {
           },
           {
             data: '2026-10-31', titulo: 'Sábado, 31 de Outubro de 2026', dia: 'Sábado', cor: 'branco',
-            celebracao: 'Todos os Santos, Solenidade — roteiro e missal de 31/10 e 01/11',
+            celebracao: 'Todos os Santos, Solenidade — missa noturna em 1ª Véspera',
             escala: [['18h30', paroquia, 'Pe. Heriberto'], ['19h00', 'Capela São Domingos Sávio', 'Pe. Djhon']],
-            leituras: leiturasSantos,
-            nota: 'Divergência nas fontes: a escala registra “31º Domingo do Tempo Comum” (Domingo) nas duas missas de sábado. O roteiro e o missal fornecidos indicam Todos os Santos para 31/10 e 01/11. As leituras abaixo são as da solenidade; a tabela de lecionários só as data em 01/11 e não contém linha para 31/10. Não foram fornecidas leituras feriais de sábado nem formulário de preces específico para a missa das 19h00.'
+            leituras: leiturasSantos
           },
           {
             data: '2026-11-01', titulo: 'Domingo, 1 de Novembro de 2026', dia: 'Domingo', cor: 'branco',
             celebracao: 'Todos os Santos, Solenidade',
             escala: [['09h00', paroquia, 'Pe. Heriberto'], ['11h00', paroquia, 'Pe. Laurindo'], ['18h30', paroquia, 'Pe. Heriberto']],
-            leituras: leiturasSantos,
-            nota: 'No domingo, 01/11, a missa das 18h30 será solene. O roteiro orienta cantos mais alongados na entrada, aclamação ao Evangelho e ofertório, e preparação da liturgia e dos coroinhas como Missa Solene.'
+            leituras: leiturasSantos
           }
         ];
         const tabela = (titulo, cabecalho, linhas) => `<div><div class="table-caption">${titulo}</div>
@@ -377,7 +375,7 @@ const programacaoData = {
         const fimDeSemana = {
           ...dias[5],
           titulo: 'Fim de semana: 31 de Outubro e 1 de Novembro de 2026',
-          celebracao: 'Todos os Santos, Solenidade (Ano A)',
+          celebracao: 'Todos os Santos, Solenidade (Ano A) — missa noturna de 31/10 em 1ª Véspera',
           dias: dias.slice(5)
         };
         const antifonas = window.antifonasData.antifonas_8;
@@ -403,8 +401,6 @@ const programacaoData = {
               <div class="card-header"><h2>${dia.titulo}</h2>
                 <span class="color-badge badge-${dia.cor}">${santos ? 'Branca (Solenidade)' : festa ? 'Vermelha (Festa)' : 'Verde (Féria)'}</span></div>
               <p><strong>Celebração:</strong> ${dia.celebracao}</p>
-              ${(dia.dias || [dia]).filter(item => item.nota).map(item =>
-                `<div class="note-gloria-box"><strong>Nota das fontes:</strong> ${item.nota}</div>`).join('')}
               <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
                 <table class="escala-table">${(dia.dias || [dia]).map(item =>
                   `<tbody${item.data !== dia.data ? ` id="dia-${item.data}" data-date="${item.data}"` : ''}>${item.escala.map(([hora, local, padre]) =>
@@ -426,10 +422,7 @@ const programacaoData = {
               </div>` : ''}
             </div>`;
           }).join('') +
-          `<div class="card"><h2>Fontes e observações — 26/10 a 01/11</h2>
-            <p>Conteúdo transcrito dos documentos fornecidos, sem correção do calendário por fontes externas. A tabela do missal contém 26 a 30/10 e 31/10–01/11, apesar de o nome do arquivo começar em 25.</p>
-            <p>O roteiro atualizado indica 31/10 e 01/11. A sexta-feira permanece com a féria indicada pela escala, pelas leituras e pelo missal. A pós-comunhão da solenidade é p. 843 na tabela e p. 844 no roteiro; a bênção é “Própria (Solenidade)” na tabela e p. 587 no roteiro. Ambas as indicações foram preservadas.</p>
-            <p>As referências e páginas acima seguem a tabela de lecionários; os textos integrais mantêm as referências do PDF de leituras. Não foram fornecidos formulários de preces para os dias úteis, antífonas próprias desses dias ou reflexões desta semana.</p>
+          `<div class="card"><h2>Documentos originais</h2>
             <ul>${[
               'Escala Padres 26 outubro a 01 novembro 2026.pdf',
               'Leituras de 26 de outubro a 1 de novembro 2026.pdf',
