@@ -129,6 +129,59 @@ const missingTabs = weeks
   .filter((tabId) => !indexContent.includes(`id="${tabId}"`));
 
 const issues = [];
+const antifonasData = programacaoWindow.antifonasData || {};
+const ids = Array.from(indexContent.matchAll(/\sid="([^"]+)"/g), ([, id]) => id);
+const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
+if (duplicateIds.length) {
+  issues.push(`IDs duplicados no index.html: ${Array.from(new Set(duplicateIds)).join(', ')}`);
+}
+for (const [, key] of indexContent.matchAll(/class="reading-checkbox"\s+value="([^"]+)"/g)) {
+  if (!readingKeys.has(key) && !antifonasData[key]) {
+    issues.push(`Seleção de leitura ou antífona ausente: ${key}`);
+  }
+}
+for (const week of weeks) {
+  for (const type of ['roteiro', 'preces']) {
+    const extras = week[`${type}Extras`] || [];
+    for (const key of ['', ...extras]) {
+      const suffix = `${week.legacyWeek}${key ? `_${key}` : ''}`;
+      for (const prefix of ['modal', 'content']) {
+        if (!ids.includes(`${prefix}_${type}_${suffix}`)) {
+          issues.push(`Vínculo de ${type} ausente: ${prefix}_${type}_${suffix}`);
+        }
+      }
+      if (key && !indexContent.includes(`data-${type}-key="${key}"`)) {
+        issues.push(`Botão de ${type} adicional ausente: ${key}`);
+      }
+    }
+  }
+}
+const { assets } = require('./build-version.js');
+const swSource = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+const swAssets = vm.runInNewContext(`${swSource.match(/const ASSETS = \[[\s\S]*?\];/)[0]}\nASSETS`);
+if (JSON.stringify(assets.map(file => `./${file}`)) !== JSON.stringify(swAssets)) {
+  issues.push('As listas de assets de build-version.js e sw.js devem ser idênticas');
+}
+for (const file of assets) {
+  if (!fs.existsSync(path.join(root, file))) issues.push(`Asset ausente: ${file}`);
+}
+for (const week of weeks) {
+  for (const [, encoded] of week.programacaoHtml.matchAll(/href="\.\/([^"]+)"/g)) {
+    const file = decodeURIComponent(encoded);
+    if (!assets.includes(file)) issues.push(`Fonte fora do snapshot offline: ${file}`);
+  }
+}
+const correctMissal = 'Missal - 2 a 8 novembro_2026.xlsx';
+const incorrectMissal = correctMissal.replace('_2026', ' 2026');
+if (fs.existsSync(path.join(root, incorrectMissal))
+  || [indexContent, programacaoSource, leiturasSource, antifonasSource, appSource, swSource]
+    .some(source => source.includes(incorrectMissal))) {
+  issues.push('A fonte incorreta de Missal de novembro não deve existir nem ser referenciada');
+}
+const sourceFiles = fs.readdirSync(root).filter(file => /\.(pdf|docx|xlsx)$/i.test(file));
+if (sourceFiles.some(file => !assets.includes(file))) {
+  issues.push('Há documentos-fonte fora da lista vigente de publicação');
+}
 if (duplicates.length) {
   issues.push(`Chaves de leitura duplicadas: ${duplicates.map(([key]) => key).join(', ')}`);
 }
@@ -149,9 +202,10 @@ if (weeks.some((week) => week.id === removedWeekId)
   || indexContent.includes('modal_roteiro_6')
   || indexContent.includes('modal_preces_6')
   || indexContent.includes('modal_reflexoes_6')
-  || Object.keys(readingsData).some((key) => key.includes('_w7'))
-  || programacaoWindow.antifonasData?.antifonas_7) {
-  issues.push('Semana 19–25/10/2026: ainda há referências de interface ou dados associados');
+  || Object.keys(readingsData).some((key) => !/^s[89]_/.test(key))
+  || Object.keys(antifonasData).some(key => !/^antifonas_[89](?:_|$)/.test(key))
+  || ids.some(id => /^(?:leituras_semana|modal_(?:roteiro|preces|reflexoes))_[1-6](?:_|$)/.test(id))) {
+  issues.push('Semanas até 25/10/2026: ainda há referências de interface ou dados associados');
 }
 if (!appSource.includes("const WEEK_ID_FALLBACK = '2026-10-26';")) {
   issues.push('A seleção padrão deve iniciar na semana 26/10–01/11/2026');
@@ -162,18 +216,40 @@ if (!allSaintsWeek?.programacaoHtml.includes('2026-10-28')
 }
 if (!novemberWeek
   || novemberWeek.legacyWeek !== 8
-  || !novemberWeek.programacaoHtml.includes(placeholderText)
-  || /data-reading-key/.test(novemberWeek.programacaoHtml)
+  || novemberWeek.programacaoHtml.includes(placeholderText)
+  || !/data-reading-key/.test(novemberWeek.programacaoHtml)
   || !indexContent.includes('id="leituras_semana_8"')
-  || !indexContent.includes(placeholderText)
-  || /<div id="leituras_semana_8"[^>]*>[\s\S]*?class="reading-checkbox"/.test(indexContent)) {
-  issues.push('Semana 02–08/11/2026: a estrutura deve existir como placeholder sem leituras inventadas');
+  || indexContent.includes(placeholderText)) {
+  issues.push('Semana 02–08/11/2026: os dados fornecidos devem substituir os placeholders');
+}
+if (novemberWeek) {
+  const html = novemberWeek.programacaoHtml;
+  const dates = Array.from({ length: 7 }, (_, index) => `2026-11-0${index + 2}`);
+  const keys = ['seg', 'ter', 'qua', 'qui', 'sex', 'dom'].flatMap(day =>
+    ['l1', 'sal', 'acl', 'ev', ...(['seg', 'dom'].includes(day) ? ['l2'] : [])]
+      .map(part => `s9_${day}_${part}`));
+  if (!dates.every(date => html.includes(`data-date="${date}"`) && html.includes(`href="#dia-${date}"`))
+    || !keys.every(key => readingsData[key]?.text.length > 50
+      && html.includes(`data-reading-key="${key}"`) && indexContent.includes(`value="${key}"`))) {
+    issues.push('Semana 02–08/11/2026: conferir datas, textos integrais e vínculos das leituras');
+  }
+  if (!html.includes(encodeURIComponent(correctMissal))
+    || !antifonasData.antifonas_9 || !antifonasData.antifonas_9_defuntos
+    || !novemberWeek.roteiroExtras?.includes('defuntos')
+    || !novemberWeek.precesExtras?.includes('defuntos')) {
+    issues.push('Semana 02–08/11/2026: conferir Missal correto e materiais de Defuntos e do domingo');
+  }
+}
+if (!allSaintsWeek?.roteiroExtras?.includes('simao_judas')
+  || !allSaintsWeek?.precesExtras?.includes('simao_judas')
+  || !indexContent.includes('Senhor, enviai operários para a vossa messe!')) {
+  issues.push('28/10/2026: roteiro e preces missionárias devem estar disponíveis');
 }
 if (!allSaintsWeek) issues.push('Semana 26/10–01/11/2026: programação ausente');
 if (allSaintsWeek) {
   const html = allSaintsWeek.programacaoHtml;
   const precesModal = indexContent.split('<div id="modal_preces_7"')[1]
-    ?.split('<div id="modal_reflexoes_7"')[0] || '';
+    ?.split('<div id="modal_')[0] || '';
   const reflexoesModal = indexContent.split('<div id="modal_reflexoes_7"')[1]
     ?.split('</div>')[0] || '';
   const expect = (condition, message) => {

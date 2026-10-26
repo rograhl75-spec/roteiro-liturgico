@@ -141,6 +141,11 @@ function getRoteiroSuffix(week, roteiroKey) {
   return roteiroKey && extras.includes(roteiroKey) ? `${week.legacyWeek}_${roteiroKey}` : `${week.legacyWeek}`;
 }
 
+function getPrecesSuffix(week, precesKey) {
+  const extras = Array.isArray(week.precesExtras) ? week.precesExtras : [];
+  return precesKey && extras.includes(precesKey) ? `${week.legacyWeek}_${precesKey}` : `${week.legacyWeek}`;
+}
+
 function updateRoteiroButtons(week) {
   const mainButton = document.getElementById('btn-roteiro-principal');
   if (mainButton) {
@@ -150,6 +155,10 @@ function updateRoteiroButtons(week) {
   const extras = getRoteiroExtras(week);
   document.querySelectorAll('.toolbar [data-action="open-active-roteiro"][data-roteiro-key]').forEach((button) => {
     button.hidden = !extras.includes(button.dataset.roteiroKey);
+  });
+  const precesExtras = Array.isArray(week.precesExtras) ? week.precesExtras : [];
+  document.querySelectorAll('.toolbar [data-action="open-active-preces"][data-preces-key]').forEach((button) => {
+    button.hidden = !precesExtras.includes(button.dataset.precesKey);
   });
 }
 
@@ -264,7 +273,7 @@ function openActiveRoteiroModal(trigger) {
 function openActivePrecesModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
-  openModal(`modal_preces_${week.legacyWeek}`, trigger);
+  openModal(`modal_preces_${getPrecesSuffix(week, trigger && trigger.dataset.precesKey)}`, trigger);
 }
 
 function openActiveReflexoesModal(trigger) {
@@ -671,18 +680,20 @@ function printActiveRoteiro(roteiroKey) {
   });
 }
 
-function printActivePreces() {
+function printActivePreces(precesKey) {
   const week = getCurrentWeek();
   if (!week) return;
 
-  const sab = document.getElementById(`preces_sabado_${week.legacyWeek}`);
-  const dManha = document.getElementById(`preces_domingo_manha_${week.legacyWeek}`);
-  const dNoite = document.getElementById(`preces_domingo_noite_${week.legacyWeek}`);
-  if (!sab || !dManha || !dNoite) return;
+  const suffix = getPrecesSuffix(week, precesKey);
+  const blocks = suffix !== `${week.legacyWeek}`
+    ? [document.getElementById(`content_preces_${suffix}`)]
+    : ['sabado', 'domingo_manha', 'domingo_noite']
+      .map(period => document.getElementById(`preces_${period}_${suffix}`));
+  if (blocks.some(block => !block)) return;
 
   runPrintMount(() => {
     const wrapper = document.createElement('div');
-    [sab, dManha, dNoite].forEach((block) => {
+    blocks.forEach((block) => {
       const page = document.createElement('div');
       page.style.pageBreakAfter = 'always';
       page.appendChild(buildHeaderNode(`Oração dos Fiéis — ${week.shortTitle}`));
@@ -957,7 +968,7 @@ function handleActionClick(event) {
       printActiveRoteiro(target.dataset.roteiroKey);
       break;
     case 'print-active-preces':
-      printActivePreces();
+      printActivePreces(target.dataset.precesKey);
       break;
     case 'print-active-reflexoes':
       printActiveReflexoes();

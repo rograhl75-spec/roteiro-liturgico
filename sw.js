@@ -4,14 +4,23 @@ const ASSETS = [
   './index.html', './styles.css', './app.js',
   './programacao.js', './leituras.js', './antifonas.js', './manifest.json',
   './sw.js', './icone.png', './icone.svg', './Selo Auxiliadora 60 anos_Ano 3.png',
-  './RITO DE ENTREGA DO CREIO.pdf',
   './Escala Padres 26 outubro a 01 novembro 2026.pdf',
   './Leituras de 26 de outubro a 1 de novembro 2026.pdf',
   './Leituras e Lecionarios - 26 Outubro a 1 Novembro 2026.pdf',
   './Missal - 25 outubro a 1 novembro 2026.pdf',
   './Todos os Santos, Solenidade - 31 10 E 01 11 2026 - ANO A.pdf',
   './Antífona da entrada e comunhão - Todos os Santos, Solenidade.pdf',
-  './PRECES - SOLENIDADE DE TODOS OS SANTOS.pdf'
+  './PRECES - SOLENIDADE DE TODOS OS SANTOS.pdf',
+  './Santos Simão e Judas - Missões - 28_10_2026 19h00.docx',
+  './Escala Padres 2 a 8 novembro 2026.docx',
+  './Leituras de 2 a 8 de novembro de 2026.docx',
+  './Missal - 2 a 8 novembro_2026.xlsx',
+  './32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx',
+  './Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx',
+  './Antífona da entrada e comunhão - 32º Domingo do Tempo Comum 08-11-2026.docx',
+  './Antífona da entrada e comunhão - Fiéis Defuntos 02-11-2026.docx',
+  './PRECES - 32º DOMINGO TEMPO COMUM.docx',
+  './PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx'
 ];
 const clientVersions = new Map();
 let preparing;

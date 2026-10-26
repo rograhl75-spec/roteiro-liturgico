@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { assets } = require('../build-version.js');
 
 const week = '#week-panel-2026-10-26';
 const dates = ['2026-10-26', '2026-10-27', '2026-10-28', '2026-10-29',
@@ -111,7 +112,7 @@ test('source references and missal pages remain available without explanatory no
   const expected = [
     ['II / 1123', 'II / 1124', 'II / 1125'],
     ['II / 1127', 'II / 1128', 'II / 1129'],
-    ['III / 195', 'III / 196', '498 (Apóstolos)', '593'],
+    ['III / 195', 'III / 196', '499 (Apóstolos II)', '586'],
     ['II / 1134', 'II / 1135', 'II / 1136'],
     ['II / 1138', 'II / 1139'],
     ['I / 1047', 'I / 1048', 'I / 1049', '843 (tabela); 844 (roteiro)', '587'],
@@ -197,7 +198,7 @@ test('All Saints roteiro and weekend prayer forms are accessible without annotat
     await expect(roteiro).toContainText(text);
   }
   await page.locator('#modal_roteiro_7 [data-action="close-modal"]').click();
-  await page.locator('[data-action="open-active-preces"]').click();
+  await page.locator('.toolbar [data-action="open-active-preces"]:not([data-preces-key])').click();
   const preces = page.locator('#content_preces_7');
   for (const text of ['31/10', '01/11', '09h00 e 11h00', '18h30',
     'Salvai-nos, Senhor, por intercessão de vossos santos!']) {
@@ -217,7 +218,7 @@ test('All Saints roteiro and weekend prayer forms are accessible without annotat
   await expect(page.locator('#content_reflexoes_7')).toBeEmpty();
   await page.keyboard.press('Escape');
   await page.locator('#btn-tab-2026-11-02').click();
-  await expect(page.locator('#week-panel-2026-11-02')).toContainText('serão adicionadas quando forem fornecidas');
+  await expect(page.locator('#week-panel-2026-11-02 [data-date]')).toHaveCount(7);
 });
 
 test.describe('offline snapshot', () => {
@@ -244,5 +245,20 @@ test.describe('offline snapshot', () => {
       return { ok: response.ok, signature: (await response.text()).slice(0, 5) };
     })), urls);
     expect(responses).toEqual(urls.map(() => ({ ok: true, signature: '%PDF-' })));
+    await page.locator('#generalModal [data-action="close-modal"]').click();
+    await page.locator('#btn-tab-2026-11-02').click();
+    await expect(page.locator('#week-panel-2026-11-02 [data-date]')).toHaveCount(7);
+    await page.locator('#week-panel-2026-11-02 [data-reading-key="s9_dom_ev"]').first().click();
+    await expect(page.locator('#modalBody')).toContainText('lâmpadas');
+    const documentUrls = assets.filter(file => /\.(docx|xlsx)$/.test(file))
+      .flatMap(file => [`./${file}`, `./${encodeURIComponent(file)}`]);
+    const documents = await page.evaluate(async urls => {
+      return Promise.all(urls.map(async url => {
+        const response = await fetch(url);
+        return { ok: response.ok, signature: (await response.text()).slice(0, 2) };
+      }));
+    }, documentUrls);
+    expect(documents).toHaveLength(20);
+    expect(documents.every(result => result.ok && result.signature === 'PK')).toBe(true);
   });
 });
