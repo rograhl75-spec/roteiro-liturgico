@@ -101,11 +101,11 @@ const programacaoData = {
               ['Oração da Coleta', santos ? '842' : festa ? '839' : '412'],
               ['Profissão de Fé (Creio)', santos ? 'Rezado, omitida a pág.' : '—'],
               ['Oração sobre as Oferendas', santos ? '842' : festa ? '840' : '412'],
-              ['Prefácio', santos ? '843 (Todos os Santos)' : festa ? '499 (Apóstolos II, conforme roteiro)' : '564 (Próprio)'],
+              ['Prefácio', santos ? '843 (Todos os Santos)' : festa ? '499 (Apóstolos II)' : '564 (Próprio)'],
               ['Oração Eucarística', festa || santos ? '537 (OE II)' : '565 (OE V)'],
               ['Rito da Comunhão', '569'],
               ['Oração pós Comunhão', santos ? '843 (tabela); 844 (roteiro)' : festa ? '840' : '413'],
-              ['Bênção Solene', santos ? 'Própria (Solenidade), conforme tabela; 587 no roteiro' : festa ? '586 (Santos Apóstolos, conforme roteiro)' : '583'],
+              ['Bênção Solene', santos ? 'Própria (Solenidade), conforme tabela; 587 no roteiro' : festa ? '586' : '583'],
               ['Cor Litúrgica', santos ? 'Branca' : festa ? 'Vermelha' : 'Verde']
             ];
             return `<div class="card" id="dia-${dia.data}" data-date="${dia.data}">

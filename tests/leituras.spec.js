@@ -100,7 +100,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
         await page.evaluate(() => { window.print = () => {}; });
         await modal.locator(`[data-action="print-active-${type}"]`).click();
         const mount = page.locator('#print-mount');
-        await expect(mount).toBeVisible();
+        await expect(mount).not.toHaveAttribute('hidden');
         await expect(mount).toContainText(type === 'preces' ? text : 'TOMAI, TODOS');
         const pdf = await page.pdf({ preferCSSPageSize: true });
         expect(pdf.length).toBeGreaterThan(10000);

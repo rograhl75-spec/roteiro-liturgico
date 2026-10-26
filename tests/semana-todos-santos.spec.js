@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { assets } = require('../build-version.js');
 
 const week = '#week-panel-2026-10-26';
 const dates = ['2026-10-26', '2026-10-27', '2026-10-28', '2026-10-29',
@@ -249,15 +250,14 @@ test.describe('offline snapshot', () => {
     await expect(page.locator('#week-panel-2026-11-02 [data-date]')).toHaveCount(7);
     await page.locator('#week-panel-2026-11-02 [data-reading-key="s9_dom_ev"]').first().click();
     await expect(page.locator('#modalBody')).toContainText('lâmpadas');
-    const documents = await page.evaluate(async () => {
-      const metadata = await (await fetch('./version.json')).json();
-      const urls = Object.keys(metadata.files).filter(file => /\.(docx|xlsx)$/.test(file))
-        .flatMap(file => [file, `./${encodeURIComponent(file.slice(2))}`]);
+    const documentUrls = assets.filter(file => /\.(docx|xlsx)$/.test(file))
+      .flatMap(file => [`./${file}`, `./${encodeURIComponent(file)}`]);
+    const documents = await page.evaluate(async urls => {
       return Promise.all(urls.map(async url => {
         const response = await fetch(url);
         return { ok: response.ok, signature: (await response.text()).slice(0, 2) };
       }));
-    });
+    }, documentUrls);
     expect(documents).toHaveLength(20);
     expect(documents.every(result => result.ok && result.signature === 'PK')).toBe(true);
   });
