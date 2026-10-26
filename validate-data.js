@@ -139,90 +139,36 @@ if (missingTabs.length) {
   issues.push(`Abas de semana ausentes no index.html: ${missingTabs.join(', ')}`);
 }
 
-const thirtiethSundayWeek = weeks.find((week) => week.id === '2026-10-19');
-if (thirtiethSundayWeek) {
-  const html = thirtiethSundayWeek.programacaoHtml;
-  const expect = (condition, message) => {
-    if (!condition) issues.push(`Semana 19–25/10/2026: ${message}`);
-  };
-  const requiredReadingKeys = ['1l_dom_w7', 'sl_dom_w7', '2l_dom_w7', 'ev_dom_w7'];
-  const weekdayReadingKeys = [
-    '1l_seg_w7', 'sl_seg_w7', 'ev_seg_w7',
-    '1l_ter_w7', 'sl_ter_w7', 'ev_ter_w7',
-    '1l_qua_w7', 'sl_qua_w7', 'ev_qua_w7',
-    '1l_qui_w7', 'sl_qui_w7', 'ev_qui_w7',
-    '1l_sex_w7', 'sl_sex_w7', 'ev_sex_w7'
-  ];
-  const precesModal = indexContent.split('<div id="modal_preces_6"')[1]
-    ?.split('<div id="modal_reflexoes_6"')[0] || '';
-  const roteiroModal = indexContent.split('<div id="modal_roteiro_6"')[1]
-    ?.split('<div id="modal_preces_6"')[0] || '';
-  const roteiroPdfs = Array.from(roteiroModal.matchAll(/href="\.\/([^"]+\.pdf)"/g),
-    ([, file]) => decodeURIComponent(file));
-
-  expect(thirtiethSundayWeek.legacyWeek === 6
-    && thirtiethSundayWeek.shortTitle === '19 a 25 de outubro — 30ª semana (30º Domingo)'
-    && thirtiethSundayWeek.fullTitle === '30º Domingo do Tempo Comum — 19 a 25 de outubro',
-  'a semana deve usar o título e os identificadores legados da nova aba');
-  expect((html.match(/class="p-hora"/g) || []).length === 10
-    && html.includes('Capela São Domingos Sávio')
-    && html.includes('Pe. Djhon')
-    && html.includes('09h00')
-    && html.includes('11h00'),
-  'a escala deve listar as dez celebrações, locais e celebrantes');
-  expect(html.includes('<span class="p-dia">Segunda</span> <span class="p-hora">19h00</span></td><td class="p-loc">Paróquia Nossa Senhora Auxiliadora</td><td class="p-cel">Pe. Laurindo</td>'),
-  'a missa de segunda-feira às 19h deve ser celebrada por Pe. Laurindo conforme o PDF atualizado');
-  expect(requiredReadingKeys.every((key) =>
-    readingKeys.has(key) && html.includes(`data-reading-key="${key}"`))
-    && html.includes('Lecionário I')
-    && html.includes('345')
-    && html.includes('346')
-    && html.includes('347'),
-  'as quatro leituras dominicais e as páginas do Lecionário devem estar integradas');
-  expect(weekdayReadingKeys.every((key) => {
-    const reading = readingsData[key];
-    return reading && reading.text.length > 100
-      && html.includes(`data-reading-key="${key}"`)
-      && indexContent.includes(`value="${key}"`);
-  }),
-  'as quinze leituras dos dias úteis devem ter texto completo, link e opção de seleção');
-  expect(['Segunda-feira (19/10)', 'Terça-feira (20/10)', 'Quarta-feira (21/10)',
-    'Quinta-feira (22/10)', 'Sexta-feira (23/10)', 'Fim de Semana (24 e 25/10)']
-    .every((day) => indexContent.includes(day))
-    && ['1l_dom_w7', 'sl_dom_w7', '2l_dom_w7', 'ev_dom_w7']
-      .every((key) => indexContent.includes(`value="${key}"`)),
-  'o seletor deve agrupar cada dia útil e as leituras do fim de semana');
-  expect(antifonasSource.includes('antifonas_7')
-    && ['Cf. Sl 104,3-4', 'Cf. Jo 14,23', 'Cf. Sl 19,6', 'Ef 5,2',
-      'Se fizerdes algum mal à viúva e ao órfão',
-      'Amarás o Senhor teu Deus, e ao teu próximo como a ti mesmo.']
-      .every((text) => antifonasSource.includes(text)),
-  'as antífonas, opções de comunhão, aclamação e citações PASCOM devem constar');
-  expect(['preces_sabado_6', 'preces_domingo_manha_6', 'preces_domingo_noite_6',
-    '18h30 e 19h00', '09h00 e 11h00', 'Finaliza as preces.', 'Amém.']
-    .every((text) => precesModal.includes(text)),
-  'as preces devem cobrir os horários da fonte e explicar o formulário usado no sábado às 19h');
-  expect(roteiroModal.includes('content_roteiro_6')
-    && ['1. RITOS INICIAIS', '2. LITURGIA DA PALAVRA', '3. LITURGIA EUCARÍSTICA',
-      '4. RITO DA COMUNHÃO', '5. RITOS DE ENCERRAMENTO']
-      .every((text) => roteiroModal.includes(text))
-    && roteiroModal.includes('print-active-roteiro')
-    && roteiroModal.includes('roteiro-section-title')
-    && !roteiroModal.includes('<pre class="script-text"')
-    && roteiroPdfs.some((file) => fs.existsSync(path.join(root, file))),
-  'o roteiro integral e seu PDF-fonte devem estar disponíveis em modal imprimível');
-  expect(indexContent.includes('id="leituras_semana_6"')
-    && indexContent.includes('value="antifonas_7"')
-    && indexContent.includes('print-active-preces')
-    && indexContent.includes('data-action="preview-selected-readings"')
-    && indexContent.includes('data-action="print-leituras-view"')
-    && indexContent.includes('id="btn-tab-2026-10-19"')
-    && ['openActiveLeiturasModal', 'previewSelectedReadings', 'printLeiturasFromView',
-      'createAntifonaBlock', 'openReading'].every((name) => appSource.includes(`function ${name}(`)),
-  'a semana deve estar acessível na aba e nos seletores imprimíveis');
-}
-
+const removedWeekId = '2026-10-19';
+const novemberWeek = weeks.find((week) => week.id === '2026-11-02');
 const allSaintsWeek = weeks.find((week) => week.id === '2026-10-26');
+const placeholderText = 'As informações desta semana serão adicionadas quando forem fornecidas.';
+if (weeks.some((week) => week.id === removedWeekId)
+  || indexContent.includes('btn-tab-2026-10-19')
+  || indexContent.includes('leituras_semana_6')
+  || indexContent.includes('modal_roteiro_6')
+  || indexContent.includes('modal_preces_6')
+  || indexContent.includes('modal_reflexoes_6')
+  || Object.keys(readingsData).some((key) => key.includes('_w7'))
+  || programacaoWindow.antifonasData?.antifonas_7) {
+  issues.push('Semana 19–25/10/2026: ainda há referências de interface ou dados associados');
+}
+if (!appSource.includes("const WEEK_ID_FALLBACK = '2026-10-26';")) {
+  issues.push('A seleção padrão deve iniciar na semana 26/10–01/11/2026');
+}
+if (!allSaintsWeek?.programacaoHtml.includes('2026-10-28')
+  || !allSaintsWeek.programacaoHtml.includes('Pe. Romão')) {
+  issues.push('Semana 26/10–01/11/2026: o celebrante de 28/10 deve ser Pe. Romão');
+}
+if (!novemberWeek
+  || novemberWeek.legacyWeek !== 8
+  || !novemberWeek.programacaoHtml.includes(placeholderText)
+  || /data-reading-key/.test(novemberWeek.programacaoHtml)
+  || !indexContent.includes('id="leituras_semana_8"')
+  || !indexContent.includes(placeholderText)
+  || /<div id="leituras_semana_8"[^>]*>[\s\S]*?class="reading-checkbox"/.test(indexContent)) {
+  issues.push('Semana 02–08/11/2026: a estrutura deve existir como placeholder sem leituras inventadas');
+}
 if (!allSaintsWeek) issues.push('Semana 26/10–01/11/2026: programação ausente');
 if (allSaintsWeek) {
   const html = allSaintsWeek.programacaoHtml;

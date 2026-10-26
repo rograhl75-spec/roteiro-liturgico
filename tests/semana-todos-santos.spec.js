@@ -15,7 +15,7 @@ const sources = [
 
 async function openWeek(page) {
   await page.goto('/');
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+  await expect(page.locator('#week-panel-2026-10-26')).toBeVisible();
   await page.locator('#btn-tab-2026-10-26').click();
   await expect(page.locator(week)).toBeVisible();
 }
@@ -29,7 +29,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     const expected = [
       [['Segunda 19h00', parish, 'Pe. Laurindo']],
       [['Terça 19h00', parish, 'Pe. Rafael']],
-      [['Quarta 19h00', parish, 'Pe. Heriberto']],
+      [['Quarta 19h00', parish, 'Pe. Romão']],
       [['Quinta 19h00', parish, 'Pe. Afonso']],
       [['Sexta 19h00', parish, 'Pe. Heriberto']],
       [['Sábado 18h30', parish, 'Pe. Heriberto'], ['Sábado 19h00', 'Capela São Domingos Sávio', 'Pe. Djhon']],
@@ -55,8 +55,8 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
       }
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-    await page.locator('#btn-tab-2026-10-19').click();
-    await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
+    await page.locator('#btn-tab-2026-11-02').click();
+    await expect(page.locator('#week-panel-2026-11-02')).toBeVisible();
     await expect(page.locator(week)).toBeHidden();
   });
 
@@ -64,7 +64,6 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await page.setViewportSize(viewport);
     await openWeek(page);
     const weekend = page.locator(`${week} .card`).filter({ hasText: 'Fim de semana:' });
-    const previous = page.locator('#week-panel-2026-10-19 .card').filter({ hasText: 'Fim de semana:' });
     await expect(weekend).toHaveCount(1);
     await expect(weekend.locator('.card-header h2')).toHaveText('Fim de semana: 31 de Outubro e 1 de Novembro de 2026');
     await expect(weekend.locator('.badge-branco')).toHaveText('Branca (Solenidade)');
@@ -73,9 +72,11 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
     await expect(weekend.locator('.note-gloria-box')).toHaveCount(0);
     await expect(weekend).not.toContainText('Fontes e observações');
     await expect(weekend).not.toContainText('Nota das fontes');
-    for (const selector of ['.card-header', '.presidency-box', '.escala-table tr', '.tables-grid', '.liturgy-table']) {
-      expect(await weekend.locator(selector).count()).toBe(await previous.locator(selector).count());
-    }
+    expect(await weekend.locator('.card-header').count()).toBe(1);
+    expect(await weekend.locator('.presidency-box').count()).toBe(1);
+    expect(await weekend.locator('.escala-table tr').count()).toBe(5);
+    expect(await weekend.locator('.tables-grid').count()).toBe(2);
+    expect(await weekend.locator('.liturgy-table').count()).toBe(4);
     await expect(weekend.locator('.table-caption')).toHaveText([
       '📌 Missal Romano', '📖 Liturgia da Palavra',
       '🎵 Antífonas e Canto Interlecionais', '📺 Citações Telão (PASCOM)'
@@ -215,9 +216,8 @@ test('All Saints roteiro and weekend prayer forms are accessible without annotat
   await page.locator('[data-action="open-active-reflexoes"]').click();
   await expect(page.locator('#content_reflexoes_7')).toBeEmpty();
   await page.keyboard.press('Escape');
-  await page.locator('#btn-tab-2026-10-19').click();
-  await page.locator('#btn-roteiro-principal').click();
-  await expect(page.locator('#content_roteiro_6')).toContainText('30º Domingo do Tempo Comum');
+  await page.locator('#btn-tab-2026-11-02').click();
+  await expect(page.locator('#week-panel-2026-11-02')).toContainText('serão adicionadas quando forem fornecidas');
 });
 
 test.describe('offline snapshot', () => {
