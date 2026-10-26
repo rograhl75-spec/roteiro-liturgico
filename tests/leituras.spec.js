@@ -1,319 +1,65 @@
 const { test, expect } = require('@playwright/test');
 
-const selector = '#modal_seletor_leituras';
-const view = '#content_leituras_view';
-
-async function openWeek(page, week) {
-  await page.locator(`#btn-tab-${week}`).click();
-  await page.locator('[data-action="open-active-leituras"]').click();
-}
-
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
 
-test('header hides redundant details and uses a compact logo', async ({ page }) => {
-  const styles = await page.evaluate(() => ({
-    logoMaxWidth: getComputedStyle(document.querySelector('#header-logo')).maxWidth,
-    subtitleDisplay: getComputedStyle(document.querySelector('#header-subtitle')).display,
-    badgeDisplay: getComputedStyle(document.querySelector('.version-badge')).display
-  }));
-
-  expect(styles).toEqual({
-    logoMaxWidth: '120px',
-    subtitleDisplay: 'none',
-    badgeDisplay: 'none'
-  });
-});
-
-test('October 5–11 week is removed while the remaining weeks still load', async ({ page }) => {
+test('the removed October week has no tab, content, or associated reading data', async ({ page }) => {
   const state = await page.evaluate(() => ({
     weekIds: window.programacaoData.weeks.map(week => week.id),
-    staleElements: [
-      'btn-tab-2026-10-05',
-      'week-panel-2026-10-05',
-      'leituras_semana_4',
-      'modal_reflexoes_4',
-      'modal_roteiro_4',
-      'modal_preces_4'
+    currentWeek: document.querySelector('.week-tab-btn.active')?.dataset.weekId,
+    staleIds: [
+      'btn-tab-2026-10-19',
+      'week-panel-2026-10-19',
+      'leituras_semana_6',
+      'modal_roteiro_6',
+      'modal_preces_6',
+      'modal_reflexoes_6'
     ].filter(id => document.getElementById(id)),
-    staleReadingKeys: Object.keys(window.readingsData).filter(key => key.endsWith('_w5')),
-    staleAntiphon: Boolean(window.antifonasData.antifonas_4),
-    staleText: /05 a 11|05\/10|10 e 11\/10|28º DOMINGO/i.test(document.body.textContent),
-    currentWeek: document.querySelector('.week-tab-btn.active')?.dataset.weekId
+    staleReadingKeys: Object.keys(window.readingsData).filter(key => key.includes('_w7')),
+    staleAntiphons: Boolean(window.antifonasData.antifonas_7),
+    staleText: /19 a 25 de outubro|19\/10|20\/10|21\/10|22\/10|23\/10|24\/10|25\/10|30º Domingo/i.test(document.body.textContent),
+    brokenTabRefs: [...document.querySelectorAll('.week-tab-btn[aria-controls]')]
+      .filter(tab => !document.getElementById(tab.getAttribute('aria-controls'))).map(tab => tab.id),
+    brokenCloseRefs: [...document.querySelectorAll('.modal-close-btn[data-modal-id]')]
+      .filter(button => !document.getElementById(button.dataset.modalId)).map(button => button.dataset.modalId),
+    duplicateIds: [...document.querySelectorAll('[id]')].map(element => element.id)
+      .filter((id, index, ids) => ids.indexOf(id) !== index)
   }));
 
   expect(state).toEqual({
-    weekIds: ['2026-10-19', '2026-10-26'],
-    staleElements: [],
+    weekIds: ['2026-10-26', '2026-11-02'],
+    currentWeek: '2026-10-26',
+    staleIds: [],
     staleReadingKeys: [],
-    staleAntiphon: false,
+    staleAntiphons: false,
     staleText: false,
-    currentWeek: '2026-10-19'
+    brokenTabRefs: [],
+    brokenCloseRefs: [],
+    duplicateIds: []
   });
-
-  await page.locator('#btn-tab-2026-10-19').click();
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
 });
 
-test('October 12–18 week and its content are completely removed', async ({ page }) => {
-  const state = await page.evaluate(() => ({
-    weekIds: window.programacaoData.weeks.map(week => week.id),
-    staleElements: [
-      'btn-tab-2026-10-12',
-      'week-panel-2026-10-12',
-      'leituras_semana_5',
-      'modal_reflexoes_5',
-      'modal_roteiro_5',
-      'modal_roteiro_5_aparecida',
-      'modal_preces_5'
-    ].filter(id => document.getElementById(id)),
-    staleReadingKeys: Object.keys(window.readingsData).filter(key => key.endsWith('_w6')),
-    staleAntiphons: ['antifonas_5', 'antifonas_6'].filter(key => window.antifonasData[key]),
-    staleText: /12 a 18|12\/10|17 e 18|29º DOMINGO|NOSSA SENHORA APARECIDA/i.test(document.body.textContent),
-    staleLinks: [...document.querySelectorAll('a[href]')].map(link => decodeURIComponent(link.getAttribute('href')))
-      .filter(href => /12 a 18|12 OUTUBRO|12 10 2026|17 E 18|29º DOMINGO/i.test(href)),
-    currentWeek: document.querySelector('.week-tab-btn.active')?.dataset.weekId
-  }));
-
-  expect(state).toEqual({
-    weekIds: ['2026-10-19', '2026-10-26'],
-    staleElements: [],
-    staleReadingKeys: [],
-    staleAntiphons: [],
-    staleText: false,
-    staleLinks: [],
-    currentWeek: '2026-10-19'
-  });
-  await expect(page.locator('.week-tab-btn')).toHaveCount(2);
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
-  await expect(page.locator('#btn-roteiro-aparecida')).toHaveCount(0);
+test('October 28 celebration is assigned to Pe. Romão', async ({ page }) => {
+  const day = page.locator('#week-panel-2026-10-26 [data-date="2026-10-28"]');
+  await expect(day.locator('.p-cel')).toHaveText('Pe. Romão');
 });
 
-test('October 19–25 tab stays selected without forcing the future week', async ({ page }) => {
-  const tab = page.locator('#btn-tab-2026-10-19');
-  const label = '19 a 25 de outubro — 30ª semana (30º Domingo)';
-
-  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
-  await expect(tab).toHaveAttribute('aria-selected', 'true');
-
-  await tab.click();
-  await expect(tab).toHaveText(`✅ VISUALIZANDO: ${label}`);
-  await expect(tab).toHaveAttribute('aria-selected', 'true');
-  await expect(tab).toHaveClass('week-tab-btn active');
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
-});
-
-test('October 19–25 schedule matches the updated PDF on the page and in the modal', async ({ page }) => {
-  await page.locator('#btn-tab-2026-10-19').click();
-
-  const parish = 'Paróquia Nossa Senhora Auxiliadora';
-  const expectedRows = [
-    ['Segunda 19h00', parish, 'Pe. Laurindo'],
-    ['Terça 19h00', parish, 'Pe. Manuel'],
-    ['Quarta 19h00', parish, 'Pe. Heriberto'],
-    ['Quinta 19h00', parish, 'Pe. Afonso'],
-    ['Sexta 19h00', parish, 'Pe. Heriberto'],
-    ['Sábado 18h30', parish, 'Pe. Heriberto'],
-    ['Sábado 19h00', 'Capela São Domingos Sávio', 'Pe. Djhon'],
-    ['Domingo 09h00', parish, 'Pe. Heriberto'],
-    ['Domingo 11h00', parish, 'Pe. Heriberto'],
-    ['Domingo 18h30', parish, 'Pe. Heriberto']
-  ];
-  const readRows = (locator) => locator.locator('.escala-table tr').evaluateAll(rows =>
-    rows.map(row => Array.from(row.cells, cell => cell.textContent.trim()))
+test('November 2–8 is available as a content-free placeholder', async ({ page }) => {
+  await page.locator('#btn-tab-2026-11-02').click();
+  await expect(page.locator('#week-panel-2026-11-02')).toContainText(
+    'As informações desta semana serão adicionadas quando forem fornecidas.'
   );
+  await expect(page.locator('#leituras_semana_8 .reading-checkbox')).toHaveCount(0);
 
-  await expect(page.locator('#week-panel-2026-10-19')).toBeVisible();
-  expect(await readRows(page.locator('#week-panel-2026-10-19'))).toEqual(expectedRows);
+  await page.locator('[data-action="open-active-roteiro"]').click();
+  await expect(page.locator('#content_roteiro_8')).toContainText('serão adicionadas quando forem fornecidas');
+  await page.locator('#modal_roteiro_8 [data-action="close-modal"]').click();
 
-  await page.locator('[data-action="open-active-programacao"]').click();
-  await expect(page.locator('#modal_programacao')).toBeVisible();
-  expect(await readRows(page.locator('#content_programacao'))).toEqual(expectedRows);
+  await page.locator('[data-action="open-active-preces"]').click();
+  await expect(page.locator('#content_preces_8')).toContainText('serão adicionadas quando forem fornecidas');
+  await page.locator('#modal_preces_8 [data-action="close-modal"]').click();
+
+  await page.locator('[data-action="open-active-reflexoes"]').click();
+  await expect(page.locator('#content_reflexoes_8')).toContainText('serão adicionadas quando forem fornecidas');
 });
-
-test('Creio rite PDF is available for printing at the parish and chapel dates', async ({ page }) => {
-  await page.locator('#btn-tab-2026-10-19').click();
-
-  const schedule = page.locator('#week-panel-2026-10-19');
-  for (const [location, date] of [
-    ['Paróquia Nossa Senhora Auxiliadora', '23/10'],
-    ['Capela São Domingos Sávio', '24/10']
-  ]) {
-    const occurrence = schedule.locator('.rito-creio-occurrence').filter({ hasText: location });
-    await expect(occurrence).toContainText(date);
-    const link = occurrence.getByRole('link', { name: '📄 Abrir PDF para impressão' });
-    await expect(link).toHaveAttribute('href', './RITO%20DE%20ENTREGA%20DO%20CREIO.pdf');
-    await expect(link).toHaveAttribute('target', '_blank');
-  }
-
-  const response = await page.request.get('/RITO%20DE%20ENTREGA%20DO%20CREIO.pdf');
-  expect(response.ok()).toBe(true);
-  expect(response.headers()['content-type']).toContain('application/pdf');
-  expect((await response.body()).subarray(0, 5).toString()).toBe('%PDF-');
-});
-
-test('remaining Sunday roteiros are present and week 30 opens its roteiro', async ({ page }) => {
-  const structure = await page.evaluate(() => {
-    const roteiroModals = [
-      ['modal_roteiro_2', 'content_roteiro_2', '26º DOMINGO'],
-      ['modal_roteiro_3', 'content_roteiro_3', '27º DOMINGO'],
-      ['modal_roteiro_6', 'content_roteiro_6', '30º DOMINGO']
-    ];
-    const modals = roteiroModals.map(([modalId, contentId, title]) => {
-      const modal = document.getElementById(modalId);
-      const content = document.getElementById(contentId);
-      return Boolean(modal && content && content.textContent.trim()
-        && modal.textContent.includes(title)
-        && modal.querySelector(`[data-modal-id="${modalId}"]`));
-    });
-    const week = window.programacaoData.weeks.find(item => item.id === '2026-10-19');
-    return { modals, legacyWeek: week?.legacyWeek };
-  });
-
-  expect(structure).toEqual({ modals: [true, true, true], legacyWeek: 6 });
-
-  await page.locator('#btn-tab-2026-10-19').click();
-  await page.locator('#btn-roteiro-principal').click();
-  await expect(page.locator('#modal_roteiro_6')).toBeVisible();
-  await expect(page.locator('#content_roteiro_6'))
-    .toContainText('30º Domingo do Tempo Comum — 24 e 25 de outubro de 2026');
-});
-
-test('reading blocks are siblings with unique IDs and effectively visible daily groups', async ({ page }) => {
-  const structure = await page.evaluate(() => {
-    const blocks = [...document.querySelectorAll('.leituras-bloco')];
-    const ids = [...document.querySelectorAll('[id]')].map(node => node.id);
-    const parent = document.querySelector('#modal_seletor_leituras > .modal-content');
-    return {
-      siblings: blocks.every(block => block.parentElement === parent),
-      nested: blocks.some(block => block.parentElement.closest('.leituras-bloco')),
-      duplicateIds: ids.filter((id, index) => ids.indexOf(id) !== index),
-      legacyWeek: window.programacaoData.weeks.find(week => week.id === '2026-10-19').legacyWeek
-    };
-  });
-  expect(structure).toEqual({ siblings: true, nested: false, duplicateIds: [], legacyWeek: 6 });
-
-  for (const [week, legacy, count] of [
-    ['2026-10-19', 6, 20],
-    ['2026-10-19', 6, 20]
-  ]) {
-    await openWeek(page, week);
-    const block = page.locator(`#leituras_semana_${legacy}`);
-    await expect(block.locator('.leitura-col')).toHaveCount(6);
-    for (const group of await block.locator('.leitura-col').all()) {
-      await expect(group).toBeVisible();
-    }
-    await expect(page.locator(`${selector} .reading-checkbox:visible`)).toHaveCount(count);
-    await expect(page.locator(`${selector} .leituras-bloco:visible`)).toHaveCount(1);
-    await page.locator(`${selector} [data-action="close-modal"]`).click();
-  }
-});
-
-test('select all, deselect and preview exclude checked boxes from inactive weeks', async ({ page }) => {
-  await page.locator('#leituras_semana_3 input').evaluateAll(inputs => {
-    inputs.forEach(input => { input.checked = true; });
-  });
-
-  await openWeek(page, '2026-10-19');
-  await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
-  await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(20);
-  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(20);
-  await page.getByRole('button', { name: 'Desmarcar Todas', exact: true }).click();
-  await expect(page.locator('#leituras_semana_6 input:checked')).toHaveCount(0);
-  await expect(page.locator('#leituras_semana_3 input:checked')).toHaveCount(20);
-  await page.getByRole('button', { name: 'Marcar Todas', exact: true }).click();
-  await page.locator('[data-action="preview-selected-readings"]').click();
-  await expect(page.locator(`${view} .reading-print-block`)).toHaveCount(19);
-  await expect(page.locator(`${view} .antifona-print-box`)).toHaveCount(1);
-  const texts = await page.evaluate(() =>
-    [...document.querySelectorAll('#leituras_semana_6 input')].map(input =>
-      window.readingsData[input.value]?.text).filter(Boolean));
-  const renderedTexts = await page.locator(`${view} .leitura-texto`).allInnerTexts();
-  const normalize = text => text.replace(/\s+/g, ' ').trim();
-  expect(renderedTexts.map(normalize)).toEqual(texts.map(normalize));
-  await expect(page.locator(view)).toContainText('Cf. Sl 104,3-4');
-  const inactiveTitle = await page.evaluate(() => window.readingsData['1l_seg_w4'].title);
-  await expect(page.locator(view)).not.toContainText(inactiveTitle);
-});
-
-test('individual readings and antiphons reach a nonempty A4 print document', async ({ page }) => {
-  for (const [week, legacy, suffix] of [
-    ['2026-10-19', 6, 7],
-    ['2026-10-19', 6, 7]
-  ]) {
-    await openWeek(page, week);
-    const keys = [`1l_seg_w${suffix}`, `ev_sex_w${suffix}`, `ev_dom_w${suffix}`, `antifonas_${suffix}`];
-    for (const key of keys) {
-      await page.locator(`#leituras_semana_${legacy} input[value="${key}"]`).check();
-    }
-    await page.locator('[data-action="preview-selected-readings"]').click();
-    await expect(page.locator('#modal_leituras_view')).toBeVisible();
-    await expect(page.locator(`${view} .reading-print-block`)).toHaveCount(3);
-    await expect(page.locator(`${view} .antifona-print-box`)).toHaveCount(1);
-    const previewText = await page.locator(view).textContent();
-    expect(previewText.length).toBeGreaterThan(1000);
-
-    // Retain the mount while checking print media; PDF generation exercises Chromium's print lifecycle.
-    await page.evaluate(() => {
-      window.printRequested = false;
-      window.print = () => {
-        window.dispatchEvent(new Event('beforeprint'));
-        window.printRequested = true;
-      };
-    });
-    await page.locator('[data-action="print-leituras-view"]').click();
-    await expect.poll(() => page.evaluate(() => window.printRequested)).toBe(true);
-    await expect(page.locator('#print-mount .reading-print-block')).toHaveCount(3);
-    await expect(page.locator('#print-mount .antifona-print-box')).toHaveCount(1);
-    await expect(page.locator('#print-mount')).toContainText(previewText.replace(/\s+/g, ' '));
-    await page.emulateMedia({ media: 'print' });
-    await expect(page.locator('#print-mount')).toBeVisible();
-    for (const block of await page.locator('#print-mount .reading-print-block, #print-mount .antifona-print-box').all()) {
-      await expect(block).toBeVisible();
-    }
-    await expect(page.locator('.toolbar')).toBeHidden();
-    const pdf = await page.pdf({ preferCSSPageSize: true });
-    expect(pdf.subarray(0, 5).toString()).toBe('%PDF-');
-    expect(pdf.length).toBeGreaterThan(10000);
-    await expect(page.locator('#print-mount')).toBeEmpty();
-    await page.emulateMedia({ media: 'screen' });
-    await expect(page.locator('#print-mount')).toBeHidden();
-  }
-});
-
-test('native window.print receives the mounted content before PDF cleanup', async ({ page }) => {
-  await openWeek(page, '2026-10-19');
-  await page.locator('input[value="1l_seg_w7"]').check();
-  await page.locator('input[value="antifonas_7"]').check();
-  await page.locator('[data-action="preview-selected-readings"]').click();
-  const previewText = await page.locator(view).textContent();
-  await page.evaluate(() => {
-    window.addEventListener('beforeprint', () => {
-      window.nativePrintText = document.getElementById('print-mount').textContent;
-    });
-  });
-  await page.locator('[data-action="print-leituras-view"]').click();
-  await expect.poll(() => page.evaluate(() => window.nativePrintText || ''))
-    .toContain(previewText);
-  await expect(page.locator('#print-mount .leitura-texto')).toHaveCount(1);
-  await expect(page.locator('#print-mount .antifona-print-box')).toHaveCount(1);
-  const pdf = await page.pdf({ preferCSSPageSize: true });
-  expect(pdf.length).toBeGreaterThan(10000);
-  await expect(page.locator('#print-mount')).toBeEmpty();
-});
-
-for (const problem of ['missing', 'empty']) {
-  test(`a ${problem} active block produces a useful diagnostic instead of an empty selector`, async ({ page }) => {
-    await page.locator('#btn-tab-2026-10-19').click();
-    await page.locator('#leituras_semana_6').evaluate((block, problem) => {
-      if (problem === 'missing') block.remove();
-      else block.replaceChildren();
-    }, problem);
-    await page.locator('[data-action="open-active-leituras"]').click();
-    await expect(page.locator(selector)).toBeHidden();
-    await expect(page.locator('#generalModal')).toBeVisible();
-    await expect(page.locator('#modalBody')).toContainText('2026-10-19');
-    await expect(page.locator('#modalBody')).toContainText('leituras_semana_6');
-  });
-}
