@@ -36,7 +36,7 @@ jobs:
           cp index.html styles.css app.js programacao.js leituras.js antifonas.js \
             manifest.json sw.js version.json icone.png icone.svg \
             'Selo Auxiliadora 60 anos_Ano 3.png' _site/
-          cp -- *.pdf _site/
+          cp -- *.pdf *.docx *.xlsx _site/
       - name: Enviar site estático
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:

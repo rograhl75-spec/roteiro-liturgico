@@ -136,6 +136,8 @@ Os botões utilizam atributos `data-action`, tratados por `handleActionClick()` 
 
 Quando uma semana tem mais de um roteiro, use `roteiroLabel` (texto do botão principal) e `roteiroExtras` (ex.: `['aparecida']`) na semana em `programacao.js`. Cada chave extra precisa de um botão na barra com `data-roteiro-key` e de um modal `modal_roteiro_<semana>_<chave>` com conteúdo `content_roteiro_<semana>_<chave>`.
 
+Para preces adicionais, use `precesExtras` na semana, botões `open-active-preces` com `data-preces-key` e modais `modal_preces_<semana>_<chave>` com conteúdo `content_preces_<semana>_<chave>`. O botão `print-active-preces` deve repetir a mesma `data-preces-key`.
+
 ---
 
 ## 8. Impressão e acessibilidade
@@ -208,9 +210,9 @@ Também teste manualmente:
 
 ### Metadados e integridade
 
-Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige `index.html`, `styles.css`, `app.js`, `programacao.js`, `leituras.js`, `antifonas.js`, `manifest.json`, `sw.js`, `icone.png`, `icone.svg`, `Selo Auxiliadora 60 anos_Ano 3.png` e `RITO DE ENTREGA DO CREIO.pdf`.
+Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige os arquivos públicos e documentos declarados em `build-version.js`.
 
-Os sete PDFs-fonte da semana de 26/10 a 01/11/2026 também integram o snapshot offline. Ao incluir documentos nesse snapshot, mantenha as listas de assets de `build-version.js` e `sw.js` alinhadas e preserve os nomes originais.
+Os PDFs-fonte da semana de 26/10 a 01/11/2026, o DOCX de 28/10 e os DOCX/XLSX da semana de 02 a 08/11/2026 também integram o snapshot offline. Ao incluir documentos nesse snapshot, mantenha as listas de assets de `build-version.js` e `sw.js` alinhadas e preserve os nomes originais. O fluxo do Pages deve copiar esses formatos para `_site`. Fontes obsoletas até 25/10/2026 foram removidas; o Missal vigente de novembro é `Missal - 2 a 8 novembro_2026.xlsx`.
 
 O `version.json` contém `{ "version": "...", "files": { "./index.html": "...", ... } }`. Cada valor em `files` é o SHA-256 dos bytes publicados do arquivo. Para calcular `version`, o gerador remove as tags `<meta name="app-version">` do HTML, calcula os hashes na ordem fixa declarada em `build-version.js` e aplica SHA-256 ao `JSON.stringify` desse mapa. Depois insere a meta com o identificador e recalcula o hash real de `index.html` em `files`. Isso evita uma referência circular e torna execuções repetidas idempotentes.
 
