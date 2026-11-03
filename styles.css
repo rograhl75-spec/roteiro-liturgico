@@ -15,6 +15,8 @@
             --bg-todos: #fffbeb;
             --cor-rubrica: #475569;
             --bg-rubrica: #f8fafc;
+            --cor-leitor: #6b21a8;
+            --cor-diacono: #0f766e;
         }
 
         * { box-sizing: border-box; }
@@ -33,7 +35,7 @@
         header { background: linear-gradient(135deg, #ffffff, #f1f5f9); text-align: center; padding: 1.5rem 1rem 1rem; border-bottom: 2px solid var(--border); }
         .header-logo { max-width: 120px; height: auto; margin-bottom: 8px; }
         header h1 { margin: 0; font-size: 1.4rem; text-transform: uppercase; color: var(--primary); letter-spacing: 0.5px; }
-        header p, .version-badge { display: none; }
+        #header-subtitle { margin: 0.3rem 0 0; color: var(--secondary); font-weight: 600; }
         .update-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; padding: 0.7rem; border-bottom: 1px solid var(--border); }
         #update-status { font-weight: 600; color: #166534; }
         #update-status[data-state="updating"] { color: var(--primary); }
@@ -53,13 +55,13 @@
         /* BARRA DE FERRAMENTAS */
         .toolbar { display: flex; justify-content: center; gap: 8px; padding: 0.8rem; background: #ffffff; border-bottom: 1px solid var(--border); flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         .action-btn { background: var(--primary); color: #fff; border: none; padding: 0.65rem 1.1rem; font-size: 0.9rem; font-weight: 600; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease; }
+        a.action-btn { text-decoration: none; }
         .action-btn:hover { background: #2c4a7c; }
         .action-btn.secondary { background: var(--secondary); }
         .action-btn.secondary:hover { background: #735210; }
         .action-btn.accent { background: #047857; }
         .action-btn.accent:hover { background: #065f46; }
         .action-btn.blue { background: #2563eb; }
-        .action-btn.red { background: #dc2626; }
         
         /* CARDS E CONTEÚDO */
         .container { max-width: 1100px; margin: 1.5rem auto; padding: 0 0.8rem; }
@@ -70,6 +72,7 @@
         .badge-verde { background: #16a34a; color: #fff; }
         .badge-branco { background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; }
         .badge-vermelho { background: #dc2626; color: #fff; }
+        .badge-roxo { background: #6b21a8; color: #fff; }
         
         .presidency-box { background: #f8fafc; border: 1px solid #cbd5e1; border-top: 3px solid var(--primary); border-radius: 6px; margin-bottom: 1.2rem; overflow: hidden; }
         .presidency-title { color: var(--primary); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; background: #f1f5f9; letter-spacing: 0.5px; }
@@ -80,8 +83,6 @@
         .p-loc { color: #475569; }
         .p-cel { font-weight: 700; color: #0f172a; text-align: right; }
         
-        .note-gloria-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.7rem 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: #991b1b; }
-        .ecc-box { background: #fef2f2; border: 1px solid #fca5a5; border-left: 4px solid #ef4444; border-radius: 6px; padding: 0.6rem 1rem; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 700; color: #991b1b; display: inline-block; }
         
         /* Evita cortes no PDF */
         .script-row { display: flex; flex-direction: row; gap: 0; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
@@ -93,14 +94,19 @@
         .tag-musica { background: var(--cor-musica); color: #fff; }
         .tag-todos { background: var(--cor-todos); color: #fff; }
         .tag-rubrica { background: #64748b; color: #fff; }
+        .tag-leitor { background: var(--cor-leitor); color: #fff; }
+        .tag-diacono { background: var(--cor-diacono); color: #fff; }
         
         .row-animador .script-text { border-left: 3px solid var(--cor-animador); }
         .row-padre .script-text { border-left: 3px solid var(--cor-padre); }
         .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
         .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
+        .row-leitor .script-text { border-left: 3px solid var(--cor-leitor); }
+        .row-diacono .script-text { border-left: 3px solid var(--cor-diacono); }
         .row-rubrica .script-text { border-left: 3px solid #64748b; font-style: italic; background: #f8fafc; color: #475569; }
-        .roteiro-integral { display: block; margin: 0 0 12px; font-family: inherit; }
-        .roteiro-section-title { display: block; margin: 1.2rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid #cbd5e1; color: var(--primary); font-size: 1.05em; }
+        .roteiro-section-title, .preces-form-title { display: block; margin: 1.2rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid #cbd5e1; color: var(--primary); font-size: 1.05em; text-transform: uppercase; }
+        .preces-form { margin-bottom: 14px; }
+        .preces-form-title { color: #1e40af; text-transform: none; }
         
         .tables-grid { display: grid; grid-template-columns: 48% 50%; gap: 2%; margin-bottom: 0.8rem; align-items: start; }
         table.liturgy-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; page-break-inside: avoid; }
@@ -110,7 +116,7 @@
         table.liturgy-table th { background: #f1f5f9; color: var(--primary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
         table.liturgy-table td { background: #ffffff; color: #334155; }
         .table-caption { font-weight: 700; color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 6px; }
-        .clickable-ref { color: #2563eb; cursor: pointer; text-decoration: none; font-weight: 600; padding: 2px 6px; background: #eff6ff; border-radius: 4px; display: inline-block; transition: background 0.15s ease; }
+        .clickable-ref { color: #1d4ed8; cursor: pointer; text-decoration: none; font: inherit; font-weight: 600; padding: 2px 6px; background: #eff6ff; border: 0; border-radius: 4px; display: inline-block; text-align: left; transition: background 0.15s ease; }
         .clickable-ref:hover { background: #dbeafe; color: #1e40af; }
         
         .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); justify-content: center; align-items: flex-start; overflow-y: auto; padding: 2rem 0; }
@@ -124,22 +130,35 @@
         .modal-body { font-size: 1.05rem; color: #334155; text-align: justify; line-height: 1.6; transition: font-size 0.2s ease; white-space: normal; word-wrap: break-word; }
         
         .leitura-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
-        .leitura-col { background: #f8fafc; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
+        .leitura-col { background: #f8fafc; padding: 12px; margin: 0; min-width: 0; border: 1px solid #cbd5e1; border-radius: 8px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
         .leitura-col:hover { border-color: #94a3b8; }
-        .leitura-col strong { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 6px; font-size: 0.95rem; }
+        .leitura-col legend { float: left; width: 100%; color: var(--primary); font-weight: 700; border-bottom: 2px solid #e2e8f0; padding: 0 0 6px; margin-bottom: 6px; font-size: 0.95rem; }
+        .leitura-col legend + * { clear: both; }
+        .leitura-antifona { color: var(--primary) !important; font-weight: 700; margin-top: 4px; }
         .leitura-col label { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; cursor: pointer; color: #475569; padding: 2px 0; }
         .leitura-col input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
         
         #print-mount { display: none; }
+
+        /* Componentes gerados por programacao.js / app.js */
+        .day-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
+        .day-nav .action-btn { text-decoration: none; padding: 0.45rem 0.8rem; }
+        .source-note { background: #f8fafc; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 6px; padding: 0.6rem 0.9rem; font-size: 0.88rem; color: #334155; margin: 0 0 1rem; }
+        .action-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem; }
+        .tables-grid-antifonas { margin-top: 0.8rem; }
+        .document-list { margin: 0; padding-left: 1.2rem; line-height: 1.9; }
+        .document-list a { color: #1d4ed8; overflow-wrap: anywhere; }
+        .toolbar-extras { display: contents; }
+        .modal-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .modal-wide { max-width: 1200px; }
+        .modal-body-muted { background: #f8fafc; padding: 15px; border-radius: 8px; }
+        .selection-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e2e8f0; }
+        .leituras-bloco-title { color: var(--primary); margin: 0 0 10px; font-size: 1.1rem; }
+        #main-content:focus { outline: none; }
         
         #btn-topo { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; font-size: 14px; font-weight: bold; border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); opacity: 0.9; transition: opacity 0.3s; }
         #btn-topo:hover { opacity: 1; background-color: #2c4a7c; }
 
-        /* Banner de Atualização */
-        #update-banner { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); z-index: 20000; background: #1a365d; color: #fff; padding: 12px 16px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.3); display: flex; gap: 12px; align-items: center; font-weight: 600; max-width: 92vw; }
-        #update-banner span { flex: 1; }
-        #update-banner button { background: #d4af37; color: #1a365d; border: none; padding: 8px 14px; border-radius: 6px; font-weight: 800; cursor: pointer; font-size: 1rem; transition: all 0.15s ease; }
-        #update-banner button:hover { background: #e8c547; }
 
         @media (max-width: 850px) {
             .tables-grid { grid-template-columns: 1fr; gap: 15px; }
@@ -160,9 +179,9 @@
             .modal { padding: 1rem 0.5rem; }
             .modal-content { padding: 1.2rem; width: 100%; border-radius: 8px; }
             .leitura-grid { grid-template-columns: 1fr; }
+            .modal-actions .action-btn, .selection-actions .action-btn, .day-nav .action-btn, .action-row .action-btn { width: auto; padding: 10px 14px; font-size: 0.95rem; }
+            .action-row .action-btn { width: 100%; }
             #btn-topo { bottom: 15px; right: 15px; padding: 10px 14px; }
-            #update-banner { bottom: 15px; padding: 10px 12px; font-size: 0.9rem; }
-            #update-banner button { padding: 6px 10px; font-size: 0.9rem; }
         }
 
         @media print {
@@ -191,7 +210,11 @@
             .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
             .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
             .color-badge { border: 1px solid #000; background: transparent !important; color: #000 !important; }
-            #update-banner { display: none !important; }
+            .day-nav, .action-row, .source-note { display: none !important; }
+            .clickable-ref { background: transparent; color: #000; padding: 0; }
+            .roteiro-section-title, .preces-form-title { color: #000; border-bottom: 1px solid #000; font-size: 12pt; page-break-after: avoid; }
+            .script-tag.tag-animador, .script-tag.tag-padre, .script-tag.tag-musica, .script-tag.tag-todos,
+            .script-tag.tag-leitor, .script-tag.tag-diacono, .script-tag.tag-rubrica { background: #e2e8f0; color: #000; }
         }
         
         footer { text-align: center; padding: 2rem 1rem; font-size: 0.85rem; color: #64748b; border-top: 1px solid var(--border); margin-top: 3rem; background: #fff; line-height: 1.6; }
@@ -223,10 +246,11 @@ input:focus-visible {
     -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 850px) {
-    table.liturgy-table {
-        min-width: 620px;
-    }
+@media (max-width: 600px) {
+    /* Em celulares, a tabela quebra o texto em vez de esconder a coluna de páginas. */
+    table.liturgy-table th, table.liturgy-table td { padding: 6px 7px; overflow-wrap: anywhere; }
+    table.liturgy-table th { font-size: 0.7rem; letter-spacing: 0; }
+    .card { padding: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

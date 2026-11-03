@@ -1,805 +1,13 @@
 /* ==========================================================================
    BANCO DE DADOS LITÚRGICO INTEGRAL — PARÓQUIA NOSSA SENHORA AUXILIADORA
+   Prefixo das chaves: s<legacyWeek + 1>_<dia>_<parte> (ex.: s10_dom_ev).
    ========================================================================== */
 
 const readingsData = {
-    /* =======================================================
-       SEMANA 8: 26 DE OUTUBRO A 01 DE NOVEMBRO DE 2026
-       Todos os Santos: mesmo conjunto em 31/10 e 01/11.
-       As fontes não fornecem leituras feriais para 31/10.
-       ======================================================= */
-    's8_seg_l1': {
-        title: '1ª Leitura — Efésios 4,32-5,8 (Lecionário II, pág. 1123)',
-        day: 'Segunda-feira (26/10)',
-        text: `Andai no caminho da caridade, como Cristo.
-
-Leitura da Carta de São Paulo aos Efésios 4,32-5,8
-
-Irmãos,
-32
-sede bons uns para com os outros,
-sede compassivos;
-perdoai-vos mutuamente,
-como Deus vos perdoou por meio de Cristo.
-5,1
-Sede imitadores de Deus,
-como filhos que ele ama.
-2
-Vivei no amor, como Cristo nos amou
-e se entregou a si mesmo a Deus por nós,
-em oblação e sacrifício de suave odor.
-3
-A devassidão,
-ou qualquer espécie de impureza ou cobiça
-sequer sejam mencionadas entre vós,
-como convém a santos.
-4
-Nada de palavras grosseiras,
-insensatas ou obscenas,
-que são inconvenientes;
-dedicai-vos antes à ação de graças.
-5
-Pois, sabei-o bem, o devasso, o impuro,
-o avarento - que é um idólatra -
-são excluídos da herança
-no reino de Cristo e de Deus.
-6
-Que ninguém vos engane com palavras vazias.
-Tudo isso atrai a cólera de Deus
-sobre os que lhe desobedecem.
-7
-Não sejais seus cúmplices.
-8
-Outrora éreis trevas,
-mas agora sois luz no Senhor.
-Vivei como filhos da luz.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_seg_sal': {
-        title: 'Salmo Responsorial — Sl 1,1-2.3.4.6 (R. cf. Ef 5,1) (Lecionário II, pág. 1124)',
-        day: 'Segunda-feira (26/10)',
-        text: `R. Sejamos, pois, imitadores do Senhor,
-como convém aos amados filhos seus.
-
-1
-Feliz é todo aquele que não anda *
-conforme os conselhos dos perversos;
-que não entra no caminho dos malvados, *
-nem junto aos zombadores vai sentar-se;
-2
-mas encontra seu prazer na lei de Deus *
-e a medita, dia e noite, sem cessar. R.
-
-3
-Eis que ele é semelhante a uma árvore *
-que à beira da torrente está plantada;
-ela sempre dá seus frutos a seu tempo, †
-e jamais as suas folhas vão murchar. *
-Eis que tudo o que ele faz vai prosperar, R.
-
-4
-mas bem outra é a sorte dos perversos. †
-Ao contrário, são iguais à palha seca *
-espalhada e dispersada pelo vento.
-6
-Pois Deus vigia o caminho dos eleitos, *
-mas a estrada dos malvados leva à morte. R.`
-    },
-    's8_seg_ev': {
-        title: 'Evangelho — Lucas 13,10-17 (Lecionário II, pág. 1125)',
-        day: 'Segunda-feira (26/10)',
-        text: `Evangelho
-Esta filha de Abraão, não deveria ser
-libertada dessa prisão, em dia de sábado?
-
-Proclamação do Evangelho de Jesus Cristo segundo Lucas 13,10-17
-
-Naquele tempo,
-10
-Jesus estava ensinando numa sinagoga,
-em dia de sábado.
-11
-Havia aí uma mulher que, fazia dezoito anos,
-estava com um espírito que a tornava doente.
-Era encurvada e incapaz de se endireitar.
-12
-Vendo-a, Jesus chamou-a e lhe disse:
-"Mulher, estás livre da tua doença".
-13
-Jesus colocou as mãos sobre ela,
-e imediatamente a mulher se endireitou,
-e começou a louvar a Deus.
-14
-O chefe da sinagoga ficou furioso,
-porque Jesus tinha feito uma cura
-em dia de sábado.
-E, tomando a palavra,
-começou a dizer à multidão:
-"Existem seis dias para trabalhar.
-Vinde, então, nesses dias para serdes curados,
-mas não em dia de sábado".
-15
-O Senhor lhe respondeu:
-"Hipócritas!
-Cada um de vós
-não solta do curral o boi ou o jumento,
-para dar-lhe de beber,
-mesmo que seja dia de sábado?
-16
-Esta filha de Abraão,
-que Satanás amarrou durante dezoito anos,
-não deveria ser libertada dessa prisão,
-em dia de sábado?"
-17
-Esta resposta envergonhou
-todos os inimigos de Jesus.
-E a multidão inteira se alegrava
-com as maravilhas que ele fazia.
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    's8_ter_l1': {
-        title: '1ª Leitura — Efésios 5,21-33 (Lecionário II, pág. 1127)',
-        day: 'Terça-feira (27/10)',
-        text: `Este mistério é grande,
-e eu o interpreto em relação a Cristo e à Igreja.
-
-Leitura da Carta de São Paulo aos Efésios 5,21-33
-
-Irmãos,
-21
-vós que temeis a Cristo,
-sede solícitos uns para com os outros.
-22
-As mulheres sejam submissas aos seus maridos
-como ao Senhor.
-23
-Pois o marido é a cabeça da mulher,
-do mesmo modo que Cristo é a cabeça da Igreja,
-ele, o Salvador do seu Corpo.
-24
-Mas como a Igreja é solícita por Cristo,
-sejam as mulheres solícitas em tudo
-pelos seus maridos.
-25
-Maridos, amai as vossas mulheres,
-como o Cristo amou a Igreja
-e se entregou por ela.
-26
-Ele quis assim torná-la santa,
-purificando-a com o banho da água unida à Palavra.
-27
-Ele quis apresentá-la a si mesmo esplêndida,
-sem mancha nem ruga, nem defeito algum,
-mas santa e irrepreensível.
-28
-Assim é que o marido deve amar a sua mulher,
-como ao seu próprio corpo.
-Aquele que ama a sua mulher ama-se a si mesmo.
-29
-Ninguém jamais odiou a sua própria carne.
-Ao contrário,
-alimenta-a e cerca-a de cuidados,
-como o Cristo faz com a sua Igreja;
-30
-e nós somos membros do seu corpo!
-31
-Por isso o homem deixará seu pai e sua mãe
-e se unirá à sua mulher,
-e os dois serão uma só carne.
-32
-Este mistério é grande,
-e eu o interpreto em relação a Cristo e à Igreja.
-33
-Em todo caso, cada um, no que lhe toca,
-deve amar a sua mulher como a si mesmo;
-e a mulher deve respeitar o seu marido.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_ter_sal': {
-        title: 'Salmo Responsorial — Sl 127(128),1-2.3.4-5 (R. 1a) (Lecionário II, pág. 1128)',
-        day: 'Terça-feira (27/10)',
-        text: `R. Felizes todos que respeitam o Senhor!
-
-1
-Feliz és tu se temes o Senhor*
-e trilhas seus caminhos!
-2
-Do trabalho de tuas mãos hás de viver,*
-serás feliz, tudo irá bem! R.
-
-3
-A tua esposa é uma videira bem fecunda*
-no coração da tua casa;
-os teus filhos são rebentos de oliveira*
-ao redor de tua mesa. R.
-
-4
-Será assim abençoado todo homem*
-que teme o Senhor.
-5
-O Senhor te abençoe de Sião,*
-cada dia de tua vida. R.`
-    },
-    's8_ter_ev': {
-        title: 'Evangelho — Lucas 13,18-21 (Lecionário II, pág. 1129)',
-        day: 'Terça-feira (27/10)',
-        text: `Evangelho
-A semente cresce e torna-se uma grande árvore.
-
-Proclamação do Evangelho de Jesus Cristo segundo Lucas 13,18-21
-
-Naquele tempo,
-18
-Jesus dizia:
-"A que é semelhante o Reino de Deus,
-e com que poderei compará-lo?
-19
-Ele é como a semente de mostarda,
-que um homem pega e atira no seu jardim.
-A semente cresce, torna-se uma grande árvore,
-e as aves do céu fazem ninhos nos seus ramos".
-20
-Jesus disse ainda:
-"Com que poderei ainda comparar o Reino de Deus?
-21
-Ele é como o fermento que uma mulher pega
-e mistura com três porções de farinha,
-até que tudo fique fermentado".
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    's8_qua_l1': {
-        title: '1ª Leitura — Efésios 2,19-22 (Lecionário III, pág. 195)',
-        day: 'Quarta-feira (28/10) — Santos Simão e Judas, Apóstolos, Festa',
-        text: `Vós fostes integrados no edifício que tem como fundamento os apóstolos
-e o próprio Jesus Cristo como pedra principal.
-
-Leitura da Carta de São Paulo aos Efésios 2,19-22
-
-Irmãos,
-19
-já não sois mais estrangeiros nem migrantes,
-mas concidadãos dos santos.
-Sois da família de Deus.
-20
-Vós fostes integrados no edifício
-que tem como fundamento os apóstolos e os profetas,
-e o próprio Jesus Cristo como pedra principal.
-21
-É nele que toda a construção se ajusta e se eleva
-para formar um templo Santo no Senhor.
-22
-E vós também sois integrados nesta construção,
-para vos tornardes morada de Deus pelo Espírito.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_qua_sal': {
-        title: 'Salmo Responsorial — Sl 18(19A),2-3.4-5 (R. 5a) (Lecionário III, pág. 196)',
-        day: 'Quarta-feira (28/10) — Santos Simão e Judas, Apóstolos, Festa',
-        text: `R. Seu som ressoa e se espalha em toda terra.
-
-2
-Os céus proclamam a glória do Senhor, *
-e o firmamento, a obra de suas mãos;
-3
-o dia ao dia transmite esta mensagem, *
-a noite à noite publica esta notícia. R.
-
-4
-Não são discursos nem frases ou palavras, *
-nem são vozes que possam ser ouvidas;
-5
-seu som ressoa e se espalha em toda a terra, *
-chega aos confins do universo a sua voz. R.`
-    },
-    's8_qua_ev': {
-        title: 'Evangelho — Lucas 6,12-19 (Lecionário III, pág. 196)',
-        day: 'Quarta-feira (28/10) — Santos Simão e Judas, Apóstolos, Festa',
-        text: `Evangelho
-Escolheu doze dentre eles, aos quais deu o nome de apóstolos.
-
-Proclamação do Evangelho de Jesus Cristo segundo Lucas 6,12-19
-
-12
-Naqueles dias, Jesus foi à montanha para rezar.
-E passou a noite toda em oração a Deus.
-13
-Ao amanhecer, chamou seus discípulos
-e escolheu doze dentre eles,
-aos quais deu o nome de apóstolos:
-14
-Simão, a quem impôs o nome de Pedro,
-e seu irmão André;
-Tiago e João;
-Filipe e Bartolomeu;
-15
-Mateus e Tomé;
-Tiago, filho de Alfeu, e Simão, chamado Zelota;
-16
-Judas, filho de Tiago,
-e Judas Iscariotes, aquele que se tornou traidor.
-17
-Jesus desceu da montanha com eles
-e parou num lugar plano.
-Ali estavam muitos dos seus discípulos
-e grande multidão de gente
-de toda a Judéia e de Jerusalém,
-do litoral de Tiro e Sidônia.
-18
-Vieram para ouvir Jesus
-e serem curados de suas doenças.
-E aqueles que estavam atormentados por espíritos maus
-também foram curados.
-19
-A multidão toda procurava tocar em Jesus,
-porque uma força saía dele, e curava a todos.
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    's8_qui_l1': {
-        title: '1ª Leitura — Efésios 6,10-20 (Lecionário II, pág. 1134)',
-        day: 'Quinta-feira (29/10)',
-        text: `Revesti, portanto, a armadura de Deus, a fim de que,
-no dia mau, possais resistir e permanecer firmes em tudo.
-
-Leitura da Carta de São Paulo aos Efésios 6,10-20
-
-10
-Para terminar, irmãos,
-confortai-vos no Senhor,
-e no domínio de sua força,
-11
-revesti-vos da armadura de Deus,
-para estardes em condições
-de enfrentar as manobras do diabo.
-12
-Pois não é a homens que enfrentamos,
-mas as autoridades, os poderes,
-as dominações deste mundo de trevas,
-os espíritos do mal que estão nos céus.
-13
-Revesti, portanto, a armadura de Deus,
-a fim de que no dia mau possais resistir
-e permanecer firmes em tudo.
-14
-De pé, portanto!
-Cingi os vossos rins com a verdade,
-revesti-vos com a couraça da justiça
-15
-e calçai os vossos pés
-com a prontidão em anunciar o Evangelho da paz.
-16
-Tomai o escudo da fé,
-o qual vos permitirá apagar
-todas as flechas ardentes do Maligno.
-17
-Tomai, enfim, o capacete da salvação
-e o gládio do espírito,
-isto é, a Palavra de Deus.
-18
-Com preces e súplicas de vária ordem,
-orai em todas as circunstâncias, no Espírito,
-e vigiai com toda a perseverança,
-intercedendo por todos os santos.
-19
-Orai também por mim,
-para que a palavra seja colocada em minha boca
-para anunciar corajosamente o mistério do Evangelho,
-20
-do qual sou embaixador acorrentado.
-Possa eu, como é minha obrigação,
-proclamá-lo com toda a ousadia.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_qui_sal': {
-        title: 'Salmo Responsorial — Sl 143(144),1.2.9-10 (R. 1a) (Lecionário II, pág. 1135)',
-        day: 'Quinta-feira (29/10)',
-        text: `R. Bendito seja o Senhor, meu rochedo!
-
-1
-Bendito seja o Senhor, meu rochedo, †
-que adestrou minhas mãos para a luta, *
-e os meus dedos treinou para a guerra! R.
-
-2
-Ele é meu amor, meu refúgio, *
-libertador, fortaleza e abrigo;
-É meu escudo: é nele que espero, *
-ele submete as nações a meus pés. R.
-
-9
-Um canto novo, meu Deus, vou cantar-vos, *
-nas dez cordas da harpa louvar-vos,
-10
-a vós que dais a vitória aos reis *
-e salvais vosso servo Davi. R.`
-    },
-    's8_qui_ev': {
-        title: 'Evangelho — Lucas 13,31-35 (Lecionário II, pág. 1136)',
-        day: 'Quinta-feira (29/10)',
-        text: `Evangelho
-Não convém que um profeta morra fora de Jerusalém.
-
-Proclamação do Evangelho de Jesus Cristo segundo Lucas 13,31-35
-
-31
-Naquela hora, alguns fariseus aproximaram-se
-e disseram a Jesus:
-"Tu deves ir embora daqui,
-porque Herodes quer te matar".
-32
-Jesus disse:
-"Ide dizer a essa raposa:
-eu expulso demônios
-e faço curas hoje e amanhã;
-e no terceiro dia terminarei o meu trabalho.
-33
-Entretanto, preciso caminhar hoje,
-amanhã e depois de amanhã,
-porque não convém
-que um profeta morra fora de Jerusalém.
-34
-Jerusalém, Jerusalém!
-Tu que matas os profetas
-e apedrejas os que te foram enviados!
-Quantas vezes eu quis reunir teus filhos,
-como a galinha reúne os pintainhos debaixo das asas,
-mas tu não quiseste!
-35
-Eis que vossa casa ficará abandonada.
-Eu vos digo: não me vereis mais,
-até que chegue o tempo em que vós mesmos direis:
-'Bendito aquele que vem em nome do Senhor' ".
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    's8_sex_l1': {
-        title: '1ª Leitura — Filipenses 1,1-11 (Lecionário II, pág. 1138)',
-        day: 'Sexta-feira (30/10)',
-        text: `Tenho a certeza de que aquele que começou em vós uma
-boa obra, há de levá-la à perfeição até ao dia de Cristo Jesus.
-
-Início da Carta de São Paulo aos Filipenses 1,1-11
-
-1
-Paulo e Timóteo, servos de Cristo Jesus,
-a todos os santos em Cristo Jesus
-que estão em Filipos,
-com os seus bispos e diáconos:
-2
-graça e paz a vós da parte de Deus nosso Pai
-e do Senhor Jesus Cristo.
-3
-Dou graças ao meu Deus,
-todas as vezes que me lembro de vós.
-4
-Sempre em todas as minhas orações
-rezo por vós, com alegria,
-5
-por causa da vossa comunhão conosco
-na divulgação do evangelho,
-desde o primeiro dia até agora.
-6
-Tenho a certeza de que aquele
-que começou em vós uma boa obra,
-há de levá-la à perfeição até ao dia de Cristo Jesus.
-7
-É justo que eu pense assim a respeito de vós todos,
-pois a todos trago no coração,
-porque, tanto na minha prisão
-como na defesa e confirmação do Evangelho,
-participais na graça que me foi dada.
-8
-Deus é testemunha de que tenho saudade de todos vós,
-com a ternura de Cristo Jesus.
-9
-E isto eu peço a Deus:
-que o vosso amor cresça sempre mais,
-em todo o conhecimento e experiência,
-10
-para discernirdes o que é o melhor.
-E assim ficareis puros e sem defeito
-para o dia de Cristo,
-11
-cheios do fruto da justiça
-que nos vem por Jesus Cristo,
-para a glória e o louvor de Deus.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_sex_sal': {
-        title: 'Salmo Responsorial — Sl 110(111),1-2.3-4.5-6 (R. 2a) (Lecionário II, pág. 1139)',
-        day: 'Sexta-feira (30/10)',
-        text: `R. Grandiosas são as obras do Senhor!
-
-Ou: Aleluia, Aleluia, Aleluia.
-
-1
-Eu agradeço a Deus de todo o coração *
-junto com todos os seus justos reunidos!
-2
-Que grandiosas são as obras do Senhor, *
-elas merecem todo o amor e admiração! R.
-
-3
-Que beleza e esplendor são os seus feitos! *
-Sua justiça permanece eternamente!
-4
-O Senhor bom e clemente nos deixou *
-a lembrança de suas grandes maravilhas. R.
-
-5
-Ele dá o alimento aos que o temem *
-e jamais esquecerá sua Aliança.
-6
-Ao seu povo manifesta seu poder, *
-dando a ele a herança das nações. R.`
-    },
-    's8_sex_ev': {
-        title: 'Evangelho — Lucas 14,1-6 (Lecionário II, pág. 1139)',
-        day: 'Sexta-feira (30/10)',
-        text: `Evangelho
-Se algum de vós tem um filho ou um boi que caiu num poço,
-não o tira logo, mesmo em dia de sábado?'
-
-Proclamação do Evangelho de Jesus Cristo segundo Lucas 14,1-6
-
-1
-Aconteceu que, num dia de sábado,
-Jesus foi comer na casa de um dos chefes dos fariseus.
-E eles o observavam.
-2
-Diante de Jesus, havia um hidrópico.
-3
-Tomando a palavra,
-Jesus falou aos mestres da Lei e aos fariseus:
-"A Lei permite curar em dia de sábado, ou não?"
-4
-Mas eles ficaram em silêncio.
-Então Jesus tomou o homem pela mão,
-curou-o e despediu-o.
-5
-Depois lhes disse:
-"Se algum de vós tem um filho ou um boi
-que caiu num poço,
-não o tira logo, mesmo em dia de sábado?"
-6
-E eles não foram capazes de responder a isso.
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    's8_seg_acl': {
-        title: 'Aclamação ao Evangelho — Cf. Jo 17,17ba',
-        day: 'Segunda-feira (26/10)',
-        text: `R. Aleluia, Aleluia, Aleluia.
-V. Vossa palavra é a verdade;
-   santificai-nos na verdade!`
-    },
-    's8_ter_acl': {
-        title: 'Aclamação ao Evangelho — Cf. Mt 11,25',
-        day: 'Terça-feira (27/10)',
-        text: `R. Aleluia, Aleluia, Aleluia.
-V. Graças te dou, ó Pai, Senhor do céu e da terra,
-  pois revelaste os mistérios do teu Reino
-  aos pequeninos, escondendo-os aos doutores!`
-    },
-    's8_qua_acl': {
-        title: 'Aclamação ao Evangelho — Santos Simão e Judas, Apóstolos',
-        day: 'Quarta-feira (28/10) — Santos Simão e Judas, Apóstolos, Festa',
-        text: `R. Aleluia, Aleluia, Aleluia.
-V. A vós, ó Deus, louvamos, a vós, Senhor, cantamos;
-  vos louva, ó Senhor, o coro dos Apóstolos!`
-    },
-    's8_qui_acl': {
-        title: 'Aclamação ao Evangelho — Cf. Lc 19,38; 2,14',
-        day: 'Quinta-feira (29/10)',
-        text: `R. Aleluia, Aleluia, Aleluia.
-V. Bendito é o rei que vem em nome do Senhor!
-  Glória a Deus nos altos céus e na terra paz aos homens!`
-    },
-    's8_sex_acl': {
-        title: 'Aclamação ao Evangelho — Jo 10,27',
-        day: 'Sexta-feira (30/10)',
-        text: `R. Aleluia, aleluia, aleluia.
-V. Minhas ovelhas escutam minha voz,
-  eu as conheço e elas me seguem.`
-    },
-    's8_dom_l1': {
-        title: '1ª Leitura — Apocalipse 7,2-4.9-14 (Lecionário I, pág. 1047)',
-        day: 'Sábado (31/10) e Domingo (01/11) — Todos os Santos, Solenidade',
-        text: `Vi uma multidão imensa
-de gente de todas as nações, tribos, povos e línguas.
-
-Leitura do Livro do Apocalipse de São João 7,2-4.9-14
-
-Eu, João,
-2
-vi um outro anjo,
-que subia do lado onde nasce o sol.
-Ele trazia a marca do Deus vivo
-e gritava, em alta voz,
-aos quatro anjos que tinham recebido o poder
-de danificar a terra e o mar,
-dizendo-lhes:
-3
-"Não façais mal à terra, nem ao mar nem às arvores,
-até que tenhamos marcado na fronte
-os servos do nosso Deus".
-4
-Ouvi então o número dos que tinham sido marcados:
-eram cento e quarenta e quatro mil,
-de todas as tribos dos filhos de Israel.
-9
-Depois disso, vi uma multidão imensa
-de gente de todas as nações,
-tribos, povos e línguas,
-e que ninguém podia contar.
-Estavam de pé diante do trono e do Cordeiro;
-trajavam vestes brancas
-e traziam palmas na mão.
-10
-Todos proclamavam com voz forte:
-"A salvação pertence ao nosso Deus,
-que está sentado no trono, e ao Cordeiro".
-11
-Todos os anjos estavam de pé, em volta do trono
-e dos Anciãos e dos quatro Seres vivos e prostravam-se,
-com o rosto por terra, diante do trono.
-E adoravam a Deus, dizendo:
-12
-"Amém. O louvor, a glória e a sabedoria,
-a ação de graças, a honra, o poder e a força
-pertencem ao nosso Deus para sempre.
-Amém"
-13
-E um dos Anciãos falou comigo e perguntou:
-"Quem são esses vestidos com roupas brancas?
-De onde vieram?"
-14
-Eu respondi:
-"Tu é que sabes, meu senhor".
-E então ele me disse:
-"Esses são os que vieram da grande tribulação.
-Lavaram e alvejaram as suas roupas
-no sangue do Cordeiro".
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_dom_sal': {
-        title: 'Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6) (Lecionário I, pág. 1048)',
-        day: 'Sábado (31/10) e Domingo (01/11) — Todos os Santos, Solenidade',
-        text: `R. É assim a geração dos que procuram o Senhor!
-
-1
-Ao Senhor pertence a terra e o que ela encerra, *
-o mundo inteiro com os seres que o povoam;
-2
-porque ele a tornou firme sobre os mares, *
-e sobre as águas a mantém inabalável. R.
-
-3
-"Quem subirá até o monte do Senhor, *
-quem ficará em sua santa habitação?"
-4a
-"Quem tem mãos puras e inocente coração, *
-4b
-quem não dirige sua mente para o crime. R.
-
-5
-Sobre este desce a bênção do Senhor *
-e a recompensa de seu Deus e Salvador".
-6
-"É assim a geração dos que o procuram, *
-e do Deus de Israel buscam a face". R.`
-    },
-    's8_dom_l2': {
-        title: '2ª Leitura — 1 João 3,1-3 (Lecionário I, pág. 1048)',
-        day: 'Sábado (31/10) e Domingo (01/11) — Todos os Santos, Solenidade',
-        text: `Veremos Deus tal como é.
-
-Leitura da Primeira Carta de São João 3,1-3
-
-Caríssimos,
-1
-vede que grande presente de amor o Pai nos deu:
-de sermos chamados filhos de Deus!
-E nós o somos!
-Se o mundo não nos conhece,
-é porque não conheceu o Pai.
-2
-Caríssimos, desde já somos filhos de Deus,
-mas nem sequer se manifestou o que seremos!
-Sabemos que,
-quando Jesus se manifestar,
-seremos semelhantes a ele,
-porque o veremos tal como ele é.
-3
-Todo o que espera nele,
-purifica-se a si mesmo,
-como também ele é puro.
-
-Palavra do Senhor.
-R. Graças a Deus.`
-    },
-    's8_dom_ev': {
-        title: 'Evangelho — Mateus 5,1-12a (Lecionário I, pág. 1049)',
-        day: 'Sábado (31/10) e Domingo (01/11) — Todos os Santos, Solenidade',
-        text: `Aclamação ao Evangelho — Mt 11,28
-
-R. Aleluia, Aleluia, Aleluia.
-V. Vinde a mim, todos vós que estais cansados
-  e penais a carregar pesado fardo,
-  e descanso eu vos darei, diz o Senhor.
-
-Evangelho
-Alegrai-vos e exultai, porque será grande a vossa recompensa nos céus.
-
-Proclamação do Evangelho de Jesus Cristo segundo Mateus 5,1-12a
-
-Naquele tempo,
-1
-vendo Jesus as multidões,
-subiu ao monte e sentou-se.
-Os discípulos aproximaram-se,
-2
-e Jesus começou a ensiná-los:
-3
-"Bem-aventurados os pobres em espírito,
-porque deles é o Reino dos Céus.
-4
-Bem-aventurados os aflitos,
-porque serão consolados.
-5
-Bem-aventurados os mansos,
-porque possuirão a terra.
-6
-Bem-aventurados os que têm fome e sede de justiça,
-porque serão saciados.
-7
-Bem-aventurados os misericordiosos,
-porque alcançarão misericórdia.
-8
-Bem-aventurados os puros de coração,
-porque verão a Deus.
-9
-Bem-aventurados os que promovem a paz,
-porque serão chamados filhos de Deus.
-10
-Bem-aventurados os que são perseguidos
-por causa da justiça,
-porque deles é o Reino dos Céus.
-11
-Bem-aventurados sois vós, quando vos injuriarem
-e perseguirem, e mentindo,
-disserem todo tipo de mal contra vós,
-por causa de mim.
-12
-Alegrai-vos e exultai,
-porque será grande a vossa recompensa nos céus".
-
-Palavra da Salvação.
-R. Glória a vós, Senhor.`
-    },
-    /* Leituras integrais do DOCX de 2 a 8 de novembro de 2026. */
+    /* SEMANA DE 2 A 8 DE NOVEMBRO DE 2026 — leituras integrais do DOCX semanal */
     's9_seg_l1': {
-        title: '1ª Leitura — Jó 19,1.23-27a',
-        day: 'Segunda-feira (02/11) — Fiéis Defuntos',
+        title: "1ª Leitura — Jó 19,1.23-27a (Lecionário I, pág. 1052)",
+        day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `PRIMEIRA LEITURA
 Eu sei que o meu Redentor está vivo.
 Leitura do Livro de Jó 19,1.23-27a
@@ -824,8 +32,8 @@ e não os olhos de outros".
 Palavra do Senhor.`
     },
     's9_seg_sal': {
-        title: 'Salmo Responsorial — Sl 22(23),1-3.4.5.6 (R. 1 ou 4a)',
-        day: 'Segunda-feira (02/11) — Fiéis Defuntos',
+        title: "Salmo Responsorial — Sl 22(23),1-3.4.5.6 (R. 1 ou 4a) (Lecionário I, pág. 1061)",
+        day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `Salmo responsorial
 Sl 22(23),1-3.4.5.6 (R. 1 ou 4a)
 
@@ -866,8 +74,8 @@ e, na casa do Senhor, habitarei *
 pelos tempos infinitos. R.`
     },
     's9_seg_l2': {
-        title: '2ª Leitura — 1Cor 15,20-24a.25-28',
-        day: 'Segunda-feira (02/11) — Fiéis Defuntos',
+        title: "2ª Leitura — 1Cor 15,20-24a.25-28 (Lecionário I, pág. 1073)",
+        day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `SEGUNDA LEITURA
 Em Cristo todos reviverão.
 Leitura da Primeira Carta de São Paulo aos Coríntios 15,20-24a.25-28
@@ -909,8 +117,8 @@ para que Deus seja tudo em todos.
 Palavra do Senhor.`
     },
     's9_seg_acl': {
-        title: 'Aclamação ao Evangelho — Jo 6,39',
-        day: 'Segunda-feira (02/11) — Fiéis Defuntos',
+        title: "Aclamação ao Evangelho — Jo 6,39",
+        day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `Aclamação ao Evangelho
 Jo 6,39
 R. Aleluia, Aleluia, Aleluia.
@@ -919,8 +127,8 @@ V. É esta a vontade de quem me enviou:
     mas que eu os ressuscite no último dia.`
     },
     's9_seg_ev': {
-        title: 'Evangelho — Lc 12,35-40',
-        day: 'Segunda-feira (02/11) — Fiéis Defuntos',
+        title: "Evangelho — Lc 12,35-40 (Lecionário I, pág. 1087)",
+        day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `EVANGELHO
 Vós também, ficai preparados!
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,35-40
@@ -953,8 +161,8 @@ na hora em que menos o esperardes".
 Palavra da Salvação.`
     },
     's9_ter_l1': {
-        title: '1ª Leitura — Fl 2,5-11',
-        day: 'Terça-feira (03/11)',
+        title: "1ª Leitura — Fl 2,5-11 (Lecionário II, pág. 1149)",
+        day: "Terça-feira (03/11)",
         text: `PRIMEIRA LEITURA
 Humilhou-se a si mesmo, por isso, Deus o exaltou.
 Leitura da Carta de São Paulo aos Filipenses 2,5-11
@@ -989,8 +197,8 @@ e toda língua proclame :
 Palavra do Senhor.`
     },
     's9_ter_sal': {
-        title: 'Salmo Responsorial — Sl 21(22),26b-27.28-30a.31-32 (R. 26a)',
-        day: 'Terça-feira (03/11)',
+        title: "Salmo Responsorial — Sl 21(22),26b-27.28-30a.31-32 (R. 26a) (Lecionário II, pág. 1150)",
+        day: "Terça-feira (03/11)",
         text: `Salmo responsorial
 Sl 21(22),26b-27.28-30a.31-32 (R. 26a)
 
@@ -1022,8 +230,8 @@ ao povo novo que há de vir, ela dirá: *
 "Eis a obra que o Senhor realizou!" R.`
     },
     's9_ter_acl': {
-        title: 'Aclamação ao Evangelho — Mt 11,28',
-        day: 'Terça-feira (03/11)',
+        title: "Aclamação ao Evangelho — Mt 11,28",
+        day: "Terça-feira (03/11)",
         text: `Aclamação ao Evangelho
 Mt 11,28
 
@@ -1032,8 +240,8 @@ V. Vinde a mim, todos vós que estais cansados,
     e descanso eu vos darei, diz o senhor.`
     },
     's9_ter_ev': {
-        title: 'Evangelho — Lc 14,15-24',
-        day: 'Terça-feira (03/11)',
+        title: "Evangelho — Lc 14,15-24 (Lecionário II, pág. 1150)",
+        day: "Terça-feira (03/11)",
         text: `EVANGELHO
 Sai pelas estradas e atalhos, e obriga as pessoas
 a virem aqui, para que minha casa fique cheia.
@@ -1088,8 +296,8 @@ provará do meu banquete'".
 Palavra da Salvação.`
     },
     's9_qua_l1': {
-        title: '1ª Leitura — Fl 2,12-18',
-        day: 'Quarta-feira (04/11) — São Carlos Borromeu',
+        title: "1ª Leitura — Fl 2,12-18 (Lecionário II, pág. 1152)",
+        day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `PRIMEIRA LEITURA
 Trabalhai para a vossa salvação;
 Deus é que realiza em vós tanto o querer como o fazer.
@@ -1126,8 +334,8 @@ e congratulai-vos comigo.
 Palavra do Senhor.`
     },
     's9_qua_sal': {
-        title: 'Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a)',
-        day: 'Quarta-feira (04/11) — São Carlos Borromeu',
+        title: "Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a) (Lecionário II, pág. 1153)",
+        day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `Salmo responsorial  Sl 26 (27),1.4.13-14 (R. 1a)
 R. O Senhor é minha luz e salvação!
 1
@@ -1152,8 +360,8 @@ Espera no Senhor e tem coragem, *
 espera no Senhor! R.`
     },
     's9_qua_acl': {
-        title: 'Aclamação ao Evangelho — 1Pd 4,14',
-        day: 'Quarta-feira (04/11) — São Carlos Borromeu',
+        title: "Aclamação ao Evangelho — 1Pd 4,14",
+        day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `Aclamação ao Evangelho
 1Pd 4,14
 
@@ -1163,8 +371,8 @@ V. Felizes sereis vós, se fordes ultrajados
     o Espírito de Deus.`
     },
     's9_qua_ev': {
-        title: 'Evangelho — Lc 14,25-33',
-        day: 'Quarta-feira (04/11) — São Carlos Borromeu',
+        title: "Evangelho — Lc 14,25-33 (Lecionário II, pág. 1154)",
+        day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `EVANGELHO
 Qualquer um de vós, se não renunciar a tudo
 o que tem, não pode ser meu discípulo!
@@ -1216,8 +424,8 @@ não pode ser meu discípulo!"
 Palavra da Salvação.`
     },
     's9_qui_l1': {
-        title: '1ª Leitura — Fl 3,3-8a',
-        day: 'Quinta-feira (05/11)',
+        title: "1ª Leitura — Fl 3,3-8a (Lecionário II, pág. 1156)",
+        day: "Quinta-feira (05/11)",
         text: `PRIMEIRA LEITURA
 Essas coisas, que eram vantagens para mim,
 considerei-as como perda, por causa de Cristo.
@@ -1254,8 +462,8 @@ em conhecer a Cristo Jesus, meu Senhor.
 Palavra do Senhor.`
     },
     's9_qui_sal': {
-        title: 'Salmo Responsorial — Sl 104(105),2-3.4-5.6-7 (R. 3b)',
-        day: 'Quinta-feira (05/11)',
+        title: "Salmo Responsorial — Sl 104(105),2-3.4-5.6-7 (R. 3b) (Lecionário II, pág. 1156)",
+        day: "Quinta-feira (05/11)",
         text: `Salmo responsorial
 Sl 104(105),2-3.4-5.6-7 (R. 3b)
 
@@ -1283,8 +491,8 @@ ele mesmo, o Senhor, é nosso Deus, *
 vigoram suas leis em toda a terra. R.`
     },
     's9_qui_acl': {
-        title: 'Aclamação ao Evangelho — Mt 11,28',
-        day: 'Quinta-feira (05/11)',
+        title: "Aclamação ao Evangelho — Mt 11,28",
+        day: "Quinta-feira (05/11)",
         text: `Aclamação ao Evangelho
 Mt 11,28
 
@@ -1293,8 +501,8 @@ V. Vinde a mim, todos vós que estais cansados,
     e descanso eu vos darei, diz o Senhor.`
     },
     's9_qui_ev': {
-        title: 'Evangelho — Lc 15,1-10',
-        day: 'Quinta-feira (05/11)',
+        title: "Evangelho — Lc 15,1-10 (Lecionário II, pág. 1157)",
+        day: "Quinta-feira (05/11)",
         text: `EVANGELHO
 Haverá alegria no céu por um só pecador que se converte.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 15,1-10
@@ -1347,8 +555,8 @@ por um só pecador que se converte".
 Palavra da Salvação.`
     },
     's9_sex_l1': {
-        title: '1ª Leitura — Fl 3,17-4,1',
-        day: 'Sexta-feira (06/11)',
+        title: "1ª Leitura — Fl 3,17-4,1 (Lecionário II, pág. 1160)",
+        day: "Sexta-feira (06/11)",
         text: `PRIMEIRA LEITURA
 Aguardamos o nosso Salvador,
 que transformará o nosso corpo humilhado
@@ -1384,8 +592,8 @@ continuai firmes no Senhor.
 Palavra do Senhor.`
     },
     's9_sex_sal': {
-        title: 'Salmo Responsorial — Sl 121(122),1-2.3-4a.4b-5 (R. 1)',
-        day: 'Sexta-feira (06/11)',
+        title: "Salmo Responsorial — Sl 121(122),1-2.3-4a.4b-5 (R. 1) (Lecionário II, pág. 1160)",
+        day: "Sexta-feira (06/11)",
         text: `Salmo responsorial
 Sl 121(122),1-2.3-4a.4b-5 (R. 1)
 R. Que alegria, quando me disseram:
@@ -1415,8 +623,8 @@ A sede da justiça lá está *
 e o trono de Davi. R.`
     },
     's9_sex_acl': {
-        title: 'Aclamação ao Evangelho — 1Jo 2,5',
-        day: 'Sexta-feira (06/11)',
+        title: "Aclamação ao Evangelho — 1Jo 2,5",
+        day: "Sexta-feira (06/11)",
         text: `Aclamação ao Evangelho
 1Jo 2,5
 
@@ -1425,8 +633,8 @@ V. O amor de Deus se realiza em todo aquele,
     que guarda sua palavra fielmente.`
     },
     's9_sex_ev': {
-        title: 'Evangelho — Lc 16,1-8',
-        day: 'Sexta-feira (06/11)',
+        title: "Evangelho — Lc 16,1-8 (Lecionário II, pág. 1161)",
+        day: "Sexta-feira (06/11)",
         text: `EVANGELHO
 Os filhos deste mundo são mais espertos
 em seus negócios do que os filhos da luz.
@@ -1478,8 +686,8 @@ do que os filhos da luz".
 Palavra da Salvação.`
     },
     's9_dom_l1': {
-        title: '1ª Leitura — Sb 6,12-16',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "1ª Leitura — Sb 6,12-16 (Lecionário I, pág. 351)",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `PRIMEIRA LEITURA
 A sabedoria é encontrada por aqueles que a procuram.
 Leitura do Livro da Sabedoria 6,12-16
@@ -1504,8 +712,8 @@ e vai ao seu encontro em todos os seus projetos.
 Palavra do Senhor.`
     },
     's9_dom_sal': {
-        title: 'Salmo Responsorial — Sl 62(63),2.3-4.5-6.7-8 (R. 2b)',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "Salmo Responsorial — Sl 62(63),2.3-4.5-6.7-8 (R. 2b) (Lecionário I, pág. 351)",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `Salmo responsorial  Sl 62(63),2.3-4.5-6.7-8 (R. 2b)
 R. A minh'alma tem sede de vós, e vos deseja, ó Senhor.
 2
@@ -1538,8 +746,8 @@ Para mim fostes sempre um socorro; *
 de vossas asas à sombra eu exulto! R.`
     },
     's9_dom_l2': {
-        title: '2ª Leitura (mais longa) — 1Ts 4,13-18',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "2ª Leitura (mais longa) — 1Ts 4,13-18 (Lecionário I, pág. 352)",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `SEGUNDA LEITURA (mais longa)
 Deus trará de volta, com Cristo, os que
 através dele entraram no sono da morte.
@@ -1573,8 +781,8 @@ com essas palavras.
 Palavra do Senhor.`
     },
     's9_dom_l2_breve': {
-        title: '2ª Leitura (mais breve) — 1Ts 4,13-14',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "2ª Leitura (mais breve) — 1Ts 4,13-14 (Lecionário I, pág. 352)",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `Leitura da Primeira Carta de São Paulo aos Tessalonicenses 4,13-14
 13
 Irmãos: não queremos deixar-vos na incerteza
@@ -1588,16 +796,16 @@ os que através dele entraram no sono da morte.
 Palavra do Senhor.`
     },
     's9_dom_acl': {
-        title: 'Aclamação ao Evangelho — Mt 24,42a.44',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "Aclamação ao Evangelho — Mt 24,42a.44",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `Aclamação ao Evangelho  Mt 24,42a.44
 R. Aleluia, Aleluia, Aleluia.
 V. É preciso vigiar e ficar de prontidão;
     em que dia o Senhor há de vir, não sabeis não!`
     },
     's9_dom_ev': {
-        title: 'Evangelho — Mt 25,1-13',
-        day: 'Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum',
+        title: "Evangelho — Mt 25,1-13 (Lecionário I, pág. 353)",
+        day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `EVANGELHO
 O noivo está chegando. Ide ao seu encontro.
 Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,1-13
@@ -1650,6 +858,793 @@ Ele, porém, respondeu:
 13
 Portanto, ficai vigiando,
 pois não sabeis qual será o dia, nem a hora".
+Palavra da Salvação.`
+    },
+    /* SEMANA DE 9 A 15 DE NOVEMBRO DE 2026 — leituras integrais do DOCX semanal */
+    's10_seg_l1': {
+        title: "1ª Leitura — Ez 47,1-2.8-9.12 (Lecionário III, pág. 203)",
+        day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        text: `PRIMEIRA LEITURA
+Leitura da Profecia de Ezequiel 47,1-2.8-9.12
+Naqueles dias,
+1
+o homem fez-me voltar até a entrada do Templo
+e eis que saía água da sua parte subterrânea
+na direção leste,
+porque o Templo estava voltado para o oriente;
+a água corria do lado direito do Templo,
+ao sul do altar.
+2
+Ele fez-me sair pela porta que dá para o norte,
+e fez-me dar uma volta por fora,
+até à porta que dá para o leste,
+onde eu vi a água jorrando do lado direito.
+8
+Então ele me disse:
+"Estas águas correm para a região oriental,
+descem para o vale do Jordão,
+desembocam nas águas salgadas do mar,
+e elas se tornarão saudáveis.
+9
+Onde o rio chegar,
+todos os animais que ali se movem poderão viver.
+Haverá peixes em quantidade,
+pois ali desembocam as águas que trazem saúde;
+e haverá vida onde chegar o rio.
+12
+Nas margens junto ao rio,
+de ambos os lados,
+crescerá toda espécie de árvores frutíferas;
+suas folhas não murcharão
+e seus frutos jamais se acabarão:
+cada mês darão novos frutos,
+pois as águas que banham as árvores saem do santuário.
+Seus frutos servirão de alimento
+e suas folhas serão remédio".
+Palavra do Senhor.`
+    },
+    's10_seg_sal': {
+        title: "Salmo Responsorial — Sl 45(46),2-3.5-6.8-9 (R. 5) (Lecionário III, pág. 203)",
+        day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        text: `Salmo responsorial Sl 45(46),2-3.5-6.8-9 (R. 5)
+R. Os braços de um rio vêm trazer alegria
+à Cidade de Deus, à morada do Altíssimo.
+2
+O Senhor para nós é refúgio e vigor, *
+sempre pronto, mostrou-se um socorro na angústia;
+3
+assim não tememos, se a terra estremece, *
+se os montes desabam, caindo nos mares. R.
+5
+Os braços de um rio vêm trazer alegria *
+à Cidade de Deus, à morada do Altíssimo.
+6
+Quem a pode abalar? Deus está no seu meio! *
+Já bem antes da aurora, ele vem ajudá-la. R.
+8
+Conosco está o Senhor do universo! *
+O nosso refúgio é o Deus de Jacó!
+9
+Vinde ver, contemplai os prodígios de Deus †
+e a obra estupenda que fez no universo: *
+reprime as guerras na face da terra. R.`
+    },
+    's10_seg_acl': {
+        title: "Aclamação ao Evangelho — 2Cr 7,16",
+        day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        text: `Aclamação ao Evangelho 2Cr 7,16
+R. Aleluia, Aleluia, Aleluia.
+V. Esta casa eu escolhi e santifiquei,
+para nela estar meu nome para sempre.`
+    },
+    's10_seg_ev': {
+        title: "Evangelho — Jo 2,13-22 (Lecionário III, pág. 205)",
+        day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo João 2,13-22
+13
+Estava próxima a Páscoa dos judeus
+e Jesus subiu a Jerusalém.
+14
+No Templo,
+encontrou os vendedores de bois, ovelhas e pombas
+e os cambistas que estavam aí sentados.
+15
+Fez então um chicote de cordas
+e expulsou todos do Templo,
+junto com as ovelhas e os bois;
+espalhou as moedas
+e derrubou as mesas dos cambistas.
+16
+E disse aos que vendiam pombas:
+"Tirai isto daqui!
+Não façais da casa de meu Pai uma casa de comércio!"
+17
+Seus discípulos lembraram-se, mais tarde,
+que a Escritura diz:
+"O zelo por tua casa me consumirá".
+18
+Então os judeus perguntaram a Jesus:
+"Que sinal nos mostras para agir assim?"
+19
+Ele respondeu:
+"Destruí, este Templo,
+e em três dias o levantarei".
+20
+Os judeus disseram:
+"Quarenta e seis anos foram precisos para a construção
+deste santuário e tu o levantarás em três dias?"
+21
+Mas Jesus estava falando do Templo do seu corpo.
+22
+Quando Jesus ressuscitou,
+os discípulos lembraram-se do que ele tinha dito
+e acreditaram na Escritura e na palavra dele.
+Palavra da Salvação.`
+    },
+    's10_ter_l1': {
+        title: "1ª Leitura — Tt 2,1-8.11-14 (Lecionário II, pág. 1172)",
+        day: "Terça-feira (10/11) — São Leão Magno",
+        text: `PRIMEIRA LEITURA
+Leitura da Carta de São Paulo a Tito 2,1-8.11-14
+Caríssimo,
+1
+o teu ensino seja conforme à sã doutrina.
+2
+Os mais velhos sejam sóbrios,
+ponderados, prudentes,
+fortes na fé, na caridade, na paciência.
+3
+Assim também as mulheres idosas
+observem uma conduta santa,
+não sejam caluniadoras nem escravas do vinho,
+mas mestras do bem.
+4
+Saibam ensinar as jovens a amarem seus maridos,
+a cuidarem dos filhos,
+5
+a serem prudentes, castas, boas donas-de-casa,
+dóceis para os maridos, bondosas,
+para que a palavra de Deus não seja difamada.
+6
+Exorta igualmente os jovens a serem moderados
+7
+e mostra-te em tudo exemplo de boas obras,
+de integridade na doutrina, de ponderação,
+8
+de palavra sã e irrepreensível,
+para que os adversários se confundam,
+não tendo nada de mal para dizer de nós.
+11
+Pois a graça de Deus se manifestou
+trazendo salvação para todos os homens.
+12
+Ela nos ensina a abandonar a impiedade
+e as paixões mundanas
+e a viver neste mundo
+com equilíbrio, justiça e piedade,
+13
+aguardando a feliz esperança
+e a manifestação da glória
+do nosso grande Deus e Salvador, Jesus Cristo.
+14
+Ele se entregou por nós,
+para nos resgatar de toda a maldade
+e purificar para si um povo que lhe pertença
+e que se dedique a praticar o bem.
+Palavra do Senhor.`
+    },
+    's10_ter_sal': {
+        title: "Salmo Responsorial — Sl 36(37),3-4.18-23.27 e 29 (R. 39a) (Lecionário II, pág. 1173)",
+        day: "Terça-feira (10/11) — São Leão Magno",
+        text: `Salmo responsorial
+Sl 36(37),3-4.18-23.27 e 29 (R. 39a)
+R. A salvação de quem é justo, vem de Deus!
+3
+Confia no Senhor e faze o bem, *
+e sobre a terra habitarás em segurança.
+4
+Coloca no Senhor tua alegria, *
+e ele dará o que pedir teu coração. R.
+18
+O Senhor cuida da vida dos honestos, *
+e sua herança permanece eternamente.
+23
+É o Senhor quem firma os passos dos mortais *
+e dirige o caminhar dos que lhe agradam. R.
+27
+Afasta-te do mal e faze o bem, *
+e terás tua morada para sempre.
+29
+mas os justos herdarão a nova terra *
+e nela habitarão eternamente. R.`
+    },
+    's10_ter_acl': {
+        title: "Aclamação ao Evangelho — Jo 14,23",
+        day: "Terça-feira (10/11) — São Leão Magno",
+        text: `Aclamação ao Evangelho
+Jo 14,23
+R. Aleluia, Aleluia, Aleluia.
+V. Quem me ama, realmente, guardará minha palavra,
+e meu Pai o amará e a ele nós viremos.`
+    },
+    's10_ter_ev': {
+        title: "Evangelho — Lc 17,7-10 (Lecionário II, pág. 1173)",
+        day: "Terça-feira (10/11) — São Leão Magno",
+        text: `EVANGELHO
+Somos servos inúteis; fizemos o que devíamos fazer.
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,7-10
+Naquele tempo, disse Jesus:
+7
+"Se algum de vós tem um empregado
+que trabalha a terra ou cuida dos animais,
+por acaso vai dizer-lhe, quando ele volta do campo:
+'Vem depressa para a mesa?'
+8
+Pelo contrário, não vai dizer ao empregado:
+'Prepara-me o jantar, cinge-te e serve-me,
+enquanto eu como e bebo;
+depois disso tu poderás comer e beber?'
+9
+Será que vai agradecer ao empregado,
+porque fez o que lhe havia mandado?
+10
+Assim também vós:
+quando tiverdes feito tudo o que vos mandaram,
+dizei: 'Somos servos inúteis;
+fizemos o que devíamos fazer' ".
+Palavra da Salvação.`
+    },
+    's10_qua_l1': {
+        title: "1ª Leitura — Tt 3,1-7 (Lecionário II, pág. 1175)",
+        day: "Quarta-feira (11/11) — São Martinho de Tours",
+        text: `PRIMEIRA LEITURA
+Leitura da Carta de São Paulo a Tito 3,1-7
+Caríssimo,
+1
+admoesta a todos
+que vivam submissos aos príncipes e às autoridades,
+que lhes obedeçam
+e estejam prontos para qualquer boa obra.
+2
+Não injuriem a ninguém, sejam pacíficos, afáveis
+e deem provas de mansidão para com todos os homens.
+3
+Porque nós outrora éramos insensatos,
+rebeldes, extraviados,
+escravos de toda sorte de paixões e prazeres,
+vivendo na maldade e na inveja,
+dignos de ódio e odiando uns aos outros.
+4
+Mas um dia manifestou-se
+a bondade de Deus, nosso Salvador,
+e o seu amor pelos homens:
+5
+Ele salvou-nos não por causa dos atos de justiça
+que tivéssemos praticado,
+mas por sua misericórdia;
+quando renascemos e fomos renovados no batismo
+pelo Espírito Santo,
+6
+que ele derramou abundantemente sobre nós
+por meio de nosso Salvador Jesus Cristo.
+7
+Justificados, assim, pela sua graça,
+nos tornamos na esperança herdeiros da vida eterna.
+Palavra do Senhor.`
+    },
+    's10_qua_sal': {
+        title: "Salmo Responsorial — Sl 22(23),1-3a.3b-4.5.6 (R. 1) (Lecionário II, pág. 1176)",
+        day: "Quarta-feira (11/11) — São Martinho de Tours",
+        text: `Salmo responsorial Sl 22 (23),1-3a.3b-4.5.6 (R. 1)
+R. O Senhor é o pastor que me conduz,
+não me falta coisa alguma.
+1
+O Senhor é o pastor que me conduz; *
+não me falta coisa alguma.
+2
+Pelos prados e campinas verdejantes *
+ele me leva a descansar.
+Para as águas repousantes me encaminha, *
+3a
+e restaura as minhas forças. R.
+b
+Ele me guia no caminho mais seguro, *
+pela honra do seu nome.
+4
+Mesmo que eu passe pelo vale tenebroso, *
+nenhum mal eu temerei.
+Estais comigo com bastão e com cajado, *
+eles me dão a segurança! R.
+5
+Preparais à minha frente uma mesa, *
+bem à vista do inimigo;
+com óleo vós ungis minha cabeça, *
+e o meu cálice transborda. R.
+6
+Felicidade e todo bem hão de seguir-me, *
+por toda a minha vida;
+e, na casa do Senhor, habitarei *
+pelos tempos infinitos. R.`
+    },
+    's10_qua_acl': {
+        title: "Aclamação ao Evangelho — 1Ts 5,18",
+        day: "Quarta-feira (11/11) — São Martinho de Tours",
+        text: `Aclamação ao Evangelho 1Ts 5,18
+R. Aleluia, Aleluia, Aleluia.
+V. Em tudo dai graças, pois esta é a vontade
+de Deus para convosco, em Cristo, o Senhor.`
+    },
+    's10_qua_ev': {
+        title: "Evangelho — Lc 17,11-19 (Lecionário II, pág. 1177)",
+        day: "Quarta-feira (11/11) — São Martinho de Tours",
+        text: `EVANGELHO
+Não houve quem voltasse para dar glória
+a Deus, a não ser este estrangeiro.
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,11-19
+11
+Aconteceu que, caminhando para Jerusalém,
+Jesus passava entre a Samaria e a Galileia.
+12
+Quando estava para entrar num povoado,
+dez leprosos vieram ao seu encontro.
+Pararam à distância,
+13
+e gritaram:
+"Jesus, Mestre, tem compaixão de nós!"
+14
+Ao vê-los, Jesus disse:
+"Ide apresentar-vos aos sacerdotes".
+Enquanto caminhavam,
+aconteceu que ficaram curados.
+15
+Um deles, ao perceber que estava curado,
+voltou glorificando a Deus em alta voz;
+16
+atirou-se aos pés de Jesus,
+com o rosto por terra,
+e lhe agradeceu.
+E este era um samaritano.
+17
+Então Jesus lhe perguntou:
+"Não foram dez os curados?
+E os outro nove, onde estão?
+18
+Não houve quem voltasse para dar glória a Deus,
+a não ser este estrangeiro?"
+19
+E disse-lhe:
+"Levanta-te e vai! Tua fé te salvou".
+Palavra da Salvação.`
+    },
+    's10_qui_l1': {
+        title: "1ª Leitura — Fm 1,7-20 (Lecionário II, pág. 1179)",
+        day: "Quinta-feira (12/11) — São Josafá",
+        text: `PRIMEIRA LEITURA
+Leitura da Carta de São Paulo a Filêmon 1,7-20
+Caríssimo,
+7
+grande alegria e consolo tive
+por causa de tua caridade.
+Os corações dos santos
+foram reanimados por ti, irmão.
+8
+Por este motivo,
+se bem que tenha plena autoridade em Cristo
+para prescrever-te tua obrigação,
+9
+prefiro fazer apenas um apelo à tua caridade.
+Eu, Paulo, velho como estou
+e agora também prisioneiro de Cristo Jesus,
+10
+faço-te um pedido em favor do meu filho
+que fiz nascer para Cristo na prisão, Onésimo.
+11
+Antes, ele era inútil para ti;
+agora, ele é valioso para ti e para mim.
+12
+Eu o estou mandando de volta para ti.
+Ele é como se fosse o meu próprio coração.
+13
+Gostaria de tê-lo comigo,
+a fim de que fosse teu representante
+para cuidar de mim nesta prisão,
+que eu devo ao evangelho.
+14
+Mas, eu não quis fazer nada sem o teu parecer,
+para que a tua bondade não seja forçada,
+mas espontânea.
+15
+Se ele te foi retirado por algum tempo,
+talvez seja para que o tenhas de volta para sempre,
+16
+já não como escravo,
+mas, muito mais do que isso,
+como um irmão querido,
+muitíssimo querido para mim
+quanto mais ele o for para ti,
+tanto como pessoa humana
+quanto como irmão no Senhor.
+17
+Assim, se estás em comunhão de fé comigo,
+recebe-o como se fosse a mim mesmo.
+18
+Se em alguma coisa te prejudicou
+ou se alguma coisa te deve,
+põe em minha conta.
+19
+Eu, Paulo, de meu punho o escrevo;
+eu o pagarei, para não dizer
+que tu mesmo me deves a própria vida.
+20
+Sim, irmão, deixa que eu te explore no Senhor.
+Conforta em Cristo meu coração.
+Palavra do Senhor.`
+    },
+    's10_qui_sal': {
+        title: "Salmo Responsorial — Sl 145(146),7.8-9a.9bc-10 (R. 5a) (Lecionário II, pág. 1180)",
+        day: "Quinta-feira (12/11) — São Josafá",
+        text: `Salmo responsorial
+Sl 145(146),7.8-9a.9bc-10 (R. 5a)
+R. Feliz quem se apoia no Deus de Jacó!
+Ou: Aleluia, Aleluia, Aleluia
+7
+O Senhor faz justiça aos que são oprimidos; †
+ele dá alimento aos famintos, *
+é o Senhor quem liberta os cativos. R.
+8
+O Senhor abre os olhos aos cegos, +
+o Senhor faz erguer-se o caído, *
+o Senhor ama aquele que é justo.
+9a
+É o Senhor quem protege o estrangeiro; R.
+b
+É ele quem ampara a viúva e o órfão, *
+c
+mas confunde os caminhos dos maus.
+10
+O Senhor reinará para sempre! †
+Ó Sião, o teu Deus reinará *
+para sempre e por todos os séculos! R.`
+    },
+    's10_qui_acl': {
+        title: "Aclamação ao Evangelho — Jo 15,5",
+        day: "Quinta-feira (12/11) — São Josafá",
+        text: `Aclamação ao Evangelho
+Jo 15,5
+R. Aleluia, Aleluia, Aleluia.
+V. Eu sou a videira e vós sois os ramos;
+um fruto abundante vós haveis de dar.`
+    },
+    's10_qui_ev': {
+        title: "Evangelho — Lc 17,20-25 (Lecionário II, pág. 1181)",
+        day: "Quinta-feira (12/11) — São Josafá",
+        text: `EVANGELHO
+O Reino de Deus está entre vós.
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,20-25
+Naquele tempo,
+20
+os fariseus perguntaram a Jesus
+sobre o momento em que chegaria o Reino de Deus.
+Jesus respondeu:
+"O Reino de Deus não vem ostensivamente.
+21
+Nem se poderá dizer:
+'Está aqui' ou 'Está ali',
+porque o Reino de Deus está entre vós".
+22
+E Jesus disse aos discípulos:
+"Dias virão em que desejareis ver
+um só dia do Filho do Homem e não podereis ver.
+23
+As pessoas vos dirão:
+'Ele está ali' ou 'Ele está aqui'.
+Não deveis ir, nem correr atrás.
+24
+Pois, como o relâmpago brilha
+de um lado até ao outro do céu,
+assim também será o Filho do Homem, no seu dia.
+25
+Antes, porém, ele deverá sofrer muito
+e ser rejeitado por esta geração".
+Palavra da Salvação.`
+    },
+    's10_sex_l1': {
+        title: "1ª Leitura — 2Jo 1,4-9 (Lecionário II, pág. 1183)",
+        day: "Sexta-feira (13/11)",
+        text: `PRIMEIRA LEITURA
+Leitura da Segunda Carta de São João 1,4-9
+4
+Muito me alegrei, Senhora,
+por ter encontrado alguns dos teus filhos
+que caminham conforme a verdade,
+segundo o mandamento que recebemos do Pai.
+5
+E agora, Senhora, eu te peço
+- não que te esteja escrevendo
+a respeito de um novo mandamento,
+pois trata-se daquele
+que temos desde o princípio - :
+amemo-nos uns aos outros.
+6
+E amar consiste no seguinte:
+em viver conforme os seus mandamentos.
+Este é o mandamento que ouvistes desde o início
+para guiar o vosso proceder.
+7
+Acontece que se espalharam pelo
+mundo muitos sedutores,
+que não confessam a Jesus Cristo encarnado.
+Está aí o Sedutor, o Anticristo.
+8
+Tomai cuidado,
+se não quereis perder o fruto do vosso trabalho,
+mas sim, receber a plena recompensa.
+9
+Todo o que não permanece na doutrina de Cristo,
+mas passa além,
+não possui a Deus.
+Aquele que permanece na doutrina
+é o que possui o Pai e o Filho.
+Palavra do Senhor.`
+    },
+    's10_sex_sal': {
+        title: "Salmo Responsorial — Sl 118(119),1.2.10.11.17.18 (R. 1b) (Lecionário II, pág. 1184)",
+        day: "Sexta-feira (13/11)",
+        text: `Salmo responsorial
+Sl 118(119),1.2.10.11.17.18 (R. 1b)
+R. Feliz é quem na lei do Senhor Deus vai progredindo!
+1
+Feliz o homem sem pecado em seu caminho, *
+que na lei do Senhor Deus vai progredindo! R.
+2
+Feliz o homem que observa seus preceitos, *
+e de todo o coração procura a Deus! R.
+10
+De todo o coração eu vos procuro, *
+não deixeis que eu abandone a vossa lei! R.
+11
+Conservei no coração vossas palavras, *
+a fim de que eu não peque contra vós. R.
+17
+Sede bom com vosso servo, e viverei, *
+e guardarei vossa palavra, ó Senhor. R.
+18
+Abri meus olhos, e então contemplarei *
+as maravilhas que encerra a vossa lei! R.`
+    },
+    's10_sex_acl': {
+        title: "Aclamação ao Evangelho — Lc 21,28",
+        day: "Sexta-feira (13/11)",
+        text: `Aclamação ao Evangelho
+Lc 21,28
+R. Aleluia, Aleluia, Aleluia.
+V. Levantai vossa cabeça e olhai,
+pois a vossa redenção se aproxima!`
+    },
+    's10_sex_ev': {
+        title: "Evangelho — Lc 17,26-37 (Lecionário II, pág. 1184)",
+        day: "Sexta-feira (13/11)",
+        text: `EVANGELHO
+O mesmo acontecerá no dia em que o Filho do Homem for revelado.
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,26-37
+Naquele tempo,
+disse Jesus aos seus discípulos:
+26
+"Como aconteceu nos dias de Noé,
+assim também acontecerá
+nos dias do Filho do Homem.
+27
+Eles comiam, bebiam,
+casavam-se e se davam em casamento,
+até ao dia em que Noé entrou na arca.
+Então chegou o dilúvio e fez morrer todos eles.
+28
+Acontecerá como nos dias de Ló:
+comiam e bebiam, compravam e vendiam,
+plantavam e construíam.
+29
+Mas no dia em que Ló saiu de Sodoma,
+Deus fez chover fogo e enxofre do céu
+e fez morrer todos.
+30
+O mesmo acontecerá
+no dia em que o Filho do Homem for revelado.
+31
+Nesse dia, quem estiver no terraço,
+não desça para apanhar os bens
+que estão em sua casa.
+E quem estiver nos campos não volte para trás.
+32
+Lembrai-vos da mulher de Ló.
+33
+Quem procura ganhar a sua vida, vai perdê-la;
+e quem a perde, vai conservá-la.
+34
+Eu vos digo:
+nessa noite, dois estarão numa cama;
+um será tomado e o outro será deixado.
+35
+Duas mulheres estarão moendo juntas;
+uma será tomada e a outra será deixada.
+36
+Dois homens estarão no campo;
+um será levado e o outro será deixado".
+37
+Os discípulos perguntaram:
+"Senhor, onde acontecerá isso?"
+Jesus respondeu:
+"Onde estiver o cadáver,
+aí se reunirão os abutres".
+Palavra da Salvação.`
+    },
+    's10_dom_l1': {
+        title: "1ª Leitura — Pr 31,10-13.19-20.30-31 (Lecionário I, pág. 355)",
+        day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro dos Provérbios 31,10-13.19-20.30-31
+10
+Uma mulher forte, quem a encontrará?
+Ela vale muito mais do que as joias.
+11
+Seu marido confia nela plenamente,
+e não terá falta de recursos.
+12
+Ela lhe dá só alegria e nenhum desgosto,
+todos os dias de sua vida.
+13
+Procura lã e linho,
+e com habilidade trabalham as suas mãos.
+19
+Estende a mão para a roca, e seus dedos seguram o fuso.
+20
+Abre suas mãos ao necessitado
+e estende suas mãos ao pobre.
+30
+O encanto é enganador e a beleza é passageira;
+a mulher que teme ao Senhor, essa sim, merece louvor.
+31
+Proclamem o êxito de suas mãos,
+e na praça louvem-na as suas obras!
+Palavra do Senhor.`
+    },
+    's10_dom_sal': {
+        title: "Salmo Responsorial — Sl 127(128),1-2.3.4-5ab (R. cf. 1a) (Lecionário I, pág. 355)",
+        day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        text: `Salmo responsorial Sl 127(128),1-2.3.4-5 (R. 1a)
+R. Felizes os que temem o Senhor e trilham seus caminhos!
+1
+Feliz és tu, se temes o Senhor *
+e trilhas seus caminhos!
+2
+Do trabalho de tuas mãos hás de viver, *
+serás feliz, tudo irá bem! R.
+3
+A tua esposa é uma videira bem fecunda *
+no coração da tua casa;
+os teus filhos são rebentos de oliveira *
+ao redor de tua mesa. R.
+4
+Será assim abençoado todo homem *
+que teme o Senhor.
+5
+O Senhor te abençoe de Sião, *
+cada dia de tua vida. R.`
+    },
+    's10_dom_l2': {
+        title: "2ª Leitura — 1Ts 5,1-6 (Lecionário I, pág. 356)",
+        day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        text: `SEGUNDA LEITURA
+Leitura da Primeira Carta de São Paulo aos Tessalonicenses 5,1-6
+1
+Quanto ao tempo e à hora, meus irmãos,
+não há por que vos escrever.
+2
+Vós mesmos sabeis perfeitamente
+que o dia do Senhor virá como ladrão, de noite.
+3
+Quando as pessoas disserem: "Paz e segurança!",
+então de repente sobrevirá a destruição,
+como as dores de parto sobre a mulher grávida.
+E não poderão escapar.
+4
+Mas vós, meus irmãos, não estais nas trevas,
+de modo que esse dia vos surpreenda como um ladrão.
+5
+Todos vós sois filhos da luz e filhos do dia.
+Não somos da noite, nem das trevas.
+6
+Portanto, não durmamos, como os outros,
+mas sejamos vigilantes e sóbrios.
+Palavra do Senhor.`
+    },
+    's10_dom_acl': {
+        title: "Aclamação ao Evangelho — Jo 15,4a.5b",
+        day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        text: `Aclamação ao Evangelho Jo 15,4a,5b
+R. Aleluia, Aleluia, Aleluia.
+V. Ficai em mim, e eu em vós hei de ficar, diz o Senhor;
+quem em mim permanece, esse dá muito fruto.`
+    },
+    's10_dom_ev': {
+        title: "Evangelho — Mt 25,14-30 (Lecionário I, pág. 357)",
+        day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        text: `EVANGELHO (mais longo)
+Como foste fiel na administração de tão
+pouco, vem participar de minha alegria.
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,14-30
+Naquele tempo,
+Jesus contou esta parábola a seus discípulos:
+14
+"Um homem ia viajar para o estrangeiro.
+Chamou seus empregados e lhes entregou seus bens.
+15
+A um deu cinco talentos,
+a outro deu dois e ao terceiro, um;
+a cada qual de acordo com a sua capacidade.
+Em seguida viajou.
+16
+O empregado que havia recebido cinco talentos
+saiu logo,
+trabalhou com eles, e lucrou outros cinco.
+17
+Do mesmo modo, o que havia recebido dois
+lucrou outros dois.
+18
+Mas aquele que havia recebido um só,
+saiu, cavou um buraco na terra,
+e escondeu o dinheiro do seu patrão.
+19
+Depois de muito tempo, o patrão voltou
+e foi acertar contas com os empregados.
+20
+O empregado que havia recebido cinco talentos
+entregou-lhe mais cinco, dizendo:
+'Senhor, tu me entregaste cinco talentos.
+Aqui estão mais cinco que lucrei'.
+21
+O patrão lhe disse: 'Muito bem, servo bom e fiel!
+como foste fiel na administração de tão pouco,
+eu te confiarei muito mais.
+Vem participar da minha alegria!'
+22
+Chegou também o que havia recebido dois talentos,
+e disse:
+'Senhor, tu me entregaste dois talentos.
+Aqui estão mais dois que lucrei'.
+23
+O patrão lhe disse: 'Muito bem, servo bom e fiel!
+Como foste fiel na administração de tão pouco,
+eu te confiarei muito mais.
+Vem participar da minha alegria!'
+24
+Por fim, chegou aquele que havia recebido um talento,
+e disse: 'Senhor, sei que és um homem severo,
+pois colhes onde não plantaste
+e ceifas onde não semeaste.
+25
+Por isso, fiquei com medo
+e escondi o teu talento no chão.
+Aqui tens o que te pertence'.
+26
+O patrão lhe respondeu: 'Servo mau e preguiçoso!
+Tu sabias que eu colho onde não plantei
+e que ceifo onde não semeei?
+27
+Então, devias ter depositado meu dinheiro no banco,
+para que, ao voltar,
+eu recebesse com juros o que me pertence'.
+28
+Em seguida, o patrão ordenou:
+'Tirai dele o talento e dai-o àquele que tem dez!
+29
+Porque a todo aquele que tem
+será dado mais, e terá em abundância,
+mas daquele que não tem, até o que tem lhe será tirado.
+30
+Quanto a este servo inútil,
+jogai-o lá fora, na escuridão.
+Aí haverá choro e ranger de dentes!'".
 Palavra da Salvação.`
     }
 };

@@ -24,19 +24,20 @@ Não abra o projeto usando apenas `file://`. O Service Worker exige HTTPS ou `lo
 
 | Arquivo | Responsabilidade |
 |---|---|
-| `index.html` | Estrutura HTML, cabeçalho, navegação, botões, modais e área de impressão. |
+| `index.html` | Estrutura fixa: cabeçalho, barra de ações, janelas genéricas (programação, seleção e visualização de leituras, mensagens) e área de impressão. Abas, roteiros, preces e blocos de leituras **não** ficam mais no HTML. |
 | `styles.css` | Layout, cores, responsividade, foco, acessibilidade e regras `@media print`. |
-| `app.js` | Renderização dinâmica, semanas, modais, leituras, antífonas, impressão e registro do Service Worker. |
-| `programacao.js` | Array `programacaoData.weeks` com a programação semanal. |
-| `leituras.js` | Objeto `readingsData` com as leituras. |
-| `antifonas.js` | Dados de antífonas, aclamações e citações da PASCOM. |
+| `app.js` | Renderização das abas, semanas, janelas de roteiro/preces, seleção de leituras, impressão e atualização do PWA. |
+| `programacao.js` | Dados de cada semana (array `semanas`) e o gerador único `montarSemana()`, que produz `programacaoData.weeks`. |
+| `roteiros.js` | `roteirosData`: roteiros, preces e reflexões estruturados em linhas `[papel, texto]`. |
+| `leituras.js` | `readingsData`: textos integrais das leituras. |
+| `antifonas.js` | `antifonasData`: antífonas, aclamações e citações da PASCOM. |
 | `manifest.json` | Metadados e configuração instalável do PWA. |
 | `sw.js` | Cache, fallback offline e atualização dos assets. |
-| `validate-data.js` | Validação de chaves, referências e estrutura esperada. |
+| `validate-data.js` | Validação genérica de consistência entre todos os dados (não depende de datas fixas). |
 | `build-version.js` | Geração determinística dos metadados de publicação usando somente módulos nativos do Node.js. |
 | `version.json` | Identificador da publicação e hashes SHA-256 dos arquivos públicos. |
+| `tests/site.spec.js` | Testes de navegador genéricos, que percorrem todas as semanas publicadas. |
 | `.github/workflows/pages.yml` | Validação, geração dos metadados e implantação no Pages. |
-| `package.json` | Scripts de desenvolvimento e validação. |
 
 ---
 
@@ -47,100 +48,55 @@ git clone https://github.com/rograhl75-spec/roteiro-liturgico.git
 cd roteiro-liturgico
 npm run validate:data
 npm run version
+python3 -m http.server 4173
 ```
 
-Sirva a pasta usando um servidor HTTP local já disponível, como a extensão Live Server do Visual Studio Code, e abra o endereço informado. Os scripts de validação e publicação não precisam de dependências npm.
+Abra `http://localhost:4173`. Os scripts de validação e publicação não precisam de dependências npm.
 
 ---
 
-## 4. Atualizar a programação
+## 4. Publicar uma nova semana (passo a passo)
 
-Edite `programacao.js` e mantenha o padrão do array `programacaoData.weeks`.
+1. **Programação (`programacao.js`)** — acrescente um objeto ao array `semanas`, copiando a semana anterior:
+   - `id` (`YYYY-MM-DD`, segunda-feira da semana) e `legacyWeek` (número sequencial único, ex.: 10);
+   - `shortTitle`, `fullTitle`, `periodo`, `roteiroLabel`;
+   - `dias` (segunda a sexta) e `fimDeSemana` (sábado vespertino e domingo, com `dias: [{ data, dia, escala }]`);
+   - em cada dia: `cor` (`verde`, `branco`, `vermelho`, `roxo`), `grau`, `celebracao`, `escala`, `leituras` e `missal`;
+   - `leituras`: `[momento, referência, chave, 'Lecionário / página']` (a aclamação não tem página);
+   - `missal`: apenas as partes existentes (`gloria`, `coleta`, `creio`, `oferendas`, `prefacio`, `eucaristica`, `comunhao`, `bencao`); ritos iniciais (430) e rito da comunhão (569) são padrão;
+   - `antifonas` (chave em `antifonas.js`), `nota` e `botoes` são opcionais;
+   - `documentos`: nomes exatos dos arquivos-fonte publicados.
+2. **Leituras (`leituras.js`)** — chaves `s<legacyWeek + 1>_<dia>_<parte>` (`seg`, `ter`, `qua`, `qui`, `sex`, `dom`; `l1`, `sal`, `l2`, `acl`, `ev`).
+3. **Antífonas (`antifonas.js`)** — chave `antifonas_<legacyWeek + 1>`.
+4. **Roteiros e preces (`roteiros.js`)** — chaves `roteiro_<legacyWeek>`, `preces_<legacyWeek>` e, para celebrações adicionais, `roteiro_<legacyWeek>_<extra>` com o campo `botao`. Declare os extras em `roteiroExtras` / `precesExtras` da semana.
+5. **Remover a semana antiga** — apague o objeto em `semanas` e as entradas correspondentes em `leituras.js`, `antifonas.js` e `roteiros.js`; apague os documentos-fonte e retire-os das listas de `build-version.js` e `sw.js`. A validação acusa qualquer item órfão.
+6. **Documentos** — copie os arquivos-fonte para a raiz e acrescente-os, com o mesmo nome, às listas de `build-version.js` e `sw.js` (as duas listas devem ser idênticas).
+7. Execute `npm run validate:data`, teste no navegador e publique.
 
-Uma semana normalmente utiliza:
+A semana exibida ao abrir o aplicativo é escolhida automaticamente pela data (fuso de Brasília): a semana que contém o dia de hoje, senão a próxima, senão a mais recente.
 
-```javascript
-{
-  id: '2026-09-28',
-  shortTitle: '28 Set. a 04 Out. (27º Dom)',
-  fullTitle: 'Semana de 28 de Setembro a 04 de Outubro de 2026 (27º Domingo)',
-  legacyWeek: 1,
-  programacaoHtml: '...'
-}
-```
+### Papéis reconhecidos nos roteiros
 
-### Regras
-
-- `id` deve ser estável e seguir `YYYY-MM-DD`;
-- `shortTitle` é usado nas abas;
-- `fullTitle` é usado no cabeçalho;
-- `legacyWeek` relaciona a semana aos modais legados;
-- `programacaoHtml` deve conter HTML válido e confiável;
-- não renomeie IDs ou identificadores sem procurar seus usos no projeto.
-
----
-
-## 5. Atualizar leituras
-
-Edite `leituras.js` e mantenha chaves únicas em `readingsData`.
-
-Exemplo:
-
-```javascript
-const readingsData = {
-  leitura_exemplo: {
-    day: 'Domingo',
-    title: 'Primeira Leitura',
-    text: 'Texto da leitura...'
-  }
-};
-```
-
-As chaves referenciadas em `programacaoHtml` por `data-reading-key="..."` devem existir exatamente em `readingsData`.
+O texto do papel define a cor da linha: `Animador`, `Padre`, `Diácono`, `Música`, `Todos`, `Leitor`/`1ª Leitura`/`2ª Leitura`; qualquer outro (ex.: `Orientação`, `Liturgia`, `Acólito`, `Coroinhas`) aparece como rubrica.
 
 ---
 
-## 6. Atualizar antífonas
+## 5. IDs e integração com `app.js`
 
-Edite `antifonas.js` mantendo a estrutura consumida por `getAntifonasData()` e `createAntifonaBlock()` em `app.js`.
+`app.js` gera, a partir dos dados, os seguintes IDs (não os escreva no HTML):
 
-Verifique:
+- abas `btn-tab-<id>` e painéis `week-panel-<id>`;
+- `modal_roteiro_<sufixo>` / `content_roteiro_<sufixo>`, `modal_preces_<sufixo>` / `content_preces_<sufixo>`, `modal_reflexoes_<legacyWeek>`;
+- formulários de preces `preces_<sufixo>_<n>` (cada um impresso em página própria);
+- blocos de seleção `leituras_semana_<legacyWeek>`.
 
-- título;
-- itens e rótulos;
-- textos;
-- referências;
-- opções alternativas;
-- citações da PASCOM.
+Elementos fixos do `index.html`: `week-tabs`, `weeks-root`, `document-modals`, `leituras-blocos`, `print-mount`, `modal_programacao`, `modal_seletor_leituras`, `modal_leituras_view`, `generalModal`, `btn-roteiro-principal`, `btn-preces-principal`, `toolbar-roteiro-extras`, `toolbar-preces-extras`.
 
----
-
-## 7. IDs e integração com `app.js`
-
-Antes de remover ou renomear um ID, pesquise seu uso em todos os arquivos.
-
-IDs importantes incluem:
-
-- `weeks-root`;
-- `print-mount`;
-- `content_programacao`;
-- `content_leituras_view`;
-- `modal_programacao`;
-- `modal_seletor_leituras`;
-- `modal_leituras_view`;
-- `modal_roteiro_*`;
-- `modal_preces_*`;
-- `modal_reflexoes_*`.
-
-Os botões utilizam atributos `data-action`, tratados por `handleActionClick()` em `app.js`.
-
-Quando uma semana tem mais de um roteiro, use `roteiroLabel` (texto do botão principal) e `roteiroExtras` (ex.: `['aparecida']`) na semana em `programacao.js`. Cada chave extra precisa de um botão na barra com `data-roteiro-key` e de um modal `modal_roteiro_<semana>_<chave>` com conteúdo `content_roteiro_<semana>_<chave>`.
-
-Para preces adicionais, use `precesExtras` na semana, botões `open-active-preces` com `data-preces-key` e modais `modal_preces_<semana>_<chave>` com conteúdo `content_preces_<semana>_<chave>`. O botão `print-active-preces` deve repetir a mesma `data-preces-key`.
+Os botões utilizam atributos `data-action`, tratados por `handleActionClick()` em `app.js`. As referências bíblicas são `<button>` (acessíveis por teclado).
 
 ---
 
-## 8. Impressão e acessibilidade
+## 6. Impressão e acessibilidade
 
 A impressão é montada em `#print-mount` e acionada por `window.print()`.
 
@@ -177,7 +133,7 @@ Preserve também:
 
 ---
 
-## 9. Validação
+## 7. Validação
 
 Execute antes de publicar:
 
@@ -185,12 +141,16 @@ Execute antes de publicar:
 npm run validate:data
 ```
 
-A validação verifica principalmente:
+A validação é genérica e verifica:
 
-- duplicidade de chaves em `leituras.js`;
-- referências ausentes;
-- abas esperadas no `index.html`;
-- consistência básica dos dados.
+- chaves de leitura duplicadas ou incompletas;
+- referências de leituras e antífonas inexistentes, e itens órfãos (sem uso em nenhuma semana);
+- roteiros e preces principais/adicionais de cada semana;
+- datas dentro do período da semana e navegação por dia;
+- IDs duplicados e elementos obrigatórios do `index.html`;
+- listas de assets idênticas em `build-version.js` e `sw.js`, arquivos existentes e documentos vinculados.
+
+Testes de navegador (opcional): `npm ci`, `npx playwright install chromium` e `npm run test:browser`.
 
 Também teste manualmente:
 
@@ -204,7 +164,7 @@ Também teste manualmente:
 
 ---
 
-## 10. Service Worker e atualizações
+## 8. Service Worker e atualizações
 
 `sw.js` mantém snapshots completos e validados da publicação. Não há número de cache a incrementar manualmente.
 
@@ -212,7 +172,7 @@ Também teste manualmente:
 
 Após as últimas edições dos arquivos públicos, execute `npm run version`. O gerador exige os arquivos públicos e documentos declarados em `build-version.js`.
 
-Os PDFs-fonte da semana de 26/10 a 01/11/2026, o DOCX de 28/10 e os DOCX/XLSX da semana de 02 a 08/11/2026 também integram o snapshot offline. Ao incluir documentos nesse snapshot, mantenha as listas de assets de `build-version.js` e `sw.js` alinhadas e preserve os nomes originais. O fluxo do Pages deve copiar esses formatos para `_site`. Fontes obsoletas até 25/10/2026 foram removidas; o Missal vigente de novembro é `Missal - 2 a 8 novembro_2026.xlsx`.
+Os documentos-fonte (DOCX, XLSX e PDF) das semanas publicadas também integram o snapshot offline. Ao incluir documentos, mantenha as listas de assets de `build-version.js` e `sw.js` idênticas e preserve os nomes originais. O fluxo do Pages copia esses formatos para `_site`.
 
 O `version.json` contém `{ "version": "...", "files": { "./index.html": "...", ... } }`. Cada valor em `files` é o SHA-256 dos bytes publicados do arquivo. Para calcular `version`, o gerador remove as tags `<meta name="app-version">` do HTML, calcula os hashes na ordem fixa declarada em `build-version.js` e aplica SHA-256 ao `JSON.stringify` desse mapa. Depois insere a meta com o identificador e recalcula o hash real de `index.html` em `files`. Isso evita uma referência circular e torna execuções repetidas idempotentes.
 
@@ -242,7 +202,7 @@ Isso reduz o risco de o navegador reutilizar uma cópia antiga do próprio Servi
 
 ---
 
-## 11. Publicação no GitHub Pages
+## 9. Publicação no GitHub Pages
 
 Configuração obrigatória uma única vez:
 
@@ -266,19 +226,21 @@ Arquivos necessários:
 - `programacao.js`;
 - `leituras.js`;
 - `antifonas.js`;
+- `roteiros.js`;
 - `manifest.json`;
 - `sw.js`;
 - `version.json`;
 - imagens e ícones referenciados.
-- PDFs referenciados pelo HTML e pela programação (copiados para o artefato pelo workflow).
+- documentos-fonte (PDF, DOCX e XLSX) referenciados pelas semanas (copiados para o artefato pelo workflow).
 
 ---
 
-## 12. Checklist de publicação
+## 10. Checklist de publicação
 
 - [ ] Dados da nova semana atualizados.
 - [ ] Leituras cadastradas e com chaves únicas.
-- [ ] Referências `data-reading-key` conferidas.
+- [ ] Roteiros e preces cadastrados em `roteiros.js`.
+- [ ] Semana antiga removida (dados e documentos).
 - [ ] Antífonas e citações revisadas.
 - [ ] `npm run validate:data` executado.
 - [ ] Layout verificado em computador.
@@ -299,7 +261,7 @@ Os testes em **aparelhos Android reais e iPhone/Safari reais**, tanto no navegad
 
 ---
 
-## 13. Solução de problemas
+## 11. Solução de problemas
 
 ### Página sem CSS
 
@@ -315,7 +277,7 @@ Feche o aplicativo instalado, abra a versão online no navegador, atualize e abr
 
 ### Leitura não encontrada
 
-Confira a correspondência exata entre `data-reading-key` e `readingsData`. Execute a validação.
+Confira a correspondência exata entre a chave em `leituras` (programacao.js) e `readingsData`. Execute a validação.
 
 ### Impressão incorreta
 
@@ -323,7 +285,7 @@ Revise `#print-mount`, os clones usados pelas funções `print*()` e as regras d
 
 ---
 
-## 14. Convenções de commit
+## 12. Convenções de commit
 
 Exemplos:
 
@@ -348,7 +310,7 @@ Processo recomendado:
 
 ---
 
-## 15. Informações do repositório
+## 13. Informações do repositório
 
 - **Repositório:** `rograhl75-spec/roteiro-liturgico`
 - **Branch principal:** `main`

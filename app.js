@@ -1,5 +1,4 @@
-const WEEK_ID_FALLBACK = '2026-10-26';
-let currentWeekId = WEEK_ID_FALLBACK;
+let currentWeekId = null;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 let printing = false;
@@ -18,8 +17,219 @@ function getAntifonasData() {
   return (window.antifonasData && typeof window.antifonasData === 'object') ? window.antifonasData : {};
 }
 
+function getRoteirosData() {
+  return (window.roteirosData && typeof window.roteirosData === 'object') ? window.roteirosData : {};
+}
+
 function getCurrentWeek() {
   return getWeeks().find((week) => week.id === currentWeekId) || getWeeks()[0] || null;
+}
+
+/* Data de hoje no fuso de Brasília, no formato YYYY-MM-DD. */
+function todayIso() {
+  try {
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
+  } catch (error) {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
+
+/* Semana que contém hoje; senão a próxima; senão a mais recente. */
+function getDefaultWeek(weeks, today = todayIso()) {
+  const ordered = [...weeks].sort((a, b) => (a.inicio || a.id).localeCompare(b.inicio || b.id));
+  return ordered.find((week) => (week.inicio || week.id) <= today && today <= (week.fim || week.id))
+    || ordered.find((week) => (week.inicio || week.id) > today)
+    || ordered[ordered.length - 1]
+    || null;
+}
+
+const ROLE_CLASSES = [
+  [/^animador/i, 'animador'],
+  [/^padre\s*\/\s*animador/i, 'todos'],
+  [/^padre/i, 'padre'],
+  [/^di[aá]cono/i, 'diacono'],
+  [/^m[uú]sica/i, 'musica'],
+  [/^todos/i, 'todos'],
+  [/^(leitor|\d[ªa]\s*leitura)/i, 'leitor']
+];
+
+function roleClass(role) {
+  const match = ROLE_CLASSES.find(([pattern]) => pattern.test(role));
+  return match ? match[1] : 'rubrica';
+}
+
+function appendMultiline(element, text) {
+  String(text || '').split('\n').forEach((line, index) => {
+    if (index > 0) element.appendChild(document.createElement('br'));
+    element.appendChild(document.createTextNode(line));
+  });
+}
+
+function createScriptRow(role, text) {
+  const kind = roleClass(role);
+  const row = document.createElement('div');
+  row.className = `script-row row-${kind}`;
+  const tag = document.createElement('span');
+  tag.className = `script-tag script-role tag-${kind}`;
+  tag.textContent = role;
+  const body = document.createElement('span');
+  body.className = 'script-text';
+  appendMultiline(body, text);
+  row.append(tag, body);
+  return row;
+}
+
+function createSourceRow(fileName, label) {
+  const row = document.createElement('div');
+  row.className = 'script-row row-rubrica';
+  const tag = document.createElement('span');
+  tag.className = 'script-tag script-role tag-rubrica';
+  tag.textContent = 'Fonte';
+  const body = document.createElement('span');
+  body.className = 'script-text';
+  const link = document.createElement('a');
+  link.href = `./${encodeURIComponent(fileName)}`;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = label;
+  body.appendChild(link);
+  row.append(tag, body);
+  return row;
+}
+
+function createModalShell(id, title, contentId, printAction, dataset = {}) {
+  const modal = document.createElement('div');
+  modal.id = id;
+  modal.className = 'modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-hidden', 'true');
+  modal.hidden = true;
+
+  const content = document.createElement('div');
+  content.className = 'modal-content';
+  const header = document.createElement('div');
+  header.className = 'modal-header-bar';
+  const heading = document.createElement('h3');
+  heading.className = 'modal-title';
+  heading.textContent = title;
+  const actions = document.createElement('div');
+  actions.className = 'modal-actions';
+
+  const button = (label, attributes, className = 'action-btn') => {
+    const element = document.createElement('button');
+    element.type = 'button';
+    element.className = className;
+    element.textContent = label;
+    Object.entries(attributes).forEach(([name, value]) => element.setAttribute(name, value));
+    actions.appendChild(element);
+  };
+  button('A+', { 'data-action': 'text-size', 'data-step': '1', 'data-target': contentId, 'aria-label': 'Aumentar texto' }, 'action-btn secondary');
+  button('A-', { 'data-action': 'text-size', 'data-step': '-1', 'data-target': contentId, 'aria-label': 'Diminuir texto' }, 'action-btn secondary');
+  if (printAction) {
+    button('🖨️ Imprimir', { 'data-action': printAction, ...dataset });
+  }
+  button('×', { 'data-action': 'close-modal', 'data-modal-id': id }, 'modal-close-btn');
+
+  header.append(heading, actions);
+  const body = document.createElement('div');
+  body.id = contentId;
+  body.className = 'script-block';
+  content.append(header, body);
+  modal.appendChild(content);
+  return { modal, body };
+}
+
+/* Monta as janelas de roteiro, preces e reflexões a partir de roteiros.js. */
+function renderDocumentModals() {
+  const root = document.getElementById('document-modals');
+  if (!root) return;
+  root.textContent = '';
+
+  Object.entries(getRoteirosData()).forEach(([key, doc]) => {
+    const [, type, suffix] = key.match(/^(roteiro|preces|reflexoes)_(.+)$/) || [];
+    if (!type) return;
+    const extra = suffix.includes('_') ? suffix.slice(suffix.indexOf('_') + 1) : null;
+    const dataset = extra ? { [`data-${type}-key`]: extra } : {};
+    const printAction = { roteiro: 'print-active-roteiro', preces: 'print-active-preces', reflexoes: 'print-active-reflexoes' }[type];
+    const { modal, body } = createModalShell(`modal_${type}_${suffix}`, doc.titulo, `content_${type}_${suffix}`, printAction, dataset);
+    if (type === 'reflexoes') body.className = 'modal-body';
+
+    if (doc.fonte) {
+      body.appendChild(createSourceRow(doc.fonte, type === 'preces' ? 'Abrir ou baixar as preces originais' : 'Abrir ou baixar o documento original'));
+    }
+
+    (doc.secoes || []).forEach((secao) => {
+      const heading = document.createElement('h4');
+      heading.className = 'roteiro-section-title';
+      heading.textContent = secao.titulo;
+      body.appendChild(heading);
+      secao.linhas.forEach(([role, text]) => body.appendChild(createScriptRow(role, text)));
+    });
+
+    (doc.formularios || []).forEach((formulario, index) => {
+      const section = document.createElement('section');
+      section.id = `preces_${suffix}_${index + 1}`;
+      section.className = 'preces-form';
+      section.dataset.precesForm = String(index + 1);
+      const heading = document.createElement('h4');
+      heading.className = 'preces-form-title';
+      heading.textContent = formulario.titulo;
+      section.appendChild(heading);
+      formulario.linhas.forEach(([role, text]) => section.appendChild(createScriptRow(role, text)));
+      body.appendChild(section);
+    });
+
+    (doc.paragrafos || []).forEach((paragraph) => {
+      const p = document.createElement('p');
+      appendMultiline(p, paragraph);
+      body.appendChild(p);
+    });
+
+    root.appendChild(modal);
+  });
+}
+
+/* Monta os blocos de seleção de leituras (leituras_semana_<legacyWeek>) a partir de programacao.js. */
+function renderLeiturasBlocks() {
+  const root = document.getElementById('leituras-blocos');
+  if (!root) return;
+  root.textContent = '';
+
+  getWeeks().forEach((week) => {
+    const block = document.createElement('div');
+    block.id = `leituras_semana_${week.legacyWeek}`;
+    block.className = 'leituras-bloco';
+    block.hidden = true;
+
+    const heading = document.createElement('h4');
+    heading.className = 'leituras-bloco-title';
+    heading.textContent = `Selecione para imprimir: ${week.shortTitle}`;
+    const grid = document.createElement('div');
+    grid.className = 'leitura-grid';
+
+    (week.selecaoLeituras || []).forEach((group) => {
+      const column = document.createElement('fieldset');
+      column.className = 'leitura-col';
+      const legend = document.createElement('legend');
+      legend.textContent = group.titulo;
+      column.appendChild(legend);
+      group.itens.forEach(([label, value]) => {
+        const item = document.createElement('label');
+        if (value.startsWith('antifonas_')) item.className = 'leitura-antifona';
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.className = 'reading-checkbox';
+        input.value = value;
+        item.append(input, document.createTextNode(` ${label}`));
+        column.appendChild(item);
+      });
+      grid.appendChild(column);
+    });
+
+    block.append(heading, grid);
+    root.appendChild(block);
+  });
 }
 
 function sanitizeTrustedHtml(htmlString) {
@@ -73,17 +283,30 @@ function renderWeeks() {
     return;
   }
 
+  const tabsRoot = document.getElementById('week-tabs');
   weeksRoot.textContent = '';
+  if (tabsRoot) tabsRoot.textContent = '';
+
   weeks.forEach((week) => {
     const section = createTrustedSection(week);
     section.hidden = true;
     weeksRoot.appendChild(section);
 
-    const tab = document.getElementById(`btn-tab-${week.id}`);
-    if (tab) {
+    if (tabsRoot) {
+      const tab = document.createElement('button');
+      tab.type = 'button';
+      tab.className = 'week-tab-btn';
+      tab.id = `btn-tab-${week.id}`;
+      tab.setAttribute('role', 'tab');
+      tab.setAttribute('aria-selected', 'false');
+      tab.setAttribute('aria-controls', `week-panel-${week.id}`);
+      tab.tabIndex = -1;
+      tab.dataset.action = 'show-week';
+      tab.dataset.weekId = week.id;
       tab.dataset.title = week.shortTitle;
       tab.dataset.full = week.fullTitle;
       tab.textContent = `👉 ${week.shortTitle}`;
+      tabsRoot.appendChild(tab);
     }
   });
 }
@@ -105,6 +328,7 @@ function showWeek(weekId, options = { focusTab: false }) {
     if (tab) {
       tab.classList.toggle('active', active);
       tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      tab.tabIndex = active ? 0 : -1;
       tab.textContent = `${active ? '✅ VISUALIZANDO:' : '👉'} ${week.shortTitle}`;
       if (active && options.focusTab) {
         tab.focus();
@@ -116,11 +340,7 @@ function showWeek(weekId, options = { focusTab: false }) {
     }
   });
 
-  const subtitle = document.getElementById('header-subtitle');
   const activeWeekText = document.getElementById('active-week-text');
-  if (subtitle) {
-    subtitle.textContent = 'Roteiro da Adoração Solene';
-  }
   if (activeWeekText) {
     activeWeekText.textContent = `EXIBINDO NA TELA: ${selectedWeek.fullTitle}`;
   }
@@ -147,19 +367,38 @@ function getPrecesSuffix(week, precesKey) {
 }
 
 function updateRoteiroButtons(week) {
+  const documents = getRoteirosData();
   const mainButton = document.getElementById('btn-roteiro-principal');
   if (mainButton) {
     mainButton.textContent = week.roteiroLabel || '📖 Roteiro';
+    mainButton.hidden = !documents[`roteiro_${week.legacyWeek}`];
+  }
+  const precesButton = document.getElementById('btn-preces-principal');
+  if (precesButton) {
+    precesButton.hidden = !documents[`preces_${week.legacyWeek}`];
+  }
+  const reflexoesButton = document.getElementById('btn-reflexoes');
+  if (reflexoesButton) {
+    reflexoesButton.hidden = !documents[`reflexoes_${week.legacyWeek}`];
   }
 
-  const extras = getRoteiroExtras(week);
-  document.querySelectorAll('.toolbar [data-action="open-active-roteiro"][data-roteiro-key]').forEach((button) => {
-    button.hidden = !extras.includes(button.dataset.roteiroKey);
-  });
-  const precesExtras = Array.isArray(week.precesExtras) ? week.precesExtras : [];
-  document.querySelectorAll('.toolbar [data-action="open-active-preces"][data-preces-key]').forEach((button) => {
-    button.hidden = !precesExtras.includes(button.dataset.precesKey);
-  });
+  [['roteiro', getRoteiroExtras(week)], ['preces', Array.isArray(week.precesExtras) ? week.precesExtras : []]]
+    .forEach(([type, extras]) => {
+      const container = document.getElementById(`toolbar-${type}-extras`);
+      if (!container) return;
+      container.textContent = '';
+      extras.forEach((key) => {
+        const doc = documents[`${type}_${week.legacyWeek}_${key}`];
+        if (!doc) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'action-btn';
+        button.dataset.action = `open-active-${type}`;
+        button.dataset[`${type}Key`] = key;
+        button.textContent = doc.botao || doc.titulo;
+        container.appendChild(button);
+      });
+    });
 }
 
 function prefersReducedMotion() {
@@ -264,22 +503,30 @@ function openActiveProgramacaoModal(trigger) {
   openModal('modal_programacao', trigger);
 }
 
+function openDocumentModal(id, trigger, label) {
+  if (!document.getElementById(id)) {
+    showMessageModal(`${label} ainda não disponível para esta semana. Verifique a atualização do aplicativo.`, trigger, 'Conteúdo indisponível');
+    return;
+  }
+  openModal(id, trigger);
+}
+
 function openActiveRoteiroModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
-  openModal(`modal_roteiro_${getRoteiroSuffix(week, trigger && trigger.dataset.roteiroKey)}`, trigger);
+  openDocumentModal(`modal_roteiro_${getRoteiroSuffix(week, trigger && trigger.dataset.roteiroKey)}`, trigger, 'Roteiro');
 }
 
 function openActivePrecesModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
-  openModal(`modal_preces_${getPrecesSuffix(week, trigger && trigger.dataset.precesKey)}`, trigger);
+  openDocumentModal(`modal_preces_${getPrecesSuffix(week, trigger && trigger.dataset.precesKey)}`, trigger, 'Formulário de preces');
 }
 
 function openActiveReflexoesModal(trigger) {
   const week = getCurrentWeek();
   if (!week) return;
-  openModal(`modal_reflexoes_${week.legacyWeek}`, trigger);
+  openDocumentModal(`modal_reflexoes_${week.legacyWeek}`, trigger, 'Reflexão');
 }
 
 function getActiveLeiturasBlock() {
@@ -292,7 +539,7 @@ function openActiveLeiturasModal(trigger) {
   if (!week) return;
 
   document.querySelectorAll('.leituras-bloco').forEach((block) => {
-    block.style.display = 'none';
+    block.hidden = true;
   });
   selectAllReadings(false);
 
@@ -305,7 +552,7 @@ function openActiveLeiturasModal(trigger) {
     );
     return;
   }
-  activeBlock.style.display = 'block';
+  activeBlock.hidden = false;
 
   openModal('modal_seletor_leituras', trigger);
 }
@@ -668,13 +915,15 @@ function printActiveRoteiro(roteiroKey) {
   const week = getCurrentWeek();
   if (!week) return;
 
-  const content = document.getElementById(`content_roteiro_${getRoteiroSuffix(week, roteiroKey)}`);
+  const suffix = getRoteiroSuffix(week, roteiroKey);
+  const content = document.getElementById(`content_roteiro_${suffix}`);
   if (!content) return;
+  const title = getRoteirosData()[`roteiro_${suffix}`]?.titulo || `Roteiro Litúrgico — ${week.shortTitle}`;
 
   runPrintMount(() => {
     const wrapper = document.createElement('div');
     wrapper.style.padding = '0.5cm';
-    wrapper.appendChild(buildHeaderNode(`Roteiro Litúrgico — ${week.shortTitle}`));
+    wrapper.appendChild(buildHeaderNode(title));
     wrapper.appendChild(content.cloneNode(true));
     return wrapper;
   });
@@ -685,18 +934,19 @@ function printActivePreces(precesKey) {
   if (!week) return;
 
   const suffix = getPrecesSuffix(week, precesKey);
-  const blocks = suffix !== `${week.legacyWeek}`
-    ? [document.getElementById(`content_preces_${suffix}`)]
-    : ['sabado', 'domingo_manha', 'domingo_noite']
-      .map(period => document.getElementById(`preces_${period}_${suffix}`));
-  if (blocks.some(block => !block)) return;
+  const content = document.getElementById(`content_preces_${suffix}`);
+  if (!content) return;
+  // Cada formulário (horário) é impresso em uma página própria.
+  const forms = Array.from(content.querySelectorAll('[data-preces-form]'));
+  const blocks = forms.length ? forms : [content];
 
   runPrintMount(() => {
     const wrapper = document.createElement('div');
-    blocks.forEach((block) => {
+    const title = getRoteirosData()[`preces_${suffix}`]?.titulo || `Oração dos Fiéis — ${week.shortTitle}`;
+    blocks.forEach((block, index) => {
       const page = document.createElement('div');
-      page.style.pageBreakAfter = 'always';
-      page.appendChild(buildHeaderNode(`Oração dos Fiéis — ${week.shortTitle}`));
+      if (index < blocks.length - 1) page.style.pageBreakAfter = 'always';
+      page.appendChild(buildHeaderNode(title));
       page.appendChild(block.cloneNode(true));
       wrapper.appendChild(page);
     });
@@ -986,11 +1236,13 @@ function handleActionClick(event) {
 
 function init() {
   renderWeeks();
+  renderDocumentModals();
+  renderLeiturasBlocks();
   initializeModalLabels();
 
   const weeks = getWeeks();
   if (weeks.length > 0) {
-    const selected = weeks.find((week) => week.id === savedUpdateState?.week) || weeks[0];
+    const selected = weeks.find((week) => week.id === savedUpdateState?.week) || getDefaultWeek(weeks);
     showWeek(selected.id, { preserveScroll: Boolean(savedUpdateState) });
     if (savedUpdateState) {
       Object.entries(savedUpdateState.fonts || {}).forEach(([id, size]) => {
@@ -1027,7 +1279,7 @@ function init() {
       return;
     }
 
-    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+    if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(event.key)) {
       const activeElement = document.activeElement;
       if (!activeElement || activeElement.getAttribute('role') !== 'tab') {
         return;
@@ -1038,7 +1290,9 @@ function init() {
       if (index < 0) return;
 
       const delta = event.key === 'ArrowRight' ? 1 : -1;
-      const nextIndex = (index + delta + weeks.length) % weeks.length;
+      const nextIndex = event.key === 'Home' ? 0
+        : event.key === 'End' ? weeks.length - 1
+          : (index + delta + weeks.length) % weeks.length;
       showWeek(weeks[nextIndex].id, { focusTab: true });
       event.preventDefault();
     }
@@ -1063,3 +1317,4 @@ window.printActiveRoteiro = printActiveRoteiro;
 window.printActivePreces = printActivePreces;
 window.printActiveReflexoes = printActiveReflexoes;
 window.printLeiturasFromView = printLeiturasFromView;
+window.getDefaultWeek = getDefaultWeek;

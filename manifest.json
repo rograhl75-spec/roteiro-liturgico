@@ -1,7 +1,7 @@
 {
   "name": "Roteiro Litúrgico — Paróquia Nossa Senhora Auxiliadora",
   "short_name": "Roteiro Litúrgico",
-  "description": "Programação litúrgica, roteiros, preces, reflexões e leituras da Paróquia Nossa Senhora Auxiliadora.",
+  "description": "Programação litúrgica semanal, roteiros, preces, leituras e antífonas da Paróquia Nossa Senhora Auxiliadora.",
   "lang": "pt-BR",
   "dir": "ltr",
   "start_url": "./index.html",
@@ -12,15 +12,21 @@
   "icons": [
     {
       "src": "icone.png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "icone.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    },
+    {
+      "src": "icone.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }

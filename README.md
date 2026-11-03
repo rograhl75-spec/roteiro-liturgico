@@ -9,7 +9,7 @@ Aplicação web da Paróquia Nossa Senhora Auxiliadora para consultar a programa
 
 ## Recursos principais
 
-- programação organizada por semanas;
+- programação organizada por semanas, com a semana atual selecionada automaticamente;
 - roteiros e preces;
 - leituras, antífonas e reflexões;
 - ajuste do tamanho do texto;
@@ -24,7 +24,8 @@ Aplicação web da Paróquia Nossa Senhora Auxiliadora para consultar a programa
 - `index.html`: estrutura da página e janelas de conteúdo;
 - `styles.css`: aparência, responsividade, acessibilidade e impressão;
 - `app.js`: funcionamento da aplicação e atualização do PWA;
-- `programacao.js`: programação semanal;
+- `programacao.js`: dados das semanas e gerador único das páginas semanais;
+- `roteiros.js`: roteiros e preces estruturados;
 - `leituras.js`: leituras bíblicas;
 - `antifonas.js`: antífonas e citações;
 - `sw.js`: cache e atualização do aplicativo;

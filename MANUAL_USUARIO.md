@@ -41,7 +41,7 @@ Para receber as atualizações mais recentes, abra o site com conexão à intern
 
 Na parte superior existem botões com as semanas disponíveis. Toque ou clique na semana desejada.
 
-A semana selecionada aparece destacada e seu conteúdo é mostrado na página.
+A semana selecionada aparece destacada e seu conteúdo é mostrado na página. Ao abrir o aplicativo, a semana atual (ou a próxima) já vem selecionada. No teclado, use as setas, **Home** e **End** para trocar de semana.
 
 ### Abrir um conteúdo
 
@@ -51,8 +51,12 @@ Use os botões:
 - **Roteiro**;
 - **Preces**;
 - **Leituras e Antífonas**;
-- **Reflexões**;
+- **Reflexões** (aparece somente quando houver reflexão cadastrada para a semana);
 - **Liturgia CNBB**.
+
+Quando a semana tiver celebrações especiais (por exemplo, Fiéis Defuntos ou Adoração Eucarística Solene), aparecem botões adicionais de roteiro e preces na barra e no cartão do dia correspondente.
+
+Nos cartões dos dias, toque na referência bíblica (por exemplo, **Lc 17,7-10**) para ler o texto integral.
 
 ### Aumentar ou diminuir as letras
 
