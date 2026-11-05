@@ -1,5 +1,48 @@
-/* Antífonas, aclamações e citações da PASCOM. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
+/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
+   Antífonas, aclamações e citações da PASCOM. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
 window.antifonasData = {
+  "antifonas_9_defuntos": {
+    "title": "Antífonas, Aclamação e PASCOM — Comemoração de Todos os Fiéis Defuntos (02/11/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — 1Ts 4,14; 1Cor 15,22",
+        "text": "Se Jesus morreu e ressuscitou, de modo semelhante Deus trará de volta, com Cristo, os que através dele entraram no sono da morte. Como em Adão todos morrem, assim também em Cristo todos reviverão."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Jo 6,39",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. É esta a vontade de quem me enviou:\n    que eu não perca nenhum dos que ele me deu,\n    mas que eu os ressuscite no último dia."
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Jo 11,25-26",
+            "text": "Eu sou a ressurreição e a vida, diz o Senhor. Quem crê em mim, mesmo que morra, viverá. E todo aquele que vive e crê em mim, não morrerá jamais."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Eu sei que o meu Redentor está vivo."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "O Senhor é o pastor que me conduz, não me falta coisa alguma.\nOu: Mesmo que eu passe pelo vale tenebroso, nenhum mal eu temerei."
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Em Cristo todos reviverão."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Vós também, ficai preparados!"
+      }
+    ]
+  },
   "antifonas_9": {
     "title": "Antífonas, Aclamação e PASCOM — 32º Domingo do Tempo Comum (07 e 08/11/2026)",
     "items": [
@@ -43,48 +86,6 @@ window.antifonasData = {
       {
         "label": "Evangelho",
         "text": "O noivo está chegando. Ide ao seu encontro."
-      }
-    ]
-  },
-  "antifonas_9_defuntos": {
-    "title": "Antífonas, Aclamação e PASCOM — Comemoração de Todos os Fiéis Defuntos (02/11/2026)",
-    "items": [
-      {
-        "label": "Antífona de Entrada",
-        "reference": "Missal Romano — 1Ts 4,14; 1Cor 15,22",
-        "text": "Se Jesus morreu e ressuscitou, de modo semelhante Deus trará de volta, com Cristo, os que através dele entraram no sono da morte. Como em Adão todos morrem, assim também em Cristo todos reviverão."
-      },
-      {
-        "label": "Aclamação ao Evangelho",
-        "reference": "Jo 6,39",
-        "text": "R. Aleluia, Aleluia, Aleluia.\nV. É esta a vontade de quem me enviou:\n    que eu não perca nenhum dos que ele me deu,\n    mas que eu os ressuscite no último dia."
-      },
-      {
-        "label": "Antífona de Comunhão",
-        "options": [
-          {
-            "reference": "Missal Romano — Jo 11,25-26",
-            "text": "Eu sou a ressurreição e a vida, diz o Senhor. Quem crê em mim, mesmo que morra, viverá. E todo aquele que vive e crê em mim, não morrerá jamais."
-          }
-        ]
-      }
-    ],
-    "citations": [
-      {
-        "label": "Primeira Leitura",
-        "text": "Eu sei que o meu Redentor está vivo."
-      },
-      {
-        "label": "Salmo Responsorial",
-        "text": "O Senhor é o pastor que me conduz, não me falta coisa alguma.\nOu: Mesmo que eu passe pelo vale tenebroso, nenhum mal eu temerei."
-      },
-      {
-        "label": "Segunda Leitura",
-        "text": "Em Cristo todos reviverão."
-      },
-      {
-        "label": "Evangelho",
-        "text": "Vós também, ficai preparados!"
       }
     ]
   },

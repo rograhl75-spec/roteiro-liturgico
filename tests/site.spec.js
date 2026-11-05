@@ -150,10 +150,10 @@ test('arquivos publicados conferem com os hashes e os documentos abrem', async (
       .toBe(metadata.files[`./${file}`]);
   }
   const workflow = fs.readFileSync(path.join(root, '.github/workflows/pages.yml'), 'utf8');
-  expect(workflow).toContain('cp -- *.pdf *.docx *.xlsx _site/');
-  expect(workflow).toContain('roteiros.js');
+  expect(workflow).toContain('node ferramentas/montar-site.js --copiar _site');
+  expect(workflow).toContain('node ferramentas/montar-site.js\n');
   for (const file of assets.filter((name) => /\.(docx|xlsx|pdf)$/.test(name))) {
-    const response = await page.request.get(`/${encodeURIComponent(file)}`);
+    const response = await page.request.get(`/${file.split("/").map(encodeURIComponent).join("/")}`);
     expect(response.ok()).toBe(true);
     const magic = (await response.body()).subarray(0, 4).toString();
     expect(magic.startsWith(file.endsWith('.pdf') ? '%PDF' : 'PK')).toBe(true);

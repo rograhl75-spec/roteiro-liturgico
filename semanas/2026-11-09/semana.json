@@ -1,0 +1,1167 @@
+{
+ "formato": 1,
+ "legacyWeek": 9,
+ "id": "2026-11-09",
+ "periodo": "9 a 15 de novembro",
+ "shortTitle": "9 a 15 de novembro — 33º Domingo do Tempo Comum",
+ "fullTitle": "Semana de 9 a 15 de novembro de 2026 — Dedicação da Basílica do Latrão e 33º Domingo do Tempo Comum",
+ "roteiroLabel": "📖 Roteiro — 33º Domingo do Tempo Comum",
+ "nota": "Leituras conforme “Leituras 9 a 15 novembro 2026.docx”; páginas do lecionário conforme “Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx”; Missal conforme “Missal - 9 a 15 novembro_2026.xlsx”.",
+ "dias": [
+  {
+   "data": "2026-11-09",
+   "titulo": "Segunda-feira, 9 de Novembro de 2026",
+   "dia": "Segunda",
+   "cor": "branco",
+   "grau": "Festa",
+   "celebracao": "Dedicação da Basílica do Latrão (Catedral de Roma) — Festa; 32ª Semana do Tempo Comum",
+   "selecaoTitulo": "Segunda-feira — 09/11 — Dedicação da Basílica do Latrão",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões e direção espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ez 47,1-2.8-9.12",
+     "s10_seg_l1",
+     "III / 203"
+    ],
+    [
+     "Salmo",
+     "Sl 45(46),2-3.5-6.8-9 (R. 5)",
+     "s10_seg_sal",
+     "III / 203"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "2Cr 7,16",
+     "s10_seg_acl"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,13-22",
+     "s10_seg_ev",
+     "III / 205"
+    ]
+   ],
+   "missal": {
+    "gloria": "442",
+    "coleta": "851",
+    "oferendas": "851",
+    "prefacio": "852 (próprio da festa)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "853",
+    "bencao": "588 (Dedicação de igreja)"
+   },
+   "nota": "Quando esta festa não cai em domingo, proclama-se uma só leitura antes do Evangelho (Ez 47 ou 1Cor 3,9c-11.16-17); o DOCX de leituras traz Ezequiel."
+  },
+  {
+   "data": "2026-11-10",
+   "titulo": "Terça-feira, 10 de Novembro de 2026",
+   "dia": "Terça",
+   "cor": "branco",
+   "grau": "Memória",
+   "celebracao": "São Leão Magno, papa e doutor da Igreja — Memória; 32ª Semana do Tempo Comum",
+   "selecaoTitulo": "Terça-feira — 10/11 — São Leão Magno",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José",
+     "confissao",
+     "Direção espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Tt 2,1-8.11-14",
+     "s10_ter_l1",
+     "II / 1172"
+    ],
+    [
+     "Salmo",
+     "Sl 36(37),3-4.18-23.27 e 29 (R. 39a)",
+     "s10_ter_sal",
+     "II / 1173"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 14,23",
+     "s10_ter_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,7-10",
+     "s10_ter_ev",
+     "II / 1173"
+    ]
+   ],
+   "missal": {
+    "coleta": "853",
+    "oferendas": "854",
+    "prefacio": "504 (Santos Pastores I)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "854"
+   }
+  },
+  {
+   "data": "2026-11-11",
+   "titulo": "Quarta-feira, 11 de Novembro de 2026",
+   "dia": "Quarta",
+   "cor": "branco",
+   "grau": "Memória",
+   "celebracao": "São Martinho de Tours, bispo — Memória; 32ª Semana do Tempo Comum",
+   "selecaoTitulo": "Quarta-feira — 11/11 — São Martinho de Tours",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Tt 3,1-7",
+     "s10_qua_l1",
+     "II / 1175"
+    ],
+    [
+     "Salmo",
+     "Sl 22(23),1-3a.3b-4.5.6 (R. 1)",
+     "s10_qua_sal",
+     "II / 1176"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "1Ts 5,18",
+     "s10_qua_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,11-19",
+     "s10_qua_ev",
+     "II / 1177"
+    ]
+   ],
+   "missal": {
+    "coleta": "855",
+    "oferendas": "855",
+    "prefacio": "504 (Santos Pastores I)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "855"
+   }
+  },
+  {
+   "data": "2026-11-12",
+   "titulo": "Quinta-feira, 12 de Novembro de 2026",
+   "dia": "Quinta",
+   "cor": "vermelho",
+   "grau": "Memória",
+   "celebracao": "São Josafá, bispo e mártir — Memória; 32ª Semana do Tempo Comum",
+   "selecaoTitulo": "Quinta-feira — 12/11 — São Josafá",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael",
+     "confissao",
+     "Confissões"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Fm 1,7-20",
+     "s10_qui_l1",
+     "II / 1179"
+    ],
+    [
+     "Salmo",
+     "Sl 145(146),7.8-9a.9bc-10 (R. 5a)",
+     "s10_qui_sal",
+     "II / 1180"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 15,5",
+     "s10_qui_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,20-25",
+     "s10_qui_ev",
+     "II / 1181"
+    ]
+   ],
+   "missal": {
+    "coleta": "856",
+    "oferendas": "856",
+    "prefacio": "502 (Santos Mártires I)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "856"
+   }
+  },
+  {
+   "data": "2026-11-13",
+   "titulo": "Sexta-feira, 13 de Novembro de 2026",
+   "dia": "Sexta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "32ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Sexta-feira — 13/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ],
+    [
+     "20h00",
+     "Capela de Pedra",
+     "Diác. Pedrinho",
+     "casamento",
+     "Matrimônio — Mateus e Lorena"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "2Jo 1,4-9",
+     "s10_sex_l1",
+     "II / 1183"
+    ],
+    [
+     "Salmo",
+     "Sl 118(119),1.2.10.11.17.18 (R. 1b)",
+     "s10_sex_sal",
+     "II / 1184"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Lc 21,28",
+     "s10_sex_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,26-37",
+     "s10_sex_ev",
+     "II / 1184"
+    ]
+   ],
+   "missal": {
+    "coleta": "414",
+    "oferendas": "414",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)",
+    "comunhao": "414"
+   }
+  }
+ ],
+ "fimDeSemana": {
+  "titulo": "Fim de semana: 14 e 15 de Novembro de 2026",
+  "dia": "Sábado",
+  "cor": "verde",
+  "grau": "Domingo",
+  "celebracao": "33º Domingo do Tempo Comum, Ano A — sábado vespertino e domingo",
+  "selecaoTitulo": "Fim de semana — 14 e 15/11 — 33º Domingo do Tempo Comum",
+  "dias": [
+   {
+    "data": "2026-11-14",
+    "dia": "Sábado",
+    "escala": [
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Capela de Pedra",
+      "Diác. Rogério",
+      "casamento",
+      "Matrimônio — Amadeus e Ana"
+     ],
+     [
+      "16h00",
+      "Capela de Pedra",
+      "Pe. Romão",
+      "casamento",
+      "Matrimônio — Dyego e Isabela"
+     ]
+    ]
+   },
+   {
+    "data": "2026-11-15",
+    "dia": "Domingo",
+    "escala": [
+     [
+      "09h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "11h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ]
+   }
+  ],
+  "leituras": [
+   [
+    "1ª Leitura",
+    "Pr 31,10-13.19-20.30-31",
+    "s10_dom_l1",
+    "I / 355"
+   ],
+   [
+    "Salmo",
+    "Sl 127(128),1-2.3.4-5ab (R. cf. 1a)",
+    "s10_dom_sal",
+    "I / 355"
+   ],
+   [
+    "2ª Leitura",
+    "1Ts 5,1-6",
+    "s10_dom_l2",
+    "I / 356"
+   ],
+   [
+    "Aclamação ao Evangelho",
+    "Jo 15,4a.5b",
+    "s10_dom_acl"
+   ],
+   [
+    "Evangelho",
+    "Mt 25,14-30 (mais breve: 25,14-15.19-21)",
+    "s10_dom_ev",
+    "I / 357"
+   ]
+  ],
+  "missal": {
+   "gloria": "442 (conforme roteiro)",
+   "coleta": "415",
+   "creio": "Rezado (página omitida)",
+   "oferendas": "415",
+   "prefacio": "479 (Domingos do Tempo Comum VI, conforme roteiro)",
+   "eucaristica": "537 (OE II)",
+   "comunhao": "415"
+  },
+  "antifonas": "antifonas_10"
+ },
+ "documentos": [
+  "semanas/2026-11-09/Escala Padres 9 a 15 novembro 2026.docx",
+  "semanas/2026-11-09/Leituras 9 a 15 novembro 2026.docx",
+  "semanas/2026-11-09/Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx",
+  "semanas/2026-11-09/Missal - 9 a 15 novembro_2026.xlsx",
+  "semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx",
+  "semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx",
+  "semanas/2026-11-09/Antífona da entrada e comunhão - 33º Domingo do Tempo Comum 15-11-2026.docx"
+ ],
+ "leituras": {
+  "s10_seg_l1": {
+   "title": "1ª Leitura — Ez 47,1-2.8-9.12 (Lecionário III, pág. 203)",
+   "day": "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+   "text": "PRIMEIRA LEITURA\nLeitura da Profecia de Ezequiel 47,1-2.8-9.12\nNaqueles dias,\n1\no homem fez-me voltar até a entrada do Templo\ne eis que saía água da sua parte subterrânea\nna direção leste,\nporque o Templo estava voltado para o oriente;\na água corria do lado direito do Templo,\nao sul do altar.\n2\nEle fez-me sair pela porta que dá para o norte,\ne fez-me dar uma volta por fora,\naté à porta que dá para o leste,\nonde eu vi a água jorrando do lado direito.\n8\nEntão ele me disse:\n\"Estas águas correm para a região oriental,\ndescem para o vale do Jordão,\ndesembocam nas águas salgadas do mar,\ne elas se tornarão saudáveis.\n9\nOnde o rio chegar,\ntodos os animais que ali se movem poderão viver.\nHaverá peixes em quantidade,\npois ali desembocam as águas que trazem saúde;\ne haverá vida onde chegar o rio.\n12\nNas margens junto ao rio,\nde ambos os lados,\ncrescerá toda espécie de árvores frutíferas;\nsuas folhas não murcharão\ne seus frutos jamais se acabarão:\ncada mês darão novos frutos,\npois as águas que banham as árvores saem do santuário.\nSeus frutos servirão de alimento\ne suas folhas serão remédio\".\nPalavra do Senhor."
+  },
+  "s10_seg_sal": {
+   "title": "Salmo Responsorial — Sl 45(46),2-3.5-6.8-9 (R. 5) (Lecionário III, pág. 203)",
+   "day": "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+   "text": "Salmo responsorial Sl 45(46),2-3.5-6.8-9 (R. 5)\nR. Os braços de um rio vêm trazer alegria\nà Cidade de Deus, à morada do Altíssimo.\n2\nO Senhor para nós é refúgio e vigor, *\nsempre pronto, mostrou-se um socorro na angústia;\n3\nassim não tememos, se a terra estremece, *\nse os montes desabam, caindo nos mares. R.\n5\nOs braços de um rio vêm trazer alegria *\nà Cidade de Deus, à morada do Altíssimo.\n6\nQuem a pode abalar? Deus está no seu meio! *\nJá bem antes da aurora, ele vem ajudá-la. R.\n8\nConosco está o Senhor do universo! *\nO nosso refúgio é o Deus de Jacó!\n9\nVinde ver, contemplai os prodígios de Deus †\ne a obra estupenda que fez no universo: *\nreprime as guerras na face da terra. R."
+  },
+  "s10_seg_acl": {
+   "title": "Aclamação ao Evangelho — 2Cr 7,16",
+   "day": "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+   "text": "Aclamação ao Evangelho 2Cr 7,16\nR. Aleluia, Aleluia, Aleluia.\nV. Esta casa eu escolhi e santifiquei,\npara nela estar meu nome para sempre."
+  },
+  "s10_seg_ev": {
+   "title": "Evangelho — Jo 2,13-22 (Lecionário III, pág. 205)",
+   "day": "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo João 2,13-22\n13\nEstava próxima a Páscoa dos judeus\ne Jesus subiu a Jerusalém.\n14\nNo Templo,\nencontrou os vendedores de bois, ovelhas e pombas\ne os cambistas que estavam aí sentados.\n15\nFez então um chicote de cordas\ne expulsou todos do Templo,\njunto com as ovelhas e os bois;\nespalhou as moedas\ne derrubou as mesas dos cambistas.\n16\nE disse aos que vendiam pombas:\n\"Tirai isto daqui!\nNão façais da casa de meu Pai uma casa de comércio!\"\n17\nSeus discípulos lembraram-se, mais tarde,\nque a Escritura diz:\n\"O zelo por tua casa me consumirá\".\n18\nEntão os judeus perguntaram a Jesus:\n\"Que sinal nos mostras para agir assim?\"\n19\nEle respondeu:\n\"Destruí, este Templo,\ne em três dias o levantarei\".\n20\nOs judeus disseram:\n\"Quarenta e seis anos foram precisos para a construção\ndeste santuário e tu o levantarás em três dias?\"\n21\nMas Jesus estava falando do Templo do seu corpo.\n22\nQuando Jesus ressuscitou,\nos discípulos lembraram-se do que ele tinha dito\ne acreditaram na Escritura e na palavra dele.\nPalavra da Salvação."
+  },
+  "s10_ter_l1": {
+   "title": "1ª Leitura — Tt 2,1-8.11-14 (Lecionário II, pág. 1172)",
+   "day": "Terça-feira (10/11) — São Leão Magno",
+   "text": "PRIMEIRA LEITURA\nLeitura da Carta de São Paulo a Tito 2,1-8.11-14\nCaríssimo,\n1\no teu ensino seja conforme à sã doutrina.\n2\nOs mais velhos sejam sóbrios,\nponderados, prudentes,\nfortes na fé, na caridade, na paciência.\n3\nAssim também as mulheres idosas\nobservem uma conduta santa,\nnão sejam caluniadoras nem escravas do vinho,\nmas mestras do bem.\n4\nSaibam ensinar as jovens a amarem seus maridos,\na cuidarem dos filhos,\n5\na serem prudentes, castas, boas donas-de-casa,\ndóceis para os maridos, bondosas,\npara que a palavra de Deus não seja difamada.\n6\nExorta igualmente os jovens a serem moderados\n7\ne mostra-te em tudo exemplo de boas obras,\nde integridade na doutrina, de ponderação,\n8\nde palavra sã e irrepreensível,\npara que os adversários se confundam,\nnão tendo nada de mal para dizer de nós.\n11\nPois a graça de Deus se manifestou\ntrazendo salvação para todos os homens.\n12\nEla nos ensina a abandonar a impiedade\ne as paixões mundanas\ne a viver neste mundo\ncom equilíbrio, justiça e piedade,\n13\naguardando a feliz esperança\ne a manifestação da glória\ndo nosso grande Deus e Salvador, Jesus Cristo.\n14\nEle se entregou por nós,\npara nos resgatar de toda a maldade\ne purificar para si um povo que lhe pertença\ne que se dedique a praticar o bem.\nPalavra do Senhor."
+  },
+  "s10_ter_sal": {
+   "title": "Salmo Responsorial — Sl 36(37),3-4.18-23.27 e 29 (R. 39a) (Lecionário II, pág. 1173)",
+   "day": "Terça-feira (10/11) — São Leão Magno",
+   "text": "Salmo responsorial\nSl 36(37),3-4.18-23.27 e 29 (R. 39a)\nR. A salvação de quem é justo, vem de Deus!\n3\nConfia no Senhor e faze o bem, *\ne sobre a terra habitarás em segurança.\n4\nColoca no Senhor tua alegria, *\ne ele dará o que pedir teu coração. R.\n18\nO Senhor cuida da vida dos honestos, *\ne sua herança permanece eternamente.\n23\nÉ o Senhor quem firma os passos dos mortais *\ne dirige o caminhar dos que lhe agradam. R.\n27\nAfasta-te do mal e faze o bem, *\ne terás tua morada para sempre.\n29\nmas os justos herdarão a nova terra *\ne nela habitarão eternamente. R."
+  },
+  "s10_ter_acl": {
+   "title": "Aclamação ao Evangelho — Jo 14,23",
+   "day": "Terça-feira (10/11) — São Leão Magno",
+   "text": "Aclamação ao Evangelho\nJo 14,23\nR. Aleluia, Aleluia, Aleluia.\nV. Quem me ama, realmente, guardará minha palavra,\ne meu Pai o amará e a ele nós viremos."
+  },
+  "s10_ter_ev": {
+   "title": "Evangelho — Lc 17,7-10 (Lecionário II, pág. 1173)",
+   "day": "Terça-feira (10/11) — São Leão Magno",
+   "text": "EVANGELHO\nSomos servos inúteis; fizemos o que devíamos fazer.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 17,7-10\nNaquele tempo, disse Jesus:\n7\n\"Se algum de vós tem um empregado\nque trabalha a terra ou cuida dos animais,\npor acaso vai dizer-lhe, quando ele volta do campo:\n'Vem depressa para a mesa?'\n8\nPelo contrário, não vai dizer ao empregado:\n'Prepara-me o jantar, cinge-te e serve-me,\nenquanto eu como e bebo;\ndepois disso tu poderás comer e beber?'\n9\nSerá que vai agradecer ao empregado,\nporque fez o que lhe havia mandado?\n10\nAssim também vós:\nquando tiverdes feito tudo o que vos mandaram,\ndizei: 'Somos servos inúteis;\nfizemos o que devíamos fazer' \".\nPalavra da Salvação."
+  },
+  "s10_qua_l1": {
+   "title": "1ª Leitura — Tt 3,1-7 (Lecionário II, pág. 1175)",
+   "day": "Quarta-feira (11/11) — São Martinho de Tours",
+   "text": "PRIMEIRA LEITURA\nLeitura da Carta de São Paulo a Tito 3,1-7\nCaríssimo,\n1\nadmoesta a todos\nque vivam submissos aos príncipes e às autoridades,\nque lhes obedeçam\ne estejam prontos para qualquer boa obra.\n2\nNão injuriem a ninguém, sejam pacíficos, afáveis\ne deem provas de mansidão para com todos os homens.\n3\nPorque nós outrora éramos insensatos,\nrebeldes, extraviados,\nescravos de toda sorte de paixões e prazeres,\nvivendo na maldade e na inveja,\ndignos de ódio e odiando uns aos outros.\n4\nMas um dia manifestou-se\na bondade de Deus, nosso Salvador,\ne o seu amor pelos homens:\n5\nEle salvou-nos não por causa dos atos de justiça\nque tivéssemos praticado,\nmas por sua misericórdia;\nquando renascemos e fomos renovados no batismo\npelo Espírito Santo,\n6\nque ele derramou abundantemente sobre nós\npor meio de nosso Salvador Jesus Cristo.\n7\nJustificados, assim, pela sua graça,\nnos tornamos na esperança herdeiros da vida eterna.\nPalavra do Senhor."
+  },
+  "s10_qua_sal": {
+   "title": "Salmo Responsorial — Sl 22(23),1-3a.3b-4.5.6 (R. 1) (Lecionário II, pág. 1176)",
+   "day": "Quarta-feira (11/11) — São Martinho de Tours",
+   "text": "Salmo responsorial Sl 22 (23),1-3a.3b-4.5.6 (R. 1)\nR. O Senhor é o pastor que me conduz,\nnão me falta coisa alguma.\n1\nO Senhor é o pastor que me conduz; *\nnão me falta coisa alguma.\n2\nPelos prados e campinas verdejantes *\nele me leva a descansar.\nPara as águas repousantes me encaminha, *\n3a\ne restaura as minhas forças. R.\nb\nEle me guia no caminho mais seguro, *\npela honra do seu nome.\n4\nMesmo que eu passe pelo vale tenebroso, *\nnenhum mal eu temerei.\nEstais comigo com bastão e com cajado, *\neles me dão a segurança! R.\n5\nPreparais à minha frente uma mesa, *\nbem à vista do inimigo;\ncom óleo vós ungis minha cabeça, *\ne o meu cálice transborda. R.\n6\nFelicidade e todo bem hão de seguir-me, *\npor toda a minha vida;\ne, na casa do Senhor, habitarei *\npelos tempos infinitos. R."
+  },
+  "s10_qua_acl": {
+   "title": "Aclamação ao Evangelho — 1Ts 5,18",
+   "day": "Quarta-feira (11/11) — São Martinho de Tours",
+   "text": "Aclamação ao Evangelho 1Ts 5,18\nR. Aleluia, Aleluia, Aleluia.\nV. Em tudo dai graças, pois esta é a vontade\nde Deus para convosco, em Cristo, o Senhor."
+  },
+  "s10_qua_ev": {
+   "title": "Evangelho — Lc 17,11-19 (Lecionário II, pág. 1177)",
+   "day": "Quarta-feira (11/11) — São Martinho de Tours",
+   "text": "EVANGELHO\nNão houve quem voltasse para dar glória\na Deus, a não ser este estrangeiro.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 17,11-19\n11\nAconteceu que, caminhando para Jerusalém,\nJesus passava entre a Samaria e a Galileia.\n12\nQuando estava para entrar num povoado,\ndez leprosos vieram ao seu encontro.\nPararam à distância,\n13\ne gritaram:\n\"Jesus, Mestre, tem compaixão de nós!\"\n14\nAo vê-los, Jesus disse:\n\"Ide apresentar-vos aos sacerdotes\".\nEnquanto caminhavam,\naconteceu que ficaram curados.\n15\nUm deles, ao perceber que estava curado,\nvoltou glorificando a Deus em alta voz;\n16\natirou-se aos pés de Jesus,\ncom o rosto por terra,\ne lhe agradeceu.\nE este era um samaritano.\n17\nEntão Jesus lhe perguntou:\n\"Não foram dez os curados?\nE os outro nove, onde estão?\n18\nNão houve quem voltasse para dar glória a Deus,\na não ser este estrangeiro?\"\n19\nE disse-lhe:\n\"Levanta-te e vai! Tua fé te salvou\".\nPalavra da Salvação."
+  },
+  "s10_qui_l1": {
+   "title": "1ª Leitura — Fm 1,7-20 (Lecionário II, pág. 1179)",
+   "day": "Quinta-feira (12/11) — São Josafá",
+   "text": "PRIMEIRA LEITURA\nLeitura da Carta de São Paulo a Filêmon 1,7-20\nCaríssimo,\n7\ngrande alegria e consolo tive\npor causa de tua caridade.\nOs corações dos santos\nforam reanimados por ti, irmão.\n8\nPor este motivo,\nse bem que tenha plena autoridade em Cristo\npara prescrever-te tua obrigação,\n9\nprefiro fazer apenas um apelo à tua caridade.\nEu, Paulo, velho como estou\ne agora também prisioneiro de Cristo Jesus,\n10\nfaço-te um pedido em favor do meu filho\nque fiz nascer para Cristo na prisão, Onésimo.\n11\nAntes, ele era inútil para ti;\nagora, ele é valioso para ti e para mim.\n12\nEu o estou mandando de volta para ti.\nEle é como se fosse o meu próprio coração.\n13\nGostaria de tê-lo comigo,\na fim de que fosse teu representante\npara cuidar de mim nesta prisão,\nque eu devo ao evangelho.\n14\nMas, eu não quis fazer nada sem o teu parecer,\npara que a tua bondade não seja forçada,\nmas espontânea.\n15\nSe ele te foi retirado por algum tempo,\ntalvez seja para que o tenhas de volta para sempre,\n16\njá não como escravo,\nmas, muito mais do que isso,\ncomo um irmão querido,\nmuitíssimo querido para mim\nquanto mais ele o for para ti,\ntanto como pessoa humana\nquanto como irmão no Senhor.\n17\nAssim, se estás em comunhão de fé comigo,\nrecebe-o como se fosse a mim mesmo.\n18\nSe em alguma coisa te prejudicou\nou se alguma coisa te deve,\npõe em minha conta.\n19\nEu, Paulo, de meu punho o escrevo;\neu o pagarei, para não dizer\nque tu mesmo me deves a própria vida.\n20\nSim, irmão, deixa que eu te explore no Senhor.\nConforta em Cristo meu coração.\nPalavra do Senhor."
+  },
+  "s10_qui_sal": {
+   "title": "Salmo Responsorial — Sl 145(146),7.8-9a.9bc-10 (R. 5a) (Lecionário II, pág. 1180)",
+   "day": "Quinta-feira (12/11) — São Josafá",
+   "text": "Salmo responsorial\nSl 145(146),7.8-9a.9bc-10 (R. 5a)\nR. Feliz quem se apoia no Deus de Jacó!\nOu: Aleluia, Aleluia, Aleluia\n7\nO Senhor faz justiça aos que são oprimidos; †\nele dá alimento aos famintos, *\né o Senhor quem liberta os cativos. R.\n8\nO Senhor abre os olhos aos cegos, +\no Senhor faz erguer-se o caído, *\no Senhor ama aquele que é justo.\n9a\nÉ o Senhor quem protege o estrangeiro; R.\nb\nÉ ele quem ampara a viúva e o órfão, *\nc\nmas confunde os caminhos dos maus.\n10\nO Senhor reinará para sempre! †\nÓ Sião, o teu Deus reinará *\npara sempre e por todos os séculos! R."
+  },
+  "s10_qui_acl": {
+   "title": "Aclamação ao Evangelho — Jo 15,5",
+   "day": "Quinta-feira (12/11) — São Josafá",
+   "text": "Aclamação ao Evangelho\nJo 15,5\nR. Aleluia, Aleluia, Aleluia.\nV. Eu sou a videira e vós sois os ramos;\num fruto abundante vós haveis de dar."
+  },
+  "s10_qui_ev": {
+   "title": "Evangelho — Lc 17,20-25 (Lecionário II, pág. 1181)",
+   "day": "Quinta-feira (12/11) — São Josafá",
+   "text": "EVANGELHO\nO Reino de Deus está entre vós.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 17,20-25\nNaquele tempo,\n20\nos fariseus perguntaram a Jesus\nsobre o momento em que chegaria o Reino de Deus.\nJesus respondeu:\n\"O Reino de Deus não vem ostensivamente.\n21\nNem se poderá dizer:\n'Está aqui' ou 'Está ali',\nporque o Reino de Deus está entre vós\".\n22\nE Jesus disse aos discípulos:\n\"Dias virão em que desejareis ver\num só dia do Filho do Homem e não podereis ver.\n23\nAs pessoas vos dirão:\n'Ele está ali' ou 'Ele está aqui'.\nNão deveis ir, nem correr atrás.\n24\nPois, como o relâmpago brilha\nde um lado até ao outro do céu,\nassim também será o Filho do Homem, no seu dia.\n25\nAntes, porém, ele deverá sofrer muito\ne ser rejeitado por esta geração\".\nPalavra da Salvação."
+  },
+  "s10_sex_l1": {
+   "title": "1ª Leitura — 2Jo 1,4-9 (Lecionário II, pág. 1183)",
+   "day": "Sexta-feira (13/11)",
+   "text": "PRIMEIRA LEITURA\nLeitura da Segunda Carta de São João 1,4-9\n4\nMuito me alegrei, Senhora,\npor ter encontrado alguns dos teus filhos\nque caminham conforme a verdade,\nsegundo o mandamento que recebemos do Pai.\n5\nE agora, Senhora, eu te peço\n- não que te esteja escrevendo\na respeito de um novo mandamento,\npois trata-se daquele\nque temos desde o princípio - :\namemo-nos uns aos outros.\n6\nE amar consiste no seguinte:\nem viver conforme os seus mandamentos.\nEste é o mandamento que ouvistes desde o início\npara guiar o vosso proceder.\n7\nAcontece que se espalharam pelo\nmundo muitos sedutores,\nque não confessam a Jesus Cristo encarnado.\nEstá aí o Sedutor, o Anticristo.\n8\nTomai cuidado,\nse não quereis perder o fruto do vosso trabalho,\nmas sim, receber a plena recompensa.\n9\nTodo o que não permanece na doutrina de Cristo,\nmas passa além,\nnão possui a Deus.\nAquele que permanece na doutrina\né o que possui o Pai e o Filho.\nPalavra do Senhor."
+  },
+  "s10_sex_sal": {
+   "title": "Salmo Responsorial — Sl 118(119),1.2.10.11.17.18 (R. 1b) (Lecionário II, pág. 1184)",
+   "day": "Sexta-feira (13/11)",
+   "text": "Salmo responsorial\nSl 118(119),1.2.10.11.17.18 (R. 1b)\nR. Feliz é quem na lei do Senhor Deus vai progredindo!\n1\nFeliz o homem sem pecado em seu caminho, *\nque na lei do Senhor Deus vai progredindo! R.\n2\nFeliz o homem que observa seus preceitos, *\ne de todo o coração procura a Deus! R.\n10\nDe todo o coração eu vos procuro, *\nnão deixeis que eu abandone a vossa lei! R.\n11\nConservei no coração vossas palavras, *\na fim de que eu não peque contra vós. R.\n17\nSede bom com vosso servo, e viverei, *\ne guardarei vossa palavra, ó Senhor. R.\n18\nAbri meus olhos, e então contemplarei *\nas maravilhas que encerra a vossa lei! R."
+  },
+  "s10_sex_acl": {
+   "title": "Aclamação ao Evangelho — Lc 21,28",
+   "day": "Sexta-feira (13/11)",
+   "text": "Aclamação ao Evangelho\nLc 21,28\nR. Aleluia, Aleluia, Aleluia.\nV. Levantai vossa cabeça e olhai,\npois a vossa redenção se aproxima!"
+  },
+  "s10_sex_ev": {
+   "title": "Evangelho — Lc 17,26-37 (Lecionário II, pág. 1184)",
+   "day": "Sexta-feira (13/11)",
+   "text": "EVANGELHO\nO mesmo acontecerá no dia em que o Filho do Homem for revelado.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 17,26-37\nNaquele tempo,\ndisse Jesus aos seus discípulos:\n26\n\"Como aconteceu nos dias de Noé,\nassim também acontecerá\nnos dias do Filho do Homem.\n27\nEles comiam, bebiam,\ncasavam-se e se davam em casamento,\naté ao dia em que Noé entrou na arca.\nEntão chegou o dilúvio e fez morrer todos eles.\n28\nAcontecerá como nos dias de Ló:\ncomiam e bebiam, compravam e vendiam,\nplantavam e construíam.\n29\nMas no dia em que Ló saiu de Sodoma,\nDeus fez chover fogo e enxofre do céu\ne fez morrer todos.\n30\nO mesmo acontecerá\nno dia em que o Filho do Homem for revelado.\n31\nNesse dia, quem estiver no terraço,\nnão desça para apanhar os bens\nque estão em sua casa.\nE quem estiver nos campos não volte para trás.\n32\nLembrai-vos da mulher de Ló.\n33\nQuem procura ganhar a sua vida, vai perdê-la;\ne quem a perde, vai conservá-la.\n34\nEu vos digo:\nnessa noite, dois estarão numa cama;\num será tomado e o outro será deixado.\n35\nDuas mulheres estarão moendo juntas;\numa será tomada e a outra será deixada.\n36\nDois homens estarão no campo;\num será levado e o outro será deixado\".\n37\nOs discípulos perguntaram:\n\"Senhor, onde acontecerá isso?\"\nJesus respondeu:\n\"Onde estiver o cadáver,\naí se reunirão os abutres\".\nPalavra da Salvação."
+  },
+  "s10_dom_l1": {
+   "title": "1ª Leitura — Pr 31,10-13.19-20.30-31 (Lecionário I, pág. 355)",
+   "day": "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro dos Provérbios 31,10-13.19-20.30-31\n10\nUma mulher forte, quem a encontrará?\nEla vale muito mais do que as joias.\n11\nSeu marido confia nela plenamente,\ne não terá falta de recursos.\n12\nEla lhe dá só alegria e nenhum desgosto,\ntodos os dias de sua vida.\n13\nProcura lã e linho,\ne com habilidade trabalham as suas mãos.\n19\nEstende a mão para a roca, e seus dedos seguram o fuso.\n20\nAbre suas mãos ao necessitado\ne estende suas mãos ao pobre.\n30\nO encanto é enganador e a beleza é passageira;\na mulher que teme ao Senhor, essa sim, merece louvor.\n31\nProclamem o êxito de suas mãos,\ne na praça louvem-na as suas obras!\nPalavra do Senhor."
+  },
+  "s10_dom_sal": {
+   "title": "Salmo Responsorial — Sl 127(128),1-2.3.4-5ab (R. cf. 1a) (Lecionário I, pág. 355)",
+   "day": "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+   "text": "Salmo responsorial Sl 127(128),1-2.3.4-5 (R. 1a)\nR. Felizes os que temem o Senhor e trilham seus caminhos!\n1\nFeliz és tu, se temes o Senhor *\ne trilhas seus caminhos!\n2\nDo trabalho de tuas mãos hás de viver, *\nserás feliz, tudo irá bem! R.\n3\nA tua esposa é uma videira bem fecunda *\nno coração da tua casa;\nos teus filhos são rebentos de oliveira *\nao redor de tua mesa. R.\n4\nSerá assim abençoado todo homem *\nque teme o Senhor.\n5\nO Senhor te abençoe de Sião, *\ncada dia de tua vida. R."
+  },
+  "s10_dom_l2": {
+   "title": "2ª Leitura — 1Ts 5,1-6 (Lecionário I, pág. 356)",
+   "day": "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+   "text": "SEGUNDA LEITURA\nLeitura da Primeira Carta de São Paulo aos Tessalonicenses 5,1-6\n1\nQuanto ao tempo e à hora, meus irmãos,\nnão há por que vos escrever.\n2\nVós mesmos sabeis perfeitamente\nque o dia do Senhor virá como ladrão, de noite.\n3\nQuando as pessoas disserem: \"Paz e segurança!\",\nentão de repente sobrevirá a destruição,\ncomo as dores de parto sobre a mulher grávida.\nE não poderão escapar.\n4\nMas vós, meus irmãos, não estais nas trevas,\nde modo que esse dia vos surpreenda como um ladrão.\n5\nTodos vós sois filhos da luz e filhos do dia.\nNão somos da noite, nem das trevas.\n6\nPortanto, não durmamos, como os outros,\nmas sejamos vigilantes e sóbrios.\nPalavra do Senhor."
+  },
+  "s10_dom_acl": {
+   "title": "Aclamação ao Evangelho — Jo 15,4a.5b",
+   "day": "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+   "text": "Aclamação ao Evangelho Jo 15,4a,5b\nR. Aleluia, Aleluia, Aleluia.\nV. Ficai em mim, e eu em vós hei de ficar, diz o Senhor;\nquem em mim permanece, esse dá muito fruto."
+  },
+  "s10_dom_ev": {
+   "title": "Evangelho — Mt 25,14-30 (Lecionário I, pág. 357)",
+   "day": "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+   "text": "EVANGELHO (mais longo)\nComo foste fiel na administração de tão\npouco, vem participar de minha alegria.\nProclamação do Evangelho de Jesus Cristo segundo Mateus 25,14-30\nNaquele tempo,\nJesus contou esta parábola a seus discípulos:\n14\n\"Um homem ia viajar para o estrangeiro.\nChamou seus empregados e lhes entregou seus bens.\n15\nA um deu cinco talentos,\na outro deu dois e ao terceiro, um;\na cada qual de acordo com a sua capacidade.\nEm seguida viajou.\n16\nO empregado que havia recebido cinco talentos\nsaiu logo,\ntrabalhou com eles, e lucrou outros cinco.\n17\nDo mesmo modo, o que havia recebido dois\nlucrou outros dois.\n18\nMas aquele que havia recebido um só,\nsaiu, cavou um buraco na terra,\ne escondeu o dinheiro do seu patrão.\n19\nDepois de muito tempo, o patrão voltou\ne foi acertar contas com os empregados.\n20\nO empregado que havia recebido cinco talentos\nentregou-lhe mais cinco, dizendo:\n'Senhor, tu me entregaste cinco talentos.\nAqui estão mais cinco que lucrei'.\n21\nO patrão lhe disse: 'Muito bem, servo bom e fiel!\ncomo foste fiel na administração de tão pouco,\neu te confiarei muito mais.\nVem participar da minha alegria!'\n22\nChegou também o que havia recebido dois talentos,\ne disse:\n'Senhor, tu me entregaste dois talentos.\nAqui estão mais dois que lucrei'.\n23\nO patrão lhe disse: 'Muito bem, servo bom e fiel!\nComo foste fiel na administração de tão pouco,\neu te confiarei muito mais.\nVem participar da minha alegria!'\n24\nPor fim, chegou aquele que havia recebido um talento,\ne disse: 'Senhor, sei que és um homem severo,\npois colhes onde não plantaste\ne ceifas onde não semeaste.\n25\nPor isso, fiquei com medo\ne escondi o teu talento no chão.\nAqui tens o que te pertence'.\n26\nO patrão lhe respondeu: 'Servo mau e preguiçoso!\nTu sabias que eu colho onde não plantei\ne que ceifo onde não semeei?\n27\nEntão, devias ter depositado meu dinheiro no banco,\npara que, ao voltar,\neu recebesse com juros o que me pertence'.\n28\nEm seguida, o patrão ordenou:\n'Tirai dele o talento e dai-o àquele que tem dez!\n29\nPorque a todo aquele que tem\nserá dado mais, e terá em abundância,\nmas daquele que não tem, até o que tem lhe será tirado.\n30\nQuanto a este servo inútil,\njogai-o lá fora, na escuridão.\nAí haverá choro e ranger de dentes!'\".\nPalavra da Salvação."
+  }
+ },
+ "antifonas": {
+  "antifonas_10": {
+   "title": "Antífonas, Aclamação e PASCOM — 33º Domingo do Tempo Comum (14 e 15/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — cf. Jr 29,11.12.14",
+     "text": "Meus pensamentos são de paz e não de aflição, diz o Senhor. Vós me invocareis e hei de escutar-vos, e de todos os lugares reconduzirei vossos cativos."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "Jo 15,4a.5b",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Ficai em mim, e eu em vós hei de ficar, diz o Senhor;\n    quem em mim permanece, esse dá muito fruto."
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — cf. Sl 72,28",
+       "text": "Para mim só há um bem: é estar com Deus, é colocar o meu refúgio no Senhor."
+      },
+      {
+       "reference": "Mc 11,23.24",
+       "text": "Em verdade vos digo: tudo o que pedirdes na oração, acreditai que já o recebestes, e assim será, diz o Senhor."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Primeira Leitura",
+     "text": "Com habilidade trabalham as suas mãos."
+    },
+    {
+     "label": "Salmo Responsorial",
+     "text": "Felizes os que temem o Senhor e trilham seus caminhos!"
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "Que esse dia não vos surpreenda como um ladrão."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Como foste fiel na administração de tão pouco, vem participar de minha alegria."
+    }
+   ]
+  }
+ },
+ "roteiros": {
+  "roteiro_9": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — 33º Domingo do Tempo Comum — 14 e 15/11/2026",
+   "fonte": "semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx",
+   "cabecalho": "33º DOMINGO TEMPO COMUM – 14 E 15 NOVEMBRO 2026 – COR VERDE",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Animador",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Animador",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Animador",
+       "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É com imensa alegria que nos reunimos como família de Deus neste 33º Domingo do Tempo Comum. A cada domingo, o Senhor nos chama da nossa rotina para nos abraçar com a sua graça, renovar a nossa esperança e nos fortalecer na caminhada.\nAcolhemos com carinho a todos os fiéis da nossa comunidade, os visitantes e os que hoje se unem a nós. Com o coração cheio de gratidão e o desejo sincero de vivermos a fraternidade em Cristo, de pé, acompanhemos a procissão de entrada, cantando...\""
+      ],
+      [
+       "Música",
+       "Canto de Entrada"
+      ],
+      [
+       "Padre",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Animador",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Padre",
+       "Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Música",
+       "Ato Penitencial"
+      ],
+      [
+       "Padre",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Música",
+       "“Glória a Deus nas alturas” ."
+      ],
+      [
+       "Padre",
+       "Oração da Coleta (pág. 415)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "1ª Leitura",
+       "Pr 31,10-13.19-20.30-31"
+      ],
+      [
+       "1ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Salmo Responsorial Sl 127(128),1-2.3.4-5ab (R. cf. 1a)"
+      ],
+      [
+       "2ª Leitura",
+       "1Ts 5,1-6"
+      ],
+      [
+       "2ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Aclamação ao Evangelho ."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Proclamação do Evangelho de Jesus Cristo segundo Mateus."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Mt 25,14-30"
+      ],
+      [
+       "Padre",
+       "Palavra da Salvação."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Homilia."
+      ],
+      [
+       "Padre",
+       "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Animador",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Padre / Animador",
+       "(Profissão de fé)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."
+      ],
+      [
+       "Padre",
+       "Fará a introdução as preces"
+      ],
+      [
+       "Animador",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Animador",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Música",
+       "Canto das Oferendas"
+      ],
+      [
+       "Padre",
+       "Preparação das oferendas."
+      ],
+      [
+       "Padre",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Animador",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Padre",
+       "Oração sobre as Oferendas (pág. 415)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Corações ao alto."
+      ],
+      [
+       "Animador",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Padre",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Animador",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Padre",
+       "Prefácio dos Domingos do Tempo Comum VI (pág. 479)"
+      ],
+      [
+       "Padre",
+       "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. (...) Por isso, também nós vos louvamos, com todos os Anjos, cantando em alegre celebração a uma só voz:"
+      ],
+      [
+       "Música",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Padre",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Padre",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+      ],
+      [
+       "Animador",
+       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+      ],
+      [
+       "Padre",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Animador",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Padre",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Animador",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Animador",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Animador",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Padre",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Padre",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Padre",
+       "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Padre",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Padre",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Animador",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Animador",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Padre",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Animador",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Padre",
+       "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"
+      ],
+      [
+       "Animador",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Música",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Padre",
+       "Oração depois da Comunhão (pág. 415)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Padre",
+       "Avisos Paroquiais / Aniversariantes/ Bênção dos Pães"
+      ],
+      [
+       "Padre",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Animador",
+       "Rogai por nós."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco!"
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Ide em paz e o Senhor vos acompanhe."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_9": {
+   "tipo": "preces",
+   "titulo": "Preces — 33º Domingo do Tempo Comum",
+   "fonte": "semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx",
+   "cabecalho": "33º DOMINGO TEMPO COMUM",
+   "formularios": [
+    {
+     "titulo": "Data: 14/11/2026 — Horário: Sábado 18h30",
+     "linhas": [
+      [
+       "Padre",
+       "Ao Deus único, Pai e Filho e Espírito Santo, demos glória; e peçamos humildemente:"
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a oração de vosso povo!"
+      ],
+      [
+       "Animador",
+       "Pai santo, Senhor todo-poderoso, fazei brotar a justiça na terra, para que o vosso povo se alegre na prosperidade e na paz, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a oração de vosso povo!"
+      ],
+      [
+       "Animador",
+       "Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a oração de vosso povo!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 15/11/2026 — Horário: Domingo 09h00 e 11h00",
+     "linhas": [
+      [
+       "Padre",
+       "Louvemos a Cristo Senhor, luz que ilumina todo homem e sol que não tem ocaso; e aclamemos com alegria:"
+      ],
+      [
+       "Todos",
+       "R. Senhor, vós sois nossa vida e salvação!"
+      ],
+      [
+       "Animador",
+       "Criador do universo, nós vos agradecemos este dia que recebemos de vossa bondade, e em que celebramos a vossa ressurreição, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, vós sois nossa vida e salvação!"
+      ],
+      [
+       "Animador",
+       "Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, vós sois nossa vida e salvação!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 15/11/2026 — Horário: Domingo 18h30",
+     "linhas": [
+      [
+       "Padre",
+       "Como membros de Cristo que é nossa cabeça, adoremos o Senhor; e aclamemos com alegria:"
+      ],
+      [
+       "Todos",
+       "R. Senhor, venha a nós o vosso Reino!"
+      ],
+      [
+       "Animador",
+       "Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, venha a nós o vosso Reino!"
+      ],
+      [
+       "Animador",
+       "Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, venha a nós o vosso Reino!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

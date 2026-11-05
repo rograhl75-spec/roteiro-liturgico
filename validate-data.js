@@ -29,7 +29,7 @@ let weeks;
 try {
   readingsData = runInSandbox(leiturasSource, 'leituras.js').readingsData;
   const dataWindow = runInSandbox(
-    [read('antifonas.js'), read('roteiros.js'), read('programacao.js')].join('\n'), 'dados.js');
+    [read('antifonas.js'), read('roteiros.js'), read('semanas.js'), read('programacao.js')].join('\n'), 'dados.js');
   antifonasData = dataWindow.antifonasData;
   roteirosData = dataWindow.roteirosData;
   weeks = dataWindow.programacaoData && dataWindow.programacaoData.weeks;
@@ -146,7 +146,7 @@ for (const id of ['week-tabs', 'weeks-root', 'document-modals', 'leituras-blocos
   'btn-roteiro-principal', 'btn-preces-principal', 'toolbar-roteiro-extras', 'toolbar-preces-extras']) {
   if (!ids.includes(id)) fail(`Elemento obrigatório ausente no index.html: #${id}`);
 }
-for (const script of ['leituras.js', 'antifonas.js', 'roteiros.js', 'programacao.js', 'app.js']) {
+for (const script of ['leituras.js', 'antifonas.js', 'roteiros.js', 'semanas.js', 'programacao.js', 'app.js']) {
   if (!indexContent.includes(`<script src="${script}" defer></script>`)) fail(`Script ausente no index.html: ${script}`);
 }
 
@@ -164,10 +164,28 @@ for (const file of referencedFiles) {
   if (!fs.existsSync(path.join(root, file))) fail(`Documento referenciado inexistente: ${file}`);
 }
 const sourceFiles = fs.readdirSync(root).filter((file) => /\.(pdf|docx|xlsx)$/i.test(file));
-for (const file of sourceFiles) {
-  if (!assets.includes(file)) fail(`Documento-fonte fora da lista de publicação: ${file}`);
-  if (!referencedFiles.has(file)) fail(`Documento-fonte não vinculado em nenhuma semana: ${file}`);
+for (const file of sourceFiles) fail(`Documento solto na raiz (deve ficar em semanas/<segunda-feira>/): ${file}`);
+for (const week of weeks) {
+  const folder = path.join(root, 'semanas', week.id);
+  if (!fs.existsSync(folder)) { fail(`Pasta ausente: semanas/${week.id}`); continue; }
+  for (const file of fs.readdirSync(folder).filter((name) => /\.(pdf|docx|xlsx)$/i.test(name))) {
+    const relative = `semanas/${week.id}/${file}`;
+    if (!assets.includes(relative)) fail(`Documento-fonte fora da lista de publicação: ${relative}`);
+    if (!referencedFiles.has(relative)) fail(`Documento-fonte não vinculado em nenhuma semana: ${relative}`);
+    // Planilha de escala com telefones e espórtulas nunca pode ser publicada.
+    if (/esp[óo]rtula/i.test(file)) fail(`Arquivo privado na pasta pública: ${relative}`);
+  }
 }
+
+/* Planilha de escala e espórtulas (telefones e valores) nunca pode estar no repositório público. */
+(function procurarPrivados(pasta) {
+  for (const nome of fs.readdirSync(pasta)) {
+    if (['.git', 'node_modules', 'test-results', '_site'].includes(nome)) continue;
+    const completo = path.join(pasta, nome);
+    if (fs.statSync(completo).isDirectory()) procurarPrivados(completo);
+    else if (/esp[óo]rtula/i.test(nome.normalize('NFC'))) fail(`Arquivo privado no repositório (apague-o): ${path.relative(root, completo)}`);
+  }
+}(root));
 
 if (issues.length) {
   console.error(`Validação falhou:\n- ${issues.join('\n- ')}`);

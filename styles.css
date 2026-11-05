@@ -73,6 +73,7 @@
         .badge-branco { background: #f8fafc; color: #334155; border: 1px solid #cbd5e1; }
         .badge-vermelho { background: #dc2626; color: #fff; }
         .badge-roxo { background: #6b21a8; color: #fff; }
+        .badge-rosa { background: #f9a8d4; color: #4a044e; }
         
         .presidency-box { background: #f8fafc; border: 1px solid #cbd5e1; border-top: 3px solid var(--primary); border-radius: 6px; margin-bottom: 1.2rem; overflow: hidden; }
         .presidency-title { color: var(--primary); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; padding: 0.6rem 0.8rem; border-bottom: 1px solid #e2e8f0; background: #f1f5f9; letter-spacing: 0.5px; }

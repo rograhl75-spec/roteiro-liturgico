@@ -1,10 +1,8 @@
-/* ==========================================================================
-   BANCO DE DADOS LITÚRGICO INTEGRAL — PARÓQUIA NOSSA SENHORA AUXILIADORA
-   Prefixo das chaves: s<legacyWeek + 1>_<dia>_<parte> (ex.: s10_dom_ev).
-   ========================================================================== */
+/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
+   Leituras integrais. Chave: s<legacyWeek + 1>_<dia>_<parte> (ex.: s10_dom_ev). */
 
 const readingsData = {
-    /* SEMANA DE 2 A 8 DE NOVEMBRO DE 2026 — leituras integrais do DOCX semanal */
+    /* SEMANA DE 2 A 8 DE NOVEMBRO */
     's9_seg_l1': {
         title: "1ª Leitura — Jó 19,1.23-27a (Lecionário I, pág. 1052)",
         day: "Segunda-feira (02/11) — Fiéis Defuntos",
@@ -860,7 +858,7 @@ Portanto, ficai vigiando,
 pois não sabeis qual será o dia, nem a hora".
 Palavra da Salvação.`
     },
-    /* SEMANA DE 9 A 15 DE NOVEMBRO DE 2026 — leituras integrais do DOCX semanal */
+    /* SEMANA DE 9 A 15 DE NOVEMBRO */
     's10_seg_l1': {
         title: "1ª Leitura — Ez 47,1-2.8-9.12 (Lecionário III, pág. 203)",
         day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",

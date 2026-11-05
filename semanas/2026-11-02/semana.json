@@ -1,0 +1,2422 @@
+{
+ "formato": 1,
+ "legacyWeek": 8,
+ "id": "2026-11-02",
+ "periodo": "2 a 8 de novembro",
+ "shortTitle": "2 a 8 de novembro — 32º Domingo do Tempo Comum",
+ "fullTitle": "Semana de 2 a 8 de novembro de 2026 — Fiéis Defuntos e 32º Domingo do Tempo Comum",
+ "roteiroLabel": "📖 Roteiro — 32º Domingo do Tempo Comum",
+ "roteiroExtras": [
+  "defuntos",
+  "votiva",
+  "adoracao"
+ ],
+ "precesExtras": [
+  "defuntos"
+ ],
+ "nota": "Leituras conforme “Leituras de 2 a 8 de novembro de 2026.docx”; páginas do lecionário conforme “Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx”; Missal conforme “Missal - 2 a 8 novembro_2026.xlsx”.",
+ "dias": [
+  {
+   "data": "2026-11-02",
+   "titulo": "Segunda-feira, 2 de Novembro de 2026",
+   "dia": "Segunda",
+   "cor": "roxo",
+   "grau": "Comemoração",
+   "celebracao": "Comemoração de Todos os Fiéis Defuntos (Finados)",
+   "selecaoTitulo": "Segunda-feira — 02/11 — Fiéis Defuntos",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões e direção espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Jó 19,1.23-27a",
+     "s9_seg_l1",
+     "I / 1052"
+    ],
+    [
+     "Salmo",
+     "Sl 22(23),1-3.4.5.6 (R. 1 ou 4a)",
+     "s9_seg_sal",
+     "I / 1061"
+    ],
+    [
+     "2ª Leitura",
+     "1Cor 15,20-24a.25-28",
+     "s9_seg_l2",
+     "I / 1073"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 6,39",
+     "s9_seg_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,35-40",
+     "s9_seg_ev",
+     "I / 1087"
+    ]
+   ],
+   "missal": {
+    "coleta": "846",
+    "oferendas": "846",
+    "prefacio": "518 (Defuntos I)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "846",
+    "bencao": "588 (Fiéis Defuntos)"
+   },
+   "antifonas": "antifonas_9_defuntos",
+   "nota": "Antes do “Oremos” da coleta, entrada das intenções pelos falecidos pelo corredor central, depositadas junto à cruz com velas (cruzeiro), conforme o roteiro revisado.",
+   "botoes": [
+    {
+     "tipo": "roteiro",
+     "chave": "defuntos",
+     "rotulo": "Roteiro — Fiéis Defuntos"
+    },
+    {
+     "tipo": "preces",
+     "chave": "defuntos",
+     "rotulo": "Preces — Fiéis Defuntos"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-03",
+   "titulo": "Terça-feira, 3 de Novembro de 2026",
+   "dia": "Terça",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "31ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Terça-feira — 03/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Afonso",
+     "confissao",
+     "Direção espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Fl 2,5-11",
+     "s9_ter_l1",
+     "II / 1149"
+    ],
+    [
+     "Salmo",
+     "Sl 21(22),26b-27.28-30a.31-32 (R. 26a)",
+     "s9_ter_sal",
+     "II / 1150"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Mt 11,28",
+     "s9_ter_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,15-24",
+     "s9_ter_ev",
+     "II / 1150"
+    ]
+   ],
+   "missal": {
+    "coleta": "413",
+    "oferendas": "413",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)",
+    "comunhao": "413"
+   }
+  },
+  {
+   "data": "2026-11-04",
+   "titulo": "Quarta-feira, 4 de Novembro de 2026",
+   "dia": "Quarta",
+   "cor": "branco",
+   "grau": "Memória",
+   "celebracao": "São Carlos Borromeu, bispo — Memória; 31ª Semana do Tempo Comum",
+   "selecaoTitulo": "Quarta-feira — 04/11 — São Carlos Borromeu",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Fl 2,12-18",
+     "s9_qua_l1",
+     "II / 1152"
+    ],
+    [
+     "Salmo",
+     "Sl 26(27),1.4.13-14 (R. 1a)",
+     "s9_qua_sal",
+     "II / 1153"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "1Pd 4,14",
+     "s9_qua_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,25-33",
+     "s9_qua_ev",
+     "II / 1154"
+    ]
+   ],
+   "missal": {
+    "coleta": "849",
+    "oferendas": "850",
+    "prefacio": "504 (Santos Pastores I)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "850"
+   }
+  },
+  {
+   "data": "2026-11-05",
+   "titulo": "Quinta-feira, 5 de Novembro de 2026",
+   "dia": "Quinta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "31ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Quinta-feira — 05/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael",
+     "confissao",
+     "Confissões"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Fl 3,3-8a",
+     "s9_qui_l1",
+     "II / 1156"
+    ],
+    [
+     "Salmo",
+     "Sl 104(105),2-3.4-5.6-7 (R. 3b)",
+     "s9_qui_sal",
+     "II / 1156"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Mt 11,28",
+     "s9_qui_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-10",
+     "s9_qui_ev",
+     "II / 1157"
+    ]
+   ],
+   "missal": {
+    "coleta": "413",
+    "oferendas": "413",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)",
+    "comunhao": "413"
+   }
+  },
+  {
+   "data": "2026-11-06",
+   "titulo": "Sexta-feira, 6 de Novembro de 2026",
+   "dia": "Sexta",
+   "cor": "branco",
+   "grau": "Missa Votiva",
+   "celebracao": "Missa Votiva do Sagrado Coração de Jesus; Adoração Eucarística Solene",
+   "selecaoTitulo": "Sexta-feira — 06/11",
+   "escala": [
+    [
+     "05h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Djhon — Missa Votiva do Sagrado Coração de Jesus"
+    ],
+    [
+     "12h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto — Missa Votiva do Sagrado Coração de Jesus"
+    ],
+    [
+     "19h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto — Adoração Eucarística Solene"
+    ],
+    [
+     "12h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Fl 3,17-4,1",
+     "s9_sex_l1",
+     "II / 1160"
+    ],
+    [
+     "Salmo",
+     "Sl 121(122),1-2.3-4a.4b-5 (R. 1)",
+     "s9_sex_sal",
+     "II / 1160"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "1Jo 2,5",
+     "s9_sex_acl"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,1-8",
+     "s9_sex_ev",
+     "II / 1161"
+    ]
+   ],
+   "missal": {
+    "coleta": "1140",
+    "oferendas": "1140",
+    "prefacio": "1141 (Sagrado Coração de Jesus — O imenso amor de Cristo)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "1142"
+   },
+   "nota": "Missa Votiva do Sagrado Coração de Jesus (Missal, Missas Votivas, n. 8), com as leituras da féria. Somente na Missa das 12h00: 10 minutos antes, um integrante do Apostolado da Oração inicia a Ladainha do Sagrado Coração de Jesus.",
+   "botoes": [
+    {
+     "tipo": "roteiro",
+     "chave": "votiva",
+     "rotulo": "Roteiro — Missa Votiva do Sagrado Coração"
+    },
+    {
+     "tipo": "roteiro",
+     "chave": "adoracao",
+     "rotulo": "Roteiro — Adoração Eucarística Solene (19h30)"
+    }
+   ]
+  }
+ ],
+ "fimDeSemana": {
+  "titulo": "Fim de semana: 7 e 8 de Novembro de 2026",
+  "dia": "Sábado",
+  "cor": "verde",
+  "grau": "Domingo",
+  "celebracao": "32º Domingo do Tempo Comum, Ano A — sábado vespertino e domingo",
+  "selecaoTitulo": "Fim de semana — 07 e 08/11 — 32º Domingo do Tempo Comum",
+  "dias": [
+   {
+    "data": "2026-11-07",
+    "dia": "Sábado",
+    "escala": [
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Djhon"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Capela de Pedra",
+      "Pe. Heriberto",
+      "casamento",
+      "Matrimônio — Roberto e Luana"
+     ],
+     [
+      "20h00",
+      "Igreja Matriz",
+      "Pe. Resende",
+      "casamento",
+      "Matrimônio — Sidarta e Anna"
+     ]
+    ]
+   },
+   {
+    "data": "2026-11-08",
+    "dia": "Domingo",
+    "escala": [
+     [
+      "09h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "11h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ]
+   }
+  ],
+  "leituras": [
+   [
+    "1ª Leitura",
+    "Sb 6,12-16",
+    "s9_dom_l1",
+    "I / 351"
+   ],
+   [
+    "Salmo",
+    "Sl 62(63),2.3-4.5-6.7-8 (R. 2b)",
+    "s9_dom_sal",
+    "I / 351"
+   ],
+   [
+    "2ª Leitura",
+    "1Ts 4,13-18",
+    "s9_dom_l2",
+    "I / 352"
+   ],
+   [
+    "2ª Leitura (mais breve)",
+    "1Ts 4,13-14",
+    "s9_dom_l2_breve",
+    "I / 352"
+   ],
+   [
+    "Aclamação ao Evangelho",
+    "Mt 24,42a.44",
+    "s9_dom_acl"
+   ],
+   [
+    "Evangelho",
+    "Mt 25,1-13",
+    "s9_dom_ev",
+    "I / 353"
+   ]
+  ],
+  "missal": {
+   "gloria": "Cantado (pág. 442)",
+   "coleta": "414",
+   "creio": "Rezado (página omitida)",
+   "oferendas": "414",
+   "prefacio": "479 (Domingos do Tempo Comum VI)",
+   "eucaristica": "537 (OE II)",
+   "comunhao": "414"
+  },
+  "antifonas": "antifonas_9"
+ },
+ "documentos": [
+  "semanas/2026-11-02/Escala Padres 2 a 8 novembro 2026.docx",
+  "semanas/2026-11-02/Leituras de 2 a 8 de novembro de 2026.docx",
+  "semanas/2026-11-02/Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx",
+  "semanas/2026-11-02/Missal - 2 a 8 novembro_2026.xlsx",
+  "semanas/2026-11-02/Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx",
+  "semanas/2026-11-02/PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx",
+  "semanas/2026-11-02/Antífona da entrada e comunhão - Fiéis Defuntos 02-11-2026.docx",
+  "semanas/2026-11-02/MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx",
+  "semanas/2026-11-02/ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf",
+  "semanas/2026-11-02/32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx",
+  "semanas/2026-11-02/PRECES - 32º DOMINGO TEMPO COMUM.docx",
+  "semanas/2026-11-02/Antífona da entrada e comunhão - 32º Domingo do Tempo Comum 08-11-2026.docx"
+ ],
+ "leituras": {
+  "s9_seg_l1": {
+   "title": "1ª Leitura — Jó 19,1.23-27a (Lecionário I, pág. 1052)",
+   "day": "Segunda-feira (02/11) — Fiéis Defuntos",
+   "text": "PRIMEIRA LEITURA\nEu sei que o meu Redentor está vivo.\nLeitura do Livro de Jó 19,1.23-27a\n1\nJó tomou a palavra e disse:\n23\n\"Gostaria que minhas palavras fossem escritas\ne gravadas numa inscrição\n24\ncom ponteiro de ferro e com chumbo,\ncravadas na rocha para sempre!\n25\nEu sei que o meu redentor está vivo\ne que, por último, se levantará sobre o pó;\n26\ne depois que tiverem destruído esta minha pele,\nna minha carne, verei a Deus.\n27a\nEu mesmo o verei,\nmeus olhos o contemplarão,\ne não os olhos de outros\".\nPalavra do Senhor."
+  },
+  "s9_seg_sal": {
+   "title": "Salmo Responsorial — Sl 22(23),1-3.4.5.6 (R. 1 ou 4a) (Lecionário I, pág. 1061)",
+   "day": "Segunda-feira (02/11) — Fiéis Defuntos",
+   "text": "Salmo responsorial\nSl 22(23),1-3.4.5.6 (R. 1 ou 4a)\n\nR. O Senhor é o pastor que me conduz,\nnão me falta coisa alguma.\n\nOu: Mesmo que eu passe pelo vale tenebroso,\nnenhum mal eu temerei.\n1\nO Senhor é o pastor que me conduz; *\nnão me falta coisa alguma.\n2\nPelos prados e campinas verdejantes *\nele me leva a descansar. R.\n\nPara as águas repousantes me encaminha, *\n3\ne restaura as minhas forças.\nEle me guia no caminho mais seguro, *\npela honra do seu nome. R.\n\n4\nMesmo que eu passe pelo vale tenebroso, *\nnenhum mal eu temerei.\nEstais comigo com bastão e com cajado, *\neles me dão a segurança! R.\n\n5\nPreparais à minha frente uma mesa, *\nbem à vista do inimigo;\ncom óleo vós ungis minha cabeça, *\ne o meu cálice transborda. R.\n\n6\nFelicidade e todo bem hão de seguir-me, *\npor toda a minha vida;\ne, na casa do Senhor, habitarei *\npelos tempos infinitos. R."
+  },
+  "s9_seg_l2": {
+   "title": "2ª Leitura — 1Cor 15,20-24a.25-28 (Lecionário I, pág. 1073)",
+   "day": "Segunda-feira (02/11) — Fiéis Defuntos",
+   "text": "SEGUNDA LEITURA\nEm Cristo todos reviverão.\nLeitura da Primeira Carta de São Paulo aos Coríntios 15,20-24a.25-28\n\nIrmãos:\n20\nCristo ressuscitou dos mortos\ncomo primícias dos que morreram.\n21\nCom efeito, por um homem veio a morte\ne é também por um homem\nque vem a ressurreição dos mortos.\n22\nComo em Adão todos morrem,\nassim também em Cristo todos reviverão.\n23\nPorém, cada qual segundo uma ordem determinada:\nEm primeiro lugar, Cristo, como primícias;\ndepois, os que pertencem a Cristo,\npor ocasião da sua vinda.\n24a\nA seguir, será o fim,\nquando ele entregar a realeza a Deus-Pai.\n25\nPois é preciso que ele reine até que\ntodos os seus inimigos estejam debaixo de seus pés.\n26\nO último inimigo a ser destruído é a morte.\n27\nCom efeito, \"Deus pôs tudo debaixo de seus pés\".\nMas, quando ele disser: \"Tudo está submetido\",\né claro que estará excluído dessa submissão\naquele que submeteu tudo a Cristo.\n28\nE, quando todas as coisas estiverem submetidas a ele,\nentão o próprio Filho se submeterá\nàquele que lhe submeteu todas as coisas,\npara que Deus seja tudo em todos.\nPalavra do Senhor."
+  },
+  "s9_seg_acl": {
+   "title": "Aclamação ao Evangelho — Jo 6,39",
+   "day": "Segunda-feira (02/11) — Fiéis Defuntos",
+   "text": "Aclamação ao Evangelho\nJo 6,39\nR. Aleluia, Aleluia, Aleluia.\nV. É esta a vontade de quem me enviou:\n    que eu não perca nenhum dos que ele me deu,\n    mas que eu os ressuscite no último dia."
+  },
+  "s9_seg_ev": {
+   "title": "Evangelho — Lc 12,35-40 (Lecionário I, pág. 1087)",
+   "day": "Segunda-feira (02/11) — Fiéis Defuntos",
+   "text": "EVANGELHO\nVós também, ficai preparados!\nProclamação do Evangelho de Jesus Cristo segundo Lucas 12,35-40\n\nNaquele tempo, disse Jesus a seus discípulos:\n35\nQue vossos rins estejam cingidos e as lâmpadas acesas.\n36\nSede como homens que estão esperando\nseu senhor voltar de uma festa de casamento,\npara lhe abrir, imediatamente, a porta,\nlogo que ele chegar e bater.\n37\nFelizes os empregados\nque o senhor encontrar acordados quando chegar.\nEm verdade eu vos digo:\nEle mesmo vai cingir-se, fazê-los sentar-se à mesa\ne, passando, os servirá.\n38\nE caso ele chegue à meia-noite ou às três da madrugada,\nfelizes serão, se assim os encontrar!\n39\nMas ficai certos: se o dono da casa\nsoubesse a hora em que o ladrão iria chegar,\nnão deixaria que arrombasse a sua casa.\n40\nVós também, ficai preparados!\nPorque o Filho do Homem vai chegar\nna hora em que menos o esperardes\".\nPalavra da Salvação."
+  },
+  "s9_ter_l1": {
+   "title": "1ª Leitura — Fl 2,5-11 (Lecionário II, pág. 1149)",
+   "day": "Terça-feira (03/11)",
+   "text": "PRIMEIRA LEITURA\nHumilhou-se a si mesmo, por isso, Deus o exaltou.\nLeitura da Carta de São Paulo aos Filipenses 2,5-11\n\nIrmãos,\n5\ntende entre vós o mesmo sentimento\nque existe em Cristo Jesus.\n6\nJesus Cristo, existindo em condição divina,\nnão fez do ser igual a Deus uma usurpação,\n7\nmas ele esvaziou-se a si mesmo,\nassumindo a condição de escravo\ne tornando-se igual aos homens.\nEncontrado com aspecto humano,\n8\nhumilhou-se a si mesmo,\nfazendo-se obediente até a morte,\ne morte de cruz.\n9\nPor isso, Deus o exaltou acima de tudo\ne lhe deu o Nome que está acima de todo nome.\n10\nAssim, ao nome de Jesus,\ntodo o joelho se dobre no céu,\nna terra e abaixo da terra,\n11\ne toda língua proclame :\n\"Jesus Cristo é o Senhor\"\n- para a glória de Deus Pai.\nPalavra do Senhor."
+  },
+  "s9_ter_sal": {
+   "title": "Salmo Responsorial — Sl 21(22),26b-27.28-30a.31-32 (R. 26a) (Lecionário II, pág. 1150)",
+   "day": "Terça-feira (03/11)",
+   "text": "Salmo responsorial\nSl 21(22),26b-27.28-30a.31-32 (R. 26a)\n\nR. Ó Senhor, sois meu louvor em meio à grande assembleia!\n26b\nCumpro meus votos ante aqueles que vos temem! *\n27\nVossos pobres vão comer e saciar-se,\ne os que procuram o Senhor o louvarão: *\n\"Seus corações tenham a vida para sempre!\" R.\n\n28\nLembrem-se disso os confins de toda a terra, *\npara que voltem ao Senhor e se convertam,\ne se prostrem, adorando, diante dele *\ntodos os povos e as famílias das nações.\n29\nPois ao Senhor é que pertence a realeza; †\nele domina sobre todas as nações. *\n30a\nSomente a ele adorarão os poderosos. R.\n\n31\nToda a minha descendência há de servi-lo; †\nàs futuras gerações anunciará, *\n32\no poder e a justiça do Senhor;\nao povo novo que há de vir, ela dirá: *\n\"Eis a obra que o Senhor realizou!\" R."
+  },
+  "s9_ter_acl": {
+   "title": "Aclamação ao Evangelho — Mt 11,28",
+   "day": "Terça-feira (03/11)",
+   "text": "Aclamação ao Evangelho\nMt 11,28\n\nR. Aleluia, Aleluia, Aleluia.\nV. Vinde a mim, todos vós que estais cansados,\n    e descanso eu vos darei, diz o senhor."
+  },
+  "s9_ter_ev": {
+   "title": "Evangelho — Lc 14,15-24 (Lecionário II, pág. 1150)",
+   "day": "Terça-feira (03/11)",
+   "text": "EVANGELHO\nSai pelas estradas e atalhos, e obriga as pessoas\na virem aqui, para que minha casa fique cheia.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 14,15-24\n\nNaquele tempo,\n15\num homem que estava à mesa,\ndisse a Jesus:\n\"Feliz aquele que come o pão no Reino de Deus!\"\n16\nJesus respondeu:\n\"Um homem deu um grande banquete\ne convidou muitas pessoas.\n17\nNa hora do banquete, mandou seu empregado\ndizer aos convidados:\n'Vinde, pois tudo está pronto'.\n18\nMas todos, um a um, começaram a dar desculpas.\nO primeiro disse:\n'Comprei um campo, e preciso ir vê-lo.\nPeço-te que aceites minhas desculpas'.\n19\nUm outro disse:\n'Comprei cinco juntas de bois,\ne vou experimentá-las.\nPeço-te que aceites minhas desculpas'.\n20\nUm terceiro disse:\n'Acabo de me casar e, por isso, não posso ir'.\n21\nO empregado voltou e contou tudo ao patrão.\nEntão o dono da casa ficou muito zangado\ne disse ao empregado:\n'Sai depressa pelas praças e ruas da cidade.\nTraze para cá os pobres,\nos aleijados, os cegos e os coxos'.\n22\nO empregado disse:\n'Senhor, o que tu mandaste fazer foi feito,\ne ainda há lugar'.\n23\nO patrão disse ao empregado:\n'Sai pelas estradas e atalhos,\ne obriga as pessoas a virem aqui,\npara que minha casa fique cheia'.\n24\nPois eu vos digo:\nnenhum daqueles que foram convidados\nprovará do meu banquete'\".\nPalavra da Salvação."
+  },
+  "s9_qua_l1": {
+   "title": "1ª Leitura — Fl 2,12-18 (Lecionário II, pág. 1152)",
+   "day": "Quarta-feira (04/11) — São Carlos Borromeu",
+   "text": "PRIMEIRA LEITURA\nTrabalhai para a vossa salvação;\nDeus é que realiza em vós tanto o querer como o fazer.\nLeitura da Carta de São Paulo aos Filipenses 2,12-18\n12\nMeus queridos,\ncomo sempre fostes obedientes,\nnão só em minha presença,\nmas ainda mais agora na minha ausência,\ntrabalhai para a vossa salvação, com temor e tremor.\n13\nPois é Deus que realiza em vós\ntanto o querer como o fazer,\nconforme o seu desígnio benevolente.\n14\nFazei tudo sem reclamar ou murmurar,\n15\npara que sejais livres de repreensão e ambiguidade,\nfilhos de Deus sem defeito,\nno meio desta geração depravada e pervertida,\nna qual brilhais como os astros no universo.\n16\nConservai com firmeza a palavra da vida.\nAssim, no dia de Cristo,\nterei a glória de não ter corrido em vão,\nnem trabalhado inutilmente.\n17\nE ainda que eu seja oferecido em libação,\nno sacrifício que é o sagrado serviço de vossa fé,\nfico feliz e alegro-me com todos vós.\n18\nVós também, alegrai-vos pelo mesmo motivo\ne congratulai-vos comigo.\nPalavra do Senhor."
+  },
+  "s9_qua_sal": {
+   "title": "Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a) (Lecionário II, pág. 1153)",
+   "day": "Quarta-feira (04/11) — São Carlos Borromeu",
+   "text": "Salmo responsorial  Sl 26 (27),1.4.13-14 (R. 1a)\nR. O Senhor é minha luz e salvação!\n1\nO Senhor é minha luz e salvação; *\nde quem eu terei medo?\nO Senhor é a proteção da minha vida; *\nperante quem eu tremerei? R.\n\n4\nAo Senhor eu peço apenas uma coisa, *\ne é só isto que eu desejo:\nhabitar no santuário do Senhor *\npor toda a minha vida;\nsaborear a suavidade do Senhor *\ne contemplá-lo no seu templo. R.\n\n13\nSei que a bondade do Senhor eu hei de ver *\nna terra dos viventes.\n14\nEspera no Senhor e tem coragem, *\nespera no Senhor! R."
+  },
+  "s9_qua_acl": {
+   "title": "Aclamação ao Evangelho — 1Pd 4,14",
+   "day": "Quarta-feira (04/11) — São Carlos Borromeu",
+   "text": "Aclamação ao Evangelho\n1Pd 4,14\n\nR. Aleluia, Aleluia, Aleluia.\nV. Felizes sereis vós, se fordes ultrajados\n    por causa de Jesus, pois repousa sobre vós\n    o Espírito de Deus."
+  },
+  "s9_qua_ev": {
+   "title": "Evangelho — Lc 14,25-33 (Lecionário II, pág. 1154)",
+   "day": "Quarta-feira (04/11) — São Carlos Borromeu",
+   "text": "EVANGELHO\nQualquer um de vós, se não renunciar a tudo\no que tem, não pode ser meu discípulo!\nProclamação do Evangelho de Jesus Cristo segundo Lucas 14,25-33\n\nNaquele tempo,\n25\ngrandes multidões acompanhavam Jesus.\nVoltando-se, ele lhes disse:\n26\n\"Se alguém vem a mim,\nmas não se desapega de seu pai e sua mãe,\nsua mulher e seus filhos,\nseus irmãos e suas irmãs\ne até da sua própria vida,\nnão pode ser meu discípulo.\n27\nQuem não carrega sua cruz\ne não caminha atrás de mim,\nnão pode ser meu discípulo.\n28\nCom efeito:\nqual de vós, querendo construir uma torre,\nnão se senta primeiro e calcula os gastos,\npara ver se tem o suficiente para terminar?\nCaso contrário,\n29\nele vai lançar o alicerce\ne não será capaz de acabar.\nE todos os que virem isso\ncomeçarão a caçoar, dizendo:\n30\n'Este homem começou a construir\ne não foi capaz de acabar!'\n31\nOu ainda:\nQual o rei que ao sair para guerrear com outro,\nnão se senta primeiro e examina bem\nse com dez mil homens poderá enfrentar o outro\nque marcha contra ele com vinte mil?\n32\nSe ele vê que não pode,\nenquanto o outro rei ainda está longe,\nenvia mensageiros para negociar as condições de paz.\n33\nDo mesmo modo, portanto, qualquer um de vós,\nse não renunciar a tudo o que tem,\nnão pode ser meu discípulo!\"\nPalavra da Salvação."
+  },
+  "s9_qui_l1": {
+   "title": "1ª Leitura — Fl 3,3-8a (Lecionário II, pág. 1156)",
+   "day": "Quinta-feira (05/11)",
+   "text": "PRIMEIRA LEITURA\nEssas coisas, que eram vantagens para mim,\nconsiderei-as como perda, por causa de Cristo.\nLeitura da Carta de São Paulo aos Filipenses 3,3-8a\n\nIrmãos,\n3\nos verdadeiros circuncidados somos nós,\nque prestamos culto pelo Espírito de Deus,\ncolocamos a nossa glória em Cristo Jesus\ne não pomos confiança na carne.\n4\nAliás, também eu poderia pôr minha confiança na carne.\nPois, se algum outro pensa\nque pode confiar na carne,\neu mais ainda.\n5\nFui circuncidado no oitavo dia,\nsou da raça de Israel, da tribo de Benjamim,\nhebreu filho de hebreus.\nEm relação à Lei, fariseu,\n6\npelo zelo, perseguidor da Igreja de Deus;\nquanto à justiça que vem da Lei,\nsempre irrepreensível.\n7\nMas essas coisas,\nque eram vantagens para mim,\nconsiderei-as como perda, por causa de Cristo.\n8a\nNa verdade, considero tudo como perda\ndiante da vantagem suprema que consiste\nem conhecer a Cristo Jesus, meu Senhor.\nPalavra do Senhor."
+  },
+  "s9_qui_sal": {
+   "title": "Salmo Responsorial — Sl 104(105),2-3.4-5.6-7 (R. 3b) (Lecionário II, pág. 1156)",
+   "day": "Quinta-feira (05/11)",
+   "text": "Salmo responsorial\nSl 104(105),2-3.4-5.6-7 (R. 3b)\n\nR. Exulte o coração dos que buscam o Senhor!\nOu: Aleluia, Aleluia, Aleluia\n2\nCantai, entoai salmos para ele, *\npublicai todas as suas maravilhas!\n3\nGloriai-vos em seu nome que é santo, *\nexulte o coração que busca a Deus! R.\n\n4\nProcurai o Senhor Deus e seu poder, *\nbuscai constantemente a sua face!\n5\nLembrai as maravilhas que ele fez, *\nseus prodígios e as palavras de seus lábios! R.\n\n6\nDescendentes de Abraão, seu servidor, *\ne filhos de Jacó, seu escolhido,\n7\nele mesmo, o Senhor, é nosso Deus, *\nvigoram suas leis em toda a terra. R."
+  },
+  "s9_qui_acl": {
+   "title": "Aclamação ao Evangelho — Mt 11,28",
+   "day": "Quinta-feira (05/11)",
+   "text": "Aclamação ao Evangelho\nMt 11,28\n\nR. Aleluia, Aleluia, Aleluia.\nV. Vinde a mim, todos vós que estais cansados,\n    e descanso eu vos darei, diz o Senhor."
+  },
+  "s9_qui_ev": {
+   "title": "Evangelho — Lc 15,1-10 (Lecionário II, pág. 1157)",
+   "day": "Quinta-feira (05/11)",
+   "text": "EVANGELHO\nHaverá alegria no céu por um só pecador que se converte.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 15,1-10\n\nNaquele tempo,\n1\nos publicanos e pecadores\naproximavam-se de Jesus para o escutar.\n2\nOs fariseus, porém,\ne os mestres da Lei criticavam Jesus.\n\"Este homem acolhe os pecadores\ne faz refeição com eles\".\n3\nEntão Jesus contou-lhes esta parábola:\n4\n\"Se um de vós tem cem ovelhas e perde uma,\nnão deixa as noventa e nove no deserto,\ne vai atrás daquela que se perdeu,\naté encontrá-la?\n5\nQuando a encontra,\ncoloca-a nos ombros com alegria,\n6\ne, chegando a casa,\nreúne os amigos e vizinhos,\ne diz:\n'Alegrai-vos comigo!\nEncontrei a minha ovelha que estava perdida!'\n7\nEu vos digo:\nAssim haverá no céu mais alegria\npor um só pecador que se converte,\ndo que por noventa e nove justos\nque não precisam de conversão.\n8\nE se uma mulher tem dez moedas de prata\ne perde uma,\nnão acende uma lâmpada,\nvarre a casa e a procura cuidadosamente, até encontrá-la?\n9\nQuando a encontra,\nreúne as amigas e vizinhas, e diz:\n'Alegrai-vos comigo!\nEncontrei a moeda que tinha perdido!'\n10\nPor isso, eu vos digo,\nhaverá alegria entre os anjos de Deus\npor um só pecador que se converte\".\nPalavra da Salvação."
+  },
+  "s9_sex_l1": {
+   "title": "1ª Leitura — Fl 3,17-4,1 (Lecionário II, pág. 1160)",
+   "day": "Sexta-feira (06/11)",
+   "text": "PRIMEIRA LEITURA\nAguardamos o nosso Salvador,\nque transformará o nosso corpo humilhado\ne o tornará semelhante ao seu corpo glorioso.\nLeitura da Carta de São Paulo aos Filipenses 3,17-4,1\n17\nSede meus imitadores, irmãos,\ne observai os que vivem\nde acordo com o exemplo que nós damos.\n18\nJá vos disse muitas vezes, e agora o repito, chorando:\nhá muitos por aí\nque se comportam como inimigos da cruz de Cristo.\n19\nO fim deles é a perdição,\no deus deles é o estômago,\na glória deles está no que é vergonhoso\ne só pensam nas coisas terrenas.\n20\nNós, porém, somos cidadãos do céu.\nDe lá aguardamos o nosso Salvador,\no Senhor, Jesus Cristo.\n21\nEle transformará o nosso corpo humilhado\ne o tornará semelhante ao seu corpo glorioso,\ncom o poder que tem\nde sujeitar a si todas as coisas.\n4,1\nAssim, meus irmãos, a quem quero bem\ne dos quais sinto saudade,\nminha alegria, minha coroa, meus amigos,\ncontinuai firmes no Senhor.\nPalavra do Senhor."
+  },
+  "s9_sex_sal": {
+   "title": "Salmo Responsorial — Sl 121(122),1-2.3-4a.4b-5 (R. 1) (Lecionário II, pág. 1160)",
+   "day": "Sexta-feira (06/11)",
+   "text": "Salmo responsorial\nSl 121(122),1-2.3-4a.4b-5 (R. 1)\nR. Que alegria, quando me disseram:\nVamos à casa Senhor!\n\nOu: Aleluia, Aleluia, Aleluia\n\n1\nQue alegria, quando ouvi que me disseram:*\n\"Vamos à casa do Senhor!\"\n2\nE agora nossos pés já se detêm,*\nJerusalém, em tuas portas. R.\n\n3\nJerusalém, cidade bem edificada *\nnum conjunto harmonioso;\n4a\npara lá sobem as tribos de Israel,*\nas tribos do Senhor. R.\n\nb\nPara louvar, segundo a lei de Israel,*\no nome do Senhor.\n5\nA sede da justiça lá está *\ne o trono de Davi. R."
+  },
+  "s9_sex_acl": {
+   "title": "Aclamação ao Evangelho — 1Jo 2,5",
+   "day": "Sexta-feira (06/11)",
+   "text": "Aclamação ao Evangelho\n1Jo 2,5\n\nR. Aleluia, Aleluia, Aleluia.\nV. O amor de Deus se realiza em todo aquele,\n    que guarda sua palavra fielmente."
+  },
+  "s9_sex_ev": {
+   "title": "Evangelho — Lc 16,1-8 (Lecionário II, pág. 1161)",
+   "day": "Sexta-feira (06/11)",
+   "text": "EVANGELHO\nOs filhos deste mundo são mais espertos\nem seus negócios do que os filhos da luz.\nProclamação do Evangelho de Jesus Cristo segundo Lucas 16,1-8\n\nNaquele tempo,\n1\nJesus disse aos discípulos:\n\"Um homem rico tinha um administrador\nque foi acusado de esbanjar os seus bens.\n2\nEle o chamou e lhe disse:\n'Que é isto que ouço a teu respeito?\nPresta contas da tua administração,\npois já não podes mais administrar meus bens'.\n3\nO administrador então começou a refletir:\n'O senhor vai me tirar a administração.\nQue vou fazer?\nPara cavar, não tenho forças;\nde mendigar, tenho vergonha.\n4\nAh! Já sei o que fazer,\npara que alguém me receba em sua casa\nquando eu for afastado da administração'.\n5\nEntão ele chamou cada um\ndos que estavam devendo ao seu patrão.\nE perguntou ao primeiro:\n'Quanto deves ao meu patrão?'\n6\nEle respondeu: 'Cem barris de óleo!'\nO administrador disse:\n'Pega a tua conta, senta-te, depressa,\ne escreve cinquenta!'\n7\nDepois ele perguntou a outro:\n'E tu, quanto deves?'\nEle respondeu:\n'Cem medidas de trigo'.\nO administrador disse:\n'Pega tua conta e escreve oitenta'.\n8\nE o senhor elogiou o administrador desonesto,\nporque ele agiu com esperteza.\nCom efeito, os filhos deste mundo\nsão mais espertos em seus negócios\ndo que os filhos da luz\".\nPalavra da Salvação."
+  },
+  "s9_dom_l1": {
+   "title": "1ª Leitura — Sb 6,12-16 (Lecionário I, pág. 351)",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "PRIMEIRA LEITURA\nA sabedoria é encontrada por aqueles que a procuram.\nLeitura do Livro da Sabedoria 6,12-16\n12\nA Sabedoria é resplandecente e sempre viçosa.\nEla é facilmente contemplada por aqueles que a amam,\ne é encontrada por aqueles que a procuram.\n13\nEla até se antecipa,\ndando-se a conhecer aos que a desejam.\n14\nQuem por ela madruga não se cansará,\npois a encontrará sentada à sua porta.\n15\nMeditar sobre ela é a perfeição da prudência;\ne quem ficar acordado por causa dela\nem breve há de viver despreocupado.\n16\nPois ela mesma sai à procura dos que a merecem,\ncheia de bondade, aparece-lhes nas estradas\ne vai ao seu encontro em todos os seus projetos.\nPalavra do Senhor."
+  },
+  "s9_dom_sal": {
+   "title": "Salmo Responsorial — Sl 62(63),2.3-4.5-6.7-8 (R. 2b) (Lecionário I, pág. 351)",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "Salmo responsorial  Sl 62(63),2.3-4.5-6.7-8 (R. 2b)\nR. A minh'alma tem sede de vós, e vos deseja, ó Senhor.\n2\nSois vós, ó Senhor, o meu Deus! *\nDesde a aurora ansioso vos busco!\nA minh'alma tem sede de vós, †\nminha carne também vos deseja, *\ncomo terra sedenta e sem água! R.\n\n3\nVenho, assim, contemplar-vos no templo, *\npara ver vossa glória e poder.\n4\nVosso amor vale mais do que a vida: *\ne por isso meus lábios vos louvam. R.\n\n5\nQuero, pois, vos louvar pela vida, *\ne elevar para vós minhas mãos!\n6\nA minh'alma será saciada, †\ncomo em grande banquete de festa; *\ncantará a alegria em meus lábios. R.\n\n7\nPenso em vós no meu leito, de noite, *\nnas vigílias suspiro por vós!\n8\nPara mim fostes sempre um socorro; *\nde vossas asas à sombra eu exulto! R."
+  },
+  "s9_dom_l2": {
+   "title": "2ª Leitura (mais longa) — 1Ts 4,13-18 (Lecionário I, pág. 352)",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "SEGUNDA LEITURA (mais longa)\nDeus trará de volta, com Cristo, os que\natravés dele entraram no sono da morte.\nLeitura da Primeira Carta de São Paulo aos Tessalonicenses 4,13-18\n13\nIrmãos: não queremos deixar-vos na incerteza\na respeito dos mortos,\npara que não fiqueis tristes\ncomo os outros, que não têm esperança.\n14\nSe Jesus morreu e ressuscitou — e esta é nossa fé —\nde modo semelhante Deus trará de volta, com Cristo,\nos que através dele entraram no sono da morte.\n15\nIsto vos declaramos, segundo a palavra do Senhor:\nnós que formos deixados com vida para a vinda do Senhor\nnão levaremos vantagem em relação aos que morreram.\n16\nPois o Senhor mesmo, quando for dada a ordem,\nà voz do arcanjo e ao som da trombeta,\ndescerá do céu,\ne os que morreram em Cristo ressuscitarão primeiro.\n17\nEm seguida, nós que formos deixados com vida\nseremos arrebatados com eles nas nuvens,\npara o encontro com o Senhor, nos ares.\nE assim estaremos sempre com o Senhor.\n18\nExortai-vos, pois, uns aos outros,\ncom essas palavras.\nPalavra do Senhor."
+  },
+  "s9_dom_l2_breve": {
+   "title": "2ª Leitura (mais breve) — 1Ts 4,13-14 (Lecionário I, pág. 352)",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "Leitura da Primeira Carta de São Paulo aos Tessalonicenses 4,13-14\n13\nIrmãos: não queremos deixar-vos na incerteza\na respeito dos mortos,\npara que não fiqueis tristes\ncomo os outros, que não têm esperança.\n14\nSe Jesus morreu e ressuscitou — e esta é nossa fé —\nde modo semelhante Deus trará de volta, com Cristo,\nos que através dele entraram no sono da morte.\nPalavra do Senhor."
+  },
+  "s9_dom_acl": {
+   "title": "Aclamação ao Evangelho — Mt 24,42a.44",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "Aclamação ao Evangelho  Mt 24,42a.44\nR. Aleluia, Aleluia, Aleluia.\nV. É preciso vigiar e ficar de prontidão;\n    em que dia o Senhor há de vir, não sabeis não!"
+  },
+  "s9_dom_ev": {
+   "title": "Evangelho — Mt 25,1-13 (Lecionário I, pág. 353)",
+   "day": "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
+   "text": "EVANGELHO\nO noivo está chegando. Ide ao seu encontro.\nProclamação do Evangelho de Jesus Cristo segundo Mateus 25,1-13\n\nNaquele tempo,\ndisse Jesus a seus discípulos esta parábola:\n1\n\"O Reino dos Céus é como a história das dez jovens\nque pegaram suas lâmpadas de óleo\ne saíram ao encontro do noivo.\n2\nCinco delas eram imprevidentes,\ne as outras cinco eram previdentes.\n3\nAs imprevidentes pegaram as suas lâmpadas,\nmas não levaram óleo consigo.\n4\nAs previdentes, porém, levaram vasilhas com óleo\njunto com as lâmpadas.\n5\nO noivo estava demorando,\ne todas elas acabaram cochilando e dormindo.\n6\nNo meio da noite, ouviu-se um grito:\n'O noivo está chegando. Ide ao seu encontro!'\n7\nEntão as dez jovens se levantaram\ne prepararam as lâmpadas.\n8\nAs imprevidentes disseram às previdentes:\n'Dai-nos um pouco de óleo,\nporque nossas lâmpadas estão se apagando'.\n9\nAs previdentes responderam:\n'De modo nenhum,\nporque o óleo pode ser insuficiente\npara nós e para vós.\nÉ melhor irdes comprar dos vendedores'.\n10\nEnquanto elas foram comprar óleo, o noivo chegou,\ne as que estavam preparadas\nentraram com ele para a festa de casamento.\nE a porta se fechou.\n11\nPor fim, chegaram também as outras jovens e disseram:\n'Senhor! Senhor! Abre-nos a porta!'\n12\nEle, porém, respondeu:\n'Em verdade eu vos digo: Não vos conheço!'\n13\nPortanto, ficai vigiando,\npois não sabeis qual será o dia, nem a hora\".\nPalavra da Salvação."
+  }
+ },
+ "antifonas": {
+  "antifonas_9_defuntos": {
+   "title": "Antífonas, Aclamação e PASCOM — Comemoração de Todos os Fiéis Defuntos (02/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — 1Ts 4,14; 1Cor 15,22",
+     "text": "Se Jesus morreu e ressuscitou, de modo semelhante Deus trará de volta, com Cristo, os que através dele entraram no sono da morte. Como em Adão todos morrem, assim também em Cristo todos reviverão."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "Jo 6,39",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. É esta a vontade de quem me enviou:\n    que eu não perca nenhum dos que ele me deu,\n    mas que eu os ressuscite no último dia."
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — Jo 11,25-26",
+       "text": "Eu sou a ressurreição e a vida, diz o Senhor. Quem crê em mim, mesmo que morra, viverá. E todo aquele que vive e crê em mim, não morrerá jamais."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Primeira Leitura",
+     "text": "Eu sei que o meu Redentor está vivo."
+    },
+    {
+     "label": "Salmo Responsorial",
+     "text": "O Senhor é o pastor que me conduz, não me falta coisa alguma.\nOu: Mesmo que eu passe pelo vale tenebroso, nenhum mal eu temerei."
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "Em Cristo todos reviverão."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Vós também, ficai preparados!"
+    }
+   ]
+  },
+  "antifonas_9": {
+   "title": "Antífonas, Aclamação e PASCOM — 32º Domingo do Tempo Comum (07 e 08/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — cf. Sl 87,3",
+     "text": "Chegue à vossa presença, Senhor, a minha oração; inclinai vosso ouvido à minha prece."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "Mt 24,42a.44",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. É preciso vigiar e ficar de prontidão;\n    em que dia o Senhor há de vir, não sabeis não!"
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — cf. Sl 22,1-2",
+       "text": "O Senhor é o pastor que me conduz; não me falta coisa alguma. Pelos prados e campinas verdejantes ele me leva a descansar. Para as águas repousantes me encaminha."
+      },
+      {
+       "reference": "Cf. Lc 24,35",
+       "text": "Os discípulos reconheceram o Senhor Jesus na fração do pão."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Primeira Leitura",
+     "text": "A sabedoria é encontrada por aqueles que a procuram."
+    },
+    {
+     "label": "Salmo Responsorial",
+     "text": "A minh'alma tem sede de vós, e vos deseja, ó Senhor."
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "Deus trará de volta, com Cristo,\nos que através dele entraram no sono da morte."
+    },
+    {
+     "label": "Evangelho",
+     "text": "O noivo está chegando. Ide ao seu encontro."
+    }
+   ]
+  }
+ },
+ "roteiros": {
+  "roteiro_8": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — 32º Domingo do Tempo Comum — 7 e 8/11/2026",
+   "fonte": "semanas/2026-11-02/32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx",
+   "cabecalho": "32º DOMINGO TEMPO COMUM – 7 e 8 NOVEMBRO 2026 – COR VERDE",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Animador",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Animador",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Animador",
+       "Irmãos e irmãs, sejam todos muito bem-vindos! Neste mês de novembro, a Igreja vive um tempo de especial densidade espiritual. É o período em que voltamos o nosso olhar para o céu ao contemplar a santidade de tantos irmãos que nos precederam, ao mesmo tempo em que nos unimos em fervorosa oração por todos os fiéis falecidos, fortalecendo a nossa esperança na vida eterna e na comunhão dos santos.\nReunidos como família de Deus para celebrar este 32º Domingo do Tempo Comum, peçamos a graça de caminhar com o coração firme na fé e confiantes na misericórdia do Pai. De pé, acompanhemos a procissão de entrada, cantando."
+      ],
+      [
+       "Música",
+       "Canto de Entrada"
+      ],
+      [
+       "Padre",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Animador",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Padre",
+       "Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Música",
+       "Ato Penitencial"
+      ],
+      [
+       "Padre",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador / Telão",
+       "Glória a Deus nas alturas, e paz na terra aos homens por Ele amados. Senhor Deus, rei dos céus, Deus Pai todo-poderoso. Nós vos louvamos, nós vos bendizemos, nós vos adoramos, nós vos glorificamos, nós vos damos graças por vossa imensa glória. Senhor Jesus Cristo, Filho Unigênito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais o pecado do mundo, tende piedade de nós. Vós que tirais o pecado do mundo, acolhei a nossa súplica. Vós que estais à direita do Pai, tende piedade de nós. Só vós sois o Santo, só vós o Senhor, só vós o Altíssimo, Jesus Cristo, com o Espírito Santo, na glória de Deus Pai. Amém."
+      ],
+      [
+       "Padre",
+       "Oração da Coleta (pág. 414)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "1ª Leitura",
+       "Sb 6,12-16"
+      ],
+      [
+       "1ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Salmo Responsorial Sl 62(63),2.3-4.5-6.7-8 (R. 2b)"
+      ],
+      [
+       "2ª Leitura",
+       "1Ts 4,13-18"
+      ],
+      [
+       "2ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Aclamação ao Evangelho ."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Proclamação do Evangelho de Jesus Cristo segundo Mateus."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Mt 25,1-13"
+      ],
+      [
+       "Padre",
+       "Palavra da Salvação."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Homilia."
+      ],
+      [
+       "Padre",
+       "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Animador",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Padre / Animador",
+       "(Profissão de fé)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."
+      ],
+      [
+       "Padre",
+       "Fará a introdução as preces"
+      ],
+      [
+       "Animador",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Animador",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Música",
+       "Canto das Oferendas"
+      ],
+      [
+       "Padre",
+       "Preparação das oferendas."
+      ],
+      [
+       "Padre",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Animador",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Padre",
+       "Oração sobre as Oferendas (pág. 414)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Corações ao alto."
+      ],
+      [
+       "Animador",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Padre",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Animador",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Padre",
+       "Prefácio dos Domingos do Tempo Comum VI (pág. 479)"
+      ],
+      [
+       "Padre",
+       "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. (...) Por isso, também nós vos louvamos, com todos os Anjos, cantando em alegre celebração a uma só voz:"
+      ],
+      [
+       "Música",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Padre",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Padre",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+      ],
+      [
+       "Animador",
+       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+      ],
+      [
+       "Padre",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Animador",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Padre",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Animador",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Animador",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Animador",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Padre",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Padre",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Padre",
+       "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Padre",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Padre",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Animador",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Animador",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Padre",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Animador",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Padre",
+       "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"
+      ],
+      [
+       "Animador",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Música",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Padre",
+       "Oração depois da Comunhão (pág. 414)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Padre",
+       "Avisos Paroquiais / Aniversariantes/ Bênção dos Pães"
+      ],
+      [
+       "Padre",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Animador",
+       "Rogai por nós."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco!"
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Ide em paz e o Senhor vos acompanhe."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "roteiro_8_defuntos": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — Comemoração de Todos os Fiéis Defuntos — 02/11/2026",
+   "botao": "📖 Roteiro — Fiéis Defuntos",
+   "fonte": "semanas/2026-11-02/Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx",
+   "cabecalho": "COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS – 02 11 2026 – COR ROXO",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "O animador, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da purificação dos vasos sagrados (Cálice e patena)."
+      ],
+      [
+       "Orientação",
+       "Liturgia / Música: no fim de semana anterior (31/10 e 1/11), orientar os fiéis a trazerem de casa, já escritas, as intenções pelos falecidos. Preparar no átrio do templo um local para receber as intenções. Na frente da igreja, preparar o local para a cruz com velas, que representará o cruzeiro, com um recipiente para depositar as intenções. Antes da oração da coleta, o padre fará o convite para a entrada das intenções pelo corredor central, que serão depositadas junto à cruz (preparar pessoas para a entrada), acompanhado por uma música apropriada"
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Animador",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Animador",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Animador",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nIrmãos e irmãs, bem-vindos. Hoje, a Igreja se recolhe em oração por todos os fiéis defuntos. Como peregrinos da esperança, estendemos essa esperança aos nossos irmãos e irmãs que já completaram sua peregrinação terrena. A liturgia de hoje não é de luto, mas de profunda confiança. A Palavra de Deus nos assegura a promessa de Jesus: \"Eu sou a ressurreição e a vida; quem crê em mim, ainda que esteja morto, viverá\". Com essa fé, oferecemos esta Eucaristia em sufrágio de suas almas. Pedimos que a misericórdia de Deus os purifique e os acolha na luz da eternidade. Iniciemos nossa celebração."
+      ],
+      [
+       "Música",
+       "Canto de Entrada"
+      ],
+      [
+       "Padre",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Animador",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Padre",
+       "Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Música",
+       "Ato Penitencial"
+      ],
+      [
+       "Padre",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Fazer o convite para a entrada das intenções pelos falecidos (antes do “Oremos” da coleta). As intenções são levadas pelo corredor central e depositadas junto à cruz com velas (cruzeiro)."
+      ],
+      [
+       "Música",
+       "Música apropriada e breve, finalizar quando as intenções forem depositadas junto à cruz ."
+      ],
+      [
+       "Padre",
+       "Oração da Coleta (pág. 846)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "1ª Leitura",
+       "Jó 19,1.23-27a"
+      ],
+      [
+       "1ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Salmo Responsorial Sl 22(23),1-3.4.5.6 (R. 1 ou 4a)\nR. O Senhor é o pastor que me conduz, não me falta coisa alguma."
+      ],
+      [
+       "2ª Leitura",
+       "1Cor 15,20-24a.25-28"
+      ],
+      [
+       "2ª Leitura",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Aclamação ao Evangelho .\nR. Aleluia, Aleluia, Aleluia.\nV. É esta a vontade de quem me enviou:\nque eu não perca nenhum dos que ele me deu,\nmas que eu os ressuscite no último dia."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Proclamação do Evangelho de Jesus Cristo segundo Lucas."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Lc 12,35-40"
+      ],
+      [
+       "Padre",
+       "Palavra da Salvação."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Homilia."
+      ],
+      [
+       "Padre",
+       "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Animador",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Padre",
+       "Fará a introdução as preces"
+      ],
+      [
+       "Animador",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Animador",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Música",
+       "Canto das Oferendas"
+      ],
+      [
+       "Padre",
+       "Preparação das oferendas."
+      ],
+      [
+       "Padre",
+       "Orai, irmãos e irmãs, para que o meu e o vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Animador",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Padre",
+       "Oração Sobre as Oferendas (pág. 846)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Corações ao alto."
+      ],
+      [
+       "Animador",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Padre",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Animador",
+       "É nosso dever e nossa salvação"
+      ],
+      [
+       "Padre",
+       "Prefácio dos Defuntos I (pág. 518)"
+      ],
+      [
+       "Padre",
+       "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso, por Cristo, Senhor nosso. (...) entoamos o hino da vossa glória, cantando a uma só voz:"
+      ],
+      [
+       "Música",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Padre",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Padre",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+      ],
+      [
+       "Animador",
+       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+      ],
+      [
+       "Padre",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Animador",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Padre",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Animador",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Animador",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Animador",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Padre",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Padre",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Padre",
+       "(Missal – pág. 569) Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Padre",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Padre",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Animador",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Animador",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Padre",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Animador",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Padre",
+       "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"
+      ],
+      [
+       "Animador",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Música",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Padre",
+       "Oração depois da Comunhão (pág. 846)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Padre",
+       "Avisos Paroquiais / Aniversariantes/ Bênção dos Pães"
+      ],
+      [
+       "Padre",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Animador",
+       "Rogai por nós."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco! Bênção Solene – Celebração pelos Fiéis Defuntos (pág. 588)"
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Deus, criador e Pai, que na ressurreição do seu Filho deu aos que creem a esperança na ressurreição, derrame sobre vós a sua bênção."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Cristo, que nos redimiu por sua cruz, vos renove em seu amor e conceda aos que morreram a luz e a paz."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Espírito Consolador conceda gozar a felicidade prometida a vós que esperais a vinda gloriosa do Senhor."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Ide em paz e o Senhor vos acompanhe."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "roteiro_8_adoracao": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — Adoração Eucarística Solene — 06/11/2026 — 19h30",
+   "botao": "📖 Roteiro — Adoração Solene",
+   "fonte": "semanas/2026-11-02/ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf",
+   "cabecalho": "ADORAÇÃO EUCARÍSTICA SOLENE – NOVEMBRO 2026 – 19h30 – COR BRANCO",
+   "secoes": [
+    {
+     "titulo": "ADORAÇÃO EUCARÍSTICA",
+     "linhas": [
+      [
+       "Liturgia",
+       "Iluminação na penumbra para a Igreja (momentos antes de iniciar a celebração)."
+      ],
+      [
+       "Animador",
+       "Queridos irmãos e irmãs, que o Senhor lhes conceda a sua paz!\nA Palavra de Deus nos convida a refletir sobre o fim dos tempos e sobre os acontecimentos que o precedem. Jesus fala de destruições, perseguições, guerras e grandes sofrimentos. E, quando olhamos para o mundo de hoje, percebemos como essas palavras continuam atuais. São tantas famílias sofrendo, tantas vidas perdidas, tantas pessoas vivendo entre o medo, a dor e a incerteza.\nMas é justamente em meio a essas situações tão difíceis que a Palavra de Deus vem iluminar o nosso coração e renovar a nossa esperança.\nO mesmo Deus que esteve com Jesus no sofrimento da cruz também está ao nosso lado. Ele não nos abandona nas horas difíceis. Pelo contrário, é justamente quando a dor parece maior que o seu amor se faz ainda mais presente.\nE a cruz nos recorda uma verdade muito bonita: o sofrimento e a morte não têm a última palavra. A última palavra pertence a Deus, e essa palavra é vida, é amor, é ressurreição!\nDaqui a pouco, contemplaremos Jesus que, por amor, se faz Pão para nós na Eucaristia. Ele vem ao nosso encontro, alimenta a nossa fé, fortalece os nossos passos e nos dá coragem para continuar caminhando, mesmo quando a estrada parece difícil.\nQue esta celebração renove em cada um de nós a certeza de que, aconteça o que acontecer, quem caminha com Cristo nunca caminha sozinho.\nCom essa confiança, iniciemos a Adoração."
+      ],
+      [
+       "Acólito",
+       "Toca-se o sino por 3 vezes e abre-se a porta central da Igreja. Ao iniciar o canto, entram em procissão na seguinte ordem: Turiferário, naveteiro, ceroferários, diácono com o Evangeliário elevado e demais celebrantes."
+      ],
+      [
+       "Música",
+       "VERBUM PANIS — Procissão de entrada"
+      ],
+      [
+       "Diácono",
+       "O diácono, chegando ao presbitério, apresenta o Evangeliário e o coloca na credência ao lado do sacrário.\nBusca a Hóstia Consagrada no Sacrário, coloca no Ostensório, aguarda finalizar o canto e leva ao altar para ser exposto."
+      ],
+      [
+       "Música",
+       "Canto de Exposição — inicia assim que finalizar o canto anterior e termina assim que o padre ajoelhar, após a incensação."
+      ],
+      [
+       "Coroinhas",
+       "Apresentam o turíbulo e a naveta para a incensação."
+      ],
+      [
+       "Padre",
+       "O padre incensa o Sacramento."
+      ],
+      [
+       "Padre",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Nós vos adoramos e vos louvamos, Senhor Jesus Cristo, porque pela vossa admirável Cruz redimistes o mundo inteiro."
+      ],
+      [
+       "Música",
+       "Fundo musical em preparação para a próxima música."
+      ],
+      [
+       "Padre",
+       "Senhor Jesus Cristo, nós vos adoramos aqui, neste lugar santo, onde o Senhor se faz presente. Nós vos adoramos na Eucaristia, sob a aparência tão simples do Pão, na qual escolhestes permanecer para sempre conosco.\nSenhor, tudo neste mundo é passageiro. Até mesmo as construções mais grandiosas e os edifícios mais belos e imponentes acabam desaparecendo com o passar do tempo. Foi assim com o Templo de Jerusalém, que, nos dias de vossa vida terrena, despertava tanta admiração por sua beleza e grandiosidade, mas que acabou sendo destruído.\nTudo passa, Senhor. Somente vós permaneceis para sempre. Vós sois o fundamento seguro da nossa vida. O vosso amor é a rocha firme sobre a qual podemos construir a nossa existência.\nPor isso, não precisamos e nem devemos permitir que as dificuldades, os acontecimentos ou as pessoas roubem a paz do nosso coração. Nem mesmo as guerras, os conflitos e as desordens deste mundo devem nos fazer perder a confiança em vós.\nNo Evangelho, Senhor, falais de acontecimentos assustadores que precederão a vossa vinda: guerras, terremotos, epidemias, fome e grandes calamidades. Falais também das perseguições que atingirão aqueles que acreditam em vós. E nos alertais que, muitas vezes, a incompreensão e a rejeição poderão surgir até mesmo dentro da própria família.\nMas, ao mesmo tempo em que nos apresentais essas dificuldades, também nos ofereceis uma palavra de esperança e de coragem. Vós nos dizeis que não devemos ficar preocupados antecipadamente com a maneira de nos defender, porque, no momento necessário, nos dareis palavras e sabedoria que os nossos adversários não poderão contradizer nem contestar.\nSenhor, queremos acolher essa promessa e trazê-la para a nossa própria vida, especialmente nos momentos de preocupação, de sofrimento e de incerteza.\nQuando não somos compreendidos por causa da nossa fé, quando somos criticados ou rejeitados por procurarmos viver segundo o Evangelho, quando encontramos resistência até mesmo entre as pessoas que amamos, queremos nos recordar de que não estamos sozinhos.\nEm cada dificuldade, em cada incompreensão e em cada rejeição, vós nos prometeis a vossa presença, a vossa força e o vosso auxílio.\nVós nos encorajais a permanecer firmes, sem perder a esperança, porque nos assegurais que, pela perseverança, alcançaremos a verdadeira vida. Uma vida que não passa, que não se acaba e que ninguém poderá destruir.\nSenhor Jesus Cristo, vós mesmo nos dissestes: \"Eu sou o caminho, a verdade e a vida. Ninguém vai ao Pai senão por mim.\"\nÉ por meio de vós que encontramos o caminho que nos conduz ao Pai. É em vós que descobrimos a verdade que ilumina a nossa existência. E é de vós que recebemos a vida que não conhece fim.\nVós nos prometeis a alegria de viver eternamente em comunhão convosco e com o Pai. E foi justamente para isso que viestes ao mundo, como nos recorda o Evangelho: \"Eu vim para que todos tenham vida e a tenham em abundância.\"\nPor isso, Senhor, cada um de nós pode elevar a vós esta oração, com toda a confiança do coração:\nJesus, vós sois a minha vida, o meu Deus e o meu tudo. Eu vos adoro e reconheço que somente em vós encontro a verdadeira segurança, a paz e o sentido da minha existência.\nPeço-vos a graça da perseverança, para que eu não desanime diante das dificuldades, e a graça da fidelidade, para que permaneça sempre unido a vós, mesmo quando o caminho se tornar difícil.\nEu vos agradeço, Senhor, porque sei que nem mesmo os sofrimentos, as preocupações e as dificuldades da minha vida cotidiana poderão me separar do vosso amor.\nSei que posso contar sempre convosco, porque sois fiel às vossas promessas. Mesmo quando a minha fé enfraquece, o vosso amor permanece firme. Mesmo quando me sinto sozinho, vós continuais ao meu lado.\nE esta é a certeza que sustenta a minha esperança: vós estais comigo todos os dias da minha vida, nos momentos de alegria e também nas horas de sofrimento, hoje, amanhã e até o fim dos tempos.\nAmém."
+      ],
+      [
+       "Música",
+       "MÚSICA DE ADORAÇÃO — VEM, SENHOR JESUS\nCantar a música inteira e, finalizando, manter somente o FUNDO MUSICAL + SILÊNCIO COM FUNDO MUSICAL (depois de um tempo ajoelhados, pode-se sentar e o fundo musical continua).\nSe o ministério achar oportuno, poderá repetir o refrão da canção. Depois disso, já mudar para o salmo, sem parar a música."
+      ],
+      [
+       "Música",
+       "Salmo 97 (o padre vai acenar com a cabeça para iniciar o salmo). O ministério de música irá cantar o salmo por inteiro."
+      ],
+      [
+       "Leitor",
+       "Refrão: ENTÃO, OS POVOS VIRAM O DEUS QUE NOS SALVOU, POR ISSO, Ó TERRA INTEIRA, CANTAI LOUVOR A DEUS.\n1. ENTOAI AO SENHOR NOVO CANTO, POIS PRODÍGIOS FOI ELE QUEM FEZ. SUA MÃO E O SEU BRAÇO SANTO A VITÓRIA LHE DERAM, DE VEZ. (2x)\n2. O SENHOR REVELOU SEU AUXÍLIO, SUA JUSTIÇA AOS POVOS MOSTROU. RECORDOU-SE DE SUA BONDADE, EM FAVOR DE SEU POVO FIEL. (2x)\n3. CELEBRAI O SENHOR COM A HARPA, COM VIOLA O SALTÉRIO CANTAI. COM TAMBORES, CORNETAS E FLAUTAS ACLAMAI AO SENHOR, DEUS E REI! (2x)\n4. BATAM PALMAS O MAR E OS PEIXES, O UNIVERSO E O QUE ELE CONTÉM. QUE OS RIOS ALEGRES ACLAMEM E AS MONTANHAS BENDIGAM A DEUS. (2x)\n5. ANTE A FACE DE DEUS ALEGRAI-VOS: ELE VEM PARA NOS GOVERNAR. GUIARÁ COM JUSTIÇA OS POVOS, NA HARMONIA E NA PAZ AS NAÇÕES. (2x)"
+      ],
+      [
+       "Música",
+       "FUNDO MUSICAL — manter o fundo musical do salmo até o diácono chegar ao ambão para a proclamação do Evangelho."
+      ],
+      [
+       "Diácono",
+       "SEM FUNDO MUSICAL + LEITURA DO EVANGELHO: \"Do Evangelho segundo Lucas\" (Lc 21,5-19). Usar o Evangeliário antigo (33º Domingo do Tempo Comum, Ano C)."
+      ],
+      [
+       "Música",
+       "Finalizado o Evangelho, FUNDO MUSICAL MÉDIO e encaminhar para a próxima música.\nCANTO — DIVINO ESPOSO: manter o fundo até ficar de pé. O padre vai acenar com a cabeça para iniciar o pedido de perdão."
+      ],
+      [
+       "Padre",
+       "Introduz o pedido de perdão:\nSenhor Jesus, hoje nos recordais que tudo neste mundo passa, mas o vosso amor permanece para sempre. Muitas vezes, colocamos nossa confiança nas coisas materiais e deixamos que o medo e as preocupações enfraqueçam a nossa fé. Perdoai-nos, Senhor, pelas vezes em que duvidamos da vossa presença e nos esquecemos de confiar em vós. Fortalecei nossa esperança, renovai nossa fé e ensinai-nos a buscar aquilo que realmente importa. Com o coração humilde, reconhecemos nossas fraquezas e pedimos a vossa misericórdia."
+      ],
+      [
+       "Música",
+       "Quando o ministério de música iniciar o canto da estrofe, o leitor deverá se deslocar até o ambão para iniciar a recitação do texto seguinte, e assim sucessivamente."
+      ],
+      [
+       "Leitor",
+       "Senhor Jesus, tantas vezes nos preocupamos com aquilo que passa, e nos esquecemos de cuidar daquilo que permanece para sempre. Buscamos segurança nos bens materiais e nas aparências, e deixamos de construir nossa vida sobre a rocha da vossa Palavra.\nKyrie eléison (2x)"
+      ],
+      [
+       "Leitor",
+       "Cristo Jesus, diante das guerras, das tragédias e das dificuldades, muitas vezes permitimos que o medo tome conta do nosso coração. Esquecemos que estais conosco, mesmo nos momentos mais difíceis, e perdemos a esperança quando mais precisamos confiar em vós.\nKyrie eléison (2x)"
+      ],
+      [
+       "Leitor",
+       "Senhor Jesus, quando surgem os sofrimentos e as provações, nem sempre encontramos coragem para permanecer fiéis. Muitas vezes desanimamos, reclamamos e deixamos de rezar, esquecendo que a perseverança na fé nos conduz à verdadeira vida.\nKyrie eléison (2x)"
+      ],
+      [
+       "Leitor",
+       "Cristo Jesus, muitas vezes temos vergonha de demonstrar nossa fé, ficamos em silêncio diante das injustiças e do sofrimento dos irmãos. Por medo das críticas, deixamos de defender a verdade e o amor, e perdemos oportunidades de testemunhar a beleza do Evangelho.\nKyrie eléison (2x)"
+      ],
+      [
+       "Leitor",
+       "Senhor Jesus, vivemos preocupados com tantas coisas deste mundo, e nem sempre encontramos tempo para estar em vossa presença. Esquecemos que tudo passa, mas a vossa Palavra permanece, e deixamos de valorizar o amor, a família, a oração e a vida eterna.\nKyrie eléison (2x)"
+      ],
+      [
+       "Música",
+       "Acabado o pedido de perdão, NÃO FAZER FUNDO MUSICAL."
+      ],
+      [
+       "Padre",
+       "Mergulhados no mistério da presença do Senhor e confiantes em suas benevolências, expressemos nossa esperança e o desejo que temos de sermos definitivamente incorporados no Cristo Ressuscitado."
+      ],
+      [
+       "Música",
+       "Canta-se Alma de Cristo (latim):\nAnima Christi, sanctifica me / Corpus Christi, salva me / Sanguis Christi, inebria me / Aqua lateris Christi, lava me\nPassio Christi, conforta me / O bone Iesu, exaudi me / Intra vulnera tua / Absconde, absconde me\nAnima Christi, sanctifica me / Corpus Christi, salva me / Sanguis Christi, inebria me / Aqua lateris Christi, lava me\nNe permittas a te me separari / Ab hoste maligno defende me / In hora mortis meae / Voca me, voca me\nAnima Christi, sanctifica me / Corpus Christi, salva me / Sanguis Christi, inebria me / Aqua lateris Christi, lava me\nEt iube me venire ad te / Ut cum Sanctis tuis laudem te / Per infinita saecula / Saeculorum, amen\nAnima Christi, sanctifica me / Corpus Christi, salva me / Sanguis Christi, inebria me / Aqua lateris Christi, lava me"
+      ],
+      [
+       "Padre",
+       "SENHOR, A TUA ORAÇÃO NOS COMUNICA A VIDA. HUMILDEMENTE TE PEDIMOS: RECEBA A OUSADIA DO NOSSO CANTO, CUJAS SANTAS PALAVRAS AGORA TOCAMOS COM OS NOSSOS LÁBIOS."
+      ],
+      [
+       "Música",
+       "Pater noster, qui es in caelis: sanctificetur nomen tuum; adveniat regnum tuum; fiat voluntas tua, sicut in caelo et in terra. Panem nostrum quotidianum da nobis hodie; et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris; et ne nos inducas in tentationem; sed libera nos a malo.\nFinalizando o Pai-Nosso, já cantar o TÃO SUBLIME."
+      ]
+     ]
+    },
+    {
+     "titulo": "BÊNÇÃO DO SANTÍSSIMO SACRAMENTO",
+     "linhas": [
+      [
+       "Música",
+       "Tão sublime Sacramento adoremos neste altar, pois o Antigo Testamento deu ao Novo o seu lugar. Venha a fé por suplemento os sentidos completar. Ao eterno Pai cantemos a Jesus, o redentor, ao Espírito exaltemos, na Trindade eterno amor. Ao Deus uno e trino demos a alegria do louvor. Amém!"
+      ],
+      [
+       "Liturgia",
+       "Toda a comunidade de joelhos."
+      ],
+      [
+       "Coroinhas",
+       "Colocar o véu umeral e apresentar o turíbulo fumegante."
+      ],
+      [
+       "Padre",
+       "De pé, incensa o Santíssimo Sacramento."
+      ],
+      [
+       "Padre",
+       "Do céu lhes destes o pão."
+      ],
+      [
+       "Animador",
+       "Que contém todo o sabor."
+      ],
+      [
+       "Padre",
+       "Oremos. Senhor, que, neste admirável sacramento, nos deixastes o memorial de vossa paixão, concedei-nos a graça de venerar de tal modo os sagrados mistérios de vosso corpo e sangue, que possamos experimentar sempre em nós o fruto de vossa redenção. Vós que viveis e reinais com o Pai e o Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Segue-se a bênção do Santíssimo: o sacerdote pega o ostensório e, levantando-o com ambas as mãos envoltas no véu, volta-se para o povo e traça sobre ele o sinal da cruz, sem dizer nada. Toca-se o sino três vezes; o diácono incensa, também com o canto calado."
+      ],
+      [
+       "Padre",
+       "Ato de Louvor:\nBendito seja Deus. Bendito seja seu santo nome.\nBendito seja Jesus Cristo, verdadeiro Deus e verdadeiro homem.\nBendito seja o nome de Jesus.\nBendito seja o seu sacratíssimo Coração.\nBendito seja seu preciosíssimo Sangue.\nBendito seja Jesus Cristo no Santíssimo Sacramento do Altar.\nBendito seja o Espírito Santo, Paráclito.\nBendita seja a grande Mãe de Deus, Maria Santíssima.\nBendita seja a sua gloriosa Assunção.\nBendita seja a sua santa e Imaculada Conceição.\nBendito seja o nome de Maria, Virgem e Mãe.\nBendito seja São José, seu castíssimo esposo.\nBendito seja Deus nos seus anjos e nos seus santos."
+      ],
+      [
+       "Música",
+       "Canto de reposição do Santíssimo."
+      ],
+      [
+       "Diácono",
+       "Translado com o Ostensório em torno do presbitério, acompanhado do coroinha com incenso. Leva o Ostensório até a credência, retira a Hóstia Consagrada e repõe no Sacrário.\nEleva o Evangeliário e se retira em procissão pelo corredor central na seguinte ordem: Turiferário, naveteiro, ceroferários, diácono com o Evangeliário elevado e demais celebrantes."
+      ],
+      [
+       "Liturgia",
+       "Acender todas as luzes assim que a equipe de celebração chegar ao átrio da Igreja."
+      ]
+     ]
+    }
+   ]
+  },
+  "roteiro_8_votiva": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — Missa Votiva do Sagrado Coração de Jesus — 06/11/2026",
+   "botao": "📖 Roteiro — Missa Votiva do Sagrado Coração",
+   "fonte": "semanas/2026-11-02/MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx",
+   "cabecalho": "MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS – 06 NOVEMBRO 2026 – ANO A",
+   "secoes": [
+    {
+     "titulo": "Ladainha do Sagrado Coração de Jesus (somente na Missa das 12h00)",
+     "linhas": [
+      [
+       "Orientação",
+       "SOMENTE PARA A MISSA DAS 12h00: 10 minutos antes de iniciar a Missa, um integrante do Apostolado da Oração, inicia a recitação da Ladainha do Sagrado Coração de Jesus."
+      ],
+      [
+       "Apostolado da Oração",
+       "Senhor, tende piedade de nós.\nJesus Cristo, tende piedade de nós.\nSenhor, tende piedade de nós.\nJesus Cristo, ouvi-nos.\nJesus Cristo, atendei-nos.\nPai celeste, que sois Deus, tende piedade de nós.\nFilho, Redentor do mundo, que sois Deus, tende piedade de nós.\nEspírito Santo, que sois Deus, tende piedade de nós.\nSantíssima Trindade, que sois um só Deus, tende piedade de nós.\nCoração de Jesus, Filho do Pai eterno, tende piedade de nós.\nCoração de Jesus, formado pelo Espírito Santo no seio da Virgem Mãe, tende piedade de nós.\nCoração de Jesus, unido substancialmente ao Verbo de Deus, tende piedade de nós.\nCoração de Jesus, de majestade infinita, tende piedade de nós.\nCoração de Jesus, templo santo de Deus, tende piedade de nós.\nCoração de Jesus, tabernáculo do Altíssimo, tende piedade de nós.\nCoração de Jesus, casa de Deus e porta do Céu, tende piedade de nós.\nCoração de Jesus, fornalha ardente de caridade, tende piedade de nós.\nCoração de Jesus, receptáculo de justiça e de amor, tende piedade de nós.\nCoração de Jesus, cheio de bondade e de amor, tende piedade de nós.\nCoração de Jesus, abismo de todas as virtudes, tende piedade de nós.\nCoração de Jesus, digníssimo de todo o louvor, tende piedade de nós.\nCoração de Jesus, Rei e centro de todos os corações, tende piedade de nós.\nCoração de Jesus, no qual estão todos os tesouros da sabedoria e ciência, tende piedade de nós.\nCoração de Jesus, no qual habita toda a plenitude da divindade, tende piedade de nós.\nCoração de Jesus, no qual o Pai põe todas as suas complacências, tende piedade de nós.\nCoração de Jesus, de cuja plenitude todos nós participamos, tende piedade de nós.\nCoração de Jesus, desejado das colinas eternas, tende piedade de nós.\nCoração de Jesus, paciente e de muita misericórdia, tende piedade de nós.\nCoração de Jesus, rico para todos que vos invocam, tende piedade de nós.\nCoração de Jesus, fonte de vida e santidade, tende piedade de nós.\nCoração de Jesus, propiciação por nossos pecados, tende piedade de nós.\nCoração de Jesus, saturado de opróbrios, tende piedade de nós.\nCoração de Jesus, esmagado de dor por causa dos nossos pecados, tende piedade de nós.\nCoração de Jesus, feito obediente até a morte, tende piedade de nós.\nCoração de Jesus, transpassado pela lança, tende piedade de nós.\nCoração de Jesus, fonte de toda consolação, tende piedade de nós.\nCoração de Jesus, nossa vida e ressurreição, tende piedade de nós.\nCoração de Jesus, nossa paz e reconciliação, tende piedade de nós.\nCoração de Jesus, vítima dos pecadores, tende piedade de nós.\nCoração de Jesus, salvação dos que em vós esperam, tende piedade de nós.\nCoração de Jesus, esperança dos que morrem em vós, tende piedade de nós.\nCoração de Jesus, delícias de todos os santos, tende piedade de nós.\nCordeiro de Deus, que tirais os pecados do mundo, perdoai-nos, Senhor.\nCordeiro de Deus, que tirais os pecados do mundo, ouvi-nos, Senhor.\nCordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós, Senhor.\nV. Jesus, manso e humilde de coração,\nR. Fazei o nosso coração semelhante ao vosso.\nOremos:\nDeus eterno e todo-poderoso, olhai para o Coração do vosso diletíssimo Filho e para os louvores e satisfações que Ele, em nome dos pecadores, vos tem tributado; e, deixando-vos aplacar, perdoai aos que imploram a vossa misericórdia, em nome de vosso mesmo Filho, Jesus Cristo, que convosco vive e reina na unidade do Espírito Santo. Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Animador",
+       "Louvado seja o Nosso Senhor Jesus Cristo!"
+      ],
+      [
+       "Animador",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Animador",
+       "Irmãos e irmãs, sejam todos bem-vindos! Nesta celebração votiva, contemplamos o Sagrado Coração de Jesus, fonte inesgotável de amor e misericórdia, que se entregou totalmente por nós. Daquele Coração aberto na cruz nasce a Igreja e brota a graça que renova nossa vida. Neste mês de novembro, unidos ao Santo Padre, rezamos pelo bom uso das riquezas, para que saibamos resistir à tentação do egoísmo e colocar nossos bens a serviço do bem comum e da solidariedade com os mais necessitados. Que o Coração de Jesus, que sendo rico se fez pobre por amor, torne o nosso coração semelhante ao seu: generoso, humilde e aberto aos irmãos. Com alegria e fé, iniciemos nossa celebração cantando."
+      ],
+      [
+       "Música",
+       "Canto de Entrada"
+      ],
+      [
+       "Padre",
+       "Em nome do Pai e do Filho e do Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Animador",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Padre",
+       "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Padre",
+       "Confesso a Deus todo-poderoso e a vós, irmãos e irmãs, que pequei muitas vezes por pensamentos e palavras, atos e omissões, (batendo no peito, dizem) por minha culpa, minha culpa, minha tão grande culpa. E peço à Virgem Maria, aos Anjos e Santos e a vós, irmãos e irmãs, que rogueis por mim a Deus, nosso Senhor."
+      ],
+      [
+       "Padre",
+       "Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Animador",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Padre",
+       "OREMOS (Oração da Coleta – pág. 1140)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "Leitor",
+       "Fl 3,17-4,1"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Leitor",
+       "Salmo Responsorial (resposta) Sl 121(122),1-2.3-4a.4b-5 (R. 1)\nR. Que alegria, quando me disseram:\nVamos à casa do Senhor!"
+      ],
+      [
+       "Animador",
+       "R. Que alegria, quando me disseram: Vamos à casa do Senhor!"
+      ],
+      [
+       "Padre",
+       "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. O amor de Deus se realiza em todo aquele,\nque guarda sua palavra fielmente."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Proclamação do Evangelho de Jesus Cristo segundo Lucas."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Lc 16,1-8"
+      ],
+      [
+       "Padre",
+       "Palavra da Salvação."
+      ],
+      [
+       "Animador",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Padre",
+       "Homilia."
+      ],
+      [
+       "Padre",
+       "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Animador",
+       "Para sempre seja louvado."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Animador",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Música",
+       "Canto das Oferendas"
+      ],
+      [
+       "Padre",
+       "Preparação das oferendas."
+      ],
+      [
+       "Padre",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Animador",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Padre",
+       "OREMOS (Oração sobre as Oferendas – pág. 1140)"
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Corações ao alto."
+      ],
+      [
+       "Animador",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Padre",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Animador",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Padre",
+       "(Prefácio do Sagrado Coração de Jesus – O imenso amor de Cristo – pág. 1141) Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso, por Cristo, Senhor nosso. Elevado na cruz, entregou-se a si mesmo com admirável amor; do seu lado transpassado, jorraram sangue e água e nasceram os sacramentos da Igreja, para que todos, atraídos ao Coração aberto do Salvador, pudessem beber com perene alegria das fontes da salvação. Por isso, com a multidão dos anjos e dos santos, nós vos louvamos, cantando a uma só voz:"
+      ],
+      [
+       "Música",
+       "Santo, Santo, Santo, Senhor, Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Padre",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Padre",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+      ],
+      [
+       "Animador",
+       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+      ],
+      [
+       "Padre",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Animador",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Padre",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Animador",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Animador",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Padre",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Animador",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Padre",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Padre",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Padre",
+       "(Missal – pág. 569) Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Padre",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Animador",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Padre",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Animador",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Animador",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Padre",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Animador",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Padre",
+       "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"
+      ],
+      [
+       "Música",
+       "Canto da Comunhão."
+      ],
+      [
+       "Padre",
+       "OREMOS (Oração depois da Comunhão – pág. 1142)."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Animador",
+       "Rogai por nós."
+      ],
+      [
+       "Padre",
+       "(BÊNÇÃO FINAL) O Senhor esteja convosco!"
+      ],
+      [
+       "Animador",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Padre",
+       "Abençoe-vos Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ],
+      [
+       "Padre",
+       "Ide em paz e o Senhor vos acompanhe."
+      ],
+      [
+       "Animador",
+       "Graças a Deus."
+      ],
+      [
+       "Música",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_8": {
+   "tipo": "preces",
+   "titulo": "Preces — 32º Domingo do Tempo Comum",
+   "fonte": "semanas/2026-11-02/PRECES - 32º DOMINGO TEMPO COMUM.docx",
+   "cabecalho": "32º DOMINGO TEMPO COMUM",
+   "formularios": [
+    {
+     "titulo": "Data: 07/11/2026 — Horário: Sábado 18h30",
+     "linhas": [
+      [
+       "Padre",
+       "Invoquemos a Jesus Cristo, alegria de todos os que nele esperam; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Ouvi-nos, Senhor e atendei-nos!"
+      ],
+      [
+       "Animador",
+       "Testemunha fiel e primogênito dentre os mortos, que nos purificastes do pecado com o vosso sangue, fazei-nos sempre lembrar as vossas maravilhas, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi-nos, Senhor e atendei-nos!"
+      ],
+      [
+       "Animador",
+       "Aqueles que escolhestes como mensageiros do vosso evangelho, tornai-os fiéis e zelosos administradores dos mistérios do reino, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi-nos, Senhor e atendei-nos!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 08/11/2026 — Horário: Domingo 09h00 e 11h00",
+     "linhas": [
+      [
+       "Padre",
+       "Ao Deus de todo poder e bondade, que nos ama e sabe do que temos necessidade, abramos o coração com alegria; e o aclamemos com louvores, dizendo:"
+      ],
+      [
+       "Todos",
+       "R. Nós vos louvamos, Senhor, e em vós confiamos!"
+      ],
+      [
+       "Animador",
+       "Nós vos bendizemos, Deus todo-poderoso e Rei do universo, porque, mesmo sendo pecadores, viestes à nossa procura, para conhecermos vossa verdade e servirmos à vossa majestade, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Nós vos louvamos, Senhor, e em vós confiamos!"
+      ],
+      [
+       "Animador",
+       "Deus, que abristes para nós as portas da vossa misericórdia, não nos deixeis jamais afastar do caminho da vida, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Nós vos louvamos, Senhor, e em vós confiamos!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 08/11/2026 — Horário: Domingo 18h30",
+     "linhas": [
+      [
+       "Padre",
+       "Alegremo-nos no Senhor, de quem procede todo bem. Por isso, peçamos de coração sincero:"
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a nossa oração!"
+      ],
+      [
+       "Animador",
+       "Pai e Senhor do universo, que enviastes vosso Filho ao mundo para que em toda parte fosse glorificado o vosso nome, confirmai o testemunho da vossa Igreja entre os povos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a nossa oração!"
+      ],
+      [
+       "Animador",
+       "Fazei-nos dóceis à pregação dos apóstolos, para vivermos de acordo com a verdade da nossa fé, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Ouvi, Senhor, a nossa oração!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_8_defuntos": {
+   "tipo": "preces",
+   "titulo": "Preces — Comemoração de Todos os Fiéis Defuntos",
+   "botao": "🙏 Preces — Fiéis Defuntos",
+   "fonte": "semanas/2026-11-02/PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx",
+   "cabecalho": "COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS",
+   "formularios": [
+    {
+     "titulo": "Data: 02/11/2026 — Horário: Segunda-feira 19h00",
+     "linhas": [
+      [
+       "Padre",
+       "Oremos a Cristo nosso Senhor, que nos deu a esperança de transformar o nosso pobre corpo à semelhança do seu corpo glorioso; e o aclamemos:"
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nossa vida e ressurreição!"
+      ],
+      [
+       "Animador",
+       "Cristo, Filho do Deus vivo, que ressuscitastes vosso amigo Lázaro dentre os mortos, ressuscitai para a vida e para a glória os defuntos remidos com o vosso sangue, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nossa vida e ressurreição!"
+      ],
+      [
+       "Animador",
+       "Cristo, consolador dos aflitos, que na morte de Lázaro, do jovem de Naim e da filha de Jairo, acorrestes compassivo a enxugar as lágrimas de seus parentes e amigos, consolai também agora os que choram a morte dos seus entes queridos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nossa vida e ressurreição!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"
+      ],
+      [
+       "Padre",
+       "Finaliza as preces."
+      ],
+      [
+       "Animador",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

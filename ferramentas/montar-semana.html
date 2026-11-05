@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Montar Semana</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --azul: #1a365d; --azul-claro: #e8eef7; --borda: #cbd5e1; --texto: #1e293b; --suave: #64748b;
+    --ok: #15803d; --alerta: #b45309; --alerta-fundo: #fffbeb; --erro: #b91c1c; --fundo: #f4f6fa; --cartao: #fff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--texto); background: var(--fundo); }
+  header { background: var(--azul); color: #fff; padding: 20px 16px; }
+  header h1 { margin: 0; font-size: 1.4rem; }
+  header p { margin: 4px 0 0; opacity: .85; }
+  main { max-width: 1000px; margin: 0 auto; padding: 16px; }
+  section.passo { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  section.passo h2 { margin: 0 0 10px; font-size: 1.15rem; color: var(--azul); display: flex; gap: 10px; align-items: center; }
+  .num { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--azul); color: #fff; font-size: .95rem; flex: none; }
+  label { font-weight: 600; }
+  input, select, textarea { font: inherit; padding: 6px 8px; border: 1px solid var(--borda); border-radius: 6px; max-width: 100%; }
+  textarea { width: 100%; min-height: 64px; }
+  button { font: inherit; font-weight: 600; padding: 10px 16px; border-radius: 8px; border: 0; background: var(--azul); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  button.secundario { background: #fff; color: var(--azul); border: 1px solid var(--azul); }
+  .zona { border: 2px dashed var(--borda); border-radius: 10px; padding: 24px; text-align: center; color: var(--suave); background: #fafbfd; }
+  .zona.ativa { border-color: var(--azul); background: var(--azul-claro); }
+  .privado { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 10px 12px; color: #14532d; font-size: .95rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { border-bottom: 1px solid #e2e8f0; padding: 6px; text-align: left; vertical-align: top; }
+  th { background: #f8fafc; font-weight: 600; }
+  .lista-arquivos td:first-child { word-break: break-word; }
+  .avisos { background: var(--alerta-fundo); border: 1px solid #fcd34d; border-radius: 8px; padding: 10px 14px; }
+  .avisos li { margin: 4px 0; }
+  .erro { color: var(--erro); font-weight: 600; }
+  .ok { color: var(--ok); font-weight: 600; }
+  details.dia { border: 1px solid var(--borda); border-radius: 8px; margin: 10px 0; background: #fff; }
+  details.dia > summary { padding: 10px 12px; cursor: pointer; font-weight: 600; background: var(--azul-claro); border-radius: 8px; }
+  details.dia[open] > summary { border-radius: 8px 8px 0 0; }
+  .dia-corpo { padding: 12px; display: grid; gap: 12px; }
+  .grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 12px; }
+  .grade label { display: grid; gap: 2px; font-weight: 500; font-size: .9rem; color: var(--suave); }
+  .grade input, .grade select { width: 100%; color: var(--texto); }
+  h3 { margin: 4px 0; font-size: 1rem; }
+  .pequeno { font-size: .88rem; color: var(--suave); }
+  .acoes { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  ol.instrucoes li { margin: 6px 0; }
+  code { background: #eef2f7; padding: 1px 5px; border-radius: 4px; }
+  input.pagina { width: 110px; }
+  @media (max-width: 640px) { .lista-arquivos thead { display: none; } .lista-arquivos tr { display: grid; padding: 8px 0; border-bottom: 1px solid #e2e8f0; } .lista-arquivos td { border: 0; padding: 3px 0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>🗓️ Montar uma semana nova</h1>
+  <p>Paróquia Nossa Senhora Auxiliadora — Programação Litúrgica</p>
+</header>
+<main>
+  <p class="privado">🔒 <strong>Seus arquivos não saem deste computador.</strong> Tudo é lido aqui mesmo, no navegador.
+    Da planilha de escala só são aproveitados data, horário, local, celebração, padre/diácono e nome dos noivos —
+    <strong>telefones e espórtulas nunca são lidos nem publicados</strong>, e a planilha não vai para o site.</p>
+
+  <section class="passo">
+    <h2><span class="num">1</span> Qual semana?</h2>
+    <label for="segunda">Segunda-feira da semana:</label>
+    <input type="date" id="segunda">
+    <span id="periodo" class="pequeno"></span>
+  </section>
+
+  <section class="passo">
+    <h2><span class="num">2</span> Escolha os arquivos da semana</h2>
+    <div class="zona" id="zona">
+      <p><strong>Arraste aqui</strong> os arquivos da semana (ou clique no botão)</p>
+      <p class="pequeno">Leituras (.docx) · Roteiro e Preces do domingo (.docx) · roteiros/preces de outras celebrações · PDFs · planilha “Escala e Espórtulas” (.xlsx)</p>
+      <input type="file" id="arquivos" multiple accept=".docx,.xlsx,.pdf">
+    </div>
+    <table class="lista-arquivos" id="tabela-arquivos" hidden>
+      <thead><tr><th>Arquivo</th><th>O que é</th><th>Dia</th><th>Nome do botão</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p class="acoes" style="margin-top:12px"><button type="button" id="montar" disabled>Montar a semana</button>
+      <span id="estado-montar" class="pequeno"></span></p>
+  </section>
+
+  <section class="passo" id="passo-revisar" hidden>
+    <h2><span class="num">3</span> Confira e corrija se precisar</h2>
+    <div id="avisos"></div>
+    <p class="pequeno">Tudo abaixo já veio preenchido. Corrija apenas o que estiver errado. A escala vem da planilha:
+      se algo estiver errado nela, corrija na planilha e clique em “Montar a semana” de novo.</p>
+    <div id="revisao"></div>
+  </section>
+
+  <section class="passo" id="passo-baixar" hidden>
+    <h2><span class="num">4</span> Baixe o pacote e envie ao GitHub</h2>
+    <p class="acoes"><button type="button" id="baixar">⬇️ Baixar pacote da semana (.zip)</button>
+      <span id="estado-baixar" class="pequeno"></span></p>
+    <ol class="instrucoes">
+      <li>Descompacte o arquivo baixado (clique com o botão direito → <em>Extrair tudo</em>). Aparecem as pastas <code>semanas</code> e <code>dados</code>.</li>
+      <li>No GitHub, abra o repositório <strong>roteiro-liturgico</strong> e clique em <em>Add file → Upload files</em>.</li>
+      <li>Arraste as <strong>duas pastas</strong> (<code>semanas</code> e <code>dados</code>) para a página e clique em <em>Commit changes</em>.</li>
+      <li>Em 2 ou 3 minutos o site é atualizado sozinho. As semanas que já passaram saem do site automaticamente.</li>
+    </ol>
+  </section>
+</main>
+
+<script src="office.js"></script>
+<script src="semana-lib.js"></script>
+<script>
+'use strict';
+const $ = (sel) => document.querySelector(sel);
+const semAcento = (t) => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const escapar = (t) => String(t ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const MESES = ['janeiro','fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const NOMES_DIA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+const TIPOS = [
+  ['leituras', '📖 Leituras da semana'],
+  ['roteiro', '📖 Roteiro do domingo'],
+  ['preces', '🙏 Preces do domingo'],
+  ['roteiro-extra', '📖 Roteiro de outra celebração'],
+  ['preces-extra', '🙏 Preces de outra celebração'],
+  ['documento', '📄 Documento com botão no dia (PDF etc.)'],
+  ['publicar', '📎 Só publicar na lista de documentos'],
+  ['escala', '🔒 Planilha de escala (não publica)'],
+  ['ignorar', '✖ Não usar']
+];
+const estado = { arquivos: [], missal: null, lecionario: null, resultado: null };
+
+/* ----------------------------- dados do site ----------------------------- */
+async function carregarDados() {
+  try {
+    const [missal, lecionario] = await Promise.all(['../dados/missal.json', '../dados/lecionario.json']
+      .map((url) => fetch(url, { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(url); return r.json(); })));
+    estado.missal = missal;
+    estado.lecionario = lecionario;
+  } catch (erro) {
+    $('#estado-montar').innerHTML = '<span class="erro">Não consegui carregar o índice do Missal. Abra esta página pelo endereço do site (…/ferramentas/montar-semana.html).</span>';
+  }
+}
+
+/* ------------------------------- data ------------------------------------ */
+function proximaSegunda() {
+  const hoje = new Date();
+  const d = new Date(Date.UTC(hoje.getFullYear(), hoje.getMonth(), hoje.getDate()));
+  d.setUTCDate(d.getUTCDate() + ((8 - d.getUTCDay()) % 7 || 7));
+  return d.toISOString().slice(0, 10);
+}
+function diasDaSemana() {
+  const segunda = $('#segunda').value;
+  return segunda ? [0, 1, 2, 3, 4, 5, 6].map((i) => SemanaLib.somarDias(segunda, i)) : [];
+}
+function atualizarPeriodo() {
+  const segunda = $('#segunda').value;
+  if (!segunda) return;
+  if (SemanaLib.diaDaSemana(segunda) !== 1) {
+    $('#periodo').innerHTML = '<span class="erro">Escolha uma segunda-feira.</span>';
+    return;
+  }
+  $('#periodo').textContent = `Semana de ${SemanaLib.dataCurta(segunda)} a ${SemanaLib.dataCurta(SemanaLib.somarDias(segunda, 6))}`;
+  desenharArquivos();
+}
+
+/* --------------------------- classificação ------------------------------- */
+function dataNoNome(nome) {
+  const n = semAcento(nome);
+  let m = n.match(/(\d{1,2})[ _./-](\d{1,2})[ _./-](\d{4})/);
+  if (m) return `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+  m = n.match(/(\d{1,2})\s+(?:de\s+)?(janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\s+(?:de\s+)?(\d{4})/);
+  if (m) return `${m[3]}-${String(MESES.indexOf(m[2]) + 1).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+  return '';
+}
+function rotuloDoNome(nome) {
+  let r = nome.replace(/\.[^.]+$/, '')
+    .replace(/^(preces|roteiro)\s*[-–]\s*/i, '')
+    .replace(/[-–_ ]*\b\d{1,2}[ _./-]\d{1,2}[ _./-]\d{4}\b.*$/, '')
+    .replace(/[-– ]*\b\d{1,2}\s+(de\s+)?(janeiro|fevereiro|março|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\b.*$/i, '')
+    .replace(/[-– ]*\b(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\b\s*\d{4}.*$/i, '')
+    .replace(/\s*[-–]\s*ano [abc]\b.*$/i, '').replace(/\brevisad[oa]\b/i, '').trim();
+  if (r === r.toUpperCase()) r = r.toLowerCase().replace(/(^|\s)(\S)/g, (_, e, c) => e + c.toUpperCase())
+    .replace(/\s(De|Da|Do|Das|Dos|E)\s/g, (m) => m.toLowerCase());
+  return r.replace(/\s{2,}/g, ' ');
+}
+function classificar(arquivo) {
+  const n = semAcento(arquivo.name);
+  if (n.endsWith('.xlsx')) return /espor|escala/.test(n) ? 'escala' : 'ignorar';
+  if (n.endsWith('.pdf')) return 'documento';
+  if (/^leituras/.test(n)) return 'leituras';
+  if (/^escala/.test(n)) return 'ignorar';
+  if (/^antifona/.test(n)) return 'publicar';
+  if (/^preces/.test(n)) return /domingo/.test(n) ? 'preces' : 'preces-extra';
+  if (/domingo/.test(n)) return 'roteiro';
+  return 'roteiro-extra';
+}
+
+async function adicionarArquivos(lista) {
+  estado.carregando = (estado.carregando || 0) + 1;
+  $('#montar').disabled = true;
+  $('#estado-montar').textContent = 'Lendo os arquivos…';
+  try {
+  for (const arquivo of lista) {
+    const bytes = new Uint8Array(await arquivo.arrayBuffer());
+    const item = { nome: arquivo.name, bytes, tipo: classificar(arquivo), data: dataNoNome(arquivo.name), rotulo: rotuloDoNome(arquivo.name) };
+    if (item.tipo === 'escala' || arquivo.name.toLowerCase().endsWith('.xlsx')) {
+      try {
+        const planilhas = await Office.readXlsx(bytes);
+        if (Object.keys(planilhas).some((k) => semAcento(k).startsWith('missas'))) { item.tipo = 'escala'; item.planilhas = planilhas; }
+        else item.tipo = 'ignorar';
+      } catch { item.tipo = 'ignorar'; }
+    }
+    const igual = estado.arquivos.findIndex((a) => a.nome === item.nome);
+    if (igual >= 0) estado.arquivos[igual] = item; else estado.arquivos.push(item);
+  }
+  } finally {
+    estado.carregando -= 1;
+  }
+  desenharArquivos();
+}
+
+function desenharArquivos() {
+  const corpo = $('#tabela-arquivos tbody');
+  $('#tabela-arquivos').hidden = !estado.arquivos.length;
+  const dias = diasDaSemana();
+  corpo.innerHTML = estado.arquivos.map((a, i) => {
+    const precisaDia = ['roteiro-extra', 'preces-extra', 'documento'].includes(a.tipo);
+    return `<tr>
+      <td>${escapar(a.nome)}</td>
+      <td><select data-i="${i}" data-campo="tipo">${TIPOS.map(([v, t]) => `<option value="${v}"${v === a.tipo ? ' selected' : ''}>${t}</option>`).join('')}</select></td>
+      <td>${precisaDia ? `<select data-i="${i}" data-campo="data">${dias.map((d) =>
+        `<option value="${d}"${d === a.data ? ' selected' : ''}>${NOMES_DIA[SemanaLib.diaDaSemana(d)]} ${SemanaLib.dataCurta(d)}</option>`).join('')}</select>` : '—'}</td>
+      <td>${precisaDia ? `<input data-i="${i}" data-campo="rotulo" value="${escapar(a.rotulo)}" size="28">` : '—'}</td>
+      <td><button type="button" class="secundario" data-remover="${i}" aria-label="Remover ${escapar(a.nome)}">✖</button></td>
+    </tr>`;
+  }).join('');
+  for (const a of estado.arquivos) if (['roteiro-extra', 'preces-extra', 'documento'].includes(a.tipo) && !dias.includes(a.data)) a.data = dias[0];
+  if (estado.carregando) return;
+  $('#montar').disabled = !estado.arquivos.some((a) => a.tipo === 'leituras') || !estado.missal;
+  if (estado.missal) $('#estado-montar').textContent = estado.arquivos.some((a) => a.tipo === 'leituras') ? '' : 'Falta o arquivo de Leituras.';
+}
+
+/* -------------------------------- montar --------------------------------- */
+async function montar() {
+  $('#estado-montar').textContent = 'Lendo os arquivos…';
+  try {
+    const segunda = $('#segunda').value;
+    const doc = async (a) => a && ({ nome: a.nome, doc: await Office.readDocx(a.bytes) });
+    const umDe = (tipo) => {
+      const lista = estado.arquivos.filter((a) => a.tipo === tipo);
+      if (lista.length > 1) throw new Error(`Há mais de um arquivo marcado como “${TIPOS.find(([v]) => v === tipo)[1]}”.`);
+      return lista[0];
+    };
+    const extras = [];
+    for (const a of estado.arquivos) {
+      if (a.tipo === 'roteiro-extra' || a.tipo === 'preces-extra') {
+        extras.push({ nome: a.nome, tipo: a.tipo.replace('-extra', ''), data: a.data, rotulo: a.rotulo, doc: await Office.readDocx(a.bytes) });
+      } else if (a.tipo === 'documento') extras.push({ nome: a.nome, tipo: 'documento', data: a.data, rotulo: a.rotulo });
+    }
+    const escala = umDe('escala');
+    estado.resultado = SemanaLib.montarSemana({
+      segunda,
+      leituras: await doc(umDe('leituras')),
+      roteiro: await doc(umDe('roteiro')),
+      preces: await doc(umDe('preces')),
+      extras,
+      outros: estado.arquivos.filter((a) => a.tipo === 'publicar').map((a) => a.nome),
+      escala: escala ? escala.planilhas : null,
+      lecionario: estado.lecionario,
+      missal: estado.missal
+    });
+    prepararCitacoes(estado.resultado.semana);
+    desenharRevisao();
+    $('#estado-montar').innerHTML = '<span class="ok">Semana montada. Confira abaixo.</span>';
+    $('#passo-revisar').hidden = false;
+    $('#passo-baixar').hidden = false;
+    $('#passo-revisar').scrollIntoView({ behavior: 'smooth' });
+  } catch (erro) {
+    console.error(erro);
+    $('#estado-montar').innerHTML = `<span class="erro">${escapar(erro.message)}</span>`;
+  }
+}
+
+/* As quatro citações do telão sempre aparecem (vazias quando o arquivo não as traz). */
+function prepararCitacoes(semana) {
+  const todos = semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : []);
+  for (const dia of todos) {
+    const ant = dia.antifonas && semana.antifonas[dia.antifonas];
+    if (!ant) continue;
+    const temL2 = dia.leituras.some(([m]) => m.startsWith('2ª Leitura'));
+    const rotulos = ['Primeira Leitura', 'Salmo Responsorial'].concat(temL2 ? ['Segunda Leitura'] : [], ['Evangelho']);
+    ant.citations = rotulos.map((label) => ant.citations.find((c) => c.label === label) || { label, text: '' });
+  }
+}
+
+const CAMPOS_MISSAL = [['gloria', 'Glória'], ['coleta', 'Coleta'], ['creio', 'Creio'], ['oferendas', 'Sobre as oferendas'],
+  ['prefacio', 'Prefácio'], ['eucaristica', 'Oração Eucarística'], ['rito_comunhao', 'Rito da Comunhão'],
+  ['comunhao', 'Depois da Comunhão'], ['bencao', 'Bênção solene']];
+const CORES = [['verde', 'Verde'], ['branco', 'Branca'], ['vermelho', 'Vermelha'], ['roxo', 'Roxa'], ['rosa', 'Rósea']];
+
+function campo(caminho, valor, rotulo, extra = '') {
+  return `<label>${rotulo}<input data-caminho="${caminho}" value="${escapar(valor)}" ${extra}></label>`;
+}
+
+function desenharDia(dia, base) {
+  const escala = (dia.dias || [dia]).flatMap((d) => d.escala.map((l) => [d, l]));
+  const ant = dia.antifonas && estado.resultado.semana.antifonas[dia.antifonas];
+  const antBase = dia.antifonas ? `antifonas.${dia.antifonas}` : '';
+  return `<details class="dia"${base === 'fimDeSemana' ? ' open' : ''}>
+    <summary>${escapar(dia.titulo)} — ${escapar(dia.celebracao)}</summary>
+    <div class="dia-corpo">
+      <div class="grade">
+        <label>Cor<select data-caminho="${base}.cor">${CORES.map(([v, t]) => `<option value="${v}"${v === dia.cor ? ' selected' : ''}>${t}</option>`).join('')}</select></label>
+        ${campo(`${base}.grau`, dia.grau, 'Grau (Féria, Memória, Festa…)')}
+        ${campo(`${base}.celebracao`, dia.celebracao, 'Celebração', 'style="min-width:280px"')}
+      </div>
+      <div><h3>📌 Missal Romano (páginas)</h3>
+        <div class="grade">${CAMPOS_MISSAL.map(([k, t]) => campo(`${base}.missal.${k}`, dia.missal[k] || '', t)).join('')}</div>
+        <p class="pequeno">Ritos iniciais (430) e Rito da Comunhão (569) aparecem sempre. Deixe vazio o que não se aplica.</p></div>
+      <div><h3>📖 Leituras — páginas do lecionário</h3>
+        <table><thead><tr><th>Momento</th><th>Referência</th><th>Lecionário / pág.</th></tr></thead><tbody>
+        ${dia.leituras.map(([m, ref, , pag], i) => `<tr><td>${escapar(m)}</td><td>${escapar(ref)}</td><td>${m.startsWith('Aclamação') ? '—'
+          : `<input class="pagina" data-caminho="${base}.leituras.${i}.3" value="${escapar(pag)}" placeholder="ex.: II / 1172">`}</td></tr>`).join('')}
+        </tbody></table>
+        <p class="pequeno">Escreva como “II / 1172” (volume / página). As páginas ficam guardadas para as próximas vezes.</p></div>
+      <div><h3>🗓️ Escala (da planilha)</h3>
+        ${escala.length ? `<table><tbody>${escala.map(([d, [hora, local, resp, tipo, desc]]) =>
+          `<tr><td>${NOMES_DIA[SemanaLib.diaDaSemana(d.data)]} ${hora}</td><td>${escapar(local)}</td><td>${escapar(resp)}${desc ? ` — ${escapar(desc)}` : ''}</td></tr>`).join('')}</tbody></table>`
+          : '<p class="pequeno">Nenhum horário na planilha para este dia.</p>'}</div>
+      ${ant ? `<div><h3>🎵 Antífonas e 📺 citações do telão</h3>
+        ${ant.items.map((item, i) => item.options
+          ? item.options.map((o, j) => `<label>${escapar(item.label)}${item.options.length > 1 ? ` (${j + 1})` : ''} — ${escapar(o.reference)}<textarea data-caminho="${antBase}.items.${i}.options.${j}.text">${escapar(o.text)}</textarea></label>`).join('')
+          : `<label>${escapar(item.label)} — ${escapar(item.reference)}<textarea data-caminho="${antBase}.items.${i}.text">${escapar(item.text)}</textarea></label>`).join('')}
+        ${ant.citations.map((c, i) => `<label>📺 ${escapar(c.label)}<textarea data-caminho="${antBase}.citations.${i}.text" placeholder="Frase para o telão (opcional)">${escapar(c.text)}</textarea></label>`).join('')}
+      </div>` : ''}
+    </div>
+  </details>`;
+}
+
+function desenharRevisao() {
+  const { semana, avisos } = estado.resultado;
+  $('#avisos').innerHTML = avisos.length
+    ? `<div class="avisos"><strong>⚠️ Confira:</strong><ul>${avisos.map((a) => `<li>${escapar(a)}</li>`).join('')}</ul></div>`
+    : '<p class="ok">✔ Nenhum problema encontrado.</p>';
+  $('#revisao').innerHTML = `<div class="grade">${campo('shortTitle', semana.shortTitle, 'Título da aba')}${campo('fullTitle', semana.fullTitle, 'Título completo')}</div>` +
+    semana.dias.map((d, i) => desenharDia(d, `dias.${i}`)).join('') +
+    (semana.fimDeSemana ? desenharDia(semana.fimDeSemana, 'fimDeSemana') : '');
+}
+
+function definir(objeto, caminho, valor) {
+  const partes = caminho.split('.');
+  let alvo = objeto;
+  for (const p of partes.slice(0, -1)) alvo = alvo[p];
+  alvo[partes[partes.length - 1]] = valor;
+}
+
+/* -------------------------------- baixar --------------------------------- */
+function baixar() {
+  const semana = JSON.parse(JSON.stringify(estado.resultado.semana));
+  const todos = semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : []);
+  for (const dia of todos) {
+    for (const k of Object.keys(dia.missal)) if (!String(dia.missal[k]).trim()) delete dia.missal[k];
+    dia.leituras.forEach((l) => { l[3] = String(l[3] || '').trim().replace(/\s*\/\s*/, ' / '); });
+  }
+  for (const ant of Object.values(semana.antifonas)) ant.citations = ant.citations.filter((c) => c.text.trim());
+  SemanaLib.finalizarSemana(semana);
+  const lecionario = SemanaLib.atualizarLecionario(estado.lecionario, semana);
+  const pasta = `semanas/${semana.id}`;
+  const usados = new Set(semana.documentos.concat(todos.flatMap((d) => (d.botoes || []).map((b) => b.arquivo)).filter(Boolean)));
+  const entradas = [{ name: `${pasta}/semana.json`, data: `${JSON.stringify(semana, null, 1)}\n` },
+    { name: 'dados/lecionario.json', data: `${JSON.stringify(lecionario, null, 1)}\n` }];
+  for (const a of estado.arquivos) if (usados.has(`${pasta}/${a.nome}`)) entradas.push({ name: `${pasta}/${a.nome}`, data: a.bytes });
+  const blob = new Blob([Office.writeZip(entradas)], { type: 'application/zip' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `semana-${semana.id}.zip`;
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(() => { URL.revokeObjectURL(link.href); link.remove(); }, 1000);
+  estado.lecionario = lecionario;
+  $('#estado-baixar').innerHTML = `<span class="ok">Pacote “semana-${semana.id}.zip” baixado (${entradas.length - 2} documentos + dados).</span>`;
+}
+
+/* -------------------------------- eventos -------------------------------- */
+$('#segunda').value = proximaSegunda();
+$('#segunda').addEventListener('change', atualizarPeriodo);
+$('#arquivos').addEventListener('change', (e) => { adicionarArquivos([...e.target.files]); e.target.value = ''; });
+const zona = $('#zona');
+zona.addEventListener('dragover', (e) => { e.preventDefault(); zona.classList.add('ativa'); });
+zona.addEventListener('dragleave', () => zona.classList.remove('ativa'));
+zona.addEventListener('drop', (e) => { e.preventDefault(); zona.classList.remove('ativa'); adicionarArquivos([...e.dataTransfer.files]); });
+$('#tabela-arquivos').addEventListener('change', (e) => {
+  const i = e.target.dataset.i;
+  if (i === undefined) return;
+  estado.arquivos[i][e.target.dataset.campo] = e.target.value;
+  if (e.target.dataset.campo === 'tipo') desenharArquivos();
+});
+$('#tabela-arquivos').addEventListener('input', (e) => {
+  if (e.target.dataset.campo === 'rotulo') estado.arquivos[e.target.dataset.i].rotulo = e.target.value;
+});
+$('#tabela-arquivos').addEventListener('click', (e) => {
+  const i = e.target.dataset.remover;
+  if (i !== undefined) { estado.arquivos.splice(Number(i), 1); desenharArquivos(); }
+});
+$('#revisao').addEventListener('input', (e) => {
+  if (e.target.dataset.caminho) definir(estado.resultado.semana, e.target.dataset.caminho, e.target.value);
+});
+$('#revisao').addEventListener('change', (e) => {
+  if (e.target.dataset.caminho) definir(estado.resultado.semana, e.target.dataset.caminho, e.target.value);
+});
+$('#montar').addEventListener('click', montar);
+$('#baixar').addEventListener('click', baixar);
+atualizarPeriodo();
+carregarDados().then(desenharArquivos);
+</script>
+</body>
+</html>

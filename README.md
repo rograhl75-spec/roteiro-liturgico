@@ -4,6 +4,7 @@ Aplicação web da Paróquia Nossa Senhora Auxiliadora para consultar a programa
 
 ## Documentação
 
+- [Guia: como publicar uma semana nova](GUIA_NOVA_SEMANA.md): passo a passo simples, sem programação.
 - [Manual do Usuário](MANUAL_USUARIO.md): instruções simples para acessar pelo computador, Android e iPhone, consultar conteúdos, imprimir e atualizar o aplicativo.
 - [Manual Técnico](MANUAL_TECNICO.md): estrutura do projeto, edição dos dados, validação, impressão, Service Worker e publicação.
 
@@ -24,10 +25,12 @@ Aplicação web da Paróquia Nossa Senhora Auxiliadora para consultar a programa
 - `index.html`: estrutura da página e janelas de conteúdo;
 - `styles.css`: aparência, responsividade, acessibilidade e impressão;
 - `app.js`: funcionamento da aplicação e atualização do PWA;
-- `programacao.js`: dados das semanas e gerador único das páginas semanais;
-- `roteiros.js`: roteiros e preces estruturados;
-- `leituras.js`: leituras bíblicas;
-- `antifonas.js`: antífonas e citações;
+- `semanas/<segunda-feira>/`: uma pasta por semana (`semana.json` + documentos originais);
+- `dados/`: índice do Missal Romano e cadastro de páginas do lecionário;
+- `ferramentas/montar-semana.html`: ferramenta que monta a semana a partir dos arquivos;
+- `ferramentas/montar-site.js`: gera os arquivos de dados abaixo (rodado pelo GitHub);
+- `programacao.js`: gerador único das páginas semanais;
+- `semanas.js`, `roteiros.js`, `leituras.js`, `antifonas.js`: gerados automaticamente;
 - `sw.js`: cache e atualização do aplicativo;
 - `validate-data.js`: validação dos dados.
 

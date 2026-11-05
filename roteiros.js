@@ -1,13 +1,10 @@
-/* ==========================================================================
-   ROTEIROS E PRECES — PARÓQUIA NOSSA SENHORA AUXILIADORA
-   Chave: <tipo>_<legacyWeek>[_<extra>] (ex.: roteiro_9, preces_8_defuntos).
-   Cada linha é [papel, texto]; o app.js monta as janelas a partir destes dados.
-   ========================================================================== */
+/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
+   Roteiros e preces. Chave: <tipo>_<legacyWeek>[_<extra>]; cada linha é [papel, texto]. */
 window.roteirosData = {
   "roteiro_8": {
     "tipo": "roteiro",
     "titulo": "Roteiro — 32º Domingo do Tempo Comum — 7 e 8/11/2026",
-    "fonte": "32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx",
+    "fonte": "semanas/2026-11-02/32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx",
     "cabecalho": "32º DOMINGO TEMPO COMUM – 7 e 8 NOVEMBRO 2026 – COR VERDE",
     "secoes": [
       {
@@ -151,7 +148,7 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — Comemoração de Todos os Fiéis Defuntos — 02/11/2026",
     "botao": "📖 Roteiro — Fiéis Defuntos",
-    "fonte": "Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx",
+    "fonte": "semanas/2026-11-02/Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx",
     "cabecalho": "COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS – 02 11 2026 – COR ROXO",
     "secoes": [
       {
@@ -302,7 +299,7 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — Adoração Eucarística Solene — 06/11/2026 — 19h30",
     "botao": "📖 Roteiro — Adoração Solene",
-    "fonte": "ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf",
+    "fonte": "semanas/2026-11-02/ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf",
     "cabecalho": "ADORAÇÃO EUCARÍSTICA SOLENE – NOVEMBRO 2026 – 19h30 – COR BRANCO",
     "secoes": [
       {
@@ -367,7 +364,7 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — Missa Votiva do Sagrado Coração de Jesus — 06/11/2026",
     "botao": "📖 Roteiro — Missa Votiva do Sagrado Coração",
-    "fonte": "MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx",
+    "fonte": "semanas/2026-11-02/MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx",
     "cabecalho": "MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS – 06 NOVEMBRO 2026 – ANO A",
     "secoes": [
       {
@@ -496,7 +493,7 @@ window.roteirosData = {
   "preces_8": {
     "tipo": "preces",
     "titulo": "Preces — 32º Domingo do Tempo Comum",
-    "fonte": "PRECES - 32º DOMINGO TEMPO COMUM.docx",
+    "fonte": "semanas/2026-11-02/PRECES - 32º DOMINGO TEMPO COMUM.docx",
     "cabecalho": "32º DOMINGO TEMPO COMUM",
     "formularios": [
       {
@@ -547,7 +544,7 @@ window.roteirosData = {
     "tipo": "preces",
     "titulo": "Preces — Comemoração de Todos os Fiéis Defuntos",
     "botao": "🙏 Preces — Fiéis Defuntos",
-    "fonte": "PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx",
+    "fonte": "semanas/2026-11-02/PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx",
     "cabecalho": "COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS",
     "formularios": [
       {
@@ -569,7 +566,7 @@ window.roteirosData = {
   "roteiro_9": {
     "tipo": "roteiro",
     "titulo": "Roteiro — 33º Domingo do Tempo Comum — 14 e 15/11/2026",
-    "fonte": "33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx",
+    "fonte": "semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx",
     "cabecalho": "33º DOMINGO TEMPO COMUM – 14 E 15 NOVEMBRO 2026 – COR VERDE",
     "secoes": [
       {
@@ -712,7 +709,7 @@ window.roteirosData = {
   "preces_9": {
     "tipo": "preces",
     "titulo": "Preces — 33º Domingo do Tempo Comum",
-    "fonte": "PRECES - 33º DOMINGO TEMPO COMUM.docx",
+    "fonte": "semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx",
     "cabecalho": "33º DOMINGO TEMPO COMUM",
     "formularios": [
       {

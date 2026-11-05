@@ -27,10 +27,14 @@ Não abra o projeto usando apenas `file://`. O Service Worker exige HTTPS ou `lo
 | `index.html` | Estrutura fixa: cabeçalho, barra de ações, janelas genéricas (programação, seleção e visualização de leituras, mensagens) e área de impressão. Abas, roteiros, preces e blocos de leituras **não** ficam mais no HTML. |
 | `styles.css` | Layout, cores, responsividade, foco, acessibilidade e regras `@media print`. |
 | `app.js` | Renderização das abas, semanas, janelas de roteiro/preces, seleção de leituras, impressão e atualização do PWA. |
-| `programacao.js` | Dados de cada semana (array `semanas`) e o gerador único `montarSemana()`, que produz `programacaoData.weeks`. |
-| `roteiros.js` | `roteirosData`: roteiros, preces e reflexões estruturados em linhas `[papel, texto]`. |
-| `leituras.js` | `readingsData`: textos integrais das leituras. |
-| `antifonas.js` | `antifonasData`: antífonas, aclamações e citações da PASCOM. |
+| `semanas/<segunda-feira>/` | **Fonte de cada semana**: `semana.json` (montado pela ferramenta) e os documentos originais publicados (Leituras, Roteiro, Preces, extras). |
+| `dados/missal.json` | Índice do Missal Romano (2023): páginas de coleta, oferendas, depois da comunhão, prefácios, bênçãos e antífonas de cada formulário (tempo e santoral). |
+| `dados/lecionario.json` | Cadastro único `referência → "Volume / página"` do lecionário; cresce a cada semana montada. |
+| `ferramentas/montar-semana.html` | Ferramenta no navegador que lê os arquivos da semana e gera o pacote `.zip` (nada é enviado à internet). |
+| `ferramentas/semana-lib.js`, `ferramentas/office.js` | Leitura de DOCX/XLSX e montagem da semana (sem dependências; funcionam no navegador e no Node.js). |
+| `ferramentas/montar-site.js` | Gera `semanas.js`, `leituras.js`, `antifonas.js`, `roteiros.js` e as listas de arquivos de `sw.js`/`build-version.js`; com `--copiar _site` separa os arquivos públicos. |
+| `programacao.js` | Gerador único `montarSemana()`, que produz `programacaoData.weeks` a partir de `semanasData`. |
+| `semanas.js`, `roteiros.js`, `leituras.js`, `antifonas.js` | **Gerados automaticamente** por `montar-site.js` — não editar à mão. |
 | `manifest.json` | Metadados e configuração instalável do PWA. |
 | `sw.js` | Cache, fallback offline e atualização dos assets. |
 | `validate-data.js` | Validação genérica de consistência entre todos os dados (não depende de datas fixas). |
@@ -57,23 +61,19 @@ Abra `http://localhost:4173`. Os scripts de validação e publicação não prec
 
 ## 4. Publicar uma nova semana (passo a passo)
 
-1. **Programação (`programacao.js`)** — acrescente um objeto ao array `semanas`, copiando a semana anterior:
-   - `id` (`YYYY-MM-DD`, segunda-feira da semana) e `legacyWeek` (número sequencial único, ex.: 10);
-   - `shortTitle`, `fullTitle`, `periodo`, `roteiroLabel`;
-   - `dias` (segunda a sexta) e `fimDeSemana` (sábado vespertino e domingo, com `dias: [{ data, dia, escala }]`);
-   - em cada dia: `cor` (`verde`, `branco`, `vermelho`, `roxo`), `grau`, `celebracao`, `escala`, `leituras` e `missal`;
-   - `leituras`: `[momento, referência, chave, 'Lecionário / página']` (a aclamação não tem página);
-   - `missal`: apenas as partes existentes (`gloria`, `coleta`, `creio`, `oferendas`, `prefacio`, `eucaristica`, `comunhao`, `bencao`); ritos iniciais (430) e rito da comunhão (569) são padrão;
-   - `antifonas` (chave em `antifonas.js`), `nota` e `botoes` são opcionais;
-   - `escala`: linhas `[hora, local, responsável]` para Missas; para outros atendimentos use os atalhos `confissao(hora, padre, descrição)` e `casamento(hora, local, assistente, 'Noivo e Noiva')`. Locais de casamento: `CAPELA_PEDRA` (Capela de Pedra), `MATRIZ` (Igreja Matriz) ou `CAPELA` (Capela São Domingos Sávio). A página monta os blocos por tipo no cartão do dia e o resumo semanal de confissões, direção espiritual e casamentos;
-   - **privacidade:** nunca incluir telefones dos noivos nem valores de espórtulas (a validação bloqueia telefones e valores em reais); a escala de casamentos e o controle de espórtulas não são publicados como documentos;
-   - `documentos`: nomes exatos dos arquivos-fonte publicados.
-2. **Leituras (`leituras.js`)** — chaves `s<legacyWeek + 1>_<dia>_<parte>` (`seg`, `ter`, `qua`, `qui`, `sex`, `dom`; `l1`, `sal`, `l2`, `acl`, `ev`).
-3. **Antífonas (`antifonas.js`)** — chave `antifonas_<legacyWeek + 1>`.
-4. **Roteiros e preces (`roteiros.js`)** — chaves `roteiro_<legacyWeek>`, `preces_<legacyWeek>` e, para celebrações adicionais, `roteiro_<legacyWeek>_<extra>` com o campo `botao`. Declare os extras em `roteiroExtras` / `precesExtras` da semana.
-5. **Remover a semana antiga** — apague o objeto em `semanas` e as entradas correspondentes em `leituras.js`, `antifonas.js` e `roteiros.js`; apague os documentos-fonte e retire-os das listas de `build-version.js` e `sw.js`. A validação acusa qualquer item órfão.
-6. **Documentos** — copie os arquivos-fonte para a raiz e acrescente-os, com o mesmo nome, às listas de `build-version.js` e `sw.js` (as duas listas devem ser idênticas).
-7. Execute `npm run validate:data`, teste no navegador e publique.
+Não é preciso editar código. O passo a passo para o usuário está em `GUIA_NOVA_SEMANA.md`. Resumo técnico:
+
+1. Abrir `…/ferramentas/montar-semana.html` no site, escolher a segunda-feira e soltar os arquivos: Leituras (.docx), Roteiro e Preces do domingo, roteiros/preces de outras celebrações (com o dia), PDFs e a planilha “Escala e Espórtulas”.
+2. A ferramenta (`semana-lib.js`):
+   - **Leituras:** texto integral do DOCX semanal; referências do cabeçalho “Leituras:”; forma “mais breve” separada automaticamente; frases do telão (PASCOM) tiradas das linhas antes de “Leitura…/Proclamação…” e do refrão do salmo.
+   - **Missal:** páginas escritas nos roteiros (“Oração da Coleta (pág. 415)”, “Prefácio … (pág. 479)”, “ORAÇÃO EUCARÍSTICA II – pág. 537”, “Bênção Solene … (pág. 588)”) têm prioridade; nos demais dias usa `dados/missal.json` com as regras: féria verde → coleta do domingo da semana, prefácio 564 e OE V (565); memória/festa/solenidade → páginas do santoral (ou do Comum indicado), prefácio próprio ou do Comum, OE II (537); fim de semana → Glória/Creio/prefácio conforme o roteiro.
+   - **Escala:** abas Missas, Confissões e Casamentos, só colunas públicas; telefones, vínculos e valores nunca são lidos. Missa votiva na coluna “Celebração” muda o grau e a cor do dia.
+   - **Lecionário:** páginas de `dados/lecionario.json`; as que faltam são digitadas na revisão e voltam no pacote.
+   - **Antífonas:** domingo e festas/solenidades/comemorações, a partir do índice do Missal + aclamação do DOCX de leituras.
+3. O pacote `.zip` contém `semanas/<segunda>/semana.json`, os documentos e `dados/lecionario.json`. Enviar as pastas ao GitHub (*Add file → Upload files*).
+4. O workflow executa `node ferramentas/montar-site.js`, valida, gera `version.json` e publica. Ele roda também todo dia às 03h17 (Londrina): publica só as semanas que ainda não terminaram (até 3); as antigas saem sozinhas, sem apagar pastas.
+
+Correções pontuais podem ser feitas editando o `semana.json` da pasta (ou montando a semana de novo e reenviando).
 
 A semana exibida ao abrir o aplicativo é escolhida automaticamente pela data (fuso de Brasília): a semana que contém o dia de hoje, senão a próxima, senão a mais recente.
 
@@ -150,7 +150,10 @@ A validação é genérica e verifica:
 - roteiros e preces principais/adicionais de cada semana;
 - datas dentro do período da semana e navegação por dia;
 - IDs duplicados e elementos obrigatórios do `index.html`;
-- listas de assets idênticas em `build-version.js` e `sw.js`, arquivos existentes e documentos vinculados.
+- listas de assets idênticas em `build-version.js` e `sw.js`, arquivos existentes e documentos vinculados;
+- privacidade: telefones e valores em reais na página, documentos soltos na raiz e qualquer arquivo de espórtulas no repositório.
+
+Antes da validação, rode `node ferramentas/montar-site.js` (com `HOJE=AAAA-MM-DD` para simular outra data).
 
 Testes de navegador (opcional): `npm ci`, `npx playwright install chromium` e `npm run test:browser`.
 
@@ -214,7 +217,7 @@ Configuração obrigatória uma única vez:
 4. confira as permissões e proteções do ambiente `github-pages`;
 5. publique um commit em `main` ou execute o workflow manualmente em **Actions → Publicar no GitHub Pages → Run workflow**.
 
-O workflow roda em cada push para `main` e por `workflow_dispatch`. Primeiro executa `npm run validate:data`, depois `npm run version`, separa somente os arquivos públicos e envia/implanta o artefato estático. Assim, toda publicação gera metadados automaticamente, mesmo quando somente dados ou imagens mudaram. Os arquivos gerados ficam no artefato; o workflow não faz commit no repositório.
+O workflow roda em cada push para `main`, todos os dias às 03h17 (horário de Londrina, para retirar semanas encerradas) e por `workflow_dispatch`. Primeiro executa `node ferramentas/montar-site.js`, depois `npm run validate:data`, depois `npm run version`, separa somente os arquivos públicos e envia/implanta o artefato estático. Assim, toda publicação gera metadados automaticamente, mesmo quando somente dados ou imagens mudaram. Os arquivos gerados ficam no artefato; o workflow não faz commit no repositório.
 
 As ações estão fixadas por SHA imutável. O job de geração recebe somente leitura do repositório; apenas o job de implantação recebe `pages: write` e `id-token: write`.
 
@@ -226,6 +229,7 @@ Arquivos necessários:
 - `styles.css`;
 - `app.js`;
 - `programacao.js`;
+- `semanas.js`;
 - `leituras.js`;
 - `antifonas.js`;
 - `roteiros.js`;
@@ -233,17 +237,15 @@ Arquivos necessários:
 - `sw.js`;
 - `version.json`;
 - imagens e ícones referenciados.
-- documentos-fonte (PDF, DOCX e XLSX) referenciados pelas semanas (copiados para o artefato pelo workflow).
+- documentos de `semanas/<segunda>/` das semanas publicadas, `ferramentas/` e `dados/` (copiados por `montar-site.js --copiar _site`).
 
 ---
 
 ## 10. Checklist de publicação
 
-- [ ] Dados da nova semana atualizados.
-- [ ] Leituras cadastradas e com chaves únicas.
-- [ ] Roteiros e preces cadastrados em `roteiros.js`.
-- [ ] Semana antiga removida (dados e documentos).
-- [ ] Antífonas e citações revisadas.
+- [ ] Semana montada na ferramenta, avisos conferidos e pastas `semanas/` e `dados/` enviadas.
+- [ ] Nenhuma planilha de escala/espórtulas enviada ao repositório.
+- [ ] Antífonas, citações e páginas do lecionário revisadas na ferramenta.
 - [ ] `npm run validate:data` executado.
 - [ ] Layout verificado em computador.
 - [ ] Layout verificado em Android.
@@ -279,7 +281,7 @@ Feche o aplicativo instalado, abra a versão online no navegador, atualize e abr
 
 ### Leitura não encontrada
 
-Confira a correspondência exata entre a chave em `leituras` (programacao.js) e `readingsData`. Execute a validação.
+Confira, no `semana.json` da pasta da semana, a correspondência entre a chave em `leituras` de cada dia e o objeto `leituras`. Execute a validação.
 
 ### Impressão incorreta
 

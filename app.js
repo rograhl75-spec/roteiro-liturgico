@@ -88,7 +88,7 @@ function createSourceRow(fileName, label) {
   const body = document.createElement('span');
   body.className = 'script-text';
   const link = document.createElement('a');
-  link.href = `./${encodeURIComponent(fileName)}`;
+  link.href = `./${fileName.split('/').map(encodeURIComponent).join('/')}`;
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
   link.textContent = label;
