@@ -24,6 +24,7 @@ const assets = [
     'Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx',
     'PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx',
     'Antífona da entrada e comunhão - Fiéis Defuntos 02-11-2026.docx',
+    'MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx',
     'ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf',
     '32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx',
     'PRECES - 32º DOMINGO TEMPO COMUM.docx',

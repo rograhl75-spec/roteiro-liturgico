@@ -363,6 +363,136 @@ window.roteirosData = {
       }
     ]
   },
+  "roteiro_8_votiva": {
+    "tipo": "roteiro",
+    "titulo": "Roteiro — Missa Votiva do Sagrado Coração de Jesus — 06/11/2026",
+    "botao": "📖 Roteiro — Missa Votiva do Sagrado Coração",
+    "fonte": "MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx",
+    "cabecalho": "MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS – 06 NOVEMBRO 2026 – ANO A",
+    "secoes": [
+      {
+        "titulo": "Ladainha do Sagrado Coração de Jesus (somente na Missa das 12h00)",
+        "linhas": [
+          ["Orientação", "SOMENTE PARA A MISSA DAS 12h00: 10 minutos antes de iniciar a Missa, um integrante do Apostolado da Oração, inicia a recitação da Ladainha do Sagrado Coração de Jesus."],
+          ["Apostolado da Oração", "Senhor, tende piedade de nós.\nJesus Cristo, tende piedade de nós.\nSenhor, tende piedade de nós.\nJesus Cristo, ouvi-nos.\nJesus Cristo, atendei-nos.\nPai celeste, que sois Deus, tende piedade de nós.\nFilho, Redentor do mundo, que sois Deus, tende piedade de nós.\nEspírito Santo, que sois Deus, tende piedade de nós.\nSantíssima Trindade, que sois um só Deus, tende piedade de nós.\nCoração de Jesus, Filho do Pai eterno, tende piedade de nós.\nCoração de Jesus, formado pelo Espírito Santo no seio da Virgem Mãe, tende piedade de nós.\nCoração de Jesus, unido substancialmente ao Verbo de Deus, tende piedade de nós.\nCoração de Jesus, de majestade infinita, tende piedade de nós.\nCoração de Jesus, templo santo de Deus, tende piedade de nós.\nCoração de Jesus, tabernáculo do Altíssimo, tende piedade de nós.\nCoração de Jesus, casa de Deus e porta do Céu, tende piedade de nós.\nCoração de Jesus, fornalha ardente de caridade, tende piedade de nós.\nCoração de Jesus, receptáculo de justiça e de amor, tende piedade de nós.\nCoração de Jesus, cheio de bondade e de amor, tende piedade de nós.\nCoração de Jesus, abismo de todas as virtudes, tende piedade de nós.\nCoração de Jesus, digníssimo de todo o louvor, tende piedade de nós.\nCoração de Jesus, Rei e centro de todos os corações, tende piedade de nós.\nCoração de Jesus, no qual estão todos os tesouros da sabedoria e ciência, tende piedade de nós.\nCoração de Jesus, no qual habita toda a plenitude da divindade, tende piedade de nós.\nCoração de Jesus, no qual o Pai põe todas as suas complacências, tende piedade de nós.\nCoração de Jesus, de cuja plenitude todos nós participamos, tende piedade de nós.\nCoração de Jesus, desejado das colinas eternas, tende piedade de nós.\nCoração de Jesus, paciente e de muita misericórdia, tende piedade de nós.\nCoração de Jesus, rico para todos que vos invocam, tende piedade de nós.\nCoração de Jesus, fonte de vida e santidade, tende piedade de nós.\nCoração de Jesus, propiciação por nossos pecados, tende piedade de nós.\nCoração de Jesus, saturado de opróbrios, tende piedade de nós.\nCoração de Jesus, esmagado de dor por causa dos nossos pecados, tende piedade de nós.\nCoração de Jesus, feito obediente até a morte, tende piedade de nós.\nCoração de Jesus, transpassado pela lança, tende piedade de nós.\nCoração de Jesus, fonte de toda consolação, tende piedade de nós.\nCoração de Jesus, nossa vida e ressurreição, tende piedade de nós.\nCoração de Jesus, nossa paz e reconciliação, tende piedade de nós.\nCoração de Jesus, vítima dos pecadores, tende piedade de nós.\nCoração de Jesus, salvação dos que em vós esperam, tende piedade de nós.\nCoração de Jesus, esperança dos que morrem em vós, tende piedade de nós.\nCoração de Jesus, delícias de todos os santos, tende piedade de nós.\nCordeiro de Deus, que tirais os pecados do mundo, perdoai-nos, Senhor.\nCordeiro de Deus, que tirais os pecados do mundo, ouvi-nos, Senhor.\nCordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós, Senhor.\nV. Jesus, manso e humilde de coração,\nR. Fazei o nosso coração semelhante ao vosso.\nOremos:\nDeus eterno e todo-poderoso, olhai para o Coração do vosso diletíssimo Filho e para os louvores e satisfações que Ele, em nome dos pecadores, vos tem tributado; e, deixando-vos aplacar, perdoai aos que imploram a vossa misericórdia, em nome de vosso mesmo Filho, Jesus Cristo, que convosco vive e reina na unidade do Espírito Santo. Amém."]
+        ]
+      },
+      {
+        "titulo": "RITOS INICIAIS",
+        "linhas": [
+          ["Animador", "Louvado seja o Nosso Senhor Jesus Cristo!"],
+          ["Animador", "Para sempre seja louvado."],
+          ["Animador", "Irmãos e irmãs, sejam todos bem-vindos! Nesta celebração votiva, contemplamos o Sagrado Coração de Jesus, fonte inesgotável de amor e misericórdia, que se entregou totalmente por nós. Daquele Coração aberto na cruz nasce a Igreja e brota a graça que renova nossa vida. Neste mês de novembro, unidos ao Santo Padre, rezamos pelo bom uso das riquezas, para que saibamos resistir à tentação do egoísmo e colocar nossos bens a serviço do bem comum e da solidariedade com os mais necessitados. Que o Coração de Jesus, que sendo rico se fez pobre por amor, torne o nosso coração semelhante ao seu: generoso, humilde e aberto aos irmãos. Com alegria e fé, iniciemos nossa celebração cantando."],
+          ["Música", "Canto de Entrada"],
+          ["Padre", "Em nome do Pai e do Filho e do Espírito Santo."],
+          ["Animador", "Amém."],
+          ["Padre", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
+          ["Animador", "Bendito seja Deus que nos reuniu no amor de Cristo."],
+          ["Padre", "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
+          ["Padre", "Confesso a Deus todo-poderoso e a vós, irmãos e irmãs, que pequei muitas vezes por pensamentos e palavras, atos e omissões, (batendo no peito, dizem) por minha culpa, minha culpa, minha tão grande culpa. E peço à Virgem Maria, aos Anjos e Santos e a vós, irmãos e irmãs, que rogueis por mim a Deus, nosso Senhor."],
+          ["Padre", "Deus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."],
+          ["Animador", "Amém."],
+          ["Padre", "Senhor, tende piedade de nós."],
+          ["Animador", "Senhor, tende piedade de nós."],
+          ["Padre", "Cristo, tende piedade de nós."],
+          ["Animador", "Cristo, tende piedade de nós."],
+          ["Padre", "Senhor, tende piedade de nós."],
+          ["Animador", "Senhor, tende piedade de nós."],
+          ["Padre", "OREMOS (Oração da Coleta – pág. 1140)"],
+          ["Animador", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA DA PALAVRA",
+        "linhas": [
+          ["Leitor", "Fl 3,17-4,1"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Animador", "Graças a Deus."],
+          ["Leitor", "Salmo Responsorial (resposta) Sl 121(122),1-2.3-4a.4b-5 (R. 1)\nR. Que alegria, quando me disseram:\nVamos à casa do Senhor!"],
+          ["Animador", "R. Que alegria, quando me disseram: Vamos à casa do Senhor!"],
+          ["Padre", "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. O amor de Deus se realiza em todo aquele,\nque guarda sua palavra fielmente."],
+          ["Padre", "O Senhor esteja convosco."],
+          ["Animador", "Ele está no meio de nós."],
+          ["Padre", "Proclamação do Evangelho de Jesus Cristo segundo Lucas."],
+          ["Animador", "Glória a vós, Senhor."],
+          ["Padre", "Lc 16,1-8"],
+          ["Padre", "Palavra da Salvação."],
+          ["Animador", "Glória a vós, Senhor."],
+          ["Padre", "Homilia."],
+          ["Padre", "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
+          ["Animador", "Para sempre seja louvado."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA EUCARÍSTICA",
+        "linhas": [
+          ["Animador", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
+          ["Música", "Canto das Oferendas"],
+          ["Padre", "Preparação das oferendas."],
+          ["Padre", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
+          ["Animador", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Padre", "OREMOS (Oração sobre as Oferendas – pág. 1140)"],
+          ["Animador", "Amém."],
+          ["Padre", "O Senhor esteja convosco."],
+          ["Animador", "Ele está no meio de nós."],
+          ["Padre", "Corações ao alto."],
+          ["Animador", "O nosso coração está em Deus."],
+          ["Padre", "Demos graças ao Senhor, nosso Deus."],
+          ["Animador", "É nosso dever e nossa salvação."],
+          ["Padre", "(Prefácio do Sagrado Coração de Jesus – O imenso amor de Cristo – pág. 1141) Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso, por Cristo, Senhor nosso. Elevado na cruz, entregou-se a si mesmo com admirável amor; do seu lado transpassado, jorraram sangue e água e nasceram os sacramentos da Igreja, para que todos, atraídos ao Coração aberto do Salvador, pudessem beber com perene alegria das fontes da salvação. Por isso, com a multidão dos anjos e dos santos, nós vos louvamos, cantando a uma só voz:"],
+          ["Música", "Santo, Santo, Santo, Senhor, Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
+          ["Padre", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
+          ["Animador", "Enviai o vosso Espírito Santo!"],
+          ["Padre", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"],
+          ["Animador", "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"],
+          ["Padre", "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."],
+          ["Animador", "Aceitai, ó Senhor, a nossa oferta!"],
+          ["Padre", "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."],
+          ["Animador", "O Espírito nos una num só corpo!"],
+          ["Padre", "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."],
+          ["Animador", "Lembrai-vos, ó Pai, da vossa Igreja!"],
+          ["Padre", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
+          ["Animador", "Concedei-lhes, ó Senhor, a luz eterna!"],
+          ["Padre", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
+          ["Padre", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
+          ["Animador", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITO DA COMUNHÃO",
+        "linhas": [
+          ["Padre", "(Missal – pág. 569) Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"],
+          ["Todos", "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."],
+          ["Padre", "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."],
+          ["Animador", "Vosso é o Reino, o poder e a glória para sempre."],
+          ["Padre", "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."],
+          ["Animador", "Amém."],
+          ["Padre", "A paz do Senhor esteja sempre convosco."],
+          ["Animador", "O amor de Cristo nos uniu."],
+          ["Animador", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
+          ["Padre", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
+          ["Animador", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
+          ["Padre", "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"],
+          ["Música", "Canto da Comunhão."],
+          ["Padre", "OREMOS (Oração depois da Comunhão – pág. 1142)."],
+          ["Animador", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITOS DE ENCERRAMENTO",
+        "linhas": [
+          ["Animador", "Rogai por nós."],
+          ["Padre", "(BÊNÇÃO FINAL) O Senhor esteja convosco!"],
+          ["Animador", "Ele está no meio de nós."],
+          ["Padre", "Abençoe-vos Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo."],
+          ["Animador", "Amém."],
+          ["Padre", "Ide em paz e o Senhor vos acompanhe."],
+          ["Animador", "Graças a Deus."],
+          ["Música", "Canto Final."]
+        ]
+      }
+    ]
+  },
   "preces_8": {
     "tipo": "preces",
     "titulo": "Preces — 32º Domingo do Tempo Comum",

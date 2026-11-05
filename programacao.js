@@ -139,7 +139,7 @@
       shortTitle: '2 a 8 de novembro — 32º Domingo do Tempo Comum',
       fullTitle: 'Semana de 2 a 8 de novembro de 2026 — Fiéis Defuntos e 32º Domingo do Tempo Comum',
       roteiroLabel: '📖 Roteiro — 32º Domingo do Tempo Comum',
-      roteiroExtras: ['defuntos', 'adoracao'],
+      roteiroExtras: ['defuntos', 'votiva', 'adoracao'],
       precesExtras: ['defuntos'],
       nota: 'Leituras conforme “Leituras de 2 a 8 de novembro de 2026.docx”; páginas do lecionário conforme “Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx”; Missal conforme “Missal - 2 a 8 novembro_2026.xlsx”.',
       dias: [
@@ -218,9 +218,12 @@
             ['Aclamação ao Evangelho', '1Jo 2,5', 's9_sex_acl'],
             ['Evangelho', 'Lc 16,1-8', 's9_sex_ev', 'II / 1161']
           ],
-          missal: { coleta: '413', oferendas: '413', prefacio: '564 (próprio da OE V)', eucaristica: '565 (OE V)', comunhao: '413' },
-          nota: 'A escala indica a Missa Votiva do Sagrado Coração de Jesus. O DOCX de leituras traz a féria da 31ª Semana e a planilha do Missal indica 413 / 564 / 565 para 06/11; esses dados são transcritos sem substituições.',
-          botoes: [{ tipo: 'roteiro', chave: 'adoracao', rotulo: 'Roteiro — Adoração Eucarística Solene (19h30)' }]
+          missal: { coleta: '1140', oferendas: '1140', prefacio: '1141 (Sagrado Coração de Jesus — O imenso amor de Cristo)', eucaristica: '537 (OE II)', comunhao: '1142' },
+          nota: 'Missa Votiva do Sagrado Coração de Jesus (Missal, Missas Votivas, n. 8), com as leituras da féria. Somente na Missa das 12h00: 10 minutos antes, um integrante do Apostolado da Oração inicia a Ladainha do Sagrado Coração de Jesus.',
+          botoes: [
+            { tipo: 'roteiro', chave: 'votiva', rotulo: 'Roteiro — Missa Votiva do Sagrado Coração' },
+            { tipo: 'roteiro', chave: 'adoracao', rotulo: 'Roteiro — Adoração Eucarística Solene (19h30)' }
+          ]
         }
       ],
       fimDeSemana: {
@@ -239,7 +242,7 @@
           ['Aclamação ao Evangelho', 'Mt 24,42a.44', 's9_dom_acl'],
           ['Evangelho', 'Mt 25,1-13', 's9_dom_ev', 'I / 353']
         ],
-        missal: { gloria: '442 (conforme roteiro)', coleta: '414', creio: 'Rezado (página omitida)', oferendas: '414', prefacio: '479 (Domingos do Tempo Comum VI, conforme roteiro)', eucaristica: '537 (OE II)', comunhao: '414' },
+        missal: { gloria: 'Cantado (pág. 442)', coleta: '414', creio: 'Rezado (página omitida)', oferendas: '414', prefacio: '479 (Domingos do Tempo Comum VI)', eucaristica: '537 (OE II)', comunhao: '414' },
         antifonas: 'antifonas_9'
       },
       documentos: [
@@ -250,6 +253,7 @@
         'Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.docx',
         'PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.docx',
         'Antífona da entrada e comunhão - Fiéis Defuntos 02-11-2026.docx',
+        'MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.docx',
         'ADORAÇÃO EUCARÍSTICA SOLENE - NOV 2026.pdf',
         '32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.docx',
         'PRECES - 32º DOMINGO TEMPO COMUM.docx',
