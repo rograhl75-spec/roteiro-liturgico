@@ -56,6 +56,8 @@ Use os botões:
 
 Quando a semana tiver celebrações especiais (por exemplo, Fiéis Defuntos ou Adoração Eucarística Solene), aparecem botões adicionais de roteiro e preces na barra e no cartão do dia correspondente.
 
+No início de cada semana há um resumo com as **confissões, direção espiritual e casamentos**. Nos cartões dos dias, a escala aparece separada em Missas e celebrações, Confissões e direção espiritual e Casamentos.
+
 Nos cartões dos dias, toque na referência bíblica (por exemplo, **Lc 17,7-10**) para ler o texto integral.
 
 ### Aumentar ou diminuir as letras

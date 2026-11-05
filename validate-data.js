@@ -71,6 +71,9 @@ for (const week of weeks) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(week.id)) fail(`${label}: id deve seguir YYYY-MM-DD`);
   if (!week.shortTitle || !week.fullTitle) fail(`${label}: shortTitle/fullTitle ausentes`);
   if (!(week.inicio <= week.fim)) fail(`${label}: início/fim inválidos`);
+  // Privacidade: nunca publicar telefones nem valores (espórtulas).
+  if (/\(?\d{2}\)?[\s-]?9\d{4}-?\d{4}/.test(html)) fail(`${label}: possível número de telefone na página`);
+  if (/R\$\s*\d/.test(html)) fail(`${label}: valor em reais na página (espórtulas não são publicadas)`);
 
   const dates = [...html.matchAll(/data-date="([^"]+)"/g)].map(([, date]) => date);
   if (new Set(dates).size !== dates.length) fail(`${label}: data-date repetido`);

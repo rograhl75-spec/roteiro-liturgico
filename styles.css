@@ -82,6 +82,13 @@
         .p-hora { background: #dbeafe; color: #1e40af; font-weight: 700; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-left: 6px; font-size: 0.85rem; }
         .p-loc { color: #475569; }
         .p-cel { font-weight: 700; color: #0f172a; text-align: right; }
+        .p-desc { display: block; font-weight: 500; color: #475569; font-size: 0.85rem; }
+        .presidency-confissao { border-top-color: #0f766e; }
+        .presidency-confissao .p-hora { background: #ccfbf1; color: #115e59; }
+        .presidency-casamento { border-top-color: #b45309; }
+        .presidency-casamento .p-hora { background: #fef3c7; color: #92400e; }
+        .card-atendimentos { border-left-color: #0f766e; }
+        .card-atendimentos a { color: #1d4ed8; font-weight: 600; }
         
         
         /* Evita cortes no PDF */

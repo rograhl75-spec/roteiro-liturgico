@@ -6,6 +6,10 @@
 (() => {
   const PAROQUIA = 'Paróquia Nossa Senhora Auxiliadora';
   const CAPELA = 'Capela São Domingos Sávio';
+  const CAPELA_PEDRA = 'Capela de Pedra';
+  const MATRIZ = 'Igreja Matriz';
+  const confissao = (hora, padre, descricao = 'Confissões') => [hora, PAROQUIA, padre, 'confissao', descricao];
+  const casamento = (hora, local, assistente, noivos) => [hora, local, assistente, 'casamento', `Matrimônio — ${noivos}`];
 
   const CORES = {
     verde: 'Verde',
@@ -26,6 +30,44 @@
     ['comunhao', 'Oração depois da Comunhão'],
     ['bencao', 'Bênção Solene']
   ];
+
+  /* Tipos de linha da escala: [hora, local, responsável, tipo, descrição].
+     Sem tipo = missa/celebração. Nunca publicar telefones nem valores de espórtulas. */
+  const GRUPOS_ESCALA = [
+    ['missa', '⛪ Missas e celebrações'],
+    ['confissao', '🕊️ Confissões e direção espiritual'],
+    ['casamento', '💍 Casamentos']
+  ];
+  const ICONES_ATENDIMENTO = { confissao: '🕊️', casamento: '💍' };
+  const tipoDaLinha = (linha) => linha[3] || 'missa';
+
+  function blocosEscala(dia, dias) {
+    const ancorados = new Set([dia.data]);
+    return GRUPOS_ESCALA.map(([tipo, titulo]) => {
+      const linhas = dias.flatMap((item) => item.escala
+        .filter((linha) => tipoDaLinha(linha) === tipo)
+        .map((linha) => [item, linha]));
+      if (!linhas.length) return '';
+      return `<div class="presidency-box presidency-${tipo}"><div class="presidency-title">${titulo}</div>
+                <table class="escala-table"><tbody>${linhas.map(([item, [hora, local, responsavel, , descricao]]) => {
+                  const ancora = ancorados.has(item.data) ? '' : ` id="dia-${item.data}" data-date="${item.data}"`;
+                  ancorados.add(item.data);
+                  const texto = tipo === 'missa' ? responsavel : `${responsavel}<span class="p-desc">${descricao}</span>`;
+                  return `<tr${ancora}><td><span class="p-dia">${item.dia}</span> <span class="p-hora">${hora}</span></td><td class="p-loc">${local}</td><td class="p-cel">${texto}</td></tr>`;
+                }).join('')}</tbody></table></div>`;
+    }).join('');
+  }
+
+  function resumoAtendimentos(semana) {
+    const linhas = semana.dias.concat(semana.fimDeSemana.dias).flatMap((dia) => dia.escala
+      .filter((linha) => tipoDaLinha(linha) !== 'missa')
+      .map((linha) => [dia, linha]));
+    if (!linhas.length) return '';
+    return `<div class="card card-atendimentos"><h2>Confissões, direção espiritual e casamentos da semana</h2>
+            <table class="liturgy-table"><thead><tr><th scope="col">Dia</th><th scope="col">Horário</th><th scope="col">Atendimento</th><th scope="col">Local</th><th scope="col">Responsável</th></tr></thead>
+            <tbody>${linhas.map(([dia, [hora, local, responsavel, tipo, descricao]]) =>
+              `<tr><td><a href="#dia-${dia.data}">${dataCurta(dia.data)} (${dia.dia})</a></td><td>${hora}</td><td>${ICONES_ATENDIMENTO[tipo]} ${descricao}</td><td>${local}</td><td><strong>${responsavel}</strong></td></tr>`).join('')}</tbody></table></div>`;
+  }
 
   const MISSAL_PADRAO = { ritos: '430', rito_comunhao: '569' };
 
@@ -79,10 +121,7 @@
               <div class="card-header"><h2>${dia.titulo}</h2>
                 <span class="color-badge badge-${dia.cor}">${CORES[dia.cor]}${dia.grau ? ` (${dia.grau})` : ''}</span></div>
               <p><strong>Celebração:</strong> ${dia.celebracao}</p>
-              <div class="presidency-box"><div class="presidency-title">Escala de Horários, Locais e Celebrantes</div>
-                <table class="escala-table">${dias.map((item) =>
-                  `<tbody${item.data !== dia.data ? ` id="dia-${item.data}" data-date="${item.data}"` : ''}>${item.escala.map(([hora, local, celebrante]) =>
-                    `<tr><td><span class="p-dia">${item.dia}</span> <span class="p-hora">${hora}</span></td><td class="p-loc">${local}</td><td class="p-cel">${celebrante}</td></tr>`).join('')}</tbody>`).join('')}</table></div>
+              ${blocosEscala(dia, dias)}
               ${dia.nota ? `<p class="source-note">${dia.nota}</p>` : ''}
               ${botoes ? `<div class="action-row">${botoes}</div>` : ''}
               <div class="tables-grid">
@@ -122,6 +161,7 @@
       selecaoLeituras,
       programacaoHtml: navegacao +
         (semana.nota ? `<p class="source-note">${semana.nota}</p>` : '') +
+        resumoAtendimentos(semana) +
         semana.dias.concat([fimDeSemana]).map(cartaoDia).join('') +
         documentos
     };
@@ -147,7 +187,7 @@
           data: '2026-11-02', titulo: 'Segunda-feira, 2 de Novembro de 2026', dia: 'Segunda', cor: 'roxo', grau: 'Comemoração',
           celebracao: 'Comemoração de Todos os Fiéis Defuntos (Finados)',
           selecaoTitulo: 'Segunda-feira — 02/11 — Fiéis Defuntos',
-          escala: [['19h00', PAROQUIA, 'Pe. Heriberto']],
+          escala: [['19h00', PAROQUIA, 'Pe. Heriberto'], confissao('14h00–17h30', 'Pe. Laurindo', 'Confissões e direção espiritual')],
           leituras: [
             ['1ª Leitura', 'Jó 19,1.23-27a', 's9_seg_l1', 'I / 1052'],
             ['Salmo', 'Sl 22(23),1-3.4.5.6 (R. 1 ou 4a)', 's9_seg_sal', 'I / 1061'],
@@ -167,7 +207,7 @@
           data: '2026-11-03', titulo: 'Terça-feira, 3 de Novembro de 2026', dia: 'Terça', cor: 'verde', grau: 'Féria',
           celebracao: '31ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum',
           selecaoTitulo: 'Terça-feira — 03/11',
-          escala: [['19h00', PAROQUIA, 'Pe. Rafael']],
+          escala: [['19h00', PAROQUIA, 'Pe. Rafael'], confissao('14h30–17h30', 'Pe. Afonso', 'Direção espiritual')],
           leituras: [
             ['1ª Leitura', 'Fl 2,5-11', 's9_ter_l1', 'II / 1149'],
             ['Salmo', 'Sl 21(22),26b-27.28-30a.31-32 (R. 26a)', 's9_ter_sal', 'II / 1150'],
@@ -193,7 +233,7 @@
           data: '2026-11-05', titulo: 'Quinta-feira, 5 de Novembro de 2026', dia: 'Quinta', cor: 'verde', grau: 'Féria',
           celebracao: '31ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum',
           selecaoTitulo: 'Quinta-feira — 05/11',
-          escala: [['19h00', PAROQUIA, 'Pe. Laurindo']],
+          escala: [['19h00', PAROQUIA, 'Pe. Laurindo'], confissao('14h00–17h30', 'Pe. Laurindo'), confissao('14h30–17h30', 'Pe. Rafael')],
           leituras: [
             ['1ª Leitura', 'Fl 3,3-8a', 's9_qui_l1', 'II / 1156'],
             ['Salmo', 'Sl 104(105),2-3.4-5.6-7 (R. 3b)', 's9_qui_sal', 'II / 1156'],
@@ -209,8 +249,8 @@
           escala: [
             ['05h30', PAROQUIA, 'Pe. Djhon — Missa Votiva do Sagrado Coração de Jesus'],
             ['12h00', PAROQUIA, 'Pe. Heriberto — Missa Votiva do Sagrado Coração de Jesus'],
-            ['12h00', PAROQUIA, 'Pe. Laurindo — confissão'],
-            ['19h30', PAROQUIA, 'Pe. Heriberto — Adoração Eucarística Solene']
+            ['19h30', PAROQUIA, 'Pe. Heriberto — Adoração Eucarística Solene'],
+            confissao('12h00', 'Pe. Laurindo')
           ],
           leituras: [
             ['1ª Leitura', 'Fl 3,17-4,1', 's9_sex_l1', 'II / 1160'],
@@ -231,7 +271,7 @@
         celebracao: '32º Domingo do Tempo Comum, Ano A — sábado vespertino e domingo',
         selecaoTitulo: 'Fim de semana — 07 e 08/11 — 32º Domingo do Tempo Comum',
         dias: [
-          { data: '2026-11-07', dia: 'Sábado', escala: [['18h30', PAROQUIA, 'Pe. Djhon'], ['19h00', CAPELA, 'Pe. Heriberto']] },
+          { data: '2026-11-07', dia: 'Sábado', escala: [['18h30', PAROQUIA, 'Pe. Djhon'], ['19h00', CAPELA, 'Pe. Heriberto'], casamento('11h00', CAPELA_PEDRA, 'Pe. Heriberto', 'Roberto e Luana'), casamento('20h00', MATRIZ, 'Pe. Resende', 'Sidarta e Anna')] },
           { data: '2026-11-08', dia: 'Domingo', escala: [['09h00', PAROQUIA, 'Pe. Laurindo'], ['11h00', PAROQUIA, 'Pe. Laurindo'], ['18h30', PAROQUIA, 'Pe. Heriberto']] }
         ],
         leituras: [
@@ -273,7 +313,7 @@
           data: '2026-11-09', titulo: 'Segunda-feira, 9 de Novembro de 2026', dia: 'Segunda', cor: 'branco', grau: 'Festa',
           celebracao: 'Dedicação da Basílica do Latrão (Catedral de Roma) — Festa; 32ª Semana do Tempo Comum',
           selecaoTitulo: 'Segunda-feira — 09/11 — Dedicação da Basílica do Latrão',
-          escala: [['19h00', PAROQUIA, 'Pe. Laurindo']],
+          escala: [['19h00', PAROQUIA, 'Pe. Laurindo'], confissao('14h00–17h30', 'Pe. Laurindo', 'Confissões e direção espiritual')],
           leituras: [
             ['1ª Leitura', 'Ez 47,1-2.8-9.12', 's10_seg_l1', 'III / 203'],
             ['Salmo', 'Sl 45(46),2-3.5-6.8-9 (R. 5)', 's10_seg_sal', 'III / 203'],
@@ -287,7 +327,7 @@
           data: '2026-11-10', titulo: 'Terça-feira, 10 de Novembro de 2026', dia: 'Terça', cor: 'branco', grau: 'Memória',
           celebracao: 'São Leão Magno, papa e doutor da Igreja — Memória; 32ª Semana do Tempo Comum',
           selecaoTitulo: 'Terça-feira — 10/11 — São Leão Magno',
-          escala: [['19h00', PAROQUIA, 'Pe. Manuel José']],
+          escala: [['19h00', PAROQUIA, 'Pe. Manuel José'], confissao('14h30–17h30', 'Pe. Manuel José', 'Direção espiritual')],
           leituras: [
             ['1ª Leitura', 'Tt 2,1-8.11-14', 's10_ter_l1', 'II / 1172'],
             ['Salmo', 'Sl 36(37),3-4.18-23.27 e 29 (R. 39a)', 's10_ter_sal', 'II / 1173'],
@@ -313,7 +353,7 @@
           data: '2026-11-12', titulo: 'Quinta-feira, 12 de Novembro de 2026', dia: 'Quinta', cor: 'vermelho', grau: 'Memória',
           celebracao: 'São Josafá, bispo e mártir — Memória; 32ª Semana do Tempo Comum',
           selecaoTitulo: 'Quinta-feira — 12/11 — São Josafá',
-          escala: [['19h00', PAROQUIA, 'Pe. Laurindo']],
+          escala: [['19h00', PAROQUIA, 'Pe. Laurindo'], confissao('14h00–17h30', 'Pe. Laurindo'), confissao('14h30–17h30', 'Pe. Rafael')],
           leituras: [
             ['1ª Leitura', 'Fm 1,7-20', 's10_qui_l1', 'II / 1179'],
             ['Salmo', 'Sl 145(146),7.8-9a.9bc-10 (R. 5a)', 's10_qui_sal', 'II / 1180'],
@@ -326,7 +366,7 @@
           data: '2026-11-13', titulo: 'Sexta-feira, 13 de Novembro de 2026', dia: 'Sexta', cor: 'verde', grau: 'Féria',
           celebracao: '32ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum',
           selecaoTitulo: 'Sexta-feira — 13/11',
-          escala: [['19h00', PAROQUIA, 'Pe. Heriberto']],
+          escala: [['19h00', PAROQUIA, 'Pe. Heriberto'], casamento('20h00', CAPELA_PEDRA, 'Diác. Pedrinho', 'Mateus e Lorena')],
           leituras: [
             ['1ª Leitura', '2Jo 1,4-9', 's10_sex_l1', 'II / 1183'],
             ['Salmo', 'Sl 118(119),1.2.10.11.17.18 (R. 1b)', 's10_sex_sal', 'II / 1184'],
@@ -341,7 +381,7 @@
         celebracao: '33º Domingo do Tempo Comum, Ano A — sábado vespertino e domingo',
         selecaoTitulo: 'Fim de semana — 14 e 15/11 — 33º Domingo do Tempo Comum',
         dias: [
-          { data: '2026-11-14', dia: 'Sábado', escala: [['18h30', PAROQUIA, 'Pe. Laurindo'], ['19h00', CAPELA, 'Pe. Heriberto']] },
+          { data: '2026-11-14', dia: 'Sábado', escala: [['18h30', PAROQUIA, 'Pe. Laurindo'], ['19h00', CAPELA, 'Pe. Heriberto'], casamento('11h00', CAPELA_PEDRA, 'Diác. Rogério', 'Amadeus e Ana'), casamento('16h00', CAPELA_PEDRA, 'Pe. Romão', 'Dyego e Isabela')] },
           { data: '2026-11-15', dia: 'Domingo', escala: [['09h00', PAROQUIA, 'Pe. Laurindo'], ['11h00', PAROQUIA, 'Pe. Heriberto'], ['18h30', PAROQUIA, 'Pe. Heriberto']] }
         ],
         leituras: [

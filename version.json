@@ -1,10 +1,10 @@
 {
-  "version": "9752b92377b763bc2b8779ca3fa1ffd0393ae989c93e71b3eaa041f85883d2e5",
+  "version": "017fbde3a1eb61be3cdd058cc38420e64c03ad54757f94981a84bb941b4f506a",
   "files": {
-    "./index.html": "2cd3717846f804272e80c3979a97d3c0b79325ab17acc4158e101d6db854dfd4",
-    "./styles.css": "68cafb8faaf729db7ff03a9e68c31bbed05f58cac2234974cc434d2fd3851dbd",
+    "./index.html": "6dc80049b73a7490746117f907a501edd49b8664ba3c53ff5424cb29252d97b2",
+    "./styles.css": "afdda492e661d586a6b6a518041dffdd0c46749bba2b083f980bb4ae91784cff",
     "./app.js": "a88b8e37e672e0efb59af18157282d18a1950e98e2864251f2ca9f8cd6854cec",
-    "./programacao.js": "2d1240c91cd3c48e013b28fb0beb7578625ae9e11cb3f4ecae745da3edd64cca",
+    "./programacao.js": "6a8e809ea081441139ce893b38705101697658b7654aff2869a08945fd6da15b",
     "./leituras.js": "fe4b5dd970add7ca180640e86134f9316882fc1116548912fed34c10d355ff48",
     "./antifonas.js": "46944a80707e09126948be406bd09c1cb93d4d3eb80d9f7afc9ead04daf6cb07",
     "./roteiros.js": "9b01bcfd14dfd7ab294b6fa55236737a44286e3837aacfe34bcb83aa6c72529a",

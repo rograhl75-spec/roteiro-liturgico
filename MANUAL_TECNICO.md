@@ -65,6 +65,8 @@ Abra `http://localhost:4173`. Os scripts de validação e publicação não prec
    - `leituras`: `[momento, referência, chave, 'Lecionário / página']` (a aclamação não tem página);
    - `missal`: apenas as partes existentes (`gloria`, `coleta`, `creio`, `oferendas`, `prefacio`, `eucaristica`, `comunhao`, `bencao`); ritos iniciais (430) e rito da comunhão (569) são padrão;
    - `antifonas` (chave em `antifonas.js`), `nota` e `botoes` são opcionais;
+   - `escala`: linhas `[hora, local, responsável]` para Missas; para outros atendimentos use os atalhos `confissao(hora, padre, descrição)` e `casamento(hora, local, assistente, 'Noivo e Noiva')`. Locais de casamento: `CAPELA_PEDRA` (Capela de Pedra), `MATRIZ` (Igreja Matriz) ou `CAPELA` (Capela São Domingos Sávio). A página monta os blocos por tipo no cartão do dia e o resumo semanal de confissões, direção espiritual e casamentos;
+   - **privacidade:** nunca incluir telefones dos noivos nem valores de espórtulas (a validação bloqueia telefones e valores em reais); a escala de casamentos e o controle de espórtulas não são publicados como documentos;
    - `documentos`: nomes exatos dos arquivos-fonte publicados.
 2. **Leituras (`leituras.js`)** — chaves `s<legacyWeek + 1>_<dia>_<parte>` (`seg`, `ter`, `qua`, `qui`, `sex`, `dom`; `l1`, `sal`, `l2`, `acl`, `ev`).
 3. **Antífonas (`antifonas.js`)** — chave `antifonas_<legacyWeek + 1>`.
