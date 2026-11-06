@@ -103,7 +103,7 @@
                   `<strong>${item.label}</strong><br>${(item.options || [item]).map((opcao, index) =>
                     `${index ? '<br><br><strong>Ou:</strong> ' : ''}<small>${escapar(opcao.reference)}</small><br>${comQuebras(opcao.text)}`).join('')}`
                 ]))}
-                ${tabela('📺 Citações Telão (PASCOM)', [], antifonas.citations.map((item) => [
+                ${tabela('📺 Citações para a transmissão', [], antifonas.citations.map((item) => [
                   `<strong>${item.label.toUpperCase()}</strong><br>${comQuebras(item.text)}`
                 ]))}
               </div>`;

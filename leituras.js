@@ -7,7 +7,6 @@ const readingsData = {
         title: "1ª Leitura — Jó 19,1.23-27a (Lecionário I, pág. 1052)",
         day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `PRIMEIRA LEITURA
-Eu sei que o meu Redentor está vivo.
 Leitura do Livro de Jó 19,1.23-27a
 1
 Jó tomou a palavra e disse:
@@ -75,7 +74,6 @@ pelos tempos infinitos. R.`
         title: "2ª Leitura — 1Cor 15,20-24a.25-28 (Lecionário I, pág. 1073)",
         day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `SEGUNDA LEITURA
-Em Cristo todos reviverão.
 Leitura da Primeira Carta de São Paulo aos Coríntios 15,20-24a.25-28
 
 Irmãos:
@@ -128,7 +126,6 @@ V. É esta a vontade de quem me enviou:
         title: "Evangelho — Lc 12,35-40 (Lecionário I, pág. 1087)",
         day: "Segunda-feira (02/11) — Fiéis Defuntos",
         text: `EVANGELHO
-Vós também, ficai preparados!
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 12,35-40
 
 Naquele tempo, disse Jesus a seus discípulos:
@@ -162,7 +159,6 @@ Palavra da Salvação.`
         title: "1ª Leitura — Fl 2,5-11 (Lecionário II, pág. 1149)",
         day: "Terça-feira (03/11)",
         text: `PRIMEIRA LEITURA
-Humilhou-se a si mesmo, por isso, Deus o exaltou.
 Leitura da Carta de São Paulo aos Filipenses 2,5-11
 
 Irmãos,
@@ -241,8 +237,6 @@ V. Vinde a mim, todos vós que estais cansados,
         title: "Evangelho — Lc 14,15-24 (Lecionário II, pág. 1150)",
         day: "Terça-feira (03/11)",
         text: `EVANGELHO
-Sai pelas estradas e atalhos, e obriga as pessoas
-a virem aqui, para que minha casa fique cheia.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 14,15-24
 
 Naquele tempo,
@@ -297,8 +291,6 @@ Palavra da Salvação.`
         title: "1ª Leitura — Fl 2,12-18 (Lecionário II, pág. 1152)",
         day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `PRIMEIRA LEITURA
-Trabalhai para a vossa salvação;
-Deus é que realiza em vós tanto o querer como o fazer.
 Leitura da Carta de São Paulo aos Filipenses 2,12-18
 12
 Meus queridos,
@@ -372,8 +364,6 @@ V. Felizes sereis vós, se fordes ultrajados
         title: "Evangelho — Lc 14,25-33 (Lecionário II, pág. 1154)",
         day: "Quarta-feira (04/11) — São Carlos Borromeu",
         text: `EVANGELHO
-Qualquer um de vós, se não renunciar a tudo
-o que tem, não pode ser meu discípulo!
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 14,25-33
 
 Naquele tempo,
@@ -425,8 +415,6 @@ Palavra da Salvação.`
         title: "1ª Leitura — Fl 3,3-8a (Lecionário II, pág. 1156)",
         day: "Quinta-feira (05/11)",
         text: `PRIMEIRA LEITURA
-Essas coisas, que eram vantagens para mim,
-considerei-as como perda, por causa de Cristo.
 Leitura da Carta de São Paulo aos Filipenses 3,3-8a
 
 Irmãos,
@@ -502,7 +490,6 @@ V. Vinde a mim, todos vós que estais cansados,
         title: "Evangelho — Lc 15,1-10 (Lecionário II, pág. 1157)",
         day: "Quinta-feira (05/11)",
         text: `EVANGELHO
-Haverá alegria no céu por um só pecador que se converte.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 15,1-10
 
 Naquele tempo,
@@ -556,9 +543,6 @@ Palavra da Salvação.`
         title: "1ª Leitura — Fl 3,17-4,1 (Lecionário II, pág. 1160)",
         day: "Sexta-feira (06/11)",
         text: `PRIMEIRA LEITURA
-Aguardamos o nosso Salvador,
-que transformará o nosso corpo humilhado
-e o tornará semelhante ao seu corpo glorioso.
 Leitura da Carta de São Paulo aos Filipenses 3,17-4,1
 17
 Sede meus imitadores, irmãos,
@@ -634,8 +618,6 @@ V. O amor de Deus se realiza em todo aquele,
         title: "Evangelho — Lc 16,1-8 (Lecionário II, pág. 1161)",
         day: "Sexta-feira (06/11)",
         text: `EVANGELHO
-Os filhos deste mundo são mais espertos
-em seus negócios do que os filhos da luz.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 16,1-8
 
 Naquele tempo,
@@ -687,7 +669,6 @@ Palavra da Salvação.`
         title: "1ª Leitura — Sb 6,12-16 (Lecionário I, pág. 351)",
         day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `PRIMEIRA LEITURA
-A sabedoria é encontrada por aqueles que a procuram.
 Leitura do Livro da Sabedoria 6,12-16
 12
 A Sabedoria é resplandecente e sempre viçosa.
@@ -747,8 +728,6 @@ de vossas asas à sombra eu exulto! R.`
         title: "2ª Leitura (mais longa) — 1Ts 4,13-18 (Lecionário I, pág. 352)",
         day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `SEGUNDA LEITURA (mais longa)
-Deus trará de volta, com Cristo, os que
-através dele entraram no sono da morte.
 Leitura da Primeira Carta de São Paulo aos Tessalonicenses 4,13-18
 13
 Irmãos: não queremos deixar-vos na incerteza
@@ -805,7 +784,6 @@ V. É preciso vigiar e ficar de prontidão;
         title: "Evangelho — Mt 25,1-13 (Lecionário I, pág. 353)",
         day: "Fim de Semana (07 e 08/11) — 32º Domingo do Tempo Comum",
         text: `EVANGELHO
-O noivo está chegando. Ide ao seu encontro.
 Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,1-13
 
 Naquele tempo,
@@ -1070,7 +1048,6 @@ e meu Pai o amará e a ele nós viremos.`
         title: "Evangelho — Lc 17,7-10 (Lecionário II, pág. 1173)",
         day: "Terça-feira (10/11) — São Leão Magno",
         text: `EVANGELHO
-Somos servos inúteis; fizemos o que devíamos fazer.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,7-10
 Naquele tempo, disse Jesus:
 7
@@ -1177,8 +1154,6 @@ de Deus para convosco, em Cristo, o Senhor.`
         title: "Evangelho — Lc 17,11-19 (Lecionário II, pág. 1177)",
         day: "Quarta-feira (11/11) — São Martinho de Tours",
         text: `EVANGELHO
-Não houve quem voltasse para dar glória
-a Deus, a não ser este estrangeiro.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,11-19
 11
 Aconteceu que, caminhando para Jerusalém,
@@ -1318,7 +1293,6 @@ um fruto abundante vós haveis de dar.`
         title: "Evangelho — Lc 17,20-25 (Lecionário II, pág. 1181)",
         day: "Quinta-feira (12/11) — São Josafá",
         text: `EVANGELHO
-O Reino de Deus está entre vós.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,20-25
 Naquele tempo,
 20
@@ -1424,7 +1398,6 @@ pois a vossa redenção se aproxima!`
         title: "Evangelho — Lc 17,26-37 (Lecionário II, pág. 1184)",
         day: "Sexta-feira (13/11)",
         text: `EVANGELHO
-O mesmo acontecerá no dia em que o Filho do Homem for revelado.
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,26-37
 Naquele tempo,
 disse Jesus aos seus discípulos:
@@ -1568,8 +1541,6 @@ quem em mim permanece, esse dá muito fruto.`
         title: "Evangelho — Mt 25,14-30 (Lecionário I, pág. 357)",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
         text: `EVANGELHO (mais longo)
-Como foste fiel na administração de tão
-pouco, vem participar de minha alegria.
 Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,14-30
 Naquele tempo,
 Jesus contou esta parábola a seus discípulos:

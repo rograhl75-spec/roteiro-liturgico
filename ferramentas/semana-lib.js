@@ -23,6 +23,7 @@
     l1: '1ª Leitura', sal: 'Salmo', l2: '2ª Leitura', acl: 'Aclamação ao Evangelho', ev: 'Evangelho'
   };
   const MOMENTOS_LONGOS = { ...MOMENTOS, sal: 'Salmo Responsorial' };
+  // Citações para a transmissão (frases-título e refrão do salmo).
   const ROTULOS_CITACAO = { l1: 'Primeira Leitura', sal: 'Salmo Responsorial', l2: 'Segunda Leitura', ev: 'Evangelho' };
 
   /* ------------------------------ utilidades ------------------------------ */
@@ -138,7 +139,7 @@
     }
 
     for (const secao of dia.secoes) {
-      leituras.push({ parte: secao.chave, referencia: secao.referencia || '', texto: secao.linhas.join('\n'), secao });
+      leituras.push({ parte: secao.chave, referencia: secao.referencia || '', texto: semFraseTitulo(secao.linhas).join('\n'), secao });
       if (secao.breve && !dia.secoes.some((s) => s.chave === `${secao.chave}_breve`)) {
         const texto = textoMaisBreve(secao.linhas, secao.breve);
         if (texto) leituras.push({ parte: `${secao.chave}_breve`, referencia: secao.breve, texto, secao });
@@ -149,6 +150,13 @@
       data: dia.data, titulo: dia.titulo, linhaCelebracao, linhaSemana, notas, leituras,
       citacoes: citacoes(dia.secoes), aclamacao: textoAclamacao(dia.secoes), avisos
     };
+  }
+
+  /* A frase-título (entre “PRIMEIRA LEITURA” e “Leitura do…”) só vai para as
+     citações da transmissão; não aparece no texto da leitura. */
+  function semFraseTitulo(linhas) {
+    const iAbertura = linhas.findIndex((l) => RX_ABERTURA.test(l));
+    return iAbertura > 1 && iAbertura <= 5 ? [linhas[0], ...linhas.slice(iAbertura)] : linhas;
   }
 
   function versiculos(espec) {
@@ -169,7 +177,6 @@
     if (!alvo || iAbertura < 0) return '';
     const saida = [
       /\(mais long[oa]\)/i.test(linhas[0]) ? linhas[0].replace(/\(mais long([oa])\)/i, '(mais breve)') : `${linhas[0]} (mais breve)`,
-      ...linhas.slice(1, iAbertura),
       linhas[iAbertura].replace(/\d+,[\d.\-–a-z]+$/, referencia.replace(/^.*?(\d+,)/, '$1'))
     ];
     let incluir = true;
@@ -560,7 +567,7 @@
       items.push({ label: 'Antífona de Comunhão',
         options: formulario.comunhao.map((a, i) => ({ reference: `${i ? '' : 'Missal Romano — '}${a.ref}`, text: a.texto })) });
     }
-    return { title: `Antífonas, Aclamação e PASCOM — ${titulo}`, items, citations: info.citacoes };
+    return { title: `Antífonas, Aclamação e Citações para a transmissão — ${titulo}`, items, citations: info.citacoes };
   }
 
   /**

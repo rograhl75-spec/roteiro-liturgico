@@ -50,7 +50,7 @@ Clique em **Montar a semana**.
    - **Missal Romano:** páginas já preenchidas. Corrija se precisar; deixe vazio o que não se aplica.
    - **Leituras:** se a página do lecionário estiver vazia, digite assim: `II / 1172` (volume / página).
    - **Escala:** vem da planilha. Se estiver errada, corrija **na planilha** e clique de novo em **Montar a semana**.
-   - **Antífonas e telão:** confira o texto; as frases do telão podem ser digitadas ou corrigidas.
+   - **Antífonas e citações para a transmissão:** confira o texto; as citações podem ser digitadas ou corrigidas.
 
 ## Passo 5 — Baixar o pacote
 

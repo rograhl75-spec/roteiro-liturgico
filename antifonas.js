@@ -1,8 +1,8 @@
 /* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
-   Antífonas, aclamações e citações da PASCOM. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
+   Antífonas, aclamações e citações para a transmissão. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
 window.antifonasData = {
   "antifonas_9_defuntos": {
-    "title": "Antífonas, Aclamação e PASCOM — Comemoração de Todos os Fiéis Defuntos (02/11/2026)",
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Comemoração de Todos os Fiéis Defuntos (02/11/2026)",
     "items": [
       {
         "label": "Antífona de Entrada",
@@ -44,7 +44,7 @@ window.antifonasData = {
     ]
   },
   "antifonas_9": {
-    "title": "Antífonas, Aclamação e PASCOM — 32º Domingo do Tempo Comum (07 e 08/11/2026)",
+    "title": "Antífonas, Aclamação e Citações para a transmissão — 32º Domingo do Tempo Comum (07 e 08/11/2026)",
     "items": [
       {
         "label": "Antífona de Entrada",
@@ -90,7 +90,7 @@ window.antifonasData = {
     ]
   },
   "antifonas_10": {
-    "title": "Antífonas, Aclamação e PASCOM — 33º Domingo do Tempo Comum (14 e 15/11/2026)",
+    "title": "Antífonas, Aclamação e Citações para a transmissão — 33º Domingo do Tempo Comum (14 e 15/11/2026)",
     "items": [
       {
         "label": "Antífona de Entrada",

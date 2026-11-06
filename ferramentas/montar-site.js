@@ -90,7 +90,7 @@ window.readingsData = readingsData;
 `);
 
   fs.writeFileSync(path.join(raiz, 'antifonas.js'), `/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
-   Antífonas, aclamações e citações da PASCOM. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
+   Antífonas, aclamações e citações para a transmissão. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
 window.antifonasData = ${JSON.stringify(antifonas, null, 2)};
 `);
 

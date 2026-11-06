@@ -277,7 +277,7 @@ async function montar() {
   }
 }
 
-/* As quatro citações do telão sempre aparecem (vazias quando o arquivo não as traz). */
+/* As citações para a transmissão sempre aparecem (vazias quando o arquivo não as traz). */
 function prepararCitacoes(semana) {
   const todos = semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : []);
   for (const dia of todos) {
@@ -323,11 +323,11 @@ function desenharDia(dia, base) {
         ${escala.length ? `<table><tbody>${escala.map(([d, [hora, local, resp, tipo, desc]]) =>
           `<tr><td>${NOMES_DIA[SemanaLib.diaDaSemana(d.data)]} ${hora}</td><td>${escapar(local)}</td><td>${escapar(resp)}${desc ? ` — ${escapar(desc)}` : ''}</td></tr>`).join('')}</tbody></table>`
           : '<p class="pequeno">Nenhum horário na planilha para este dia.</p>'}</div>
-      ${ant ? `<div><h3>🎵 Antífonas e 📺 citações do telão</h3>
+      ${ant ? `<div><h3>🎵 Antífonas e 📺 citações para a transmissão</h3>
         ${ant.items.map((item, i) => item.options
           ? item.options.map((o, j) => `<label>${escapar(item.label)}${item.options.length > 1 ? ` (${j + 1})` : ''} — ${escapar(o.reference)}<textarea data-caminho="${antBase}.items.${i}.options.${j}.text">${escapar(o.text)}</textarea></label>`).join('')
           : `<label>${escapar(item.label)} — ${escapar(item.reference)}<textarea data-caminho="${antBase}.items.${i}.text">${escapar(item.text)}</textarea></label>`).join('')}
-        ${ant.citations.map((c, i) => `<label>📺 ${escapar(c.label)}<textarea data-caminho="${antBase}.citations.${i}.text" placeholder="Frase para o telão (opcional)">${escapar(c.text)}</textarea></label>`).join('')}
+        ${ant.citations.map((c, i) => `<label>📺 ${escapar(c.label)}<textarea data-caminho="${antBase}.citations.${i}.text" placeholder="Frase para a transmissão (opcional)">${escapar(c.text)}</textarea></label>`).join('')}
       </div>` : ''}
     </div>
   </details>`;

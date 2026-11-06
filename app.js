@@ -669,7 +669,7 @@ function createAntifonaBlock(typeKey) {
     title.style.borderBottom = '1px solid #1a365d';
     title.style.paddingBottom = '5px';
     title.style.textTransform = 'uppercase';
-    title.textContent = 'Antífonas e PASCOM indisponíveis';
+    title.textContent = 'Antífonas e citações indisponíveis';
     fallback.appendChild(title);
 
     const message = document.createElement('p');
@@ -730,7 +730,7 @@ function createAntifonaBlock(typeKey) {
     citationsTitle.style.margin = '10px 0';
     citationsTitle.style.color = '#1a365d';
     citationsTitle.style.textTransform = 'uppercase';
-    citationsTitle.textContent = 'Citações Telão (PASCOM)';
+    citationsTitle.textContent = 'Citações para a transmissão';
     wrap.appendChild(citationsTitle);
 
     antifona.citations.forEach((citation, idx) => {

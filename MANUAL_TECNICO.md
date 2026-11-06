@@ -65,7 +65,7 @@ Não é preciso editar código. O passo a passo para o usuário está em `GUIA_N
 
 1. Abrir `…/ferramentas/montar-semana.html` no site, escolher a segunda-feira e soltar os arquivos: Leituras (.docx), Roteiro e Preces do domingo, roteiros/preces de outras celebrações (com o dia), PDFs e a planilha “Escala e Espórtulas”.
 2. A ferramenta (`semana-lib.js`):
-   - **Leituras:** texto integral do DOCX semanal; referências do cabeçalho “Leituras:”; forma “mais breve” separada automaticamente; frases do telão (PASCOM) tiradas das linhas antes de “Leitura…/Proclamação…” e do refrão do salmo.
+   - **Leituras:** texto integral do DOCX semanal; referências do cabeçalho “Leituras:”; forma “mais breve” separada automaticamente; frases-título (linhas antes de “Leitura…/Proclamação…”) e refrão do salmo vão só para as **Citações para a transmissão**; a frase-título é retirada do texto da leitura.
    - **Missal:** páginas escritas nos roteiros (“Oração da Coleta (pág. 415)”, “Prefácio … (pág. 479)”, “ORAÇÃO EUCARÍSTICA II – pág. 537”, “Bênção Solene … (pág. 588)”) têm prioridade; nos demais dias usa `dados/missal.json` com as regras: féria verde → coleta do domingo da semana, prefácio 564 e OE V (565); memória/festa/solenidade → páginas do santoral (ou do Comum indicado), prefácio próprio ou do Comum, OE II (537); fim de semana → Glória/Creio/prefácio conforme o roteiro.
    - **Escala:** abas Missas, Confissões e Casamentos, só colunas públicas; telefones, vínculos e valores nunca são lidos. Missa votiva na coluna “Celebração” muda o grau e a cor do dia.
    - **Lecionário:** páginas de `dados/lecionario.json`; as que faltam são digitadas na revisão e voltam no pacote.
