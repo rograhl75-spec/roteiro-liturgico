@@ -131,6 +131,7 @@ function createModalShell(id, title, contentId, printAction, dataset = {}) {
     button('🖨️ Imprimir', { 'data-action': printAction, ...dataset });
     if (printAction !== 'print-active-reflexoes') {
       button('📤 Enviar PDF', { 'data-action': printAction.replace('print-', 'share-'), ...dataset, 'aria-label': 'Enviar como PDF (WhatsApp, e-mail)' });
+      button('⬇️ Baixar PDF', { 'data-action': printAction.replace('print-', 'share-'), 'data-modo': 'baixar', ...dataset, 'aria-label': 'Baixar como PDF' }, 'action-btn btn-baixar-pdf');
     }
   }
   button('×', { 'data-action': 'close-modal', 'data-modal-id': id }, 'modal-close-btn');

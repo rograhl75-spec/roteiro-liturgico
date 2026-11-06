@@ -278,3 +278,6 @@ input:focus-visible {
 .aviso-envio p { margin: 0 0 10px; }
 .aviso-envio div { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 @media print { .aviso-envio { display: none !important; } }
+
+/* “Baixar PDF” só no computador; no celular o “Enviar PDF” já resolve. */
+@media (pointer: coarse) { .btn-baixar-pdf { display: none !important; } }

@@ -227,7 +227,10 @@
       await carregarPdfLib();
       const bytes = await gerarPdf(documento);
       const arquivo = new File([bytes], nomeSeguro(documento.titulo), { type: 'application/pdf' });
-      if (navigator.canShare && navigator.canShare({ files: [arquivo] })) await compartilhar(arquivo, documento.titulo);
+      if (botao && botao.dataset.modo === 'baixar') {
+        baixar(arquivo);
+        aviso('PDF salvo na pasta Downloads. Arraste-o para a conversa do WhatsApp ou anexe-o no e-mail.');
+      } else if (navigator.canShare && navigator.canShare({ files: [arquivo] })) await compartilhar(arquivo, documento.titulo);
       else {
         baixar(arquivo);
         aviso('Este navegador não envia arquivos direto: o PDF foi baixado. Anexe-o no WhatsApp ou no e-mail.');
