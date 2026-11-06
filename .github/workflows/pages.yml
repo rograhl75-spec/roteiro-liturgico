@@ -3,6 +3,9 @@ name: Publicar no GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Todos os dias às 03h17 (Londrina): retira do site as semanas que já terminaram.
+    - cron: '17 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,6 +27,8 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22'
+      - name: Montar o site a partir das pastas semanas/
+        run: node ferramentas/montar-site.js
       - name: Validar dados
         run: npm run validate:data
       - name: Gerar metadados da publicação
@@ -31,12 +36,7 @@ jobs:
       - name: Preparar Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
       - name: Separar arquivos públicos
-        run: |
-          mkdir -p _site
-          cp index.html styles.css app.js programacao.js leituras.js antifonas.js \
-            manifest.json sw.js version.json icone.png icone.svg \
-            'Selo Auxiliadora 60 anos_Ano 3.png' _site/
-          cp -- *.pdf *.docx *.xlsx _site/
+        run: node ferramentas/montar-site.js --copiar _site
       - name: Enviar site estático
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
