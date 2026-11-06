@@ -2,6 +2,7 @@ let currentWeekId = null;
 const fontSizes = {};
 const modalFocusReturn = new Map();
 let printing = false;
+let lastSelectedReadings = [];
 let resumeUpdate = () => {};
 let savedUpdateState = null;
 try {
@@ -128,6 +129,9 @@ function createModalShell(id, title, contentId, printAction, dataset = {}) {
   button('A-', { 'data-action': 'text-size', 'data-step': '-1', 'data-target': contentId, 'aria-label': 'Diminuir texto' }, 'action-btn secondary');
   if (printAction) {
     button('🖨️ Imprimir', { 'data-action': printAction, ...dataset });
+    if (printAction !== 'print-active-reflexoes') {
+      button('📤 Enviar PDF', { 'data-action': printAction.replace('print-', 'share-'), ...dataset, 'aria-label': 'Enviar como PDF (WhatsApp, e-mail)' });
+    }
   }
   button('×', { 'data-action': 'close-modal', 'data-modal-id': id }, 'modal-close-btn');
 
@@ -755,6 +759,7 @@ function previewSelectedReadings() {
   }
 
   const selected = Array.from(getActiveLeiturasBlock()?.querySelectorAll('.reading-checkbox:checked') || []).map((checkbox) => checkbox.value);
+  lastSelectedReadings = selected;
   if (selected.length === 0) {
     showMessageModal('Por favor, selecione ao menos uma leitura ou antífona.', document.activeElement, 'Seleção necessária');
     return;
@@ -1225,6 +1230,19 @@ function handleActionClick(event) {
       break;
     case 'print-leituras-view':
       printLeiturasFromView();
+      break;
+    case 'share-programacao-geral':
+      if (getCurrentWeek()) window.Compartilhar?.programacao(getCurrentWeek().id, target);
+      break;
+    case 'share-active-roteiro':
+      if (getCurrentWeek()) window.Compartilhar?.roteiro(`roteiro_${getRoteiroSuffix(getCurrentWeek(), target.dataset.roteiroKey)}`, target);
+      break;
+    case 'share-active-preces':
+      if (getCurrentWeek()) window.Compartilhar?.roteiro(`preces_${getPrecesSuffix(getCurrentWeek(), target.dataset.precesKey)}`, target);
+      break;
+    case 'share-leituras-view':
+      window.Compartilhar?.leituras(lastSelectedReadings,
+        `Leituras — ${getCurrentWeek() ? getCurrentWeek().shortTitle : 'Selecionadas'}`, target);
       break;
     case 'back-to-top':
       window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });

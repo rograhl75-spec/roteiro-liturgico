@@ -13,6 +13,8 @@ const assets = [
     "leituras.js",
     "antifonas.js",
     "roteiros.js",
+    "compartilhar.js",
+    "vendor/pdf-lib.min.js",
     "manifest.json",
     "sw.js",
     "icone.png",

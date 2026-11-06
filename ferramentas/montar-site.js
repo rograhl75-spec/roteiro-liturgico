@@ -16,7 +16,8 @@ const raiz = path.join(__dirname, '..');
 const MAX_SEMANAS = 3;
 const ARQUIVOS_FIXOS = [
   'index.html', 'styles.css', 'app.js', 'programacao.js', 'semanas.js', 'leituras.js', 'antifonas.js',
-  'roteiros.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg', 'Selo Auxiliadora 60 anos_Ano 3.png'
+  'roteiros.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
+  'Selo Auxiliadora 60 anos_Ano 3.png'
 ];
 
 function hojeEmLondrina() {
