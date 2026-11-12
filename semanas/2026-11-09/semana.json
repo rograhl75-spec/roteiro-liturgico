@@ -235,15 +235,15 @@
    "data": "2026-11-13",
    "titulo": "Sexta-feira, 13 de Novembro de 2026",
    "dia": "Sexta",
-   "cor": "verde",
-   "grau": "Féria",
-   "celebracao": "32ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
-   "selecaoTitulo": "Sexta-feira — 13/11",
+   "cor": "vermelho",
+   "grau": "Missa Votiva",
+   "celebracao": "Missa Votiva do Espírito Santo (Formulário B) — Abertura da Assembleia Paroquial; 32ª Semana do Tempo Comum, Ano Par (II)",
+   "selecaoTitulo": "Sexta-feira — 13/11 — Missa Votiva do Espírito Santo",
    "escala": [
     [
      "19h00",
      "Paróquia Nossa Senhora Auxiliadora",
-     "Pe. Heriberto"
+     "Pe. Heriberto — Missa Votiva do Espírito Santo (abertura da Assembleia Paroquial)"
     ],
     [
      "20h00",
@@ -279,12 +279,14 @@
     ]
    ],
    "missal": {
-    "coleta": "414",
-    "oferendas": "414",
-    "prefacio": "564 (próprio da OE V)",
-    "eucaristica": "565 (OE V)",
-    "comunhao": "414"
-   }
+    "coleta": "1144 (Missa Votiva do Espírito Santo — Formulário B)",
+    "oferendas": "1144",
+    "prefacio": "1144 (Espírito Santo II — A ação do Espírito Santo na Igreja)",
+    "eucaristica": "537 (OE II)",
+    "comunhao": "1145"
+   },
+   "nota": "Missa votiva do Espírito Santo (Missal Romano, Formulário B, pp. 1144–1145), com vestes vermelhas, na abertura da Assembleia Paroquial. Sem Glória e sem Creio. Leituras do dia (sexta-feira da 32ª Semana do Tempo Comum).",
+   "antifonas": "antifonas_10_sex"
   }
  ],
  "fimDeSemana": {
@@ -569,6 +571,36 @@
     {
      "label": "Evangelho",
      "text": "Como foste fiel na administração de tão pouco, vem participar de minha alegria."
+    }
+   ]
+  },
+  "antifonas_10_sex": {
+   "title": "Antífonas, Aclamação e Citações para a transmissão — Missa Votiva do Espírito Santo (13/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — Cf. Jo 14,26; 15,26",
+     "text": "Quando vier o Espírito da verdade, ele vos ensinará toda a verdade, diz o Senhor."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "Lc 21,28",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Levantai vossa cabeça e olhai,\n    pois a vossa redenção se aproxima!"
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — Jo 15,26; 16,14",
+       "text": "O Espírito que procede do Pai me glorificará, diz o Senhor."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Salmo Responsorial",
+     "text": "Feliz é quem na lei do Senhor Deus vai progredindo!"
     }
    ]
   }
