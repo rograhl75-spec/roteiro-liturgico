@@ -228,7 +228,7 @@ window.roteirosData = {
         "linhas": [
           ["Comentarista", "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."],
           ["Comentarista", "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
+          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Neste domingo celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
           ["Cantores", "Canto de Entrada"],
           ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."],
           ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
