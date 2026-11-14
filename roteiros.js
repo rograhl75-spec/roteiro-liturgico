@@ -26,7 +26,7 @@ window.roteirosData = {
           ["Todos", "Amém."],
           ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
           ["Todos", "Bendito seja Deus que nos reuniu no amor de Cristo."],
-          ["Sacerdote", "Irmãos, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
+          ["Sacerdote", "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
           ["Cantores", "Ato Penitencial"],
           ["Sacerdote", "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."],
           ["Todos", "Amém."],
@@ -38,6 +38,7 @@ window.roteirosData = {
           ["Sacerdote", "Senhor, tende piedade de nós."],
           ["Todos", "Senhor, tende piedade de nós."],
           ["Cantores e Todos", "“Glória a Deus nas alturas” ."],
+          ["Orientação", "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."],
           ["Sacerdote", "Oração da Coleta (pág. 415)"],
           ["Todos", "Amém."]
         ]
@@ -48,6 +49,7 @@ window.roteirosData = {
           ["Leitor", "Pr 31,10-13.19-20.30-31"],
           ["Leitor", "Palavra do Senhor."],
           ["Todos", "Graças a Deus."],
+          ["Orientação", "Breve silêncio para meditar a Palavra (IGMR 56)."],
           ["Salmista", "Salmo Responsorial Sl 127(128),1-2.3.4-5ab (R. cf. 1a)"],
           ["Leitor", "1Ts 5,1-6"],
           ["Leitor", "Palavra do Senhor."],
@@ -61,10 +63,11 @@ window.roteirosData = {
           ["Diácono / Sacerdote", "Palavra da Salvação."],
           ["Todos", "Glória a vós, Senhor."],
           ["Sacerdote / Diácono", "Homilia."],
-          ["Sacerdote / Diácono", "Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
+          ["Sacerdote / Diácono", "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
           ["Todos", "Para sempre seja louvado."],
-          ["Sacerdote e Todos", "(Profissão de fé)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."],
-          ["Sacerdote", "Fará a introdução as preces"],
+          ["Orientação", "Breve silêncio depois da homilia (IGMR 66)."],
+          ["Sacerdote e Todos", "(Profissão de fé – Símbolo dos Apóstolos; pode ser substituído pelo Símbolo Niceno-Constantinopolitano, próprio do domingo)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."],
+          ["Sacerdote", "Faz a introdução às preces."],
           ["Diácono / Leitor", "Conforme formulário de preces para cada horário."],
           ["Sacerdote", "Finaliza as preces."],
           ["Todos", "Amém."]
@@ -117,12 +120,15 @@ window.roteirosData = {
           ["Todos", "Amém."],
           ["Sacerdote", "A paz do Senhor esteja sempre convosco."],
           ["Todos", "O amor de Cristo nos uniu."],
+          ["Diácono / Sacerdote", "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."],
+          ["Orientação", "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."],
           ["Todos", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
           ["Sacerdote", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
           ["Todos", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
           ["Sacerdote", "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"],
           ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
           ["Cantores", "Canto da Comunhão ."],
+          ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
           ["Sacerdote", "Oração depois da Comunhão (pág. 415)"],
           ["Todos", "Amém."]
         ]
@@ -135,9 +141,9 @@ window.roteirosData = {
           ["Todos", "Rogai por nós."],
           ["Sacerdote", "O Senhor esteja convosco!"],
           ["Todos", "Ele está no meio de nós."],
-          ["Sacerdote", "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."],
+          ["Sacerdote", "Abençoe-vos Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo."],
           ["Todos", "Amém."],
-          ["Diácono / Sacerdote", "Ide em paz e o Senhor vos acompanhe."],
+          ["Diácono / Sacerdote", "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"],
           ["Todos", "Graças a Deus."],
           ["Cantores", "Canto Final."]
         ]

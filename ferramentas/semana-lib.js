@@ -243,7 +243,9 @@
     'enviai o vosso espirito|anunciamos, senhor|todas as vezes que comemos|salvador do mundo|aceitai, o senhor|' +
     'o espirito nos una|lembrai-vos, o pai, da vossa igreja|concedei-lhes|vosso e o reino|o amor de cristo nos uniu|' +
     'senhor, eu nao sou digno|rogai por nos|receba o senhor|cordeiro de deus|senhor, tende piedade|cristo, tende piedade|' +
-    'gloria a deus nas alturas|creio em|pai nosso|santo, santo|demos gracas a deus)');
+    'gloria a deus nas alturas|creio em|pai nosso|santo, santo|demos gracas a deus|confesso a deus|mandai vosso espirito|' +
+    'toda vez que comemos|recebei, o senhor|caminhamos na estrada|esperamos entrar na vida eterna|a todos dai a luz|' +
+    'fazei de nos uma perfeita oferenda)');
   const INTENCAO = /(nos vos pedimos|rezemos ao senhor|roguemos ao senhor|oremos)\.?$/;
 
   function papelIGMR(papel, texto, seguinte = '') {
@@ -262,10 +264,13 @@
       if (/^(ide em paz|ide, e anunciai|ide, levai|glorificai o senhor com vossa vida)/.test(t)) return 'Diácono / Sacerdote';
       if (/^homilia/.test(t)) return 'Sacerdote / Diácono';
       if (/^seguem-se/.test(t)) return 'Orientação';
+      if (/^confesso a deus/.test(t)) return 'Todos';
+      if (/^salmo responsorial/.test(t)) return 'Salmista';
+      if (/^aclamacao ao evangelho/.test(t)) return 'Cantores e Todos';
       return `Sacerdote${telao}`;
     }
     if (/^padre \/ (animador|comentarista)$/.test(base)) return /creio/.test(t) ? 'Sacerdote e Todos' : 'Sacerdote / Comentarista';
-    if (/^\d[ªa]? leitura$|^leitora?$/.test(base)) return 'Leitor';
+    if (/^\d[ªa]? leitura$|^leitora?$/.test(base)) return /^salmo responsorial/.test(t) ? 'Salmista' : 'Leitor';
     if (/^(musica|ministerio de musica|canto|coral|grupo de canto)$/.test(base)) {
       if (/^salmo/.test(t)) return 'Salmista';
       if (/^santo, santo/.test(t)) return 'Todos';
