@@ -122,10 +122,11 @@ window.roteirosData = {
           ["Todos", "O amor de Cristo nos uniu."],
           ["Diácono / Sacerdote", "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."],
           ["Orientação", "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."],
+          ["Orientação", "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."],
           ["Todos", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
           ["Sacerdote", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
           ["Todos", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
-          ["Sacerdote", "O Corpo de Cristo me guarde para a vida eterna. (em silêncio)"],
+          ["Orientação", "Comunhão do sacerdote (em silêncio)."],
           ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
           ["Cantores", "Canto da Comunhão ."],
           ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
@@ -136,7 +137,8 @@ window.roteirosData = {
       {
         "titulo": "RITOS DE ENCERRAMENTO",
         "linhas": [
-          ["Sacerdote", "Avisos Paroquiais / Aniversariantes/ Bênção dos Pães"],
+          ["Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a)."],
+          ["Sacerdote", "Bênção dos pães (quando houver)."],
           ["Sacerdote", "Nossa Senhora Auxiliadora!"],
           ["Todos", "Rogai por nós."],
           ["Sacerdote", "O Senhor esteja convosco!"],

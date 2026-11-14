@@ -1,14 +1,14 @@
 {
-  "version": "111bc0f86efac2758f7b8a3de8dcfd448652d428f50976eaaf0d31faff67119d",
+  "version": "fde38d51d581e8f17cc2fd77e10ebbd3937bfe93c4997b835b70a67da331a174",
   "files": {
-    "./index.html": "676e8ebebb91a0f87ee9e1d86ae76ca8c4f0e98a36169e65b3a453a597ec2cc3",
+    "./index.html": "4242242ea95d29c194cf373d2acb2bc13e3f4171ff3dc1820707ea16db077497",
     "./styles.css": "8b6ec0f163ca3f797bf9a276b794aa90653ff11352869d6f1aaa7543d943e641",
     "./app.js": "3e219e6bd1ef1c25845130207868706e9fff376a92bb4cdf8de3b074e38d18fa",
     "./programacao.js": "f5610b00ce252124438bbfcb7474372532d27821afeacd069bef2c91a13e3430",
     "./semanas.js": "a3fa9bc35413e9aef8e2a2e63329c1203a4fc5e683df1bfdee2f7e66612a7051",
     "./leituras.js": "4285cea5127ce934adcc98b8cc8987b43d95ede6b56da0b874cff7bbecd98f6a",
     "./antifonas.js": "521c46fef54272061a0d768356b992673ec171bbae7b70d62a3254f476be4dc5",
-    "./roteiros.js": "c0d65f47eb6cf28eab424219d93286a03fe7f95e5d1f72c61555d6aba6bcc32c",
+    "./roteiros.js": "40d82284296c10eac884d6cf0a0911122e020e1d0d5a442c1524abaa9ddc6050",
     "./compartilhar.js": "e5620c5b6562bb88384be7ad35eef0013dd797f26eb338badf5efaeaa5d4069b",
     "./vendor/pdf-lib.min.js": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
     "./manifest.json": "1b362e17f59ce1c91fe7f8e2f021c8e59d63fa6c418c241f526e03a50115dd76",
@@ -20,8 +20,8 @@
     "./semanas/2026-11-09/Leituras 9 a 15 novembro 2026.docx": "9d24d3b23723b8c23d4597fdeba00521ecd75542dc4802bb85c563045c4c8971",
     "./semanas/2026-11-09/Leituras e Lecionarios - 2 a 15 novembro 2026.xlsx": "cb6bc91e8cd2726922b6d0f15b358b74d305455604172ee0efca2670cce10f6e",
     "./semanas/2026-11-09/Missal - 9 a 15 novembro_2026.xlsx": "93d1844afcee981016716d50a5388b6398b4b59313df4686c31cfecff4847c87",
-    "./semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx": "5ffcae7be224d3ac24db7ffeec69f47493d251380b5ec011110e754bddeddfd7",
-    "./semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx": "97958faaa8532a1f503d805cbd0464104c2b48b8254ed0eb166d633af210567e",
+    "./semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx": "e693c91a39c6aa158c3452b155a01ff8db352d99be6a1674d7343aa06c7499cf",
+    "./semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx": "10316302a33f47182f35644d0abd0846b40ab03d7bfa13cafcfe1df547cefc29",
     "./semanas/2026-11-09/Antífona da entrada e comunhão - 33º Domingo do Tempo Comum 15-11-2026.docx": "23417bc6d7610e6c22f1e3fd4441bcf18d786bafe3552fcd6c2cee63416aa279"
   }
 }
