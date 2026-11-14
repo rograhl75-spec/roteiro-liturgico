@@ -128,7 +128,8 @@
     for (const secao of dia.secoes) {
       if (secao.chave.startsWith('acl')) {
         const resto = limpar(secao.linhas[0].replace(MARCADORES[3][0], ''));
-        secao.referencia = resto || (ehReferencia(secao.linhas[1] || '') ? secao.linhas[1] : '');
+        const linha2 = secao.linhas[1] || '';
+        secao.referencia = resto || (ehReferencia(linha2) || ehReferencia(linha2.replace(/^cf\.\s*/i, '')) ? linha2 : '');
       }
       if (secao.chave.endsWith('_breve') && !secao.referencia) {
         const abertura = secao.linhas.find((l) => RX_ABERTURA.test(l)) || '';

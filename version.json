@@ -1,18 +1,18 @@
 {
-  "version": "8f13c07e476ecb895024323084b93c90b649b2bf041896afb4bed380c9c51c8e",
+  "version": "68b10cb0312a18950c4f2ad81e149a97bbc72f11aa10d5ee2c7e78abec986530",
   "files": {
-    "./index.html": "82c0699d054213856cbeb91b2832fc23102f66966c206b25ab5a61632945ffd1",
+    "./index.html": "02baa891833d8b89e98e9d064c4f5c319a5011a24e82cd3f12a6f889bdad071c",
     "./styles.css": "57ae950a0b577752354bffe422cdf3a5f524d3a8265d08c7c8f86158e91be615",
     "./app.js": "10ad261c2d3d1536c2f6c921867aced3c23f43e24f85793fddd98a164cfe4e83",
     "./programacao.js": "15c3af03090c0c42d6e760350a008cab4bead67d0f7d03e5482fe93c1cdb2ea9",
-    "./semanas.js": "8c741dbe3d9e3fd5bcbf4a039f7b9e1e5ae594f03bfd3c8192a7a210955d2bf0",
-    "./leituras.js": "e456d5351ac965acbdc40d55eb614aaa01b37cf05227cf87d2fff38e2005838f",
-    "./antifonas.js": "509edb9234c9f5a8cb19f7655fdda359888eff9ec575b11ac321b9456e0a7f55",
+    "./semanas.js": "bfc4b22f2323c5cd06bca7c199951e030bfaaab2e65d962493616b8da87564d5",
+    "./leituras.js": "7fd1d64d508aa6a88cd86fec5b5b973806447ab248851a0d653066d0de2d9bb3",
+    "./antifonas.js": "41800cddc6231d31dcf310fed9c5e3c9a79cbc6136158a8370026d358ac6f910",
     "./roteiros.js": "4e3ac48f1727dd0cf5ed1880034738b9ff3d610e46fc67d21e151017bd509c18",
     "./compartilhar.js": "e5620c5b6562bb88384be7ad35eef0013dd797f26eb338badf5efaeaa5d4069b",
     "./vendor/pdf-lib.min.js": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
     "./manifest.json": "1b362e17f59ce1c91fe7f8e2f021c8e59d63fa6c418c241f526e03a50115dd76",
-    "./sw.js": "50e49b1a436afa07a0d1c6890cfa4cfd984da5ea3e44d58169cc676508811d09",
+    "./sw.js": "76c9d48a7cd1b4100bf48eaf150fd42166875a77c837a148522e07aab320fc79",
     "./icone.png": "8b9ed6cb99256445f1f5bba38b0d4d3aa94931bdbd2ef9c345187f7fd414cc33",
     "./icone.svg": "29e67c935ec3b53d8a58354e7bcfb6cdd64d934ccd9cf83af1f27cf7eaa7b063",
     "./Selo Auxiliadora 60 anos_Ano 3.png": "9d76a84032d2f76ee5d4111c5a2b91930fc86b744ab9036a954251e7895efe93",
@@ -23,6 +23,7 @@
     "./semanas/2026-11-09/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.docx": "1dfcb52c5c03dbe813dfb3fcf55b3492987fd4af6ad9beaede791c5d6e93719e",
     "./semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx": "10316302a33f47182f35644d0abd0846b40ab03d7bfa13cafcfe1df547cefc29",
     "./semanas/2026-11-09/Antífona da entrada e comunhão - 33º Domingo do Tempo Comum 15-11-2026.docx": "23417bc6d7610e6c22f1e3fd4441bcf18d786bafe3552fcd6c2cee63416aa279",
+    "./semanas/2026-11-16/Leituras 16 a 22 novembro 2026.docx": "2368b526d290f22820979677c627bc6ab512343efab3b24b5937357cadc27bef",
     "./semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx": "e18227c6eb393b525c535b0924817fb22a254d65cb3317799ed5c4b5dca95731"
   }
 }

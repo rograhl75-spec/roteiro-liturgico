@@ -784,173 +784,874 @@ Palavra da Salvação.`
     },
     /* SEMANA DE 16 A 22 DE NOVEMBRO */
     's11_seg_l1': {
-        title: "1ª Leitura — Ap 1,1-4; 2,1-5a",
+        title: "1ª Leitura — Ap 1,1-4.2,1-5a",
         day: "Segunda-feira (16/11)",
         text: `PRIMEIRA LEITURA
-Leitura do Livro do Apocalipse de São João
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Início do Livro do Apocalipse de São João 1,1-4; 2,1-5a
+1
+Revelação que Deus confiou a Jesus Cristo,
+para que mostre aos seus servos
+as coisas que devem acontecer em breve.
+Jesus as deu a conhecer, através do seu anjo,
+ao seu servo João.
+2
+Este dá testemunho
+que tudo quanto viu é palavra de Deus
+e testemunho de Jesus Cristo.
+3
+Feliz aquele que lê
+e aqueles que escutam
+as palavras desta profecia
+e também praticam o que nela está escrito.
+Pois o momento está chegando.
+4
+João às sete Igrejas que estão na região da Ásia:
+A vós, graça e paz,
+da parte daquele que é, que era e que vem;
+da parte dos sete espíritos
+que estão diante do trono de Deus.
+2,1
+Ouvi o Senhor que me dizia:
+Escreve ao anjo da Igreja que está em Éfeso:
+Assim fala aquele
+que tem na mão direita as sete estrelas,
+aquele que está andando
+no meio dos sete candelabros de ouro:
+2
+Conheço a tua conduta,
+o teu esforço e a tua perseverança.
+Sei que não suportas os maus.
+Colocaste à prova alguns que se diziam apóstolos
+e descobriste que não eram apóstolos,
+mas mentirosos.
+3
+És perseverante.
+Sofreste por causa do meu nome
+e não desanimaste.
+4
+Todavia, há uma coisa que eu reprovo:
+abandonaste o teu primeiro amor.
+5a
+Lembra-te de onde caíste!
+Converte-te e volta à tua prática inicial.
+Se, pelo contrário, não te converteres,
+virei depressa
+e arrancarei o teu candelabro do seu lugar.
+Palavra do Senhor.`
     },
     's11_seg_sal': {
-        title: "Salmo Responsorial — Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+        title: "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)",
         day: "Segunda-feira (16/11)",
-        text: `Salmo responsorial Sl 1,1-2.3.4.6 (R. Ap 2,7b)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        text: `Salmo responsorial
+Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)
+R. Ao vencedor concederei, comer da Árvore da Vida!
+1
+Feliz é todo aquele que não anda*
+conforme os conselhos dos perversos;
+que não entra no caminho dos malvados,*
+nem junto aos zombadores vai sentar-se;
+2
+mas encontra seu prazer na lei de Deus*
+e a medita, dia e noite, sem cessar. R.
+3
+Eis que ele é semelhante a uma árvore,*
+que à beira da torrente está plantada;
+ela sempre dá seus frutos a seu tempo, †
+e jamais as suas folhas vão murchar.*
+Eis que tudo o que ele faz vai prosperar. R.
+4
+Mas bem outra é a sorte dos perversos. †
+Ao contrário, são iguais à palha seca*
+espalhada e dispersada pelo vento.
+6
+Pois Deus vigia o caminho dos eleitos,*
+mas a estrada dos malvados leva à morte. R.`
     },
     's11_seg_acl': {
         title: "Aclamação ao Evangelho — Jo 8,12",
         day: "Segunda-feira (16/11)",
-        text: `Aclamação ao Evangelho Jo 8,12
+        text: `Aclamação ao Evangelho
+Jo 8,12
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. Eu sou a luz do mundo;
+aquele que me segue
+não caminha entre as trevas,
+mas terá a luz da vida`
     },
     's11_seg_ev': {
         title: "Evangelho — Lc 18,35-43",
         day: "Segunda-feira (16/11)",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Lucas
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 18,35-43
+35
+Quando Jesus se aproximava de Jericó,
+um cego estava sentado à beira do caminho,
+pedindo esmolas.
+36
+Ouvindo a multidão passar,
+ele perguntou o que estava acontecendo.
+37
+Disseram-lhe que Jesus Nazareno
+estava passando por ali.
+38
+Então o cego gritou:
+"Jesus, filho de Davi, tem piedade de mim!"
+39
+As pessoas que iam na frente
+mandavam que ele ficasse calado.
+Mas ele gritava mais ainda:
+"Filho de Davi, tem piedade de mim!"
+40
+Jesus parou e mandou que levassem o cego até ele.
+Quando o cego chegou perto, Jesus perguntou:
+41
+"O que queres que eu faça por ti?"
+O cego respondeu:
+"Senhor, eu quero enxergar de novo".
+42
+Jesus disse:
+"Enxerga, pois, de novo.
+A tua fé te salvou."
+43
+No mesmo instante, o cego começou a ver de novo
+e seguia Jesus, glorificando a Deus.
+Vendo isso, todo o povo deu louvores a Deus.
+Palavra da Salvação.`
     },
     's11_ter_l1': {
         title: "1ª Leitura — Ap 3,1-6.14-22",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
         text: `PRIMEIRA LEITURA
-Leitura do Livro do Apocalipse de São João
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura do Livro do Apocalipse de São João 3,1-6.14-22
+Eu, João, ouvi o Senhor que me dizia:
+1
+"Escreve ao anjo da Igreja que está em Sardes:
+Assim fala aquele que tem os sete espíritos de Deus
+e as sete estrelas:
+- Conheço a tua conduta.
+Tens fama de estar vivo, mas estás morto.
+2
+Acorda! Reaviva o que te resta,
+e que estava para se apagar!
+Pois não acho suficiente aos olhos do meu Deus
+aquilo que estás fazendo.
+3
+Lembra-te daquilo que tens aprendido e ouvido.
+Observa-o! Converte-te!
+Se não estiveres vigilante,
+eu virei como um ladrão,
+sem que tu saibas em que hora te vou surpreender!
+4
+Todavia, aí em Sardes existem algumas pessoas
+que não sujaram a roupa.
+Estas vão andar comigo, vestidas de branco,
+pois merecem isso.
+5
+O vencedor vestirá a roupa branca,
+e não apagarei o seu nome do livro da vida,
+mas o apresentarei diante de meu Pai
+e de seus anjos.
+6
+Quem tem ouvidos, ouça
+o que o Espírito diz às Igrejas.
+14
+Escreve ao anjo da Igreja que está em Laodicéia:
+Assim fala o Amém,
+a testemunha fiel e verdadeira,
+o princípio da criação de Deus:
+15
+Conheço a tua conduta.
+nem és frio, nem quente.
+Oxalá fosses frio ou quente!
+16
+Mas, porque és morno,
+nem frio nem quente,
+estou para vomitar-te de minha boca.
+17
+Tu dizes: 'Sou rico e abastado
+e não careço de nada',
+em vez de reconhecer
+que tu és infeliz, miserável,
+pobre, cego e nu!
+18
+Dou-te um conselho:
+compra de mim ouro purificado no fogo,
+para ficares rico,
+e vestes brancas, para vestires
+e não aparecer a tua nudez vergonhosa;
+e compra também um colírio para curar os teus olhos,
+para que enxergues.
+19
+Eu repreendo e educo os que eu amo.
+Esforça-te, pois, e converte-te.
+20
+Eis que estou à porta, e bato;
+se alguém ouvir minha voz e abrir a porta,
+eu entrarei na sua casa e tomaremos a refeição,
+eu com ele e ele comigo.
+21
+Ao vencedor farei sentar-se comigo no meu trono,
+como também eu venci e estou sentado
+com meu Pai no seu trono.
+22
+Quem tem ouvidos,
+ouça o que o Espírito diz às Igrejas".
+Palavra do Senhor.`
     },
     's11_ter_sal': {
-        title: "Salmo Responsorial — Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+        title: "Salmo Responsorial — Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
-        text: `Salmo responsorial Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        text: `Salmo responsorial
+Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)
+R. Ao vencedor, dar-lhe-ei o direito
+de sentar-se comigo no meu trono.
+1a
+"Senhor, quem morará em vossa casa?" †
+2
+É aquele que caminha sem pecado *
+e pratica a justiça fielmente;
+3a
+que pensa a verdade no seu íntimo *
+b
+e não solta em calúnias sua língua. R.
+c
+Que em nada prejudica o seu irmão,*
+d
+nem cobre de insultos seu vizinho;
+4a
+que não dá valor algum ao homem ímpio,*
+b
+mas honra os que respeitam o Senhor; R.
+5
+não empresta o seu dinheiro com usura, †
+nem se deixa subornar contra o inocente.*
+Jamais vacilará quem vive assim! R.`
     },
     's11_ter_acl': {
         title: "Aclamação ao Evangelho — 1Jo 4,10b",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
-        text: `Aclamação ao Evangelho 1Jo 4,10b
+        text: `Aclamação ao Evangelho
+1Jo 4,10b
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. Por amor, Deus enviou-nos o seu filho,
+como vítima por nossas transgressões.`
     },
     's11_ter_ev': {
         title: "Evangelho — Lc 19,1-10",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Lucas
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,1-10
+Naquele tempo,
+1
+Jesus tinha entrado em Jericó
+e estava atravessando a cidade.
+2
+Havia ali um homem chamado Zaqueu,
+que era chefe dos cobradores de impostos e muito rico.
+3
+Zaqueu procurava ver quem era Jesus,
+mas não conseguia, por causa da multidão,
+pois era muito baixo.
+4
+Então ele correu à frente
+e subiu numa figueira para ver Jesus,
+que devia passar por ali.
+5
+Quando Jesus chegou ao lugar,
+olhou para cima e disse:
+"Zaqueu, desce depressa!
+Hoje eu devo ficar na tua casa".
+6
+Ele desceu depressa,
+e recebeu Jesus com alegria.
+7
+Ao ver isso, todos começaram a murmurar,
+dizendo:
+"Ele foi hospedar-se na casa de um pecador!"
+8
+Zaqueu ficou de pé, e disse ao Senhor:
+"Senhor, eu dou a metade dos meus bens aos pobres,
+e se defraudei
+alguém, vou devolver quatro vezes mais".
+9
+Jesus lhe disse:
+"Hoje a salvação entrou nesta casa,
+porque também este homem é um filho de Abraão.
+10
+Com efeito, o Filho do Homem
+veio procurar e salvar o que estava perdido".
+Palavra da Salvação.`
     },
     's11_qua_l1': {
         title: "1ª Leitura — Ap 4,1-11",
         day: "Quarta-feira (18/11)",
         text: `PRIMEIRA LEITURA
-Leitura do Livro do Apocalipse de São João
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura do Livro do Apocalipse de São João 4,1-11
+Eu, João,
+1
+vi uma porta aberta no céu,
+e a voz que antes eu tinha ouvido falar-me como trombeta, disse:
+"Sobe até aqui, para que eu te mostre as coisas
+que devem acontecer depois destas".
+2
+Imediatamente, o Espírito tomou conta de mim.
+Havia no céu um trono
+e, no trono, alguém sentado.
+3
+Aquele que estava sentado
+parecia uma pedra de jaspe e cornalina;
+um arco-íris envolvia o trono
+com reflexos de esmeralda.
+4
+Ao redor do trono
+havia outros vinte e quatro tronos;
+neles estavam sentados vinte e quatro anciãos,
+todos eles vestidos de branco
+e com coroas de ouro nas cabeças.
+5
+Do trono saíam relâmpagos, vozes e trovões.
+Diante do trono
+estavam acesas sete lâmpadas de fogo,
+que são os sete espíritos de Deus.
+6
+Na frente do trono
+havia como que um mar de vidro cristalino.
+No meio, em redor do trono,
+estavam quatro Seres vivos,
+cheios de olhos pela frente e por detrás.
+7
+O primeiro Ser vivo parecia um leão;
+o segundo parecia um touro;
+o terceiro tinha rosto de homem;
+o quarto parecia uma águia em pleno voo.
+8
+Cada um dos quatro Seres vivos tinha seis asas,
+cobertas de olhos ao redor e por dentro.
+Dia e noite, sem parar, eles proclamavam:
+"Santo! Santo! Santo!
+Senhor Deus Todo-poderoso!
+Aquele que é, que era e que vem!"
+9
+Os seres vivos davam glória,
+honra e ação de graças
+ao que estava no trono e que vive para sempre.
+10
+E cada vez que os Seres vivos faziam isto,
+os vinte e quatro anciãos se prostravam
+diante daquele que estava sentado no trono,
+para adorar o que vive para sempre.
+Colocavam suas coroas diante do trono de Deus,
+e diziam:
+11
+"Senhor, nosso Deus,
+tu és digno de receber a glória, a honra e o poder,
+porque tu criaste todas as coisas.
+Pela tua vontade é que elas existem
+e foram criadas".
+Palavra do Senhor.`
     },
     's11_qua_sal': {
         title: "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
         day: "Quarta-feira (18/11)",
-        text: `Salmo responsorial Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        text: `Salmo responsorial
+Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)
+R. Santo, Santo, Santo Senhor Deus onipotente!
+1
+Louvai o Senhor Deus no santuário, *
+louvai-o no alto céu de seu poder!
+2
+Louvai-o por seus feitos grandiosos, *
+louvai-o em sua grandeza majestosa! R.
+3
+Louvai-o com o toque da trombeta, *
+louvai-o com a harpa e com a cítara!
+4
+Louvai-o com a dança e o tambor, *
+louvai-o com as cordas e as flautas! R.
+5
+Louvai-o com os címbalos sonoros, *
+louvai-o com os címbalos de júbilo!
+6
+Louve a Deus tudo o que vive e que respira, *
+tudo cante os louvores do Senhor! R.`
     },
     's11_qua_acl': {
-        title: "Aclamação ao Evangelho — Jo 15,16",
+        title: "Aclamação ao Evangelho — Cf. Jo 15,16",
         day: "Quarta-feira (18/11)",
-        text: `Aclamação ao Evangelho Jo 15,16
+        text: `Aclamação ao Evangelho
+Cf. Jo 15,16
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. Eu vos escolhi, a fim de que deis;
+no meio do mundo, um fruto que dure.`
     },
     's11_qua_ev': {
         title: "Evangelho — Lc 19,11-28",
         day: "Quarta-feira (18/11)",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Lucas
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,11-28
+Naquele tempo,
+11
+Jesus acrescentou uma parábola,
+porque estava perto de Jerusalém
+e eles pensavam que o Reino de Deus ia chegar logo.
+12
+Então Jesus disse:
+"Um homem nobre partiu para um país distante,
+a fim de ser coroado rei e depois voltar.
+13
+Chamou então dez dos seus empregados,
+entregou cem moedas de prata a cada um,
+e disse:
+'Procurai negociar até que eu volte'.
+14
+Seus concidadãos, porém, o odiavam,
+e enviaram uma embaixada atrás dele,
+dizendo:
+'Nós não queremos que esse homem reine sobre nós'.
+15
+Mas o homem foi coroado rei e voltou.
+Mandou chamar os empregados,
+aos quais havia dado o dinheiro,
+a fim de saber quanto cada um havia lucrado.
+16
+O primeiro chegou e disse:
+'Senhor, as cem moedas renderam dez vezes mais.'
+17
+O homem disse:
+'Muito bem, servo bom.
+Como foste fiel em coisas pequenas,
+recebe o governo de dez cidades'.
+18
+O segundo chegou e disse:
+'Senhor, as cem moedas renderam cinco vezes mais'.
+19
+O homem disse também a este:
+'Recebe tu também o governo de cinco cidades'.
+20
+Chegou o outro empregado e disse:
+'Senhor, aqui estão as tuas cem moedas
+que guardei num lenço,
+21
+pois eu tinha medo de ti,
+porque és um homem severo.
+Recebes o que não deste
+e colhes o que não semeaste'.
+22
+O homem disse:
+'Servo mau, eu te julgo pela tua própria boca.
+Tu sabias que eu sou um homem severo,
+que recebo o que não dei e colho o que não semeei.
+23
+Então, porque tu não depositaste
+meu dinheiro no banco?
+Ao chegar, eu o retiraria com juros'.
+24
+Depois disse aos que estavam aí presentes:
+'Tirai dele as cem moedas e dai-as àquele que tem mil'.
+25
+Os presentes disseram:
+'Senhor, esse já tem mil moedas!'
+26
+Ele respondeu:
+'Eu vos digo: a todo aquele que já possui,
+será dado mais ainda;
+mas àquele que nada tem,
+será tirado até mesmo o que tem.
+27
+E quanto a esses inimigos,
+que não queriam que eu reinasse sobre eles,
+trazei-os aqui e matai-os na minha frente' ".
+28
+Jesus caminhava à frente dos discípulos,
+subindo para Jerusalém.
+Palavra da Salvação.`
     },
     's11_qui_l1': {
         title: "1ª Leitura — Ap 5,1-10",
-        day: "Quinta-feira (19/11)",
+        day: "Quinta-feira (19/11) — Santos Roque González",
         text: `PRIMEIRA LEITURA
-Leitura do Livro do Apocalipse de São João
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura do Livro do Apocalipse de São João 5,1-10
+Eu, João,
+1
+vi um livro na mão direita
+daquele que estava sentado no trono.
+Era um rolo escrito por dentro e por fora,
+e estava lacrado com sete selos.
+2
+Vi então um anjo forte,
+que proclamava em voz alta:
+"Quem é digno de romper os selos e abrir o livro?"
+3
+Ninguém no céu, nem na terra,
+nem debaixo da terra
+era digno de abrir o livro
+ou de ler o que nele estava escrito.
+4
+Eu chorava muito,
+porque ninguém foi considerado digno
+de abrir ou de ler o livro.
+5
+Um dos anciãos me consolou:
+"Não chores!
+Eis que o Leão da tribo de Judá,
+o Rebento de Davi, saiu vencedor.
+Ele pode romper os selos e abrir o livro".
+6
+De fato, vi um Cordeiro.
+Estava no centro do trono
+e dos quatro Seres vivos,
+no meio dos Anciãos.
+Estava de pé como que imolado.
+O Cordeiro tinha sete chifres e sete olhos,
+que são os sete Espíritos de Deus,
+enviados por toda a terra.
+7
+Então, o Cordeiro veio receber o livro
+da mão direita daquele que está sentado no trono.
+8
+Quando ele recebeu o livro,
+os quatro Seres vivos e os vinte e quatro Anciãos
+prostraram-se diante do Cordeiro.
+Todos tinham harpas e taças de ouro cheias de incenso,
+que são as orações dos santos.
+9
+E entoaram um cântico novo:
+"Tu és digno de receber o livro e abrir seus selos,
+porque foste imolado,
+e com teu sangue adquiriste para Deus
+homens de toda a tribo, língua, povo e nação.
+10
+Deles fizeste para o nosso Deus
+um reino de sacerdotes.
+E eles reinarão sobre a terra."
+Palavra do Senhor.`
     },
     's11_qui_sal': {
-        title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
-        day: "Quinta-feira (19/11)",
-        text: `Salmo responsorial Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
+        day: "Quinta-feira (19/11) — Santos Roque González",
+        text: `Salmo responsorial
+Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)
+R. Fizestes de nós, para Deus, sacerdotes e povo de reis.
+Ou: Aleluia, Aleluia, Aleluia
+1
+Cantai ao Senhor Deus um canto novo, *
+e o seu louvor na assembleia dos fiéis!
+2
+Alegre-se Israel em Quem o fez, *
+e Sião se rejubile no seu Rei! R.
+3
+Com danças glorifiquem o seu nome, *
+toquem harpa e tambor em sua honra!
+4
+Porque, de fato, o Senhor ama seu povo *
+e coroa com vitória os seus humildes. R.
+5
+Exultem os fiéis por sua glória, *
+e cantando se levantem de seus leitos,
+6a
+com louvores do Senhor em sua boca *
+9b
+Eis a glória para todos os seus santos. R.`
     },
     's11_qui_acl': {
-        title: "Aclamação ao Evangelho — Sl 94(95),8ab",
-        day: "Quinta-feira (19/11)",
-        text: `Aclamação ao Evangelho Sl 94(95),8ab
+        title: "Aclamação ao Evangelho — Cf. Sl 94(95), 8ab",
+        day: "Quinta-feira (19/11) — Santos Roque González",
+        text: `Aclamação ao Evangelho
+Cf. Sl 94(95), 8ab
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. Oxalá ouvísseis hoje a sua voz:
+Não fecheis os corações como em Meriba!`
     },
     's11_qui_ev': {
         title: "Evangelho — Lc 19,41-44",
-        day: "Quinta-feira (19/11)",
+        day: "Quinta-feira (19/11) — Santos Roque González",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Lucas
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,41-44
+Naquele tempo,
+41
+quando Jesus se aproximou de Jerusalém
+e viu a cidade,
+começou a chorar. E disse:
+42
+"Se tu também compreendesses hoje
+o que te pode trazer a paz!
+Agora, porém, isso está escondido aos teus olhos!
+43
+Dias virão em que os inimigos
+farão trincheiras contra ti
+e te cercarão de todos os lados.
+44
+Eles esmagarão a ti e a teus filhos.
+E não deixarão em ti pedra sobre pedra.
+Porque tu não reconheceste o tempo
+em que foste visitada".
+Palavra da Salvação.`
     },
     's11_sex_l1': {
         title: "1ª Leitura — Ap 10,8-11",
         day: "Sexta-feira (20/11)",
         text: `PRIMEIRA LEITURA
-Leitura do Livro do Apocalipse de São João
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura do Livro do Apocalipse de São João 10,8-11
+8
+Aquela mesma voz do céu,
+que eu, João, já tinha ouvido,
+tornou a falar comigo:
+"Vai.
+Pega o livrinho aberto da mão do anjo
+que está de pé sobre o mar e a terra".
+9
+Eu fui até ao anjo
+e pedi que me entregasse o livrinho.
+Ele me falou:
+"Pega e come.
+Será amargo no estômago,
+mas na tua boca, será doce como mel".
+10
+Peguei da mão do anjo o livrinho e comi-o.
+Na boca era doce como mel,
+mas quando o engoli,
+meu estômago tornou-se amargo.
+11
+Então ele me disse:
+"Deves profetizar ainda
+contra outros povos e nações, línguas e reis".
+Palavra do Senhor.`
     },
     's11_sex_sal': {
         title: "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a)",
         day: "Sexta-feira (20/11)",
-        text: `Salmo responsorial Sl 118(119),14.24.72.103.111.131 (R. 103a)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        text: `Salmo responsorial
+Sl 118(119),14.24.72.103.111.131 (R. 103a)
+R. Como é doce ao paladar vossa palavra, ó Senhor!
+14
+Seguindo vossa lei me rejubilo *
+muito mais do que em todas as riquezas. R.
+24
+Minha alegria é a vossa Aliança, *
+meus conselheiros são os vossos mandamentos. R.
+72
+A lei de vossa boca, para mim, *
+vale mais do que milhões em ouro e prata. R.
+103
+Como é doce ao paladar vossa palavra, *
+muito mais doce do que o mel na minha boca! R.
+111
+Vossa palavra é minha herança para sempre, *
+porque ela é que me alegra o coração! R.
+131
+Abro a boca e aspiro largamente, *
+pois estou ávido de vossos mandamentos. R.`
     },
     's11_sex_acl': {
         title: "Aclamação ao Evangelho — Jo 10,27",
         day: "Sexta-feira (20/11)",
-        text: `Aclamação ao Evangelho Jo 10,27
+        text: `Aclamação ao Evangelho
+Jo 10,27
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. Minhas ovelhas escutam minha voz,
+eu as conheço e elas me seguem.`
     },
     's11_sex_ev': {
         title: "Evangelho — Lc 19,45-48",
         day: "Sexta-feira (20/11)",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Lucas
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,45-48
+Naquele tempo,
+45
+Jesus entrou no Templo
+e começou a expulsar os vendedores.
+46
+E disse:
+"Está escrito:
+'Minha casa será casa de oração'.
+No entanto, vós fizestes dela um antro de ladrões".
+47
+Jesus ensinava todos os dias no Templo.
+Os sumos sacerdotes,
+os mestres da Lei e os notáveis do povo
+procuravam modo de matá-lo.
+48
+Mas não sabiam o que fazer,
+porque o povo todo ficava fascinado
+quando ouvia Jesus falar.
+Palavra da Salvação.`
     },
     's11_dom_l1': {
         title: "1ª Leitura — Ez 34,11-12.15-17",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         text: `PRIMEIRA LEITURA
-Leitura da Profecia de Ezequiel
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura da Profecia de Ezequiel 34,11-12.15-17
+11
+Assim diz o Senhor Deus:
+"Vede! Eu mesmo vou procurar minhas ovelhas
+e tomar conta delas.
+12
+Como o pastor toma conta do rebanho, de dia,
+quando se encontra no meio das ovelhas dispersas,
+assim vou cuidar de minhas ovelhas e vou resgatá-las
+de todos os lugares em que foram dispersadas
+num dia de nuvens e escuridão.
+15
+Eu mesmo vou apascentar as minhas ovelhas
+e fazê-las repousar — oráculo do Senhor Deus —.
+16
+Vou procurar a ovelha perdida, reconduzir a extraviada,
+enfaixar a da perna quebrada,
+fortalecer a doente, e vigiar a ovelha gorda e forte.
+Vou apascentá-las conforme o direito.
+17
+Quanto a vós, minhas ovelhas,
+— assim diz o Senhor Deus —
+eu farei justiça entre uma ovelha e outra,
+entre carneiros e bodes".
+Palavra do Senhor.`
     },
     's11_dom_sal': {
         title: "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
-        text: `Salmo responsorial Sl 22(23),1-2a.2b-3.5-6 (R. 1)
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+        text: `Salmo responsorial Sl 22(23),1-2a.2b-3.5-6 (R.1)
+R. O Senhor é o pastor que me conduz;
+não me falta coisa alguma.
+2
+Pelos prados e campinas verdejantes *
+ele me leva a descansar.
+Para as águas repousantes me encaminha, *
+3
+e restaura as minhas forças. R.
+5
+Preparais à minha frente uma mesa, *
+bem à vista do inimigo,
+e com óleo vós ungis minha cabeça; *
+o meu cálice transborda. R.
+6
+Felicidade e todo bem hão de seguir-me *
+por toda a minha vida;
+e, na casa do Senhor, habitarei *
+pelos tempos infinitos. R.`
     },
     's11_dom_l2': {
         title: "2ª Leitura — 1Cor 15,20-26.28",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         text: `SEGUNDA LEITURA
-Leitura da Primeira Carta de São Paulo aos Coríntios
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Leitura da Primeira Carta de São Paulo aos Coríntios 15,20-26.28
+Irmãos:
+20
+Na realidade, Cristo ressuscitou dos mortos
+como primícias dos que morreram.
+21
+Com efeito, por um homem veio a morte,
+e é também por um homem
+que vem a ressurreição dos mortos.
+22
+Como em Adão todos morrem,
+assim também em Cristo todos reviverão.
+23
+Porém, cada qual segundo uma ordem determinada:
+Em primeiro lugar, Cristo, como primícias;
+depois, os que pertencem a Cristo,
+por ocasião da sua vinda.
+24
+A seguir, será o fim,
+quando ele entregar a realeza a Deus-Pai,
+depois de destruir todo principado e todo poder e força.
+25
+Pois é preciso que ele reine,
+até que todos os seus inimigos estejam debaixo de seus pés.
+26
+O último inimigo a ser destruído é a morte.
+28
+E, quando todas as coisas estiverem submetidas a ele,
+então o próprio Filho se submeterá
+àquele que lhe submeteu todas as coisas,
+para que Deus seja tudo em todos.
+Palavra do Senhor.`
     },
     's11_dom_acl': {
-        title: "Aclamação ao Evangelho — Mc 11,9.10",
+        title: "Aclamação ao Evangelho — cf. Mc 11,10",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
-        text: `Aclamação ao Evangelho Mc 11,9.10
+        text: `Aclamação ao Evangelho cf. Mc 11,10
 R. Aleluia, Aleluia, Aleluia.
-Texto da aclamação será publicado em breve.`
+V. É bendito aquele que vem vindo,
+que vem vindo em nome do Senhor;
+e o Reino que vem, seja bendito;
+ao que vem e a seu Reino, o louvor!`
     },
     's11_dom_ev': {
         title: "Evangelho — Mt 25,31-46",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         text: `EVANGELHO
-Proclamação do Evangelho de Jesus Cristo segundo Mateus
-Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,31-46
+Naquele tempo, disse Jesus a seus discípulos:
+31
+"Quando o Filho do Homem vier em sua glória,
+acompanhado de todos os anjos,
+então se assentará em seu trono glorioso.
+32
+Todos os povos da terra serão reunidos diante dele,
+e ele separará uns dos outros,
+assim como o pastor separa as ovelhas dos cabritos.
+33
+E colocará as ovelhas à sua direita
+e os cabritos à sua esquerda.
+34
+Então o Rei dirá aos que estiverem à sua direita:
+'Vinde, benditos de meu Pai!
+Recebei como herança o Reino
+que meu Pai vos preparou
+desde a criação do mundo!
+35
+Pois eu estava com fome e me destes de comer;
+eu estava com sede e me destes de beber;
+eu era estrangeiro e me recebestes em casa;
+36
+eu estava nu e me vestistes;
+eu estava doente e cuidastes de mim;
+eu estava na prisão e fostes me visitar'.
+37
+Então os justos lhe perguntarão:
+'Senhor, quando foi que te vimos com fome
+e te demos de comer?
+com sede e te demos de beber?
+38
+Quando foi que te vimos como estrangeiro
+e te recebemos em casa,
+e sem roupa e te vestimos?
+39
+Quando foi que te vimos doente ou preso,
+e fomos te visitar?'
+40
+Então o Rei lhes responderá:
+'Em verdade eu vos digo,
+que todas as vezes que fizestes isso
+a um dos menores de meus irmãos,
+foi a mim que o fizestes!'
+41
+Depois o Rei dirá aos que estiverem à sua esquerda:
+'Afastai-vos de mim, malditos!
+Ide para o fogo eterno,
+preparado para o diabo e para os seus anjos.
+42
+Pois eu estava com fome e não me destes de comer;
+eu estava com sede e não me destes de beber;
+43
+eu era estrangeiro e não me recebestes em casa;
+eu estava nu e não me vestistes;
+eu estava doente e na prisão e não fostes me visitar'.
+44
+E responderão também eles:
+'Senhor, quando foi que te vimos com fome, ou com sede,
+como estrangeiro, ou nu, doente ou preso,
+e não te servimos?'
+45
+Então o Rei lhes responderá:
+'Em verdade eu vos digo,
+todas as vezes que não fizestes isso
+a um desses pequeninos,
+foi a mim que não o fizestes!'
+46
+Portanto, estes irão para o castigo eterno,
+enquanto os justos irão para a vida eterna".
+Palavra da Salvação.`
     }
 };
 

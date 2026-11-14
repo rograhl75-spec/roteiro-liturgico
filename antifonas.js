@@ -87,8 +87,8 @@ window.antifonasData = {
       },
       {
         "label": "Aclamação ao Evangelho",
-        "reference": "Mc 11,9.10",
-        "text": "R. Aleluia, Aleluia, Aleluia.\n    Texto da aclamação será publicado em breve."
+        "reference": "cf. Mc 11,10",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. É bendito aquele que vem vindo,\n    que vem vindo em nome do Senhor;\n    e o Reino que vem, seja bendito;\n    ao que vem e a seu Reino, o louvor!"
       },
       {
         "label": "Antífona de Comunhão",
@@ -100,6 +100,23 @@ window.antifonasData = {
         ]
       }
     ],
-    "citations": []
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Quanto a vós, minhas ovelhas, farei justiça entre uma ovelha e outra."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "O Senhor é o pastor que me conduz; não me falta coisa alguma."
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Entregará a realeza a Deus-Pai, para que Deus seja tudo em todos."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Assentar-se-á em seu trono glorioso e separará uns dos outros."
+      }
+    ]
   }
 };

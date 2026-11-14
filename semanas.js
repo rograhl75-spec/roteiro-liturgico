@@ -413,7 +413,7 @@ window.semanasData = [
   "roteiroLabel": "📖 Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo",
   "roteiroExtras": [],
   "precesExtras": [],
-  "nota": "Referências das leituras provisórias: o texto completo e as páginas do lecionário serão publicados em breve. Escala conforme a planilha da paróquia; páginas do Missal conforme o roteiro e o índice do Missal Romano.",
+  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia; páginas do Missal conforme o roteiro e o índice do Missal Romano.",
   "dias": [
    {
     "data": "2026-11-16",
@@ -440,13 +440,13 @@ window.semanasData = [
     "leituras": [
      [
       "1ª Leitura",
-      "Ap 1,1-4; 2,1-5a",
+      "Ap 1,1-4.2,1-5a",
       "s11_seg_l1",
       ""
      ],
      [
       "Salmo",
-      "Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+      "Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)",
       "s11_seg_sal",
       ""
      ],
@@ -477,7 +477,7 @@ window.semanasData = [
     "dia": "Terça",
     "cor": "branco",
     "grau": "Memória",
-    "celebracao": "Santa Isabel da Hungria, religiosa — Memória; 33ª Semana do Tempo Comum, Ano Par (II)",
+    "celebracao": "Santa Isabel da Hungria, religiosa — Memória; 33ª Semana do Tempo Comum",
     "selecaoTitulo": "Terça-feira — 17/11 — Santa Isabel da Hungria",
     "escala": [
      [
@@ -502,7 +502,7 @@ window.semanasData = [
      ],
      [
       "Salmo",
-      "Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+      "Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)",
       "s11_ter_sal",
       ""
      ],
@@ -557,7 +557,7 @@ window.semanasData = [
      ],
      [
       "Aclamação ao Evangelho",
-      "Jo 15,16",
+      "Cf. Jo 15,16",
       "s11_qua_acl",
       ""
      ],
@@ -580,10 +580,10 @@ window.semanasData = [
     "data": "2026-11-19",
     "titulo": "Quinta-feira, 19 de Novembro de 2026",
     "dia": "Quinta",
-    "cor": "verde",
-    "grau": "Féria",
-    "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
-    "selecaoTitulo": "Quinta-feira — 19/11",
+    "cor": "vermelho",
+    "grau": "Memória",
+    "celebracao": "Santos Roque González, Afonso Rodríguez e João de Castillo, presbíteros e mártires — Memória; 33ª Semana do Tempo Comum",
+    "selecaoTitulo": "Quinta-feira — 19/11 — Santos Roque González",
     "escala": [
      [
       "19h00",
@@ -614,13 +614,13 @@ window.semanasData = [
      ],
      [
       "Salmo",
-      "Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
+      "Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
       "s11_qui_sal",
       ""
      ],
      [
       "Aclamação ao Evangelho",
-      "Sl 94(95),8ab",
+      "Cf. Sl 94(95), 8ab",
       "s11_qui_acl",
       ""
      ],
@@ -632,11 +632,11 @@ window.semanasData = [
      ]
     ],
     "missal": {
-     "coleta": "415",
-     "oferendas": "415",
-     "comunhao": "415",
-     "prefacio": "564 (próprio da OE V)",
-     "eucaristica": "565 (OE V)"
+     "coleta": "860",
+     "oferendas": "860",
+     "comunhao": "860",
+     "prefacio": "502 (Santos Mártires I)",
+     "eucaristica": "537 (OE II)"
     }
    },
    {
@@ -777,7 +777,7 @@ window.semanasData = [
     ],
     [
      "Aclamação ao Evangelho",
-     "Mc 11,9.10",
+     "cf. Mc 11,10",
      "s11_dom_acl",
      ""
     ],
@@ -800,6 +800,7 @@ window.semanasData = [
    "antifonas": "antifonas_11"
   },
   "documentos": [
+   "semanas/2026-11-16/Leituras 16 a 22 novembro 2026.docx",
    "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx"
   ]
  }
