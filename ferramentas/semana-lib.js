@@ -233,6 +233,58 @@
     .replace(/\s*\/\s*/g, ' / ')
     .replace(/^Animador \/ TELÃO$/i, 'Animador / Telão');
 
+  /* Nomes das funções conforme a IGMR (Instrução Geral do Missal Romano):
+     Sacerdote, Diácono, Leitor, Salmista, Comentarista (n. 105b), Cantores,
+     Acólito, Ministros extraordinários da Sagrada Comunhão e Todos (a assembleia).
+     Converte os nomes antigos (Padre, Animador, Música, 1ª Leitura…) dos roteiros
+     já existentes; nomes que já seguem a IGMR ficam como estão. */
+  const RESPOSTAS_DO_POVO = new RegExp('^(r\\.\\s|amem\\b|ele esta no meio de nos|e com o teu espirito|bendito seja deus|gracas a deus|' +
+    'gloria a vos, senhor|para sempre seja louvado|o nosso coracao esta em deus|e nosso dever e nossa salvacao|' +
+    'enviai o vosso espirito|anunciamos, senhor|todas as vezes que comemos|salvador do mundo|aceitai, o senhor|' +
+    'o espirito nos una|lembrai-vos, o pai, da vossa igreja|concedei-lhes|vosso e o reino|o amor de cristo nos uniu|' +
+    'senhor, eu nao sou digno|rogai por nos|receba o senhor|cordeiro de deus|senhor, tende piedade|cristo, tende piedade|' +
+    'gloria a deus nas alturas|creio em|pai nosso|santo, santo|demos gracas a deus)');
+  const INTENCAO = /(nos vos pedimos|rezemos ao senhor|roguemos ao senhor|oremos)\.?$/;
+
+  function papelIGMR(papel, texto, seguinte = '') {
+    const p = semAcento(papel);
+    const t = semAcento(limpar(texto).replace(/^["“'(\s]+/, ''));
+    const telao = /telao/.test(p) ? ' / Telão' : '';
+    const base = p.replace(/\s*\/\s*/g, ' / ').replace(/ \/ telao$/, '').trim();
+    if (base === 'animador' || base === 'monitor') {
+      if (RESPOSTAS_DO_POVO.test(t)) return `Todos${telao}`;
+      if (INTENCAO.test(t) || /formulario de preces/.test(t)) return 'Diácono / Leitor';
+      return `Comentarista${telao}`;
+    }
+    if (base === 'padre' || base === 'celebrante' || base === 'presidente') {
+      const antesDoEvangelho = /^o senhor esteja convosco/.test(t) && /proclamacao do evangelho/.test(semAcento(seguinte));
+      if (antesDoEvangelho || /^(proclamacao do evangelho|palavra da salvacao|(mt|mc|lc|jo) \d)/.test(t)) return 'Diácono / Sacerdote';
+      if (/^(ide em paz|ide, e anunciai|ide, levai|glorificai o senhor com vossa vida)/.test(t)) return 'Diácono / Sacerdote';
+      if (/^homilia/.test(t)) return 'Sacerdote / Diácono';
+      if (/^seguem-se/.test(t)) return 'Orientação';
+      return `Sacerdote${telao}`;
+    }
+    if (/^padre \/ (animador|comentarista)$/.test(base)) return /creio/.test(t) ? 'Sacerdote e Todos' : 'Sacerdote / Comentarista';
+    if (/^\d[ªa]? leitura$|^leitora?$/.test(base)) return 'Leitor';
+    if (/^(musica|ministerio de musica|canto|coral|grupo de canto)$/.test(base)) {
+      if (/^salmo/.test(t)) return 'Salmista';
+      if (/^santo, santo/.test(t)) return 'Todos';
+      if (/^(gloria a deus nas alturas|aclamacao ao evangelho)/.test(t.replace(/^[“"]/, ''))) return 'Cantores e Todos';
+      return 'Cantores';
+    }
+    if (/^salmo$/.test(base)) return 'Salmista';
+    if (/^ministros?$/.test(base)) return 'Ministros extraordinários da Sagrada Comunhão';
+    return papel;
+  }
+
+  function aplicarIGMR(linhas) {
+    return linhas.map(([papel, texto], i) => {
+      const seguinte = linhas.slice(i + 1, i + 3).map(([, x]) => x).join('\n');
+      const novo = papelIGMR(papel, texto, seguinte);
+      return [novo, novo === 'Orientação' ? texto.replace(/\b([Oo]) animador\b/g, '$1 comentarista') : texto];
+    });
+  }
+
   const textoCelula = (texto) => {
     const linhas = String(texto ?? '').split('\n').map(limpar);
     const saida = [];
@@ -248,8 +300,11 @@
         if (texto) secoes.push({ titulo: texto.replace(/^\d+\.\s*/, '').replace(/:$/, '').trim(), linhas: [] });
         continue;
       }
+      let papelAnterior = '';
       for (const linha of bloco.linhas) {
-        const celulas = linha.filter((c) => c !== null).map(textoCelula);
+        // Célula de função mesclada com a linha de cima: mantém a mesma função.
+        const celulas = (linha[0] === null && linha.length > 1 ? [papelAnterior, ...linha.slice(1)] : linha)
+          .filter((c) => c !== null).map(textoCelula);
         if (!celulas.some(Boolean)) continue;
         if (celulas.length === 1) {
           for (const nota of celulas[0].split('\n')) if (nota) secoes[secoes.length - 1].linhas.push(['Orientação', nota]);
@@ -259,12 +314,13 @@
         const texto = celulas.slice(1).filter(Boolean).join('\n');
         if (papel.toUpperCase() === 'LEITURAS' && texto.toUpperCase() === 'LIVRO') continue;
         if (!papel || !texto) continue;
+        papelAnterior = celulas[0];
         secoes[secoes.length - 1].linhas.push([papel, texto]);
       }
     }
     return {
       cabecalho: doc.cabecalho,
-      secoes: secoes.filter((s) => s.linhas.length).map((s) => ({ titulo: s.titulo || 'Orientações', linhas: s.linhas }))
+      secoes: secoes.filter((s) => s.linhas.length).map((s) => ({ titulo: s.titulo || 'Orientações', linhas: aplicarIGMR(s.linhas) }))
     };
   }
 
@@ -272,8 +328,11 @@
     const formularios = [];
     for (const bloco of doc.blocos.filter((b) => b.tipo === 'tabela')) {
       const form = { data: '', horario: '', linhas: [] };
+      let papelAnterior = '';
       for (const linha of bloco.linhas) {
-        const celulas = linha.filter((c) => c !== null).map(textoCelula);
+        const celulas = (linha[0] === null && linha.length > 1 ? [papelAnterior, ...linha.slice(1)] : linha)
+          .filter((c) => c !== null).map(textoCelula);
+        papelAnterior = celulas[0] || papelAnterior;
         const papel = normalizarPapel((celulas[0] || '').replace(/\s*\n\s*/g, ' / '));
         const texto = celulas.slice(1).filter(Boolean).join('\n');
         if (papel === 'Data') form.data = texto;
@@ -286,7 +345,7 @@
       cabecalho: doc.cabecalho,
       formularios: formularios.map((f) => ({
         titulo: [f.data && `Data: ${f.data}`, f.horario && `Horário: ${f.horario}`].filter(Boolean).join(' — ') || 'Preces',
-        linhas: f.linhas
+        linhas: aplicarIGMR(f.linhas)
       }))
     };
   }
@@ -311,9 +370,9 @@
     }
     if ((m = achar(new RegExp(String.raw`Missal\s*[–—-]\s*p[áa]g\.?\s*(\d+)\)\s*Obedientes`, 'i')))) missal.rito_comunhao = m[1];
     const gloria = linhas.find(([, texto]) => /Gl[óo]ria a Deus nas alturas/i.test(texto));
-    if (gloria) missal.gloria = /m[úu]sica|canto/i.test(gloria[0]) ? 'Cantado (pág. 442)' : '442';
+    if (gloria) missal.gloria = /m[úu]sica|canto|cantores/i.test(gloria[0]) ? 'Cantado (pág. 442)' : '442';
     const creio = linhas.find(([, texto]) => /Creio em (um só )?Deus/i.test(texto));
-    if (creio) missal.creio = /m[úu]sica|canto/i.test(creio[0]) ? 'Cantado (página omitida)' : 'Rezado (página omitida)';
+    if (creio) missal.creio = /m[úu]sica|canto|cantores/i.test(creio[0]) ? 'Cantado (página omitida)' : 'Rezado (página omitida)';
     const cor = (roteiro.cabecalho || '').match(/COR\s+(VERDE|ROXA?O?|BRANCA?O?|VERMELHA?O?|R[ÓO]SEA?|ROSA)/i);
     return { missal, cor: cor ? corPorNome(cor[1]) : null };
   }
@@ -789,7 +848,7 @@
   }
 
   return {
-    lerLeituras, lerRoteiro, lerPreces, lerEscala, missalDoRoteiro, missalDoIndice, montarSemana, finalizarSemana,
+    papelIGMR, lerLeituras, lerRoteiro, lerPreces, lerEscala, missalDoRoteiro, missalDoIndice, montarSemana, finalizarSemana,
     atualizarLecionario, chaveLecionario, semanaLegada, slug, somarDias, diaDaSemana, dataCurta, tituloData
   };
 }));
