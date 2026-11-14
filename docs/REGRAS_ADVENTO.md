@@ -29,6 +29,7 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Imaculada Conceição | Nos horários normais das Missas do dia. |
 | Fins de semana | OE II; preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h e 11h: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu. |
 | Solenidade no fim de semana | Incenso, «Por Cristo» e Amém cantados somente na Missa de domingo às 18h30. |
+| Solenidade em dia de semana | Missa solene, com incenso, «Por Cristo» e Amém cantados (ex.: Imaculada Conceição, 8/12, 19h00). Roteiro aprovado em 14/11/2026. |
 | 3º Domingo | Coleta da Campanha para a Evangelização (CNBB). |
 
 ## 3. Calendário de 2026 (Missal Romano, 3ª edição)
