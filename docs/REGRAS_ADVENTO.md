@@ -21,7 +21,7 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Prefácio | Advento I (pág. 451) até 16/12; Advento II (pág. 453) de 17 a 24/12 e no 4º Domingo. Memórias, festas e solenidades usam o prefácio próprio ou o do Comum. |
 | Bênção | Domingos: Bênção Solene do Advento (pág. 578). Festas e solenidades: a bênção indicada no próprio formulário. |
 | Memórias | Obrigatórias, até 16/12, seguem o santo. Facultativas não são celebradas. De 17 a 24/12 celebra-se sempre a féria do Advento. |
-| Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) a Missa é a do dia. A devoção ao Sagrado Coração pode ser mantida fora da Missa (por exemplo, a Ladainha antes da Missa). |
+| Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) mantêm-se os horários (Missas às 5h30 e 12h00, confissões às 11h30), mas a Missa é a do dia; reza-se a Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo às 19h30 (roteiro a preparar). |
 | Ornamentação | Flores e instrumentos com moderação, sem antecipar a alegria do Natal (IGMR 305 e 313). |
 | Coroa do Advento | Logo após a saudação inicial. A bênção é feita **uma só vez**, no 1º Domingo (ou na primeira Missa do sábado à noite); nos demais domingos só se acende a vela do dia. Sequência na seção 5. |
 | Acolhida (monição inicial) | Sempre uma acolhida da comunidade, sem antecipar as leituras nem o tema da liturgia (vale para todo o ano). |
@@ -36,10 +36,10 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Data | Celebração | Cor | Coleta / Oferendas / Depois | Prefácio | Outros |
 |---|---|---|---|---|---|
 | Dom 29/11 | 1º Domingo do Advento | roxa | 96 | Advento I (451) | Creio; Bênção 578; bênção da coroa após a saudação |
-| Seg 30/11 | Santo André, Apóstolo – Festa | vermelha | 865 / 865 / 866 | Apóstolos (498) | Glória; Bênção 586 |
+| Seg 30/11 | Santo André, Apóstolo – Festa | vermelha | 865 / 865 / 866 | Apóstolos (498) | Glória; Bênção 586; sem roteiro (segue a liturgia do dia) |
 | Ter 1 e Qua 2/12 | Féria do Advento | roxa | do dia | Advento I (451) | OE II |
 | Qui 3/12 | São Francisco Xavier – Memória | branca | 867 / 867 / 868 | do Comum | OE II |
-| Sex 4/12 | Féria do Advento (1ª sexta-feira) | roxa | do dia | Advento I (451) | sem Missa votiva |
+| Sex 4/12 | Féria do Advento (1ª sexta-feira) | roxa | do dia | Advento I (451) | sem Missa votiva; Ladainha antes das Missas; Adoração Solene 19h30 |
 | Dom 6/12 | 2º Domingo do Advento | roxa | 103 | Advento I (451) | Creio; Bênção 578 |
 | Seg 7/12 | Santo Ambrósio – Memória | branca | 869 / 870 / 870 | do Comum | OE II |
 | Ter 8/12 | Imaculada Conceição – Solenidade | branca | 872 / 872 / 874 | próprio (873) | Glória; Creio; Bênção 585 |
@@ -54,7 +54,7 @@ Santa Luzia (13/12) cai no domingo e não é celebrada. Nossa Senhora de Guadalu
 
 - `modelos/MODELO - Roteiro da Missa do Advento (Domingo).docx`
 - `modelos/MODELO - Roteiro da Missa do Advento (Dia de semana).docx`
-- Para Santo André e a Imaculada Conceição: `MODELO - Roteiro da Missa Solene.docx` (OE II).
+- Imaculada Conceição: roteiro a partir do `MODELO - Roteiro da Missa Solene.docx` (OE II). Santo André não tem roteiro.
 
 ## 5. Acendimento das velas da Coroa do Advento
 
