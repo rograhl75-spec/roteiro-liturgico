@@ -1,0 +1,1182 @@
+{
+ "formato": 1,
+ "legacyWeek": 11,
+ "id": "2026-11-23",
+ "periodo": "23 a 29 de novembro",
+ "shortTitle": "23 a 29 de novembro — 1º Domingo do Advento",
+ "fullTitle": "Semana de 23 a 29 de novembro de 2026 — 1º Domingo do Advento",
+ "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
+ "roteiroExtras": [],
+ "precesExtras": [],
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras: somente referências (textos a inserir conforme o Liturgia Diária – CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "dias": [
+  {
+   "data": "2026-11-23",
+   "titulo": "Segunda-feira, 23 de Novembro de 2026",
+   "dia": "Segunda",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Segunda-feira — 23/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões e Direção Espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 14,1-3.4b-5",
+     "s12_seg_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 23(24)",
+     "s12_seg_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s12_seg_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 21,1-4",
+     "s12_seg_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "416",
+    "oferendas": "416",
+    "comunhao": "416",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-24",
+   "titulo": "Terça-feira, 24 de Novembro de 2026",
+   "dia": "Terça",
+   "cor": "vermelho",
+   "grau": "Memória",
+   "celebracao": "Santos André Dung-Lac, presbítero, e companheiros, mártires — Memória; 34ª Semana do Tempo Comum, Ano Par (II)",
+   "selecaoTitulo": "Terça-feira — 24/11 — Santos André Dung-Lac",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José",
+     "confissao",
+     "Direção Espiritual — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 14,14-19",
+     "s12_ter_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 95(96)",
+     "s12_ter_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s12_ter_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 21,5-11",
+     "s12_ter_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "863",
+    "oferendas": "864",
+    "comunhao": "864",
+    "prefacio": "502 (Santos Mártires I)",
+    "eucaristica": "537 (OE II)"
+   }
+  },
+  {
+   "data": "2026-11-25",
+   "titulo": "Quarta-feira, 25 de Novembro de 2026",
+   "dia": "Quarta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Quarta-feira — 25/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 15,1-4",
+     "s12_qua_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 97(98)",
+     "s12_qua_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s12_qua_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 21,12-19",
+     "s12_qua_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "416",
+    "oferendas": "416",
+    "comunhao": "416",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-26",
+   "titulo": "Quinta-feira, 26 de Novembro de 2026",
+   "dia": "Quinta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Quinta-feira — 26/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael",
+     "confissao",
+     "Confissões — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 18,1-2.21-23; 19,1-3.9a",
+     "s12_qui_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 99(100)",
+     "s12_qui_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s12_qui_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 21,20-28",
+     "s12_qui_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "416",
+    "oferendas": "416",
+    "comunhao": "416",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-27",
+   "titulo": "Sexta-feira, 27 de Novembro de 2026",
+   "dia": "Sexta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Sexta-feira — 27/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ],
+    [
+     "20h00",
+     "Igreja Matriz",
+     "Pe. Heriberto",
+     "casamento",
+     "Matrimônio — Gregorio e Maria"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 20,1-4.11–21,2",
+     "s12_sex_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 83(84)",
+     "s12_sex_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s12_sex_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 21,29-33",
+     "s12_sex_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "416",
+    "oferendas": "416",
+    "comunhao": "416",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  }
+ ],
+ "fimDeSemana": {
+  "titulo": "Fim de semana: 28 e 29 de Novembro de 2026",
+  "dia": "Sábado",
+  "cor": "roxo",
+  "grau": "Domingo",
+  "celebracao": "1º Domingo do Advento, Ano B — sábado vespertino e domingo",
+  "selecaoTitulo": "Fim de semana — 28 e 29/11 — 1º Domingo do Advento",
+  "dias": [
+   {
+    "data": "2026-11-28",
+    "dia": "Sábado",
+    "escala": [
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Capela de Pedra",
+      "Pe. Laurindo",
+      "casamento",
+      "Matrimônio — Jefferson e Estela"
+     ],
+     [
+      "16h00",
+      "Igreja Matriz",
+      "Diác. Pedrinho",
+      "casamento",
+      "Matrimônio — Carlos e Alessandra"
+     ]
+    ]
+   },
+   {
+    "data": "2026-11-29",
+    "dia": "Domingo",
+    "escala": [
+     [
+      "09h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ]
+   }
+  ],
+  "leituras": [
+   [
+    "1ª Leitura",
+    "Is 63,16b-17.19b; 64,2b-7",
+    "s12_dom_l1",
+    ""
+   ],
+   [
+    "Salmo",
+    "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
+    "s12_dom_sal",
+    ""
+   ],
+   [
+    "2ª Leitura",
+    "1Cor 1,3-9",
+    "s12_dom_l2",
+    ""
+   ],
+   [
+    "Aclamação ao Evangelho",
+    "",
+    "s12_dom_acl",
+    ""
+   ],
+   [
+    "Evangelho",
+    "Mc 13,33-37",
+    "s12_dom_ev",
+    ""
+   ]
+  ],
+  "missal": {
+   "coleta": "96",
+   "oferendas": "96",
+   "comunhao": "96",
+   "bencao": "578 (Tempo do Advento)",
+   "eucaristica": "537 (OE II)",
+   "prefacio": "451 (Advento I)",
+   "creio": "Rezado (página omitida)"
+  },
+  "antifonas": "antifonas_12"
+ },
+ "documentos": [
+  "semanas/2026-11-23/Leituras 23 novembro a 29 novembro 2026 (referências).docx",
+  "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx"
+ ],
+ "leituras": {
+  "s12_seg_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 14,1-3.4b-5",
+   "day": "Segunda-feira (23/11)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Ap 14,1-3.4b-5"
+  },
+  "s12_seg_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 23(24)",
+   "day": "Segunda-feira (23/11)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 23(24)"
+  },
+  "s12_seg_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Segunda-feira (23/11)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_seg_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 21,1-4",
+   "day": "Segunda-feira (23/11)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 21,1-4"
+  },
+  "s12_ter_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 14,14-19",
+   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Ap 14,14-19"
+  },
+  "s12_ter_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 95(96)",
+   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 95(96)"
+  },
+  "s12_ter_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_ter_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 21,5-11",
+   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 21,5-11"
+  },
+  "s12_qua_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 15,1-4",
+   "day": "Quarta-feira (25/11)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Ap 15,1-4"
+  },
+  "s12_qua_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 97(98)",
+   "day": "Quarta-feira (25/11)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 97(98)"
+  },
+  "s12_qua_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Quarta-feira (25/11)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_qua_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 21,12-19",
+   "day": "Quarta-feira (25/11)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 21,12-19"
+  },
+  "s12_qui_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 18,1-2.21-23; 19,1-3.9a",
+   "day": "Quinta-feira (26/11)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Ap 18,1-2.21-23; 19,1-3.9a"
+  },
+  "s12_qui_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 99(100)",
+   "day": "Quinta-feira (26/11)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 99(100)"
+  },
+  "s12_qui_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Quinta-feira (26/11)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_qui_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 21,20-28",
+   "day": "Quinta-feira (26/11)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 21,20-28"
+  },
+  "s12_sex_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 20,1-4.11–21,2",
+   "day": "Sexta-feira (27/11)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Ap 20,1-4.11–21,2"
+  },
+  "s12_sex_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 83(84)",
+   "day": "Sexta-feira (27/11)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 83(84)"
+  },
+  "s12_sex_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Sexta-feira (27/11)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_sex_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 21,29-33",
+   "day": "Sexta-feira (27/11)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 21,29-33"
+  },
+  "s12_dom_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Is 63,16b-17.19b; 64,2b-7",
+   "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Is 63,16b-17.19b; 64,2b-7"
+  },
+  "s12_dom_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
+   "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 79(80),2ac.3b.15-16.18-19 (R. 4)"
+  },
+  "s12_dom_l2": {
+   "momento": "2ª Leitura",
+   "referencia": "1Cor 1,3-9",
+   "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+   "text": "SEGUNDA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "2ª Leitura — 1Cor 1,3-9"
+  },
+  "s12_dom_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s12_dom_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mc 13,33-37",
+   "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Mc 13,33-37"
+  }
+ },
+ "antifonas": {
+  "antifonas_12": {
+   "title": "Antífonas, Aclamação e Citações para a transmissão — 1º Domingo do Advento (28 e 29/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — Cf. Sl 24,1-3 Não se diz o Glória.",
+     "text": "A vós, meu Deus, elevo a minha alma, e confio em vós. Que eu não seja envergonhado, nem se riam de mim os meus inimigos! Pois não será desiludido qÚem em vós espera."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "",
+     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — Cf. Sl 84,13",
+       "text": "O Senhor nos dará tudo o que é bom, e a nossa terra nos dará suas colheitas."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Salmo Responsorial",
+     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+    }
+   ]
+  }
+ },
+ "roteiros": {
+  "roteiro_11": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — 1º Domingo do Advento — 28 e 29/11/2026",
+   "fonte": "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
+   "cabecalho": "● 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026 – ANO B – COR ROXA",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "TEMPO DO ADVENTO – cor roxa; no 3º Domingo (Gaudete), cor rósea. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+      ],
+      [
+       "Orientação",
+       "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Comentarista",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Comentarista",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Comentarista",
+       "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Com alegria, acompanhemos a procissão de entrada, cantando…\""
+      ],
+      [
+       "Cantores",
+       "Canto de Entrada"
+      ],
+      [
+       "Sacerdote",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Todos",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Orientação",
+       "Coroa do Advento, logo após a saudação inicial: bênção da coroa, aspersão com água benta e acendimento da primeira vela (motivação, oração e canto)."
+      ],
+      [
+       "Orientação",
+       "Somente no 1º Domingo – Bênção da Coroa do Advento. Dentro da Missa omite-se o diálogo «O nosso auxílio está no nome do Senhor», porque a saudação já foi feita; começa-se pelo «Oremos»."
+      ],
+      [
+       "Sacerdote",
+       "Oremos. Senhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "O sacerdote asperge a coroa com água benta, em silêncio ou durante um breve canto. Segue-se o acendimento da primeira vela (motivação, oração e canto)."
+      ],
+      [
+       "Comentarista",
+       "Acendemos a primeira vela da Coroa do Advento, a vela da esperança. Começamos um novo ano litúrgico, e o Senhor nos pede que fiquemos acordados e atentos, como servos que esperam a volta do seu Senhor. Com os profetas, clamamos: vem, Senhor, salvar o teu povo!"
+      ],
+      [
+       "Todos",
+       "Senhor Jesus, nós somos o barro e tu és o oleiro: molda os nossos corações. Faze brilhar sobre nós a tua face, para que, vigilantes na oração, esperemos com alegria a tua vinda. Vem, Senhor Jesus!"
+      ],
+      [
+       "Cantores",
+       "Canto do acendimento da vela da Coroa do Advento"
+      ],
+      [
+       "Sacerdote",
+       "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Cantores",
+       "Ato Penitencial"
+      ],
+      [
+       "Sacerdote",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Orientação",
+       "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."
+      ],
+      [
+       "Sacerdote",
+       "Oração da Coleta (pág. 96)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "Leitor",
+       "Is 63,16b-17.19b; 64,2b-7"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio para meditar a Palavra (IGMR 56)."
+      ],
+      [
+       "Salmista",
+       "Salmo Responsorial Sl 79(80),2ac.3b.15-16.18-19 (R. 4)"
+      ],
+      [
+       "Leitor",
+       "1Cor 1,3-9"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores e Todos",
+       "Aclamação ao Evangelho ."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Proclamação do Evangelho de Jesus Cristo segundo Marcos."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Mc 13,33-37"
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Palavra da Salvação."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "Homilia."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Todos",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio depois da homilia (IGMR 66)."
+      ],
+      [
+       "Sacerdote e Todos",
+       "(Profissão de fé – Símbolo dos Apóstolos; pode ser substituído pelo Símbolo Niceno-Constantinopolitano, próprio do domingo)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."
+      ],
+      [
+       "Sacerdote",
+       "Faz a introdução às preces."
+      ],
+      [
+       "Diácono / Leitor",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Comentarista",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Cantores",
+       "Canto das Oferendas"
+      ],
+      [
+       "Sacerdote",
+       "Preparação das oferendas."
+      ],
+      [
+       "Sacerdote",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Todos",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Sacerdote",
+       "Oração sobre as Oferendas (pág. 96)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Sacerdote",
+       "Corações ao alto."
+      ],
+      [
+       "Todos",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Sacerdote",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Todos",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Sacerdote",
+       "Prefácio do Advento I (pág. 451)"
+      ],
+      [
+       "Sacerdote",
+       "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso, por Cristo, Senhor nosso. Revestido da nossa fragilidade, ele veio a primeira vez para realizar seu eterno plano de amor e abrir-nos o caminho da salvação. Revestido de sua glória, ele virá uma segunda vez, para conceder-nos em plenitude os dons prometidos que hoje vigilantes esperamos. Por isso, com os Anjos e Arcanjos, os Tronos e as Dominações e todos os coros celestes entoamos o hino da vossa glória, cantando (dizendo) a uma só voz:"
+      ],
+      [
+       "Todos",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Sacerdote",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Sacerdote",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"
+      ],
+      [
+       "Todos",
+       "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"
+      ],
+      [
+       "Sacerdote",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Todos",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Sacerdote",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Todos",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Todos",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Todos",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Sacerdote",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Sacerdote",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Sacerdote",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Sacerdote",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Todos",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."
+      ],
+      [
+       "Orientação",
+       "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."
+      ],
+      [
+       "Orientação",
+       "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."
+      ],
+      [
+       "Todos",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Sacerdote",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Todos",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Orientação",
+       "Comunhão do sacerdote (em silêncio)."
+      ],
+      [
+       "Comentarista",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Cantores",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Orientação",
+       "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."
+      ],
+      [
+       "Sacerdote",
+       "Oração depois da Comunhão (pág. 96)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Pároco / Diácono / Comentarista",
+       "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."
+      ],
+      [
+       "Sacerdote",
+       "Bênção dos pães (quando houver)."
+      ],
+      [
+       "Sacerdote",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Todos",
+       "Rogai por nós."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco!"
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Orientação",
+       "Bênção Solene do Advento (Missal, pág. 578):"
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Inclinai-vos para receber a bênção."
+      ],
+      [
+       "Sacerdote",
+       "Bênção Solene – Tempo do Advento (pág. 578)\nO Deus onipotente e misericordioso vos santifique com o esplendor do advento do seu Filho, em cuja vinda credes e cuja volta esperais, e derrame sobre vós as suas bênçãos."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "Durante esta vida, Deus vos torne firmes na fé, alegres na esperança e solícitos na caridade."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "E vós, que vos alegrais com fé e devoção pela vinda, segundo a carne, do nosso Redentor, sejais recompensados com o prêmio da vida eterna, quando ele vier de novo na majestade da sua glória."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_11": {
+   "tipo": "preces",
+   "titulo": "Preces — 1º Domingo do Advento",
+   "formularios": [
+    {
+     "titulo": "Preces – em preparação",
+     "linhas": [
+      [
+       "Orientação",
+       "Preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h00 e 11h00: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu – a inserir."
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "aprovado": false
+}

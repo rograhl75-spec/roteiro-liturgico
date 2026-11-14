@@ -13,7 +13,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const raiz = path.join(__dirname, '..');
-const MAX_SEMANAS = 3;
+const MAX_SEMANAS = Number(process.env.MAX_SEMANAS) || 3;
 const ARQUIVOS_FIXOS = [
   'index.html', 'styles.css', 'app.js', 'programacao.js', 'semanas.js', 'leituras.js', 'antifonas.js',
   'roteiros.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',

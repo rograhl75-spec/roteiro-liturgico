@@ -1,0 +1,1145 @@
+{
+ "formato": 1,
+ "legacyWeek": 14,
+ "id": "2026-12-14",
+ "periodo": "14 a 20 de dezembro",
+ "shortTitle": "14 a 20 de dezembro — 4º Domingo do Advento",
+ "fullTitle": "Semana de 14 a 20 de dezembro de 2026 — 4º Domingo do Advento",
+ "roteiroLabel": "📖 Roteiro — 4º Domingo do Advento",
+ "roteiroExtras": [],
+ "precesExtras": [],
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras: somente referências (textos a inserir conforme o Liturgia Diária – CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "dias": [
+  {
+   "data": "2026-12-14",
+   "titulo": "Segunda-feira, 14 de Dezembro de 2026",
+   "dia": "Segunda",
+   "cor": "branco",
+   "grau": "Memória",
+   "celebracao": "São João da Cruz, presbítero e doutor da Igreja — Memória; 3ª Semana do Advento",
+   "selecaoTitulo": "Segunda-feira — 14/12 — São João da Cruz",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões e Direção Espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Nm 24,2-7.15-17a",
+     "s15_seg_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 24(25)",
+     "s15_seg_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s15_seg_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 21,23-27",
+     "s15_seg_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "878",
+    "oferendas": "878",
+    "comunhao": "878",
+    "prefacio": "504 (Santos Pastores I)",
+    "eucaristica": "537 (OE II)"
+   }
+  },
+  {
+   "data": "2026-12-15",
+   "titulo": "Terça-feira, 15 de Dezembro de 2026",
+   "dia": "Terça",
+   "cor": "roxo",
+   "grau": "Féria",
+   "celebracao": "3ª Semana do Advento — Féria do Advento",
+   "selecaoTitulo": "Terça-feira — 15/12",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José",
+     "confissao",
+     "Direção Espiritual — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Sf 3,1-2.9-13",
+     "s15_ter_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 33(34)",
+     "s15_ter_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s15_ter_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 21,28-32",
+     "s15_ter_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "112",
+    "oferendas": "112",
+    "comunhao": "112",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "451 (Advento I)"
+   }
+  },
+  {
+   "data": "2026-12-16",
+   "titulo": "Quarta-feira, 16 de Dezembro de 2026",
+   "dia": "Quarta",
+   "cor": "roxo",
+   "grau": "Féria",
+   "celebracao": "3ª Semana do Advento — Féria do Advento",
+   "selecaoTitulo": "Quarta-feira — 16/12",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Is 45,6b-8.18.21b-25",
+     "s15_qua_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 84(85)",
+     "s15_qua_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s15_qua_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 7,19-23",
+     "s15_qua_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "113",
+    "oferendas": "113",
+    "comunhao": "113",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "451 (Advento I)"
+   }
+  },
+  {
+   "data": "2026-12-17",
+   "titulo": "Quinta-feira, 17 de Dezembro de 2026",
+   "dia": "Quinta",
+   "cor": "roxo",
+   "grau": "Féria",
+   "celebracao": "3ª Semana do Advento — Féria do Advento",
+   "selecaoTitulo": "Quinta-feira — 17/12",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Rafael",
+     "confissao",
+     "Confissões — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Gn 49,2.8-10",
+     "s15_qui_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 71(72)",
+     "s15_qui_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s15_qui_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 1,1-17",
+     "s15_qui_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "117",
+    "oferendas": "117",
+    "comunhao": "117",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "453 (Advento II)"
+   }
+  },
+  {
+   "data": "2026-12-18",
+   "titulo": "Sexta-feira, 18 de Dezembro de 2026",
+   "dia": "Sexta",
+   "cor": "roxo",
+   "grau": "Féria",
+   "celebracao": "3ª Semana do Advento — Féria do Advento",
+   "selecaoTitulo": "Sexta-feira — 18/12",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Jr 23,5-8",
+     "s15_sex_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 71(72)",
+     "s15_sex_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s15_sex_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 1,18-24",
+     "s15_sex_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "118",
+    "oferendas": "118",
+    "comunhao": "118",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "453 (Advento II)"
+   }
+  }
+ ],
+ "fimDeSemana": {
+  "titulo": "Fim de semana: 19 e 20 de Dezembro de 2026",
+  "dia": "Sábado",
+  "cor": "roxo",
+  "grau": "Domingo",
+  "celebracao": "4º Domingo do Advento, Ano B — sábado vespertino e domingo",
+  "selecaoTitulo": "Fim de semana — 19 e 20/12 — 4º Domingo do Advento",
+  "dias": [
+   {
+    "data": "2026-12-19",
+    "dia": "Sábado",
+    "escala": [
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Laurindo"
+     ]
+    ]
+   },
+   {
+    "data": "2026-12-20",
+    "dia": "Domingo",
+    "escala": [
+     [
+      "09h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ]
+   }
+  ],
+  "leituras": [
+   [
+    "1ª Leitura",
+    "2Sm 7,1-5.8b-12.14a.16",
+    "s15_dom_l1",
+    ""
+   ],
+   [
+    "Salmo",
+    "Sl 88(89),2-3.4-5.27.29 (R. 2a)",
+    "s15_dom_sal",
+    ""
+   ],
+   [
+    "2ª Leitura",
+    "Rm 16,25-27",
+    "s15_dom_l2",
+    ""
+   ],
+   [
+    "Aclamação ao Evangelho",
+    "",
+    "s15_dom_acl",
+    ""
+   ],
+   [
+    "Evangelho",
+    "Lc 1,26-38",
+    "s15_dom_ev",
+    ""
+   ]
+  ],
+  "missal": {
+   "coleta": "116",
+   "oferendas": "116",
+   "comunhao": "116",
+   "bencao": "578 (Tempo do Advento)",
+   "eucaristica": "537 (OE II)",
+   "prefacio": "453 (Advento II)",
+   "creio": "Rezado (página omitida)"
+  },
+  "antifonas": "antifonas_15"
+ },
+ "documentos": [
+  "semanas/2026-12-14/Leituras 14 dezembro a 20 dezembro 2026 (referências).docx",
+  "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx"
+ ],
+ "leituras": {
+  "s15_seg_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Nm 24,2-7.15-17a",
+   "day": "Segunda-feira (14/12) — São João da Cruz",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Nm 24,2-7.15-17a"
+  },
+  "s15_seg_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 24(25)",
+   "day": "Segunda-feira (14/12) — São João da Cruz",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 24(25)"
+  },
+  "s15_seg_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Segunda-feira (14/12) — São João da Cruz",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_seg_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mt 21,23-27",
+   "day": "Segunda-feira (14/12) — São João da Cruz",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Mt 21,23-27"
+  },
+  "s15_ter_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Sf 3,1-2.9-13",
+   "day": "Terça-feira (15/12)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Sf 3,1-2.9-13"
+  },
+  "s15_ter_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 33(34)",
+   "day": "Terça-feira (15/12)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 33(34)"
+  },
+  "s15_ter_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Terça-feira (15/12)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_ter_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mt 21,28-32",
+   "day": "Terça-feira (15/12)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Mt 21,28-32"
+  },
+  "s15_qua_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Is 45,6b-8.18.21b-25",
+   "day": "Quarta-feira (16/12)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Is 45,6b-8.18.21b-25"
+  },
+  "s15_qua_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 84(85)",
+   "day": "Quarta-feira (16/12)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 84(85)"
+  },
+  "s15_qua_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Quarta-feira (16/12)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_qua_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 7,19-23",
+   "day": "Quarta-feira (16/12)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 7,19-23"
+  },
+  "s15_qui_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Gn 49,2.8-10",
+   "day": "Quinta-feira (17/12)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Gn 49,2.8-10"
+  },
+  "s15_qui_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 71(72)",
+   "day": "Quinta-feira (17/12)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 71(72)"
+  },
+  "s15_qui_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Quinta-feira (17/12)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_qui_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mt 1,1-17",
+   "day": "Quinta-feira (17/12)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Mt 1,1-17"
+  },
+  "s15_sex_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Jr 23,5-8",
+   "day": "Sexta-feira (18/12)",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — Jr 23,5-8"
+  },
+  "s15_sex_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 71(72)",
+   "day": "Sexta-feira (18/12)",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 71(72)"
+  },
+  "s15_sex_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Sexta-feira (18/12)",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_sex_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mt 1,18-24",
+   "day": "Sexta-feira (18/12)",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Mt 1,18-24"
+  },
+  "s15_dom_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "2Sm 7,1-5.8b-12.14a.16",
+   "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
+   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "1ª Leitura — 2Sm 7,1-5.8b-12.14a.16"
+  },
+  "s15_dom_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 88(89),2-3.4-5.27.29 (R. 2a)",
+   "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
+   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Salmo Responsorial — Sl 88(89),2-3.4-5.27.29 (R. 2a)"
+  },
+  "s15_dom_l2": {
+   "momento": "2ª Leitura",
+   "referencia": "Rm 16,25-27",
+   "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
+   "text": "SEGUNDA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "2ª Leitura — Rm 16,25-27"
+  },
+  "s15_dom_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "",
+   "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
+   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Aclamação ao Evangelho — "
+  },
+  "s15_dom_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 1,26-38",
+   "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
+   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "title": "Evangelho — Lc 1,26-38"
+  }
+ },
+ "antifonas": {
+  "antifonas_15": {
+   "title": "Antífonas, Aclamação e Citações para a transmissão — 4º Domingo do Advento (19 e 20/12/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — Cf. Is 45,8 Não se diz o Glória.",
+     "text": "Céus, deixai cair o orvalho, as nuvens façam chover o justo; abra-se a terra, e deixe germinar o Salvador!"
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "",
+     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — Is 7,14",
+       "text": "Eis que uma virgem conceberá e dará à luz um filho; e lhe porá o nome de Emanuel."
+      }
+     ]
+    }
+   ],
+   "citations": [
+    {
+     "label": "Salmo Responsorial",
+     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+    }
+   ]
+  }
+ },
+ "roteiros": {
+  "roteiro_14": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
+   "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
+   "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "TEMPO DO ADVENTO – cor roxa; no 3º Domingo (Gaudete), cor rósea. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+      ],
+      [
+       "Orientação",
+       "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Comentarista",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Comentarista",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Comentarista",
+       "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Com alegria, acompanhemos a procissão de entrada, cantando…\""
+      ],
+      [
+       "Cantores",
+       "Canto de Entrada"
+      ],
+      [
+       "Sacerdote",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Todos",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Orientação",
+       "Coroa do Advento, logo após a saudação inicial: acende-se a quarta vela – motivação, oração e canto."
+      ],
+      [
+       "Comentarista",
+       "Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim."
+      ],
+      [
+       "Todos",
+       "Senhor Jesus, Filho de Davi e Filho de Maria, faze dos nossos corações a tua morada. Que, como Maria, saibamos dizer: faça-se em nós segundo a tua palavra. Vem, Senhor Jesus!"
+      ],
+      [
+       "Cantores",
+       "Canto do acendimento da vela da Coroa do Advento"
+      ],
+      [
+       "Sacerdote",
+       "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Cantores",
+       "Ato Penitencial"
+      ],
+      [
+       "Sacerdote",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Orientação",
+       "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."
+      ],
+      [
+       "Sacerdote",
+       "Oração da Coleta (pág. 116)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "Leitor",
+       "2Sm 7,1-5.8b-12.14a.16"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio para meditar a Palavra (IGMR 56)."
+      ],
+      [
+       "Salmista",
+       "Salmo Responsorial Sl 88(89),2-3.4-5.27.29 (R. 2a)"
+      ],
+      [
+       "Leitor",
+       "Rm 16,25-27"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores e Todos",
+       "Aclamação ao Evangelho ."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Proclamação do Evangelho de Jesus Cristo segundo Lucas."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Lc 1,26-38"
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Palavra da Salvação."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "Homilia."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Todos",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio depois da homilia (IGMR 66)."
+      ],
+      [
+       "Sacerdote e Todos",
+       "(Profissão de fé – Símbolo dos Apóstolos; pode ser substituído pelo Símbolo Niceno-Constantinopolitano, próprio do domingo)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."
+      ],
+      [
+       "Sacerdote",
+       "Faz a introdução às preces."
+      ],
+      [
+       "Diácono / Leitor",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Comentarista",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Cantores",
+       "Canto das Oferendas"
+      ],
+      [
+       "Sacerdote",
+       "Preparação das oferendas."
+      ],
+      [
+       "Sacerdote",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Todos",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Sacerdote",
+       "Oração sobre as Oferendas (pág. 116)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Sacerdote",
+       "Corações ao alto."
+      ],
+      [
+       "Todos",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Sacerdote",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Todos",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Sacerdote",
+       "Prefácio do Advento II (pág. 453)"
+      ],
+      [
+       "Sacerdote",
+       "Na verdade, é digno e justo… (texto completo do Prefácio do Advento II no Missal Romano, pág. 453)."
+      ],
+      [
+       "Todos",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Sacerdote",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Sacerdote",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"
+      ],
+      [
+       "Todos",
+       "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"
+      ],
+      [
+       "Sacerdote",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Todos",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Sacerdote",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Todos",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Todos",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Todos",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Sacerdote",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Sacerdote",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Sacerdote",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Sacerdote",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Todos",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."
+      ],
+      [
+       "Orientação",
+       "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."
+      ],
+      [
+       "Orientação",
+       "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."
+      ],
+      [
+       "Todos",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Sacerdote",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Todos",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Orientação",
+       "Comunhão do sacerdote (em silêncio)."
+      ],
+      [
+       "Comentarista",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Cantores",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Orientação",
+       "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."
+      ],
+      [
+       "Sacerdote",
+       "Oração depois da Comunhão (pág. 116)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Pároco / Diácono / Comentarista",
+       "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."
+      ],
+      [
+       "Sacerdote",
+       "Bênção dos pães (quando houver)."
+      ],
+      [
+       "Sacerdote",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Todos",
+       "Rogai por nós."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco!"
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Orientação",
+       "Bênção Solene do Advento (Missal, pág. 578):"
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Inclinai-vos para receber a bênção."
+      ],
+      [
+       "Sacerdote",
+       "Bênção Solene – Tempo do Advento (pág. 578)\nO Deus onipotente e misericordioso vos santifique com o esplendor do advento do seu Filho, em cuja vinda credes e cuja volta esperais, e derrame sobre vós as suas bênçãos."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "Durante esta vida, Deus vos torne firmes na fé, alegres na esperança e solícitos na caridade."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "E vós, que vos alegrais com fé e devoção pela vinda, segundo a carne, do nosso Redentor, sejais recompensados com o prêmio da vida eterna, quando ele vier de novo na majestade da sua glória."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_14": {
+   "tipo": "preces",
+   "titulo": "Preces — 4º Domingo do Advento",
+   "formularios": [
+    {
+     "titulo": "Preces – em preparação",
+     "linhas": [
+      [
+       "Orientação",
+       "Preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h00 e 11h00: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu – a inserir."
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "aprovado": false
+}
