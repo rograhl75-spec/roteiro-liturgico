@@ -68,7 +68,7 @@ Sequência no **1º Domingo**, depois da saudação inicial:
 
 Nos **demais domingos**: motivação, oração e acendimento da vela do dia com canto; depois, o ato penitencial.
 
-Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar pelo pároco com o Ritual de Bênçãos). As motivações e orações abaixo são textos da paróquia, inspirados nas leituras do **Ano B** e no tema de cada semana; não há orações oficiais do sacerdote para cada domingo. A cada novo Advento, reescrever conforme o ano litúrgico (2027: Ano C). A acolhida inicial continua sem antecipar a liturgia; só o acendimento das velas explora as leituras.
+Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar pelo pároco com o Ritual de Bênçãos). As motivações e orações abaixo são textos da paróquia, inspirados nas leituras do **Ano B** e no tema de cada semana (aprovados pelo Diácono Rogério em 14/11/2026); não há orações oficiais do sacerdote para cada domingo. A cada novo Advento, reescrever conforme o ano litúrgico (2027: Ano C). A acolhida inicial continua sem antecipar a liturgia; só o acendimento das velas explora as leituras.
 
 | Domingo | Motivação (comentarista) | Oração (todos) | Liturgia de referência (Ano B) |
 |---|---|---|---|
