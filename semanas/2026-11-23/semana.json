@@ -8,7 +8,7 @@
  "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
  "roteiroExtras": [],
  "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras: somente referências (textos a inserir conforme o Liturgia Diária – CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-11-23",
@@ -41,13 +41,13 @@
     ],
     [
      "Salmo",
-     "Sl 23(24)",
+     "Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)",
      "s12_seg_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Mt 24,42a.44",
      "s12_seg_acl",
      ""
     ],
@@ -72,8 +72,8 @@
    "dia": "Terça",
    "cor": "vermelho",
    "grau": "Memória",
-   "celebracao": "Santos André Dung-Lac, presbítero, e companheiros, mártires — Memória; 34ª Semana do Tempo Comum, Ano Par (II)",
-   "selecaoTitulo": "Terça-feira — 24/11 — Santos André Dung-Lac",
+   "celebracao": "Santo André Dung-Lac, presbítero, e companheiros mártires — Memória; 34ª Semana do Tempo Comum",
+   "selecaoTitulo": "Terça-feira — 24/11 — Santo André Dung-Lac",
    "escala": [
     [
      "19h00",
@@ -97,13 +97,13 @@
     ],
     [
      "Salmo",
-     "Sl 95(96)",
+     "Sl 95(96),10.11-12.13 (R. 13b)",
      "s12_ter_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Ap 2,10c",
      "s12_ter_acl",
      ""
     ],
@@ -146,13 +146,13 @@
     ],
     [
      "Salmo",
-     "Sl 97(98)",
+     "Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)",
      "s12_qua_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Ap 2,10c",
      "s12_qua_acl",
      ""
     ],
@@ -203,19 +203,19 @@
    "leituras": [
     [
      "1ª Leitura",
-     "Ap 18,1-2.21-23; 19,1-3.9a",
+     "Ap 18,1-2.21-23.19,1-3.9a",
      "s12_qui_l1",
      ""
     ],
     [
      "Salmo",
-     "Sl 99(100)",
+     "Sl 99(100),2.3.4.5 (R. Ap 19,9a)",
      "s12_qui_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Lc 21,28",
      "s12_qui_acl",
      ""
     ],
@@ -259,19 +259,19 @@
    "leituras": [
     [
      "1ª Leitura",
-     "Ap 20,1-4.11–21,2",
+     "Ap 20,1-4.11-21,2",
      "s12_sex_l1",
      ""
     ],
     [
      "Salmo",
-     "Sl 83(84)",
+     "Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)",
      "s12_sex_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Lc 21,28",
      "s12_sex_acl",
      ""
     ],
@@ -354,7 +354,7 @@
   "leituras": [
    [
     "1ª Leitura",
-    "Is 63,16b-17.19b; 64,2b-7",
+    "Is 63,16b-17.19b;64,2b-7",
     "s12_dom_l1",
     ""
    ],
@@ -372,7 +372,7 @@
    ],
    [
     "Aclamação ao Evangelho",
-    "",
+    "Sl 84,8",
     "s12_dom_acl",
     ""
    ],
@@ -395,7 +395,7 @@
   "antifonas": "antifonas_12"
  },
  "documentos": [
-  "semanas/2026-11-23/Leituras 23 novembro a 29 novembro 2026 (referências).docx",
+  "semanas/2026-11-23/Leituras 23 a 29 novembro 2026.docx",
   "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx"
  ],
  "leituras": {
@@ -403,175 +403,175 @@
    "momento": "1ª Leitura",
    "referencia": "Ap 14,1-3.4b-5",
    "day": "Segunda-feira (23/11)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 14,1-3.4b-5\nEu, João,\n1\ntive esta visão:\no Cordeiro estava de pé sobre o monte Sião.\nCom ele, os cento e quarenta e quatro mil\nque tinham a fronte marcada com o nome dele\ne o nome do seu Pai.\n2\nOuvi uma voz que vinha do céu;\nparecia o barulho de águas torrenciais\ne o estrondo de um forte trovão.\nO ruído que ouvi era como o som\nde músicos tocando harpa.\n3\nEstavam diante do trono,\ndiante dos quatro Seres vivos e dos Anciãos,\ne cantavam um cântico novo.\nEra um cântico que ninguém podia aprender;\nsó os cento e quarenta e quatro mil marcados,\nque foram resgatados da terra.\n4b\nEles seguem o Cordeiro aonde quer que vá.\nForam resgatados do meio dos homens,\ncomo primeira oferta a Deus a ao Cordeiro.\n5\nNa sua boca nunca foi encontrada mentira.\nSão íntegros!\nPalavra do Senhor.",
    "title": "1ª Leitura — Ap 14,1-3.4b-5"
   },
   "s12_seg_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 23(24)",
+   "referencia": "Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)",
    "day": "Segunda-feira (23/11)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 23(24)"
+   "text": "Salmo responsorial Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)\nR. É assim a geração dos que buscam vossa face,\nó Senhor, Deus de Israel.\n1\nAo Senhor pertence a terra e o que ela encerra, *\no mundo inteiro com os seres que o povoam;\n2\nporque ele a tornou firme sobre os mares, *\ne sobre as águas a mantém inabalável. R.\n3\n\"Quem subirá até o monte do Senhor, *\nquem ficará em sua santa habitação?\"\n4a\n\"Quem tem mãos puras e inocente coração, *\nb\nquem não dirige sua mente para o crime. R.\n5\nSobre este desce a bênção do Senhor *\ne a recompensa de seu Deus e Salvador\".\n6\n\"É assim a geração dos que o procuram, *\ne do Deus de Israel buscam a face\". R.",
+   "title": "Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)"
   },
   "s12_seg_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Mt 24,42a.44",
    "day": "Segunda-feira (23/11)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho Mt 24,42a.44\nR. Aleluia, Aleluia, Aleluia.\nV. Vigiai, diz Jesus, vigiai,\npois, no dia em que não esperais,\no vosso Senhor há de vir.",
+   "title": "Aclamação ao Evangelho — Mt 24,42a.44"
   },
   "s12_seg_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 21,1-4",
    "day": "Segunda-feira (23/11)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,1-4\nNaquele tempo,\n1\nJesus ergueu os olhos e viu pessoas ricas\ndepositando ofertas no tesouro do Templo.\n2\nViu também uma pobre viúva\nque depositou duas pequenas moedas.\n3\nDiante disto, ele disse:\n\"Em verdade vos digo que essa pobre viúva\nofertou mais do que todos.\n4\nPois todos eles depositaram,\ncomo oferta feita a Deus,\naquilo que lhes sobrava.\nMas a viúva, na sua pobreza,\nofertou tudo quanto tinha para viver\".\nPalavra da Salvação.",
    "title": "Evangelho — Lc 21,1-4"
   },
   "s12_ter_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 14,14-19",
-   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "day": "Terça-feira (24/11) — Santo André Dung-Lac",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 14,14-19\nEu, João,\n14\nna minha visão, vi uma nuvem branca\ne sentado na nuvem\nalguém que parecia um \"filho de homem\".\nTinha na cabeça uma coroa de ouro\ne, nas mãos, uma foice afiada.\n15\nSaiu do Templo um outro anjo,\ngritando em alta voz\npara aquele que estava sentado na nuvem:\n\"Lança tua foice, e ceifa.\nChegou a hora da colheita.\nA seara da terra está madura!\"\n16\nE aquele que estava sentado na nuvem lançou a foice,\ne a terra foi ceifada.\n17\nEntão saiu do templo que está no céu mais um anjo.\nTambém ele tinha nas mãos uma foice afiada.\n18\nE saiu, de junto do altar, outro anjo ainda,\naquele que tem o poder sobre o fogo.\nEle gritou em alta voz\npara aquele que segurava a foice afiada:\n\"Lança a foice\ne colhe os cachos da videira da terra,\nporque as uvas já estão maduras\".\n19\nE o anjo lançou a foice afiada na terra,\ne colheu as uvas da videira da terra.\nDepois, despejou as uvas\nno grande lagar do furor de Deus.\nPalavra do Senhor.",
    "title": "1ª Leitura — Ap 14,14-19"
   },
   "s12_ter_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 95(96)",
-   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 95(96)"
+   "referencia": "Sl 95(96),10.11-12.13 (R. 13b)",
+   "day": "Terça-feira (24/11) — Santo André Dung-Lac",
+   "text": "Salmo responsorial\nSl 95(96),10.11-12.13 (R. 13b)\nR. O Senhor vem julgar nossa terra.\n10\nPublicai entre as nações: \"Reina o Senhor!\" †\nEle firmou o universo inabalável, *\ne os povos ele julga com justiça. R.\n11\nO céu se rejubile e exulte a terra, *\naplauda o mar com o que vive em suas águas;\n12\nos campos com seus frutos rejubilem *\ne exultem as florestas e as matas R.\n13\nna presença do Senhor, pois ele vem, *\nporque vem para julgar a terra inteira.\nGovernará o mundo todo com justiça, *\ne os povos julgará com lealdade. R.",
+   "title": "Salmo Responsorial — Sl 95(96),10.11-12.13 (R. 13b)"
   },
   "s12_ter_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
-   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "referencia": "Ap 2,10c",
+   "day": "Terça-feira (24/11) — Santo André Dung-Lac",
+   "text": "Aclamação ao Evangelho\nAp 2,10c\nR. Aleluia, Aleluia, Aleluia.\nV. Permanece fiel até a morte,\ne a coroa da vida eu te darei!",
+   "title": "Aclamação ao Evangelho — Ap 2,10c"
   },
   "s12_ter_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 21,5-11",
-   "day": "Terça-feira (24/11) — Santos André Dung-Lac",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "day": "Terça-feira (24/11) — Santo André Dung-Lac",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,5-11\nNaquele tempo,\n5\nalgumas pessoas comentavam a respeito do Templo\nque era enfeitado com belas pedras\ne com ofertas votivas.\nJesus disse:\n6\n\"Vós admirais estas coisas?\nDias virão em que não ficará pedra sobre pedra.\nTudo será destruído\".\n7\nMas eles perguntaram:\n\"Mestre, quando acontecerá isto?\nE qual vai ser o sinal\nde que estas coisas estão para acontecer?\"\n8\nJesus respondeu:\n\"Cuidado para não serdes enganados,\nporque muitos virão em meu nome,\ndizendo: 'Sou eu!'\nE ainda: 'O tempo está próximo'.\nNão sigais essa gente!\n9\nQuando ouvirdes falar de guerras e revoluções,\nnão fiqueis apavorados.\nÉ preciso que estas coisas aconteçam primeiro,\nmas não será logo o fim\".\n10\nE Jesus continuou:\n\"Um povo se levantará contra outro povo,\num país atacará outro país.\n11\nHaverá grandes terremotos,\nfomes e pestes em muitos lugares;\nacontecerão coisas pavorosas\ne grandes sinais serão vistos no céu\".\nPalavra da Salvação.",
    "title": "Evangelho — Lc 21,5-11"
   },
   "s12_qua_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 15,1-4",
    "day": "Quarta-feira (25/11)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 15,1-4\nEu, João,\n1\nvi no céu outro sinal,\ngrande e admirável:\nsete anjos, com as sete últimas pragas.\nCom elas o furor de Deus ia-se consumar.\n2\nVi também como que um mar de vidro\nmisturado com fogo.\nSobre este mar estavam, de pé,\ntodos aqueles que saíram vitoriosos\ndo confronto com a besta, com a imagem dela\ne com o número do nome da besta.\nSeguravam as harpas de Deus.\n3\nEntoavam o cântico de Moisés, o servo de Deus,\ne o cântico do Cordeiro, dizendo:\n\"Grandes e admiráveis são as tuas obras,\nSenhor Deus, Todo-poderoso!\nJustos e verdadeiros são os teus caminhos,\nó Rei das nações!\n4\nQuem não temeria, Senhor,\ne não glorificaria o teu nome?\nSó tu és santo!\nTodas as nações virão prostrar-se diante de Ti,\nporque tuas justas decisões se tornaram manifestas\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Ap 15,1-4"
   },
   "s12_qua_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 97(98)",
+   "referencia": "Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)",
    "day": "Quarta-feira (25/11)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 97(98)"
+   "text": "Salmo responsorial\nSl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)\nR. Como são grandes e admiráveis vossas obras,\nó Senhor e nosso Deus onipotente!\n1\nCantai ao Senhor Deus um canto novo, *\nporque ele fez prodígios!\nSua mão e o seu braço forte e santo *\nalcançaram-lhe a vitória. R.\n2\nO Senhor fez conhecer a salvação, *\ne às nações, sua justiça;\n3a\nrecordou o seu amor sempre fiel *\nb\npela casa de Israel R.\n7\nAplauda o mar com todo ser que nele vive, *\no mundo inteiro e toda gente!\n8\nAs montanhas e os rios batam palmas *\ne exultem de alegria. R.\n9\nna presença do Senhor, pois ele vem, *\nvem julgar a terra inteira.\nJulgará o universo com justiça *\ne as nações com equidade. R.",
+   "title": "Salmo Responsorial — Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)"
   },
   "s12_qua_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Ap 2,10c",
    "day": "Quarta-feira (25/11)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nAp 2,10c\nR. Aleluia, Aleluia, Aleluia.\nV. Permanece fiel até a morte\ne a coroa da vida eu te darei!",
+   "title": "Aclamação ao Evangelho — Ap 2,10c"
   },
   "s12_qua_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 21,12-19",
    "day": "Quarta-feira (25/11)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,12-19\nNaquele tempo, disse Jesus aos seus discípulos:\n12\n\"Antes que estas coisas aconteçam,\nsereis presos e perseguidos;\nsereis entregues às sinagogas e postos na prisão;\nsereis levados diante de reis e governadores\npor causa do meu nome.\n13\nEsta será a ocasião\nem que testemunhareis a vossa fé.\n14\nFazei o firme propósito\nde não planejar com antecedência a própria defesa;\n15\nporque eu vos darei palavras tão acertadas,\nque nenhum dos inimigos\nvos poderá resistir ou rebater.\n16\nSereis entregues até mesmo pelos próprios pais,\nirmãos, parentes e amigos.\nE eles matarão alguns de vós.\n17\nTodos vos odiarão por causa do meu nome.\n18\nMas vós não perdereis\num só fio de cabelo da vossa cabeça.\n19\nÉ permanecendo firmes que ireis ganhar a vida!\"\nPalavra da Salvação.",
    "title": "Evangelho — Lc 21,12-19"
   },
   "s12_qui_l1": {
    "momento": "1ª Leitura",
-   "referencia": "Ap 18,1-2.21-23; 19,1-3.9a",
+   "referencia": "Ap 18,1-2.21-23.19,1-3.9a",
    "day": "Quinta-feira (26/11)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "1ª Leitura — Ap 18,1-2.21-23; 19,1-3.9a"
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 18,1-2.21-23; 19,1-3.9a\nEu, João,\n1\nvi outro anjo descendo do céu.\nTinha grande poder,\ne a terra ficou toda iluminada com a sua glória.\n2\nEle gritou com voz poderosa:\n\"Caiu! Caiu Babilônia, a grande!\nTornou-se morada de demônios,\nabrigo de todos os espíritos maus,\nabrigo de aves impuras e nojentas.\n21\nNessa hora, um anjo poderoso levantou uma pedra\ndo tamanho de uma grande pedra de moinho\ne atirou-a ao mar, dizendo:\n\"Com esta força será lançada Babilônia,\na Grande Cidade,\ne nunca mais será encontrada.\n22\nE o canto de harpistas e músicos,\nde flautistas e tocadores de trombeta,\nem ti nunca mais se ouvirá;\ne nenhum artista de arte alguma\nem ti jamais se encontrará;\ne o canto do moinho\nem ti nunca mais se ouvirá;\n23\ne a luz da lâmpada\nem ti nunca mais brilhará;\ne a voz do esposo e da esposa\nem ti nunca mais se ouvirá,\nporque os teus comerciantes\neram os grandes da terra,\ne com magia tu enfeitiçaste todas as nações\".\n19,1\nDepois disso, ouvi um forte rumor,\nde uma grande multidão no céu,\nque clamava:\n\"Aleluia!\nA salvação, a glória e o poder\npertencem ao nosso Deus,\n2\nporque seus julgamentos são verdadeiros e justos.\nSim, Deus julgou a grande prostituta\nque corrompeu a terra com sua prostituição,\ne vingou nela o sangue dos seus servos\".\n3\nE repetiram:\n\"Aleluia!\nA fumaça dela fica subindo\npara toda a eternidade!\"\n9a\nE um anjo me disse:\n\"Escreve:\nFelizes são os convidados para o banquete\ndas núpcias do Cordeiro\".\nPalavra do Senhor.",
+   "title": "1ª Leitura — Ap 18,1-2.21-23.19,1-3.9a"
   },
   "s12_qui_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 99(100)",
+   "referencia": "Sl 99(100),2.3.4.5 (R. Ap 19,9a)",
    "day": "Quinta-feira (26/11)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 99(100)"
+   "text": "Salmo responsorial\nSl 99(100),2.3.4.5 (R. Ap 19,9a)\nR. São bem-aventurados os que foram convidados\npara a Ceia Nupcial das bodas do Cordeiro!\n2\nAclamai o Senhor, ó terra inteira, †\nservi ao Senhor com alegria, *\nide a ele cantando jubilosos! R.\n3\nSabei que o Senhor, só ele, é Deus, †\nEle mesmo nos fez, e somos seus, *\nnós somos seu povo e seu rebanho. R.\n4\nEntrai por suas portas dando graças, †\ne em seus átrios com hinos de louvor; *\ndai-lhe graças, seu nome bendizei! R.\n5\nSim, é bom o Senhor e nosso Deus, †\nsua bondade perdura para sempre, *\nseu amor é fiel eternamente! R.",
+   "title": "Salmo Responsorial — Sl 99(100),2.3.4.5 (R. Ap 19,9a)"
   },
   "s12_qui_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Lc 21,28",
    "day": "Quinta-feira (26/11)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nLc 21,28\nR. Aleluia, Aleluia, Aleluia.\nV. Levantai vossa cabeça e olhai,\npois a vossa redenção se aproxima!",
+   "title": "Aclamação ao Evangelho — Lc 21,28"
   },
   "s12_qui_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 21,20-28",
    "day": "Quinta-feira (26/11)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,20-28\nNaquele tempo, disse Jesus aos seus discípulos:\n20\n\"Quando virdes Jerusalém cercada de exércitos,\nficai sabendo que a sua destruição está próxima.\n21\nEntão, os que estiverem na Judeia,\ndevem fugir para as montanhas;\nos que estiverem no meio da cidade,\ndevem afastar-se;\nos que estiverem no campo,\nnão entrem na cidade.\n22\nPois esses dias são de vingança,\npara que se cumpra tudo o que dizem as Escrituras.\n23\nInfelizes das mulheres grávidas\ne daquelas que estiverem amamentando\nnaqueles dias,\npois haverá uma grande calamidade na terra\ne ira contra este povo.\n24\nSerão mortos pela espada\ne levados presos para todas as nações.\ne Jerusalém será pisada pelos infiéis,\naté que o tempo dos pagãos se complete.\n25\nHaverá sinais no sol, na lua e nas estrelas.\nNa terra, as nações ficarão angustiadas,\ncom pavor do barulho do mar e das ondas.\n26\nOs homens vão desmaiar de medo,\nsó em pensar no que vai acontecer ao mundo,\nporque as forças do céu serão abaladas.\n27\nEntão eles verão o Filho do Homem,\nvindo numa nuvem com grande poder e glória.\n28\nQuando estas coisas começarem a acontecer,\nlevantai-vos e erguei a cabeça,\nporque a vossa libertação está próxima\".\nPalavra da Salvação.",
    "title": "Evangelho — Lc 21,20-28"
   },
   "s12_sex_l1": {
    "momento": "1ª Leitura",
-   "referencia": "Ap 20,1-4.11–21,2",
+   "referencia": "Ap 20,1-4.11-21,2",
    "day": "Sexta-feira (27/11)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "1ª Leitura — Ap 20,1-4.11–21,2"
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 20,1-4.11-21,2\nEu, João,\n1\nvi um anjo descer do céu.\nNas mãos tinha a chave do Abismo\ne uma grande corrente.\n2\nEle agarrou o Dragão, a antiga Serpente,\nque é o Diabo, Satanás.\nAcorrentou-o por mil anos\n3\ne lançou-o dentro do Abismo.\nDepois, trancou e lacrou o Abismo,\npara que o Dragão não seduzisse mais\nas nações da terra,\naté que terminassem os mil anos.\nDepois dos mil anos,\no Dragão deve ser solto,\nmas por pouco tempo.\n4\nVi então tronos,\ne os seus ocupantes sentaram-se\ne receberam o poder de julgar.\nVi também as almas daqueles que foram decapitados\npor causa do Testemunho de Jesus\ne da Palavra de Deus\ne aqueles que não tinham adorado a besta,\nnem a imagem dela,\nnem tinham recebido na fronte ou na mão\na marca da besta.\nEles voltaram a viver,\npara reinarem com Cristo durante mil anos.\n11\nVi ainda um grande trono branco\ne aquele que estava sentado nele.\nO céu e a terra fugiram da sua presença\ne não se achou mais o lugar deles.\n12\nVi também os mortos,\nos grandes e os pequenos,\nem pé diante do trono.\nForam abertos livros,\ne mais um outro livro ainda:\no livro da vida.\nEntão foram julgados os mortos,\nde acordo com sua conduta,\nconforme está escrito nos livros.\n13\nO mar devolveu os mortos que se encontravam nele.\nA morte e a morada dos mortos\nentregaram de volta os seus mortos.\nE cada um foi julgado conforme sua conduta.\n14\nA morte e a morada dos mortos\nforam então lançados no lago de fogo.\nEsta é a segunda morte: o lago de fogo.\n15\nQuem não tinha o seu nome escrito no livro da vida,\nfoi também lançado no lago de fogo.\n21,1\nVi então um novo céu e uma nova terra.\nPois o primeiro céu e a primeira terra passaram,\ne o mar já não existe.\n2\nVi a cidade santa, a nova Jerusalém,\nque descia do céu, de junto de Deus,\nvestida qual esposa enfeitada para o seu marido.\nPalavra do Senhor.",
+   "title": "1ª Leitura — Ap 20,1-4.11-21,2"
   },
   "s12_sex_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 83(84)",
+   "referencia": "Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)",
    "day": "Sexta-feira (27/11)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 83(84)"
+   "text": "Salmo responsorial\nSl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)\nR. Eis a tenda de Deus, no meio do povo!\n3\nMinha alma desfalece de saudades *\ne anseia pelos átrios do Senhor!\nMeu coração e minha carne rejubilam *\ne exultam de alegria no Deus vivo! R.\n4\nMesmo o pardal encontra abrigo em vossa casa, †\ne a andorinha ali prepara o seu ninho, *\npara nele seus filhotes colocar:\nvossos altares, ó Senhor Deus do universo! *\nvossos altares, ó meu Rei e meu Senhor! R.\n5\nFelizes os que habitam vossa casa; *\npara sempre haverão de vos louvar!\n6a\nFelizes os que em vós têm sua força, *\n8a\nCaminharão com um ardor sempre crescente. R.",
+   "title": "Salmo Responsorial — Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)"
   },
   "s12_sex_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Lc 21,28",
    "day": "Sexta-feira (27/11)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nLc 21,28\nR. Aleluia, Aleluia, Aleluia.\nV. Levantai vossa cabeça e olhai,\npois a vossa redenção se aproxima!",
+   "title": "Aclamação ao Evangelho — Lc 21,28"
   },
   "s12_sex_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 21,29-33",
    "day": "Sexta-feira (27/11)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,29-33\nNaquele tempo,\n29\nJesus contou-lhes uma parábola:\n\"Olhai a figueira e todas as árvores.\n30\nQuando vedes que elas estão dando brotos,\nlogo sabeis que o verão está perto.\n31\nVós também, quando virdes acontecer essas coisas,\nficai sabendo que o Reino de Deus está perto.\n32\nEm verdade, eu vos digo:\ntudo isso vai acontecer antes que passe esta geração.\n33\nO céu e a terra passarão,\nmas as minhas palavras não hão de passar\".\nPalavra da Salvação.",
    "title": "Evangelho — Lc 21,29-33"
   },
   "s12_dom_l1": {
    "momento": "1ª Leitura",
-   "referencia": "Is 63,16b-17.19b; 64,2b-7",
+   "referencia": "Is 63,16b-17.19b;64,2b-7",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "1ª Leitura — Is 63,16b-17.19b; 64,2b-7"
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 63,16b-17.19b;64,2b-7\n16b\nSenhor, tu és nosso Pai, nosso redentor;\neterno é o teu nome.\n17\nComo nos deixaste andar longe de teus caminhos\ne endureceste nossos corações\npara não termos o teu temor?\nPor amor de teus servos,\ndas tribos de tua herança, volta atrás.\n19b\nAh! se rompesses os céus e descesses!\nAs montanhas se desmanchariam diante de ti.\n64,2b\nDesceste, pois, e as montanhas se derreteram\ndiante de ti.\n3\nNunca se ouviu dizer\nnem chegou aos ouvidos de ninguém,\njamais olhos viram que um Deus, exceto tu,\ntenha feito tanto pelos que nele esperam.\n4\nVens ao encontro de quem pratica a justiça com alegria,\nde quem se lembra de ti em teus caminhos.\nTu te irritaste, porque nós pecamos;\né nos caminhos de outrora que seremos salvos.\n5\nTodos nós nos tornamos imundície,\ne todas as nossas boas obras são como um pano sujo;\nmurchamos todos como folhas,\ne nossas maldades empurram-nos como o vento.\n6\nNão há quem invoque teu nome,\nquem se levante para encontrar-se contigo;\nescondeste de nós tua face\ne nos entregaste à mercê da nossa maldade.\n7\nAssim mesmo, Senhor, tu és nosso pai,\nnós somos barro; tu, nosso oleiro,\ne nós todos, obra de tuas mãos.\nPalavra do Senhor.",
+   "title": "1ª Leitura — Is 63,16b-17.19b;64,2b-7"
   },
   "s12_dom_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Salmo responsorial Sl 79(80),2ac.3b.15-16.18-19 (R. 4)\nR. Iluminai a vossa face sobre nós,\nconvertei-nos, para que sejamos salvos!\n2a\nÓ Pastor de Israel, prestai ouvidos. †\nc\nVós que sobre os querubins vos assentais, *\naparecei cheio de glória e esplendor!\n3b\nDespertai vosso poder, ó nosso Deus *\ne vinde logo nos trazer a salvação! R.\n15\nVoltai-vos para nós, Deus do universo! †\nOlhai dos altos céus e observai.*\nVisitai a vossa vinha e protegei-a!\n16\nFoi a vossa mão direita que a plantou;*\nprotegei-a, e ao rebento que firmastes! R.\n18\nPousai a mão por sobre o vosso protegido,*\no filho do homem que escolhestes para vós!\n19\nE nunca mais vos deixaremos, Senhor Deus!*\nDai-nos vida, e louvaremos vosso nome! R.",
    "title": "Salmo Responsorial — Sl 79(80),2ac.3b.15-16.18-19 (R. 4)"
   },
   "s12_dom_l2": {
    "momento": "2ª Leitura",
    "referencia": "1Cor 1,3-9",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
-   "text": "SEGUNDA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "SEGUNDA LEITURA\nLeitura da Primeira Carta de São Paulo aos Coríntios 1,3-9\nIrmãos:\n3\nPara vós, graça e paz,\nda parte de Deus, nosso Pai,\ne do Senhor Jesus Cristo.\n4\nDou graças a Deus sempre a vosso respeito,\npor causa da graça que Deus vos concedeu\nem Cristo Jesus:\n5\nNele fostes enriquecidos em tudo,\nem toda palavra e em todo conhecimento,\n6\nà medida que o testemunho sobre Cristo\nse confirmou entre vós.\n7\nAssim, não tendes falta de nenhum dom, vós que\naguardais a revelação do Senhor nosso, Jesus Cristo.\n8\nÉ ele também que vos dará perseverança\nem vosso procedimento irrepreensível,\naté ao fim, até ao dia de nosso Senhor, Jesus Cristo.\n9\nDeus é fiel; por ele fostes chamados à comunhão\ncom seu Filho, Jesus Cristo, Senhor nosso.\nPalavra do Senhor.",
    "title": "2ª Leitura — 1Cor 1,3-9"
   },
   "s12_dom_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Sl 84,8",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho Sl 84,8\nR. Aleluia, Aleluia, Aleluia.\nV. Mostrai-nos, ó Senhor, vossa bondade,\ne a vossa salvação nos concedei!",
+   "title": "Aclamação ao Evangelho — Sl 84,8"
   },
   "s12_dom_ev": {
    "momento": "Evangelho",
    "referencia": "Mc 13,33-37",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Marcos 13,33-37\nNaquele tempo, disse Jesus aos seus discípulos:\n33\n\"Cuidado! Ficai atentos,\nporque não sabeis quando chegará o momento.\n34\nÉ como um homem que, ao partir para o estrangeiro,\ndeixou sua casa sob a responsabilidade de seus empregados,\ndistribuindo a cada um sua tarefa.\nE mandou o porteiro ficar vigiando.\n35\nVigiai, portanto, porque não sabeis\nquando o dono da casa vem:\nà tarde, à meia-noite, de madrugada ou ao amanhecer.\n36\nPara que não suceda que, vindo de repente,\nele vos encontre dormindo.\n37\nO que vos digo, digo a todos: Vigiai!\"\nPalavra da Salvação.",
    "title": "Evangelho — Mc 13,33-37"
   }
  },
@@ -586,8 +586,8 @@
     },
     {
      "label": "Aclamação ao Evangelho",
-     "reference": "",
-     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+     "reference": "Sl 84,8",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Mostrai-nos, ó Senhor, vossa bondade,\n    e a vossa salvação nos concedei!"
     },
     {
      "label": "Antífona de Comunhão",
@@ -601,8 +601,20 @@
    ],
    "citations": [
     {
+     "label": "Primeira Leitura",
+     "text": "Ah! Se rompesses os céus e descesses!"
+    },
+    {
      "label": "Salmo Responsorial",
-     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+     "text": "Iluminai a vossa face sobre nós, convertei-nos, para que sejamos salvos! 2a Ó Pastor de Israel, prestai ouvidos. † c Vós que sobre os querubins vos assentais, * aparecei cheio de glória e esplendor! 3b Despertai vosso poder, ó nosso Deus * e vinde logo nos trazer a salvação! R."
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "Esperamos a revelação de Nosso Senhor Jesus Cristo."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Vigiai: não sabeis quando o dono da casa vem."
     }
    ]
   }
