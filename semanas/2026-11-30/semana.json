@@ -8,7 +8,7 @@
  "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento",
  "roteiroExtras": [],
  "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras: somente referências (textos a inserir conforme o Liturgia Diária – CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-11-30",
@@ -41,13 +41,13 @@
     ],
     [
      "Salmo",
-     "Sl 18(19)",
+     "Sl 18(19A),2-3.4-5 (R. 5a)",
      "s13_seg_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Mt 4,19",
      "s13_seg_acl",
      ""
     ],
@@ -100,7 +100,7 @@
     ],
     [
      "Salmo",
-     "Sl 71(72)",
+     "Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7)",
      "s13_ter_sal",
      ""
     ],
@@ -149,7 +149,7 @@
     ],
     [
      "Salmo",
-     "Sl 22(23)",
+     "Sl 22(23),1-3a.3b-4.5.6 (R. 6cd)",
      "s13_qua_sal",
      ""
     ],
@@ -212,13 +212,13 @@
     ],
     [
      "Salmo",
-     "Sl 117(118)",
+     "Sl 117(118),1.8-9.19-21.25-27a (R. 26a)",
      "s13_qui_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Is 55,6",
      "s13_qui_acl",
      ""
     ],
@@ -278,9 +278,9 @@
     ],
     [
      "Salmo",
-     "Sl 26(27)",
+     "Sl 26(27),1.4.13-14 (R. 1a)",
      "s13_sex_sal",
-     ""
+     "II / 1153"
     ],
     [
      "Aclamação ao Evangelho",
@@ -386,7 +386,7 @@
    ],
    [
     "Aclamação ao Evangelho",
-    "",
+    "Lc 3,4.6",
     "s13_dom_acl",
     ""
    ],
@@ -409,7 +409,7 @@
   "antifonas": "antifonas_13"
  },
  "documentos": [
-  "semanas/2026-11-30/Leituras 30 novembro a 6 dezembro 2026 (referências).docx",
+  "semanas/2026-11-30/Leituras 30 novembro a 6 dezembro 2026.docx",
   "semanas/2026-11-30/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.docx"
  ],
  "leituras": {
@@ -417,175 +417,175 @@
    "momento": "1ª Leitura",
    "referencia": "Rm 10,9-18",
    "day": "Segunda-feira (30/11) — Santo André",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura da Carta de São Paulo aos Romanos 10,9-18\nIrmãos,\n9\nse, com tua boca, confessares Jesus como Senhor\ne, no teu coração,\ncreres que Deus o ressuscitou dos mortos,\nserás salvo.\n10\nÉ crendo no coração que se alcança a justiça\ne é confessando a fé com a boca\nque se consegue a salvação.\n11\nPois a Escritura diz:\n\"Todo aquele que nele crer não ficará confundido\".\n12\nPortanto,\nnão importa a diferença entre judeu e grego;\ntodos têm o mesmo Senhor,\nque é generoso para com todos os que o invocam.\n13\nDe fato, todo aquele que invocar o Nome do Senhor\nserá salvo.\n14\nMas, como invocá-lo, sem antes crer nele?\nE como crer, sem antes ter ouvido falar dele?\nE como ouvir, sem alguém que pregue?\n15\nE como pregar, sem ser enviado para isso?\nAssim é que está escrito:\n\"Quão belos são os pés dos que anunciam o bem\".\n16\nMas nem todos obedeceram à Boa-nova.\nPois Isaías diz:\n\"Senhor, quem acreditou em nossa pregação?\"\n17\nLogo, a fé vem da pregação\ne a pregação se faz pela palavra de Cristo.\n18\nEntão, eu pergunto:\nSerá que eles não ouviram?\nCertamente que ouviram,\npois \"a voz deles se espalhou por toda a terra,\ne as suas palavras chegaram aos confins do mundo\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Rm 10,9-18"
   },
   "s13_seg_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 18(19)",
+   "referencia": "Sl 18(19A),2-3.4-5 (R. 5a)",
    "day": "Segunda-feira (30/11) — Santo André",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 18(19)"
+   "text": "Salmo responsorial\nSl 18(19A),2-3.4-5 (R. 5a)\nR. Seu som ressoa e se espalha em toda terra.\n2\nOs céus proclamam a glória do Senhor, *\ne o firmamento, a obra de suas mãos;\n3\no dia ao dia transmite esta mensagem, *\na noite à noite publica esta notícia. R.\n4\nNão são discursos nem frases ou palavras, *\nnem são vozes que possam ser ouvidas;\n5\nseu som ressoa e se espalha em toda a terra, *\nchega aos confins do universo a sua voz. R.",
+   "title": "Salmo Responsorial — Sl 18(19A),2-3.4-5 (R. 5a)"
   },
   "s13_seg_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Mt 4,19",
    "day": "Segunda-feira (30/11) — Santo André",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nMt 4,19\nR. Aleluia, Aleluia, Aleluia.\nV. Vinde após mim, disse o Senhor,\ne eu ensinarei a pescar gente.",
+   "title": "Aclamação ao Evangelho — Mt 4,19"
   },
   "s13_seg_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 4,18-22",
    "day": "Segunda-feira (30/11) — Santo André",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 4,18-22\nNaquele tempo,\n18\nquando Jesus andava à beira do mar da Galileia,\nviu dois irmãos:\nSimão, chamado Pedro, e seu irmão André.\nEstavam lançando a rede ao mar,\npois eram pescadores.\n19\nJesus disse a eles:\n\"Segui-me,\ne eu farei de vós pescadores de homens\".\n20\nEles, imediatamente deixaram as redes\ne o seguiram.\n21\nCaminhando um pouco mais,\nJesus viu outros dois irmãos:\nTiago, filho de Zebedeu, e seu irmão João.\nEstavam na barca com seu pai Zebedeu\nconsertando as redes.\nJesus os chamou.\n22\nEles, imediatamente deixaram a barca e o pai,\ne o seguiram.\nPalavra da Salvação.",
    "title": "Evangelho — Mt 4,18-22"
   },
   "s13_ter_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 11,1-10",
    "day": "Terça-feira (01/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 11,1-10\nNaqueles dias,\n1\nnascerá uma haste do tronco de Jessé\ne, a partir da raiz, surgirá o rebento de uma flor;\n2\nsobre ele repousará o espírito do Senhor:\nespírito de sabedoria e discernimento,\nespírito de conselho e fortaleza,\nespírito de ciência e temor de Deus;\n3\nno temor do Senhor encontra ele seu prazer.\nEle não julgará pelas aparências que vê\nnem decidirá somente por ouvir dizer;\n4\nmas trará justiça para os humildes\ne uma ordem justa para os homens pacíficos;\nfustigará a terra com a força da sua palavra\ne destruirá o mau com o sopro dos lábios.\n5\nCingirá a cintura com a correia da justiça\ne as costas com a faixa da fidelidade.\n6\nO lobo e o cordeiro viverão juntos\ne o leopardo deitar-se-á ao lado do cabrito;\no bezerro e o leão comerão juntos\ne até mesmo uma criança poderá tangê-los.\n7\nA vaca e o urso pastarão lado a lado,\nenquanto suas crias descansam juntas;\no leão comerá palha como o boi;\n8\na criança de peito vai brincar\nem cima do buraco da cobra venenosa;\ne o menino desmamado\nnão temerá pôr a mão na toca da serpente.\n9\nNão haverá danos nem mortes\npor todo o meu santo monte:\na terra estará tão repleta do saber do Senhor\nquanto as águas que cobrem o mar.\n10\nNaquele dia, a raiz de Jessé\nse erguerá como um sinal entre os povos;\nhão de buscá-la as nações,\ne gloriosa será a sua morada.\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 11,1-10"
   },
   "s13_ter_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 71(72)",
+   "referencia": "Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7)",
    "day": "Terça-feira (01/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 71(72)"
+   "text": "Salmo responsorial\nSl 71(72),1-2.7-8.12-13.17 (R. cf 7)\nR. Nos seus dias a justiça florirá\ne paz em abundância, para sempre.\n1\nDai ao Rei vossos poderes, Senhor Deus,*\nvossa justiça ao descendente da realeza!\n2\nCom justiça ele governe o vosso povo,*\ncom equidade ele julgue os vossos pobres. R.\n7\nNos seus dias a justiça florirá*\ne grande paz, até que a lua perca o brilho!\n8\nDe mar a mar estenderá o seu domínio,*\ne desde o rio até os confins de toda a terra! R.\n12\nLibertará o indigente que suplica,*\ne o pobre ao qual ninguém quer ajudar.\n13\nTerá pena do indigente e do infeliz,*\ne a vida dos humildes salvará. R.\n17\nSeja bendito o seu nome para sempre!*\nE que dure como o sol sua memória!\nTodos os povos serão nele abençoados,*\ntodas as gentes cantarão o seu louvor! R.",
+   "title": "Salmo Responsorial — Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7)"
   },
   "s13_ter_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Terça-feira (01/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Eis que virá o nosso Deus com poder e majestade.\nE ele há de iluminar os olhos dos seus servos.",
    "title": "Aclamação ao Evangelho — "
   },
   "s13_ter_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 10,21-24",
    "day": "Terça-feira (01/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 10,21-24\n21\nNaquele momento, Jesus exultou no Espírito Santo e disse:\n\"Eu te louvo, Pai, Senhor do céu e da terra,\nporque escondeste essas coisas aos sábios e inteligentes,\ne as revelaste aos pequeninos.\nSim, Pai, porque assim foi do teu agrado.\n22\nTudo me foi entregue pelo meu Pai.\nNinguém conhece quem é o Filho, a não ser o Pai;\ne ninguém conhece quem é o Pai, a não ser o Filho\ne aquele a quem o Filho o quiser revelar\".\n23\nJesus voltou-se para os discípulos\ne disse-lhes em particular:\n\"Felizes os olhos que veem o que vós vedes!\n24\nPois eu vos digo que muitos profetas e reis quiseram ver\no que estais vendo, e não puderam ver;\nquiseram ouvir o que estais ouvindo,\ne não puderam ouvir\".\nPalavra da Salvação.",
    "title": "Evangelho — Lc 10,21-24"
   },
   "s13_qua_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 25,6-10a",
    "day": "Quarta-feira (02/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 25,6-10a\nNaquele dia,\n6\no Senhor dos exércitos dará\nneste monte, para todos os povos,\num banquete de ricas iguarias,\nregado com vinho puro,\nservido de pratos deliciosos\ne dos mais finos vinhos.\n7\nEle removerá, neste monte,\na ponta da cadeia que ligava todos os povos,\na teia em que tinha envolvido todas as nações.\n8\nO Senhor Deus\neliminará para sempre a morte\ne enxugará as lágrimas de todas as faces\ne acabará com a desonra do seu povo em toda a terra;\no Senhor o disse.\n9\nNaquele dia, se dirá: \"Este é o nosso Deus,\nesperamos nele, até que nos salvou;\neste é o Senhor, nele temos confiado:\nvamos alegrar-nos e exultar por nos ter salvo\".\n10a\nE a mão do Senhor repousará sobre este monte.\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 25,6-10a"
   },
   "s13_qua_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 22(23)",
+   "referencia": "Sl 22(23),1-3a.3b-4.5.6 (R. 6cd)",
    "day": "Quarta-feira (02/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 22(23)"
+   "text": "Salmo responsorial Sl 22(23),1-3a.3b-4.5.6 (R. 6cd)\nR. Na casa do Senhor habitarei pelos tempos infinitos.\n1\nO Senhor é o pastor que me conduz; *\nnão me falta coisa alguma.\n2\nPelos prados e campinas verdejantes *\nele me leva a descansar.\n3a\nPara as águas repousantes me encaminha, *\ne restaura as minhas forças. R.\nb\nEle me guia no caminho mais seguro, *\n4\npela honra do seu nome.\nMesmo que eu passe pelo vale tenebroso, *\nnenhum mal eu temerei.\nEstais comigo com bastão e com cajado, *\neles me dão a segurança! R.\n5\nPreparais à minha frente uma mesa, *\nbem à vista do inimigo;\ncom óleo vós ungis minha cabeça, *\ne o meu cálice transborda. R.\n6\nFelicidade e todo bem hão de seguir-me, *\npor toda a minha vida;\ne, na casa do Senhor, habitarei *\npelos tempos infinitos. R.",
+   "title": "Salmo Responsorial — Sl 22(23),1-3a.3b-4.5.6 (R. 6cd)"
   },
   "s13_qua_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Quarta-feira (02/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Eis que o Senhor há de vir\na fim de salvar o seu povo;\nFelizes são todos aqueles\nque estão prontos para ir-lhe ao encontro.",
    "title": "Aclamação ao Evangelho — "
   },
   "s13_qua_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 15,29-37",
    "day": "Quarta-feira (02/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 15,29-37\nNaquele tempo,\n29\nJesus foi para as margens do mar da Galileia,\nsubiu a montanha, e sentou-se.\n30\nNumerosas multidões aproximaram-se dele,\nlevando consigo coxos, aleijados, cegos, mudos,\ne muitos outros doentes.\nEntão os colocaram aos pés de Jesus.\nE ele os curou.\n31\nO povo ficou admirado, quando viu os mudos falando,\nos aleijados sendo curados,\nos coxos andando e os cegos enxergando.\nE glorificaram o Deus de Israel.\n32\nJesus chamou seus discípulos e disse:\n\"Tenho compaixão da multidão,\nporque já faz três dias que está comigo,\ne nada tem para comer.\nNão quero mandá-los embora com fome,\npara que não desmaiem pelo caminho\".\n33\nOs discípulos disseram:\n\"Onde vamos buscar, neste deserto,\ntantos pães para saciar tão grande multidão?\"\n34\nJesus perguntou: \"Quantos pães tendes?\"\nEles responderam: \"Sete, e alguns peixinhos\".\n35\nE Jesus mandou que a multidão se sentasse pelo chão.\n36\nDepois pegou os sete pães e os peixes,\ndeu graças, partiu-os, e os dava aos discípulos,\ne os discípulos, às multidões.\n37\nTodos comeram, e ficaram satisfeitos;\ne encheram sete cestos com os pedaços que sobraram.\nPalavra da Salvação.",
    "title": "Evangelho — Mt 15,29-37"
   },
   "s13_qui_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 26,1-6",
    "day": "Quinta-feira (03/12) — São Francisco Xavier",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 26,1-6\n1\nNaquele dia, cantarão este canto em Judá:\n\"Uma cidade fortificada é a nossa segurança;\no Senhor cercou-a de muros e antemuro.\n2\nAbri as suas portas, para que entre um povo justo,\ncumpridor da palavra,\n3\nfirme em seu propósito;\ne tu lhe conservarás a paz,\nporque confia em ti.\n4\nEsperai no Senhor por todos os tempos,\no Senhor é a rocha eterna.\n5\nEle derrubou os que habitam no alto,\nhá de humilhar a cidade orgulhosa,\ndeitando-a por terra,\naté fazê-la beijar o chão.\n6\nHão de pisá-la os pés, os pés dos pobres,\nas passadas dos humildes\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 26,1-6"
   },
   "s13_qui_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 117(118)",
+   "referencia": "Sl 117(118),1.8-9.19-21.25-27a (R. 26a)",
    "day": "Quinta-feira (03/12) — São Francisco Xavier",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 117(118)"
+   "text": "Salmo responsorial\nSl 117(118),1.8-9.19-21.25-27a (R. 26a)\nR. Bendito é aquele que vem vindo em nome do Senhor!\nOu: Aleluia, Aleluia, Aleluia.\n1\nDai graças ao Senhor, porque ele é bom! *\n\"Eterna é a sua misericórdia!\"\n8\nÉ melhor buscar refúgio no Senhor, *\ndo que pôr no ser humano a esperança;\n9\né melhor buscar refúgio no Senhor, *\ndo que contar com os poderosos deste mundo!\" R.\n19\nAbri-me vós, abri-me as portas da justiça; *\nquero entrar para dar graças ao Senhor!\n20\n\"Sim, esta é a porta do Senhor, *\npor ela só os justos entrarão!\"\n21\nDou-vos graças, ó Senhor, porque me ouvistes *\ne vos tornastes para mim o Salvador! R.\n25\nÓ Senhor, dai-nos a vossa salvação, *\nó Senhor, dai-nos também prosperidade!\"\n26\nBendito seja, em nome do Senhor, *\naquele que em seus átrios vai entrando!\nDesta casa do Senhor vos bendizemos. *\n27a\nQue o Senhor e nosso Deus nos ilumine! R.",
+   "title": "Salmo Responsorial — Sl 117(118),1.8-9.19-21.25-27a (R. 26a)"
   },
   "s13_qui_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Is 55,6",
    "day": "Quinta-feira (03/12) — São Francisco Xavier",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nIs 55,6\nR. Aleluia, Aleluia, Aleluia.\nV. Buscai o Senhor, vosso Deus,\ninvocai-o enquanto está perto!",
+   "title": "Aclamação ao Evangelho — Is 55,6"
   },
   "s13_qui_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 7,21.24-27",
    "day": "Quinta-feira (03/12) — São Francisco Xavier",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 7,21.24-27\nNaquele tempo, disse Jesus aos seus discípulos:\n21\n\"Nem todo aquele que me diz: 'Senhor, Senhor',\nentrará no Reino dos Céus, mas o que põe em prática\na vontade de meu Pai que está nos céus.\n24\nPortanto, quem ouve estas minhas palavras\ne as põe em prática,\né como um homem prudente,\nque construiu sua casa sobre a rocha.\n25\nCaiu a chuva, vieram as enchentes,\nos ventos deram contra a casa,\nmas a casa não caiu,\nporque estava construída sobre a rocha.\n26\nPor outro lado,\nquem ouve estas minhas palavras e não as põe em prática,\né como um homem sem juízo,\nque construiu sua casa sobre a areia.\n27\nCaiu a chuva, vieram as enchentes,\nos ventos sopraram e deram contra a casa,\ne a casa caiu, e sua ruína foi completa!\"\nPalavra da Salvação.",
    "title": "Evangelho — Mt 7,21.24-27"
   },
   "s13_sex_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 29,17-24",
    "day": "Sexta-feira (04/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 29,17-24\nAssim fala o Senhor Deus:\n17\nDentro de pouco tempo,\nnão se transformará o Líbano em jardim?\nE não poderá o jardim tornar-se floresta?\n18\nNaquele dia, os surdos ouvirão as palavras do livro\ne os olhos dos cegos verão,\nno meio das trevas e das sombras.\n19\nOs humildes aumentarão sua alegria no Senhor,\ne os mais pobres dos homens\nse rejubilarão no Santo de Israel;\n20\nfracassou o prepotente, desapareceu o trapaceiro,\ne sucumbiram todos os malfeitores precoces,\n21\nos que faziam os outros pecar por palavras,\ne armavam ciladas ao juiz à porta da cidade\ne atacavam o justo com palavras falsas.\n22\nIsto diz o Senhor\nà casa de Jacó, ele que libertou Abraão:\n\"Agora, Jacó não mais terá que envergonhar-se\nnem seu rosto terá que enrubescer;\n23\nquando contemplarem as obras de minhas mãos,\nhão de honrar meu nome no meio do povo,\nhonrarão o Santo de Jacó,\ne temerão o Deus de Israel;\n24\nos homens de espírito inconstante conseguirão sabedoria\ne os maldizentes concordarão em aprender\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 29,17-24"
   },
   "s13_sex_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 26(27)",
+   "referencia": "Sl 26(27),1.4.13-14 (R. 1a)",
    "day": "Sexta-feira (04/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 26(27)"
+   "text": "Salmo responsorial\nSl 26(27),1.4.13-14 (R. 1a)\nR. O Senhor é minha luz e salvação.\n1\nO Senhor é minha luz e salvação;*\nde quem eu terei medo?\nO Senhor é a proteção da minha vida;\nperante quem eu tremerei? R.\n4\nAo Senhor eu peço apenas uma coisa,*\ne é só isto que eu desejo:\nhabitar no santuário do Senhor*\npor toda a minha vida;\nsaborear a suavidade do Senhor*\ne contemplá-lo no seu templo. R.\n13\nSei que a bondade do Senhor eu hei de ver*\nna terra dos viventes.\n14\nEspera no Senhor e tem coragem,*\nespera no Senhor! R.",
+   "title": "Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a) (Lecionário II, pág. 1153)"
   },
   "s13_sex_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Sexta-feira (04/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Eis que virá o nosso Deus com poder e majestade,\nE ele há de iluminar os olhos dos seus servos!",
    "title": "Aclamação ao Evangelho — "
   },
   "s13_sex_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 9,27-31",
    "day": "Sexta-feira (04/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 9,27-31\nNaquele tempo,\n27\npartindo Jesus, dois cegos o seguiram, gritando:\n\"Tem piedade de nós, filho de Davi!\"\n28\nQuando Jesus entrou em casa,\nos cegos se aproximaram dele.\nEntão Jesus perguntou-lhes:\n\"Vós acreditais que eu posso fazer isso?\"\nEles responderam: \"Sim, Senhor\".\n29\nEntão Jesus tocou nos olhos deles, dizendo:\n\"Faça-se conforme a vossa fé\".\n30\nE os olhos deles se abriram.\nJesus os advertiu severamente:\n\"Tomai cuidado para que ninguém fique sabendo\".\n31\nMas eles saíram,\ne espalharam sua fama por toda aquela região.\nPalavra da Salvação.",
    "title": "Evangelho — Mt 9,27-31"
   },
   "s13_dom_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 40,1-5.9-11",
    "day": "Fim de Semana (05 e 06/12) — 2º Domingo do Advento",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 40,1-5.9-11\n1\n\"Consolai o meu povo, consolai-o!\n— diz o vosso Deus —.\n2\nFalai ao coração de Jerusalém\ne dizei em alta voz que sua servidão acabou\ne a expiação de suas culpas foi cumprida;\nela recebeu das mãos do Senhor\no dobro por todos os seus pecados\".\n3\nGrita uma voz:\n\"Preparai no deserto o caminho do Senhor,\naplainai na solidão a estrada de nosso Deus.\n4\nNivelem-se todos os vales,\nrebaixem-se todos os montes e colinas;\nendireite-se o que é torto\ne alisem-se as asperezas:\n5\na glória do Senhor então se manifestará,\ne todos os homens verão juntamente\no que a boca do Senhor falou.\n9\nSobe a um alto monte,\ntu, que trazes a boa-nova a Sião;\nlevanta com força a tua voz,\ntu, que trazes a boa-nova a Jerusalém,\nergue a voz, não temas;\ndize às cidades de Judá: 'Eis o vosso Deus,\n10\neis que o Senhor Deus vem com poder,\nseu braço tudo domina:\neis, com ele, sua conquista,\neis à sua frente a vitória.\n11\nComo um pastor, ele apascenta o rebanho,\nreúne, com a força dos braços, os cordeiros\ne carrega-os ao colo;\nele mesmo tange as ovelhas-mães'\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 40,1-5.9-11"
   },
   "s13_dom_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 84(85),9ab-10.11-12.13-14 (R. 8)",
    "day": "Fim de Semana (05 e 06/12) — 2º Domingo do Advento",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Salmo responsorial Sl 84(85),9ab-10.11-12.13-14 (R. 8)\nR.Mostrai-nos, ó Senhor, vossa bondade,\ne a vossa salvação nos concedei!\n9a\nQuero ouvir o que o Senhor irá falar: *\né a paz que ele vai anunciar;\nb\na paz para o seu povo e seus amigos, *\npara os que voltam ao Senhor seu coração.\n10\nEstá perto a salvação dos que o temem, *\ne a glória habitará em nossa terra. R.\n11\nA verdade e o amor se encontrarão, *\na justiça e a paz se abraçarão;\n12\nda terra brotará a fidelidade, *\ne a justiça olhará dos altos céus. R.\n13\nO Senhor nos dará tudo o que é bom, *\ne a nossa terra nos dará suas colheitas;\n14\na justiça andará na sua frente *\ne a salvação há de seguir os passos seus. R.",
    "title": "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. 8)"
   },
   "s13_dom_l2": {
    "momento": "2ª Leitura",
    "referencia": "2Pd 3,8-14",
    "day": "Fim de Semana (05 e 06/12) — 2º Domingo do Advento",
-   "text": "SEGUNDA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "SEGUNDA LEITURA\nLeitura da Segunda Carta de São Pedro 3,8-14\n8\nUma coisa vós não podeis desconhecer, caríssimos:\npara o Senhor, um dia é como mil anos\ne mil anos como um dia.\n9\nO Senhor não tarda a cumprir sua promessa,\ncomo pensam alguns, achando que demora.\nEle está usando de paciência para convosco.\nPois não deseja que alguém se perca.\nAo contrário, quer que todos venham a converter-se.\n10\nO dia do Senhor chegará como um ladrão,\ne então os céus acabarão com barulho espantoso;\nos elementos, devorados pelas chamas, se dissolverão,\ne a terra será consumida com tudo o que nela se fez.\n11\nSe desse modo tudo se vai desintegrar,\nqual não deve ser o vosso empenho\nnuma vida santa e piedosa,\n12\nenquanto esperais com anseio a vinda do Dia de Deus,\nquando os céus em chama se vão derreter,\ne os elementos, consumidos pelo fogo, se fundirão?\n13\nO que nós esperamos, de acordo com a sua promessa,\nsão novos céus e uma nova terra,\nonde habitará a justiça.\n14\nCaríssimos, vivendo nesta esperança,\nesforçai-vos para que ele vos encontre\nnuma vida pura e sem mancha e em paz.\nPalavra do Senhor.",
    "title": "2ª Leitura — 2Pd 3,8-14"
   },
   "s13_dom_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Lc 3,4.6",
    "day": "Fim de Semana (05 e 06/12) — 2º Domingo do Advento",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho Lc 3,4.6\nR. Aleluia, Aleluia, Aleluia.\nV. Preparai o caminho do Senhor;\nendireitai suas veredas.\nToda a carne há de ver\na salvação do nosso Deus.",
+   "title": "Aclamação ao Evangelho — Lc 3,4.6"
   },
   "s13_dom_ev": {
    "momento": "Evangelho",
    "referencia": "Mc 1,1-8",
    "day": "Fim de Semana (05 e 06/12) — 2º Domingo do Advento",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Marcos 1,1-8\n1\nInício do Evangelho de Jesus Cristo, Filho de Deus.\n2\nEstá escrito no livro do profeta Isaías:\n\"Eis que envio meu mensageiro à tua frente,\npara preparar o teu caminho.\n3\nEsta é a voz daquele que grita no deserto:\n'Preparai o caminho do Senhor,\nendireitai suas estradas!'\"\n4\nFoi assim que João Batista apareceu no deserto,\npregando um batismo de conversão\npara o perdão dos pecados.\n5\nToda a região da Judeia e todos os moradores de Jerusalém\niam ao seu encontro.\nConfessavam os seus pecados\ne João os batizava no rio Jordão.\n6\nJoão se vestia com uma pele de camelo\ne comia gafanhotos e mel do campo.\n7\nE pregava, dizendo:\n\"Depois de mim virá alguém mais forte do que eu.\nEu nem sou digno de me abaixar\npara desamarrar suas sandálias.\n8\nEu vos batizei com água,\nmas ele vos batizará com o Espírito Santo\".\nPalavra da Salvação.",
    "title": "Evangelho — Mc 1,1-8"
   }
  },
@@ -600,8 +600,8 @@
     },
     {
      "label": "Aclamação ao Evangelho",
-     "reference": "",
-     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+     "reference": "Mt 4,19",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Vinde após mim, disse o Senhor,\n    e eu ensinarei a pescar gente."
     },
     {
      "label": "Antífona de Comunhão",
@@ -615,8 +615,16 @@
    ],
    "citations": [
     {
+     "label": "Primeira Leitura",
+     "text": "A fé vem da pregação e a pregação se faz pela palavra de Cristo."
+    },
+    {
      "label": "Salmo Responsorial",
-     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+     "text": "Seu som ressoa e se espalha em toda terra."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Imediatamente deixaram as redes e o seguiram."
     }
    ]
   },
@@ -630,8 +638,8 @@
     },
     {
      "label": "Aclamação ao Evangelho",
-     "reference": "",
-     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+     "reference": "Lc 3,4.6",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Preparai o caminho do Senhor;\n    endireitai suas veredas.\n    Toda a carne há de ver\n    a salvação do nosso Deus."
     },
     {
      "label": "Antífona de Comunhão",
@@ -645,8 +653,20 @@
    ],
    "citations": [
     {
+     "label": "Primeira Leitura",
+     "text": "Preparai o caminho do Senhor."
+    },
+    {
      "label": "Salmo Responsorial",
-     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+     "text": "Mostrai-nos, ó Senhor, vossa bondade, e a vossa salvação nos concedei! 9a Quero ouvir o que o Senhor irá falar: * é a paz que ele vai anunciar; b a paz para o seu povo e seus amigos, * para os que voltam ao Senhor seu coração."
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "O que nós esperamos são novos céus e uma nova terra."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Endireitai as estradas do Senhor."
     }
    ]
   }
