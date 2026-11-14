@@ -366,7 +366,7 @@
     if ((m = achar(new RegExp(String.raw`Ora[çc][ãa]o da Coleta[^\n]*?${pag}`, 'i')))) missal.coleta = m[1];
     if ((m = achar(new RegExp(String.raw`sobre as Oferendas[^\n]*?${pag}`, 'i')))) missal.oferendas = m[1];
     if ((m = achar(new RegExp(String.raw`depois da Comunh[ãa]o[^\n]*?${pag}`, 'i')))) missal.comunhao = m[1];
-    if ((m = achar(new RegExp(String.raw`Pref[áa]cio\s+(?:d[oa]s?\s+)?([^\n(]*?)\s*${pag}`, 'i')))) {
+    if ((m = achar(new RegExp(String.raw`Pref[áa]cio\s+(?:d[eoa]s?\s+)?([^\n(]*?)\s*${pag}`, 'i')))) {
       missal.prefacio = `${m[2]}${m[1] ? ` (${limpar(m[1]).replace(/[–—-]\s*$/, '').trim()})` : ''}`;
     }
     if ((m = achar(new RegExp(String.raw`ORA[ÇC][ÃA]O EUCAR[ÍI]STICA\s+([IVX]+)\s*[–—-]?\s*${pag}`, 'i')))) missal.eucaristica = `${m[2]} (OE ${m[1].toUpperCase()})`;
@@ -658,6 +658,16 @@
     const caminho = (nome) => `${pasta}/${nome}`;
 
     const dias = lerLeituras(entrada.leituras.doc).filter((d) => d.data >= segunda && d.data <= domingo);
+    // Regra da paróquia: memórias facultativas não são celebradas nas Missas de semana (vale a féria).
+    if (!entrada.celebrarMemoriasFacultativas) {
+      for (const d of dias) {
+        if (/mem[óo]ria facultativa/i.test(d.linhaCelebracao) && d.linhaSemana) {
+          avisos.push(`${dataCurta(d.data)}: “${nomeCelebracao(d.linhaCelebracao)}” é memória facultativa; celebrada como féria.`);
+          d.linhaCelebracao = d.linhaSemana;
+          d.linhaSemana = '';
+        }
+      }
+    }
     if (!dias.length) throw new Error(`O arquivo de leituras não tem dias entre ${dataCurta(segunda)} e ${dataCurta(domingo)}.`);
     dias.forEach((d) => avisos.push(...d.avisos));
     const infoDomingo = dias.find((d) => d.data === domingo);
