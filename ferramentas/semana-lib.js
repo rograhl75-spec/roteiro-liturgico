@@ -534,7 +534,7 @@
     const alvo = semAcento(nome);
     return indice.prefacios.find((p) => semAcento(p.nome) === alvo) || null;
   }
-  const formatarPrefacio = (p) => p ? `${p.pagina} (${p.nome.replace(/^(Do|Da|Dos|Das)\s+/, '')})` : '';
+  const formatarPrefacio = (p) => p ? `${p.pagina} (${p.nome.replace(/^Pref[áa]cio\s+/i, '').replace(/^(Do|Da|Dos|Das|do|da|dos|das)\s+/, '')})` : '';
 
   function corDoSanto(titulo) {
     const t = semAcento(titulo);
@@ -558,7 +558,10 @@
     const temporalNaLinha = /semana d|domingo d/i.test(info.linhaCelebracao) && !grauLinha;
     const chave = chaveTemporal(info);
     const solenidadeTemporal = chave && !/^(TC|ADV|QUA|PAS|DEZ)-/.test(chave);
-    const santo = !temporalNaLinha && !solenidadeTemporal ? indice.santos.find((s) => s.data === info.data.slice(5)) : null;
+    let santo = !temporalNaLinha && !solenidadeTemporal ? indice.santos.find((s) => s.data === info.data.slice(5)) : null;
+    const mmdd = info.data.slice(5);
+    // Advento, de 17 a 24 de dezembro: as memórias cedem lugar à féria privilegiada.
+    if (santo && mmdd >= '12-17' && mmdd <= '12-24' && !/festa|solenidade/i.test(`${grauLinha} ${santo.grau || ''}`)) santo = null;
     const tempo = tempoLiturgico(`${info.linhaCelebracao} ${info.linhaSemana}`);
     const avisos = [];
     const missal = {};
@@ -578,6 +581,7 @@
         : formatarPrefacio(prefacio);
       missal.eucaristica = '537 (OE II)';
       if (santo.gloria || /festa|solenidade/i.test(grau)) missal.gloria = '442';
+      if (/solenidade/i.test(`${grau} ${santo.grau || ''}`)) missal.creio = 'Rezado (página omitida)';
       if (santo.bencao) missal.bencao = String(santo.bencao);
       cor = corDoSanto(santo.titulo);
       grau = grau || santo.grau || '';
@@ -605,6 +609,13 @@
           missal.creio = 'Rezado (página omitida)';
         }
         grau = grau || (dow === 0 ? 'Domingo' : solenidadeTemporal ? 'Solenidade' : 'Féria');
+        // Advento (dias de semana): OE II com o Prefácio do Advento I (até 16/12) ou II (17 a 24/12).
+        if (/^(ADV|DEZ)-/.test(chave) && dow !== 0) {
+          const nomePref = mmdd <= '12-16' ? 'Do Advento I' : 'Do Advento II';
+          missal.prefacio = formatarPrefacio(prefacioPorNome(indice, nomePref));
+          delete missal.gloria;
+          grau = 'Féria';
+        }
       }
     } else {
       avisos.push(`${dataCurta(info.data)}: não identifiquei a celebração “${info.linhaCelebracao}” no Missal; preencha as páginas.`);

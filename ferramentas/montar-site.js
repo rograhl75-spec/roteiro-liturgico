@@ -43,8 +43,11 @@ function lerSemanas() {
 function semanasPublicadas() {
   const todas = lerSemanas();
   const hoje = hojeEmLondrina();
-  const atuais = todas.filter((semana) => semana.fim >= hoje).slice(0, MAX_SEMANAS);
-  return atuais.length ? atuais : todas.slice(-1);
+  // Semanas com "aprovado": false são rascunhos: só entram no site depois da aprovação
+  // (ou na prévia local, com INCLUIR_RASCUNHOS=1).
+  const visiveis = process.env.INCLUIR_RASCUNHOS ? todas : todas.filter((semana) => semana.aprovado !== false);
+  const atuais = visiveis.filter((semana) => semana.fim >= hoje).slice(0, MAX_SEMANAS);
+  return atuais.length ? atuais : visiveis.slice(-1);
 }
 
 const literal = (texto) => `\`${texto.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${')}\``;
@@ -71,7 +74,7 @@ function gerar() {
     if (!fs.existsSync(path.join(raiz, doc))) throw new Error(`Documento listado mas não enviado: ${doc}`);
   }
 
-  const dadosSemanas = semanas.map(({ leituras: _l, antifonas: _a, roteiros: _r, fim: _f, formato: _v, ...resto }) => resto);
+  const dadosSemanas = semanas.map(({ leituras: _l, antifonas: _a, roteiros: _r, fim: _f, formato: _v, aprovado: _ap, ...resto }) => resto);
   fs.writeFileSync(path.join(raiz, 'semanas.js'), `/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
    Para publicar uma semana, envie a pasta semanas/<segunda-feira>/ montada pela ferramenta. */
 window.semanasData = ${JSON.stringify(dadosSemanas, null, 1)};
