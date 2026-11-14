@@ -159,6 +159,8 @@ window.roteirosData = {
           ["Todos", "R. Ouvi, Senhor, a oração de vosso povo!"],
           ["Animador", "Dai a todos os povos fazerem parte do vosso Reino, para que sejam salvos, nós vos pedimos."],
           ["Todos", "R. Ouvi, Senhor, a oração de vosso povo!"],
+          ["Animador", "Pelos dizimistas da nossa paróquia, para que vivam a partilha como um gesto concreto de gratidão e responsabilidade, multiplicando os dons e recursos recebidos de Deus em favor da evangelização e da caridade, nós vos pedimos."],
+          ["Todos", "R. Ouvi, Senhor, a oração de vosso povo!"],
           ["Todos / Telão", "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"],
           ["Padre", "Finaliza as preces."],
           ["Animador", "Amém."]
@@ -173,6 +175,8 @@ window.roteirosData = {
           ["Todos", "R. Senhor, vós sois nossa vida e salvação!"],
           ["Animador", "Que o vosso Espírito nos ensine hoje a cumprir vossa vontade, e vossa Sabedoria sempre nos conduza, nós vos pedimos."],
           ["Todos", "R. Senhor, vós sois nossa vida e salvação!"],
+          ["Animador", "Pelos dizimistas da nossa paróquia, para que vivam a partilha como um gesto concreto de gratidão e responsabilidade, multiplicando os dons e recursos recebidos de Deus em favor da evangelização e da caridade, nós vos pedimos."],
+          ["Todos", "R. Senhor, vós sois nossa vida e salvação!"],
           ["Todos / Telão", "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"],
           ["Padre", "Finaliza as preces."],
           ["Animador", "Amém."]
@@ -186,6 +190,8 @@ window.roteirosData = {
           ["Animador", "Cristo, nosso Salvador, fazei de vossa Igreja instrumento de concórdia e unidade para o gênero humano, e sinal de salvação para todos os povos, nós vos pedimos."],
           ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
           ["Animador", "Assisti com vossa contínua presença o Santo Padre e o Colégio universal dos Bispos, e concedei-lhes o dom da unidade, da caridade e da paz, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Animador", "Pelos dizimistas da nossa paróquia, para que vivam a partilha como um gesto concreto de gratidão e responsabilidade, multiplicando os dons e recursos recebidos de Deus em favor da evangelização e da caridade, nós vos pedimos."],
           ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
           ["Todos / Telão", "Oração da Assembleia Paroquial 2026\n\nDeus, Pai de misericórdia, que em seu Filho Nosso Senhor Jesus Cristo nos deixastes a Igreja como caminho de salvação. Concedei-nos as luzes do Espírito Santo para a realização da Assembleia Paroquial! Que saibamos, como batizados, definir nosso ser e agir evangelizador, criando em nós, seus filhos amados, um sentimento de engajamento e pertença! Colocando os dons e carismas de cada movimento, serviço e pastoral, caminhemos na evangelização que nos leva ao encontro de Ti, Senhor! Fazei, ó Deus, que esta assembleia seja fecunda em graças, sob a ação do Espírito Santo e a poderosa intercessão de Nossa Senhora Auxiliadora.\nAmém!\nSão João Bosco, rogai por nós!\nSão Domingos Sávio, rogai por nós!"],
           ["Padre", "Finaliza as preces."],
