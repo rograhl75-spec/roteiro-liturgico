@@ -8,7 +8,7 @@
  "roteiroLabel": "📖 Roteiro — 4º Domingo do Advento",
  "roteiroExtras": [],
  "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras: somente referências (textos a inserir conforme o Liturgia Diária – CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-12-14",
@@ -41,13 +41,13 @@
     ],
     [
      "Salmo",
-     "Sl 24(25)",
+     "Sl 24(25),4bc-5ab.6-7bc.8-9 (R. 4b)",
      "s15_seg_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Sl 84(85),8",
      "s15_seg_acl",
      ""
     ],
@@ -97,7 +97,7 @@
     ],
     [
      "Salmo",
-     "Sl 33(34)",
+     "Sl 33(34),2-3.6-7.17-18.19 e 23 (R. 7a)",
      "s15_ter_sal",
      ""
     ],
@@ -146,13 +146,13 @@
     ],
     [
      "Salmo",
-     "Sl 84(85)",
+     "Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)",
      "s15_qua_sal",
      ""
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Is 40,9-10",
      "s15_qua_acl",
      ""
     ],
@@ -209,7 +209,7 @@
     ],
     [
      "Salmo",
-     "Sl 71(72)",
+     "Sl 71(72),1-2.3-4ab.7-8.17 (R. cf. 7)",
      "s15_qui_sal",
      ""
     ],
@@ -258,7 +258,7 @@
     ],
     [
      "Salmo",
-     "Sl 71(72)",
+     "Sl 71(72),1-2.12-13.18-19 (R. cf. 7)",
      "s15_sex_sal",
      ""
     ],
@@ -351,7 +351,7 @@
    ],
    [
     "Aclamação ao Evangelho",
-    "",
+    "Lc 1,38",
     "s15_dom_acl",
     ""
    ],
@@ -374,7 +374,7 @@
   "antifonas": "antifonas_15"
  },
  "documentos": [
-  "semanas/2026-12-14/Leituras 14 dezembro a 20 dezembro 2026 (referências).docx",
+  "semanas/2026-12-14/Leituras 14 a 20 dezembro 2026.docx",
   "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx"
  ],
  "leituras": {
@@ -382,175 +382,175 @@
    "momento": "1ª Leitura",
    "referencia": "Nm 24,2-7.15-17a",
    "day": "Segunda-feira (14/12) — São João da Cruz",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro dos Números 24,2-7.15-17a\nNaqueles dias,\n2\nBalaão levantou os olhos\ne viu Israel acampado por tribos.\nO espírito de Deus veio sobre ele,\n3\ne Balaão pronunciou seu poema:\n\"Oráculo de Balaão, filho de Beor,\noráculo do homem que tem os olhos abertos;\n4\noráculo daquele que ouve as palavras de Deus,\nque vê o que o Poderoso lhe faz ver,\nque cai, e seus olhos se abrem.\n5\nComo são belas as tuas tendas, ó Jacó,\ne as tuas moradas, ó Israel!\n6\nElas se estendem como vales,\ncomo jardins ao longo de um rio,\ncomo aloés que o Senhor plantou,\ncomo cedros junto das águas.\n7\nA água transborda de seus cântaros,\ne sua semente é ricamente regada.\nSeu rei é mais poderoso do que Agag,\nseu reino está em ascensão\".\n15\nE Balaão continuou pronunciando o seu poema:\n\"Oráculo de Balaão, filho de Beor,\noráculo do homem que tem os olhos abertos,\n16\noráculo daquele que ouve as palavras de Deus,\ne conhece os pensamentos do Altíssimo,\nque vê o que o Poderoso lhe faz ver,\nque cai, e seus olhos se abrem.\n17a\nEu o vejo, mas não agora;\ne o contemplo, mas não de perto.\nUma estrela sai de Jacó,\ne um cetro se levanta de Israel\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Nm 24,2-7.15-17a"
   },
   "s15_seg_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 24(25)",
+   "referencia": "Sl 24(25),4bc-5ab.6-7bc.8-9 (R. 4b)",
    "day": "Segunda-feira (14/12) — São João da Cruz",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 24(25)"
+   "text": "Salmo responsorial Sl 24(25),4bc-5ab.6-7bc.8-9 (R. 4b)\nR. Fazei-me conhecer a vossa estrada, ó Senhor!\n4b\nMostrai-me, ó Senhor, vossos caminhos, *\nc\ne fazei-me conhecer a vossa estrada!\n5a\nVossa verdade me oriente e me conduza, *\nb\nporque sois o Deus da minha salvação. R.\n6\nRecordai, Senhor meu Deus, vossa ternura *\ne a vossa compaixão que são eternas!\n7b\nDe mim lembrai-vos, porque sois misericórdia *\nc\ne sois bondade sem limites, ó Senhor! R.\n8\nO Senhor é piedade e retidão, *\ne reconduz ao bom caminho os pecadores.\n9\nEle dirige os humildes na justiça, *\ne aos pobres ele ensina o seu caminho. R.",
+   "title": "Salmo Responsorial — Sl 24(25),4bc-5ab.6-7bc.8-9 (R. 4b)"
   },
   "s15_seg_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Sl 84(85),8",
    "day": "Segunda-feira (14/12) — São João da Cruz",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho Sl 84(85),8\nR. Aleluia, Aleluia, Aleluia.\nV. Mostrai-nos, ó Senhor, vossa bondade\ne a vossa salvação nos concedei!",
+   "title": "Aclamação ao Evangelho — Sl 84(85),8"
   },
   "s15_seg_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 21,23-27",
    "day": "Segunda-feira (14/12) — São João da Cruz",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 21,23-27\nNaquele tempo,\n23\nJesus voltou ao Templo.\nEnquanto ensinava,\nos sumos sacerdotes e os anciãos do povo\naproximaram-se dele e perguntaram:\n\"Com que autoridade fazes estas coisas?\nQuem te deu tal autoridade?\"\n24\nJesus respondeu-lhes:\n\"Também eu vos farei uma pergunta.\nSe vós me responderdes, também eu vos direi\ncom que autoridade faço estas coisas.\n25\nDonde vinha o batismo de João?\nDo céu ou dos homens?\"\nEles refletiam entre si:\n\"Se dissermos: 'Do céu', ele nos dirá:\n'Por que não acreditastes nele?'\n26\nSe dissermos: 'Dos homens', temos medo do povo,\npois todos têm João Batista na conta de profeta\".\n27\nEles então responderam a Jesus: \"Não sabemos\".\nAo que Jesus também respondeu:\n\"Eu também não vos direi\ncom que autoridade faço estas coisas\".\nPalavra da Salvação.",
    "title": "Evangelho — Mt 21,23-27"
   },
   "s15_ter_l1": {
    "momento": "1ª Leitura",
    "referencia": "Sf 3,1-2.9-13",
    "day": "Terça-feira (15/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura da Profecia de Sofonias 3,1-2.9-13\nAssim fala o Senhor:\n1\n\"Ai de ti, rebelde e desonrada,\ncidade desumana.\n2\nEla não prestou ouvidos ao apelo,\nnão aceitou a correção;\nnão teve confiança no Senhor,\nnem se aproximou de seu Deus.\n9\nDarei aos povos, nesse tempo,\nlábios purificados,\npara que todos invoquem o nome do Senhor\ne lhe prestem culto em união de esforços.\n10\nDesde além-rios da Etiópia,\nos que me adoram,\nos dispersos do meu povo,\nme trarão suas oferendas.\n11\nNaquele dia, não terás de envergonhar-te\npor causa de todas as tuas obras\ncom que prevaricaste contra mim;\npois eu afastarei do teu meio\nteus fanfarrões arrogantes,\ne não continuarás a fazer de meu santo monte\nmotivo de tuas vanglórias.\n12\nE deixarei entre vós\num punhado de homens humildes e pobres\".\nE no nome do Senhor porá sua esperança\no resto de Israel.\n13\nEles não cometerão iniquidades\nnem falarão mentiras;\nnão se encontrará em sua boca\numa língua enganadora;\nserão apascentados e repousarão,\ne ninguém os molestará.\nPalavra do Senhor.",
    "title": "1ª Leitura — Sf 3,1-2.9-13"
   },
   "s15_ter_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 33(34)",
+   "referencia": "Sl 33(34),2-3.6-7.17-18.19 e 23 (R. 7a)",
    "day": "Terça-feira (15/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 33(34)"
+   "text": "Salmo responsorial\nSl 33(34),2-3.6-7.17-18.19.23 (R. 7a)\nR. Este infeliz gritou a Deus e foi ouvido.\n2\nBendirei o Senhor Deus em todo o tempo, *\nseu louvor estará sempre em minha boca.\n3\nMinha alma se gloria no Senhor; *\nque ouçam os humildes e se alegrem! R.\n6\nContemplai a sua face e alegrai-vos, *\ne vosso rosto não se cubra de vergonha!\n7\nEste infeliz gritou a Deus, e foi ouvido, *\ne o Senhor o libertou de toda angústia. R.\n17\nMas ele volta a sua face contra os maus, *\npara da terra apagar sua lembrança.\n18\nClamam os justos, e o Senhor bondoso escuta *\ne de todas as angústias os liberta. R.\n19\nDo coração atribulado ele está perto *\ne conforta os de espírito abatido.\n23\nMas o Senhor liberta a vida dos seus servos, *\ne castigado não será quem nele espera. R.",
+   "title": "Salmo Responsorial — Sl 33(34),2-3.6-7.17-18.19 e 23 (R. 7a)"
   },
   "s15_ter_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Terça-feira (15/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Vinde, ó Senhor, não tardeis mais;\nfazei o povo acabar com os seus crimes.",
    "title": "Aclamação ao Evangelho — "
   },
   "s15_ter_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 21,28-32",
    "day": "Terça-feira (15/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 21,28-32\nNaquele tempo, disse Jesus\naos chefes dos sacerdotes e anciãos do povo:\n28\n\"Que vos parece?\nUm homem tinha dois filhos.\nDirigindo-se ao primeiro, ele disse:\n'Filho, vai trabalhar hoje na vinha!'\n29\nO filho respondeu: 'Não quero'.\nMas depois mudou de opinião e foi.\n30\nO pai dirigiu-se ao outro filho\ne disse a mesma coisa.\nEste respondeu: `Sim, senhor, eu vou'.\nMas não foi.\n31\nQual dos dois fez a vontade do pai?'\nOs sumos sacerdotes e os anciãos do povo responderam:\n\"O primeiro\".\nEntão Jesus lhes disse:\n\"Em verdade vos digo,\nque os publicanos e as prostitutas\nvos precedem no Reino de Deus.\n32\nPorque João veio até vós, num caminho de justiça,\ne vós não acreditastes nele.\nAo contrário, os publicanos e as prostitutas creram nele.\nVós, porém, mesmo vendo isso,\nnão vos arrependestes para crer nele\".\nPalavra da Salvação.",
    "title": "Evangelho — Mt 21,28-32"
   },
   "s15_qua_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 45,6b-8.18.21b-25",
    "day": "Quarta-feira (16/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 45,6b-8.18.21b-25\n6b\n\"Eu sou o Senhor, não há outro,\n7\neu formei a luz e criei as trevas,\ncrio o bem-estar e as condições de mal-estar:\nsou o Senhor que faço todas estas coisas.\n8\nCéus, deixai cair orvalho das alturas,\ne que as nuvens façam chover justiça;\nabra-se a terra e germine a salvação;\nbrote igualmente a justiça:\neu, o Senhor, a criei.\"\n18\nIsto diz o Senhor\nque criou os céus, o próprio Deus\nque fez a terra, a conformou e consolidou;\nnão a criou para ficar vazia,\nformou-a para ser habitada:\n\"Sou eu o Senhor, e não há outro.\n21b\nAcaso não sou eu o Senhor?\nE não há deus além de mim.\nNão há um Deus justo, e que salve, a não ser eu.\n22\nPovos de todos os confins da terra,\nvoltai-vos para mim e sereis salvos,\neu sou Deus e não há outro.\n23\nJuro por mim mesmo:\nde minha boca sai o que é justo,\na palavra que não volta atrás;\ntodo joelho há de dobrar-se para mim,\npor mim há de jurar toda língua,\n24\ndizendo: Somente no Senhor\nresidem justiça e força\".\nComparecerão perante ele, envergonhados,\ntodos os que lhe resistem;\n25\nno Senhor será justificada e glorificada\ntoda a descendência de Israel.\nPalavra do Senhor.",
    "title": "1ª Leitura — Is 45,6b-8.18.21b-25"
   },
   "s15_qua_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 84(85)",
+   "referencia": "Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)",
    "day": "Quarta-feira (16/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 84(85)"
+   "text": "Salmo responsorial\nSl 84(85),9ab-10.11-12.13-14 (R. cf Is 45,8)\nR. Que os céus lá do alto derramem o orvalho,\nque chova das nuvens o Justo esperado!\n9a\nQuero ouvir o que o Senhor irá falar:*\né a paz que ele vai anunciar;\nb\na paz para o seu povo e seus amigos,*\npara os que voltam ao Senhor seu coração.\n10\nEstá perto a salvação dos que o temem,*\ne a glória habitará em nossa terra. R.\n11\nA verdade e o amor se encontrarão,*\na justiça e a paz se abraçarão;\n12\nda terra brotará a fidelidade,*\ne a justiça olhará dos altos céus. R.\n13\nO Senhor nos dará tudo o que é bom,*\ne a nossa terra nos dará suas colheitas;\n14\na justiça andará na sua frente*\ne a salvação há de seguir os passos seus. R.",
+   "title": "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)"
   },
   "s15_qua_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Is 40,9-10",
    "day": "Quarta-feira (16/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho\nIs 40,9-10\nR. Aleluia, Aleluia, Aleluia.\nV. Tu que trazes boa-nova a Sião,\nlevanta tua voz e anuncia:\neis que vem o Senhor Deus com poderio!",
+   "title": "Aclamação ao Evangelho — Is 40,9-10"
   },
   "s15_qua_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 7,19-23",
    "day": "Quarta-feira (16/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 7,19-23\nNaquele tempo, João convocou dois de seus discípulos,\n19\ne mandou-os perguntar ao Senhor:\n\"És tu aquele que há de vir,\nou devemos esperar outro?\"\n20\nEles foram ter com Jesus, e disseram:\n\"João Batista nos mandou a ti para perguntar:\n'És tu aquele que há de vir,\nou devemos esperar outro?' ''\n21\nNessa mesma hora, Jesus curou de doenças, enfermidades\ne espíritos malignos a muitas pessoas,\ne fez muitos cegos recuperarem a vista.\n22\nEntão, Jesus lhes respondeu:\n\"Ide contar a João o que vistes e ouvistes:\nos cegos recuperam a vista,\nos paralíticos andam, os leprosos são purificados,\nos surdos ouvem, os mortos ressuscitam,\ne a Boa Nova é anunciada aos pobres.\n23\nE feliz é aquele que não se escandaliza por causa de mim!\"\nPalavra da Salvação.",
    "title": "Evangelho — Lc 7,19-23"
   },
   "s15_qui_l1": {
    "momento": "1ª Leitura",
    "referencia": "Gn 49,2.8-10",
    "day": "Quinta-feira (17/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Gênesis 49,2.8-10\nNaqueles dias, Jacó chamou seus filhos e disse:\n2\n\"Juntai-vos e ouvi, filhos de Jacó,\nouvi Israel, vosso pai!\n8\nJudá, teus irmãos te louvarão;\npesará tua mão sobre a nuca de teus inimigos,\nse prostrarão diante de ti os filhos de teu pai.\n9\nJudá, filhote de leão:\nsubiste, meu filho, da pilhagem;\nele se agacha e se deita como um leão,\ne como uma leoa; quem o despertará?\n10\nO cetro não será tirado de Judá,\nnem o bastão de comando dentre seus pés,\naté que venha Aquele a quem pertencem,\ne a quem obedecerão os povos\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Gn 49,2.8-10"
   },
   "s15_qui_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 71(72)",
+   "referencia": "Sl 71(72),1-2.3-4ab.7-8.17 (R. cf. 7)",
    "day": "Quinta-feira (17/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 71(72)"
+   "text": "Salmo responsorial\nSl 71(72),1-2.3-4ab.7-8.17 (R. cf. 7)\nR. Nos seus dias a justiça florirá\ne paz em abundância, para sempre.\n1\nDai ao Rei vossos poderes, Senhor Deus, *\nvossa justiça ao descendente da realeza!\n2\nCom justiça ele governe o vosso povo, *\ncom equidade ele julgue os vossos pobres. R.\n3\nDas montanhas venha a paz a todo o povo, *\ne desça das colinas a justiça!\n4a\nEste Rei defenderá os que são pobres, *\n4b\nos filhos dos humildes salvará R.\n7\nNos seus dias a justiça florirá *\ne grande paz, até que a lua perca o brilho!\n8\nDe mar a mar estenderá o seu domínio, *\ne desde o rio até os confins de toda a terra! R.\n17\nSeja bendito o seu nome para sempre! *\nE que dure como o sol sua memória!\nTodos os povos serão nele abençoados, *\ntodas as gentes cantarão o seu louvor! R",
+   "title": "Salmo Responsorial — Sl 71(72),1-2.3-4ab.7-8.17 (R. cf. 7)"
   },
   "s15_qui_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Quinta-feira (17/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Ó Sabedoria do Altíssimo,\nque tudo determina com doçura e com vigor:\noh, vem nos ensinar o caminho da prudência!",
    "title": "Aclamação ao Evangelho — "
   },
   "s15_qui_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 1,1-17",
    "day": "Quinta-feira (17/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 1,1-17\n1\nLivro da origem de Jesus Cristo,\nfilho de Davi, filho de Abraão.\n2\nAbraão gerou Isaac; Isaac gerou Jacó;\nJacó gerou Judá e seus irmãos.\n3\nJudá gerou Farés e Zara, cuja mãe era Tamar.\nFarés gerou Esrom; Esrom gerou Aram;\n4\nAram gerou Aminadab; Aminadab gerou Naasson;\nNaasson gerou Salmon;\n5\nSalmon gerou Booz, cuja mãe era Raab.\nBooz gerou Obed, cuja mãe era Rute.\nObed gerou Jessé.\n6\nJessé gerou o rei Davi.\nDavi gerou Salomão,\ndaquela que tinha sido a mulher de Urias.\n7\nSalomão gerou Roboão; Roboão gerou Abias;\nAbias gerou Asa;\n8\nAsa gerou Josafá; Josafá gerou Jorão;\nJorão gerou Ozias;\n9\nOzias gerou Joatão; Joatão gerou Acaz;\nAcaz gerou Ezequias;\n10\nEzequias gerou Manassés; Manassés gerou Amon;\nAmon gerou Josias.\n11\nJosias gerou Jeconias e seus irmãos,\nno tempo do exílio na Babilônia.\n12\nDepois do exílio na Babilônia,\nJeconias gerou Salatiel; Salatiel gerou Zorobabel;\n13\nZorobabel gerou Abiud; Abiud gerou Eliaquim;\nEliaquim gerou Azor;\n14\nAzor gerou Sadoc; Sadoc gerou Aquim;\nAquim gerou Eliud;\n15\nEliud gerou Eleazar; Eleazar gerou Matã;\nMatã gerou Jacó.\n16\nJacó gerou José, o esposo de Maria,\nda qual nasceu Jesus, que é chamado o Cristo.\n17\nAssim, as gerações desde Abraão até Davi são quatorze;\nde Davi até o exílio na Babilônia, quatorze;\ne do exílio na Babilônia até Cristo, quatorze.\nPalavra da Salvação.",
    "title": "Evangelho — Mt 1,1-17"
   },
   "s15_sex_l1": {
    "momento": "1ª Leitura",
    "referencia": "Jr 23,5-8",
    "day": "Sexta-feira (18/12)",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Jeremias 23,5-8\n5\n\"Eis que virão dias, diz o Senhor,\nem que farei nascer um descendente de Davi;\nreinará como rei e será sábio,\nfará valer a justiça e a retidão na terra.\n6\nNaqueles dias, Judá será salvo\ne Israel viverá tranquilo;\neste é o nome com que o chamarão:\n'Senhor, nossa Justiça'.\n7\nEis que virão dias, diz o Senhor,\nem que já não se usará jurar 'Pela vida do Senhor\nque tirou os filhos de Israel do Egito'\n8\n— mas sim: 'Pela vida do Senhor\nque tirou e reconduziu os descendentes da casa de Israel\ndesde o país do norte e todos os outros países,\npara onde os expulsará;\neles então irão habitar em sua terra'\".\nPalavra do Senhor.",
    "title": "1ª Leitura — Jr 23,5-8"
   },
   "s15_sex_sal": {
    "momento": "Salmo Responsorial",
-   "referencia": "Sl 71(72)",
+   "referencia": "Sl 71(72),1-2.12-13.18-19 (R. cf. 7)",
    "day": "Sexta-feira (18/12)",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Salmo Responsorial — Sl 71(72)"
+   "text": "Salmo responsorial Sl 71(72),1-2.12-13.18-19 (R. cf. 7)\nR. Nos seus dias a justiça florirá\ne paz em abundância, para sempre.\n1\nDai ao Rei vossos poderes, Senhor Deus, *\nvossa justiça ao descendente da realeza!\n2\nCom justiça ele governe o vosso povo, *\ncom equidade ele julgue os vossos pobres. R.\n12\nLibertará o indigente que suplica, *\ne o pobre ao qual ninguém quer ajudar.\n13\nTerá pena do indigente e do infeliz, *\ne a vida dos humildes salvará. R.\n18\nBendito seja o Senhor Deus de Israel, *\nporque só ele realiza maravilhas!\n19\nBendito seja o seu nome glorioso! *\nBendito seja eternamente! Amém, amém! R.",
+   "title": "Salmo Responsorial — Sl 71(72),1-2.12-13.18-19 (R. cf. 7)"
   },
   "s15_sex_acl": {
    "momento": "Aclamação ao Evangelho",
    "referencia": "",
    "day": "Sexta-feira (18/12)",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Aclamação ao Evangelho\nR. Aleluia, Aleluia, Aleluia.\nV. Ó Guia de Israel,\nque no monte do Sinai orientastes a Moisés,\noh, vinde redimir-nos, com braço estendido!",
    "title": "Aclamação ao Evangelho — "
   },
   "s15_sex_ev": {
    "momento": "Evangelho",
    "referencia": "Mt 1,18-24",
    "day": "Sexta-feira (18/12)",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 1,18-24\n18\nA origem de Jesus Cristo foi assim:\nMaria, sua mãe, estava prometida em casamento\na José, e, antes de viverem juntos,\nela ficou grávida pela ação do Espírito Santo.\n19\nJosé, seu marido, era justo\ne, não querendo denunciá-la,\nresolveu abandonar Maria, em segredo.\n20\nEnquanto José pensava nisso,\neis que o anjo do Senhor apareceu-lhe, em sonho,\ne lhe disse:\n\"José, Filho de Davi,\nnão tenhas medo de receber Maria como tua esposa,\nporque ela concebeu pela ação do Espírito Santo.\n21\nEla dará à luz um filho,\ne tu lhe darás o nome de Jesus,\npois ele vai salvar o seu povo dos seus pecados\".\n22\nTudo isso aconteceu para se cumprir\no que o Senhor havia dito pelo profeta:\n23\n\"Eis que a virgem conceberá\ne dará à luz um filho.\nEle será chamado pelo nome de Emanuel,\nque significa: Deus está conosco\".\n24\nQuando acordou,\nJosé fez conforme o anjo do Senhor havia mandado,\ne aceitou sua esposa.\nPalavra da Salvação.",
    "title": "Evangelho — Mt 1,18-24"
   },
   "s15_dom_l1": {
    "momento": "1ª Leitura",
    "referencia": "2Sm 7,1-5.8b-12.14a.16",
    "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
-   "text": "PRIMEIRA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "PRIMEIRA LEITURA\nLeitura do Segundo Livro de Samuel 7,1-5.8b-12.14a.16\n1\nTendo-se o rei Davi instalado já em sua casa\ne tendo-lhe o Senhor dado a paz,\nlivrando-o de todos os seus inimigos,\n2\nele disse ao profeta Natã:\n\"Vê: eu resido num palácio de cedro,\ne a arca de Deus está alojada numa tenda!\"\n3\nNatã respondeu ao rei:\n\"Vai e faze tudo o que diz o teu coração,\npois o Senhor está contigo\".\n4\nMas, nessa mesma noite,\na palavra do Senhor foi dirigida a Natã nestes termos:\n5\n\"Vai dizer ao meu servo Davi:\n'Assim fala o Senhor:\nPorventura és tu que me construirás uma casa\npara eu habitar?\n8b\nFui eu que te tirei do pastoreio, do meio das\novelhas, para que fosses o chefe do meu povo, Israel.\n9\nEstive contigo em toda a parte por onde andaste,\ne exterminei diante de ti todos os teus inimigos,\nfazendo o teu nome tão célebre\ncomo o dos homens mais famosos da terra.\n10\nVou preparar um lugar para o meu povo, Israel:\neu o implantarei, de modo que possa morar lá\nsem jamais ser inquietado.\nOs homens violentos não tornarão a oprimi-lo\ncomo outrora,\n11\nno tempo em que eu estabelecia juízes\nsobre o meu povo, Israel.\nConcedo-te uma vida tranquila,\nlivrando-te de todos os teus inimigos.\nE o Senhor te anuncia que te fará uma casa.\n12\nQuando chegar o fim dos teus dias\ne repousares com teus pais,\nentão, suscitarei, depois de ti, um filho teu,\ne confirmarei a sua realeza.\n14a\nEu serei para ele um pai\ne ele será para mim um filho.\n16\nTua casa e teu reino\nserão estáveis para sempre diante de mim,\ne teu trono será firme para sempre\".\nPalavra do Senhor.",
    "title": "1ª Leitura — 2Sm 7,1-5.8b-12.14a.16"
   },
   "s15_dom_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 88(89),2-3.4-5.27.29 (R. 2a)",
    "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
-   "text": "Salmo responsorial\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "Salmo responsorial Sl 88(89),2-3.4-5.27.29 (R. 2a)\nR. Ó Senhor, eu cantarei eternamente o vosso amor!\n2\nÓ Senhor, eu cantarei eternamente o vosso amor, *\nde geração em geração eu cantarei vossa verdade!\n3\nPorque dissestes: \"O amor é garantido para sempre!\" *\nE a vossa lealdade é tão firme como os céus. R.\n4\n\"Eu firmei uma Aliança com meu servo, meu eleito, *\ne eu fiz um juramento a Davi, meu servidor.\n5\nPara sempre, no teu trono, firmarei tua linhagem, *\nde geração em geração garantirei o teu reinado! R.\n27\nEle, então, me invocará: †\n'Ó Senhor, vós sois meu Pai, sois meu Deus, *\nsois meu Rochedo onde encontro a salvação!'\n29\nGuardarei eternamente para ele a minha graça *\ne com ele firmarei minha Aliança indissolúvel\". R.",
    "title": "Salmo Responsorial — Sl 88(89),2-3.4-5.27.29 (R. 2a)"
   },
   "s15_dom_l2": {
    "momento": "2ª Leitura",
    "referencia": "Rm 16,25-27",
    "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
-   "text": "SEGUNDA LEITURA\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "SEGUNDA LEITURA\nLeitura da Carta de São Paulo aos Romanos 16,25-27\nIrmãos:\n25\nGlória seja dada\nàquele que tem o poder de vos confirmar\nna fidelidade ao meu evangelho\ne à pregação de Jesus Cristo,\nde acordo com a revelação do mistério\nmantido em sigilo desde sempre.\n26\nAgora este mistério foi manifestado\ne, mediante as Escrituras proféticas,\nconforme determinação do Deus eterno,\nfoi levado ao conhecimento de todas as nações,\npara trazê-las à obediência da fé.\n27\nA ele, o único Deus, o sábio,\npor meio de Jesus Cristo,\na glória, pelos séculos dos séculos. Amém!\nPalavra do Senhor",
    "title": "2ª Leitura — Rm 16,25-27"
   },
   "s15_dom_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Lc 1,38",
    "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
-   "text": "Aclamação ao Evangelho\nTexto a inserir (Liturgia Diária – CNBB).",
-   "title": "Aclamação ao Evangelho — "
+   "text": "Aclamação ao Evangelho Lc 1,38\nR. Aleluia, Aleluia, Aleluia.\nV. Eis a serva do Senhor;\ncumpra-se em mim a tua palavra!",
+   "title": "Aclamação ao Evangelho — Lc 1,38"
   },
   "s15_dom_ev": {
    "momento": "Evangelho",
    "referencia": "Lc 1,26-38",
    "day": "Fim de Semana (19 e 20/12) — 4º Domingo do Advento",
-   "text": "EVANGELHO\nTexto a inserir (Liturgia Diária – CNBB).",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 1,26-38\nNaquele tempo,\n26\no anjo Gabriel foi enviado por Deus\na uma cidade da Galileia, chamada Nazaré,\n27\na uma virgem, prometida em casamento\na um homem chamado José.\nEle era descendente de Davi\ne o nome da virgem era Maria\n28\nO anjo entrou onde ela estava e disse:\n\"Alegra-te, cheia de graça, o Senhor está contigo!\"\n29\nMaria ficou perturbada com essas palavras\ne começou a pensar qual seria o significado da saudação.\n30\nO anjo, então, disse-lhe:\n\"Não tenhas medo, Maria,\nporque encontraste graça diante de Deus.\n31\nEis que conceberás e darás à luz um filho,\na quem porás o nome de Jesus.\n32\nEle será grande, será chamado Filho do Altíssimo,\ne o Senhor Deus lhe dará o trono de seu pai Davi.\n33\nEle reinará para sempre sobre os descendentes de Jacó,\ne o seu reino não terá fim\".\n34\nMaria perguntou ao anjo:\n\"Como acontecerá isso,\nse eu não conheço homem algum?\"\n35\nO anjo respondeu:\n\"O Espírito virá sobre ti,\ne o poder do Altíssimo te cobrirá com sua sombra.\nPor isso, o menino que vai nascer\nserá chamado Santo, Filho de Deus.\n36\nTambém Isabel, tua parenta,\nconcebeu um filho na velhice.\nEste já é o sexto mês\ndaquela que era considerada estéril,\n37\nporque para Deus nada é impossível\".\n38\nMaria, então, disse:\n\"Eis aqui a serva do Senhor;\nfaça-se em mim segundo a tua palavra!\"\nE o anjo retirou-se.\nPalavra da Salvação.",
    "title": "Evangelho — Lc 1,26-38"
   }
  },
@@ -565,8 +565,8 @@
     },
     {
      "label": "Aclamação ao Evangelho",
-     "reference": "",
-     "text": "    Texto a inserir (Liturgia Diária – CNBB)."
+     "reference": "Lc 1,38",
+     "text": "R. Aleluia, Aleluia, Aleluia.\nV. Eis a serva do Senhor;\n    cumpra-se em mim a tua palavra!"
     },
     {
      "label": "Antífona de Comunhão",
@@ -580,8 +580,20 @@
    ],
    "citations": [
     {
+     "label": "Primeira Leitura",
+     "text": "O teu reino será estável para sempre diante de mim, diz o Senhor."
+    },
+    {
      "label": "Salmo Responsorial",
-     "text": "Texto a inserir (Liturgia Diária – CNBB)."
+     "text": "Ó Senhor, eu cantarei eternamente o vosso amor!"
+    },
+    {
+     "label": "Segunda Leitura",
+     "text": "O mistério mantido em sigilo desde sempre agora foi manifestado."
+    },
+    {
+     "label": "Evangelho",
+     "text": "Eis que conceberás e darás à luz um filho."
     }
    ]
   }
