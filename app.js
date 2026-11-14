@@ -1253,6 +1253,25 @@ function handleActionClick(event) {
   }
 }
 
+/* Destaca o cartão do dia de hoje (e o botão do dia na navegação). */
+function marcarHoje(today = todayIso()) {
+  document.querySelectorAll('.card-hoje').forEach((el) => el.classList.remove('card-hoje'));
+  document.querySelectorAll('.selo-hoje').forEach((el) => el.remove());
+  const alvo = document.querySelector(`[data-date="${today}"]`);
+  const cartao = alvo && alvo.closest('.card');
+  if (!cartao) return null;
+  cartao.classList.add('card-hoje');
+  const titulo = cartao.querySelector('.card-header h2');
+  if (titulo) {
+    const selo = document.createElement('span');
+    selo.className = 'selo-hoje';
+    selo.textContent = '📍 HOJE';
+    titulo.prepend(selo);
+  }
+  document.querySelectorAll(`.day-nav a[href="#dia-${today}"]`).forEach((link) => link.classList.add('nav-hoje'));
+  return cartao;
+}
+
 function init() {
   renderWeeks();
   renderDocumentModals();
@@ -1263,6 +1282,10 @@ function init() {
   if (weeks.length > 0) {
     const selected = weeks.find((week) => week.id === savedUpdateState?.week) || getDefaultWeek(weeks);
     showWeek(selected.id, { preserveScroll: Boolean(savedUpdateState) });
+    const cartaoHoje = marcarHoje();
+    if (cartaoHoje && !savedUpdateState && !window.location.hash && !cartaoHoje.closest('[hidden]')) {
+      setTimeout(() => cartaoHoje.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' }), 300);
+    }
     if (savedUpdateState) {
       Object.entries(savedUpdateState.fonts || {}).forEach(([id, size]) => {
         if (typeof size !== 'number' || size < 8 || size > 28) return;

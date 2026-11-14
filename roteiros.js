@@ -207,5 +207,174 @@ window.roteirosData = {
         ]
       }
     ]
+  },
+  "roteiro_10": {
+    "tipo": "roteiro",
+    "titulo": "Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo — 21 e 22/11/2026",
+    "fonte": "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx",
+    "cabecalho": "● SOLENIDADE DE NOSSO SENHOR JESUS CRISTO, REI DO UNIVERSO – 21 E 22 NOVEMBRO 2026 – ANO A – COR BRANCA",
+    "secoes": [
+      {
+        "titulo": "Orientações",
+        "linhas": [
+          ["Orientação", "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas com «SOMENTE NA MISSA DE DOMINGO ÀS 18h30»."],
+          ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
+          ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
+        ]
+      },
+      {
+        "titulo": "RITOS INICIAIS",
+        "linhas": [
+          ["Comentarista", "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."],
+          ["Comentarista", "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
+          ["Cantores", "Canto de Entrada"],
+          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."],
+          ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
+          ["Todos", "Bendito seja Deus que nos reuniu no amor de Cristo."],
+          ["Sacerdote", "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
+          ["Cantores", "Ato Penitencial"],
+          ["Sacerdote", "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."],
+          ["Todos", "Amém."],
+          ["Orientação", "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Sacerdote", "Cristo, tende piedade de nós."],
+          ["Todos", "Cristo, tende piedade de nós."],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
+          ["Orientação", "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."],
+          ["Sacerdote", "Oração da Coleta (pág. 425)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA DA PALAVRA",
+        "linhas": [
+          ["Leitor", "Ez 34,11-12.15-17"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Orientação", "Breve silêncio para meditar a Palavra (IGMR 56)."],
+          ["Salmista", "Salmo Responsorial Sl 22(23),1-2a.2b-3.5-6 (R. 1)"],
+          ["Leitor", "1Cor 15,20-26.28"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Cantores e Todos", "Aclamação ao Evangelho ."],
+          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação do Evangeliário (IGMR 134)."],
+          ["Diácono / Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Mateus."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Diácono / Sacerdote", "Mt 25,31-46"],
+          ["Diácono / Sacerdote", "Palavra da Salvação."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Sacerdote / Diácono", "Homilia."],
+          ["Sacerdote / Diácono", "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "Breve silêncio depois da homilia (IGMR 66)."],
+          ["Sacerdote e Todos", "(Profissão de fé – Símbolo Niceno-Constantinopolitano) Creio em um só Deus, Pai todo-poderoso, criador do céu e da terra, de todas as coisas visíveis e invisíveis. Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus de Deus, luz da luz, Deus verdadeiro de Deus verdadeiro, gerado, não criado, consubstancial ao Pai. Por ele todas as coisas foram feitas. E por nós, homens, e para nossa salvação, desceu dos céus (todos se inclinam) e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem. Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado. Ressuscitou ao terceiro dia, conforme as Escrituras, e subiu aos céus, onde está sentado à direita do Pai. E de novo há de vir, em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim. Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho; e com o Pai e o Filho é adorado e glorificado: ele que falou pelos profetas. Creio na Igreja, una, santa, católica e apostólica. Professo um só Batismo para a remissão dos pecados. E espero a ressurreição dos mortos e a vida do mundo que há de vir. Amém."],
+          ["Sacerdote", "Faz a introdução às preces."],
+          ["Diácono / Leitor", "Conforme formulário de preces para cada horário."],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA EUCARÍSTICA",
+        "linhas": [
+          ["Comentarista", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
+          ["Cantores", "Canto das Oferendas"],
+          ["Sacerdote", "Preparação das oferendas."],
+          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
+          ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
+          ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Sacerdote", "Oração sobre as Oferendas (pág. 425)"],
+          ["Todos", "Amém."],
+          ["Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Sacerdote", "Corações ao alto."],
+          ["Todos", "O nosso coração está em Deus."],
+          ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
+          ["Todos", "É nosso dever e nossa salvação."],
+          ["Sacerdote", "Prefácio de Nosso Senhor Jesus Cristo, Rei do Universo (pág. 426)"],
+          ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. Com óleo de exultação ungistes vosso Filho Unigênito, nosso Senhor Jesus Cristo, Sacerdote eterno e Rei do universo. Oferecendo-se a si mesmo no altar da cruz como vítima pura e pacífica, realizou o mistério da redenção humana. Depois de ter submetido ao seu poder todas as criaturas, entregará à vossa imensa majestade um reino eterno e universal: reino da verdade e da vida, reino da santidade e da graça, reino da justiça, do amor e da paz. Por isso, com os Anjos e os Arcanjos, os Tronos e as Dominações e todos os coros celestes, proclamamos o hino da vossa glória, cantando (dizendo) a uma só voz:"],
+          ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
+          ["Orientação", "Oração Eucarística II (regra da paróquia nos fins de semana). SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação na apresentação da hóstia e do cálice."],
+          ["Sacerdote", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
+          ["Todos", "Enviai o vosso Espírito Santo!"],
+          ["Sacerdote", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"],
+          ["Todos", "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"],
+          ["Sacerdote", "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."],
+          ["Todos", "Aceitai, ó Senhor, a nossa oferta!"],
+          ["Sacerdote", "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."],
+          ["Todos", "O Espírito nos una num só corpo!"],
+          ["Sacerdote", "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."],
+          ["Todos", "Lembrai-vos, ó Pai, da vossa Igreja!"],
+          ["Sacerdote", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
+          ["Todos", "Concedei-lhes, ó Senhor, a luz eterna!"],
+          ["Sacerdote", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
+          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."],
+          ["Sacerdote", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
+          ["Todos", "Amém. (cantado na Missa de domingo às 18h30)"]
+        ]
+      },
+      {
+        "titulo": "RITO DA COMUNHÃO",
+        "linhas": [
+          ["Sacerdote", "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"],
+          ["Todos", "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."],
+          ["Sacerdote", "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."],
+          ["Todos", "Vosso é o Reino, o poder e a glória para sempre."],
+          ["Sacerdote", "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A paz do Senhor esteja sempre convosco."],
+          ["Todos", "O amor de Cristo nos uniu."],
+          ["Diácono / Sacerdote", "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."],
+          ["Orientação", "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."],
+          ["Orientação", "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."],
+          ["Todos", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
+          ["Sacerdote", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
+          ["Todos", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
+          ["Orientação", "Comunhão do sacerdote (em silêncio)."],
+          ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
+          ["Cantores", "Canto da Comunhão ."],
+          ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
+          ["Sacerdote", "Oração depois da Comunhão (pág. 427)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITOS DE ENCERRAMENTO",
+        "linhas": [
+          ["Pároco / Diácono / Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."],
+          ["Sacerdote", "Bênção dos pães (quando houver)."],
+          ["Sacerdote", "Nossa Senhora Auxiliadora!"],
+          ["Todos", "Rogai por nós."],
+          ["Sacerdote", "O Senhor esteja convosco!"],
+          ["Todos", "Ele está no meio de nós."],
+          ["Sacerdote", "Abençoe-vos Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Diácono / Sacerdote", "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"],
+          ["Todos", "Graças a Deus."],
+          ["Cantores", "Canto Final."]
+        ]
+      }
+    ]
+  },
+  "preces_10": {
+    "tipo": "preces",
+    "titulo": "Preces — Nosso Senhor Jesus Cristo, Rei do Universo",
+    "formularios": [
+      {
+        "titulo": "Preces – em preparação",
+        "linhas": [
+          ["Orientação", "As preces deste fim de semana (I Vésperas no sábado; Laudes nas Missas de domingo às 9h00 e 11h00; II Vésperas no domingo às 18h30), seguidas da Oração do Jubileu, serão publicadas em breve."]
+        ]
+      }
+    ]
   }
 };

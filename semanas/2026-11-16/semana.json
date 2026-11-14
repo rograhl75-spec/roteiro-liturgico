@@ -1,0 +1,1135 @@
+{
+ "formato": 1,
+ "legacyWeek": 10,
+ "id": "2026-11-16",
+ "periodo": "16 a 22 de novembro",
+ "shortTitle": "16 a 22 de novembro — Nosso Senhor Jesus Cristo, Rei do Universo",
+ "fullTitle": "Semana de 16 a 22 de novembro de 2026 — Nosso Senhor Jesus Cristo, Rei do Universo",
+ "roteiroLabel": "📖 Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo",
+ "roteiroExtras": [],
+ "precesExtras": [],
+ "nota": "Referências das leituras provisórias: o texto completo e as páginas do lecionário serão publicados em breve. Escala conforme a planilha da paróquia; páginas do Missal conforme o roteiro e o índice do Missal Romano.",
+ "dias": [
+  {
+   "data": "2026-11-16",
+   "titulo": "Segunda-feira, 16 de Novembro de 2026",
+   "dia": "Segunda",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Segunda-feira — 16/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões e Direção Espiritual"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 1,1-4; 2,1-5a",
+     "s11_seg_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+     "s11_seg_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 8,12",
+     "s11_seg_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 18,35-43",
+     "s11_seg_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "415",
+    "oferendas": "415",
+    "comunhao": "415",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-17",
+   "titulo": "Terça-feira, 17 de Novembro de 2026",
+   "dia": "Terça",
+   "cor": "branco",
+   "grau": "Memória",
+   "celebracao": "Santa Isabel da Hungria, religiosa — Memória; 33ª Semana do Tempo Comum, Ano Par (II)",
+   "selecaoTitulo": "Terça-feira — 17/11 — Santa Isabel da Hungria",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Manuel José",
+     "confissao",
+     "Direção Espiritual — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 3,1-6.14-22",
+     "s11_ter_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+     "s11_ter_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "1Jo 4,10b",
+     "s11_ter_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 19,1-10",
+     "s11_ter_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "858",
+    "oferendas": "955",
+    "comunhao": "955",
+    "prefacio": "500 (Santos I)",
+    "eucaristica": "537 (OE II)"
+   }
+  },
+  {
+   "data": "2026-11-18",
+   "titulo": "Quarta-feira, 18 de Novembro de 2026",
+   "dia": "Quarta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Quarta-feira — 18/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 4,1-11",
+     "s11_qua_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
+     "s11_qua_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 15,16",
+     "s11_qua_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 19,11-28",
+     "s11_qua_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "415",
+    "oferendas": "415",
+    "comunhao": "415",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-19",
+   "titulo": "Quinta-feira, 19 de Novembro de 2026",
+   "dia": "Quinta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Quinta-feira — 19/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo"
+    ],
+    [
+     "14h00–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Laurindo",
+     "confissao",
+     "Confissões"
+    ],
+    [
+     "14h30–17h30",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Afonso",
+     "confissao",
+     "Confissões — Padre de Schoenstatt"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 5,1-10",
+     "s11_qui_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
+     "s11_qui_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Sl 94(95),8ab",
+     "s11_qui_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 19,41-44",
+     "s11_qui_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "415",
+    "oferendas": "415",
+    "comunhao": "415",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  },
+  {
+   "data": "2026-11-20",
+   "titulo": "Sexta-feira, 20 de Novembro de 2026",
+   "dia": "Sexta",
+   "cor": "verde",
+   "grau": "Féria",
+   "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+   "selecaoTitulo": "Sexta-feira — 20/11",
+   "escala": [
+    [
+     "19h00",
+     "Paróquia Nossa Senhora Auxiliadora",
+     "Pe. Heriberto"
+    ],
+    [
+     "20h00",
+     "Capela de Pedra",
+     "Diác. Pedrinho",
+     "casamento",
+     "Matrimônio — Everton e Maria"
+    ]
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ap 10,8-11",
+     "s11_sex_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 118(119),14.24.72.103.111.131 (R. 103a)",
+     "s11_sex_sal",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Jo 10,27",
+     "s11_sex_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 19,45-48",
+     "s11_sex_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "415",
+    "oferendas": "415",
+    "comunhao": "415",
+    "prefacio": "564 (próprio da OE V)",
+    "eucaristica": "565 (OE V)"
+   }
+  }
+ ],
+ "fimDeSemana": {
+  "titulo": "Fim de semana: 21 e 22 de Novembro de 2026",
+  "dia": "Sábado",
+  "cor": "branco",
+  "grau": "Solenidade",
+  "celebracao": "Nosso Senhor Jesus Cristo, Rei do Universo, Ano A — sábado vespertino e domingo",
+  "selecaoTitulo": "Fim de semana — 21 e 22/11 — Nosso Senhor Jesus Cristo, Rei do Universo",
+  "dias": [
+   {
+    "data": "2026-11-21",
+    "dia": "Sábado",
+    "escala": [
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Afonso"
+     ],
+     [
+      "11h00",
+      "Igreja Matriz",
+      "Pe. Heriberto",
+      "casamento",
+      "Matrimônio — Victor e Julia"
+     ],
+     [
+      "20h00",
+      "Igreja Matriz",
+      "Diác. Rogério",
+      "casamento",
+      "Matrimônio — Naira e Lucas"
+     ]
+    ]
+   },
+   {
+    "data": "2026-11-22",
+    "dia": "Domingo",
+    "escala": [
+     [
+      "09h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "11h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "18h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ]
+   }
+  ],
+  "leituras": [
+   [
+    "1ª Leitura",
+    "Ez 34,11-12.15-17",
+    "s11_dom_l1",
+    ""
+   ],
+   [
+    "Salmo",
+    "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
+    "s11_dom_sal",
+    ""
+   ],
+   [
+    "2ª Leitura",
+    "1Cor 15,20-26.28",
+    "s11_dom_l2",
+    ""
+   ],
+   [
+    "Aclamação ao Evangelho",
+    "Mc 11,9.10",
+    "s11_dom_acl",
+    ""
+   ],
+   [
+    "Evangelho",
+    "Mt 25,31-46",
+    "s11_dom_ev",
+    ""
+   ]
+  ],
+  "missal": {
+   "coleta": "425",
+   "oferendas": "425",
+   "comunhao": "427",
+   "eucaristica": "537 (OE II)",
+   "prefacio": "426 (Nosso Senhor Jesus Cristo, Rei do Universo)",
+   "gloria": "Cantado (pág. 442)",
+   "creio": "Rezado (página omitida)"
+  },
+  "antifonas": "antifonas_11"
+ },
+ "documentos": [
+  "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx"
+ ],
+ "leituras": {
+  "s11_seg_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 1,1-4; 2,1-5a",
+   "day": "Segunda-feira (16/11)",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ap 1,1-4; 2,1-5a"
+  },
+  "s11_seg_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+   "day": "Segunda-feira (16/11)",
+   "text": "Salmo responsorial Sl 1,1-2.3.4.6 (R. Ap 2,7b)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 1,1-2.3.4.6 (R. Ap 2,7b)"
+  },
+  "s11_seg_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "Jo 8,12",
+   "day": "Segunda-feira (16/11)",
+   "text": "Aclamação ao Evangelho Jo 8,12\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — Jo 8,12"
+  },
+  "s11_seg_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 18,35-43",
+   "day": "Segunda-feira (16/11)",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Lc 18,35-43"
+  },
+  "s11_ter_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 3,1-6.14-22",
+   "day": "Terça-feira (17/11) — Santa Isabel da Hungria",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ap 3,1-6.14-22"
+  },
+  "s11_ter_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+   "day": "Terça-feira (17/11) — Santa Isabel da Hungria",
+   "text": "Salmo responsorial Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)"
+  },
+  "s11_ter_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "1Jo 4,10b",
+   "day": "Terça-feira (17/11) — Santa Isabel da Hungria",
+   "text": "Aclamação ao Evangelho 1Jo 4,10b\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — 1Jo 4,10b"
+  },
+  "s11_ter_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 19,1-10",
+   "day": "Terça-feira (17/11) — Santa Isabel da Hungria",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Lc 19,1-10"
+  },
+  "s11_qua_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 4,1-11",
+   "day": "Quarta-feira (18/11)",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ap 4,1-11"
+  },
+  "s11_qua_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
+   "day": "Quarta-feira (18/11)",
+   "text": "Salmo responsorial Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)"
+  },
+  "s11_qua_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "Jo 15,16",
+   "day": "Quarta-feira (18/11)",
+   "text": "Aclamação ao Evangelho Jo 15,16\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — Jo 15,16"
+  },
+  "s11_qua_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 19,11-28",
+   "day": "Quarta-feira (18/11)",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Lc 19,11-28"
+  },
+  "s11_qui_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 5,1-10",
+   "day": "Quinta-feira (19/11)",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ap 5,1-10"
+  },
+  "s11_qui_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
+   "day": "Quinta-feira (19/11)",
+   "text": "Salmo responsorial Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)"
+  },
+  "s11_qui_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "Sl 94(95),8ab",
+   "day": "Quinta-feira (19/11)",
+   "text": "Aclamação ao Evangelho Sl 94(95),8ab\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — Sl 94(95),8ab"
+  },
+  "s11_qui_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 19,41-44",
+   "day": "Quinta-feira (19/11)",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Lc 19,41-44"
+  },
+  "s11_sex_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ap 10,8-11",
+   "day": "Sexta-feira (20/11)",
+   "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ap 10,8-11"
+  },
+  "s11_sex_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 118(119),14.24.72.103.111.131 (R. 103a)",
+   "day": "Sexta-feira (20/11)",
+   "text": "Salmo responsorial Sl 118(119),14.24.72.103.111.131 (R. 103a)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a)"
+  },
+  "s11_sex_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "Jo 10,27",
+   "day": "Sexta-feira (20/11)",
+   "text": "Aclamação ao Evangelho Jo 10,27\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — Jo 10,27"
+  },
+  "s11_sex_ev": {
+   "momento": "Evangelho",
+   "referencia": "Lc 19,45-48",
+   "day": "Sexta-feira (20/11)",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Lc 19,45-48"
+  },
+  "s11_dom_l1": {
+   "momento": "1ª Leitura",
+   "referencia": "Ez 34,11-12.15-17",
+   "day": "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "text": "PRIMEIRA LEITURA\nLeitura da Profecia de Ezequiel\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "1ª Leitura — Ez 34,11-12.15-17"
+  },
+  "s11_dom_sal": {
+   "momento": "Salmo Responsorial",
+   "referencia": "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
+   "day": "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "text": "Salmo responsorial Sl 22(23),1-2a.2b-3.5-6 (R. 1)\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1)"
+  },
+  "s11_dom_l2": {
+   "momento": "2ª Leitura",
+   "referencia": "1Cor 15,20-26.28",
+   "day": "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "text": "SEGUNDA LEITURA\nLeitura da Primeira Carta de São Paulo aos Coríntios\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "2ª Leitura — 1Cor 15,20-26.28"
+  },
+  "s11_dom_acl": {
+   "momento": "Aclamação ao Evangelho",
+   "referencia": "Mc 11,9.10",
+   "day": "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "text": "Aclamação ao Evangelho Mc 11,9.10\nR. Aleluia, Aleluia, Aleluia.\nTexto da aclamação será publicado em breve.",
+   "title": "Aclamação ao Evangelho — Mc 11,9.10"
+  },
+  "s11_dom_ev": {
+   "momento": "Evangelho",
+   "referencia": "Mt 25,31-46",
+   "day": "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus\nTexto completo da leitura será publicado em breve (arquivo de Leituras da semana).",
+   "title": "Evangelho — Mt 25,31-46"
+  }
+ },
+ "antifonas": {
+  "antifonas_11": {
+   "title": "Antífonas, Aclamação e Citações para a transmissão — Nosso Senhor Jesus Cristo, Rei do Universo (21 e 22/11/2026)",
+   "items": [
+    {
+     "label": "Antífona de Entrada",
+     "reference": "Missal Romano — Ap 5,12; 1,6",
+     "text": "O Cordeiro imolado é digno de receber o poder, a riqueza, a sabedoria e a força, a honra, a glória e o louvor, a ele glória e poder, pelos séculos dos séculos."
+    },
+    {
+     "label": "Aclamação ao Evangelho",
+     "reference": "Mc 11,9.10",
+     "text": "R. Aleluia, Aleluia, Aleluia.\n    Texto da aclamação será publicado em breve."
+    },
+    {
+     "label": "Antífona de Comunhão",
+     "options": [
+      {
+       "reference": "Missal Romano — Cf. Sl 28,10-11",
+       "text": "O Senhor em seu trono reinará para sempre; o Senhor abençoará o seu povo na paz."
+      }
+     ]
+    }
+   ],
+   "citations": []
+  }
+ },
+ "roteiros": {
+  "roteiro_10": {
+   "tipo": "roteiro",
+   "titulo": "Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo — 21 e 22/11/2026",
+   "fonte": "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx",
+   "cabecalho": "● SOLENIDADE DE NOSSO SENHOR JESUS CRISTO, REI DO UNIVERSO – 21 E 22 NOVEMBRO 2026 – ANO A – COR BRANCA",
+   "secoes": [
+    {
+     "titulo": "Orientações",
+     "linhas": [
+      [
+       "Orientação",
+       "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas com «SOMENTE NA MISSA DE DOMINGO ÀS 18h30»."
+      ],
+      [
+       "Orientação",
+       "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."
+      ],
+      [
+       "Orientação",
+       "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS INICIAIS",
+     "linhas": [
+      [
+       "Comentarista",
+       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+      ],
+      [
+       "Comentarista",
+       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Comentarista",
+       "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""
+      ],
+      [
+       "Cantores",
+       "Canto de Entrada"
+      ],
+      [
+       "Orientação",
+       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."
+      ],
+      [
+       "Sacerdote",
+       "Em nome do Pai ✠ e do Filho e do Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."
+      ],
+      [
+       "Todos",
+       "Bendito seja Deus que nos reuniu no amor de Cristo."
+      ],
+      [
+       "Sacerdote",
+       "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."
+      ],
+      [
+       "Cantores",
+       "Ato Penitencial"
+      ],
+      [
+       "Sacerdote",
+       "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Cristo, tende piedade de nós."
+      ],
+      [
+       "Sacerdote",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Todos",
+       "Senhor, tende piedade de nós."
+      ],
+      [
+       "Cantores e Todos",
+       "“Glória a Deus nas alturas” (sempre nas solenidades) ."
+      ],
+      [
+       "Orientação",
+       "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."
+      ],
+      [
+       "Sacerdote",
+       "Oração da Coleta (pág. 425)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA DA PALAVRA",
+     "linhas": [
+      [
+       "Leitor",
+       "Ez 34,11-12.15-17"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio para meditar a Palavra (IGMR 56)."
+      ],
+      [
+       "Salmista",
+       "Salmo Responsorial Sl 22(23),1-2a.2b-3.5-6 (R. 1)"
+      ],
+      [
+       "Leitor",
+       "1Cor 15,20-26.28"
+      ],
+      [
+       "Leitor",
+       "Palavra do Senhor."
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores e Todos",
+       "Aclamação ao Evangelho ."
+      ],
+      [
+       "Orientação",
+       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Proclamação do Evangelho de Jesus Cristo segundo Mateus."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Mt 25,31-46"
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Palavra da Salvação."
+      ],
+      [
+       "Todos",
+       "Glória a vós, Senhor."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "Homilia."
+      ],
+      [
+       "Sacerdote / Diácono",
+       "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."
+      ],
+      [
+       "Todos",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Orientação",
+       "Breve silêncio depois da homilia (IGMR 66)."
+      ],
+      [
+       "Sacerdote e Todos",
+       "(Profissão de fé – Símbolo Niceno-Constantinopolitano) Creio em um só Deus, Pai todo-poderoso, criador do céu e da terra, de todas as coisas visíveis e invisíveis. Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus de Deus, luz da luz, Deus verdadeiro de Deus verdadeiro, gerado, não criado, consubstancial ao Pai. Por ele todas as coisas foram feitas. E por nós, homens, e para nossa salvação, desceu dos céus (todos se inclinam) e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem. Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado. Ressuscitou ao terceiro dia, conforme as Escrituras, e subiu aos céus, onde está sentado à direita do Pai. E de novo há de vir, em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim. Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho; e com o Pai e o Filho é adorado e glorificado: ele que falou pelos profetas. Creio na Igreja, una, santa, católica e apostólica. Professo um só Batismo para a remissão dos pecados. E espero a ressurreição dos mortos e a vida do mundo que há de vir. Amém."
+      ],
+      [
+       "Sacerdote",
+       "Faz a introdução às preces."
+      ],
+      [
+       "Diácono / Leitor",
+       "Conforme formulário de preces para cada horário."
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "LITURGIA EUCARÍSTICA",
+     "linhas": [
+      [
+       "Comentarista",
+       "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."
+      ],
+      [
+       "Cantores",
+       "Canto das Oferendas"
+      ],
+      [
+       "Sacerdote",
+       "Preparação das oferendas."
+      ],
+      [
+       "Orientação",
+       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."
+      ],
+      [
+       "Sacerdote",
+       "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."
+      ],
+      [
+       "Todos",
+       "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
+      ],
+      [
+       "Sacerdote",
+       "Oração sobre as Oferendas (pág. 425)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco."
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Sacerdote",
+       "Corações ao alto."
+      ],
+      [
+       "Todos",
+       "O nosso coração está em Deus."
+      ],
+      [
+       "Sacerdote",
+       "Demos graças ao Senhor, nosso Deus."
+      ],
+      [
+       "Todos",
+       "É nosso dever e nossa salvação."
+      ],
+      [
+       "Sacerdote",
+       "Prefácio de Nosso Senhor Jesus Cristo, Rei do Universo (pág. 426)"
+      ],
+      [
+       "Sacerdote",
+       "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. Com óleo de exultação ungistes vosso Filho Unigênito, nosso Senhor Jesus Cristo, Sacerdote eterno e Rei do universo. Oferecendo-se a si mesmo no altar da cruz como vítima pura e pacífica, realizou o mistério da redenção humana. Depois de ter submetido ao seu poder todas as criaturas, entregará à vossa imensa majestade um reino eterno e universal: reino da verdade e da vida, reino da santidade e da graça, reino da justiça, do amor e da paz. Por isso, com os Anjos e os Arcanjos, os Tronos e as Dominações e todos os coros celestes, proclamamos o hino da vossa glória, cantando (dizendo) a uma só voz:"
+      ],
+      [
+       "Todos",
+       "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"
+      ],
+      [
+       "Orientação",
+       "Oração Eucarística II (regra da paróquia nos fins de semana). SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação na apresentação da hóstia e do cálice."
+      ],
+      [
+       "Sacerdote",
+       "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Enviai o vosso Espírito Santo!"
+      ],
+      [
+       "Sacerdote",
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+      ],
+      [
+       "Todos",
+       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+      ],
+      [
+       "Sacerdote",
+       "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."
+      ],
+      [
+       "Todos",
+       "Aceitai, ó Senhor, a nossa oferta!"
+      ],
+      [
+       "Sacerdote",
+       "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."
+      ],
+      [
+       "Todos",
+       "O Espírito nos una num só corpo!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."
+      ],
+      [
+       "Todos",
+       "Lembrai-vos, ó Pai, da vossa Igreja!"
+      ],
+      [
+       "Sacerdote",
+       "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."
+      ],
+      [
+       "Todos",
+       "Concedei-lhes, ó Senhor, a luz eterna!"
+      ],
+      [
+       "Sacerdote",
+       "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."
+      ],
+      [
+       "Orientação",
+       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."
+      ],
+      [
+       "Sacerdote",
+       "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."
+      ],
+      [
+       "Todos",
+       "Amém. (cantado na Missa de domingo às 18h30)"
+      ]
+     ]
+    },
+    {
+     "titulo": "RITO DA COMUNHÃO",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"
+      ],
+      [
+       "Todos",
+       "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."
+      ],
+      [
+       "Sacerdote",
+       "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."
+      ],
+      [
+       "Todos",
+       "Vosso é o Reino, o poder e a glória para sempre."
+      ],
+      [
+       "Sacerdote",
+       "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Sacerdote",
+       "A paz do Senhor esteja sempre convosco."
+      ],
+      [
+       "Todos",
+       "O amor de Cristo nos uniu."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."
+      ],
+      [
+       "Orientação",
+       "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."
+      ],
+      [
+       "Orientação",
+       "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."
+      ],
+      [
+       "Todos",
+       "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."
+      ],
+      [
+       "Sacerdote",
+       "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."
+      ],
+      [
+       "Todos",
+       "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."
+      ],
+      [
+       "Orientação",
+       "Comunhão do sacerdote (em silêncio)."
+      ],
+      [
+       "Comentarista",
+       "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."
+      ],
+      [
+       "Cantores",
+       "Canto da Comunhão ."
+      ],
+      [
+       "Orientação",
+       "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."
+      ],
+      [
+       "Sacerdote",
+       "Oração depois da Comunhão (pág. 427)"
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "RITOS DE ENCERRAMENTO",
+     "linhas": [
+      [
+       "Pároco / Diácono / Comentarista",
+       "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."
+      ],
+      [
+       "Sacerdote",
+       "Bênção dos pães (quando houver)."
+      ],
+      [
+       "Sacerdote",
+       "Nossa Senhora Auxiliadora!"
+      ],
+      [
+       "Todos",
+       "Rogai por nós."
+      ],
+      [
+       "Sacerdote",
+       "O Senhor esteja convosco!"
+      ],
+      [
+       "Todos",
+       "Ele está no meio de nós."
+      ],
+      [
+       "Sacerdote",
+       "Abençoe-vos Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Diácono / Sacerdote",
+       "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"
+      ],
+      [
+       "Todos",
+       "Graças a Deus."
+      ],
+      [
+       "Cantores",
+       "Canto Final."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_10": {
+   "tipo": "preces",
+   "titulo": "Preces — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "formularios": [
+    {
+     "titulo": "Preces – em preparação",
+     "linhas": [
+      [
+       "Orientação",
+       "As preces deste fim de semana (I Vésperas no sábado; Laudes nas Missas de domingo às 9h00 e 11h00; II Vésperas no domingo às 18h30), seguidas da Oração do Jubileu, serão publicadas em breve."
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

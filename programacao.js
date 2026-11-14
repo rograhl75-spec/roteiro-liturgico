@@ -91,7 +91,7 @@
   function tabelaLeituras(dia) {
     return tabela('📖 Liturgia da Palavra', ['Momento', 'Ref. Bíblica', 'Lec. / Pág.'],
       dia.leituras.map(([momento, referencia, chave, pagina]) =>
-        [momento, referenciaClicavel(referencia, chave), pagina || '—']));
+        [momento, referenciaClicavel(referencia, chave), pagina || (momento.startsWith('Aclamação') ? '—' : '<span class="pagina-pendente">a confirmar</span>')]));
   }
 
   function blocoAntifonas(chave) {

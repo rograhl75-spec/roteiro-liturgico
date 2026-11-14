@@ -76,5 +76,30 @@ window.antifonasData = {
         "text": "Feliz é quem na lei do Senhor Deus vai progredindo!"
       }
     ]
+  },
+  "antifonas_11": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Nosso Senhor Jesus Cristo, Rei do Universo (21 e 22/11/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — Ap 5,12; 1,6",
+        "text": "O Cordeiro imolado é digno de receber o poder, a riqueza, a sabedoria e a força, a honra, a glória e o louvor, a ele glória e poder, pelos séculos dos séculos."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Mc 11,9.10",
+        "text": "R. Aleluia, Aleluia, Aleluia.\n    Texto da aclamação será publicado em breve."
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Sl 28,10-11",
+            "text": "O Senhor em seu trono reinará para sempre; o Senhor abençoará o seu povo na paz."
+          }
+        ]
+      }
+    ],
+    "citations": []
   }
 };

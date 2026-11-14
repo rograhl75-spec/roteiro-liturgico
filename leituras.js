@@ -781,6 +781,176 @@ Quanto a este servo inútil,
 jogai-o lá fora, na escuridão.
 Aí haverá choro e ranger de dentes!'".
 Palavra da Salvação.`
+    },
+    /* SEMANA DE 16 A 22 DE NOVEMBRO */
+    's11_seg_l1': {
+        title: "1ª Leitura — Ap 1,1-4; 2,1-5a",
+        day: "Segunda-feira (16/11)",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_seg_sal': {
+        title: "Salmo Responsorial — Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+        day: "Segunda-feira (16/11)",
+        text: `Salmo responsorial Sl 1,1-2.3.4.6 (R. Ap 2,7b)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_seg_acl': {
+        title: "Aclamação ao Evangelho — Jo 8,12",
+        day: "Segunda-feira (16/11)",
+        text: `Aclamação ao Evangelho Jo 8,12
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_seg_ev': {
+        title: "Evangelho — Lc 18,35-43",
+        day: "Segunda-feira (16/11)",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_ter_l1': {
+        title: "1ª Leitura — Ap 3,1-6.14-22",
+        day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_ter_sal': {
+        title: "Salmo Responsorial — Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+        day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        text: `Salmo responsorial Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_ter_acl': {
+        title: "Aclamação ao Evangelho — 1Jo 4,10b",
+        day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        text: `Aclamação ao Evangelho 1Jo 4,10b
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_ter_ev': {
+        title: "Evangelho — Lc 19,1-10",
+        day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qua_l1': {
+        title: "1ª Leitura — Ap 4,1-11",
+        day: "Quarta-feira (18/11)",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qua_sal': {
+        title: "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
+        day: "Quarta-feira (18/11)",
+        text: `Salmo responsorial Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qua_acl': {
+        title: "Aclamação ao Evangelho — Jo 15,16",
+        day: "Quarta-feira (18/11)",
+        text: `Aclamação ao Evangelho Jo 15,16
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_qua_ev': {
+        title: "Evangelho — Lc 19,11-28",
+        day: "Quarta-feira (18/11)",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qui_l1': {
+        title: "1ª Leitura — Ap 5,1-10",
+        day: "Quinta-feira (19/11)",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qui_sal': {
+        title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
+        day: "Quinta-feira (19/11)",
+        text: `Salmo responsorial Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_qui_acl': {
+        title: "Aclamação ao Evangelho — Sl 94(95),8ab",
+        day: "Quinta-feira (19/11)",
+        text: `Aclamação ao Evangelho Sl 94(95),8ab
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_qui_ev': {
+        title: "Evangelho — Lc 19,41-44",
+        day: "Quinta-feira (19/11)",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_sex_l1': {
+        title: "1ª Leitura — Ap 10,8-11",
+        day: "Sexta-feira (20/11)",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_sex_sal': {
+        title: "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a)",
+        day: "Sexta-feira (20/11)",
+        text: `Salmo responsorial Sl 118(119),14.24.72.103.111.131 (R. 103a)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_sex_acl': {
+        title: "Aclamação ao Evangelho — Jo 10,27",
+        day: "Sexta-feira (20/11)",
+        text: `Aclamação ao Evangelho Jo 10,27
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_sex_ev': {
+        title: "Evangelho — Lc 19,45-48",
+        day: "Sexta-feira (20/11)",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_dom_l1': {
+        title: "1ª Leitura — Ez 34,11-12.15-17",
+        day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        text: `PRIMEIRA LEITURA
+Leitura da Profecia de Ezequiel
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_dom_sal': {
+        title: "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
+        day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        text: `Salmo responsorial Sl 22(23),1-2a.2b-3.5-6 (R. 1)
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_dom_l2': {
+        title: "2ª Leitura — 1Cor 15,20-26.28",
+        day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        text: `SEGUNDA LEITURA
+Leitura da Primeira Carta de São Paulo aos Coríntios
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
+    },
+    's11_dom_acl': {
+        title: "Aclamação ao Evangelho — Mc 11,9.10",
+        day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        text: `Aclamação ao Evangelho Mc 11,9.10
+R. Aleluia, Aleluia, Aleluia.
+Texto da aclamação será publicado em breve.`
+    },
+    's11_dom_ev': {
+        title: "Evangelho — Mt 25,31-46",
+        day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Mateus
+Texto completo da leitura será publicado em breve (arquivo de Leituras da semana).`
     }
 };
 

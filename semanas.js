@@ -402,5 +402,404 @@ window.semanasData = [
    "semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx",
    "semanas/2026-11-09/Antífona da entrada e comunhão - 33º Domingo do Tempo Comum 15-11-2026.docx"
   ]
+ },
+ {
+  "legacyWeek": 10,
+  "id": "2026-11-16",
+  "periodo": "16 a 22 de novembro",
+  "shortTitle": "16 a 22 de novembro — Nosso Senhor Jesus Cristo, Rei do Universo",
+  "fullTitle": "Semana de 16 a 22 de novembro de 2026 — Nosso Senhor Jesus Cristo, Rei do Universo",
+  "roteiroLabel": "📖 Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo",
+  "roteiroExtras": [],
+  "precesExtras": [],
+  "nota": "Referências das leituras provisórias: o texto completo e as páginas do lecionário serão publicados em breve. Escala conforme a planilha da paróquia; páginas do Missal conforme o roteiro e o índice do Missal Romano.",
+  "dias": [
+   {
+    "data": "2026-11-16",
+    "titulo": "Segunda-feira, 16 de Novembro de 2026",
+    "dia": "Segunda",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Segunda-feira — 16/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "14h00–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo",
+      "confissao",
+      "Confissões e Direção Espiritual"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 1,1-4; 2,1-5a",
+      "s11_seg_l1",
+      ""
+     ],
+     [
+      "Salmo",
+      "Sl 1,1-2.3.4.6 (R. Ap 2,7b)",
+      "s11_seg_sal",
+      ""
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Jo 8,12",
+      "s11_seg_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 18,35-43",
+      "s11_seg_ev",
+      ""
+     ]
+    ],
+    "missal": {
+     "coleta": "415",
+     "oferendas": "415",
+     "comunhao": "415",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-17",
+    "titulo": "Terça-feira, 17 de Novembro de 2026",
+    "dia": "Terça",
+    "cor": "branco",
+    "grau": "Memória",
+    "celebracao": "Santa Isabel da Hungria, religiosa — Memória; 33ª Semana do Tempo Comum, Ano Par (II)",
+    "selecaoTitulo": "Terça-feira — 17/11 — Santa Isabel da Hungria",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Manuel José"
+     ],
+     [
+      "14h30–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Manuel José",
+      "confissao",
+      "Direção Espiritual — Padre de Schoenstatt"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 3,1-6.14-22",
+      "s11_ter_l1",
+      ""
+     ],
+     [
+      "Salmo",
+      "Sl 14(15),2-3a.3bc-4ab.5 (R. Ap 3,21)",
+      "s11_ter_sal",
+      ""
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "1Jo 4,10b",
+      "s11_ter_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 19,1-10",
+      "s11_ter_ev",
+      ""
+     ]
+    ],
+    "missal": {
+     "coleta": "858",
+     "oferendas": "955",
+     "comunhao": "955",
+     "prefacio": "500 (Santos I)",
+     "eucaristica": "537 (OE II)"
+    }
+   },
+   {
+    "data": "2026-11-18",
+    "titulo": "Quarta-feira, 18 de Novembro de 2026",
+    "dia": "Quarta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Quarta-feira — 18/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 4,1-11",
+      "s11_qua_l1",
+      ""
+     ],
+     [
+      "Salmo",
+      "Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
+      "s11_qua_sal",
+      ""
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Jo 15,16",
+      "s11_qua_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 19,11-28",
+      "s11_qua_ev",
+      ""
+     ]
+    ],
+    "missal": {
+     "coleta": "415",
+     "oferendas": "415",
+     "comunhao": "415",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-19",
+    "titulo": "Quinta-feira, 19 de Novembro de 2026",
+    "dia": "Quinta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Quinta-feira — 19/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "14h00–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo",
+      "confissao",
+      "Confissões"
+     ],
+     [
+      "14h30–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Afonso",
+      "confissao",
+      "Confissões — Padre de Schoenstatt"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 5,1-10",
+      "s11_qui_l1",
+      ""
+     ],
+     [
+      "Salmo",
+      "Sl 149,1-2.3-4.5-6a.9b (R. Ap 5,10)",
+      "s11_qui_sal",
+      ""
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Sl 94(95),8ab",
+      "s11_qui_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 19,41-44",
+      "s11_qui_ev",
+      ""
+     ]
+    ],
+    "missal": {
+     "coleta": "415",
+     "oferendas": "415",
+     "comunhao": "415",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-20",
+    "titulo": "Sexta-feira, 20 de Novembro de 2026",
+    "dia": "Sexta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "33ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Sexta-feira — 20/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "20h00",
+      "Capela de Pedra",
+      "Diác. Pedrinho",
+      "casamento",
+      "Matrimônio — Everton e Maria"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 10,8-11",
+      "s11_sex_l1",
+      ""
+     ],
+     [
+      "Salmo",
+      "Sl 118(119),14.24.72.103.111.131 (R. 103a)",
+      "s11_sex_sal",
+      ""
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Jo 10,27",
+      "s11_sex_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 19,45-48",
+      "s11_sex_ev",
+      ""
+     ]
+    ],
+    "missal": {
+     "coleta": "415",
+     "oferendas": "415",
+     "comunhao": "415",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   }
+  ],
+  "fimDeSemana": {
+   "titulo": "Fim de semana: 21 e 22 de Novembro de 2026",
+   "dia": "Sábado",
+   "cor": "branco",
+   "grau": "Solenidade",
+   "celebracao": "Nosso Senhor Jesus Cristo, Rei do Universo, Ano A — sábado vespertino e domingo",
+   "selecaoTitulo": "Fim de semana — 21 e 22/11 — Nosso Senhor Jesus Cristo, Rei do Universo",
+   "dias": [
+    {
+     "data": "2026-11-21",
+     "dia": "Sábado",
+     "escala": [
+      [
+       "18h30",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Heriberto"
+      ],
+      [
+       "19h00",
+       "Capela São Domingos Sávio",
+       "Pe. Afonso"
+      ],
+      [
+       "11h00",
+       "Igreja Matriz",
+       "Pe. Heriberto",
+       "casamento",
+       "Matrimônio — Victor e Julia"
+      ],
+      [
+       "20h00",
+       "Igreja Matriz",
+       "Diác. Rogério",
+       "casamento",
+       "Matrimônio — Naira e Lucas"
+      ]
+     ]
+    },
+    {
+     "data": "2026-11-22",
+     "dia": "Domingo",
+     "escala": [
+      [
+       "09h00",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Heriberto"
+      ],
+      [
+       "11h00",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Laurindo"
+      ],
+      [
+       "18h30",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Heriberto"
+      ]
+     ]
+    }
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Ez 34,11-12.15-17",
+     "s11_dom_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
+     "s11_dom_sal",
+     ""
+    ],
+    [
+     "2ª Leitura",
+     "1Cor 15,20-26.28",
+     "s11_dom_l2",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Mc 11,9.10",
+     "s11_dom_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 25,31-46",
+     "s11_dom_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "425",
+    "oferendas": "425",
+    "comunhao": "427",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "426 (Nosso Senhor Jesus Cristo, Rei do Universo)",
+    "gloria": "Cantado (pág. 442)",
+    "creio": "Rezado (página omitida)"
+   },
+   "antifonas": "antifonas_11"
+  },
+  "documentos": [
+   "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx"
+  ]
  }
 ];

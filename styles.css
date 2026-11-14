@@ -281,3 +281,10 @@ input:focus-visible {
 
 /* “Baixar PDF” só no computador; no celular o “Enviar PDF” já resolve. */
 @media (pointer: coarse) { .btn-baixar-pdf { display: none !important; } }
+
+/* Dia de hoje em destaque */
+.card.card-hoje { outline: 3px solid #d69e2e; outline-offset: 2px; box-shadow: 0 0 0 6px rgba(214, 158, 46, 0.15); }
+.selo-hoje { display: inline-block; margin-right: 8px; padding: 2px 8px; border-radius: 999px; background: #d69e2e; color: #fff; font-size: 0.75em; vertical-align: middle; }
+.day-nav .nav-hoje { background: #d69e2e; color: #fff; }
+.pagina-pendente { color: #b45309; font-style: italic; font-size: 0.9em; }
+@media print { .selo-hoje { display: none; } .card.card-hoje { outline: none; box-shadow: none; } }

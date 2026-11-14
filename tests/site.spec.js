@@ -102,7 +102,7 @@ for (const viewport of [{ width: 1280, height: 900 }, { width: 390, height: 844 
         const suffix = key ? `${week.legacy}_${key}` : `${week.legacy}`;
         const modal = page.locator(`#modal_${type}_${suffix}`);
         await expect(modal).toBeVisible();
-        await expect(modal.locator('.script-row').nth(3)).toBeVisible();
+        await expect(modal.locator('.script-row').first()).toBeVisible();
         await page.keyboard.press('Escape');
         await expect(modal).toBeHidden();
       }

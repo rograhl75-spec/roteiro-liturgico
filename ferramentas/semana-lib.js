@@ -787,7 +787,7 @@
         titulo: `Fim de semana: ${datas} de ${MESES[Number(domingo.slice(5, 7)) - 1].replace(/^./, (c) => c.toUpperCase())} de ${domingo.slice(0, 4)}`,
         dia: 'Sábado', cor: doRoteiro.cor || doIndice.cor,
         grau: /solenidade/i.test(infoDomingo.linhaCelebracao) ? 'Solenidade' : (doIndice.grau === 'Festa' ? 'Festa' : 'Domingo'),
-        celebracao: `${infoDomingo.linhaCelebracao} — sábado vespertino e domingo`,
+        celebracao: `${infoDomingo.linhaCelebracao.replace(/,\s*Solenidade\b/i, '')} — sábado vespertino e domingo`,
         selecaoTitulo: `Fim de semana — ${sabado.slice(8)} e ${dataCurta(domingo)} — ${nomeDomingo}`,
         dias: [sabado, domingo].map((data) => ({ data, dia: DIAS_CURTOS[diaDaSemana(data)], escala: escala.porDia[data] || [] })),
         leituras: linhasLeituras(infoDomingo, 'dom', rotuloDia),
