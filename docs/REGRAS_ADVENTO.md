@@ -23,7 +23,7 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Memórias | Obrigatórias, até 16/12, seguem o santo. Facultativas não são celebradas. De 17 a 24/12 celebra-se sempre a féria do Advento. |
 | Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) a Missa é a do dia. A devoção ao Sagrado Coração pode ser mantida fora da Missa (por exemplo, a Ladainha antes da Missa). |
 | Ornamentação | Flores e instrumentos com moderação, sem antecipar a alegria do Natal (IGMR 305 e 313). |
-| Coroa do Advento | Logo após a saudação inicial. No 1º Domingo o sacerdote abençoa a coroa (Ritual de Bênçãos) e acende-se a primeira vela; nos demais, acende-se a vela do dia com motivação do comentarista, oração de todos e canto (textos na seção 5). |
+| Coroa do Advento | Logo após a saudação inicial. A bênção é feita **uma só vez**, no 1º Domingo (ou na primeira Missa do sábado à noite); nos demais domingos só se acende a vela do dia. Sequência na seção 5. |
 | Acolhida (monição inicial) | Sempre uma acolhida da comunidade, sem antecipar as leituras nem o tema da liturgia (vale para todo o ano). |
 | Aclamação depois da consagração | No Advento: «Mistério da fé e do amor!» – «Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!» |
 | Imaculada Conceição | Nos horários normais das Missas do dia. |
@@ -58,7 +58,17 @@ Santa Luzia (13/12) cai no domingo e não é celebrada. Nossa Senhora de Guadalu
 
 ## 5. Acendimento das velas da Coroa do Advento
 
-Depois da saudação inicial: o comentarista faz a motivação, todos rezam a oração e acende-se a vela enquanto se canta. Os textos são da paróquia; a bênção da coroa no 1º Domingo segue o Ritual de Bênçãos.
+Sequência no **1º Domingo**, depois da saudação inicial:
+
+1. Bênção da coroa pelo sacerdote. Dentro da Missa omite-se o diálogo «O nosso auxílio está no nome do Senhor», porque a saudação já foi feita:
+   > Oremos. Senhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor. – **Amém.**
+2. Aspersão da coroa com água benta, em silêncio ou durante um breve canto.
+3. Motivação do comentarista, oração de todos e acendimento da primeira vela enquanto se canta.
+4. Ato penitencial.
+
+Nos **demais domingos**: motivação, oração e acendimento da vela do dia com canto; depois, o ato penitencial.
+
+Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar pelo pároco com o Ritual de Bênçãos). As motivações e orações abaixo são textos da paróquia; não há orações oficiais do sacerdote para cada domingo.
 
 | Domingo | Motivação (comentarista) | Oração (todos) |
 |---|---|---|
