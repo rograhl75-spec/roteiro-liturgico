@@ -311,7 +311,7 @@ window.semanasData = [
       [
        "19h00",
        "Capela São Domingos Sávio",
-       "Pe. Heriberto"
+       "Diác. Pedrinho — Celebração da Palavra"
       ],
       [
        "11h00",

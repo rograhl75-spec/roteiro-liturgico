@@ -1,11 +1,11 @@
 {
-  "version": "cf57d0e1212273dd32772251b4366524cdeed5ba4f03fafb46cb613046199cd5",
+  "version": "7a2b20f1644318b7879f18d84eb5b5f9703995071f7325761c78260cee2a5576",
   "files": {
-    "./index.html": "e29ebdd0720f4d009a68bc75a41e3faea9a2f5c4bf9d7a1c098f8c655d888843",
+    "./index.html": "b5273bb00a5e51cfac05d1be808f81352af86534e50830aae1b449bcd2095467",
     "./styles.css": "57ae950a0b577752354bffe422cdf3a5f524d3a8265d08c7c8f86158e91be615",
     "./app.js": "10ad261c2d3d1536c2f6c921867aced3c23f43e24f85793fddd98a164cfe4e83",
     "./programacao.js": "15c3af03090c0c42d6e760350a008cab4bead67d0f7d03e5482fe93c1cdb2ea9",
-    "./semanas.js": "a638b245dfa9674a57891d52be6fc2e209e32292a7527e9e7af767a7cfa6d969",
+    "./semanas.js": "46ad5b1c5caccb6357a46cd91a6863b2be99671a7e6dbbea30d8b2ee09dff9e7",
     "./leituras.js": "e456d5351ac965acbdc40d55eb614aaa01b37cf05227cf87d2fff38e2005838f",
     "./antifonas.js": "509edb9234c9f5a8cb19f7655fdda359888eff9ec575b11ac321b9456e0a7f55",
     "./roteiros.js": "4e3ac48f1727dd0cf5ed1880034738b9ff3d610e46fc67d21e151017bd509c18",
