@@ -77,3 +77,14 @@ Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar 
 | 2º Domingo – conversão | Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida. | Senhor Jesus, Bom Pastor que vens consolar o teu povo, aplana os caminhos do nosso coração: enche os vales da nossa fraqueza e abaixa os montes do nosso orgulho, para que te recebamos com fé e vivamos na justiça e na paz. Vem, Senhor Jesus! | Is 40 (consolai; preparai o caminho; o pastor); Sl 84; 2Pd 3 (justiça); Mc 1,1-8 (voz no deserto) |
 | 3º Domingo – vela rósea – alegria | Acendemos a terceira vela, de cor rósea: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos. | Senhor Jesus, luz verdadeira que já estás no meio de nós, faze-nos sempre alegres, perseverantes na oração e agradecidos em todas as circunstâncias, para que sejamos testemunhas da tua luz junto dos irmãos. Vem, Senhor Jesus! | Antífona Gaudete (o Senhor está perto); Is 61 (boa-nova aos pobres); 1Ts 5,16-24 (sempre alegres); Jo 1 (testemunha da luz) |
 | 4º Domingo – acolhida, com Maria | Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim. | Senhor Jesus, Filho de Davi e Filho de Maria, faze dos nossos corações a tua morada. Que, como Maria, saibamos dizer: faça-se em nós segundo a tua palavra. Vem, Senhor Jesus! | 2Sm 7 (casa e reino de Davi); Lc 1,26-38 (Anunciação: faça-se em mim) |
+
+## 6. Natal 2026 (definido pelo Diácono Rogério em 14/11/2026)
+
+| Item | Regra |
+|---|---|
+| 24/12, 19h00 (Matriz e Capela) | **Missa da Noite** de Natal (Missal, págs. 128-129). |
+| 25/12, 19h00 | Natal do Senhor – **Missa do Dia** (págs. 132-133). |
+| 24 e 25/12 | Regras da Missa solene: incenso, «Por Cristo» e Amém cantados. Glória; Creio (todos se ajoelham ao «E se encarnou»). **Oração Eucarística I** (Cânon Romano, pág. 523), com o «Em comunhão» próprio do Natal (pág. 526: «a noite santíssima» na Missa da Noite; «o dia santíssimo» na Missa do Dia). Prefácio do Natal I (pág. 455; ou II/III). Bênção Solene do Natal (págs. 129 e 133). |
+| Bênção do presépio | Sim, na Missa da Noite, depois da homilia (texto do Ritual de Bênçãos a definir com o pároco). Anúncio do Natal opcional após a saudação (págs. 1216-1219). |
+| Sagrada Família (26 e 27/12) | Festa no domingo: Glória e Creio; OE II (regra dos fins de semana); Prefácio do Natal I. Leituras: **Eclo 3 e Cl 3**; Evangelho Lc 2,22-40 (ou breve 2,22.39-40). Bênção Solene do Natal opcional (pág. 579). |
+| Aprovação | A semana de 21 a 27/12 segue a mesma regra do Advento: rascunho até o "aprovado". |
