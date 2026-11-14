@@ -137,7 +137,7 @@ window.roteirosData = {
       {
         "titulo": "RITOS DE ENCERRAMENTO",
         "linhas": [
-          ["Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a)."],
+          ["Pároco / Diácono / Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."],
           ["Sacerdote", "Bênção dos pães (quando houver)."],
           ["Sacerdote", "Nossa Senhora Auxiliadora!"],
           ["Todos", "Rogai por nós."],
