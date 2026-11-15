@@ -9,5 +9,14 @@
    - traz o texto completo da bênção/rito com ℟. e ✠;
    - formato litúrgico, papel A5, letras grandes: texto 16 pt, rubricas 14 pt em vermelho itálico, títulos em vermelho;
    - entra no painel de aprovação e na página como botão “📄 … (impressão)”.
-5. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
-6. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
+5. **Forma dos roteiros (aproximar dos livros litúrgicos)**:
+   - somente informações do próprio dia (nada sobre outros domingos, Páscoa, Tempo Comum etc.);
+   - uma única fonte (Garamond, serifada como os livros litúrgicos); a cruz ✠ em vermelho, com fonte que a exibe (Segoe UI Symbol);
+   - «Oremos.» em linha própria, em negrito, antes da oração;
+   - rubricas (o que se faz) em vermelho itálico; o que se diz em preto, sem aspas, negrito ou itálico;
+   - abertura: saudação do comentarista (℟. Para sempre seja louvado) → intenções só nas Missas transmitidas → monição inicial → canto de entrada;
+   - ritos próprios (ex.: coroa do Advento) com as rubricas na ordem em que acontecem;
+   - os roteiros de 2025 são a base, mas sem notas internas («como em 2025», «dinâmica de 2025»).
+6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
+7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
+8. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.

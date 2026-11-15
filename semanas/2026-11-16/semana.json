@@ -632,7 +632,7 @@
      "linhas": [
       [
        "Orientação",
-       "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas com «SOMENTE NA MISSA DE DOMINGO ÀS 18h30»."
+       "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas «Na Missa de domingo às 18h30»."
       ],
       [
        "Orientação",
@@ -652,16 +652,32 @@
      "titulo": "RITOS INICIAIS",
      "linhas": [
       [
-       "Comentarista",
-       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+       "Orientação",
+       "Antes do canto de entrada, o comentarista saúda a assembleia:"
       ],
       [
        "Comentarista",
-       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+       "Louvado seja Nosso Senhor Jesus Cristo!"
+      ],
+      [
+       "Todos",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Orientação",
+       "Somente nas Missas transmitidas, o comentarista apresenta as intenções:"
       ],
       [
        "Comentarista",
-       "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""
+       "As intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Orientação",
+       "Monição inicial:"
+      ],
+      [
+       "Comentarista",
+       "Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando."
       ],
       [
        "Cantores",
@@ -669,7 +685,7 @@
       ],
       [
        "Orientação",
-       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."
+       "Na Missa de domingo às 18h30: incensação da cruz e do altar (IGMR 49 e 276)."
       ],
       [
        "Sacerdote",
@@ -736,8 +752,12 @@
        "“Glória a Deus nas alturas” (sempre nas solenidades) ."
       ],
       [
+       "Sacerdote",
+       "Oremos."
+      ],
+      [
        "Orientação",
-       "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."
+       "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
        "Sacerdote",
@@ -790,7 +810,7 @@
       ],
       [
        "Orientação",
-       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação do Evangeliário (IGMR 134)."
+       "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."
       ],
       [
        "Diácono / Sacerdote",
@@ -875,7 +895,7 @@
       ],
       [
        "Orientação",
-       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."
+       "Na Missa de domingo às 18h30: incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."
       ],
       [
        "Sacerdote",
@@ -931,7 +951,7 @@
       ],
       [
        "Orientação",
-       "Oração Eucarística II (regra da paróquia nos fins de semana). SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação na apresentação da hóstia e do cálice."
+       "Oração Eucarística II. Na Missa de domingo às 18h30: incensação na apresentação da hóstia e do cálice."
       ],
       [
        "Sacerdote",
@@ -987,7 +1007,7 @@
       ],
       [
        "Orientação",
-       "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."
+       "Na Missa de domingo às 18h30: o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."
       ],
       [
        "Sacerdote",
@@ -1073,6 +1093,10 @@
       [
        "Orientação",
        "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."
+      ],
+      [
+       "Sacerdote",
+       "Oremos."
       ],
       [
        "Sacerdote",

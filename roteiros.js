@@ -217,7 +217,7 @@ window.roteirosData = {
       {
         "titulo": "Orientações",
         "linhas": [
-          ["Orientação", "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas com «SOMENTE NA MISSA DE DOMINGO ÀS 18h30»."],
+          ["Orientação", "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas «Na Missa de domingo às 18h30»."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
@@ -226,11 +226,15 @@ window.roteirosData = {
       {
         "titulo": "RITOS INICIAIS",
         "linhas": [
-          ["Comentarista", "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."],
-          ["Comentarista", "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
+          ["Orientação", "Antes do canto de entrada, o comentarista saúda a assembleia:"],
+          ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "Somente nas Missas transmitidas, o comentarista apresenta as intenções:"],
+          ["Comentarista", "As intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Monição inicial:"],
+          ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
-          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."],
+          ["Orientação", "Na Missa de domingo às 18h30: incensação da cruz e do altar (IGMR 49 e 276)."],
           ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
           ["Todos", "Amém."],
           ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
@@ -247,7 +251,8 @@ window.roteirosData = {
           ["Sacerdote", "Senhor, tende piedade de nós."],
           ["Todos", "Senhor, tende piedade de nós."],
           ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
-          ["Orientação", "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."],
+          ["Sacerdote", "Oremos."],
+          ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
           ["Sacerdote", "Oração da Coleta (pág. 425)"],
           ["Todos", "Amém."]
         ]
@@ -264,7 +269,7 @@ window.roteirosData = {
           ["Leitor", "Palavra do Senhor."],
           ["Todos", "Graças a Deus."],
           ["Cantores e Todos", "Aclamação ao Evangelho ."],
-          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação do Evangeliário (IGMR 134)."],
+          ["Orientação", "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."],
           ["Diácono / Sacerdote", "O Senhor esteja convosco."],
           ["Todos", "Ele está no meio de nós."],
           ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Mateus."],
@@ -289,7 +294,7 @@ window.roteirosData = {
           ["Comentarista", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
           ["Cantores", "Canto das Oferendas"],
           ["Sacerdote", "Preparação das oferendas."],
-          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
+          ["Orientação", "Na Missa de domingo às 18h30: incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
           ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
           ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
           ["Sacerdote", "Oração sobre as Oferendas (pág. 425)"],
@@ -303,7 +308,7 @@ window.roteirosData = {
           ["Sacerdote", "Prefácio de Nosso Senhor Jesus Cristo, Rei do Universo (pág. 426)"],
           ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. Com óleo de exultação ungistes vosso Filho Unigênito, nosso Senhor Jesus Cristo, Sacerdote eterno e Rei do universo. Oferecendo-se a si mesmo no altar da cruz como vítima pura e pacífica, realizou o mistério da redenção humana. Depois de ter submetido ao seu poder todas as criaturas, entregará à vossa imensa majestade um reino eterno e universal: reino da verdade e da vida, reino da santidade e da graça, reino da justiça, do amor e da paz. Por isso, com os Anjos e os Arcanjos, os Tronos e as Dominações e todos os coros celestes, proclamamos o hino da vossa glória, cantando (dizendo) a uma só voz:"],
           ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
-          ["Orientação", "Oração Eucarística II (regra da paróquia nos fins de semana). SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação na apresentação da hóstia e do cálice."],
+          ["Orientação", "Oração Eucarística II. Na Missa de domingo às 18h30: incensação na apresentação da hóstia e do cálice."],
           ["Sacerdote", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
           ["Todos", "Enviai o vosso Espírito Santo!"],
           ["Sacerdote", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"],
@@ -317,7 +322,7 @@ window.roteirosData = {
           ["Sacerdote", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
           ["Todos", "Concedei-lhes, ó Senhor, a luz eterna!"],
           ["Sacerdote", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
-          ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."],
+          ["Orientação", "Na Missa de domingo às 18h30: o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."],
           ["Sacerdote", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
           ["Todos", "Amém. (cantado na Missa de domingo às 18h30)"]
         ]
@@ -343,6 +348,7 @@ window.roteirosData = {
           ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
           ["Cantores", "Canto da Comunhão ."],
           ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
+          ["Sacerdote", "Oremos."],
           ["Sacerdote", "Oração depois da Comunhão (pág. 427)"],
           ["Todos", "Amém."]
         ]

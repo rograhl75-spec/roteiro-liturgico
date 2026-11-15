@@ -640,7 +640,7 @@
      "linhas": [
       [
        "Orientação",
-       "TEMPO DO ADVENTO – cor roxa; no 3º Domingo (Gaudete), cor rósea. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+       "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
       ],
       [
        "Orientação",
@@ -660,16 +660,32 @@
      "titulo": "RITOS INICIAIS",
      "linhas": [
       [
-       "Comentarista",
-       "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."
+       "Orientação",
+       "Antes do canto de entrada, o comentarista saúda a assembleia:"
       ],
       [
        "Comentarista",
-       "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+       "Louvado seja Nosso Senhor Jesus Cristo!"
+      ],
+      [
+       "Todos",
+       "Para sempre seja louvado."
+      ],
+      [
+       "Orientação",
+       "Somente nas Missas transmitidas, o comentarista apresenta as intenções:"
       ],
       [
        "Comentarista",
-       "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Com alegria, acompanhemos a procissão de entrada, cantando…\""
+       "As intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
+      ],
+      [
+       "Orientação",
+       "Monição inicial:"
+      ],
+      [
+       "Comentarista",
+       "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Com alegria, acompanhemos a procissão de entrada, cantando."
       ],
       [
        "Cantores",
@@ -693,15 +709,11 @@
       ],
       [
        "Orientação",
-       "Coroa do Advento, logo após a saudação inicial: bênção da coroa; motivação; procissão com a primeira vela; oração do sacerdote e bênção das velas trazidas pela comunidade para a coroa das famílias (dinâmica de 2025)."
-      ],
-      [
-       "Orientação",
-       "Somente no 1º Domingo – Bênção da Coroa do Advento. Dentro da Missa omite-se o diálogo «O nosso auxílio está no nome do Senhor», porque a saudação já foi feita; começa-se pelo «Oremos»."
+       "BÊNÇÃO DA COROA DO ADVENTO. Depois da saudação, omitido o versículo «O nosso auxílio está no nome do Senhor», o sacerdote diz:"
       ],
       [
        "Sacerdote",
-       "Oremos. Senhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."
+       "Oremos.\nSenhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."
       ],
       [
        "Todos",
@@ -709,7 +721,11 @@
       ],
       [
        "Orientação",
-       "O sacerdote asperge a coroa com água benta, em silêncio ou durante um breve canto. Segue-se o acendimento da primeira vela (motivação, oração e canto)."
+       "O sacerdote asperge a coroa com água benta, em silêncio ou durante um breve canto."
+      ],
+      [
+       "Orientação",
+       "ACENDIMENTO DA PRIMEIRA VELA. O comentarista faz a motivação:"
       ],
       [
        "Comentarista",
@@ -717,11 +733,15 @@
       ],
       [
        "Orientação",
-       "Uma pessoa (leitores, preces, liturgia ou comunidade), com túnica na cor da vela, traz a primeira vela (verde) acesa, em procissão pelo corredor central, e aproxima-se da coroa e coloca a vela no lugar próprio, enquanto o sacerdote reza a oração."
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica verde, traz a primeira vela acesa em procissão pelo corredor central e a coloca na coroa."
       ],
       [
        "Cantores",
        "Canto durante a procissão da vela."
+      ],
+      [
+       "Orientação",
+       "Colocada a vela, o sacerdote diz:"
       ],
       [
        "Sacerdote",
@@ -733,15 +753,19 @@
       ],
       [
        "Orientação",
-       "O sacerdote abençoa as velas trazidas pela comunidade para a coroa das famílias; todos as elevam nesse momento."
+       "BÊNÇÃO DAS VELAS DAS FAMÍLIAS. Todos elevam as velas que trouxeram para a coroa do Advento de suas casas, e o sacerdote diz:"
       ],
       [
        "Sacerdote",
-       "Oremos. Deus de eterna promessa, que iluminastes vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas que vossos filhos trazem para formar a coroa do Advento em seus lares. Que a vela verde, sinal da esperança cristã, recorde a cada família que Cristo vem para renovar nossos caminhos e fortalecer nossa confiança em vosso amor. Que sua luz nos ajude a viver vigilantes, firmes na fé e prontos para acolher o Senhor que se aproxima. Por Cristo, nosso Senhor."
+       "Oremos.\nDeus de eterna promessa, que iluminastes vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas que vossos filhos trazem para formar a coroa do Advento em seus lares. Que a vela verde, sinal da esperança cristã, recorde a cada família que Cristo vem para renovar nossos caminhos e fortalecer nossa confiança em vosso amor. Que sua luz nos ajude a viver vigilantes, firmes na fé e prontos para acolher o Senhor que se aproxima. Por Cristo, nosso Senhor."
       ],
       [
        "Todos",
        "Amém."
+      ],
+      [
+       "Orientação",
+       "Segue-se o ato penitencial."
       ],
       [
        "Sacerdote",
@@ -788,8 +812,12 @@
        "Senhor, tende piedade de nós."
       ],
       [
+       "Sacerdote",
+       "Oremos."
+      ],
+      [
        "Orientação",
-       "O sacerdote diz «Oremos» e todos rezam um momento em silêncio (IGMR 54)."
+       "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
        "Sacerdote",
@@ -1109,6 +1137,10 @@
       [
        "Orientação",
        "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."
+      ],
+      [
+       "Sacerdote",
+       "Oremos."
       ],
       [
        "Sacerdote",
