@@ -145,10 +145,10 @@
     }
 
     for (const secao of dia.secoes) {
-      leituras.push({ parte: secao.chave, referencia: secao.referencia || '', texto: semFraseTitulo(secao.linhas).join('\n'), secao });
+      leituras.push({ parte: secao.chave, referencia: secao.referencia || '', texto: semFraseTitulo(secao.linhas).join('\n'), frase: fraseTitulo(secao.linhas), secao });
       if (secao.breve && !dia.secoes.some((s) => s.chave === `${secao.chave}_breve`)) {
         const texto = textoMaisBreve(secao.linhas, secao.breve);
-        if (texto) leituras.push({ parte: `${secao.chave}_breve`, referencia: secao.breve, texto, secao });
+        if (texto) leituras.push({ parte: `${secao.chave}_breve`, referencia: secao.breve, texto, frase: fraseTitulo(secao.linhas), secao });
         else avisos.push(`${dataCurta(dia.data)}: não consegui separar a forma mais breve (${secao.breve}).`);
       }
     }
@@ -163,6 +163,12 @@
   function semFraseTitulo(linhas) {
     const iAbertura = linhas.findIndex((l) => RX_ABERTURA.test(l));
     return iAbertura > 1 && iAbertura <= 5 ? [linhas[0], ...linhas.slice(iAbertura)] : linhas;
+  }
+
+  /* Frase-título (Lecionário): linhas entre o rótulo e a abertura. */
+  function fraseTitulo(linhas) {
+    const iAbertura = linhas.findIndex((l) => RX_ABERTURA.test(l));
+    return iAbertura > 1 && iAbertura <= 5 ? linhas.slice(1, iAbertura).join(' ') : '';
   }
 
   function versiculos(espec) {
@@ -742,7 +748,7 @@
       const chave = `${prefixo}_${codigo}_${l.parte}`;
       const pagina = base === 'acl' ? '' : paginaLecionario(paginas, l.referencia);
       leiturasJs[chave] = { momento: MOMENTOS_LONGOS[base] ? momento.replace(MOMENTOS[base], MOMENTOS_LONGOS[base]) : momento,
-        referencia: l.referencia, day: rotuloDia, text: l.texto };
+        referencia: l.referencia, day: rotuloDia, text: l.texto, ...(l.frase ? { frase: l.frase } : {}) };
       return [momento, l.referencia, chave, pagina];
     });
 

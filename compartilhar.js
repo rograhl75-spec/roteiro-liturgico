@@ -46,8 +46,12 @@
     const fontes = {
       normal: await pdf.embedFont(StandardFonts.Helvetica),
       negrito: await pdf.embedFont(StandardFonts.HelveticaBold),
-      italico: await pdf.embedFont(StandardFonts.HelveticaOblique)
+      italico: await pdf.embedFont(StandardFonts.HelveticaOblique),
+      serif: await pdf.embedFont(StandardFonts.TimesRoman),
+      serifNegrito: await pdf.embedFont(StandardFonts.TimesRomanBold),
+      serifItalico: await pdf.embedFont(StandardFonts.TimesRomanItalic)
     };
+    const VERMELHO = [0.72, 0.1, 0.1];
     const suportado = new Map();
     // Remove caracteres que a fonte padrão do PDF não tem (ex.: emojis).
     const limpar = (texto) => [...String(texto ?? '').replace(/\t/g, ' ').replace(/[   ]/g, ' ')]
@@ -108,6 +112,68 @@
       y -= 4;
     }
 
+    /* Linha com trechos de fontes/cores diferentes, quebrada por palavras (recuo pendente). */
+    function escreverRico(trechos, { tam = 12.5, entrelinha = 1.32, recuo = 0, pendente = 0, antes = 0, depois = 0 } = {}) {
+      const palavras = [];
+      for (const tr of trechos) {
+        const txt = limpar(tr.texto);
+        if (!txt) continue;
+        txt.split(/(\s+)/).forEach((p) => { if (p) palavras.push({ ...tr, texto: p }); });
+      }
+      if (!palavras.length) return;
+      y -= antes;
+      const linhas = [[]];
+      let larg = 0;
+      const max = (n) => largura - recuo - (n ? pendente : 0);
+      for (const p of palavras) {
+        const t = p.tam || tam;
+        const w = fontes[p.fonte || 'serif'].widthOfTextAtSize(p.texto, t);
+        if (/^\s+$/.test(p.texto) && !linhas[linhas.length - 1].length) continue;
+        if (larg + w > max(linhas.length - 1) && linhas[linhas.length - 1].length && !/^\s+$/.test(p.texto)) { linhas.push([]); larg = 0; }
+        if (/^\s+$/.test(p.texto) && !linhas[linhas.length - 1].length) continue;
+        linhas[linhas.length - 1].push({ ...p, w }); larg += w;
+      }
+      linhas.forEach((ln, n) => {
+        garantir(tam * entrelinha);
+        y -= tam;
+        let x = MARGEM + recuo + (n ? pendente : 0);
+        for (const p of ln) {
+          const t = p.tam || tam;
+          pagina.drawText(p.texto, { x, y: y + (p.sobe || 0), size: t, font: fontes[p.fonte || 'serif'], color: rgb(...(p.cor || PRETO)) });
+          x += p.w;
+        }
+        y -= tam * (entrelinha - 1);
+      });
+      y -= depois;
+    }
+
+    function leituraLecionario(leitura) {
+      const a = window.Lecionario.analisar(leitura);
+      const tam = 12.5;
+      garantir(70);
+      y -= 6;
+      y -= tam;
+      pagina.drawText(limpar(a.rubrica), { x: MARGEM, y, size: 11, font: fontes.serifNegrito, color: rgb(...VERMELHO) });
+      if (a.referencia) {
+        const ref = limpar(a.referencia);
+        const w = fontes.serif.widthOfTextAtSize(ref, 11);
+        pagina.drawText(ref, { x: A4[0] - MARGEM - w, y, size: 11, font: fontes.serif, color: rgb(...VERMELHO) });
+      }
+      y -= 3;
+      pagina.drawLine({ start: { x: MARGEM, y }, end: { x: A4[0] - MARGEM, y }, thickness: 0.6, color: rgb(...VERMELHO) });
+      y -= 6;
+      if (a.frase && a.tipo !== 'salmo') escreverRico([{ texto: a.frase, fonte: 'serifItalico', cor: VERMELHO }], { tam, depois: 4 });
+      if (a.abertura) escreverRico([...(a.evangelho ? [{ texto: '† ', fonte: 'serifNegrito', cor: VERMELHO }] : []), { texto: a.abertura, fonte: 'serifNegrito' }], { tam, depois: 4 });
+      for (const b of a.blocos) {
+        if (b.tipo === 'refrao') String(b.texto).split('\n').forEach((t, k, arr) => escreverRico([...(k ? [] : [{ texto: 'R. ', fonte: 'serifNegrito', cor: VERMELHO }]), { texto: t, fonte: 'serifNegrito' }], { tam, recuo: k ? 16 : 0, antes: k ? 0 : 2, depois: k === arr.length - 1 ? 6 : 1 }));
+        else if (b.tipo === 'versiculo') b.texto.split('\n').forEach((t, k) => escreverRico([...(k ? [] : [{ texto: 'V. ', fonte: 'serifNegrito', cor: VERMELHO }]), { texto: t }], { tam, recuo: k ? 16 : 0, depois: 1 }));
+        else if (b.tipo === 'ou') escreverRico([{ texto: b.texto, fonte: 'serifItalico', cor: VERMELHO }], { tam, depois: 2 });
+        else escreverRico([...(b.verso ? [{ texto: `${b.verso} `, fonte: 'serifNegrito', cor: VERMELHO, tam: 8, sobe: 4 }] : []), { texto: b.texto }],
+          { tam, recuo: b.recuo ? 18 : 0, pendente: 16, depois: 1 });
+      }
+      if (a.fecho) escreverRico([{ texto: a.fecho, fonte: 'serifNegrito' }], { tam, antes: 6, depois: 4 });
+    }
+
     function separador() {
       garantir(12);
       y -= 6;
@@ -130,6 +196,7 @@
           escrever(bloco.texto, { fonte: 'negrito', tam: 12.5, cor: bloco.cor || AZUL, antes: 8, depois: 4 });
           break;
         case 'linha': linhaDupla(bloco.papel, bloco.texto, bloco); break;
+        case 'lecionario': leituraLecionario(bloco.leitura); break;
         case 'leitura': {
           // Números de versículo (linhas só com o número) entram no começo da linha seguinte.
           const linhas = [];
@@ -287,8 +354,8 @@
       const leitura = leituras[chave];
       if (!leitura) return;
       blocos.push({ t: 'p', texto: leitura.day.toUpperCase(), negrito: true, tam: 9, cor: AZUL, depois: 2 });
-      blocos.push({ t: 'secao', texto: leitura.title, cor: DOURADO });
-      blocos.push({ t: 'leitura', texto: leitura.text });
+      if (window.Lecionario) blocos.push({ t: 'lecionario', leitura });
+      else { blocos.push({ t: 'secao', texto: leitura.title, cor: DOURADO }); blocos.push({ t: 'leitura', texto: leitura.text }); }
     });
     return { titulo, blocos };
   }

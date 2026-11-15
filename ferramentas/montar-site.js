@@ -16,7 +16,7 @@ const raiz = path.join(__dirname, '..');
 const MAX_SEMANAS = Number(process.env.MAX_SEMANAS) || 3;
 const ARQUIVOS_FIXOS = [
   'index.html', 'styles.css', 'app.js', 'programacao.js', 'semanas.js', 'leituras.js', 'antifonas.js',
-  'roteiros.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
+  'roteiros.js', 'lecionario.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
   'Selo Auxiliadora 60 anos_Ano 3.png'
 ];
 
@@ -82,6 +82,8 @@ window.semanasData = ${JSON.stringify(dadosSemanas, null, 1)};
 
   const blocos = leituras.map(([semana, itens]) => `    /* SEMANA DE ${semana.periodo.toUpperCase()} */\n` + itens.map(([chave, leitura]) =>
     `    '${chave}': {\n        title: ${JSON.stringify(leitura.title)},\n        day: ${JSON.stringify(leitura.day)},\n` +
+    `        momento: ${JSON.stringify(leitura.momento || '')},\n        referencia: ${JSON.stringify(leitura.referencia || '')},\n` +
+    (leitura.frase ? `        frase: ${JSON.stringify(leitura.frase)},\n` : '') +
     `        text: ${literal(leitura.text)}\n    }`).join(',\n'));
   fs.writeFileSync(path.join(raiz, 'leituras.js'), `/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
    Leituras integrais. Chave: s<legacyWeek + 1>_<dia>_<parte> (ex.: s10_dom_ev). */

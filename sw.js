@@ -9,6 +9,7 @@ const ASSETS = [
   "./leituras.js",
   "./antifonas.js",
   "./roteiros.js",
+  "./lecionario.js",
   "./compartilhar.js",
   "./vendor/pdf-lib.min.js",
   "./manifest.json",

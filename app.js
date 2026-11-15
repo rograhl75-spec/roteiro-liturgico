@@ -615,7 +615,7 @@ function openReading(key, trigger) {
 
   modalTitle.textContent = reading.title;
   modalBody.textContent = '';
-  modalBody.appendChild(createReadingParagraphs(reading.text));
+  modalBody.appendChild(window.Lecionario ? window.Lecionario.html(reading) : createReadingParagraphs(reading.text));
   fontSizes.modalBody = 14;
   modalBody.style.fontSize = '14pt';
   openModal('generalModal', trigger);
@@ -804,26 +804,9 @@ function previewSelectedReadings() {
     day.style.textTransform = 'uppercase';
     day.textContent = reading.day;
 
-    const title = document.createElement('div');
-    title.className = 'leitura-titulo';
-    title.style.fontSize = '1.2rem';
-    title.style.fontWeight = 'bold';
-    title.style.color = '#8c6414';
-    title.style.marginBottom = '12px';
-    title.style.borderBottom = '1px solid #e2e8f0';
-    title.style.paddingBottom = '4px';
-    title.style.textTransform = 'uppercase';
-    title.textContent = reading.title;
-
-    const text = document.createElement('div');
-    text.className = 'leitura-texto';
-    text.style.lineHeight = '1.6';
-    text.style.textAlign = 'justify';
-    text.style.wordWrap = 'break-word';
-    text.appendChild(createReadingParagraphs(reading.text));
+    const text = window.Lecionario ? window.Lecionario.html(reading) : createReadingParagraphs(reading.text);
 
     wrapper.appendChild(day);
-    wrapper.appendChild(title);
     wrapper.appendChild(text);
     viewDiv.appendChild(wrapper);
   });

@@ -6,6 +6,8 @@ const readingsData = {
     's10_seg_l1': {
         title: "1ª Leitura — Ez 47,1-2.8-9.12 (Lecionário III, pág. 203)",
         day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura da Profecia de Ezequiel 47,1-2.8-9.12
 Naqueles dias,
@@ -48,6 +50,8 @@ Palavra do Senhor.`
     's10_seg_sal': {
         title: "Salmo Responsorial — Sl 45(46),2-3.5-6.8-9 (R. 5) (Lecionário III, pág. 203)",
         day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial Sl 45(46),2-3.5-6.8-9 (R. 5)
 R. Os braços de um rio vêm trazer alegria
 à Cidade de Deus, à morada do Altíssimo.
@@ -74,6 +78,8 @@ reprime as guerras na face da terra. R.`
     's10_seg_acl': {
         title: "Aclamação ao Evangelho — 2Cr 7,16",
         day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho 2Cr 7,16
 R. Aleluia, Aleluia, Aleluia.
 V. Esta casa eu escolhi e santifiquei,
@@ -82,6 +88,8 @@ para nela estar meu nome para sempre.`
     's10_seg_ev': {
         title: "Evangelho — Jo 2,13-22 (Lecionário III, pág. 205)",
         day: "Segunda-feira (09/11) — Dedicação da Basílica do Latrão",
+        momento: "",
+        referencia: "",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo João 2,13-22
 13
@@ -127,6 +135,8 @@ Palavra da Salvação.`
     's10_ter_l1': {
         title: "1ª Leitura — Tt 2,1-8.11-14 (Lecionário II, pág. 1172)",
         day: "Terça-feira (10/11) — São Leão Magno",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura da Carta de São Paulo a Tito 2,1-8.11-14
 Caríssimo,
@@ -179,6 +189,8 @@ Palavra do Senhor.`
     's10_ter_sal': {
         title: "Salmo Responsorial — Sl 36(37),3-4.18-23.27 e 29 (R. 39a) (Lecionário II, pág. 1173)",
         day: "Terça-feira (10/11) — São Leão Magno",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial
 Sl 36(37),3-4.18-23.27 e 29 (R. 39a)
 R. A salvação de quem é justo, vem de Deus!
@@ -204,6 +216,8 @@ e nela habitarão eternamente. R.`
     's10_ter_acl': {
         title: "Aclamação ao Evangelho — Jo 14,23",
         day: "Terça-feira (10/11) — São Leão Magno",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho
 Jo 14,23
 R. Aleluia, Aleluia, Aleluia.
@@ -213,6 +227,9 @@ e meu Pai o amará e a ele nós viremos.`
     's10_ter_ev': {
         title: "Evangelho — Lc 17,7-10 (Lecionário II, pág. 1173)",
         day: "Terça-feira (10/11) — São Leão Magno",
+        momento: "",
+        referencia: "",
+        frase: "Somos servos inúteis; fizemos o que devíamos fazer.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,7-10
 Naquele tempo, disse Jesus:
@@ -239,6 +256,8 @@ Palavra da Salvação.`
     's10_qua_l1': {
         title: "1ª Leitura — Tt 3,1-7 (Lecionário II, pág. 1175)",
         day: "Quarta-feira (11/11) — São Martinho de Tours",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura da Carta de São Paulo a Tito 3,1-7
 Caríssimo,
@@ -277,6 +296,8 @@ Palavra do Senhor.`
     's10_qua_sal': {
         title: "Salmo Responsorial — Sl 22(23),1-3a.3b-4.5.6 (R. 1) (Lecionário II, pág. 1176)",
         day: "Quarta-feira (11/11) — São Martinho de Tours",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial Sl 22 (23),1-3a.3b-4.5.6 (R. 1)
 R. O Senhor é o pastor que me conduz,
 não me falta coisa alguma.
@@ -311,6 +332,8 @@ pelos tempos infinitos. R.`
     's10_qua_acl': {
         title: "Aclamação ao Evangelho — 1Ts 5,18",
         day: "Quarta-feira (11/11) — São Martinho de Tours",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho 1Ts 5,18
 R. Aleluia, Aleluia, Aleluia.
 V. Em tudo dai graças, pois esta é a vontade
@@ -319,6 +342,9 @@ de Deus para convosco, em Cristo, o Senhor.`
     's10_qua_ev': {
         title: "Evangelho — Lc 17,11-19 (Lecionário II, pág. 1177)",
         day: "Quarta-feira (11/11) — São Martinho de Tours",
+        momento: "",
+        referencia: "",
+        frase: "Não houve quem voltasse para dar glória a Deus, a não ser este estrangeiro.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,11-19
 11
@@ -359,6 +385,8 @@ Palavra da Salvação.`
     's10_qui_l1': {
         title: "1ª Leitura — Fm 1,7-20 (Lecionário II, pág. 1179)",
         day: "Quinta-feira (12/11) — São Josafá",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura da Carta de São Paulo a Filêmon 1,7-20
 Caríssimo,
@@ -423,6 +451,8 @@ Palavra do Senhor.`
     's10_qui_sal': {
         title: "Salmo Responsorial — Sl 145(146),7.8-9a.9bc-10 (R. 5a) (Lecionário II, pág. 1180)",
         day: "Quinta-feira (12/11) — São Josafá",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial
 Sl 145(146),7.8-9a.9bc-10 (R. 5a)
 R. Feliz quem se apoia no Deus de Jacó!
@@ -449,6 +479,8 @@ para sempre e por todos os séculos! R.`
     's10_qui_acl': {
         title: "Aclamação ao Evangelho — Jo 15,5",
         day: "Quinta-feira (12/11) — São Josafá",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho
 Jo 15,5
 R. Aleluia, Aleluia, Aleluia.
@@ -458,6 +490,9 @@ um fruto abundante vós haveis de dar.`
     's10_qui_ev': {
         title: "Evangelho — Lc 17,20-25 (Lecionário II, pág. 1181)",
         day: "Quinta-feira (12/11) — São Josafá",
+        momento: "",
+        referencia: "",
+        frase: "O Reino de Deus está entre vós.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,20-25
 Naquele tempo,
@@ -490,6 +525,8 @@ Palavra da Salvação.`
     's10_sex_l1': {
         title: "1ª Leitura — 2Jo 1,4-9 (Lecionário II, pág. 1183)",
         day: "Sexta-feira (13/11)",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura da Segunda Carta de São João 1,4-9
 4
@@ -529,6 +566,8 @@ Palavra do Senhor.`
     's10_sex_sal': {
         title: "Salmo Responsorial — Sl 118(119),1.2.10.11.17.18 (R. 1b) (Lecionário II, pág. 1184)",
         day: "Sexta-feira (13/11)",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial
 Sl 118(119),1.2.10.11.17.18 (R. 1b)
 R. Feliz é quem na lei do Senhor Deus vai progredindo!
@@ -554,6 +593,8 @@ as maravilhas que encerra a vossa lei! R.`
     's10_sex_acl': {
         title: "Aclamação ao Evangelho — Lc 21,28",
         day: "Sexta-feira (13/11)",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho
 Lc 21,28
 R. Aleluia, Aleluia, Aleluia.
@@ -563,6 +604,9 @@ pois a vossa redenção se aproxima!`
     's10_sex_ev': {
         title: "Evangelho — Lc 17,26-37 (Lecionário II, pág. 1184)",
         day: "Sexta-feira (13/11)",
+        momento: "",
+        referencia: "",
+        frase: "O mesmo acontecerá no dia em que o Filho do Homem for revelado.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 17,26-37
 Naquele tempo,
@@ -618,6 +662,8 @@ Palavra da Salvação.`
     's10_dom_l1': {
         title: "1ª Leitura — Pr 31,10-13.19-20.30-31 (Lecionário I, pág. 355)",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        momento: "",
+        referencia: "",
         text: `PRIMEIRA LEITURA
 Leitura do Livro dos Provérbios 31,10-13.19-20.30-31
 10
@@ -648,6 +694,8 @@ Palavra do Senhor.`
     's10_dom_sal': {
         title: "Salmo Responsorial — Sl 127(128),1-2.3.4-5ab (R. cf. 1a) (Lecionário I, pág. 355)",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        momento: "",
+        referencia: "",
         text: `Salmo responsorial Sl 127(128),1-2.3.4-5 (R. 1a)
 R. Felizes os que temem o Senhor e trilham seus caminhos!
 1
@@ -671,6 +719,8 @@ cada dia de tua vida. R.`
     's10_dom_l2': {
         title: "2ª Leitura — 1Ts 5,1-6 (Lecionário I, pág. 356)",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        momento: "",
+        referencia: "",
         text: `SEGUNDA LEITURA
 Leitura da Primeira Carta de São Paulo aos Tessalonicenses 5,1-6
 1
@@ -698,6 +748,8 @@ Palavra do Senhor.`
     's10_dom_acl': {
         title: "Aclamação ao Evangelho — Jo 15,4a.5b",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        momento: "",
+        referencia: "",
         text: `Aclamação ao Evangelho Jo 15,4a,5b
 R. Aleluia, Aleluia, Aleluia.
 V. Ficai em mim, e eu em vós hei de ficar, diz o Senhor;
@@ -706,6 +758,9 @@ quem em mim permanece, esse dá muito fruto.`
     's10_dom_ev': {
         title: "Evangelho — Mt 25,14-30 (Lecionário I, pág. 357)",
         day: "Fim de Semana (14 e 15/11) — 33º Domingo do Tempo Comum",
+        momento: "",
+        referencia: "",
+        frase: "Como foste fiel na administração de tão pouco, vem participar de minha alegria.",
         text: `EVANGELHO (mais longo)
 Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,14-30
 Naquele tempo,
@@ -786,6 +841,9 @@ Palavra da Salvação.`
     's11_seg_l1': {
         title: "1ª Leitura — Ap 1,1-4.2,1-5a (Lecionário II, pág. 1192)",
         day: "Segunda-feira (16/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 1,1-4.2,1-5a",
+        frase: "Lembra-te de onde caíste. Converte-te e volta à tua prática inicial.",
         text: `PRIMEIRA LEITURA
 Início do Livro do Apocalipse de São João 1,1-4; 2,1-5a
 1
@@ -842,6 +900,8 @@ Palavra do Senhor.`
     's11_seg_sal': {
         title: "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. Ap 2,7b) (Lecionário II, pág. 1193)",
         day: "Segunda-feira (16/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)",
         text: `Salmo responsorial
 Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)
 R. Ao vencedor concederei, comer da Árvore da Vida!
@@ -870,6 +930,8 @@ mas a estrada dos malvados leva à morte. R.`
     's11_seg_acl': {
         title: "Aclamação ao Evangelho — Jo 8,12",
         day: "Segunda-feira (16/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Jo 8,12",
         text: `Aclamação ao Evangelho
 Jo 8,12
 R. Aleluia, Aleluia, Aleluia.
@@ -881,6 +943,9 @@ mas terá a luz da vida`
     's11_seg_ev': {
         title: "Evangelho — Lc 18,35-43 (Lecionário II, pág. 1193)",
         day: "Segunda-feira (16/11)",
+        momento: "Evangelho",
+        referencia: "Lc 18,35-43",
+        frase: "O que queres que eu faça por ti?' Senhor, eu quero enxergar de novo.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 18,35-43
 35
@@ -921,6 +986,9 @@ Palavra da Salvação.`
     's11_ter_l1': {
         title: "1ª Leitura — Ap 3,1-6.14-22 (Lecionário II, pág. 1197)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        momento: "1ª Leitura",
+        referencia: "Ap 3,1-6.14-22",
+        frase: "Se alguém ouvir minha voz e abrir a porta, eu entrarei na sua casa e tomaremos a refeição, eu com ele e ele comigo.",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 3,1-6.14-22
 Eu, João, ouvi o Senhor que me dizia:
@@ -1001,6 +1069,8 @@ Palavra do Senhor.`
     's11_ter_sal': {
         title: "Salmo Responsorial — Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21) (Lecionário II, pág. 1198)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)",
         text: `Salmo responsorial
 Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)
 R. Ao vencedor, dar-lhe-ei o direito
@@ -1030,6 +1100,8 @@ Jamais vacilará quem vive assim! R.`
     's11_ter_acl': {
         title: "Aclamação ao Evangelho — 1Jo 4,10b",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        momento: "Aclamação ao Evangelho",
+        referencia: "1Jo 4,10b",
         text: `Aclamação ao Evangelho
 1Jo 4,10b
 R. Aleluia, Aleluia, Aleluia.
@@ -1039,6 +1111,9 @@ como vítima por nossas transgressões.`
     's11_ter_ev': {
         title: "Evangelho — Lc 19,1-10 (Lecionário II, pág. 1199)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
+        momento: "Evangelho",
+        referencia: "Lc 19,1-10",
+        frase: "O Filho do Homem veio procurar e salvar o que estava perdido.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,1-10
 Naquele tempo,
@@ -1085,6 +1160,9 @@ Palavra da Salvação.`
     's11_qua_l1': {
         title: "1ª Leitura — Ap 4,1-11 (Lecionário II, pág. 1202)",
         day: "Quarta-feira (18/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 4,1-11",
+        frase: "Santo! Santo! Santo! Senhor Deus Todo-poderoso! Aquele que é, que era e que vem!",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 4,1-11
 Eu, João,
@@ -1153,6 +1231,8 @@ Palavra do Senhor.`
     's11_qua_sal': {
         title: "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b) (Lecionário II, pág. 1203)",
         day: "Quarta-feira (18/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
         text: `Salmo responsorial
 Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)
 R. Santo, Santo, Santo Senhor Deus onipotente!
@@ -1178,6 +1258,8 @@ tudo cante os louvores do Senhor! R.`
     's11_qua_acl': {
         title: "Aclamação ao Evangelho — Cf. Jo 15,16",
         day: "Quarta-feira (18/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Cf. Jo 15,16",
         text: `Aclamação ao Evangelho
 Cf. Jo 15,16
 R. Aleluia, Aleluia, Aleluia.
@@ -1187,6 +1269,9 @@ no meio do mundo, um fruto que dure.`
     's11_qua_ev': {
         title: "Evangelho — Lc 19,11-28 (Lecionário II, pág. 1204)",
         day: "Quarta-feira (18/11)",
+        momento: "Evangelho",
+        referencia: "Lc 19,11-28",
+        frase: "Porque tu não depositaste meu dinheiro no banco?",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,11-28
 Naquele tempo,
@@ -1269,6 +1354,9 @@ Palavra da Salvação.`
     's11_qui_l1': {
         title: "1ª Leitura — Ap 5,1-10",
         day: "Quinta-feira (19/11) — Santos Roque González",
+        momento: "1ª Leitura",
+        referencia: "Ap 5,1-10",
+        frase: "O Cordeiro foi imolado, e com seu sangue adquiriu para Deus homens de toda a tribo, língua, povo e nação.",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 5,1-10
 Eu, João,
@@ -1329,6 +1417,8 @@ Palavra do Senhor.`
     's11_qui_sal': {
         title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
         day: "Quinta-feira (19/11) — Santos Roque González",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
         text: `Salmo responsorial
 Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)
 R. Fizestes de nós, para Deus, sacerdotes e povo de reis.
@@ -1356,6 +1446,8 @@ Eis a glória para todos os seus santos. R.`
     's11_qui_acl': {
         title: "Aclamação ao Evangelho — Cf. Sl 94(95), 8ab",
         day: "Quinta-feira (19/11) — Santos Roque González",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Cf. Sl 94(95), 8ab",
         text: `Aclamação ao Evangelho
 Cf. Sl 94(95), 8ab
 R. Aleluia, Aleluia, Aleluia.
@@ -1365,6 +1457,9 @@ Não fecheis os corações como em Meriba!`
     's11_qui_ev': {
         title: "Evangelho — Lc 19,41-44",
         day: "Quinta-feira (19/11) — Santos Roque González",
+        momento: "Evangelho",
+        referencia: "Lc 19,41-44",
+        frase: "Se tu também compreendesses hoje o que te pode trazer a paz!",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,41-44
 Naquele tempo,
@@ -1390,6 +1485,9 @@ Palavra da Salvação.`
     's11_sex_l1': {
         title: "1ª Leitura — Ap 10,8-11 (Lecionário II, pág. 1211)",
         day: "Sexta-feira (20/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 10,8-11",
+        frase: "Peguei o livrinho e comi-o.",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 10,8-11
 8
@@ -1420,6 +1518,8 @@ Palavra do Senhor.`
     's11_sex_sal': {
         title: "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a) (Lecionário II, pág. 1212)",
         day: "Sexta-feira (20/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 118(119),14.24.72.103.111.131 (R. 103a)",
         text: `Salmo responsorial
 Sl 118(119),14.24.72.103.111.131 (R. 103a)
 R. Como é doce ao paladar vossa palavra, ó Senhor!
@@ -1445,6 +1545,8 @@ pois estou ávido de vossos mandamentos. R.`
     's11_sex_acl': {
         title: "Aclamação ao Evangelho — Jo 10,27",
         day: "Sexta-feira (20/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Jo 10,27",
         text: `Aclamação ao Evangelho
 Jo 10,27
 R. Aleluia, Aleluia, Aleluia.
@@ -1454,6 +1556,9 @@ eu as conheço e elas me seguem.`
     's11_sex_ev': {
         title: "Evangelho — Lc 19,45-48 (Lecionário II, pág. 1212)",
         day: "Sexta-feira (20/11)",
+        momento: "Evangelho",
+        referencia: "Lc 19,45-48",
+        frase: "Fizestes da casa de Deus um antro de ladrões.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,45-48
 Naquele tempo,
@@ -1479,6 +1584,9 @@ Palavra da Salvação.`
     's11_dom_l1': {
         title: "1ª Leitura — Ez 34,11-12.15-17",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        momento: "1ª Leitura",
+        referencia: "Ez 34,11-12.15-17",
+        frase: "Quanto a vós, minhas ovelhas, farei justiça entre uma ovelha e outra.",
         text: `PRIMEIRA LEITURA
 Leitura da Profecia de Ezequiel 34,11-12.15-17
 11
@@ -1509,6 +1617,8 @@ Palavra do Senhor.`
     's11_dom_sal': {
         title: "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
         text: `Salmo responsorial Sl 22(23),1-2a.2b-3.5-6 (R.1)
 R. O Senhor é o pastor que me conduz;
 não me falta coisa alguma.
@@ -1532,6 +1642,9 @@ pelos tempos infinitos. R.`
     's11_dom_l2': {
         title: "2ª Leitura — 1Cor 15,20-26.28",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        momento: "2ª Leitura",
+        referencia: "1Cor 15,20-26.28",
+        frase: "Entregará a realeza a Deus-Pai, para que Deus seja tudo em todos.",
         text: `SEGUNDA LEITURA
 Leitura da Primeira Carta de São Paulo aos Coríntios 15,20-26.28
 Irmãos:
@@ -1569,6 +1682,8 @@ Palavra do Senhor.`
     's11_dom_acl': {
         title: "Aclamação ao Evangelho — cf. Mc 11,10",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        momento: "Aclamação ao Evangelho",
+        referencia: "cf. Mc 11,10",
         text: `Aclamação ao Evangelho cf. Mc 11,10
 R. Aleluia, Aleluia, Aleluia.
 V. É bendito aquele que vem vindo,
@@ -1579,6 +1694,9 @@ ao que vem e a seu Reino, o louvor!`
     's11_dom_ev': {
         title: "Evangelho — Mt 25,31-46",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
+        momento: "Evangelho",
+        referencia: "Mt 25,31-46",
+        frase: "Assentar-se-á em seu trono glorioso e separará uns dos outros.",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Mateus 25,31-46
 Naquele tempo, disse Jesus a seus discípulos:
