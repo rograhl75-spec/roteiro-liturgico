@@ -442,13 +442,13 @@ window.semanasData = [
       "1ª Leitura",
       "Ap 1,1-4.2,1-5a",
       "s11_seg_l1",
-      ""
+      "II / 1192"
      ],
      [
       "Salmo",
       "Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)",
       "s11_seg_sal",
-      ""
+      "II / 1193"
      ],
      [
       "Aclamação ao Evangelho",
@@ -460,7 +460,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 18,35-43",
       "s11_seg_ev",
-      ""
+      "II / 1193"
      ]
     ],
     "missal": {
@@ -498,13 +498,13 @@ window.semanasData = [
       "1ª Leitura",
       "Ap 3,1-6.14-22",
       "s11_ter_l1",
-      ""
+      "II / 1197"
      ],
      [
       "Salmo",
       "Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)",
       "s11_ter_sal",
-      ""
+      "II / 1198"
      ],
      [
       "Aclamação ao Evangelho",
@@ -516,7 +516,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 19,1-10",
       "s11_ter_ev",
-      ""
+      "II / 1199"
      ]
     ],
     "missal": {
@@ -547,13 +547,13 @@ window.semanasData = [
       "1ª Leitura",
       "Ap 4,1-11",
       "s11_qua_l1",
-      ""
+      "II / 1202"
      ],
      [
       "Salmo",
       "Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
       "s11_qua_sal",
-      ""
+      "II / 1203"
      ],
      [
       "Aclamação ao Evangelho",
@@ -565,7 +565,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 19,11-28",
       "s11_qua_ev",
-      ""
+      "II / 1204"
      ]
     ],
     "missal": {
@@ -666,13 +666,13 @@ window.semanasData = [
       "1ª Leitura",
       "Ap 10,8-11",
       "s11_sex_l1",
-      ""
+      "II / 1211"
      ],
      [
       "Salmo",
       "Sl 118(119),14.24.72.103.111.131 (R. 103a)",
       "s11_sex_sal",
-      ""
+      "II / 1212"
      ],
      [
       "Aclamação ao Evangelho",
@@ -684,7 +684,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 19,45-48",
       "s11_sex_ev",
-      ""
+      "II / 1212"
      ]
     ],
     "missal": {

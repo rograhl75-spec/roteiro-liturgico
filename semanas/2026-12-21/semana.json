@@ -46,7 +46,7 @@
      "Salmo",
      "Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)",
      "s16_seg_sal",
-     ""
+     "II / 101"
     ],
     [
      "Aclamação ao Evangelho",
@@ -58,7 +58,7 @@
      "Evangelho",
      "Lc 1,39-45",
      "s16_seg_ev",
-     ""
+     "II / 101"
     ]
    ],
    "missal": {
@@ -96,13 +96,13 @@
      "1ª Leitura",
      "1Sm 1,24-28",
      "s16_ter_l1",
-     ""
+     "II / 102"
     ],
     [
      "Salmo",
      "1Sm 2,1.4-5.6-7.8abcd (R. 1a)",
      "s16_ter_sal",
-     ""
+     "II / 103"
     ],
     [
      "Aclamação ao Evangelho",
@@ -114,7 +114,7 @@
      "Evangelho",
      "Lc 1,46-56",
      "s16_ter_ev",
-     ""
+     "II / 103"
     ]
    ],
    "missal": {
@@ -145,13 +145,13 @@
      "1ª Leitura",
      "Ml 3,1-4.23-24",
      "s16_qua_l1",
-     ""
+     "II / 104"
     ],
     [
      "Salmo",
      "Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)",
      "s16_qua_sal",
-     ""
+     "II / 105"
     ],
     [
      "Aclamação ao Evangelho",
@@ -163,7 +163,7 @@
      "Evangelho",
      "Lc 1,57-66",
      "s16_qua_ev",
-     ""
+     "II / 106"
     ]
    ],
    "missal": {
@@ -199,19 +199,19 @@
      "1ª Leitura",
      "Is 9,1-6",
      "s16_qui_l1",
-     ""
+     "I / 390"
     ],
     [
      "Salmo",
      "Sl 95(96),1-2a.2b-3.11-12.13 (R. Lc 2,11)",
      "s16_qui_sal",
-     ""
+     "I / 390"
     ],
     [
      "2ª Leitura",
      "Tt 2,11-14",
      "s16_qui_l2",
-     ""
+     "I / 391"
     ],
     [
      "Aclamação ao Evangelho",
@@ -223,7 +223,7 @@
      "Evangelho",
      "Lc 2,1-14",
      "s16_qui_ev",
-     ""
+     "I / 392"
     ]
    ],
    "missal": {
@@ -266,19 +266,19 @@
      "1ª Leitura",
      "Is 52,7-10",
      "s16_sex_l1",
-     ""
+     "I / 396"
     ],
     [
      "Salmo",
      "Sl 97(98),1.2-3ab.3cd-4.5-6 (R. 3cd)",
      "s16_sex_sal",
-     ""
+     "I / 396"
     ],
     [
      "2ª Leitura",
      "Hb 1,1-6",
      "s16_sex_l2",
-     ""
+     "I / 397"
     ],
     [
      "Aclamação ao Evangelho",
@@ -290,7 +290,7 @@
      "Evangelho",
      "Jo 1,1-18",
      "s16_sex_ev",
-     ""
+     "I / 398"
     ]
    ],
    "missal": {
@@ -364,19 +364,19 @@
     "1ª Leitura",
     "Eclo 3,3-7.14-17a",
     "s16_dom_l1",
-    ""
+    "I / 400"
    ],
    [
     "Salmo",
     "Sl 127(128),1-2.3.4-5 (R. cf.1)",
     "s16_dom_sal",
-    ""
+    "I / 400"
    ],
    [
     "2ª Leitura",
     "Cl 3,12-21",
     "s16_dom_l2",
-    ""
+    "I / 401"
    ],
    [
     "Aclamação ao Evangelho",
@@ -388,7 +388,7 @@
     "Evangelho",
     "Lc 2,22-40",
     "s16_dom_ev",
-    ""
+    "I / 402"
    ],
    [
     "Evangelho (mais breve)",

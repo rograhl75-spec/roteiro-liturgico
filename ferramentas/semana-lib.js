@@ -40,6 +40,11 @@
     .join('_').slice(0, max).replace(/_+$/, '') || 'extra';
   const semanaLegada = (segunda) => Math.round((msDe(segunda) - BASE_LEGADO) / (7 * 86400000));
   const chaveLecionario = (ref) => limpar(ref).replace(/\s+/g, '').replace(/[–—]/g, '-').toLowerCase();
+  // chave sem o refrão do salmo, "cf." e observações: casa a mesma leitura escrita de formas diferentes
+  const chaveBase = (ref) => chaveLecionario(String(ref ?? '')
+    .replace(/\((?!\d)[^)]*\)/g, '').replace(/\bcf\.?\s*/gi, '').replace(/\bou\b.*$/i, '').replace(/\s+e\s+/g, '.').replace(/[;:]\s*$/, ''))
+    .replace(/[.,;]+$/, '');
+  const paginaLecionario = (paginas, ref) => paginas[chaveLecionario(ref)] || paginas['~' + chaveBase(ref)] || '';
 
   function periodoTexto(inicio, fim) {
     const [di, mi] = [Number(inicio.slice(8)), Number(inicio.slice(5, 7)) - 1];
@@ -735,7 +740,7 @@
       if (l.parte.endsWith('_breve')) momento += ' (mais breve)';
       else if (/_2$/.test(l.parte)) momento += ' (outra opção)';
       const chave = `${prefixo}_${codigo}_${l.parte}`;
-      const pagina = base === 'acl' ? '' : (paginas[chaveLecionario(l.referencia)] || '');
+      const pagina = base === 'acl' ? '' : paginaLecionario(paginas, l.referencia);
       leiturasJs[chave] = { momento: MOMENTOS_LONGOS[base] ? momento.replace(MOMENTOS[base], MOMENTOS_LONGOS[base]) : momento,
         referencia: l.referencia, day: rotuloDia, text: l.texto };
       return [momento, l.referencia, chave, pagina];
@@ -869,13 +874,13 @@
     const novo = { ...lecionario };
     const todos = semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : []);
     for (const dia of todos) {
-      for (const [, referencia, , pagina] of dia.leituras) if (referencia && pagina) novo[chaveLecionario(referencia)] = pagina;
+      for (const [, referencia, , pagina] of dia.leituras) if (referencia && pagina) { novo[chaveLecionario(referencia)] = pagina; novo['~' + chaveBase(referencia)] = pagina; }
     }
     return Object.fromEntries(Object.entries(novo).sort(([a], [b]) => a.localeCompare(b, 'pt-BR')));
   }
 
   return {
     papelIGMR, lerLeituras, lerRoteiro, lerPreces, lerEscala, missalDoRoteiro, missalDoIndice, montarSemana, finalizarSemana,
-    atualizarLecionario, chaveLecionario, semanaLegada, slug, somarDias, diaDaSemana, dataCurta, tituloData
+    atualizarLecionario, chaveLecionario, chaveBase, paginaLecionario, semanaLegada, slug, somarDias, diaDaSemana, dataCurta, tituloData
   };
 }));
