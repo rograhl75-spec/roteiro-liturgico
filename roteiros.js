@@ -228,7 +228,7 @@ window.roteirosData = {
         "linhas": [
           ["Comentarista", "Louvado seja o Nosso Senhor Jesus Cristo!\nPara sempre seja louvado."],
           ["Comentarista", "SOMENTE PARA AS MISSAS COM TRANSMISSÃO\nAs intenções desta Santa Missa são (ler as intenções), por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias, os visitantes e todos os que nos acompanham pela transmissão. Neste domingo celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
+          ["Comentarista", "\"Irmãos e irmãs, sejam todos muito bem-vindos! Neste último domingo do Ano Litúrgico, celebramos a Solenidade de Nosso Senhor Jesus Cristo, Rei do Universo. O seu Reino não é de poder e dominação: é reino da verdade e da vida, da santidade e da graça, da justiça, do amor e da paz. No Evangelho, o Rei se identifica com os pequeninos e nos julgará pelo amor concreto aos irmãos. Hoje celebramos também o Dia Nacional dos Cristãos Leigos e Leigas e a abertura da Campanha para a Evangelização. Com alegria, acompanhemos a procissão de entrada, cantando…\""],
           ["Cantores", "Canto de Entrada"],
           ["Orientação", "SOMENTE NA MISSA DE DOMINGO ÀS 18h30 (solenidade no fim de semana): incensação da cruz e do altar (IGMR 49 e 276)."],
           ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
@@ -368,11 +368,55 @@ window.roteirosData = {
   "preces_10": {
     "tipo": "preces",
     "titulo": "Preces — Nosso Senhor Jesus Cristo, Rei do Universo",
+    "fonte": "semanas/2026-11-16/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.docx",
+    "cabecalho": "● PRECES – NOSSO SENHOR JESUS CRISTO, REI DO UNIVERSO – 21 E 22 NOVEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Preces – em preparação",
+        "titulo": "Data: 21/11/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
-          ["Orientação", "As preces deste fim de semana (I Vésperas no sábado; Laudes nas Missas de domingo às 9h00 e 11h00; II Vésperas no domingo às 18h30), seguidas da Oração do Jubileu, serão publicadas em breve."]
+          ["Sacerdote", "Irmãos e irmãs, oremos a Cristo Rei, que existe antes de todas as coisas criadas e em quem tudo subsiste; e o aclamemos dizendo:"],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Cristo, nosso Rei e nosso Pastor, reuni de todos os pontos da terra as ovelhas do vosso rebanho, e apascentai-as nos prados da vida eterna, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Salvador e Guia da humanidade, fazei de todos nós um só povo: curai os enfermos, procurai os que estão perdidos, conservai os fortes, chamai os que estão longe, congregai os dispersos, fortalecei os que vacilam, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Juiz eterno, colocai-nos à vossa direita no último dia, quando entregardes o Reino a Deus Pai, e dai-nos a posse do Reino preparado para nós desde a criação do mundo, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "Data: 22/11/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
+        "linhas": [
+          ["Sacerdote", "Irmãos e irmãs, oremos a Cristo Rei, que existe antes de todas as coisas criadas e em quem tudo subsiste; e o aclamemos dizendo:"],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Cristo Salvador, que sois nosso Deus e Senhor, nosso Rei e Pastor, conduzi o vosso povo pelos caminhos que conduzem à verdadeira vida, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Cristo, Bom Pastor, que destes a vida por vossas ovelhas, guiai-nos, para que nada nos falte, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Cristo, nosso Redentor, que fostes proclamado Rei da terra inteira, renovai em vós todas as coisas, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "Data: 22/11/2026 — Horário: Domingo 18h30 – II Vésperas",
+        "linhas": [
+          ["Sacerdote", "Irmãos e irmãs, oremos a Cristo Rei, que existe antes de todas as coisas criadas e em quem tudo subsiste; e o aclamemos dizendo:"],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Cristo, nosso Rei e nosso Pastor, reuni de todos os pontos da terra as ovelhas do vosso rebanho, e apascentai-as nos prados da vida eterna, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Salvador e Guia da humanidade, fazei de todos nós um só povo: curai os enfermos, procurai os que estão perdidos, conservai os fortes, chamai os que estão longe, congregai os dispersos, fortalecei os que vacilam, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Diácono / Leitor", "Juiz eterno, colocai-nos à vossa direita no último dia, quando entregardes o Reino a Deus Pai, e dai-nos a posse do Reino preparado para nós desde a criação do mundo, nós vos pedimos."],
+          ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
         ]
       }
     ]

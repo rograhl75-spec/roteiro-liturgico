@@ -9,8 +9,10 @@
  "roteiroExtras": [
   "imaculada"
  ],
- "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "precesExtras": [
+  "imaculada"
+ ],
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-12-07",
@@ -138,6 +140,11 @@
      "tipo": "roteiro",
      "chave": "imaculada",
      "rotulo": "Roteiro — Imaculada Conceição"
+    },
+    {
+     "tipo": "preces",
+     "chave": "imaculada",
+     "rotulo": "Preces — Imaculada Conceição"
     }
    ]
   },
@@ -416,7 +423,9 @@
  "documentos": [
   "semanas/2026-12-07/Leituras 7 a 13 dezembro 2026.docx",
   "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
-  "semanas/2026-12-07/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.docx"
+  "semanas/2026-12-07/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
+  "semanas/2026-12-07/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.docx",
+  "semanas/2026-12-07/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s14_seg_l1": {
@@ -424,14 +433,14 @@
    "referencia": "Is 35,1-10",
    "day": "Segunda-feira (07/12) — Santo Ambrósio",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 35,1-10\n1\nAlegre-se a terra que era deserta e intransitável,\nexulte a solidão e floresça como um lírio.\n2\nGermine e exulte\nde alegria e louvores.\nFoi-lhe dada a glória do Líbano,\no esplendor do Carmelo e de Saron;\nseus habitantes verão a glória do Senhor,\na majestade do nosso Deus.\n3\nFortalecei as mãos enfraquecidas\ne firmai os joelhos debilitados.\n4\nDizei às pessoas deprimidas:\n\"Criai ânimo, não tenhais medo!\nVede, é vosso Deus,\né a vingança que vem, é a recompensa de Deus;\né ele que vem para vos salvar\".\n5\nEntão se abrirão os olhos dos cegos\ne se descerrarão os ouvidos dos surdos.\n6\nO coxo saltará como um cervo\ne se desatará a língua dos mudos,\nassim como brotarão águas no deserto\ne jorrarão torrentes no ermo.\n7\nA terra árida se transformará em lago,\ne a região sedenta, em fontes d'água;\nnas cavernas onde viviam dragões\ncrescerá o caniço e o junco.\n8\nAli haverá uma vereda e um caminho;\no caminho se chamará estrada santa:\npor ela não passará o impuro;\nmas será uma estrada reta\nem que até os débeis não se perderão.\n9\nAli não existem leões,\nnão andam por ela animais de predadores,\nnem mesmo aparecem lá;\nos que forem libertados, poderão percorrê-la,\n10\nos que o Senhor salvou, voltarão para casa.\nEles virão a Sião cantando louvores,\ncom infinita alegria brilhando em seus rostos:\ncheios de gozo e contentamento,\nnão mais conhecerão a dor e o pranto\".\nPalavra do Senhor.",
-   "title": "1ª Leitura — Is 35,1-10"
+   "title": "1ª Leitura — Is 35,1-10 (Lecionário II, pág. 65)"
   },
   "s14_seg_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 84(85),9ab-10.11-12.13-14 (R. Is 35,4d)",
    "day": "Segunda-feira (07/12) — Santo Ambrósio",
    "text": "Salmo responsorial\nSl 84(85),9ab-10.11-12.13-14 (R. Is 35,4d)\nR. Eis que vem o nosso Deus! Ele vem para salvar.\n9a\nQuero ouvir o que o Senhor irá falar:*\né a paz que ele vai anunciar;\nb\na paz para o seu povo e seus amigos,*\npara os que voltam ao Senhor seu coração.\n10\nEstá perto a salvação dos que o temem,*\ne a glória habitará em nossa terra. R.\n11\nA verdade e o amor se encontrarão,*\na justiça e a paz se abraçarão;\n12\nda terra brotará a fidelidade,*\ne a justiça olhará dos altos céus. R.\n13\nO Senhor nos dará tudo o que é bom,*\ne a nossa terra nos dará suas colheitas;\n14\na justiça andará na sua frente*\ne a salvação há de seguir os passos seus. R.",
-   "title": "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. Is 35,4d)"
+   "title": "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. Is 35,4d) (Lecionário II, pág. 66)"
   },
   "s14_seg_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -445,7 +454,7 @@
    "referencia": "Lc 5,17-26",
    "day": "Segunda-feira (07/12) — Santo Ambrósio",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 5,17-26\n17\nUm dia Jesus estava ensinando.\nE à sua volta estavam sentados fariseus e doutores da Lei,\nvindos de todas as aldeias\nda Galileia, da Judeia e de Jerusalém.\nE a virtude do Senhor o levava a curar.\n18\nUns homens traziam um paralítico num leito\ne procuravam fazê-lo entrar para apresentá-lo.\n19\nMas, não achando por onde introduzi-lo,\ndevido à multidão, subiram ao telhado\ne por entre as telhas o desceram com o leito\nno meio da assembleia diante de Jesus.\n20\nVendo-lhes a fé, ele disse:\n\"Homem, teus pecados estão perdoados\".\n21\nOs escribas e fariseus começaram a murmurar, dizendo:\n\"Quem é este que assim blasfema?\nQuem pode perdoar os pecados senão Deus?\n22\nConhecendo-lhes os pensamentos,\nJesus respondeu, dizendo:\n\"Por que murmurais em vossos corações?\n23\nO que é mais fácil dizer:\n'teus pecados estão perdoados',\nou dizer: 'levanta-te e anda'?\n24\nPois, para que saibais que o Filho do homem\ntem na terra poder de perdoar os pecados\n- disse ao paralítico - eu te digo:\nlevanta-te, pega o leito e vai para casa' \".\n25\nImediatamente, diante deles, ele se levantou,\ntomou o leito e foi para casa, louvando a Deus.\n26\nTodos ficaram fora de si, glorificavam a Deus\ne cheios de temor diziam:\n\"Hoje vimos coisas maravilhosas!\"\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 5,17-26"
+   "title": "Evangelho — Lc 5,17-26 (Lecionário II, pág. 66)"
   },
   "s14_ter_l1": {
    "momento": "1ª Leitura",
@@ -487,14 +496,14 @@
    "referencia": "Is 40,25-31",
    "day": "Quarta-feira (09/12)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 40,25-31\n25\n\"Com quem haveis de me comparar,\ne a quem seria eu igual?\"\n- fala o Santo.\n26\nLevantai os olhos para o alto\ne vede: Quem criou tudo isto?\n- Aquele que expressa em números\no exército das estrelas\ne a cada uma chama pelo nome:\ntal é a grandeza e força e poder de Deus\nque nenhuma delas falta à chamada.\n27\nEntão, por que dizes, Jacó,\ne por que falas, Israel:\n\"Minha vida ocultou-se da vista do Senhor\ne meu julgamento escapa ao do meu Deus?\"\n28\nAcaso ignoras, ou não ouviste?\nO Senhor é o Deus eterno\nque criou os confins da terra;\nele não falha nem se cansa,\ninsondável é sua sabedoria;\n29\nele dá coragem ao desvalido\ne aumenta o vigor do mais fraco.\n30\nCansam-se as crianças e param,\nos jovens tropeçam e caem,\n31\nmas os que esperam no Senhor\nrenovam suas forças,\ncriam asas como as águias,\ncorrem sem se cansar,\ncaminham sem parar.\nPalavra do Senhor.",
-   "title": "1ª Leitura — Is 40,25-31"
+   "title": "1ª Leitura — Is 40,25-31 (Lecionário II, pág. 70)"
   },
   "s14_qua_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 102(103),1-2.3-4.8.10 (R. 1a)",
    "day": "Quarta-feira (09/12)",
    "text": "Salmo responsorial\nSl 102(103),1-2.3-4.8. e 10 (R. 1a)\nR. Bendize, ó minha alma ao Senhor.\n1\nBendize, ó minha alma, ao Senhor, *\ne todo o meu ser, seu santo nome!\n2\nBendize, ó minha alma, ao Senhor, *\nnão te esqueças de nenhum de seus favores! R.\n3\nPois ele te perdoa toda culpa, *\ne cura toda a tua enfermidade;\n4\nda sepultura ele salva a tua vida *\ne te cerca de carinho e compaixão; R.\n8\nO Senhor é indulgente, é favorável, *\né paciente, é bondoso e compassivo.\n10\nNão nos trata como exigem nossas faltas, *\nnem nos pune em proporção às nossas culpas. R.",
-   "title": "Salmo Responsorial — Sl 102(103),1-2.3-4.8.10 (R. 1a)"
+   "title": "Salmo Responsorial — Sl 102(103),1-2.3-4.8.10 (R. 1a) (Lecionário II, pág. 70)"
   },
   "s14_qua_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -508,21 +517,21 @@
    "referencia": "Mt 11,28-30",
    "day": "Quarta-feira (09/12)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 11,28-30\nNaquele tempo, tomou Jesus a palavra e disse:\n28\n\"Vinde a mim todos vós que estais cansados\ne fatigados sob o peso dos vossos fardos,\ne eu vos darei descanso.\n29\nTomai sobre vós o meu jugo e aprendei de mim,\nporque sou manso e humilde de coração,\ne vós encontrareis descanso.\n30\nPois o meu jugo é suave e o meu fardo é leve\".\nPalavra da Salvação.",
-   "title": "Evangelho — Mt 11,28-30"
+   "title": "Evangelho — Mt 11,28-30 (Lecionário II, pág. 71)"
   },
   "s14_qui_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 41,13-20",
    "day": "Quinta-feira (10/12)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 41,13-20\n13\nEu sou o Senhor, teu Deus,\nque te tomo pela mão\ne te digo: \"Não temas;\neu te ajudarei\".\n14\nNão tenhas medo, Jacó, pobre verme,\nnão temais, homens de Israel.\nEu vos ajudarei, diz o Senhor e Salvador,\no Santo de Israel.\n15\nEis que te transformei num carro novo de triturar,\nguarnecido de dentes de serra.\nHás de triturar e despedaçar os montes,\ne reduzirás as colinas a poeira.\n16\nAo expô-los ao vento, o vento os levará\ne o temporal os dispersará;\nexultarás no Senhor\ne te alegrarás no Santo de Israel.\n17\nPobres e necessitados procuram água, mas não há,\nestão com a língua seca de sede.\nEu, o Senhor, os atenderei,\neu, Deus de Israel, não os abandonarei.\n18\nFarei nascer rios nas colinas escalvadas\ne fontes no meio dos vales;\ntransformarei o deserto em lagos\ne a terra seca em nascentes d'água.\n19\nPlantarei no deserto o cedro,\na acácia e a murta e a oliveira;\ncrescerão no ermo o pinheiro,\no olmo e o cipreste juntamente,\n20\npara que os homens vejam e saibam,\nconsiderem e compreendam\nque a mão do Senhor fez essas coisas\ne o Santo de Israel tudo criou.\nPalavra do Senhor.",
-   "title": "1ª Leitura — Is 41,13-20"
+   "title": "1ª Leitura — Is 41,13-20 (Lecionário II, pág. 72)"
   },
   "s14_qui_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 144(145),1.9.10-11.12-13ab (R. 8)",
    "day": "Quinta-feira (10/12)",
    "text": "Salmo responsorial Sl 144 (145),1 e 9.10-11.12-13ab (R. 8)\nR. Misericórdia e piedade é o Senhor!\nEle é amor, é paciência, é compaixão.\n1\nÓ meu Deus, quero exaltar-vos, ó meu Rei, *\ne bendizer o vosso nome pelos séculos.\n9\nO Senhor é muito bom para com todos, *\nsua ternura abraça toda criatura. R.\n10\nQue vossas obras, ó Senhor, vos glorifiquem, *\ne os vossos santos com louvores vos bendigam!\n11\nNarrem a glória e o esplendor do vosso reino *\ne saibam proclamar vosso poder! R.\n12\nPara espalhar vossos prodígios entre os homens *\ne o fulgor de vosso reino esplendoroso.\n13a\nO vosso reino é um reino para sempre, *\nb\nvosso poder, de geração em geração. R.",
-   "title": "Salmo Responsorial — Sl 144(145),1.9.10-11.12-13ab (R. 8)"
+   "title": "Salmo Responsorial — Sl 144(145),1.9.10-11.12-13ab (R. 8) (Lecionário II, pág. 73)"
   },
   "s14_qui_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -536,21 +545,21 @@
    "referencia": "Mt 11,11-15",
    "day": "Quinta-feira (10/12)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 11,11-15\nNaquele tempo, disse Jesus à multidão:\n11\nEm verdade eu vos digo,\nde todos os homens que já nasceram,\nnenhum é maior do que João Batista.\nNo entanto, o menor no Reino dos Céus\né maior do que ele.\n12\nDesde os dias de João Batista até agora,\no Reino dos Céus sofre violência,\ne são os violentos que o conquistam.\n13\nCom efeito, todos os profetas e a Lei\nprofetizaram até João.\n14\nE se quereis aceitar,\nele é o Elias que há de vir.\n15\nQuem tem ouvidos, ouça\".\nPalavra da Salvação.",
-   "title": "Evangelho — Mt 11,11-15"
+   "title": "Evangelho — Mt 11,11-15 (Lecionário II, pág. 73)"
   },
   "s14_sex_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 48,17-19",
    "day": "Sexta-feira (11/12)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 48,17-19\n17\nIsto diz o Senhor,\no teu libertador, o Santo de Israel:\n\"Eu, o Senhor teu Deus, te ensino coisas úteis,\nte conduzo pelo caminho em que andas.\n18\nAh, se tivesses observado os meus mandamentos!\nTua paz teria sido como um rio\ne tua justiça como as ondas do mar;\n19\ntua descendência seria como a areia do mar\ne os filhos do teu ventre como os grãos de areia;\neste nome não teria desaparecido\nnem teria sido cancelado de minha presença\".\nPalavra do Senhor.",
-   "title": "1ª Leitura — Is 48,17-19"
+   "title": "1ª Leitura — Is 48,17-19 (Lecionário II, pág. 74)"
   },
   "s14_sex_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 1,1-2.3.4 e 6 (R. cf. Jo 8,12)",
    "day": "Sexta-feira (11/12)",
    "text": "Salmo responsorial\nSl 1,1-2.3.4 e 6 (R. cf. Jo 8,12)\nR. Senhor, quem vos seguir, terá a luz da vida.\n1\nFeliz é todo aquele que não anda*\nconforme os conselhos dos perversos;\nque não entra no caminho dos malvados,*\nnem junto aos zombadores vai sentar-se;\n2\nmas encontra seu prazer na lei de Deus*\na medita, dia e noite, sem cessar. R.\n3\nEis que ele é semelhante a uma árvore,*\nque à beira da torrente está plantada;\nela sempre dá seus frutos a seu tempo, †\ne jamais as suas folhas vão murchar.*\nEis que tudo o que ele faz vai prosperar. R.\n4\nMas bem outra é a sorte dos perversos. †\nAo contrário, são iguais à palha seca*\nespalhada e dispersada pelo vento.\n6\nPois Deus vigia o caminho dos eleitos,*\nmas a estrada dos malvados leva à morte. R.",
-   "title": "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. cf. Jo 8,12)"
+   "title": "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. cf. Jo 8,12) (Lecionário II, pág. 74)"
   },
   "s14_sex_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -564,28 +573,28 @@
    "referencia": "Mt 11,16-19",
    "day": "Sexta-feira (11/12)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Mateus 11,16-19\nNaquele tempo, disse Jesus às multidões:\n16\n\"Com quem vou comparar esta geração?\nSão como crianças sentadas nas praças,\nque gritam para os colegas, dizendo:\n17\n'Tocamos flauta e vós não dançastes.\nEntoamos lamentações e vós não batestes no peito!'\n18\nVeio João, que não come nem bebe,\ne dizem: 'Ele está com um demônio'.\n19\nVeio o Filho do Homem, que come e bebe,\ne dizem: 'É um comilão e beberrão,\namigo de cobradores de impostos e de pecadores'.\nMas a sabedoria foi reconhecida com base em suas obras\".\nPalavra da Salvação.",
-   "title": "Evangelho — Mt 11,16-19"
+   "title": "Evangelho — Mt 11,16-19 (Lecionário II, pág. 75)"
   },
   "s14_dom_l1": {
    "momento": "1ª Leitura",
    "referencia": "Is 61,1-2a.10-11",
    "day": "Fim de Semana (12 e 13/12) — 3º Domingo do Advento",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Profeta Isaías 61,1-2a.10-11\n1\nO espírito do Senhor Deus está sobre mim,\nporque o Senhor me ungiu;\nenviou-me para dar a boa-nova aos humildes,\ncurar as feridas da alma,\npregar a redenção para os cativos\ne a liberdade para os que estão presos;\n2a\npara proclamar o tempo da graça do Senhor.\n10\nExulto de alegria no Senhor\ne minh'alma regozija-se em meu Deus;\nele me vestiu com as vestes da salvação,\nenvolveu-me com o manto da justiça\ne adornou-me como um noivo com sua coroa,\nou uma noiva com suas joias.\n11\nAssim como a terra faz brotar a planta\ne o jardim faz germinar a semente,\nassim o Senhor Deus fará germinar a justiça\ne a sua glória diante de todas as nações.\nPalavra do Senhor.",
-   "title": "1ª Leitura — Is 61,1-2a.10-11"
+   "title": "1ª Leitura — Is 61,1-2a.10-11 (Lecionário I, pág. 376)"
   },
   "s14_dom_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Lc 1,46-48.49-50.53-54 (R. Is 61,10b)",
    "day": "Fim de Semana (12 e 13/12) — 3º Domingo do Advento",
    "text": "Salmo responsorial Lc 1,46-48.49-50.53-54 (R. Is 61,10b)\nR.A minh'alma se alegra no meu Deus.\n46\nA minha alma engrandece ao Senhor, *\n47\ne se alegrou o meu espírito em Deus, meu Salvador,\n48\npois, ele viu a pequenez de sua serva, *\ndesde agora as gerações hão de chamar-me de bendita. R.\n49\nO Poderoso fez por mim maravilhas, *\ne Santo é o seu nome!\n50\nSeu amor, de geração em geração,*\nchega a todos os que o respeitam. R.\n53\nDe bens saciou os famintos, *\ne despediu, sem nada os ricos.\n54\nAcolheu Israel, seu servidor, *\nfiel ao seu amor. R.",
-   "title": "Salmo Responsorial — Lc 1,46-48.49-50.53-54 (R. Is 61,10b)"
+   "title": "Salmo Responsorial — Lc 1,46-48.49-50.53-54 (R. Is 61,10b) (Lecionário I, pág. 376)"
   },
   "s14_dom_l2": {
    "momento": "2ª Leitura",
    "referencia": "1Ts 5,16-24",
    "day": "Fim de Semana (12 e 13/12) — 3º Domingo do Advento",
    "text": "SEGUNDA LEITURA\nLeitura da Primeira Carta de São Paulo aos Tessalonicenses 5,16-24\nIrmãos:\n16\nEstai sempre alegres!\n17\nRezai sem cessar.\n18\nDai graças em todas as circunstâncias,\nporque essa é a vosso respeito\na vontade de Deus em Jesus Cristo.\n19\nNão apagueis o espírito!\n20\nNão desprezeis as profecias,\n21\nmas examinai tudo e guardai o que for bom.\n22\nAfastai-vos de toda espécie de maldade!\n23\nQue o próprio Deus da paz vos santifique totalmente,\ne que tudo aquilo que sois\n— espírito, alma, corpo —\nseja conservado sem mancha alguma\npara a vinda de nosso Senhor Jesus Cristo!\n24\nAquele que vos chamou é fiel;\nele mesmo realizará isso.\nPalavra do Senhor.",
-   "title": "2ª Leitura — 1Ts 5,16-24"
+   "title": "2ª Leitura — 1Ts 5,16-24 (Lecionário I, pág. 377)"
   },
   "s14_dom_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -599,7 +608,7 @@
    "referencia": "Jo 1,6-8.19-28",
    "day": "Fim de Semana (12 e 13/12) — 3º Domingo do Advento",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo João 1,6-8.19-28\n6\nSurgiu um homem enviado por Deus;\nSeu nome era João.\n7\nEle veio como testemunha,\npara dar testemunho da luz,\npara que todos chegassem à fé por meio dele.\n8\nEle não era a luz,\nmas veio para dar testemunho da luz.\n19\nEste foi o testemunho de João,\nquando os judeus enviaram de Jerusalém\nsacerdotes e levitas para perguntar:\n\"Quem és tu?\"\n20\nJoão confessou e não negou.\nConfessou: \"Eu não sou o Messias\".\n21\nEles perguntaram: \"Quem és, então?\nÉs tu Elias?\"\nJoão respondeu: \"Não sou\".\nEles perguntaram: \"És o Profeta?\"\nEle respondeu: \"Não\".\n22\nPerguntaram então: \"Quem és, afinal?\nTemos que levar uma resposta para aqueles que nos enviaram.\nO que dizes de ti mesmo?\"\n23\nJoão declarou:\n\"Eu sou a voz que grita no deserto:\n'Aplainai o caminho do Senhor'\"\n— conforme disse o profeta Isaías.\n24\nOra, os que tinham sido enviados\npertenciam aos fariseus\n25\ne perguntaram: \"Por que então andas batizando,\nse não és o Messias, nem Elias, nem o Profeta?\"\n26\nJoão respondeu: \"Eu batizo com água;\nmas no meio de vós está aquele\nque vós não conheceis,\n27\ne que vem depois de mim.\nEu não mereço desamarrar a correia de suas sandálias\".\n28\nIsso aconteceu em Betânia além do Jordão,\nonde João estava batizando.\nPalavra da Salvação.",
-   "title": "Evangelho — Jo 1,6-8.19-28"
+   "title": "Evangelho — Jo 1,6-8.19-28 (Lecionário I, pág. 378)"
   }
  },
  "antifonas": {
@@ -1252,6 +1261,64 @@
     }
    ]
   },
+  "preces_13_imaculada": {
+   "tipo": "preces",
+   "titulo": "Preces — Imaculada Conceição — 08/12/2026",
+   "botao": "🙏 Preces — Imaculada Conceição",
+   "fonte": "semanas/2026-12-07/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.docx",
+   "cabecalho": "● PRECES – IMACULADA CONCEIÇÃO DA BEM-AVENTURADA VIRGEM MARIA – 8 DEZEMBRO 2026",
+   "formularios": [
+    {
+     "titulo": "Data: 08/12/2026 — Horário: Terça-feira 19h00",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Proclamemos a grandeza de Deus Pai todo-poderoso: Ele quis que Maria, Mãe de seu Filho, fosse celebrada por todas as gerações. Peçamos humildemente:"
+      ],
+      [
+       "Todos",
+       "R. Cheia de graça, intercedei por nós!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Deus, autor de tantas maravilhas, que fizestes a Imaculada Virgem Maria participar em corpo e alma da glória celeste de Cristo, conduzi para a mesma glória os corações de vossos filhos e filhas, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Cheia de graça, intercedei por nós!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que nos destes Maria por Mãe, concedei, por sua intercessão, saúde aos doentes, consolo aos tristes, perdão aos pecadores, e a todos a salvação e a paz, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Cheia de graça, intercedei por nós!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que fizestes de Maria a cheia de graça, concedei a todos a abundância da vossa graça, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Cheia de graça, intercedei por nós!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  },
   "roteiro_13": {
    "tipo": "roteiro",
    "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
@@ -1320,19 +1387,39 @@
       ],
       [
        "Orientação",
-       "Coroa do Advento, logo após a saudação inicial: acende-se a terceira vela (rósea) – motivação, oração e canto."
+       "Coroa do Advento, logo após a saudação inicial: motivação; procissão com a terceira vela; oração do sacerdote e bênção das velas trazidas pela comunidade (dinâmica de 2025)."
       ],
       [
        "Comentarista",
        "Acendemos a terceira vela, de cor rósea: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos."
       ],
       [
-       "Todos",
-       "Senhor Jesus, luz verdadeira que já estás no meio de nós, faze-nos sempre alegres, perseverantes na oração e agradecidos em todas as circunstâncias, para que sejamos testemunhas da tua luz junto dos irmãos. Vem, Senhor Jesus!"
+       "Orientação",
+       "Antes da Missa, acendem-se a primeira e a segunda vela. Uma pessoa (leitores, preces, liturgia ou comunidade), com túnica na cor da vela, traz a terceira vela (rósea) acesa, em procissão pelo corredor central, e sobe ao presbitério e fica junto do sacerdote durante a oração; terminada a oração, coloca a vela na coroa."
       ],
       [
        "Cantores",
-       "Canto do acendimento da vela da Coroa do Advento"
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Sacerdote",
+       "Pai de bondade, o Natal está próximo e nossos corações exultam de alegria na expectativa do Vosso Filho. Ajudai-nos a exultar como João Batista no deserto, preparando-nos para receber a Cristo. Que esta alegria se manifeste em nosso lar, superando qualquer tristeza e nos impulsionando a partilhar o Evangelho com um sorriso para todos que encontrarmos nesta semana."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "O sacerdote abençoa as velas trazidas pela comunidade para a coroa das famílias; todos as elevam nesse momento."
+      ],
+      [
+       "Sacerdote",
+       "Oremos. Deus de alegria e de bondade, que iluminais o vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas de cor rósea, sinal da alegria cristã que brota da proximidade do Natal. Que sua luz recorde às famílias que a verdadeira alegria nasce de Cristo, que vem ao nosso encontro para renovar a vida e fortalecer nossa esperança. Que esta chama nos anime a caminhar com confiança, celebrando o vosso amor e testemunhando, com generosidade, a alegria do Evangelho. Por Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
       ],
       [
        "Sacerdote",
@@ -1796,14 +1883,154 @@
   },
   "preces_13": {
    "tipo": "preces",
-   "titulo": "Preces — 3º Domingo do Advento (Gaudete)",
+   "titulo": "Preces — 3º Domingo do Advento",
+   "fonte": "semanas/2026-12-07/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
+   "cabecalho": "● PRECES – 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026",
    "formularios": [
     {
-     "titulo": "Preces – em preparação",
+     "titulo": "Data: 12/12/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
      "linhas": [
       [
-       "Orientação",
-       "Preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h00 e 11h00: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu – a inserir."
+       "Sacerdote",
+       "Invoquemos a Cristo Jesus, felicidade e alegria de todos os que o esperam; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Esperado das nações, cheios de alegria, aguardamos vossa vinda; vinde, Senhor Jesus, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que existis eternamente, antes da criação do mundo vinde salvar todos os que vivem neste mundo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que criastes o universo e tudo o que nele existe, vinde renovar a obra de vossas mãos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 13/12/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Rezemos a Deus, Pai de bondade, que nos concede a graça de esperarmos a manifestação de nosso Senhor Jesus Cristo, e digamos confiantes:"
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Santificai, Senhor, nosso espírito, nossa alma e nosso corpo, e guardai-nos irrepreensíveis para a vinda de vosso Filho, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Ajudai-nos a passar santamente este dia, e fazei-nos viver neste mundo com justiça e piedade, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Revesti-nos de nosso Senhor Jesus Cristo, e seremos repletos do Espírito Santo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 13/12/2026 — Horário: Domingo 18h30 – II Vésperas",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Oremos a Cristo Jesus, nosso Redentor, caminho, verdade e vida; e digamos humildemente:"
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus, Filho do Altíssimo, anunciado por Gabriel à Virgem Maria, vinde reinar para sempre sobre o vosso povo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Santo de Deus, com vossa chegada fizestes o Precursor exultar no seio de Isabel, vinde trazer ao mundo inteiro a alegria da salvação, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus Salvador, cujo nome foi revelado pelo anjo a José, homem justo, vinde libertar vosso povo de seus pecados, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
       ]
      ]
     }

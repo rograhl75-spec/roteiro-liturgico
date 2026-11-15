@@ -10,8 +10,11 @@
   "natal_noite",
   "natal_dia"
  ],
- "precesExtras": [],
- "nota": "RASCUNHO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "precesExtras": [
+  "natal_noite",
+  "natal_dia"
+ ],
+ "nota": "RASCUNHO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-12-21",
@@ -242,6 +245,11 @@
      "tipo": "roteiro",
      "chave": "natal_noite",
      "rotulo": "Roteiro — Natal – Missa da Noite"
+    },
+    {
+     "tipo": "preces",
+     "chave": "natal_noite",
+     "rotulo": "Preces — Natal – Missa da Noite"
     }
    ],
    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio depois da homilia."
@@ -308,6 +316,11 @@
      "tipo": "roteiro",
      "chave": "natal_dia",
      "rotulo": "Roteiro — Natal – Missa do Dia"
+    },
+    {
+     "tipo": "preces",
+     "chave": "natal_dia",
+     "rotulo": "Preces — Natal – Missa do Dia"
     }
    ],
    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados."
@@ -412,8 +425,11 @@
  "documentos": [
   "semanas/2026-12-21/Leituras 21 a 27 dezembro 2026.docx",
   "semanas/2026-12-21/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.docx",
+  "semanas/2026-12-21/PRECES - SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026.docx",
   "semanas/2026-12-21/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
-  "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx"
+  "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+  "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+  "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s16_seg_l1": {
@@ -428,7 +444,7 @@
    "referencia": "Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)",
    "day": "Segunda-feira (21/12)",
    "text": "Salmo responsorial\nSl 32(33),2-3.11-12.20-21 (R. 1a e 3a)\nR. Ó justos, alegrai-vos no Senhor!\nCantai para o Senhor um canto novo!\n2\nDai graças ao Senhor ao som da harpa, *\nna lira de dez cordas celebrai-o!\n3\nCantai para o Senhor um canto novo, *\ncom arte sustentai a louvação! R.\n11\nMas os desígnios do Senhor são para sempre, †\ne os pensamentos que ele traz no coração, *\nde geração em geração, vão perdurar.\n12\nFeliz o povo cujo Deus é o Senhor, *\ne a nação que escolheu por sua herança! R.\n20\nNo Senhor nós esperamos confiantes, *\nporque ele é nosso auxílio e proteção!\n21\nPor isso o nosso coração se alegra nele, *\nseu santo nome é nossa única esperança. R.",
-   "title": "Salmo Responsorial — Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)"
+   "title": "Salmo Responsorial — Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a) (Lecionário II, pág. 101)"
   },
   "s16_seg_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -449,14 +465,14 @@
    "referencia": "1Sm 1,24-28",
    "day": "Terça-feira (22/12)",
    "text": "PRIMEIRA LEITURA\nLeitura do Primeiro Livro de Samuel 1,24-28\nNaqueles dias,\n24\nAna, logo que o desmamou,\nlevou consigo Samuel à casa do Senhor em Silo,\ne mais um novilho de três anos,\ntrês arrobas de farinha\ne um odre de vinho.\nO menino, porém, era ainda uma criança.\n25\nDepois de sacrificarem o novilho,\napresentaram o menino a Eli.\n26\nE Ana disse-lhe:\n\"Ouve, meu senhor, por tua vida,\neu sou a mulher que esteve aqui\norando ao Senhor, na tua presença.\n27\nEis o menino por quem eu pedi,\ne o Senhor ouviu a minha súplica.\n28\nPortanto, eu também o ofereço ao Senhor,\na fim de que só a ele sirva\nem todos os dias da sua vida\".\nE adoraram o Senhor.\nPalavra do Senhor.",
-   "title": "1ª Leitura — 1Sm 1,24-28"
+   "title": "1ª Leitura — 1Sm 1,24-28 (Lecionário II, pág. 102)"
   },
   "s16_ter_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "1Sm 2,1.4-5.6-7.8abcd (R. 1a)",
    "day": "Terça-feira (22/12)",
    "text": "Salmo responsorial\n1Sm 2,1. 4-5.6-7. 8abcd (R. 1a)\nR. Meu coração exultou no meu Senhor, Salvador.\n1\nExulta no Senhor meu coração, *\ne se eleva a minha fronte no meu Deus;\nMinha boca desafia os meus rivais *\nporque me alegro com a vossa salvação. R.\n4\nO arco dos fortes foi dobrado, foi quebrado, *\nmas os fracos se vestiram de vigor.\n5\nOs saciados se empregaram por um pão, *\nmas os pobres e os famintos se fartaram.\nMuitas vezes deu à luz a que era estéril, *\nmas a mãe de muitos filhos definhou. R.\n6\nÉ o Senhor quem dá a morte e dá a vida, *\nfaz descer à sepultura e faz voltar;\n7\né o Senhor quem faz o pobre e faz o rico, *\né o Senhor quem nos humilha e nos exalta. R.\n8a\nO Senhor ergue do pó o homem fraco, *\nb\ne do lixo ele retira o indigente,\nc\npara fazê-los assentar-se com os nobres *\nd\nnum lugar de muita honra e distinção. R.",
-   "title": "Salmo Responsorial — 1Sm 2,1.4-5.6-7.8abcd (R. 1a)"
+   "title": "Salmo Responsorial — 1Sm 2,1.4-5.6-7.8abcd (R. 1a) (Lecionário II, pág. 103)"
   },
   "s16_ter_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -470,21 +486,21 @@
    "referencia": "Lc 1,46-56",
    "day": "Terça-feira (22/12)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 1,46-56\nNaquele tempo,\n46\nMaria disse:\n\"A minha alma engrandece o Senhor,\n47\ne o meu espírito se alegra em Deus, meu Salvador,\n48\nporque olhou para a humildade de sua serva.\nDoravante todas as gerações me chamarão bem-aventurada,\n49\nporque o Todo-poderoso\nfez grandes coisas em meu favor.\nO seu nome é santo,\n50\ne sua misericórdia se estende, de geração em geração,\na todos os que o temem.\n51\nEle mostrou a força de seu braço:\ndispersou os soberbos de coração.\n52\nDerrubou do trono os poderosos\ne elevou os humildes.\n53\nEncheu de bens os famintos,\ne despediu os ricos de mãos vazias.\n54\nSocorreu Israel, seu servo,\nlembrando-se de sua misericórdia,\n55\nconforme prometera aos nossos pais,\nem favor de Abraão e de sua descendência, para sempre\".\n56\nMaria ficou três meses com Isabel;\ndepois voltou para casa.\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 1,46-56"
+   "title": "Evangelho — Lc 1,46-56 (Lecionário II, pág. 103)"
   },
   "s16_qua_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ml 3,1-4.23-24",
    "day": "Quarta-feira (23/12)",
    "text": "PRIMEIRA LEITURA\nLeitura da Profecia de Malaquias 3,1-4.23-24\nAssim fala o Senhor Deus:\n1\n\"Eis que envio meu anjo,\ne ele há de preparar o caminho para mim;\nlogo chegará ao seu templo o Dominador,\nque tentais encontrar,\ne o anjo da aliança, que desejais.\nEi-lo que vem, diz o Senhor dos exércitos;\n2\ne quem poderá fazer-lhe frente,\nno dia de sua chegada?\nE quem poderá resistir-lhe, quando ele aparecer?\nEle é como o fogo da forja\ne como a barrela dos lavadeiros;\n3\ne estará a postos,\ncomo para fazer derreter e purificar a prata:\nassim ele purificará os filhos de Levi\ne os refinará como ouro e como prata,\ne eles poderão assim\nfazer oferendas justas ao Senhor.\n4\nSerá então aceitável ao Senhor\na oblação de Judá e de Jerusalém,\ncomo nos primeiros tempos e nos anos antigos.\n23\nEis que eu vos enviarei\no profeta Elias,\nantes que venha o dia do Senhor,\ndia grande e terrível;\n24\no coração dos pais há de voltar-se para os filhos,\ne o coração dos filhos para seus pais,\npara que eu não intervenha,\nferindo de maldição a vossa terra\".\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ml 3,1-4.23-24"
+   "title": "1ª Leitura — Ml 3,1-4.23-24 (Lecionário II, pág. 104)"
   },
   "s16_qua_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)",
    "day": "Quarta-feira (23/12)",
    "text": "Salmo responsorial\nSl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)\nR. Levantai vossa cabeça e olhai,\npois, a vossa redenção se aproxima!\n4\nMostrai-me, ó Senhor, vossos caminhos, *\ne fazei-me conhecer a vossa estrada!\n5a\nVossa verdade me oriente e me conduza, *\nb\nporque sois o Deus da minha salvação! R.\n8\nO Senhor é piedade e retidão, *\ne reconduz ao bom caminho os pecadores.\n9\nEle dirige os humildes na justiça, *\ne aos pobres ele ensina o seu caminho. R.\n10\nVerdade e amor são os caminhos do Senhor *\npara quem guarda sua Aliança e seus preceitos.\n14\nO Senhor se torna íntimo aos que o temem *\ne lhes dá a conhecer sua Aliança. R.",
-   "title": "Salmo Responsorial — Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)"
+   "title": "Salmo Responsorial — Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28) (Lecionário II, pág. 105)"
   },
   "s16_qua_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -498,7 +514,7 @@
    "referencia": "Lc 1,57-66",
    "day": "Quarta-feira (23/12)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 1,57-66\n57\nCompletou-se o tempo da gravidez de Isabel,\ne ela deu à luz um filho.\n58\nOs vizinhos e parentes ouviram dizer\ncomo o Senhor tinha sido misericordioso\npara com Isabel, e alegraram-se com ela.\n59\nNo oitavo dia, foram circuncidar o menino,\ne queriam dar-lhe o nome de seu pai, Zacarias.\n60\nA mãe porém disse:\n\"Não! Ele vai chamar-se João.\"\n61\nOs outros disseram:\n\"Não existe nenhum parente teu com esse nome!\"\n62\nEntão fizeram sinais ao pai,\nperguntando como ele queria que o menino se chamasse.\n63\nZacarias pediu uma tabuinha, e escreveu:\n\"João é o seu nome.\"\n64\nNo mesmo instante, a boca de Zacarias se abriu,\nsua língua se soltou, e ele começou a louvar a Deus.\n65\nTodos os vizinhos ficaram com medo,\ne a notícia espalhou-se\npor toda a região montanhosa da Judeia.\n66\nE todos os que ouviam a notícia, ficavam pensando:\n\"O que virá a ser este menino?\"\nDe fato, a mão do Senhor estava com ele.\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 1,57-66"
+   "title": "Evangelho — Lc 1,57-66 (Lecionário II, pág. 106)"
   },
   "s16_qui_l1": {
    "momento": "1ª Leitura",
@@ -603,7 +619,7 @@
    "referencia": "Lc 2,22-40",
    "day": "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
    "text": "EVANGELHO (mais longo)\nProclamação do Evangelho de Jesus Cristo segundo Lucas 2,22-40\n22\nQuando se completaram os dias\npara a purificação da mãe e do filho,\nconforme a Lei de Moisés,\nMaria e José levaram Jesus a Jerusalém,\na fim de apresentá-lo ao Senhor.\n23\nConforme está escrito na Lei do Senhor:\n\"Todo primogênito do sexo masculino\ndeve ser consagrado ao Senhor\".\n24\nForam também oferecer o sacrifício\n— um par de rolas ou dois pombinhos —\ncomo está ordenado na Lei do Senhor.\n25\nEm Jerusalém, havia um homem chamado Simeão,\no qual era justo e piedoso,\ne esperava a consolação do povo de Israel.\nO Espírito Santo estava com ele\n26\ne lhe havia anunciado que não morreria\nantes de ver o Messias que vem do Senhor.\n27\nMovido pelo Espírito, Simeão veio ao Templo.\nQuando os pais trouxeram o menino Jesus\npara cumprir o que a Lei ordenava,\n28\nSimeão tomou o menino nos braços\ne bendisse a Deus:\n29\n\"Agora, Senhor, conforme a tua promessa,\npodes deixar teu servo partir em paz;\n30\nporque meus olhos viram a tua salvação,\n31\nque preparaste diante de todos os povos:\n32\nluz para iluminar as nações\ne glória do teu povo Israel\".\n33\nO pai e a mãe de Jesus estavam admirados\ncom o que diziam a respeito dele.\n34\nSimeão os abençoou e disse a Maria, a mãe de Jesus:\n\"Este menino vai ser causa\ntanto de queda como de reerguimento\npara muitos em Israel.\nEle será um sinal de contradição.\n35\nAssim serão revelados\nos pensamentos de muitos corações.\nQuanto a ti, uma espada te traspassará a alma\".\n36\nHavia também uma profetisa, chamada Ana,\nfilha de Fanuel, da tribo de Aser.\nEra de idade muito avançada;\nquando jovem, tinha sido casada\ne vivera sete anos com o marido.\n37\nDepois ficara viúva,\ne agora já estava com oitenta e quatro anos.\nNão saía do Templo, dia e noite servindo a Deus\ncom jejuns e orações.\n38\nAna chegou nesse momento\ne pôs-se a louvar a Deus e a falar do menino\na todos os que esperavam a libertação de Jerusalém.\n39\nDepois de cumprirem tudo, conforme a Lei do Senhor,\nvoltaram à Galileia, para Nazaré, sua cidade.\n40\nO menino crescia e tornava-se forte,\ncheio de sabedoria;\ne a graça de Deus estava com ele.\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 2,22-40"
+   "title": "Evangelho — Lc 2,22-40 (Lecionário I, pág. 402)"
   },
   "s16_dom_ev_breve": {
    "momento": "Evangelho (mais breve)",
@@ -716,6 +732,22 @@
       ],
       [
        "Orientação",
+       "Preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."
+      ],
+      [
+       "Orientação",
+       "Procissão de entrada: turíbulo e naveta, cruz, velas, diácono com o Evangeliário, coroinhas que servem o altar e sacerdote; o sacerdote beija o altar e o incensa. Leitores, MESC e coroinhas da comunhão já ficam em seus lugares e não participam da procissão. Os coroinhas tocam o sino para iniciar o canto do Glória."
+      ],
+      [
+       "Orientação",
+       "Antes da Missa, entregar velas à assembleia. A igreja fica com pouca luz até o fim do canto «Vinde, Cristãos». Preparar uma luminária pequena no ambão e para o comentarista."
+      ],
+      [
+       "Orientação",
+       "Dinâmica de 2025: Rito da Luz antes do Evangelho (velas da assembleia, Menino Jesus levado ao presépio durante o Evangelho) e Rito da Noite Feliz antes da Bênção Solene, com entrega de uma vela por família e da oração para a Ceia de Natal."
+      ],
+      [
+       "Orientação",
        "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
       ],
       [
@@ -769,7 +801,7 @@
       ],
       [
        "Orientação",
-       "Onde for costume, após a saudação, pode-se cantar ou recitar, do ambão, o Anúncio do Natal (Missal, págs. 1216-1219)."
+       "Anúncio do Natal de Nosso Senhor Jesus Cristo (Missal, págs. 1216-1219) – no ambão."
       ],
       [
        "Sacerdote",
@@ -869,6 +901,14 @@
        "Graças a Deus."
       ],
       [
+       "Comentarista",
+       "Neste momento serão acesas as velas."
+      ],
+      [
+       "Orientação",
+       "RITO DA LUZ – o datashow mostra: «Nesta Noite Santa, a Palavra se faz Vida. Silêncio… O Salvador chegou.» A música faz um fundo do «Aleluia» enquanto se acendem as velas; terminado o acendimento, o responsável pelo som dá o sinal para a aclamação. Iniciada a aclamação, os coroinhas apresentam o incenso ao sacerdote; o diácono pede a bênção e vai ao ambão."
+      ],
+      [
        "Cantores e Todos",
        "Aclamação ao Evangelho ."
       ],
@@ -897,12 +937,20 @@
        "Lc 2,1-14"
       ],
       [
+       "Orientação",
+       "RITO DA LUZ – no versículo 7 («e Maria deu à luz o seu filho primogênito»), o diácono interrompe a proclamação: pelo corredor central entram quatro anjos iluminando um anjo com a imagem do Menino Jesus, ao fundo musical de «A Ele a glória»; os coroinhas retiram a Bíblia da manjedoura; o anjo sobe ao presbitério, apresenta a imagem à assembleia e a coloca no presépio, e acende-se o foco da manjedoura. Terminado o fundo musical, o diácono retoma e conclui o Evangelho."
+      ],
+      [
        "Diácono / Sacerdote",
        "Palavra da Salvação."
       ],
       [
        "Todos",
        "Glória a vós, Senhor."
+      ],
+      [
+       "Orientação",
+       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote asperge com água benta e incensa o presépio e a imagem do Menino Jesus (bênção do presépio). Terminado o canto, acendem-se todas as luzes, exceto as da árvore de Natal."
       ],
       [
        "Sacerdote / Diácono",
@@ -919,18 +967,6 @@
       [
        "Orientação",
        "Breve silêncio depois da homilia (IGMR 66)."
-      ],
-      [
-       "Orientação",
-       "Bênção do presépio (Ritual de Bênçãos): «texto a definir com o pároco». Em seguida, o Creio."
-      ],
-      [
-       "Sacerdote",
-       "Oração de bênção do presépio «texto do Ritual de Bênçãos»."
-      ],
-      [
-       "Todos",
-       "Amém."
       ],
       [
        "Orientação",
@@ -1228,6 +1264,14 @@
        "Ele está no meio de nós."
       ],
       [
+       "Comentarista",
+       "Irmãos e irmãs, o mistério do Natal não termina aqui; ele segue conosco. Neste momento, vamos acender nossas velas. (Pausa breve enquanto o fogo começa a passar.) Vejam como a luz se espalha e vence a escuridão! Esta chama representa o próprio Jesus, a Luz que nenhuma treva pode apagar. Ao som desta canção que atravessa gerações, convidamos cada família a erguer sua luz. Que o brilho que nasce no presépio ilumine agora os seus lares, trazendo paz, reconciliação e esperança. Cantemos, unidos numa só fé, a doçura desta Noite Feliz."
+      ],
+      [
+       "Orientação",
+       "RITO DA NOITE FELIZ – acendem-se as velas e canta-se «Noite Feliz»; apagam-se as luzes da igreja, exceto as do presépio, e acendem-se as da árvore de Natal. Entrega-se uma vela a cada família (lembrança da paróquia) e a oração para a Ceia de Natal."
+      ],
+      [
        "Orientação",
        "Bênção Solene (opcional) – se for usada, substitui a bênção simples abaixo:"
       ],
@@ -1308,6 +1352,14 @@
       [
        "Orientação",
        "Natal do Senhor – Missa do Dia (sexta-feira, 25/12, 19h00): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio (todos se ajoelham ao «E se encarnou»). Oração Eucarística I (Cânon Romano), com o «Em comunhão» próprio do Natal. Prefácio do Natal I (pág. 455; pode-se usar o II ou o III, págs. 456-457)."
+      ],
+      [
+       "Orientação",
+       "Preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."
+      ],
+      [
+       "Orientação",
+       "Procissão de entrada: turíbulo e naveta, cruz, velas, diácono com o Evangeliário, coroinhas que servem o altar e sacerdote; o sacerdote beija o altar e o incensa. Leitores, MESC e coroinhas da comunhão já ficam em seus lugares e não participam da procissão. Os coroinhas tocam o sino para iniciar o canto do Glória."
       ],
       [
        "Orientação",
@@ -1874,6 +1926,122 @@
     }
    ]
   },
+  "preces_15_natal_noite": {
+   "tipo": "preces",
+   "titulo": "Preces — Natal – Missa da Noite — 24/12/2026",
+   "botao": "🙏 Preces — Natal – Missa da Noite",
+   "fonte": "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+   "cabecalho": "● PRECES – NATAL DO SENHOR – MISSA DA NOITE – 24 DEZEMBRO 2026",
+   "formularios": [
+    {
+     "titulo": "Data: 24/12/2026 — Horário: Quinta-feira 19h00 (Matriz e Capela São Domingos Sávio)",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Adoremos a Cristo, que aniquilou a si mesmo, assumindo a condição de servo, e foi igual a nós em tudo, exceto no pecado. Com toda a nossa fé, peçamos:"
+      ],
+      [
+       "Todos",
+       "R. Pelo vosso Natal, socorrei os que remistes!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Ao entrardes no mundo, inaugurastes os novos tempos anunciados pelos profetas; fazei que de geração em geração a Igreja se rejuvenesça, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Pelo vosso Natal, socorrei os que remistes!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que assumistes a fragilidade da natureza humana, Sede a luz dos cegos, a força dos fracos, o auxílio de todos os que padecem, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Pelo vosso Natal, socorrei os que remistes!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que nascestes pobre e humilde, olhai para os pobres e confortai-os com bondade, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Pelo vosso Natal, socorrei os que remistes!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  },
+  "preces_15_natal_dia": {
+   "tipo": "preces",
+   "titulo": "Preces — Natal – Missa do Dia — 25/12/2026",
+   "botao": "🙏 Preces — Natal – Missa do Dia",
+   "fonte": "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+   "cabecalho": "● PRECES – NATAL DO SENHOR – MISSA DO DIA – 25 DEZEMBRO 2026",
+   "formularios": [
+    {
+     "titulo": "Data: 25/12/2026 — Horário: Sexta-feira 19h00",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Celebremos com alegria a Jesus Cristo, em cujo Natal os anjos anunciaram a paz ao mundo; e peçamos:"
+      ],
+      [
+       "Todos",
+       "R. Vosso Natal traga a paz para todos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Senhor, que confortais a Igreja com o mistério do vosso nascimento, enriquecei-a de todos os bens, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vosso Natal traga a paz para todos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Príncipe dos pastores e Guarda de nossas almas, tornai o Papa e nossos bispos fiéis ministros de vossa graça multiforme, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vosso Natal traga a paz para todos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Rei da eternidade, que nascendo quisestes sujeitar-vos à brevidade da vida e experimentar as dificuldades humanas, fazei-nos viver de tal modo que possamos participar um dia da vossa glória eterna, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vosso Natal traga a paz para todos!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    }
+   ]
+  },
   "roteiro_15": {
    "tipo": "roteiro",
    "titulo": "Roteiro — Sagrada Família de Jesus, Maria e José — 26 e 27/12/2026",
@@ -1886,6 +2054,10 @@
       [
        "Orientação",
        "Festa da Sagrada Família no domingo da Oitava do Natal: Glória e Creio. Oração Eucarística II (regra da paróquia nos fins de semana). Prefácio do Natal I (pág. 455; pode-se usar o II ou o III). Leituras: Eclo 3 e Cl 3 (opção da paróquia); Evangelho na forma longa ou breve. Pode-se usar a Bênção Solene do Natal (pág. 579), dizendo «este dia santíssimo»."
+      ],
+      [
+       "Orientação",
+       "Preparar a imagem da Sagrada Família (ornamentação). Na procissão de entrada, uma família entra com a imagem, que depois é colocada em local próximo ao ambão (dinâmica de 2025)."
       ],
       [
        "Orientação",
@@ -2418,14 +2590,154 @@
   },
   "preces_15": {
    "tipo": "preces",
-   "titulo": "Preces — Sagrada Família",
+   "titulo": "Preces — Sagrada Família de Jesus, Maria e José",
+   "fonte": "semanas/2026-12-21/PRECES - SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026.docx",
+   "cabecalho": "● PRECES – SAGRADA FAMÍLIA DE JESUS, MARIA E JOSÉ – 26 E 27 DEZEMBRO 2026",
    "formularios": [
     {
-     "titulo": "Preces – em preparação",
+     "titulo": "Data: 26/12/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
      "linhas": [
       [
-       "Orientação",
-       "Preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h00 e 11h00: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu – a inserir."
+       "Sacerdote",
+       "Adoremos o Filho do Deus vivo, que se dignou tornar-se filho de uma família humana; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Cristo Jesus, pelo mistério de vossa submissão a Maria e a José, ensinai-nos a respeitar e a obedecer aos que legitimamente nos governam, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que amastes vossos pais e por eles fostes amado; confirmai todas as famílias na paz e no amor recíproco, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que sempre vos consagrastes generosamente às coisas do vosso Pai celeste, fazei que Deus seja glorificado em todas as famílias, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 27/12/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Adoremos o Filho do Deus vivo, que se dignou tornar-se filho de uma família humana; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Jesus, pela vossa obediência, santificai-nos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus, Verbo eterno do Pai, que vos submetestes à autoridade de Maria e de José, ensinai-nos a viver na humildade e obediência, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Jesus, pela vossa obediência, santificai-nos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus, nosso Mestre, cujas palavras e ações vossa Mãe conservava e meditava no coração, ensinai-nos a escutar e guardar fielmente a vossa Palavra, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Jesus, pela vossa obediência, santificai-nos!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus Cristo, que criastes o universo e quisestes ser chamado filho do carpinteiro, ensinai-nos a amar o trabalho, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Jesus, pela vossa obediência, santificai-nos!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 27/12/2026 — Horário: Domingo 18h30 – II Vésperas",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Adoremos o Filho do Deus vivo, que se dignou tornar-se filho de uma família humana; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Cristo Jesus, pelo mistério de vossa submissão a Maria e a José, ensinai-nos a respeitar e a obedecer aos que legitimamente nos governam, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que amastes vossos pais e por eles fostes amado; confirmai todas as famílias na paz e no amor recíproco, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que sempre vos consagrastes generosamente às coisas do vosso Pai celeste, fazei que Deus seja glorificado em todas as famílias, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Senhor, sois nosso modelo e salvador!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
       ]
      ]
     }

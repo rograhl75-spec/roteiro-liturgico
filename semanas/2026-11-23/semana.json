@@ -8,7 +8,7 @@
  "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
  "roteiroExtras": [],
  "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia.",
+ "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-11-23",
@@ -362,7 +362,7 @@
     "Salmo",
     "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
     "s12_dom_sal",
-    ""
+    "I / 696"
    ],
    [
     "2ª Leitura",
@@ -396,7 +396,8 @@
  },
  "documentos": [
   "semanas/2026-11-23/Leituras 23 a 29 novembro 2026.docx",
-  "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx"
+  "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
+  "semanas/2026-11-23/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.docx"
  ],
  "leituras": {
   "s12_seg_l1": {
@@ -404,7 +405,7 @@
    "referencia": "Ap 14,1-3.4b-5",
    "day": "Segunda-feira (23/11)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 14,1-3.4b-5\nEu, João,\n1\ntive esta visão:\no Cordeiro estava de pé sobre o monte Sião.\nCom ele, os cento e quarenta e quatro mil\nque tinham a fronte marcada com o nome dele\ne o nome do seu Pai.\n2\nOuvi uma voz que vinha do céu;\nparecia o barulho de águas torrenciais\ne o estrondo de um forte trovão.\nO ruído que ouvi era como o som\nde músicos tocando harpa.\n3\nEstavam diante do trono,\ndiante dos quatro Seres vivos e dos Anciãos,\ne cantavam um cântico novo.\nEra um cântico que ninguém podia aprender;\nsó os cento e quarenta e quatro mil marcados,\nque foram resgatados da terra.\n4b\nEles seguem o Cordeiro aonde quer que vá.\nForam resgatados do meio dos homens,\ncomo primeira oferta a Deus a ao Cordeiro.\n5\nNa sua boca nunca foi encontrada mentira.\nSão íntegros!\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ap 14,1-3.4b-5"
+   "title": "1ª Leitura — Ap 14,1-3.4b-5 (Lecionário II, pág. 1220)"
   },
   "s12_seg_sal": {
    "momento": "Salmo Responsorial",
@@ -425,21 +426,21 @@
    "referencia": "Lc 21,1-4",
    "day": "Segunda-feira (23/11)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,1-4\nNaquele tempo,\n1\nJesus ergueu os olhos e viu pessoas ricas\ndepositando ofertas no tesouro do Templo.\n2\nViu também uma pobre viúva\nque depositou duas pequenas moedas.\n3\nDiante disto, ele disse:\n\"Em verdade vos digo que essa pobre viúva\nofertou mais do que todos.\n4\nPois todos eles depositaram,\ncomo oferta feita a Deus,\naquilo que lhes sobrava.\nMas a viúva, na sua pobreza,\nofertou tudo quanto tinha para viver\".\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 21,1-4"
+   "title": "Evangelho — Lc 21,1-4 (Lecionário II, pág. 1222)"
   },
   "s12_ter_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 14,14-19",
    "day": "Terça-feira (24/11) — Santo André Dung-Lac",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 14,14-19\nEu, João,\n14\nna minha visão, vi uma nuvem branca\ne sentado na nuvem\nalguém que parecia um \"filho de homem\".\nTinha na cabeça uma coroa de ouro\ne, nas mãos, uma foice afiada.\n15\nSaiu do Templo um outro anjo,\ngritando em alta voz\npara aquele que estava sentado na nuvem:\n\"Lança tua foice, e ceifa.\nChegou a hora da colheita.\nA seara da terra está madura!\"\n16\nE aquele que estava sentado na nuvem lançou a foice,\ne a terra foi ceifada.\n17\nEntão saiu do templo que está no céu mais um anjo.\nTambém ele tinha nas mãos uma foice afiada.\n18\nE saiu, de junto do altar, outro anjo ainda,\naquele que tem o poder sobre o fogo.\nEle gritou em alta voz\npara aquele que segurava a foice afiada:\n\"Lança a foice\ne colhe os cachos da videira da terra,\nporque as uvas já estão maduras\".\n19\nE o anjo lançou a foice afiada na terra,\ne colheu as uvas da videira da terra.\nDepois, despejou as uvas\nno grande lagar do furor de Deus.\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ap 14,14-19"
+   "title": "1ª Leitura — Ap 14,14-19 (Lecionário II, pág. 1224)"
   },
   "s12_ter_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 95(96),10.11-12.13 (R. 13b)",
    "day": "Terça-feira (24/11) — Santo André Dung-Lac",
    "text": "Salmo responsorial\nSl 95(96),10.11-12.13 (R. 13b)\nR. O Senhor vem julgar nossa terra.\n10\nPublicai entre as nações: \"Reina o Senhor!\" †\nEle firmou o universo inabalável, *\ne os povos ele julga com justiça. R.\n11\nO céu se rejubile e exulte a terra, *\naplauda o mar com o que vive em suas águas;\n12\nos campos com seus frutos rejubilem *\ne exultem as florestas e as matas R.\n13\nna presença do Senhor, pois ele vem, *\nporque vem para julgar a terra inteira.\nGovernará o mundo todo com justiça, *\ne os povos julgará com lealdade. R.",
-   "title": "Salmo Responsorial — Sl 95(96),10.11-12.13 (R. 13b)"
+   "title": "Salmo Responsorial — Sl 95(96),10.11-12.13 (R. 13b) (Lecionário II, pág. 1225)"
   },
   "s12_ter_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -453,21 +454,21 @@
    "referencia": "Lc 21,5-11",
    "day": "Terça-feira (24/11) — Santo André Dung-Lac",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,5-11\nNaquele tempo,\n5\nalgumas pessoas comentavam a respeito do Templo\nque era enfeitado com belas pedras\ne com ofertas votivas.\nJesus disse:\n6\n\"Vós admirais estas coisas?\nDias virão em que não ficará pedra sobre pedra.\nTudo será destruído\".\n7\nMas eles perguntaram:\n\"Mestre, quando acontecerá isto?\nE qual vai ser o sinal\nde que estas coisas estão para acontecer?\"\n8\nJesus respondeu:\n\"Cuidado para não serdes enganados,\nporque muitos virão em meu nome,\ndizendo: 'Sou eu!'\nE ainda: 'O tempo está próximo'.\nNão sigais essa gente!\n9\nQuando ouvirdes falar de guerras e revoluções,\nnão fiqueis apavorados.\nÉ preciso que estas coisas aconteçam primeiro,\nmas não será logo o fim\".\n10\nE Jesus continuou:\n\"Um povo se levantará contra outro povo,\num país atacará outro país.\n11\nHaverá grandes terremotos,\nfomes e pestes em muitos lugares;\nacontecerão coisas pavorosas\ne grandes sinais serão vistos no céu\".\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 21,5-11"
+   "title": "Evangelho — Lc 21,5-11 (Lecionário II, pág. 1226)"
   },
   "s12_qua_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 15,1-4",
    "day": "Quarta-feira (25/11)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 15,1-4\nEu, João,\n1\nvi no céu outro sinal,\ngrande e admirável:\nsete anjos, com as sete últimas pragas.\nCom elas o furor de Deus ia-se consumar.\n2\nVi também como que um mar de vidro\nmisturado com fogo.\nSobre este mar estavam, de pé,\ntodos aqueles que saíram vitoriosos\ndo confronto com a besta, com a imagem dela\ne com o número do nome da besta.\nSeguravam as harpas de Deus.\n3\nEntoavam o cântico de Moisés, o servo de Deus,\ne o cântico do Cordeiro, dizendo:\n\"Grandes e admiráveis são as tuas obras,\nSenhor Deus, Todo-poderoso!\nJustos e verdadeiros são os teus caminhos,\nó Rei das nações!\n4\nQuem não temeria, Senhor,\ne não glorificaria o teu nome?\nSó tu és santo!\nTodas as nações virão prostrar-se diante de Ti,\nporque tuas justas decisões se tornaram manifestas\".\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ap 15,1-4"
+   "title": "1ª Leitura — Ap 15,1-4 (Lecionário II, pág. 1229)"
   },
   "s12_qua_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)",
    "day": "Quarta-feira (25/11)",
    "text": "Salmo responsorial\nSl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)\nR. Como são grandes e admiráveis vossas obras,\nó Senhor e nosso Deus onipotente!\n1\nCantai ao Senhor Deus um canto novo, *\nporque ele fez prodígios!\nSua mão e o seu braço forte e santo *\nalcançaram-lhe a vitória. R.\n2\nO Senhor fez conhecer a salvação, *\ne às nações, sua justiça;\n3a\nrecordou o seu amor sempre fiel *\nb\npela casa de Israel R.\n7\nAplauda o mar com todo ser que nele vive, *\no mundo inteiro e toda gente!\n8\nAs montanhas e os rios batam palmas *\ne exultem de alegria. R.\n9\nna presença do Senhor, pois ele vem, *\nvem julgar a terra inteira.\nJulgará o universo com justiça *\ne as nações com equidade. R.",
-   "title": "Salmo Responsorial — Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)"
+   "title": "Salmo Responsorial — Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b) (Lecionário II, pág. 1229)"
   },
   "s12_qua_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -481,21 +482,21 @@
    "referencia": "Lc 21,12-19",
    "day": "Quarta-feira (25/11)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,12-19\nNaquele tempo, disse Jesus aos seus discípulos:\n12\n\"Antes que estas coisas aconteçam,\nsereis presos e perseguidos;\nsereis entregues às sinagogas e postos na prisão;\nsereis levados diante de reis e governadores\npor causa do meu nome.\n13\nEsta será a ocasião\nem que testemunhareis a vossa fé.\n14\nFazei o firme propósito\nde não planejar com antecedência a própria defesa;\n15\nporque eu vos darei palavras tão acertadas,\nque nenhum dos inimigos\nvos poderá resistir ou rebater.\n16\nSereis entregues até mesmo pelos próprios pais,\nirmãos, parentes e amigos.\nE eles matarão alguns de vós.\n17\nTodos vos odiarão por causa do meu nome.\n18\nMas vós não perdereis\num só fio de cabelo da vossa cabeça.\n19\nÉ permanecendo firmes que ireis ganhar a vida!\"\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 21,12-19"
+   "title": "Evangelho — Lc 21,12-19 (Lecionário II, pág. 1230)"
   },
   "s12_qui_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 18,1-2.21-23.19,1-3.9a",
    "day": "Quinta-feira (26/11)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 18,1-2.21-23; 19,1-3.9a\nEu, João,\n1\nvi outro anjo descendo do céu.\nTinha grande poder,\ne a terra ficou toda iluminada com a sua glória.\n2\nEle gritou com voz poderosa:\n\"Caiu! Caiu Babilônia, a grande!\nTornou-se morada de demônios,\nabrigo de todos os espíritos maus,\nabrigo de aves impuras e nojentas.\n21\nNessa hora, um anjo poderoso levantou uma pedra\ndo tamanho de uma grande pedra de moinho\ne atirou-a ao mar, dizendo:\n\"Com esta força será lançada Babilônia,\na Grande Cidade,\ne nunca mais será encontrada.\n22\nE o canto de harpistas e músicos,\nde flautistas e tocadores de trombeta,\nem ti nunca mais se ouvirá;\ne nenhum artista de arte alguma\nem ti jamais se encontrará;\ne o canto do moinho\nem ti nunca mais se ouvirá;\n23\ne a luz da lâmpada\nem ti nunca mais brilhará;\ne a voz do esposo e da esposa\nem ti nunca mais se ouvirá,\nporque os teus comerciantes\neram os grandes da terra,\ne com magia tu enfeitiçaste todas as nações\".\n19,1\nDepois disso, ouvi um forte rumor,\nde uma grande multidão no céu,\nque clamava:\n\"Aleluia!\nA salvação, a glória e o poder\npertencem ao nosso Deus,\n2\nporque seus julgamentos são verdadeiros e justos.\nSim, Deus julgou a grande prostituta\nque corrompeu a terra com sua prostituição,\ne vingou nela o sangue dos seus servos\".\n3\nE repetiram:\n\"Aleluia!\nA fumaça dela fica subindo\npara toda a eternidade!\"\n9a\nE um anjo me disse:\n\"Escreve:\nFelizes são os convidados para o banquete\ndas núpcias do Cordeiro\".\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ap 18,1-2.21-23.19,1-3.9a"
+   "title": "1ª Leitura — Ap 18,1-2.21-23.19,1-3.9a (Lecionário II, pág. 1234)"
   },
   "s12_qui_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 99(100),2.3.4.5 (R. Ap 19,9a)",
    "day": "Quinta-feira (26/11)",
    "text": "Salmo responsorial\nSl 99(100),2.3.4.5 (R. Ap 19,9a)\nR. São bem-aventurados os que foram convidados\npara a Ceia Nupcial das bodas do Cordeiro!\n2\nAclamai o Senhor, ó terra inteira, †\nservi ao Senhor com alegria, *\nide a ele cantando jubilosos! R.\n3\nSabei que o Senhor, só ele, é Deus, †\nEle mesmo nos fez, e somos seus, *\nnós somos seu povo e seu rebanho. R.\n4\nEntrai por suas portas dando graças, †\ne em seus átrios com hinos de louvor; *\ndai-lhe graças, seu nome bendizei! R.\n5\nSim, é bom o Senhor e nosso Deus, †\nsua bondade perdura para sempre, *\nseu amor é fiel eternamente! R.",
-   "title": "Salmo Responsorial — Sl 99(100),2.3.4.5 (R. Ap 19,9a)"
+   "title": "Salmo Responsorial — Sl 99(100),2.3.4.5 (R. Ap 19,9a) (Lecionário II, pág. 1235)"
   },
   "s12_qui_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -509,21 +510,21 @@
    "referencia": "Lc 21,20-28",
    "day": "Quinta-feira (26/11)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,20-28\nNaquele tempo, disse Jesus aos seus discípulos:\n20\n\"Quando virdes Jerusalém cercada de exércitos,\nficai sabendo que a sua destruição está próxima.\n21\nEntão, os que estiverem na Judeia,\ndevem fugir para as montanhas;\nos que estiverem no meio da cidade,\ndevem afastar-se;\nos que estiverem no campo,\nnão entrem na cidade.\n22\nPois esses dias são de vingança,\npara que se cumpra tudo o que dizem as Escrituras.\n23\nInfelizes das mulheres grávidas\ne daquelas que estiverem amamentando\nnaqueles dias,\npois haverá uma grande calamidade na terra\ne ira contra este povo.\n24\nSerão mortos pela espada\ne levados presos para todas as nações.\ne Jerusalém será pisada pelos infiéis,\naté que o tempo dos pagãos se complete.\n25\nHaverá sinais no sol, na lua e nas estrelas.\nNa terra, as nações ficarão angustiadas,\ncom pavor do barulho do mar e das ondas.\n26\nOs homens vão desmaiar de medo,\nsó em pensar no que vai acontecer ao mundo,\nporque as forças do céu serão abaladas.\n27\nEntão eles verão o Filho do Homem,\nvindo numa nuvem com grande poder e glória.\n28\nQuando estas coisas começarem a acontecer,\nlevantai-vos e erguei a cabeça,\nporque a vossa libertação está próxima\".\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 21,20-28"
+   "title": "Evangelho — Lc 21,20-28 (Lecionário II, pág. 1236)"
   },
   "s12_sex_l1": {
    "momento": "1ª Leitura",
    "referencia": "Ap 20,1-4.11-21,2",
    "day": "Sexta-feira (27/11)",
    "text": "PRIMEIRA LEITURA\nLeitura do Livro do Apocalipse de São João 20,1-4.11-21,2\nEu, João,\n1\nvi um anjo descer do céu.\nNas mãos tinha a chave do Abismo\ne uma grande corrente.\n2\nEle agarrou o Dragão, a antiga Serpente,\nque é o Diabo, Satanás.\nAcorrentou-o por mil anos\n3\ne lançou-o dentro do Abismo.\nDepois, trancou e lacrou o Abismo,\npara que o Dragão não seduzisse mais\nas nações da terra,\naté que terminassem os mil anos.\nDepois dos mil anos,\no Dragão deve ser solto,\nmas por pouco tempo.\n4\nVi então tronos,\ne os seus ocupantes sentaram-se\ne receberam o poder de julgar.\nVi também as almas daqueles que foram decapitados\npor causa do Testemunho de Jesus\ne da Palavra de Deus\ne aqueles que não tinham adorado a besta,\nnem a imagem dela,\nnem tinham recebido na fronte ou na mão\na marca da besta.\nEles voltaram a viver,\npara reinarem com Cristo durante mil anos.\n11\nVi ainda um grande trono branco\ne aquele que estava sentado nele.\nO céu e a terra fugiram da sua presença\ne não se achou mais o lugar deles.\n12\nVi também os mortos,\nos grandes e os pequenos,\nem pé diante do trono.\nForam abertos livros,\ne mais um outro livro ainda:\no livro da vida.\nEntão foram julgados os mortos,\nde acordo com sua conduta,\nconforme está escrito nos livros.\n13\nO mar devolveu os mortos que se encontravam nele.\nA morte e a morada dos mortos\nentregaram de volta os seus mortos.\nE cada um foi julgado conforme sua conduta.\n14\nA morte e a morada dos mortos\nforam então lançados no lago de fogo.\nEsta é a segunda morte: o lago de fogo.\n15\nQuem não tinha o seu nome escrito no livro da vida,\nfoi também lançado no lago de fogo.\n21,1\nVi então um novo céu e uma nova terra.\nPois o primeiro céu e a primeira terra passaram,\ne o mar já não existe.\n2\nVi a cidade santa, a nova Jerusalém,\nque descia do céu, de junto de Deus,\nvestida qual esposa enfeitada para o seu marido.\nPalavra do Senhor.",
-   "title": "1ª Leitura — Ap 20,1-4.11-21,2"
+   "title": "1ª Leitura — Ap 20,1-4.11-21,2 (Lecionário II, pág. 1239)"
   },
   "s12_sex_sal": {
    "momento": "Salmo Responsorial",
    "referencia": "Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)",
    "day": "Sexta-feira (27/11)",
    "text": "Salmo responsorial\nSl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)\nR. Eis a tenda de Deus, no meio do povo!\n3\nMinha alma desfalece de saudades *\ne anseia pelos átrios do Senhor!\nMeu coração e minha carne rejubilam *\ne exultam de alegria no Deus vivo! R.\n4\nMesmo o pardal encontra abrigo em vossa casa, †\ne a andorinha ali prepara o seu ninho, *\npara nele seus filhotes colocar:\nvossos altares, ó Senhor Deus do universo! *\nvossos altares, ó meu Rei e meu Senhor! R.\n5\nFelizes os que habitam vossa casa; *\npara sempre haverão de vos louvar!\n6a\nFelizes os que em vós têm sua força, *\n8a\nCaminharão com um ardor sempre crescente. R.",
-   "title": "Salmo Responsorial — Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)"
+   "title": "Salmo Responsorial — Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b) (Lecionário II, pág. 1240)"
   },
   "s12_sex_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -537,7 +538,7 @@
    "referencia": "Lc 21,29-33",
    "day": "Sexta-feira (27/11)",
    "text": "EVANGELHO\nProclamação do Evangelho de Jesus Cristo segundo Lucas 21,29-33\nNaquele tempo,\n29\nJesus contou-lhes uma parábola:\n\"Olhai a figueira e todas as árvores.\n30\nQuando vedes que elas estão dando brotos,\nlogo sabeis que o verão está perto.\n31\nVós também, quando virdes acontecer essas coisas,\nficai sabendo que o Reino de Deus está perto.\n32\nEm verdade, eu vos digo:\ntudo isso vai acontecer antes que passe esta geração.\n33\nO céu e a terra passarão,\nmas as minhas palavras não hão de passar\".\nPalavra da Salvação.",
-   "title": "Evangelho — Lc 21,29-33"
+   "title": "Evangelho — Lc 21,29-33 (Lecionário II, pág. 1241)"
   },
   "s12_dom_l1": {
    "momento": "1ª Leitura",
@@ -551,7 +552,7 @@
    "referencia": "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
    "day": "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
    "text": "Salmo responsorial Sl 79(80),2ac.3b.15-16.18-19 (R. 4)\nR. Iluminai a vossa face sobre nós,\nconvertei-nos, para que sejamos salvos!\n2a\nÓ Pastor de Israel, prestai ouvidos. †\nc\nVós que sobre os querubins vos assentais, *\naparecei cheio de glória e esplendor!\n3b\nDespertai vosso poder, ó nosso Deus *\ne vinde logo nos trazer a salvação! R.\n15\nVoltai-vos para nós, Deus do universo! †\nOlhai dos altos céus e observai.*\nVisitai a vossa vinha e protegei-a!\n16\nFoi a vossa mão direita que a plantou;*\nprotegei-a, e ao rebento que firmastes! R.\n18\nPousai a mão por sobre o vosso protegido,*\no filho do homem que escolhestes para vós!\n19\nE nunca mais vos deixaremos, Senhor Deus!*\nDai-nos vida, e louvaremos vosso nome! R.",
-   "title": "Salmo Responsorial — Sl 79(80),2ac.3b.15-16.18-19 (R. 4)"
+   "title": "Salmo Responsorial — Sl 79(80),2ac.3b.15-16.18-19 (R. 4) (Lecionário I, pág. 696)"
   },
   "s12_dom_l2": {
    "momento": "2ª Leitura",
@@ -684,7 +685,7 @@
       ],
       [
        "Orientação",
-       "Coroa do Advento, logo após a saudação inicial: bênção da coroa, aspersão com água benta e acendimento da primeira vela (motivação, oração e canto)."
+       "Coroa do Advento, logo após a saudação inicial: bênção da coroa; motivação; procissão com a primeira vela; oração do sacerdote e bênção das velas trazidas pela comunidade para a coroa das famílias (dinâmica de 2025)."
       ],
       [
        "Orientação",
@@ -707,12 +708,32 @@
        "Acendemos a primeira vela da Coroa do Advento, a vela da esperança. Começamos um novo ano litúrgico, e o Senhor nos pede que fiquemos acordados e atentos, como servos que esperam a volta do seu Senhor. Com os profetas, clamamos: vem, Senhor, salvar o teu povo!"
       ],
       [
-       "Todos",
-       "Senhor Jesus, nós somos o barro e tu és o oleiro: molda os nossos corações. Faze brilhar sobre nós a tua face, para que, vigilantes na oração, esperemos com alegria a tua vinda. Vem, Senhor Jesus!"
+       "Orientação",
+       "Uma pessoa (leitores, preces, liturgia ou comunidade), com túnica na cor da vela, traz a primeira vela (verde) acesa, em procissão pelo corredor central, e aproxima-se da coroa e coloca a vela no lugar próprio, enquanto o sacerdote reza a oração."
       ],
       [
        "Cantores",
-       "Canto do acendimento da vela da Coroa do Advento"
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Sacerdote",
+       "Senhor Jesus, ao acendermos esta primeira vela, acendemos em nossos corações a Esperança de Sua vinda. Ajudai-nos a reconhecer onde precisamos mudar, preparando o caminho em nossa comunidade para que o Senhor possa nascer em nós."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "O sacerdote abençoa as velas trazidas pela comunidade para a coroa das famílias; todos as elevam nesse momento."
+      ],
+      [
+       "Sacerdote",
+       "Oremos. Deus de eterna promessa, que iluminastes vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas que vossos filhos trazem para formar a coroa do Advento em seus lares. Que a vela verde, sinal da esperança cristã, recorde a cada família que Cristo vem para renovar nossos caminhos e fortalecer nossa confiança em vosso amor. Que sua luz nos ajude a viver vigilantes, firmes na fé e prontos para acolher o Senhor que se aproxima. Por Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
       ],
       [
        "Sacerdote",
@@ -1177,13 +1198,153 @@
   "preces_11": {
    "tipo": "preces",
    "titulo": "Preces — 1º Domingo do Advento",
+   "fonte": "semanas/2026-11-23/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.docx",
+   "cabecalho": "● PRECES – 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026",
    "formularios": [
     {
-     "titulo": "Preces – em preparação",
+     "titulo": "Data: 28/11/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
      "linhas": [
       [
-       "Orientação",
-       "Preces da Liturgia das Horas (sábado à noite: I Vésperas; domingo 9h00 e 11h00: Laudes; domingo 18h30: II Vésperas), duas por Missa, seguidas da Oração do Jubileu – a inserir."
+       "Sacerdote",
+       "Invoquemos a Cristo Jesus, felicidade e alegria de todos os que o esperam; e digamos:"
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Esperado das nações, cheios de alegria, aguardamos vossa vinda: vinde, Senhor Jesus, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que existis eternamente, antes da criação do mundo, vinde salvar os que vivem neste mundo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Vós, que criastes o universo e tudo o que nele existe, vinde renovar a obra de vossas mãos, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, e não tardeis!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 29/11/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Rezemos a Deus, Pai de bondade, que nos concede a graça de esperarmos a manifestação do nosso Senhor Jesus Cristo; e digamos confiantes:"
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Santificai-nos, Senhor, nosso espírito, nossa alma e nosso corpo, e guardai-nos irrepreensíveis para a vinda de vosso Filho, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Ajudai-nos a passar santamente este dia, e fazei-nos viver neste mundo com justiça e piedade, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Revesti-nos de nosso Senhor Jesus Cristo, e seremos repletos do Espírito Santo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Mostrai-nos, Senhor, a vossa misericórdia!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ]
+     ]
+    },
+    {
+     "titulo": "Data: 29/11/2026 — Horário: Domingo 18h30 – II Vésperas",
+     "linhas": [
+      [
+       "Sacerdote",
+       "Oremos a Cristo Jesus, nosso Redentor, caminho, verdade e vida, e digamos humildemente:"
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus, Filho do Altíssimo, anunciado por Gabriel à Virgem Maria,\nvinde reinar para sempre sobre o vosso povo, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Santo de Deus, com vossa chegada fizestes o Precursor exultar no seio de Isabel, vinde trazer ao mundo inteiro a alegria da salvação, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Diácono / Leitor",
+       "Jesus Salvador, cujo nome foi revelado pelo anjo a José, homem justo, vinde libertar vosso povo de seus pecados, nós vos pedimos."
+      ],
+      [
+       "Todos",
+       "R. Vinde, Senhor, ficai conosco!"
+      ],
+      [
+       "Todos / Telão",
+       "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"
+      ],
+      [
+       "Sacerdote",
+       "Finaliza as preces."
+      ],
+      [
+       "Todos",
+       "Amém."
       ]
      ]
     }

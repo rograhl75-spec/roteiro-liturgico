@@ -801,7 +801,8 @@ window.semanasData = [
   },
   "documentos": [
    "semanas/2026-11-16/Leituras 16 a 22 novembro 2026.docx",
-   "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx"
+   "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx",
+   "semanas/2026-11-16/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.docx"
   ]
  }
 ];

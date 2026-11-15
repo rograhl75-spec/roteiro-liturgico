@@ -784,7 +784,7 @@ Palavra da Salvação.`
     },
     /* SEMANA DE 16 A 22 DE NOVEMBRO */
     's11_seg_l1': {
-        title: "1ª Leitura — Ap 1,1-4.2,1-5a",
+        title: "1ª Leitura — Ap 1,1-4.2,1-5a (Lecionário II, pág. 1192)",
         day: "Segunda-feira (16/11)",
         text: `PRIMEIRA LEITURA
 Início do Livro do Apocalipse de São João 1,1-4; 2,1-5a
@@ -840,7 +840,7 @@ e arrancarei o teu candelabro do seu lugar.
 Palavra do Senhor.`
     },
     's11_seg_sal': {
-        title: "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)",
+        title: "Salmo Responsorial — Sl 1,1-2.3.4 e 6 (R. Ap 2,7b) (Lecionário II, pág. 1193)",
         day: "Segunda-feira (16/11)",
         text: `Salmo responsorial
 Sl 1,1-2.3.4 e 6 (R. Ap 2,7b)
@@ -879,7 +879,7 @@ não caminha entre as trevas,
 mas terá a luz da vida`
     },
     's11_seg_ev': {
-        title: "Evangelho — Lc 18,35-43",
+        title: "Evangelho — Lc 18,35-43 (Lecionário II, pág. 1193)",
         day: "Segunda-feira (16/11)",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 18,35-43
@@ -919,7 +919,7 @@ Vendo isso, todo o povo deu louvores a Deus.
 Palavra da Salvação.`
     },
     's11_ter_l1': {
-        title: "1ª Leitura — Ap 3,1-6.14-22",
+        title: "1ª Leitura — Ap 3,1-6.14-22 (Lecionário II, pág. 1197)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 3,1-6.14-22
@@ -999,7 +999,7 @@ ouça o que o Espírito diz às Igrejas".
 Palavra do Senhor.`
     },
     's11_ter_sal': {
-        title: "Salmo Responsorial — Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)",
+        title: "Salmo Responsorial — Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21) (Lecionário II, pág. 1198)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
         text: `Salmo responsorial
 Sl 14(15),1a e 2-3ab.3cd-4ab.5 (R. Ap 3,21)
@@ -1037,7 +1037,7 @@ V. Por amor, Deus enviou-nos o seu filho,
 como vítima por nossas transgressões.`
     },
     's11_ter_ev': {
-        title: "Evangelho — Lc 19,1-10",
+        title: "Evangelho — Lc 19,1-10 (Lecionário II, pág. 1199)",
         day: "Terça-feira (17/11) — Santa Isabel da Hungria",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,1-10
@@ -1083,7 +1083,7 @@ veio procurar e salvar o que estava perdido".
 Palavra da Salvação.`
     },
     's11_qua_l1': {
-        title: "1ª Leitura — Ap 4,1-11",
+        title: "1ª Leitura — Ap 4,1-11 (Lecionário II, pág. 1202)",
         day: "Quarta-feira (18/11)",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 4,1-11
@@ -1151,7 +1151,7 @@ e foram criadas".
 Palavra do Senhor.`
     },
     's11_qua_sal': {
-        title: "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)",
+        title: "Salmo Responsorial — Sl 150,1-2.3-4.5-6 (R. Ap 4,8b) (Lecionário II, pág. 1203)",
         day: "Quarta-feira (18/11)",
         text: `Salmo responsorial
 Sl 150,1-2.3-4.5-6 (R. Ap 4,8b)
@@ -1185,7 +1185,7 @@ V. Eu vos escolhi, a fim de que deis;
 no meio do mundo, um fruto que dure.`
     },
     's11_qua_ev': {
-        title: "Evangelho — Lc 19,11-28",
+        title: "Evangelho — Lc 19,11-28 (Lecionário II, pág. 1204)",
         day: "Quarta-feira (18/11)",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,11-28
@@ -1388,7 +1388,7 @@ em que foste visitada".
 Palavra da Salvação.`
     },
     's11_sex_l1': {
-        title: "1ª Leitura — Ap 10,8-11",
+        title: "1ª Leitura — Ap 10,8-11 (Lecionário II, pág. 1211)",
         day: "Sexta-feira (20/11)",
         text: `PRIMEIRA LEITURA
 Leitura do Livro do Apocalipse de São João 10,8-11
@@ -1418,7 +1418,7 @@ contra outros povos e nações, línguas e reis".
 Palavra do Senhor.`
     },
     's11_sex_sal': {
-        title: "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a)",
+        title: "Salmo Responsorial — Sl 118(119),14.24.72.103.111.131 (R. 103a) (Lecionário II, pág. 1212)",
         day: "Sexta-feira (20/11)",
         text: `Salmo responsorial
 Sl 118(119),14.24.72.103.111.131 (R. 103a)
@@ -1452,7 +1452,7 @@ V. Minhas ovelhas escutam minha voz,
 eu as conheço e elas me seguem.`
     },
     's11_sex_ev': {
-        title: "Evangelho — Lc 19,45-48",
+        title: "Evangelho — Lc 19,45-48 (Lecionário II, pág. 1212)",
         day: "Sexta-feira (20/11)",
         text: `EVANGELHO
 Proclamação do Evangelho de Jesus Cristo segundo Lucas 19,45-48

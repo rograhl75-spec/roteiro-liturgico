@@ -24,7 +24,8 @@ const ASSETS = [
   "./semanas/2026-11-09/PRECES - 33º DOMINGO TEMPO COMUM.docx",
   "./semanas/2026-11-09/Antífona da entrada e comunhão - 33º Domingo do Tempo Comum 15-11-2026.docx",
   "./semanas/2026-11-16/Leituras 16 a 22 novembro 2026.docx",
-  "./semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx"
+  "./semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx",
+  "./semanas/2026-11-16/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.docx"
 ];
 const clientVersions = new Map();
 let preparing;
