@@ -227,6 +227,11 @@
      "tipo": "preces",
      "chave": "deum",
      "rotulo": "Preces — 31/12"
+    },
+    {
+     "tipo": "link",
+     "arquivo": "semanas/2026-12-28/RITO - TE DEUM - 31 DEZEMBRO 2026.docx",
+     "rotulo": "📄 Te Deum (impressão)"
     }
    ],
    "nota": "Te Deum em ação de graças pelo ano que termina, depois dos avisos e antes da bênção final (costume da paróquia)."
@@ -369,7 +374,8 @@
   "semanas/2026-12-28/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.docx",
   "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",
   "semanas/2026-12-28/PRECES - 7º DIA NA OITAVA DO NATAL - 31 DEZEMBRO 2026.docx",
-  "semanas/2026-12-28/PRECES - SANTA MARIA MÃE DE DEUS - 1 JANEIRO 2027.docx"
+  "semanas/2026-12-28/PRECES - SANTA MARIA MÃE DE DEUS - 1 JANEIRO 2027.docx",
+  "semanas/2026-12-28/RITO - TE DEUM - 31 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s17_seg_l1": {

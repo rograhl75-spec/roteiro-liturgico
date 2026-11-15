@@ -250,6 +250,11 @@
      "tipo": "preces",
      "chave": "natal_noite",
      "rotulo": "Preces — Natal – Missa da Noite"
+    },
+    {
+     "tipo": "link",
+     "arquivo": "semanas/2026-12-21/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.docx",
+     "rotulo": "📄 Bênção do presépio e ritos da Noite (impressão)"
     }
    ],
    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio depois da homilia."
@@ -429,7 +434,8 @@
   "semanas/2026-12-21/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
   "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
   "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
-  "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.docx"
+  "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+  "semanas/2026-12-21/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s16_seg_l1": {

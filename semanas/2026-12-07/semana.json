@@ -418,14 +418,22 @@
    "prefacio": "451 (Advento I)",
    "creio": "Rezado (página omitida)"
   },
-  "antifonas": "antifonas_14"
+  "antifonas": "antifonas_14",
+  "botoes": [
+   {
+    "tipo": "link",
+    "arquivo": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
+    "rotulo": "📄 3ª vela do Advento (impressão)"
+   }
+  ]
  },
  "documentos": [
   "semanas/2026-12-07/Leituras 7 a 13 dezembro 2026.docx",
   "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
   "semanas/2026-12-07/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
   "semanas/2026-12-07/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.docx",
-  "semanas/2026-12-07/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.docx"
+  "semanas/2026-12-07/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.docx",
+  "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s14_seg_l1": {

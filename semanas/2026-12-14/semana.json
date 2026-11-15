@@ -371,12 +371,20 @@
    "prefacio": "453 (Advento II)",
    "creio": "Rezado (página omitida)"
   },
-  "antifonas": "antifonas_15"
+  "antifonas": "antifonas_15",
+  "botoes": [
+   {
+    "tipo": "link",
+    "arquivo": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
+    "rotulo": "📄 4ª vela do Advento (impressão)"
+   }
+  ]
  },
  "documentos": [
   "semanas/2026-12-14/Leituras 14 a 20 dezembro 2026.docx",
   "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
-  "semanas/2026-12-14/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx"
+  "semanas/2026-12-14/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
+  "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx"
  ],
  "leituras": {
   "s15_seg_l1": {

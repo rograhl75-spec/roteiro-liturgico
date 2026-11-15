@@ -392,12 +392,20 @@
    "prefacio": "451 (Advento I)",
    "creio": "Rezado (página omitida)"
   },
-  "antifonas": "antifonas_12"
+  "antifonas": "antifonas_12",
+  "botoes": [
+   {
+    "tipo": "link",
+    "arquivo": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
+    "rotulo": "📄 Bênção da Coroa e 1ª vela (impressão)"
+   }
+  ]
  },
  "documentos": [
   "semanas/2026-11-23/Leituras 23 a 29 novembro 2026.docx",
   "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
-  "semanas/2026-11-23/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.docx"
+  "semanas/2026-11-23/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.docx",
+  "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx"
  ],
  "leituras": {
   "s12_seg_l1": {
