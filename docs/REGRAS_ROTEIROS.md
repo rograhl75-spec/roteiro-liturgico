@@ -19,6 +19,9 @@
    - a monição inicial não cita a transmissão;
    - ritos próprios (ex.: coroa do Advento) com as rubricas na ordem em que acontecem;
    - os roteiros de 2025 são a base, mas sem notas internas («como em 2025», «dinâmica de 2025»).
+5b. **Paginação dos arquivos**: nenhuma página em branco; nenhuma oração ou fala quebrada entre páginas (a linha passa inteira
+   para a página seguinte e termina no ponto final); rubricas ficam junto do que vem depois; nas preces, cada horário numa página;
+   nos cartões de bênção, cada oração fica inteira com o seu ℟. Rodapé apenas «página N». Ferramenta: ferramentas/docx/paginacao.py.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
 8. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
