@@ -84,11 +84,14 @@ async function cleanOldCaches() {
   }
 }
 
-async function download(url) {
+async function download(url, versao) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
+  const timer = setTimeout(() => controller.abort(), 30000);
   try {
-    const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+    // Parâmetro na URL: o cache do GitHub Pages (CDN, até 10 min) não devolve um arquivo antigo.
+    const alvo = new URL(url);
+    alvo.searchParams.set('v', versao || String(Date.now()));
+    const response = await fetch(alvo, { cache: 'no-store', signal: controller.signal });
     if (!response.ok || response.redirected) throw new Error('Download incompleto');
     // Consome o corpo dentro do prazo, inclusive em conexões interrompidas.
     return new Response(await response.arrayBuffer(), {
@@ -119,7 +122,7 @@ async function prepareUpdate() {
       // Só marca a versão como completa depois de validar todos os arquivos.
       for (const asset of ASSETS) {
         const url = new URL(asset, self.registration.scope);
-        const file = await download(url);
+        const file = await download(url, metadata.version);
         if (await digest(file) !== metadata.files[asset]) throw new Error('Integridade inválida');
         await existing.put(url, file);
       }
