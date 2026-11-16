@@ -1770,6 +1770,798 @@ foi a mim que não o fizestes!'
 Portanto, estes irão para o castigo eterno,
 enquanto os justos irão para a vida eterna".
 Palavra da Salvação.`
+    },
+    /* SEMANA DE 23 A 29 DE NOVEMBRO */
+    's12_seg_l1': {
+        title: "1ª Leitura — Ap 14,1-3.4b-5 (Lecionário II, pág. 1220)",
+        day: "Segunda-feira (23/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 14,1-3.4b-5",
+        frase: "Tinham a fronte marcada com o nome de Cristo e o do seu Pai.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João 14,1-3.4b-5
+Eu, João,
+1
+tive esta visão:
+o Cordeiro estava de pé sobre o monte Sião.
+Com ele, os cento e quarenta e quatro mil
+que tinham a fronte marcada com o nome dele
+e o nome do seu Pai.
+2
+Ouvi uma voz que vinha do céu;
+parecia o barulho de águas torrenciais
+e o estrondo de um forte trovão.
+O ruído que ouvi era como o som
+de músicos tocando harpa.
+3
+Estavam diante do trono,
+diante dos quatro Seres vivos e dos Anciãos,
+e cantavam um cântico novo.
+Era um cântico que ninguém podia aprender;
+só os cento e quarenta e quatro mil marcados,
+que foram resgatados da terra.
+4b
+Eles seguem o Cordeiro aonde quer que vá.
+Foram resgatados do meio dos homens,
+como primeira oferta a Deus a ao Cordeiro.
+5
+Na sua boca nunca foi encontrada mentira.
+São íntegros!
+Palavra do Senhor.`
+    },
+    's12_seg_sal': {
+        title: "Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6) (Lecionário II, pág. 1221)",
+        day: "Segunda-feira (23/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)",
+        text: `Salmo responsorial Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)
+R. É assim a geração dos que buscam vossa face,
+ó Senhor, Deus de Israel.
+1
+Ao Senhor pertence a terra e o que ela encerra, *
+o mundo inteiro com os seres que o povoam;
+2
+porque ele a tornou firme sobre os mares, *
+e sobre as águas a mantém inabalável. R.
+3
+"Quem subirá até o monte do Senhor, *
+quem ficará em sua santa habitação?"
+4a
+"Quem tem mãos puras e inocente coração, *
+b
+quem não dirige sua mente para o crime. R.
+5
+Sobre este desce a bênção do Senhor *
+e a recompensa de seu Deus e Salvador".
+6
+"É assim a geração dos que o procuram, *
+e do Deus de Israel buscam a face". R.`
+    },
+    's12_seg_acl': {
+        title: "Aclamação ao Evangelho — Mt 24,42a.44",
+        day: "Segunda-feira (23/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Mt 24,42a.44",
+        text: `Aclamação ao Evangelho Mt 24,42a.44
+R. Aleluia, Aleluia, Aleluia.
+V. Vigiai, diz Jesus, vigiai,
+pois, no dia em que não esperais,
+o vosso Senhor há de vir.`
+    },
+    's12_seg_ev': {
+        title: "Evangelho — Lc 21,1-4 (Lecionário II, pág. 1222)",
+        day: "Segunda-feira (23/11)",
+        momento: "Evangelho",
+        referencia: "Lc 21,1-4",
+        frase: "Viu também uma pobre viúva que depositou duas pequenas moedas.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 21,1-4
+Naquele tempo,
+1
+Jesus ergueu os olhos e viu pessoas ricas
+depositando ofertas no tesouro do Templo.
+2
+Viu também uma pobre viúva
+que depositou duas pequenas moedas.
+3
+Diante disto, ele disse:
+"Em verdade vos digo que essa pobre viúva
+ofertou mais do que todos.
+4
+Pois todos eles depositaram,
+como oferta feita a Deus,
+aquilo que lhes sobrava.
+Mas a viúva, na sua pobreza,
+ofertou tudo quanto tinha para viver".
+Palavra da Salvação.`
+    },
+    's12_ter_l1': {
+        title: "1ª Leitura — Ap 14,14-19 (Lecionário II, pág. 1224)",
+        day: "Terça-feira (24/11) — Santo André Dung-Lac",
+        momento: "1ª Leitura",
+        referencia: "Ap 14,14-19",
+        frase: "Chegou a hora da colheita. A seara da terra está madura!",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João 14,14-19
+Eu, João,
+14
+na minha visão, vi uma nuvem branca
+e sentado na nuvem
+alguém que parecia um "filho de homem".
+Tinha na cabeça uma coroa de ouro
+e, nas mãos, uma foice afiada.
+15
+Saiu do Templo um outro anjo,
+gritando em alta voz
+para aquele que estava sentado na nuvem:
+"Lança tua foice, e ceifa.
+Chegou a hora da colheita.
+A seara da terra está madura!"
+16
+E aquele que estava sentado na nuvem lançou a foice,
+e a terra foi ceifada.
+17
+Então saiu do templo que está no céu mais um anjo.
+Também ele tinha nas mãos uma foice afiada.
+18
+E saiu, de junto do altar, outro anjo ainda,
+aquele que tem o poder sobre o fogo.
+Ele gritou em alta voz
+para aquele que segurava a foice afiada:
+"Lança a foice
+e colhe os cachos da videira da terra,
+porque as uvas já estão maduras".
+19
+E o anjo lançou a foice afiada na terra,
+e colheu as uvas da videira da terra.
+Depois, despejou as uvas
+no grande lagar do furor de Deus.
+Palavra do Senhor.`
+    },
+    's12_ter_sal': {
+        title: "Salmo Responsorial — Sl 95(96),10.11-12.13 (R. 13b) (Lecionário II, pág. 1225)",
+        day: "Terça-feira (24/11) — Santo André Dung-Lac",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 95(96),10.11-12.13 (R. 13b)",
+        text: `Salmo responsorial
+Sl 95(96),10.11-12.13 (R. 13b)
+R. O Senhor vem julgar nossa terra.
+10
+Publicai entre as nações: "Reina o Senhor!" †
+Ele firmou o universo inabalável, *
+e os povos ele julga com justiça. R.
+11
+O céu se rejubile e exulte a terra, *
+aplauda o mar com o que vive em suas águas;
+12
+os campos com seus frutos rejubilem *
+e exultem as florestas e as matas R.
+13
+na presença do Senhor, pois ele vem, *
+porque vem para julgar a terra inteira.
+Governará o mundo todo com justiça, *
+e os povos julgará com lealdade. R.`
+    },
+    's12_ter_acl': {
+        title: "Aclamação ao Evangelho — Ap 2,10c",
+        day: "Terça-feira (24/11) — Santo André Dung-Lac",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Ap 2,10c",
+        text: `Aclamação ao Evangelho
+Ap 2,10c
+R. Aleluia, Aleluia, Aleluia.
+V. Permanece fiel até a morte,
+e a coroa da vida eu te darei!`
+    },
+    's12_ter_ev': {
+        title: "Evangelho — Lc 21,5-11 (Lecionário II, pág. 1226)",
+        day: "Terça-feira (24/11) — Santo André Dung-Lac",
+        momento: "Evangelho",
+        referencia: "Lc 21,5-11",
+        frase: "Não ficará pedra sobre pedra.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 21,5-11
+Naquele tempo,
+5
+algumas pessoas comentavam a respeito do Templo
+que era enfeitado com belas pedras
+e com ofertas votivas.
+Jesus disse:
+6
+"Vós admirais estas coisas?
+Dias virão em que não ficará pedra sobre pedra.
+Tudo será destruído".
+7
+Mas eles perguntaram:
+"Mestre, quando acontecerá isto?
+E qual vai ser o sinal
+de que estas coisas estão para acontecer?"
+8
+Jesus respondeu:
+"Cuidado para não serdes enganados,
+porque muitos virão em meu nome,
+dizendo: 'Sou eu!'
+E ainda: 'O tempo está próximo'.
+Não sigais essa gente!
+9
+Quando ouvirdes falar de guerras e revoluções,
+não fiqueis apavorados.
+É preciso que estas coisas aconteçam primeiro,
+mas não será logo o fim".
+10
+E Jesus continuou:
+"Um povo se levantará contra outro povo,
+um país atacará outro país.
+11
+Haverá grandes terremotos,
+fomes e pestes em muitos lugares;
+acontecerão coisas pavorosas
+e grandes sinais serão vistos no céu".
+Palavra da Salvação.`
+    },
+    's12_qua_l1': {
+        title: "1ª Leitura — Ap 15,1-4 (Lecionário II, pág. 1229)",
+        day: "Quarta-feira (25/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 15,1-4",
+        frase: "Entoavam o cântico de Moisés e o cântico do Cordeiro.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João 15,1-4
+Eu, João,
+1
+vi no céu outro sinal,
+grande e admirável:
+sete anjos, com as sete últimas pragas.
+Com elas o furor de Deus ia-se consumar.
+2
+Vi também como que um mar de vidro
+misturado com fogo.
+Sobre este mar estavam, de pé,
+todos aqueles que saíram vitoriosos
+do confronto com a besta, com a imagem dela
+e com o número do nome da besta.
+Seguravam as harpas de Deus.
+3
+Entoavam o cântico de Moisés, o servo de Deus,
+e o cântico do Cordeiro, dizendo:
+"Grandes e admiráveis são as tuas obras,
+Senhor Deus, Todo-poderoso!
+Justos e verdadeiros são os teus caminhos,
+ó Rei das nações!
+4
+Quem não temeria, Senhor,
+e não glorificaria o teu nome?
+Só tu és santo!
+Todas as nações virão prostrar-se diante de Ti,
+porque tuas justas decisões se tornaram manifestas".
+Palavra do Senhor.`
+    },
+    's12_qua_sal': {
+        title: "Salmo Responsorial — Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b) (Lecionário II, pág. 1229)",
+        day: "Quarta-feira (25/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)",
+        text: `Salmo responsorial
+Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)
+R. Como são grandes e admiráveis vossas obras,
+ó Senhor e nosso Deus onipotente!
+1
+Cantai ao Senhor Deus um canto novo, *
+porque ele fez prodígios!
+Sua mão e o seu braço forte e santo *
+alcançaram-lhe a vitória. R.
+2
+O Senhor fez conhecer a salvação, *
+e às nações, sua justiça;
+3a
+recordou o seu amor sempre fiel *
+b
+pela casa de Israel R.
+7
+Aplauda o mar com todo ser que nele vive, *
+o mundo inteiro e toda gente!
+8
+As montanhas e os rios batam palmas *
+e exultem de alegria. R.
+9
+na presença do Senhor, pois ele vem, *
+vem julgar a terra inteira.
+Julgará o universo com justiça *
+e as nações com equidade. R.`
+    },
+    's12_qua_acl': {
+        title: "Aclamação ao Evangelho — Ap 2,10c",
+        day: "Quarta-feira (25/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Ap 2,10c",
+        text: `Aclamação ao Evangelho
+Ap 2,10c
+R. Aleluia, Aleluia, Aleluia.
+V. Permanece fiel até a morte
+e a coroa da vida eu te darei!`
+    },
+    's12_qua_ev': {
+        title: "Evangelho — Lc 21,12-19 (Lecionário II, pág. 1230)",
+        day: "Quarta-feira (25/11)",
+        momento: "Evangelho",
+        referencia: "Lc 21,12-19",
+        frase: "Todos vos odiarão por causa do meu nome. Mas vós não perdereis um só fio de cabelo da vossa cabeça.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 21,12-19
+Naquele tempo, disse Jesus aos seus discípulos:
+12
+"Antes que estas coisas aconteçam,
+sereis presos e perseguidos;
+sereis entregues às sinagogas e postos na prisão;
+sereis levados diante de reis e governadores
+por causa do meu nome.
+13
+Esta será a ocasião
+em que testemunhareis a vossa fé.
+14
+Fazei o firme propósito
+de não planejar com antecedência a própria defesa;
+15
+porque eu vos darei palavras tão acertadas,
+que nenhum dos inimigos
+vos poderá resistir ou rebater.
+16
+Sereis entregues até mesmo pelos próprios pais,
+irmãos, parentes e amigos.
+E eles matarão alguns de vós.
+17
+Todos vos odiarão por causa do meu nome.
+18
+Mas vós não perdereis
+um só fio de cabelo da vossa cabeça.
+19
+É permanecendo firmes que ireis ganhar a vida!"
+Palavra da Salvação.`
+    },
+    's12_qui_l1': {
+        title: "1ª Leitura — Ap 18,1-2.21-23.19,1-3.9a (Lecionário II, pág. 1234)",
+        day: "Quinta-feira (26/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 18,1-2.21-23.19,1-3.9a",
+        frase: "Caiu Babilônia, a grande!",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João 18,1-2.21-23; 19,1-3.9a
+Eu, João,
+1
+vi outro anjo descendo do céu.
+Tinha grande poder,
+e a terra ficou toda iluminada com a sua glória.
+2
+Ele gritou com voz poderosa:
+"Caiu! Caiu Babilônia, a grande!
+Tornou-se morada de demônios,
+abrigo de todos os espíritos maus,
+abrigo de aves impuras e nojentas.
+21
+Nessa hora, um anjo poderoso levantou uma pedra
+do tamanho de uma grande pedra de moinho
+e atirou-a ao mar, dizendo:
+"Com esta força será lançada Babilônia,
+a Grande Cidade,
+e nunca mais será encontrada.
+22
+E o canto de harpistas e músicos,
+de flautistas e tocadores de trombeta,
+em ti nunca mais se ouvirá;
+e nenhum artista de arte alguma
+em ti jamais se encontrará;
+e o canto do moinho
+em ti nunca mais se ouvirá;
+23
+e a luz da lâmpada
+em ti nunca mais brilhará;
+e a voz do esposo e da esposa
+em ti nunca mais se ouvirá,
+porque os teus comerciantes
+eram os grandes da terra,
+e com magia tu enfeitiçaste todas as nações".
+19,1
+Depois disso, ouvi um forte rumor,
+de uma grande multidão no céu,
+que clamava:
+"Aleluia!
+A salvação, a glória e o poder
+pertencem ao nosso Deus,
+2
+porque seus julgamentos são verdadeiros e justos.
+Sim, Deus julgou a grande prostituta
+que corrompeu a terra com sua prostituição,
+e vingou nela o sangue dos seus servos".
+3
+E repetiram:
+"Aleluia!
+A fumaça dela fica subindo
+para toda a eternidade!"
+9a
+E um anjo me disse:
+"Escreve:
+Felizes são os convidados para o banquete
+das núpcias do Cordeiro".
+Palavra do Senhor.`
+    },
+    's12_qui_sal': {
+        title: "Salmo Responsorial — Sl 99(100),2.3.4.5 (R. Ap 19,9a) (Lecionário II, pág. 1235)",
+        day: "Quinta-feira (26/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 99(100),2.3.4.5 (R. Ap 19,9a)",
+        text: `Salmo responsorial
+Sl 99(100),2.3.4.5 (R. Ap 19,9a)
+R. São bem-aventurados os que foram convidados
+para a Ceia Nupcial das bodas do Cordeiro!
+2
+Aclamai o Senhor, ó terra inteira, †
+servi ao Senhor com alegria, *
+ide a ele cantando jubilosos! R.
+3
+Sabei que o Senhor, só ele, é Deus, †
+Ele mesmo nos fez, e somos seus, *
+nós somos seu povo e seu rebanho. R.
+4
+Entrai por suas portas dando graças, †
+e em seus átrios com hinos de louvor; *
+dai-lhe graças, seu nome bendizei! R.
+5
+Sim, é bom o Senhor e nosso Deus, †
+sua bondade perdura para sempre, *
+seu amor é fiel eternamente! R.`
+    },
+    's12_qui_acl': {
+        title: "Aclamação ao Evangelho — Lc 21,28",
+        day: "Quinta-feira (26/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Lc 21,28",
+        text: `Aclamação ao Evangelho
+Lc 21,28
+R. Aleluia, Aleluia, Aleluia.
+V. Levantai vossa cabeça e olhai,
+pois a vossa redenção se aproxima!`
+    },
+    's12_qui_ev': {
+        title: "Evangelho — Lc 21,20-28 (Lecionário II, pág. 1236)",
+        day: "Quinta-feira (26/11)",
+        momento: "Evangelho",
+        referencia: "Lc 21,20-28",
+        frase: "Jerusalém será pisada pelos infiéis, até que o tempo dos pagãos se complete.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 21,20-28
+Naquele tempo, disse Jesus aos seus discípulos:
+20
+"Quando virdes Jerusalém cercada de exércitos,
+ficai sabendo que a sua destruição está próxima.
+21
+Então, os que estiverem na Judeia,
+devem fugir para as montanhas;
+os que estiverem no meio da cidade,
+devem afastar-se;
+os que estiverem no campo,
+não entrem na cidade.
+22
+Pois esses dias são de vingança,
+para que se cumpra tudo o que dizem as Escrituras.
+23
+Infelizes das mulheres grávidas
+e daquelas que estiverem amamentando
+naqueles dias,
+pois haverá uma grande calamidade na terra
+e ira contra este povo.
+24
+Serão mortos pela espada
+e levados presos para todas as nações.
+e Jerusalém será pisada pelos infiéis,
+até que o tempo dos pagãos se complete.
+25
+Haverá sinais no sol, na lua e nas estrelas.
+Na terra, as nações ficarão angustiadas,
+com pavor do barulho do mar e das ondas.
+26
+Os homens vão desmaiar de medo,
+só em pensar no que vai acontecer ao mundo,
+porque as forças do céu serão abaladas.
+27
+Então eles verão o Filho do Homem,
+vindo numa nuvem com grande poder e glória.
+28
+Quando estas coisas começarem a acontecer,
+levantai-vos e erguei a cabeça,
+porque a vossa libertação está próxima".
+Palavra da Salvação.`
+    },
+    's12_sex_l1': {
+        title: "1ª Leitura — Ap 20,1-4.11-21,2 (Lecionário II, pág. 1239)",
+        day: "Sexta-feira (27/11)",
+        momento: "1ª Leitura",
+        referencia: "Ap 20,1-4.11-21,2",
+        frase: "Os mortos foram julgados de acordo com sua conduta. Vi a cidade santa, a nova Jerusalém, que descia do céu.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Apocalipse de São João 20,1-4.11-21,2
+Eu, João,
+1
+vi um anjo descer do céu.
+Nas mãos tinha a chave do Abismo
+e uma grande corrente.
+2
+Ele agarrou o Dragão, a antiga Serpente,
+que é o Diabo, Satanás.
+Acorrentou-o por mil anos
+3
+e lançou-o dentro do Abismo.
+Depois, trancou e lacrou o Abismo,
+para que o Dragão não seduzisse mais
+as nações da terra,
+até que terminassem os mil anos.
+Depois dos mil anos,
+o Dragão deve ser solto,
+mas por pouco tempo.
+4
+Vi então tronos,
+e os seus ocupantes sentaram-se
+e receberam o poder de julgar.
+Vi também as almas daqueles que foram decapitados
+por causa do Testemunho de Jesus
+e da Palavra de Deus
+e aqueles que não tinham adorado a besta,
+nem a imagem dela,
+nem tinham recebido na fronte ou na mão
+a marca da besta.
+Eles voltaram a viver,
+para reinarem com Cristo durante mil anos.
+11
+Vi ainda um grande trono branco
+e aquele que estava sentado nele.
+O céu e a terra fugiram da sua presença
+e não se achou mais o lugar deles.
+12
+Vi também os mortos,
+os grandes e os pequenos,
+em pé diante do trono.
+Foram abertos livros,
+e mais um outro livro ainda:
+o livro da vida.
+Então foram julgados os mortos,
+de acordo com sua conduta,
+conforme está escrito nos livros.
+13
+O mar devolveu os mortos que se encontravam nele.
+A morte e a morada dos mortos
+entregaram de volta os seus mortos.
+E cada um foi julgado conforme sua conduta.
+14
+A morte e a morada dos mortos
+foram então lançados no lago de fogo.
+Esta é a segunda morte: o lago de fogo.
+15
+Quem não tinha o seu nome escrito no livro da vida,
+foi também lançado no lago de fogo.
+21,1
+Vi então um novo céu e uma nova terra.
+Pois o primeiro céu e a primeira terra passaram,
+e o mar já não existe.
+2
+Vi a cidade santa, a nova Jerusalém,
+que descia do céu, de junto de Deus,
+vestida qual esposa enfeitada para o seu marido.
+Palavra do Senhor.`
+    },
+    's12_sex_sal': {
+        title: "Salmo Responsorial — Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b) (Lecionário II, pág. 1240)",
+        day: "Sexta-feira (27/11)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)",
+        text: `Salmo responsorial
+Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)
+R. Eis a tenda de Deus, no meio do povo!
+3
+Minha alma desfalece de saudades *
+e anseia pelos átrios do Senhor!
+Meu coração e minha carne rejubilam *
+e exultam de alegria no Deus vivo! R.
+4
+Mesmo o pardal encontra abrigo em vossa casa, †
+e a andorinha ali prepara o seu ninho, *
+para nele seus filhotes colocar:
+vossos altares, ó Senhor Deus do universo! *
+vossos altares, ó meu Rei e meu Senhor! R.
+5
+Felizes os que habitam vossa casa; *
+para sempre haverão de vos louvar!
+6a
+Felizes os que em vós têm sua força, *
+8a
+Caminharão com um ardor sempre crescente. R.`
+    },
+    's12_sex_acl': {
+        title: "Aclamação ao Evangelho — Lc 21,28",
+        day: "Sexta-feira (27/11)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Lc 21,28",
+        text: `Aclamação ao Evangelho
+Lc 21,28
+R. Aleluia, Aleluia, Aleluia.
+V. Levantai vossa cabeça e olhai,
+pois a vossa redenção se aproxima!`
+    },
+    's12_sex_ev': {
+        title: "Evangelho — Lc 21,29-33 (Lecionário II, pág. 1241)",
+        day: "Sexta-feira (27/11)",
+        momento: "Evangelho",
+        referencia: "Lc 21,29-33",
+        frase: "Quando virdes acontecer essas coisas, ficai sabendo que o Reino de Deus está perto.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 21,29-33
+Naquele tempo,
+29
+Jesus contou-lhes uma parábola:
+"Olhai a figueira e todas as árvores.
+30
+Quando vedes que elas estão dando brotos,
+logo sabeis que o verão está perto.
+31
+Vós também, quando virdes acontecer essas coisas,
+ficai sabendo que o Reino de Deus está perto.
+32
+Em verdade, eu vos digo:
+tudo isso vai acontecer antes que passe esta geração.
+33
+O céu e a terra passarão,
+mas as minhas palavras não hão de passar".
+Palavra da Salvação.`
+    },
+    's12_dom_l1': {
+        title: "1ª Leitura — Is 63,16b-17.19b;64,2b-7",
+        day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+        momento: "1ª Leitura",
+        referencia: "Is 63,16b-17.19b;64,2b-7",
+        frase: "Ah! Se rompesses os céus e descesses!",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Profeta Isaías 63,16b-17.19b;64,2b-7
+16b
+Senhor, tu és nosso Pai, nosso redentor;
+eterno é o teu nome.
+17
+Como nos deixaste andar longe de teus caminhos
+e endureceste nossos corações
+para não termos o teu temor?
+Por amor de teus servos,
+das tribos de tua herança, volta atrás.
+19b
+Ah! se rompesses os céus e descesses!
+As montanhas se desmanchariam diante de ti.
+64,2b
+Desceste, pois, e as montanhas se derreteram
+diante de ti.
+3
+Nunca se ouviu dizer
+nem chegou aos ouvidos de ninguém,
+jamais olhos viram que um Deus, exceto tu,
+tenha feito tanto pelos que nele esperam.
+4
+Vens ao encontro de quem pratica a justiça com alegria,
+de quem se lembra de ti em teus caminhos.
+Tu te irritaste, porque nós pecamos;
+é nos caminhos de outrora que seremos salvos.
+5
+Todos nós nos tornamos imundície,
+e todas as nossas boas obras são como um pano sujo;
+murchamos todos como folhas,
+e nossas maldades empurram-nos como o vento.
+6
+Não há quem invoque teu nome,
+quem se levante para encontrar-se contigo;
+escondeste de nós tua face
+e nos entregaste à mercê da nossa maldade.
+7
+Assim mesmo, Senhor, tu és nosso pai,
+nós somos barro; tu, nosso oleiro,
+e nós todos, obra de tuas mãos.
+Palavra do Senhor.`
+    },
+    's12_dom_sal': {
+        title: "Salmo Responsorial — Sl 79(80),2ac.3b.15-16.18-19 (R. 4) (Lecionário I, pág. 696)",
+        day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
+        text: `Salmo responsorial Sl 79(80),2ac.3b.15-16.18-19 (R. 4)
+R. Iluminai a vossa face sobre nós,
+convertei-nos, para que sejamos salvos!
+2a
+Ó Pastor de Israel, prestai ouvidos. †
+c
+Vós que sobre os querubins vos assentais, *
+aparecei cheio de glória e esplendor!
+3b
+Despertai vosso poder, ó nosso Deus *
+e vinde logo nos trazer a salvação! R.
+15
+Voltai-vos para nós, Deus do universo! †
+Olhai dos altos céus e observai.*
+Visitai a vossa vinha e protegei-a!
+16
+Foi a vossa mão direita que a plantou;*
+protegei-a, e ao rebento que firmastes! R.
+18
+Pousai a mão por sobre o vosso protegido,*
+o filho do homem que escolhestes para vós!
+19
+E nunca mais vos deixaremos, Senhor Deus!*
+Dai-nos vida, e louvaremos vosso nome! R.`
+    },
+    's12_dom_l2': {
+        title: "2ª Leitura — 1Cor 1,3-9",
+        day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+        momento: "2ª Leitura",
+        referencia: "1Cor 1,3-9",
+        frase: "Esperamos a revelação de Nosso Senhor Jesus Cristo.",
+        text: `SEGUNDA LEITURA
+Leitura da Primeira Carta de São Paulo aos Coríntios 1,3-9
+Irmãos:
+3
+Para vós, graça e paz,
+da parte de Deus, nosso Pai,
+e do Senhor Jesus Cristo.
+4
+Dou graças a Deus sempre a vosso respeito,
+por causa da graça que Deus vos concedeu
+em Cristo Jesus:
+5
+Nele fostes enriquecidos em tudo,
+em toda palavra e em todo conhecimento,
+6
+à medida que o testemunho sobre Cristo
+se confirmou entre vós.
+7
+Assim, não tendes falta de nenhum dom, vós que
+aguardais a revelação do Senhor nosso, Jesus Cristo.
+8
+É ele também que vos dará perseverança
+em vosso procedimento irrepreensível,
+até ao fim, até ao dia de nosso Senhor, Jesus Cristo.
+9
+Deus é fiel; por ele fostes chamados à comunhão
+com seu Filho, Jesus Cristo, Senhor nosso.
+Palavra do Senhor.`
+    },
+    's12_dom_acl': {
+        title: "Aclamação ao Evangelho — Sl 84,8",
+        day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Sl 84,8",
+        text: `Aclamação ao Evangelho Sl 84,8
+R. Aleluia, Aleluia, Aleluia.
+V. Mostrai-nos, ó Senhor, vossa bondade,
+e a vossa salvação nos concedei!`
+    },
+    's12_dom_ev': {
+        title: "Evangelho — Mc 13,33-37",
+        day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
+        momento: "Evangelho",
+        referencia: "Mc 13,33-37",
+        frase: "Vigiai: não sabeis quando o dono da casa vem.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Marcos 13,33-37
+Naquele tempo, disse Jesus aos seus discípulos:
+33
+"Cuidado! Ficai atentos,
+porque não sabeis quando chegará o momento.
+34
+É como um homem que, ao partir para o estrangeiro,
+deixou sua casa sob a responsabilidade de seus empregados,
+distribuindo a cada um sua tarefa.
+E mandou o porteiro ficar vigiando.
+35
+Vigiai, portanto, porque não sabeis
+quando o dono da casa vem:
+à tarde, à meia-noite, de madrugada ou ao amanhecer.
+36
+Para que não suceda que, vindo de repente,
+ele vos encontre dormindo.
+37
+O que vos digo, digo a todos: Vigiai!"
+Palavra da Salvação.`
     }
 };
 

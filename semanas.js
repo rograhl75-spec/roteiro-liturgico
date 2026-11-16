@@ -804,5 +804,414 @@ window.semanasData = [
    "semanas/2026-11-16/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.docx",
    "semanas/2026-11-16/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.docx"
   ]
+ },
+ {
+  "legacyWeek": 11,
+  "id": "2026-11-23",
+  "periodo": "23 a 29 de novembro",
+  "shortTitle": "23 a 29 de novembro — 1º Domingo do Advento",
+  "fullTitle": "Semana de 23 a 29 de novembro de 2026 — 1º Domingo do Advento",
+  "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
+  "roteiroExtras": [],
+  "precesExtras": [],
+  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
+  "dias": [
+   {
+    "data": "2026-11-23",
+    "titulo": "Segunda-feira, 23 de Novembro de 2026",
+    "dia": "Segunda",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Segunda-feira — 23/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "14h00–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo",
+      "confissao",
+      "Confissões e Direção Espiritual"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 14,1-3.4b-5",
+      "s12_seg_l1",
+      "II / 1220"
+     ],
+     [
+      "Salmo",
+      "Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)",
+      "s12_seg_sal",
+      "II / 1221"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Mt 24,42a.44",
+      "s12_seg_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 21,1-4",
+      "s12_seg_ev",
+      "II / 1222"
+     ]
+    ],
+    "missal": {
+     "coleta": "416",
+     "oferendas": "416",
+     "comunhao": "416",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-24",
+    "titulo": "Terça-feira, 24 de Novembro de 2026",
+    "dia": "Terça",
+    "cor": "vermelho",
+    "grau": "Memória",
+    "celebracao": "Santo André Dung-Lac, presbítero, e companheiros mártires — Memória; 34ª Semana do Tempo Comum",
+    "selecaoTitulo": "Terça-feira — 24/11 — Santo André Dung-Lac",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Rafael"
+     ],
+     [
+      "14h30–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Manuel José",
+      "confissao",
+      "Direção Espiritual — Padre de Schoenstatt"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 14,14-19",
+      "s12_ter_l1",
+      "II / 1224"
+     ],
+     [
+      "Salmo",
+      "Sl 95(96),10.11-12.13 (R. 13b)",
+      "s12_ter_sal",
+      "II / 1225"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Ap 2,10c",
+      "s12_ter_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 21,5-11",
+      "s12_ter_ev",
+      "II / 1226"
+     ]
+    ],
+    "missal": {
+     "coleta": "863",
+     "oferendas": "864",
+     "comunhao": "864",
+     "prefacio": "502 (Santos Mártires I)",
+     "eucaristica": "537 (OE II)"
+    }
+   },
+   {
+    "data": "2026-11-25",
+    "titulo": "Quarta-feira, 25 de Novembro de 2026",
+    "dia": "Quarta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Quarta-feira — 25/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 15,1-4",
+      "s12_qua_l1",
+      "II / 1229"
+     ],
+     [
+      "Salmo",
+      "Sl 97(98),1.2-3ab.7-8.9 (R. Ap 15,3b)",
+      "s12_qua_sal",
+      "II / 1229"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Ap 2,10c",
+      "s12_qua_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 21,12-19",
+      "s12_qua_ev",
+      "II / 1230"
+     ]
+    ],
+    "missal": {
+     "coleta": "416",
+     "oferendas": "416",
+     "comunhao": "416",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-26",
+    "titulo": "Quinta-feira, 26 de Novembro de 2026",
+    "dia": "Quinta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Quinta-feira — 26/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo"
+     ],
+     [
+      "14h00–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Laurindo",
+      "confissao",
+      "Confissões"
+     ],
+     [
+      "14h30–17h30",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Rafael",
+      "confissao",
+      "Confissões — Padre de Schoenstatt"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 18,1-2.21-23.19,1-3.9a",
+      "s12_qui_l1",
+      "II / 1234"
+     ],
+     [
+      "Salmo",
+      "Sl 99(100),2.3.4.5 (R. Ap 19,9a)",
+      "s12_qui_sal",
+      "II / 1235"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Lc 21,28",
+      "s12_qui_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 21,20-28",
+      "s12_qui_ev",
+      "II / 1236"
+     ]
+    ],
+    "missal": {
+     "coleta": "416",
+     "oferendas": "416",
+     "comunhao": "416",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   },
+   {
+    "data": "2026-11-27",
+    "titulo": "Sexta-feira, 27 de Novembro de 2026",
+    "dia": "Sexta",
+    "cor": "verde",
+    "grau": "Féria",
+    "celebracao": "34ª Semana do Tempo Comum, Ano Par (II) — Féria do Tempo Comum",
+    "selecaoTitulo": "Sexta-feira — 27/11",
+    "escala": [
+     [
+      "19h00",
+      "Paróquia Nossa Senhora Auxiliadora",
+      "Pe. Heriberto"
+     ],
+     [
+      "20h00",
+      "Igreja Matriz",
+      "Pe. Heriberto",
+      "casamento",
+      "Matrimônio — Gregorio e Maria"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ap 20,1-4.11-21,2",
+      "s12_sex_l1",
+      "II / 1239"
+     ],
+     [
+      "Salmo",
+      "Sl 83(84),3.4.5-6a e 8a (R. Ap 21,3b)",
+      "s12_sex_sal",
+      "II / 1240"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Lc 21,28",
+      "s12_sex_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 21,29-33",
+      "s12_sex_ev",
+      "II / 1241"
+     ]
+    ],
+    "missal": {
+     "coleta": "416",
+     "oferendas": "416",
+     "comunhao": "416",
+     "prefacio": "564 (próprio da OE V)",
+     "eucaristica": "565 (OE V)"
+    }
+   }
+  ],
+  "fimDeSemana": {
+   "titulo": "Fim de semana: 28 e 29 de Novembro de 2026",
+   "dia": "Sábado",
+   "cor": "roxo",
+   "grau": "Domingo",
+   "celebracao": "1º Domingo do Advento, Ano B — sábado vespertino e domingo",
+   "selecaoTitulo": "Fim de semana — 28 e 29/11 — 1º Domingo do Advento",
+   "dias": [
+    {
+     "data": "2026-11-28",
+     "dia": "Sábado",
+     "escala": [
+      [
+       "18h30",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Laurindo"
+      ],
+      [
+       "19h00",
+       "Capela São Domingos Sávio",
+       "Pe. Heriberto"
+      ],
+      [
+       "11h00",
+       "Capela de Pedra",
+       "Pe. Laurindo",
+       "casamento",
+       "Matrimônio — Jefferson e Estela"
+      ],
+      [
+       "16h00",
+       "Igreja Matriz",
+       "Diác. Pedrinho",
+       "casamento",
+       "Matrimônio — Carlos e Alessandra"
+      ]
+     ]
+    },
+    {
+     "data": "2026-11-29",
+     "dia": "Domingo",
+     "escala": [
+      [
+       "09h00",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Heriberto"
+      ],
+      [
+       "11h00",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Laurindo"
+      ],
+      [
+       "18h30",
+       "Paróquia Nossa Senhora Auxiliadora",
+       "Pe. Heriberto"
+      ]
+     ]
+    }
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Is 63,16b-17.19b;64,2b-7",
+     "s12_dom_l1",
+     ""
+    ],
+    [
+     "Salmo",
+     "Sl 79(80),2ac.3b.15-16.18-19 (R. 4)",
+     "s12_dom_sal",
+     "I / 696"
+    ],
+    [
+     "2ª Leitura",
+     "1Cor 1,3-9",
+     "s12_dom_l2",
+     ""
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Sl 84,8",
+     "s12_dom_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mc 13,33-37",
+     "s12_dom_ev",
+     ""
+    ]
+   ],
+   "missal": {
+    "coleta": "96",
+    "oferendas": "96",
+    "comunhao": "96",
+    "bencao": "578 (Tempo do Advento)",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "451 (Advento I)",
+    "creio": "Rezado (página omitida)"
+   },
+   "antifonas": "antifonas_12",
+   "botoes": [
+    {
+     "tipo": "link",
+     "arquivo": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
+     "rotulo": "📄 Bênção da Coroa e 1ª vela (impressão)"
+    }
+   ]
+  },
+  "documentos": [
+   "semanas/2026-11-23/Leituras 23 a 29 novembro 2026.docx",
+   "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
+   "semanas/2026-11-23/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.docx",
+   "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx"
+  ]
  }
 ];

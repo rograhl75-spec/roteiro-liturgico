@@ -8,7 +8,7 @@
  "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
  "roteiroExtras": [],
  "precesExtras": [],
- "nota": "RASCUNHO DO ADVENTO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
+ "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-11-23",
@@ -421,7 +421,7 @@
    "referencia": "Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)",
    "day": "Segunda-feira (23/11)",
    "text": "Salmo responsorial Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)\nR. É assim a geração dos que buscam vossa face,\nó Senhor, Deus de Israel.\n1\nAo Senhor pertence a terra e o que ela encerra, *\no mundo inteiro com os seres que o povoam;\n2\nporque ele a tornou firme sobre os mares, *\ne sobre as águas a mantém inabalável. R.\n3\n\"Quem subirá até o monte do Senhor, *\nquem ficará em sua santa habitação?\"\n4a\n\"Quem tem mãos puras e inocente coração, *\nb\nquem não dirige sua mente para o crime. R.\n5\nSobre este desce a bênção do Senhor *\ne a recompensa de seu Deus e Salvador\".\n6\n\"É assim a geração dos que o procuram, *\ne do Deus de Israel buscam a face\". R.",
-   "title": "Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6)"
+   "title": "Salmo Responsorial — Sl 23(24),1-2.3-4ab.5-6 (R. cf. 6) (Lecionário II, pág. 1221)"
   },
   "s12_seg_acl": {
    "momento": "Aclamação ao Evangelho",
@@ -1415,6 +1415,5 @@
     }
    ]
   }
- },
- "aprovado": false
+ }
 }

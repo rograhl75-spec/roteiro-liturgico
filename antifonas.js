@@ -118,5 +118,47 @@ window.antifonasData = {
         "text": "Assentar-se-á em seu trono glorioso e separará uns dos outros."
       }
     ]
+  },
+  "antifonas_12": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — 1º Domingo do Advento (28 e 29/11/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — Cf. Sl 24,1-3 Não se diz o Glória.",
+        "text": "A vós, meu Deus, elevo a minha alma, e confio em vós. Que eu não seja envergonhado, nem se riam de mim os meus inimigos! Pois não será desiludido qÚem em vós espera."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Sl 84,8",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. Mostrai-nos, ó Senhor, vossa bondade,\n    e a vossa salvação nos concedei!"
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Sl 84,13",
+            "text": "O Senhor nos dará tudo o que é bom, e a nossa terra nos dará suas colheitas."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Ah! Se rompesses os céus e descesses!"
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "Iluminai a vossa face sobre nós, convertei-nos, para que sejamos salvos! 2a Ó Pastor de Israel, prestai ouvidos. † c Vós que sobre os querubins vos assentais, * aparecei cheio de glória e esplendor! 3b Despertai vosso poder, ó nosso Deus * e vinde logo nos trazer a salvação! R."
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Esperamos a revelação de Nosso Senhor Jesus Cristo."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Vigiai: não sabeis quando o dono da casa vem."
+      }
+    ]
   }
 };
