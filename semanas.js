@@ -343,7 +343,7 @@ window.semanasData = [
       [
        "11h00",
        "Igreja Matriz",
-       "Pe. Laurindo"
+       "Pe. Marco Costa"
       ],
       [
        "18h30",
