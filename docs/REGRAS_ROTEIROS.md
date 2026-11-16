@@ -34,4 +34,5 @@
 5d. **Leituras na página e no PDF**: formato do Lecionário (rubrica e referência em vermelho, abertura, versículos, ℟), **sem a frase-título** em vermelho, que não se lê e confundia os leitores.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
-8. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
+8. **Locais (nomes padronizados)**: «Templo Principal», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» — na página, roteiros, preces, cartões e na planilha de escala (nunca «Matriz», «Igreja Matriz» ou «Paróquia…» como local).
+9. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
