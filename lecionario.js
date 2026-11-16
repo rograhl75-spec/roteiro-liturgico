@@ -1,7 +1,7 @@
 /* ==========================================================================
    LEITURAS NO FORMATO DO LECIONÁRIO
    Converte o texto de uma leitura (Liturgia Diária – CNBB) em uma estrutura
-   igual à dos livros litúrgicos: rubrica e referência em vermelho, frase-título,
+   igual à dos livros litúrgicos: rubrica e referência em vermelho (sem a frase-título, que não se lê),
    abertura («Leitura do…» / ✠ «Proclamação do Evangelho…»), linhas de sentido
    com o número do versículo em vermelho, refrão do salmo (℟) e conclusão.
    Usado pela tela/impressão (app.js) e pelo PDF (compartilhar.js).
@@ -90,7 +90,7 @@
     cab.appendChild(el('span', 'lec-rub', a.rubrica));
     if (a.referencia) cab.appendChild(el('span', 'lec-ref', a.referencia));
     box.appendChild(cab);
-    if (a.frase && a.tipo !== 'salmo') box.appendChild(el('p', 'lec-frase', a.frase));
+    // A frase-título do Lecionário não é mostrada: os leitores a liam junto com a leitura (decisão da paróquia).
     if (a.abertura) {
       const p = el('p', 'lec-abertura');
       if (a.evangelho) p.appendChild(el('span', 'lec-cruz', '✠ '));

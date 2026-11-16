@@ -27,6 +27,7 @@
    «Amém» cantado, Cordeiro de Deus, Comunhão, hinos (Te Deum, Noite Feliz…), fundo musical e Canto Final; nos cartões
    de rito, nas rubricas «canta-se…», «durante o canto…». Respostas faladas («Glória a vós, Senhor») não levam.
    Na página e no PDF aparece ♫ verde. Ferramenta: ferramentas/docx/musica.py (regra igual em lecionario.js → Musica.cantado).
+5d. **Leituras na página e no PDF**: formato do Lecionário (rubrica e referência em vermelho, abertura, versículos, ℟), **sem a frase-título** em vermelho, que não se lê e confundia os leitores.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
 8. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.

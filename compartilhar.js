@@ -175,7 +175,7 @@
       y -= 3;
       pagina.drawLine({ start: { x: MARGEM, y }, end: { x: A4[0] - MARGEM, y }, thickness: 0.6, color: rgb(...VERMELHO) });
       y -= 6;
-      if (a.frase && a.tipo !== 'salmo') escreverRico([{ texto: a.frase, fonte: 'serifItalico', cor: VERMELHO }], { tam, depois: 4 });
+      // frase-título do Lecionário omitida (os leitores a liam junto com a leitura)
       if (a.abertura) escreverRico([...(a.evangelho ? [{ texto: '† ', fonte: 'serifNegrito', cor: VERMELHO }] : []), { texto: a.abertura, fonte: 'serifNegrito' }], { tam, depois: 4 });
       for (const b of a.blocos) {
         if (b.tipo === 'refrao') String(b.texto).split('\n').forEach((t, k, arr) => escreverRico([...(k ? [] : [{ texto: 'R. ', fonte: 'serifNegrito', cor: VERMELHO }]), { texto: t, fonte: 'serifNegrito' }], { tam, recuo: k ? 16 : 0, antes: k ? 0 : 2, depois: k === arr.length - 1 ? 6 : 1 }));
