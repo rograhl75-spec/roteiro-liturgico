@@ -46,9 +46,9 @@
     pdf.setTitle(titulo);
     pdf.setAuthor('Paróquia Nossa Senhora Auxiliadora');
     const fontes = {
-      normal: await pdf.embedFont(StandardFonts.Helvetica),
-      negrito: await pdf.embedFont(StandardFonts.HelveticaBold),
-      italico: await pdf.embedFont(StandardFonts.HelveticaOblique),
+      normal: await pdf.embedFont(StandardFonts.TimesRoman),
+      negrito: await pdf.embedFont(StandardFonts.TimesRomanBold),
+      italico: await pdf.embedFont(StandardFonts.TimesRomanItalic),
       serif: await pdf.embedFont(StandardFonts.TimesRoman),
       serifNegrito: await pdf.embedFont(StandardFonts.TimesRomanBold),
       serifItalico: await pdf.embedFont(StandardFonts.TimesRomanItalic)

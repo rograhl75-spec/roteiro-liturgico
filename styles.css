@@ -200,8 +200,8 @@
             #print-mount { display: block !important; position: relative !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
             .print-sheet-header { text-align: center; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px; margin-bottom: 15px; page-break-after: avoid; }
             .print-sheet-header img { width: 160px !important; height: auto !important; max-height: 80px !important; object-fit: contain !important; margin: 0 auto 5px auto !important; display: block !important; }
-            .print-sheet-header h2 { margin: 0; font-size: 14pt; color: #1a365d; text-transform: uppercase; font-family: sans-serif; }
-            .print-sheet-header h3 { margin: 4px 0 0 0; font-size: 12pt; color: #8c6414; font-family: sans-serif; }
+            .print-sheet-header h2 { margin: 0; font-size: 14pt; color: #1a365d; text-transform: uppercase; font-family: Garamond, "EB Garamond", serif; }
+            .print-sheet-header h3 { margin: 4px 0 0 0; font-size: 12pt; color: #8c6414; font-family: Garamond, "EB Garamond", serif; }
             .card { border: 1px solid #94a3b8; border-left: 4px solid #8c6414; margin-bottom: 20px; padding: 12px; page-break-inside: avoid; border-radius: 0; box-shadow: none; }
             .tables-grid { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 4%; }
             .tables-grid > div { width: 48%; }
@@ -212,9 +212,9 @@
             .script-tag { flex: 0 0 100px; padding: 4px; font-size: 12pt; display: flex; align-items: center; justify-content: center; background: #e2e8f0; color: #000; border-right: 1px solid #000; }
             .script-text { flex: 1; font-size: 12pt; padding: 6px 10px; border: none; color: #000; }
             .reading-print-block { margin-bottom: 25px; border-bottom: 1px dashed #cbd5e1; padding-bottom: 15px; page-break-inside: avoid; }
-            .leitura-dia { font-size: 12pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: sans-serif; }
-            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: serif; }
-            .leitura-texto { font-size: 12pt; line-height: 1.5; text-align: justify; font-family: serif; color: #000; }
+            .leitura-dia { font-size: 12pt; font-weight: bold; color: #64748b; margin-bottom: 2px; text-transform: uppercase; font-family: Garamond, "EB Garamond", serif; }
+            .leitura-titulo { font-size: 14pt; font-weight: bold; color: #000; margin-bottom: 8px; border-bottom: 2px solid #000; padding-bottom: 4px; font-family: Garamond, "EB Garamond", serif; }
+            .leitura-texto { font-size: 14pt; line-height: 1.5; text-align: justify; font-family: Garamond, "EB Garamond", serif; color: #000; }
             .presidency-box { border: 1px solid #000; background: transparent; border-radius: 0; }
             .presidency-title { background: #f0f0f0; border-bottom: 1px solid #000; color: #000; }
             .escala-table td { border-bottom: 1px solid #ccc; color: #000; }
