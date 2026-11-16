@@ -536,7 +536,7 @@
       for (const l of confissoes.linhas) {
         const data = dataIso(l[c.data]);
         if (!dentro(data) || !l[c.hora]) continue;
-        add(data, [horaTexto(l[c.hora]), limpar(l[c.local]) || 'Paróquia Nossa Senhora Auxiliadora',
+        add(data, [horaTexto(l[c.hora]), limpar(l[c.local]) || 'Templo Principal',
           semTelefone(l[c.resp]) || 'A definir', 'confissao', semTelefone(l[c.obs]) || 'Confissões']);
       }
     }

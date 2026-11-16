@@ -381,7 +381,7 @@ window.roteirosData = {
     "cabecalho": "● PRECES – NOSSO SENHOR JESUS CRISTO, REI DO UNIVERSO – 21 E 22 NOVEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Data: 21/11/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "titulo": "Data: 21/11/2026 — Horário: Sábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
           ["Sacerdote", "Irmãos e irmãs, oremos a Cristo Rei, que existe antes de todas as coisas criadas e em quem tudo subsiste; e o aclamemos dizendo:"],
           ["Todos", "R. Senhor, venha a nós o vosso Reino!"],
@@ -620,7 +620,7 @@ window.roteirosData = {
     "cabecalho": "● PRECES – 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Data: 28/11/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "titulo": "Data: 28/11/2026 — Horário: Sábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
           ["Sacerdote", "Invoquemos a Cristo Jesus, felicidade e alegria de todos os que o esperam; e digamos:"],
           ["Todos", "R. Vinde, Senhor, e não tardeis!"],
@@ -676,7 +676,7 @@ window.roteirosData = {
       {
         "titulo": "BÊNÇÃO DA COROA E 1ª VELA",
         "linhas": [
-          ["Orientação", "1º Domingo do Advento – 28 e 29 de novembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "1º Domingo do Advento – 28 e 29 de novembro de 2026\nSábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
           ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
           ["Orientação", "BÊNÇÃO DA COROA DO ADVENTO. Depois da saudação, omitido o versículo «O nosso auxílio está no nome do Senhor», o sacerdote diz:"],
           ["Sacerdote", "Oremos.\nSenhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."],
@@ -883,7 +883,7 @@ window.roteirosData = {
     "cabecalho": "● PRECES – 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Data: 05/12/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "titulo": "Data: 05/12/2026 — Horário: Sábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
           ["Sacerdote", "Oremos, irmãos caríssimos, a Cristo nosso Senhor,\nque nasceu da Virgem Maria; e digamos com humildade e alegria:"],
           ["Todos", "R. Vinde, Senhor Jesus!"],
@@ -939,7 +939,7 @@ window.roteirosData = {
       {
         "titulo": "2ª VELA DO ADVENTO",
         "linhas": [
-          ["Orientação", "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
           ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
           ["Orientação", "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
           ["Comentarista", "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."],
@@ -1341,7 +1341,7 @@ window.roteirosData = {
     "cabecalho": "● PRECES – 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Data: 12/12/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "titulo": "Data: 12/12/2026 — Horário: Sábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
           ["Sacerdote", "Invoquemos a Cristo Jesus, felicidade e alegria de todos os que o esperam; e digamos:"],
           ["Todos", "R. Vinde, Senhor, e não tardeis!"],
@@ -1397,7 +1397,7 @@ window.roteirosData = {
       {
         "titulo": "3ª VELA DO ADVENTO",
         "linhas": [
-          ["Orientação", "3º Domingo do Advento (Gaudete) – 12 e 13 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "3º Domingo do Advento (Gaudete) – 12 e 13 de dezembro de 2026\nSábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
           ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
           ["Orientação", "ACENDIMENTO DA TERCEIRA VELA (a primeira e a segunda vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
           ["Comentarista", "Acendemos a terceira vela: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos."],
@@ -1599,7 +1599,7 @@ window.roteirosData = {
     "cabecalho": "● PRECES – 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026",
     "formularios": [
       {
-        "titulo": "Data: 19/12/2026 — Horário: Sábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "titulo": "Data: 19/12/2026 — Horário: Sábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
         "linhas": [
           ["Sacerdote", "Oremos, irmãos e irmãs caríssimos, a Cristo nosso Senhor que nasceu da Virgem Maria; e digamos com humildade e alegria:"],
           ["Todos", "R. Vinde Senhor Jesus!"],
@@ -1655,7 +1655,7 @@ window.roteirosData = {
       {
         "titulo": "4ª VELA DO ADVENTO",
         "linhas": [
-          ["Orientação", "4º Domingo do Advento – 19 e 20 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "4º Domingo do Advento – 19 e 20 de dezembro de 2026\nSábado 18h30 (Templo Principal) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
           ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
           ["Orientação", "ACENDIMENTO DA QUARTA VELA (a primeira, a segunda e a terceira vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
           ["Comentarista", "Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim."],

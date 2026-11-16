@@ -21,12 +21,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e direção espiritual"
@@ -79,12 +79,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção espiritual"
@@ -134,7 +134,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -182,19 +182,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael",
       "confissao",
       "Confissões"
@@ -244,7 +244,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto — Missa Votiva do Espírito Santo (abertura da Assembleia Paroquial)"
      ],
      [
@@ -305,7 +305,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
@@ -335,17 +335,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
@@ -426,12 +426,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e Direção Espiritual"
@@ -482,12 +482,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção Espiritual — Padre de Schoenstatt"
@@ -538,7 +538,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -587,19 +587,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Afonso",
       "confissao",
       "Confissões — Padre de Schoenstatt"
@@ -650,7 +650,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ],
      [
@@ -710,7 +710,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
@@ -720,14 +720,14 @@ window.semanasData = [
       ],
       [
        "11h00",
-       "Igreja Matriz",
+       "Templo Principal",
        "Pe. Heriberto",
        "casamento",
        "Matrimônio — Victor e Julia"
       ],
       [
        "20h00",
-       "Igreja Matriz",
+       "Templo Principal",
        "Diác. Rogério",
        "casamento",
        "Matrimônio — Naira e Lucas"
@@ -740,17 +740,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
@@ -829,12 +829,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e Direção Espiritual"
@@ -885,12 +885,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção Espiritual — Padre de Schoenstatt"
@@ -941,7 +941,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -990,19 +990,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael",
       "confissao",
       "Confissões — Padre de Schoenstatt"
@@ -1053,12 +1053,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ],
      [
       "20h00",
-      "Igreja Matriz",
+      "Templo Principal",
       "Pe. Heriberto",
       "casamento",
       "Matrimônio — Gregorio e Maria"
@@ -1113,7 +1113,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
@@ -1130,7 +1130,7 @@ window.semanasData = [
       ],
       [
        "16h00",
-       "Igreja Matriz",
+       "Templo Principal",
        "Diác. Pedrinho",
        "casamento",
        "Matrimônio — Carlos e Alessandra"
@@ -1143,17 +1143,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
@@ -1240,12 +1240,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e Direção Espiritual"
@@ -1299,12 +1299,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção Espiritual — Padre de Schoenstatt"
@@ -1355,7 +1355,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -1404,19 +1404,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Afonso",
       "confissao",
       "Confissões — Padre de Schoenstatt"
@@ -1467,22 +1467,22 @@ window.semanasData = [
     "escala": [
      [
       "05h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José"
      ],
      [
       "12h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ],
      [
       "19h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto — Adoração Solene ao Santíssimo Sacramento"
      ],
      [
       "11h30–13h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael",
       "confissao",
       "Confissões (durante a Missa)"
@@ -1539,7 +1539,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
@@ -1556,7 +1556,7 @@ window.semanasData = [
       ],
       [
        "16h00",
-       "Igreja Matriz",
+       "Templo Principal",
        "Diác. Rogério",
        "casamento",
        "Matrimônio — Victor e Lorrayne"
@@ -1569,17 +1569,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
@@ -1669,12 +1669,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e Direção Espiritual"
@@ -1725,12 +1725,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção Espiritual — Padre de Schoenstatt"
@@ -1803,7 +1803,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -1852,19 +1852,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael",
       "confissao",
       "Confissões — Padre de Schoenstatt"
@@ -1915,12 +1915,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ],
      [
       "20h00",
-      "Igreja Matriz",
+      "Templo Principal",
       "Diác. Rogério",
       "casamento",
       "Matrimônio — Arthur e Olívia"
@@ -1975,7 +1975,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
@@ -1992,7 +1992,7 @@ window.semanasData = [
       ],
       [
        "16h00",
-       "Igreja Matriz",
+       "Templo Principal",
        "Diác. Pedrinho",
        "casamento",
        "Matrimônio — Érico e Franciele"
@@ -2005,17 +2005,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
@@ -2104,12 +2104,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões e Direção Espiritual"
@@ -2160,12 +2160,12 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Manuel José",
       "confissao",
       "Direção Espiritual — Padre de Schoenstatt"
@@ -2216,7 +2216,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -2265,19 +2265,19 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo"
      ],
      [
       "14h00–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Laurindo",
       "confissao",
       "Confissões"
      ],
      [
       "14h30–17h30",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Rafael",
       "confissao",
       "Confissões — Padre de Schoenstatt"
@@ -2328,7 +2328,7 @@ window.semanasData = [
     "escala": [
      [
       "19h00",
-      "Paróquia Nossa Senhora Auxiliadora",
+      "Templo Principal",
       "Pe. Heriberto"
      ]
     ],
@@ -2381,7 +2381,7 @@ window.semanasData = [
      "escala": [
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
@@ -2397,17 +2397,17 @@ window.semanasData = [
      "escala": [
       [
        "09h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ],
       [
        "11h00",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Laurindo"
       ],
       [
        "18h30",
-       "Paróquia Nossa Senhora Auxiliadora",
+       "Templo Principal",
        "Pe. Heriberto"
       ]
      ]
