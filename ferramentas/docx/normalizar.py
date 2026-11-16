@@ -146,7 +146,7 @@ def fontes(doc):
             if r.get('cruz'): r.attrib.pop('cruz')
             for sz in rpr.findall(qn('w:sz')) + rpr.findall(qn('w:szCs')):
                 v = int(sz.get(qn('w:val')))
-                sz.set(qn('w:val'), str({24: 26, 20: 22, 16: 18, 22: 24}.get(v, v)))
+                sz.set(qn('w:val'), str({24: 26, 20: 22, 16: 18}.get(v, v)))
     st = doc.styles.element
     for rf in st.iter(qn('w:rFonts')):
         for a in list(rf.attrib): rf.attrib.pop(a)

@@ -14,7 +14,9 @@
    - uma única fonte (Garamond, serifada como os livros litúrgicos); a cruz ✠ em vermelho, com fonte que a exibe (Segoe UI Symbol);
    - «Oremos.» em linha própria, em negrito, antes da oração;
    - rubricas (o que se faz) em vermelho itálico; o que se diz em preto, sem aspas, negrito ou itálico;
-   - abertura: saudação do comentarista (℟. Para sempre seja louvado) → intenções só nas Missas transmitidas → monição inicial → canto de entrada;
+   - abertura: saudação do comentarista (℟. Para sempre seja louvado) → intenções, lidas em todas as Missas, com duas versões:
+     «Missa com transmissão» (inclui as intenções deixadas nas redes sociais) e «Missa sem transmissão» → monição inicial → canto de entrada;
+   - a monição inicial não cita a transmissão;
    - ritos próprios (ex.: coroa do Advento) com as rubricas na ordem em que acontecem;
    - os roteiros de 2025 são a base, mas sem notas internas («como em 2025», «dinâmica de 2025»).
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
