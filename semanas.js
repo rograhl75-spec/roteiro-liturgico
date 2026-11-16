@@ -10,7 +10,7 @@ window.semanasData = [
   "roteiroLabel": "📖 Roteiro — Nosso Senhor Jesus Cristo, Rei do Universo",
   "roteiroExtras": [],
   "precesExtras": [],
-  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário a confirmar. Escala conforme a planilha da paróquia; páginas do Missal conforme o roteiro e o índice do Missal Romano.",
+  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
   "dias": [
    {
     "data": "2026-11-16",
