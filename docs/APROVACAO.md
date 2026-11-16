@@ -18,3 +18,9 @@
 - Cada referência guarda a lista [página, 'MM-DD'] das vezes em que foi usada; a busca escolhe a da data mais próxima
   (no santoral, só a mesma data). Fonte: programações da paróquia de dez/2023 a set/2026 (ferramentas/docx/ler_programacoes.py).
 - Sem página no ciclo certo, a página fica em branco (não se usa página de outro ciclo).
+
+
+## Publicação
+- Toda semana aprovada aparece na página assim que aprovada, **sem limite de semanas** (some quando termina).
+- `"retidos"` no semana.json: documentos que entram mais tarde (ex.: Adoração Solene de 4/12). A semana é publicada
+  sem eles; quando o documento é marcado OK/Revisado no painel, ele sai da lista e passa a aparecer.

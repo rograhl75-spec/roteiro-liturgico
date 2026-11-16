@@ -170,6 +170,9 @@ for (const week of weeks) {
   if (!fs.existsSync(folder)) { fail(`Pasta ausente: semanas/${week.id}`); continue; }
   for (const file of fs.readdirSync(folder).filter((name) => /\.(pdf|docx|xlsx)$/i.test(name))) {
     const relative = `semanas/${week.id}/${file}`;
+    let retidos = [];
+    try { retidos = JSON.parse(fs.readFileSync(path.join(folder, 'semana.json'), 'utf8')).retidos || []; } catch (_) { /* sem semana.json */ }
+    if (retidos.includes(relative)) continue; // documento retido: entra mais tarde
     if (!assets.includes(relative)) fail(`Documento-fonte fora da lista de publicação: ${relative}`);
     if (!referencedFiles.has(relative)) fail(`Documento-fonte não vinculado em nenhuma semana: ${relative}`);
     // Planilha de escala com telefones e espórtulas nunca pode ser publicada.

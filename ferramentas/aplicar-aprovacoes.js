@@ -62,6 +62,16 @@ async function principal() {
   for (const d of docs) {
     const id = d['semana'];
     const situacao = norm(d['situacao']);
+    const S0 = abrir(id);
+    const fonteDoc = `semanas/${id}/${d['arquivo no repositorio']}`;
+    if (S0 && (S0.s.retidos || []).includes(fonteDoc)) {
+      // documento retido (entra mais tarde): não impede a publicação da semana
+      if (situacao === 'ok' || situacao === 'revisado') {
+        S0.s.retidos = S0.s.retidos.filter((x) => x !== fonteDoc);
+        if (!S0.s.retidos.length) delete S0.s.retidos;
+        S0.mudou = true; relatorio.push(`Liberado: ${fonteDoc}`);
+      } else continue;
+    }
     (porSemana[id] = porSemana[id] || []).push(situacao);
     if (situacao !== 'revisado' || !pastaRev) continue;
     const nome = d['arquivo no repositorio'];

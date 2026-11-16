@@ -13,7 +13,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const raiz = path.join(__dirname, '..');
-const MAX_SEMANAS = Number(process.env.MAX_SEMANAS) || 3;
+// Sem limite fixo: toda semana aprovada e ainda não terminada aparece (MAX_SEMANAS só para testes).
+const MAX_SEMANAS = Number(process.env.MAX_SEMANAS) || Infinity;
 const ARQUIVOS_FIXOS = [
   'index.html', 'styles.css', 'app.js', 'programacao.js', 'semanas.js', 'leituras.js', 'antifonas.js',
   'roteiros.js', 'lecionario.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
@@ -47,7 +48,21 @@ function semanasPublicadas() {
   // (ou na prévia local, com INCLUIR_RASCUNHOS=1).
   const visiveis = process.env.INCLUIR_RASCUNHOS ? todas : todas.filter((semana) => semana.aprovado !== false);
   const atuais = visiveis.filter((semana) => semana.fim >= hoje).slice(0, MAX_SEMANAS);
-  return atuais.length ? atuais : visiveis.slice(-1);
+  return (atuais.length ? atuais : visiveis.slice(-1)).map(semRetidos);
+}
+
+/* "retidos": documentos da semana que ainda não devem aparecer (ex.: incluídos mais tarde).
+   A semana é publicada sem eles; quando forem aprovados no painel, saem da lista. */
+function semRetidos(semana) {
+  const retidos = new Set(semana.retidos || []);
+  if (!retidos.size) return semana;
+  const s = JSON.parse(JSON.stringify(semana));
+  s.documentos = (s.documentos || []).filter((d) => !retidos.has(d));
+  for (const dia of s.dias.concat(s.fimDeSemana ? [s.fimDeSemana] : [])) {
+    if (dia.botoes) dia.botoes = dia.botoes.filter((b) => !retidos.has(b.arquivo));
+  }
+  for (const [k, r] of Object.entries(s.roteiros || {})) if (retidos.has(r.fonte)) delete s.roteiros[k];
+  return s;
 }
 
 const literal = (texto) => `\`${texto.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${')}\``;
@@ -74,7 +89,7 @@ function gerar() {
     if (!fs.existsSync(path.join(raiz, doc))) throw new Error(`Documento listado mas não enviado: ${doc}`);
   }
 
-  const dadosSemanas = semanas.map(({ leituras: _l, antifonas: _a, roteiros: _r, fim: _f, formato: _v, aprovado: _ap, ...resto }) => resto);
+  const dadosSemanas = semanas.map(({ leituras: _l, antifonas: _a, roteiros: _r, fim: _f, formato: _v, aprovado: _ap, retidos: _rt, ...resto }) => resto);
   fs.writeFileSync(path.join(raiz, 'semanas.js'), `/* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
    Para publicar uma semana, envie a pasta semanas/<segunda-feira>/ montada pela ferramenta. */
 window.semanasData = ${JSON.stringify(dadosSemanas, null, 1)};
