@@ -1,7 +1,7 @@
 # Painel de aprovação (Drive → página)
 
 - Pasta no Drive: **PÁGINA LITÚRGICA – APROVAÇÃO** (dentro da pasta de liturgia da paróquia), uma subpasta por semana com os .docx e a prévia em PDF.
-- Planilha: **Painel de Aprovação – Página Litúrgica** (Google Sheets, id `1pjUdHC6Htq1rHOHeuX-Vj8faReZRgHIdbC5c7EUpJkI`).
+- Planilha: **Painel de Aprovação – Página Litúrgica** (Google Sheets, id `15_l7uUF8JqQWp5th2t_C1yxGdOhRdKJhLtrpC9qiZNE`).
   - Aba *Documentos*: Situação = Pendente / OK / Revisado (Revisado = o próprio .docx foi corrigido no Drive).
   - Aba *Lecionário*: Página no formato `II / 54` + Situação OK.
 - `dados/painel-aprovacao.json`: código → semana, arquivo do repositório, id do arquivo no Drive e a versão (modifiedTime) já aplicada.

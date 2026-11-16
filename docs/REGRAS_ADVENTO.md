@@ -59,6 +59,8 @@ Santa Luzia (13/12) cai no domingo e não é celebrada. Nossa Senhora de Guadalu
 
 ## 5. Acendimento das velas da Coroa do Advento
 
+**Velas: todas brancas** (as quatro da coroa e as velas das famílias). Os textos não citam cor de vela.
+
 Sequência no **1º Domingo**, depois da saudação inicial:
 
 1. Bênção da coroa pelo sacerdote. Dentro da Missa omite-se o diálogo «O nosso auxílio está no nome do Senhor», porque a saudação já foi feita:
@@ -75,7 +77,7 @@ Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar 
 |---|---|---|---|
 | 1º Domingo – vigilância e esperança | Acendemos a primeira vela da Coroa do Advento, a vela da esperança. Começamos um novo ano litúrgico, e o Senhor nos pede que fiquemos acordados e atentos, como servos que esperam a volta do seu Senhor. Com os profetas, clamamos: vem, Senhor, salvar o teu povo! | Senhor Jesus, nós somos o barro e tu és o oleiro: molda os nossos corações. Faze brilhar sobre nós a tua face, para que, vigilantes na oração, esperemos com alegria a tua vinda. Vem, Senhor Jesus! | Is 63–64 (barro e oleiro); Sl 79 (fazei brilhar a vossa face); Mc 13,33-37 (vigiai) |
 | 2º Domingo – conversão | Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida. | Senhor Jesus, Bom Pastor que vens consolar o teu povo, aplana os caminhos do nosso coração: enche os vales da nossa fraqueza e abaixa os montes do nosso orgulho, para que te recebamos com fé e vivamos na justiça e na paz. Vem, Senhor Jesus! | Is 40 (consolai; preparai o caminho; o pastor); Sl 84; 2Pd 3 (justiça); Mc 1,1-8 (voz no deserto) |
-| 3º Domingo – vela rósea – alegria | Acendemos a terceira vela, de cor rósea: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos. | Senhor Jesus, luz verdadeira que já estás no meio de nós, faze-nos sempre alegres, perseverantes na oração e agradecidos em todas as circunstâncias, para que sejamos testemunhas da tua luz junto dos irmãos. Vem, Senhor Jesus! | Antífona Gaudete (o Senhor está perto); Is 61 (boa-nova aos pobres); 1Ts 5,16-24 (sempre alegres); Jo 1 (testemunha da luz) |
+| 3º Domingo – Gaudete – alegria | Acendemos a terceira vela: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos. | Senhor Jesus, luz verdadeira que já estás no meio de nós, faze-nos sempre alegres, perseverantes na oração e agradecidos em todas as circunstâncias, para que sejamos testemunhas da tua luz junto dos irmãos. Vem, Senhor Jesus! | Antífona Gaudete (o Senhor está perto); Is 61 (boa-nova aos pobres); 1Ts 5,16-24 (sempre alegres); Jo 1 (testemunha da luz) |
 | 4º Domingo – acolhida, com Maria | Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim. | Senhor Jesus, Filho de Davi e Filho de Maria, faze dos nossos corações a tua morada. Que, como Maria, saibamos dizer: faça-se em nós segundo a tua palavra. Vem, Senhor Jesus! | 2Sm 7 (casa e reino de Davi); Lc 1,26-38 (Anunciação: faça-se em mim) |
 
 ## 6. Natal 2026 (definido pelo Diácono Rogério em 14/11/2026)
