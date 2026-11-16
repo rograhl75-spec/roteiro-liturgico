@@ -318,7 +318,7 @@ input:focus-visible {
 .cartao-resposta { font-weight: 700; }
 .cartao-oremos { font-weight: 700; margin-bottom: .1em; }
 @media print {
-  @page cartao { size: A5 portrait; margin: 15mm 16mm; }
+  @page cartao { size: A4 portrait; margin: 20mm; }
   .cartao-rito { font-size: 15pt; line-height: 1.4; max-width: none; }
   #print-mount:has(.cartao-rito) { page: cartao; }
   #print-mount:has(.cartao-rito) .print-sheet-header, #print-mount:has(.cartao-rito) .script-row { display: none !important; }
@@ -333,8 +333,6 @@ input:focus-visible {
 @media print {
   #print-mount:has(.print-pdf) { page: pdfdoc; }
   @page pdfdoc { size: A4 portrait; margin: 0; }
-  #print-mount:has(.print-pdf-a5) { page: pdfdoc5; }
-  @page pdfdoc5 { size: A5 portrait; margin: 0; }
   .print-pdf img { display: block; width: 100%; height: auto; max-height: 99.5vh; object-fit: contain; break-after: page; page-break-after: always; box-shadow: none; margin: 0; }
   .print-pdf img:last-child { break-after: auto; page-break-after: auto; }
 }

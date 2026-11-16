@@ -9,7 +9,7 @@
    além de constarem no roteiro, ganham um **arquivo separado** (`RITO - <nome> - <data>.docx`) para impressão em papel duro:
    - identifica a Missa (celebração, data e horários) e o **momento** (rubrica);
    - traz o texto completo da bênção/rito com ℟. e ✠;
-   - formato litúrgico, papel A5, letras grandes: texto 16 pt, rubricas 14 pt em vermelho itálico, títulos em vermelho;
+   - formato litúrgico, **papel A4** (todos os documentos são A4: roteiros, preces e cartões), letras grandes: texto 16 pt, rubricas 14 pt em vermelho itálico, títulos em vermelho;
    - entra no painel de aprovação e na página como botão “📄 … (impressão)”.
 5. **Forma dos roteiros (aproximar dos livros litúrgicos)**:
    - somente informações do próprio dia (nada sobre outros domingos, Páscoa, Tempo Comum etc.); nenhum aviso antecipado na monição nem nas orientações (ex.: coleta do domingo seguinte);
@@ -34,5 +34,5 @@
 5d. **Leituras na página e no PDF**: formato do Lecionário (rubrica e referência em vermelho, abertura, versículos, ℟), **sem a frase-título** em vermelho, que não se lê e confundia os leitores.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
-8. **Locais (nomes padronizados)**: Missas e casamentos: «Igreja Matriz», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» (nunca «Paróquia…»/«Templo» como local). **Confissões e direção espiritual: sempre na «Secretaria»**, exceto na 1ª sexta-feira do mês (12h00), na «Igreja Matriz». O importador da escala aplica isso sozinho (semana-lib.js → localPadrao/localConfissao).
+8. **Locais (nomes padronizados)**: Missas e casamentos: «Igreja Matriz», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» (nunca «Paróquia…»/«Templo» como local). **Confissões e direção espiritual: sempre na «Secretaria»**, exceto na 1ª sexta-feira do mês, das 11h30 às 13h00, na «Igreja Matriz». O importador da escala aplica isso sozinho (semana-lib.js → localPadrao/localConfissao).
 9. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.

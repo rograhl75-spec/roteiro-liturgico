@@ -282,7 +282,7 @@
      "Pe. Heriberto — Adoração Eucarística Solene"
     ],
     [
-     "12h00",
+     "11h30–13h00",
      "Igreja Matriz",
      "Pe. Laurindo",
      "confissao",
@@ -1157,7 +1157,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-02/pdf/32º DOMINGO TEMPO COMUM -   7 E 8 NOVEMBRO 2026 - ANO A.pdf",
+   "pdfHash": "e30c9a20ebe053ef"
   },
   "roteiro_8_defuntos": {
    "tipo": "roteiro",
@@ -1644,7 +1646,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-02/pdf/Comemoração de Todos os Fiéis Defuntos - 02_11_2026 revisado.pdf",
+   "pdfHash": "3b8d9456c674b346"
   },
   "roteiro_8_adoracao": {
    "tipo": "roteiro",
@@ -2250,7 +2254,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-02/pdf/MISSA VOTIVA DO SAGRADO CORAÇÃO DE JESUS - 06 NOVEMBRO 2026 - ANO A.pdf",
+   "pdfHash": "7c7a2088c595d686"
   },
   "preces_8": {
    "tipo": "preces",
@@ -2381,7 +2387,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-02/pdf/PRECES - 32º DOMINGO TEMPO COMUM.pdf",
+   "pdfHash": "acfd894ec7847f74"
   },
   "preces_8_defuntos": {
    "tipo": "preces",
@@ -2431,7 +2439,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-02/pdf/PRECES - COMEMORAÇÃO DE TODOS OS FIÉIS DEFUNTOS.pdf",
+   "pdfHash": "1ccba3338c6e0c29"
   }
  }
 }

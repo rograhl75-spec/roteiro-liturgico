@@ -21,7 +21,7 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Prefácio | Advento I (pág. 451) até 16/12; Advento II (pág. 453) de 17 a 24/12 e no 4º Domingo. Memórias, festas e solenidades usam o prefácio próprio ou o do Comum. |
 | Bênção | Domingos: Bênção Solene do Advento (pág. 578). Festas e solenidades: a bênção indicada no próprio formulário. |
 | Memórias | Obrigatórias, até 16/12, seguem o santo. Facultativas não são celebradas. De 17 a 24/12 celebra-se sempre a féria do Advento. |
-| Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) mantêm-se os horários (Missas às 5h30 e 12h00, confissões às 11h30), mas a Missa é a do dia; reza-se a Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo às 19h30 (roteiro a preparar). |
+| Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) mantêm-se os horários (Missas às 5h30 e 12h00, confissões das 11h30 às 13h00, na Igreja Matriz), mas a Missa é a do dia; reza-se a Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo às 19h30 (roteiro a preparar). |
 | Ornamentação | Flores e instrumentos com moderação, sem antecipar a alegria do Natal (IGMR 305 e 313). |
 | Coroa do Advento | Logo após a saudação inicial. A bênção é feita **uma só vez**, no 1º Domingo (ou na primeira Missa do sábado à noite); nos demais domingos só se acende a vela do dia. Sequência na seção 5. |
 | Acolhida (monição inicial) | Sempre uma acolhida da comunidade, sem antecipar as leituras nem o tema da liturgia (vale para todo o ano). |

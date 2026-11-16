@@ -953,7 +953,6 @@ function renderPdfPaginas(el) {
       for (let n = 1; n <= pdf.numPages; n++) {
         const pagina = await pdf.getPage(n);
         const base = pagina.getViewport({ scale: 1 });
-        if (n === 1) el.dataset.formato = base.width < 500 ? 'A5' : 'A4';
         const escala = Math.min(2.2, 1300 / base.width);
         const vp = pagina.getViewport({ scale: escala });
         const canvas = document.createElement('canvas');
@@ -982,7 +981,7 @@ async function printPdfPaginas(content, title) {
   await renderPdfPaginas(paginas);
   runPrintMount(() => {
     const wrapper = document.createElement('div');
-    wrapper.className = `print-pdf${paginas.dataset.formato === 'A5' ? ' print-pdf-a5' : ''}`;
+    wrapper.className = 'print-pdf'; // todos os documentos em A4
     paginas.querySelectorAll('img').forEach((img) => wrapper.appendChild(img.cloneNode(true)));
     return wrapper;
   });

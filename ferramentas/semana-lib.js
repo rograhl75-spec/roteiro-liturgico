@@ -509,7 +509,7 @@
     const avisos = [];
     const add = (data, linha) => { (porDia[data] = porDia[data] || []).push(linha); };
     /* Locais padronizados: Igreja Matriz, Capela de Pedra, Capela São Domingos Sávio.
-       Confissões: sempre na Secretaria; na 1ª sexta-feira do mês (12h00), na Igreja Matriz. */
+       Confissões: sempre na Secretaria; na 1ª sexta-feira do mês (11h30–13h00), na Igreja Matriz. */
     const localPadrao = (v) => {
       const t = limpar(v || '');
       if (!t || /^(par[óo]quia|templo|igreja matriz|matriz)/i.test(t)) return 'Igreja Matriz';

@@ -38,7 +38,8 @@
   }
 
   /* ------------------------------ montagem -------------------------------- */
-  async function gerarPdf({ titulo, subtitulo, blocos, tamanho }) {
+  async function gerarPdf({ titulo, subtitulo, blocos, tamanho, cartao }) {
+    const conteudo = { cartao };
     const PAG = tamanho === 'A5' ? [419.53, 595.28] : A4;
     const { PDFDocument, StandardFonts, rgb } = window.PDFLib;
     const pdf = await PDFDocument.create();
@@ -188,7 +189,7 @@
       if (a.fecho) escreverRico([{ texto: a.fecho, fonte: 'serifNegrito' }], { tam, antes: 6, depois: 4 });
     }
 
-    /* Cartão de rito: rubrica vermelha em itálico; S./R. em vermelho; corpo 15 (papel duro A5). */
+    /* Cartão de rito: rubrica vermelha em itálico; S./R. em vermelho; corpo 15 (A4). */
     function itemCartao(it) {
       const tam = 14.5;
       const comCruz = (texto, base) => String(texto).split('✠').flatMap((p, j) => (j ? [{ texto: '† ', fonte: 'serifNegrito', cor: VERMELHO }] : []).concat(p ? [{ ...base, texto: p }] : []));
@@ -215,7 +216,7 @@
 
     novaPagina();
     escrever('Paróquia Nossa Senhora Auxiliadora — Londrina-PR', { tam: 9, cor: CINZA });
-    if (tamanho === 'A5') escrever(titulo.toUpperCase(), { fonte: 'serifNegrito', tam: 15, cor: VERMELHO, antes: 4, depois: 2 });
+    if (tamanho === 'A5' || conteudo.cartao) escrever(titulo.toUpperCase(), { fonte: 'serifNegrito', tam: 15, cor: VERMELHO, antes: 4, depois: 2 });
     else escrever(titulo, { fonte: 'negrito', tam: 15, cor: AZUL, antes: 4, depois: 2 });
     if (subtitulo) escrever(subtitulo, { fonte: 'italico', tam: 10, cor: CINZA });
     separador();
@@ -356,7 +357,7 @@
   function documentoRoteiro(doc) {
     if (doc.pdf) return { titulo: doc.titulo, arquivoPdf: doc.pdf };
     if (doc.cartao && window.Cartao) {
-      return { titulo: doc.titulo, tamanho: 'A5', blocos: window.Cartao.itens(doc).map((item) => ({ t: 'cartao', item })) };
+      return { titulo: doc.titulo, cartao: true, blocos: window.Cartao.itens(doc).map((item) => ({ t: 'cartao', item })) };
     }
     const blocos = [];
     (doc.secoes || []).forEach((secao) => {

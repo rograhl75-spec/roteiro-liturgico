@@ -1,4 +1,4 @@
-"""Quebras de página FIXAS nos cartões de rito (A5).
+"""Quebras de página FIXAS nos cartões de rito (A4).
 
 Alguns visualizadores (Google Drive/Docs, celulares) ignoram «manter linhas juntas»
 e «manter com o próximo» e cortam uma oração no meio. Para não depender do
@@ -11,7 +11,7 @@ e o ℟ que o conclui.
 """
 import re, sys, zipfile, shutil
 
-FOLGA = 0.80          # usa só 80% da altura útil da página
+FOLGA = 0.95          # a estimativa de altura já é folgada (~1,4× a real em A4)
 CHAR = 0.47           # largura média de um caractere (em fração do corpo)
 ENTRE = 1.42          # altura da linha (em fração do corpo), já com entrelinha 1,15
 
@@ -49,6 +49,9 @@ def paginar(arq):
     with zipfile.ZipFile(arq) as z:
         files = {n: z.read(n) for n in z.namelist()}
     x = files['word/document.xml'].decode()
+    # todos os documentos são A4 (cartões antigos em A5 são convertidos)
+    x = re.sub(r'<w:pgSz w:w="8391" w:h="11906"/><w:pgMar w:top="\d+" w:right="\d+" w:bottom="\d+" w:left="\d+"',
+               '<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134"', x)
     sect = re.search(r'<w:pgSz w:w="(\d+)" w:h="(\d+)"/><w:pgMar w:top="(\d+)" w:right="(\d+)" w:bottom="(\d+)" w:left="(\d+)"', x)
     w, h, top, right, bot, left = (int(v) / 20 for v in sect.groups())
     largura, util = w - left - right, (h - top - bot) * FOLGA
@@ -75,7 +78,7 @@ def paginar(arq):
     usado, quebras = 0.0, []
     for k, (a, b) in enumerate(unidades):
         alt = sum(hs[a:b + 1])
-        limite = util if alt > 40 else util / FOLGA * 0.95   # rubrica curta final cabe no resto da página
+        limite = util if alt > 40 else util * 1.3   # rubrica curta (1 linha) cabe no resto da página — nunca sozinha na seguinte
         if usado and usado + alt > limite:
             quebras.append(a)
             usado = 0.0

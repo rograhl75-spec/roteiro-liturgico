@@ -712,7 +712,7 @@ window.roteirosData = {
     "cartao": true,
     "botao": "🕯️ Bênção da Coroa e 1ª vela",
     "pdf": "semanas/2026-11-23/pdf/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.pdf",
-    "pdfHash": "6eb85b8a0c220137"
+    "pdfHash": "1997c334959a3b99"
   },
   "roteiro_12": {
     "tipo": "roteiro",
@@ -974,7 +974,7 @@ window.roteirosData = {
     "cartao": true,
     "botao": "🕯️ 2ª vela do Advento",
     "pdf": "semanas/2026-11-30/pdf/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
-    "pdfHash": "a65f425faa63199a"
+    "pdfHash": "934587f316e1c6bf"
   },
   "roteiro_13_imaculada": {
     "tipo": "roteiro",
@@ -1443,7 +1443,7 @@ window.roteirosData = {
     "cartao": true,
     "botao": "🕯️ 3ª vela do Advento",
     "pdf": "semanas/2026-12-07/pdf/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.pdf",
-    "pdfHash": "07d8b90add7caad1"
+    "pdfHash": "ec2da6fc1db1b040"
   },
   "roteiro_14": {
     "tipo": "roteiro",
@@ -1707,6 +1707,6 @@ window.roteirosData = {
     "cartao": true,
     "botao": "🕯️ 4ª vela do Advento",
     "pdf": "semanas/2026-12-14/pdf/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
-    "pdfHash": "e633134534c1f80f"
+    "pdfHash": "db28b160545f8067"
   }
 };
