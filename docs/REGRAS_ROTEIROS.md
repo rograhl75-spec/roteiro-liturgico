@@ -38,3 +38,11 @@
 9. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
 
 9. **Cores (economia de tinta, como nos roteiros do Diácono Rogério)**: sem fundos coloridos nas células e títulos; texto em preto; rubricas em vermelho; **marca-texto amarelo** no texto do Comentarista/Animador e em **todas as respostas de «Todos»** (o animador também responde), incluindo o rótulo da linha — as rubricas vermelhas dentro dessas linhas ficam sem amarelo. Aplicar com `python3 ferramentas/docx/cores.py <roteiro/preces>.docx` antes de `gerar-pdfs.py`.
+
+10. **Fonte litúrgica e tamanhos (todos os documentos)**: Garamond (a fonte serifada dos livros litúrgicos) em roteiros, preces, leituras, escala, antífonas e cartões. Como a Garamond tem letra menor que a Abadi, os tamanhos sobem 1–2 pt:
+    - roteiros: texto 13–14 pt, rubricas e rótulos 11–12 pt;
+    - preces: texto 15 pt (lidas no ambão), rubricas 13 pt — cada celebração cabe numa página;
+    - leituras: 14 pt; escala: 11 pt; antífonas: 13 pt;
+    - **cartões do padre (orações e bênçãos em arquivo separado): 16 pt, rubricas 14 pt** — letra grande;
+    - **Adoração Solene: Garamond, mantendo os tamanhos do roteiro original** (texto 16 pt, rubricas 12–13 pt).
+    Aplicar com `python3 ferramentas/docx/fontes.py <roteiro|preces|leituras|escala|antifona|cartao|manter> ARQ.docx`.

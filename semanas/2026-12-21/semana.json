@@ -1402,7 +1402,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "1eef8f69bbb687d1"
+   "pdfHash": "ba13dbddf9a00d99"
   },
   "roteiro_15_natal_dia": {
    "tipo": "roteiro",
@@ -2015,7 +2015,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-   "pdfHash": "8b86606c35fb876e"
+   "pdfHash": "3fab19e928fbf578"
   },
   "preces_15_natal_noite": {
    "tipo": "preces",
@@ -2083,7 +2083,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "2049a66b8c14a6cd"
+   "pdfHash": "6198be5b687a6af4"
   },
   "preces_15_natal_dia": {
    "tipo": "preces",
@@ -2143,7 +2143,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-   "pdfHash": "3b88c2cae9adc7c8"
+   "pdfHash": "082f5fb3d1f648fd"
   },
   "roteiro_15": {
    "tipo": "roteiro",
@@ -2715,7 +2715,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "b8aa8f67f200156f"
+   "pdfHash": "30543d16066872c2"
   },
   "preces_15": {
    "tipo": "preces",
@@ -2872,7 +2872,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/PRECES - SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026.pdf",
-   "pdfHash": "ffd755096d7b9934"
+   "pdfHash": "e3b7b4c4741e362c"
   },
   "roteiro_15_rito": {
    "tipo": "roteiro",
@@ -2988,7 +2988,7 @@
    "cartao": true,
    "botao": "🕯️ Bênção do presépio e ritos da Noite",
    "pdf": "semanas/2026-12-21/pdf/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "028b44cbe92a3ad7"
+   "pdfHash": "4034a564408f9440"
   }
  },
  "aprovado": false
