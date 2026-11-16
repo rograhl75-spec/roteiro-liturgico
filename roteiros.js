@@ -152,7 +152,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-09/pdf/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.pdf",
-    "pdfHash": "1dfcb52c5c03dbe8"
+    "pdfHash": "f7a148cd77b7fd93"
   },
   "preces_9": {
     "tipo": "preces",
@@ -210,7 +210,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-09/pdf/PRECES - 33º DOMINGO TEMPO COMUM.pdf",
-    "pdfHash": "10316302a33f4718"
+    "pdfHash": "10d0ef219f9ad0f0"
   },
   "roteiro_10": {
     "tipo": "roteiro",
@@ -378,7 +378,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-16/pdf/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf",
-    "pdfHash": "c0bc92f6ae8e018e"
+    "pdfHash": "6335f1c3dfe15388"
   },
   "preces_10": {
     "tipo": "preces",
@@ -436,7 +436,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-16/pdf/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.pdf",
-    "pdfHash": "8b5f02e20fa5ff81"
+    "pdfHash": "dbc801a2e12c2f45"
   },
   "roteiro_11": {
     "tipo": "roteiro",
@@ -621,7 +621,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "ec73b4381ff0c3cb"
+    "pdfHash": "710c265402decb8d"
   },
   "preces_11": {
     "tipo": "preces",
@@ -679,7 +679,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-23/pdf/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.pdf",
-    "pdfHash": "9caff20d62c7ed2c"
+    "pdfHash": "c76392d524c848f4"
   },
   "roteiro_11_rito": {
     "tipo": "roteiro",
@@ -890,7 +890,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "2af37b33ff0cabb1"
+    "pdfHash": "d96d5accb0d7deb4"
   },
   "preces_12": {
     "tipo": "preces",
@@ -948,7 +948,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
-    "pdfHash": "e94b4b9056f51e07"
+    "pdfHash": "c5743f17b1392654"
   },
   "roteiro_12_rito": {
     "tipo": "roteiro",
@@ -1151,7 +1151,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
-    "pdfHash": "fb27938e2f350c87"
+    "pdfHash": "b39b42cf08f00ced"
   },
   "preces_13_imaculada": {
     "tipo": "preces",
@@ -1178,7 +1178,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-07/pdf/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.pdf",
-    "pdfHash": "9f13b115ff1269ee"
+    "pdfHash": "7760c131e4769795"
   },
   "roteiro_13": {
     "tipo": "roteiro",
@@ -1358,7 +1358,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "8798990f6b86c03c"
+    "pdfHash": "2ca510cb9d450556"
   },
   "preces_13": {
     "tipo": "preces",
@@ -1416,7 +1416,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-07/pdf/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.pdf",
-    "pdfHash": "13e6a6a81648d3cb"
+    "pdfHash": "180747adc32c7fb7"
   },
   "roteiro_13_rito": {
     "tipo": "roteiro",
@@ -1622,7 +1622,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "27c52b35cdd17bb0"
+    "pdfHash": "20ce56ff4195be9e"
   },
   "preces_14": {
     "tipo": "preces",
@@ -1680,7 +1680,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-14/pdf/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
-    "pdfHash": "f99a8120b4b0cbf8"
+    "pdfHash": "c1f83268876ee384"
   },
   "roteiro_14_rito": {
     "tipo": "roteiro",

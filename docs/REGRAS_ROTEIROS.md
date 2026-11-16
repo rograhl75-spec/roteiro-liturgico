@@ -36,3 +36,5 @@
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
 8. **Locais (nomes padronizados)**: Missas e casamentos: «Igreja Matriz», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» (nunca «Paróquia…»/«Templo» como local). **Confissões e direção espiritual: sempre na «Secretaria»**, exceto na 1ª sexta-feira do mês, das 11h30 às 13h00, na «Igreja Matriz». O importador da escala aplica isso sozinho (semana-lib.js → localPadrao/localConfissao).
 9. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
+
+9. **Cores (economia de tinta, como nos roteiros do Diácono Rogério)**: sem fundos coloridos nas células e títulos; texto em preto; rubricas em vermelho; **marca-texto amarelo** no texto do Comentarista/Animador e em **todas as respostas de «Todos»** (o animador também responde), incluindo o rótulo da linha — as rubricas vermelhas dentro dessas linhas ficam sem amarelo. Aplicar com `python3 ferramentas/docx/cores.py <roteiro/preces>.docx` antes de `gerar-pdfs.py`.
