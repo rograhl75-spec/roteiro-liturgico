@@ -8,7 +8,8 @@
  "roteiroLabel": "📖 Roteiro — Sagrada Família de Jesus, Maria e José",
  "roteiroExtras": [
   "natal_noite",
-  "natal_dia"
+  "natal_dia",
+  "rito"
  ],
  "precesExtras": [
   "natal_noite",
@@ -252,9 +253,9 @@
      "rotulo": "Preces — Natal – Missa da Noite"
     },
     {
-     "tipo": "link",
-     "arquivo": "semanas/2026-12-21/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.docx",
-     "rotulo": "📄 Bênção do presépio e ritos da Noite (impressão)"
+     "tipo": "roteiro",
+     "chave": "rito",
+     "rotulo": "🕯️ Bênção do presépio e ritos da Noite"
     }
    ],
    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio depois da homilia."
@@ -2860,6 +2861,120 @@
      ]
     }
    ]
+  },
+  "roteiro_15_rito": {
+   "tipo": "roteiro",
+   "titulo": "Bênção do presépio e ritos da Noite",
+   "secoes": [
+    {
+     "titulo": "BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE",
+     "linhas": [
+      [
+       "Orientação",
+       "Natal do Senhor – Missa da Noite – quinta-feira, 24 de dezembro de 2026, 19h00 (Matriz e Capela)"
+      ],
+      [
+       "Orientação",
+       "Momento: Três momentos dentro da Missa (indicados abaixo)."
+      ],
+      [
+       "Orientação",
+       "1. RITO DA LUZ – Liturgia da Palavra (aclamação e Evangelho)"
+      ],
+      [
+       "Orientação",
+       "RITO DA LUZ – o datashow mostra: «Nesta Noite Santa, a Palavra se faz Vida. Silêncio… O Salvador chegou.» A música faz um fundo do «Aleluia» enquanto se acendem as velas; terminado o acendimento, o responsável pelo som dá o sinal para a aclamação. Iniciada a aclamação, os coroinhas apresentam o incenso ao sacerdote; o diácono pede a bênção e vai ao ambão."
+      ],
+      [
+       "Orientação",
+       "RITO DA LUZ – no versículo 7 («e Maria deu à luz o seu filho primogênito»), o diácono interrompe a proclamação: pelo corredor central entram quatro anjos iluminando um anjo com a imagem do Menino Jesus, ao fundo musical de «A Ele a glória»; os coroinhas retiram a Bíblia da manjedoura; o anjo sobe ao presbitério, apresenta a imagem à assembleia e a coloca no presépio, e acende-se o foco da manjedoura. Terminado o fundo musical, o diácono retoma e conclui o Evangelho."
+      ],
+      [
+       "Orientação",
+       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote asperge com água benta e incensa o presépio e a imagem do Menino Jesus (a oração de bênção do presépio é feita depois das preces). Terminado o canto, acendem-se todas as luzes, exceto as da árvore de Natal."
+      ],
+      [
+       "Orientação",
+       "2. BÊNÇÃO DO PRESÉPIO – na oração dos fiéis, depois do Creio (adaptado do Book of Blessings, cap. 48 – combinar com o pároco)"
+      ],
+      [
+       "Orientação",
+       "Oração dos fiéis – preces próprias da bênção do presépio:"
+      ],
+      [
+       "Sacerdote",
+       "Irmãos e irmãs, nesta noite santa o Pai nos deu o seu Filho, nascido da Virgem Maria. Diante do presépio, que nos recorda este mistério, apresentemos a Deus as nossas preces."
+      ],
+      [
+       "Todos",
+       "Vinde, Senhor, habitar entre nós!"
+      ],
+      [
+       "Leitor",
+       "Pela santa Igreja, para que anuncie com alegria ao mundo inteiro o nascimento do Salvador, rezemos ao Senhor."
+      ],
+      [
+       "Todos",
+       "Vinde, Senhor, habitar entre nós!"
+      ],
+      [
+       "Leitor",
+       "Pelo mundo, para que a paz anunciada pelos anjos aos pastores chegue a todos os povos, sobretudo onde há guerra e violência, rezemos ao Senhor."
+      ],
+      [
+       "Todos",
+       "Vinde, Senhor, habitar entre nós!"
+      ],
+      [
+       "Leitor",
+       "Pelas famílias e pelos nossos lares, para que acolham Jesus como Maria e José o acolheram em Belém, rezemos ao Senhor."
+      ],
+      [
+       "Todos",
+       "Vinde, Senhor, habitar entre nós!"
+      ],
+      [
+       "Leitor",
+       "Pelos pais e mães, para que, a exemplo de Maria e José, transmitam a fé aos filhos com amor e cuidado, rezemos ao Senhor."
+      ],
+      [
+       "Todos",
+       "Vinde, Senhor, habitar entre nós!"
+      ],
+      [
+       "Orientação",
+       "Todos rezam a Oração do Jubileu de Diamante (telão)."
+      ],
+      [
+       "Orientação",
+       "O sacerdote, de mãos estendidas, conclui com a oração de bênção:"
+      ],
+      [
+       "Sacerdote",
+       "Deus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "3. RITO DA NOITE FELIZ – depois da oração depois da comunhão e dos avisos, antes da Bênção Solene"
+      ],
+      [
+       "Comentarista",
+       "Irmãos e irmãs, o mistério do Natal não termina aqui; ele segue conosco. Neste momento, vamos acender nossas velas. (Pausa breve enquanto o fogo começa a passar.) Vejam como a luz se espalha e vence a escuridão! Esta chama representa o próprio Jesus, a Luz que nenhuma treva pode apagar. Ao som desta canção que atravessa gerações, convidamos cada família a erguer sua luz. Que o brilho que nasce no presépio ilumine agora os seus lares, trazendo paz, reconciliação e esperança. Cantemos, unidos numa só fé, a doçura desta Noite Feliz."
+      ],
+      [
+       "Orientação",
+       "RITO DA NOITE FELIZ – acendem-se as velas e canta-se «Noite Feliz»; apagam-se as luzes da igreja, exceto as do presépio, e acendem-se as da árvore de Natal. Entrega-se uma vela a cada família (lembrança da paróquia) e a oração para a Ceia de Natal."
+      ]
+     ]
+    }
+   ],
+   "fonte": "semanas/2026-12-21/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.docx",
+   "cartao": true,
+   "botao": "🕯️ Bênção do presépio e ritos da Noite"
   }
  },
  "aprovado": false

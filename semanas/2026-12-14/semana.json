@@ -6,7 +6,9 @@
  "shortTitle": "14 a 20 de dezembro — 4º Domingo do Advento",
  "fullTitle": "Semana de 14 a 20 de dezembro de 2026 — 4º Domingo do Advento",
  "roteiroLabel": "📖 Roteiro — 4º Domingo do Advento",
- "roteiroExtras": [],
+ "roteiroExtras": [
+  "rito"
+ ],
  "precesExtras": [],
  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
@@ -374,9 +376,9 @@
   "antifonas": "antifonas_15",
   "botoes": [
    {
-    "tipo": "link",
-    "arquivo": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
-    "rotulo": "📄 4ª vela do Advento (impressão)"
+    "tipo": "roteiro",
+    "chave": "rito",
+    "rotulo": "🕯️ 4ª vela do Advento"
    }
   ]
  },
@@ -1369,6 +1371,64 @@
      ]
     }
    ]
+  },
+  "roteiro_14_rito": {
+   "tipo": "roteiro",
+   "titulo": "4ª vela do Advento",
+   "secoes": [
+    {
+     "titulo": "4ª VELA DO ADVENTO",
+     "linhas": [
+      [
+       "Orientação",
+       "4º Domingo do Advento – 19 e 20 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"
+      ],
+      [
+       "Orientação",
+       "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."
+      ],
+      [
+       "Orientação",
+       "ACENDIMENTO DA QUARTA VELA (a primeira, a segunda e a terceira vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"
+      ],
+      [
+       "Comentarista",
+       "Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim."
+      ],
+      [
+       "Orientação",
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+      ],
+      [
+       "Orientação",
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Orientação",
+       "O sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Nosso bondoso Deus, esta última vela representa o Seu Amor perfeito, que se manifesta no Menino Jesus. Ao acendermos todas as luzes, lembramos que o tempo de espera está terminando. Pedimos que o Espírito Santo nos prepare para celebrar a plenitude do Natal, amando e servindo uns aos outros como Vós nos amais. Agradecemos por serdes a Luz que ilumina as trevas do mundo e pedimos que a vossa paz reine em nossa família e nos inspire a viver uma vida santa."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Terminada a oração, a vela é colocada na coroa."
+      ],
+      [
+       "Orientação",
+       "Segue-se o ato penitencial."
+      ]
+     ]
+    }
+   ],
+   "fonte": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
+   "cartao": true,
+   "botao": "🕯️ 4ª vela do Advento"
   }
  }
 }

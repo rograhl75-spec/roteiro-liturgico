@@ -812,7 +812,9 @@ window.semanasData = [
   "shortTitle": "23 a 29 de novembro — 1º Domingo do Advento",
   "fullTitle": "Semana de 23 a 29 de novembro de 2026 — 1º Domingo do Advento",
   "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
-  "roteiroExtras": [],
+  "roteiroExtras": [
+   "rito"
+  ],
   "precesExtras": [],
   "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
   "dias": [
@@ -1201,9 +1203,9 @@ window.semanasData = [
    "antifonas": "antifonas_12",
    "botoes": [
     {
-     "tipo": "link",
-     "arquivo": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
-     "rotulo": "📄 Bênção da Coroa e 1ª vela (impressão)"
+     "tipo": "roteiro",
+     "chave": "rito",
+     "rotulo": "🕯️ Bênção da Coroa e 1ª vela"
     }
    ]
   },
@@ -1221,7 +1223,9 @@ window.semanasData = [
   "shortTitle": "30 de novembro a 6 de dezembro — 2º Domingo do Advento",
   "fullTitle": "Semana de 30 de novembro a 6 de dezembro de 2026 — Santo André e 2º Domingo do Advento",
   "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento",
-  "roteiroExtras": [],
+  "roteiroExtras": [
+   "rito"
+  ],
   "precesExtras": [],
   "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
   "dias": [
@@ -1625,9 +1629,9 @@ window.semanasData = [
    "antifonas": "antifonas_13",
    "botoes": [
     {
-     "tipo": "link",
-     "arquivo": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
-     "rotulo": "📄 2ª vela do Advento (impressão)"
+     "tipo": "roteiro",
+     "chave": "rito",
+     "rotulo": "🕯️ 2ª vela do Advento"
     }
    ]
   },
@@ -1646,7 +1650,8 @@ window.semanasData = [
   "fullTitle": "Semana de 7 a 13 de dezembro de 2026 — Imaculada Conceição da Bem-aventurada Virgem Maria e 3º Domingo do Advento",
   "roteiroLabel": "📖 Roteiro — 3º Domingo do Advento",
   "roteiroExtras": [
-   "imaculada"
+   "imaculada",
+   "rito"
   ],
   "precesExtras": [
    "imaculada"
@@ -2060,9 +2065,9 @@ window.semanasData = [
    "antifonas": "antifonas_14",
    "botoes": [
     {
-     "tipo": "link",
-     "arquivo": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
-     "rotulo": "📄 3ª vela do Advento (impressão)"
+     "tipo": "roteiro",
+     "chave": "rito",
+     "rotulo": "🕯️ 3ª vela do Advento"
     }
    ]
   },
@@ -2082,7 +2087,9 @@ window.semanasData = [
   "shortTitle": "14 a 20 de dezembro — 4º Domingo do Advento",
   "fullTitle": "Semana de 14 a 20 de dezembro de 2026 — 4º Domingo do Advento",
   "roteiroLabel": "📖 Roteiro — 4º Domingo do Advento",
-  "roteiroExtras": [],
+  "roteiroExtras": [
+   "rito"
+  ],
   "precesExtras": [],
   "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
   "dias": [
@@ -2450,9 +2457,9 @@ window.semanasData = [
    "antifonas": "antifonas_15",
    "botoes": [
     {
-     "tipo": "link",
-     "arquivo": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
-     "rotulo": "📄 4ª vela do Advento (impressão)"
+     "tipo": "roteiro",
+     "chave": "rito",
+     "rotulo": "🕯️ 4ª vela do Advento"
     }
    ]
   },

@@ -7,7 +7,8 @@
  "fullTitle": "Semana de 7 a 13 de dezembro de 2026 — Imaculada Conceição da Bem-aventurada Virgem Maria e 3º Domingo do Advento",
  "roteiroLabel": "📖 Roteiro — 3º Domingo do Advento",
  "roteiroExtras": [
-  "imaculada"
+  "imaculada",
+  "rito"
  ],
  "precesExtras": [
   "imaculada"
@@ -421,9 +422,9 @@
   "antifonas": "antifonas_14",
   "botoes": [
    {
-    "tipo": "link",
-    "arquivo": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
-    "rotulo": "📄 3ª vela do Advento (impressão)"
+    "tipo": "roteiro",
+    "chave": "rito",
+    "rotulo": "🕯️ 3ª vela do Advento"
    }
   ]
  },
@@ -2113,6 +2114,64 @@
      ]
     }
    ]
+  },
+  "roteiro_13_rito": {
+   "tipo": "roteiro",
+   "titulo": "3ª vela do Advento",
+   "secoes": [
+    {
+     "titulo": "3ª VELA DO ADVENTO",
+     "linhas": [
+      [
+       "Orientação",
+       "3º Domingo do Advento (Gaudete) – 12 e 13 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"
+      ],
+      [
+       "Orientação",
+       "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."
+      ],
+      [
+       "Orientação",
+       "ACENDIMENTO DA TERCEIRA VELA (a primeira e a segunda vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"
+      ],
+      [
+       "Comentarista",
+       "Acendemos a terceira vela: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos."
+      ],
+      [
+       "Orientação",
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+      ],
+      [
+       "Orientação",
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Orientação",
+       "O sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Pai de bondade, o Natal está próximo e nossos corações exultam de alegria na expectativa do Vosso Filho. Ajudai-nos a exultar como João Batista no deserto, preparando-nos para receber a Cristo. Que esta alegria se manifeste em nosso lar, superando qualquer tristeza e nos impulsionando a partilhar o Evangelho com um sorriso para todos que encontrarmos nesta semana."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Terminada a oração, a vela é colocada na coroa."
+      ],
+      [
+       "Orientação",
+       "Segue-se o ato penitencial."
+      ]
+     ]
+    }
+   ],
+   "fonte": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
+   "cartao": true,
+   "botao": "🕯️ 3ª vela do Advento"
   }
  }
 }

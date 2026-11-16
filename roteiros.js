@@ -669,6 +669,37 @@ window.roteirosData = {
       }
     ]
   },
+  "roteiro_11_rito": {
+    "tipo": "roteiro",
+    "titulo": "Bênção da Coroa e 1ª vela",
+    "secoes": [
+      {
+        "titulo": "BÊNÇÃO DA COROA E 1ª VELA",
+        "linhas": [
+          ["Orientação", "1º Domingo do Advento – 28 e 29 de novembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
+          ["Orientação", "BÊNÇÃO DA COROA DO ADVENTO. Depois da saudação, omitido o versículo «O nosso auxílio está no nome do Senhor», o sacerdote diz:"],
+          ["Sacerdote", "Oremos.\nSenhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."],
+          ["Todos", "Amém."],
+          ["Orientação", "O sacerdote asperge a coroa com água benta, em silêncio ou durante um breve canto."],
+          ["Orientação", "ACENDIMENTO DA PRIMEIRA VELA. O comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a primeira vela da Coroa do Advento, a vela da esperança. Começamos um novo ano litúrgico, e o Senhor nos pede que fiquemos acordados e atentos, como servos que esperam a volta do seu Senhor. Com os profetas, clamamos: vem, Senhor, salvar o teu povo!"],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a primeira vela acesa em procissão pelo corredor central e a coloca na coroa."],
+          ["Orientação", "Canto durante a procissão da vela."],
+          ["Orientação", "Colocada a vela, o sacerdote diz:"],
+          ["Sacerdote", "Senhor Jesus, ao acendermos esta primeira vela, acendemos em nossos corações a Esperança de Sua vinda. Ajudai-nos a reconhecer onde precisamos mudar, preparando o caminho em nossa comunidade para que o Senhor possa nascer em nós."],
+          ["Todos", "Amém."],
+          ["Orientação", "BÊNÇÃO DAS VELAS DAS FAMÍLIAS. Todos elevam as velas que trouxeram para a coroa do Advento de suas casas, e o sacerdote diz:"],
+          ["Sacerdote", "Oremos.\nDeus de eterna promessa, que iluminastes vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas que vossos filhos trazem para formar a coroa do Advento em seus lares. Que estas velas, sinal da esperança cristã, recordem a cada família que Cristo vem para renovar nossos caminhos e fortalecer nossa confiança em vosso amor. Que sua luz nos ajude a viver vigilantes, firmes na fé e prontos para acolher o Senhor que se aproxima. Por Cristo, nosso Senhor."],
+          ["Todos", "Amém."],
+          ["Orientação", "Segue-se o ato penitencial."]
+        ]
+      }
+    ],
+    "fonte": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
+    "cartao": true,
+    "botao": "🕯️ Bênção da Coroa e 1ª vela"
+  },
   "roteiro_12": {
     "tipo": "roteiro",
     "titulo": "Roteiro — 2º Domingo do Advento — 5 e 06/12/2026",
@@ -900,6 +931,30 @@ window.roteirosData = {
         ]
       }
     ]
+  },
+  "roteiro_12_rito": {
+    "tipo": "roteiro",
+    "titulo": "2ª vela do Advento",
+    "secoes": [
+      {
+        "titulo": "2ª VELA DO ADVENTO",
+        "linhas": [
+          ["Orientação", "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
+          ["Orientação", "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a segunda vela acesa em procissão pelo corredor central e a coloca na coroa."],
+          ["Orientação", "Canto durante a procissão da vela."],
+          ["Orientação", "Colocada a vela, o sacerdote diz:"],
+          ["Sacerdote", "Deus misericordioso, a luz desta segunda vela nos chama à conversão. Pedimos perdão pelos nossos erros e abrimos nosso coração para amar como Vós amais. Aumentai nossa fé, para que possamos acolher a mensagem de salvação. Inspirai-nos a ver e a servir o próximo, preparando um caminho de justiça para o Senhor."],
+          ["Todos", "Amém."],
+          ["Orientação", "Segue-se o ato penitencial."]
+        ]
+      }
+    ],
+    "fonte": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
+    "cartao": true,
+    "botao": "🕯️ 2ª vela do Advento"
   },
   "roteiro_13_imaculada": {
     "tipo": "roteiro",
@@ -1335,6 +1390,31 @@ window.roteirosData = {
       }
     ]
   },
+  "roteiro_13_rito": {
+    "tipo": "roteiro",
+    "titulo": "3ª vela do Advento",
+    "secoes": [
+      {
+        "titulo": "3ª VELA DO ADVENTO",
+        "linhas": [
+          ["Orientação", "3º Domingo do Advento (Gaudete) – 12 e 13 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
+          ["Orientação", "ACENDIMENTO DA TERCEIRA VELA (a primeira e a segunda vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a terceira vela: é o Domingo da Alegria, porque o Senhor está perto! Como João Batista, que não era a luz, mas veio dar testemunho da luz, somos chamados a levar a boa-nova aos pobres e a consolar os corações feridos."],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."],
+          ["Orientação", "Canto durante a procissão da vela."],
+          ["Orientação", "O sacerdote diz:"],
+          ["Sacerdote", "Pai de bondade, o Natal está próximo e nossos corações exultam de alegria na expectativa do Vosso Filho. Ajudai-nos a exultar como João Batista no deserto, preparando-nos para receber a Cristo. Que esta alegria se manifeste em nosso lar, superando qualquer tristeza e nos impulsionando a partilhar o Evangelho com um sorriso para todos que encontrarmos nesta semana."],
+          ["Todos", "Amém."],
+          ["Orientação", "Terminada a oração, a vela é colocada na coroa."],
+          ["Orientação", "Segue-se o ato penitencial."]
+        ]
+      }
+    ],
+    "fonte": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
+    "cartao": true,
+    "botao": "🕯️ 3ª vela do Advento"
+  },
   "roteiro_14": {
     "tipo": "roteiro",
     "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
@@ -1567,5 +1647,30 @@ window.roteirosData = {
         ]
       }
     ]
+  },
+  "roteiro_14_rito": {
+    "tipo": "roteiro",
+    "titulo": "4ª vela do Advento",
+    "secoes": [
+      {
+        "titulo": "4ª VELA DO ADVENTO",
+        "linhas": [
+          ["Orientação", "4º Domingo do Advento – 19 e 20 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
+          ["Orientação", "ACENDIMENTO DA QUARTA VELA (a primeira, a segunda e a terceira vela já acesas antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a quarta vela, e a coroa está completa: o Natal está próximo. Deus cumpre a promessa feita a Davi e prepara para o seu Filho uma morada: o seio da Virgem Maria, que acolheu a Palavra com o seu sim."],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."],
+          ["Orientação", "Canto durante a procissão da vela."],
+          ["Orientação", "O sacerdote diz:"],
+          ["Sacerdote", "Nosso bondoso Deus, esta última vela representa o Seu Amor perfeito, que se manifesta no Menino Jesus. Ao acendermos todas as luzes, lembramos que o tempo de espera está terminando. Pedimos que o Espírito Santo nos prepare para celebrar a plenitude do Natal, amando e servindo uns aos outros como Vós nos amais. Agradecemos por serdes a Luz que ilumina as trevas do mundo e pedimos que a vossa paz reine em nossa família e nos inspire a viver uma vida santa."],
+          ["Todos", "Amém."],
+          ["Orientação", "Terminada a oração, a vela é colocada na coroa."],
+          ["Orientação", "Segue-se o ato penitencial."]
+        ]
+      }
+    ],
+    "fonte": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
+    "cartao": true,
+    "botao": "🕯️ 4ª vela do Advento"
   }
 };

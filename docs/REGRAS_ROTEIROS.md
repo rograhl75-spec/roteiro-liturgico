@@ -3,7 +3,9 @@
 1. **Preces** (até 23/05/2027): formulário de 2025 (Liturgia das Horas) – introdução + 3 preces + Oração do Jubileu.
 2. **Roteiros**: repetir o que foi feito em 2025, inclusive as dinâmicas descritas nos roteiros daquele ano.
 3. **Acolhida**: sempre neutra – boas-vindas e avisos da Igreja, sem antecipar a liturgia do dia.
-4. **Breves ritos e bênçãos que não constam no Missal** (bênção da coroa do Advento, velas, bênção do presépio, ritos próprios da paróquia, Te Deum etc.):
+4. **Breves ritos e bênçãos** — na página, o cartão abre na tela como o roteiro (🕯️), com Imprimir, Enviar PDF e Baixar PDF
+   (ferramentas/cartoes-na-pagina.py); o .docx continua disponível em «Fonte». Detalhes:
+   **Breves ritos e bênçãos que não constam no Missal** (bênção da coroa do Advento, velas, bênção do presépio, ritos próprios da paróquia, Te Deum etc.):
    além de constarem no roteiro, ganham um **arquivo separado** (`RITO - <nome> - <data>.docx`) para impressão em papel duro:
    - identifica a Missa (celebração, data e horários) e o **momento** (rubrica);
    - traz o texto completo da bênção/rito com ℟. e ✠;

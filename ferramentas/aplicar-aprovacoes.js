@@ -85,6 +85,15 @@ async function principal() {
     let lidos = 0;
     for (const [chave, r] of Object.entries(S.s.roteiros || {})) {
       if (r.fonte !== fonte) continue;
+      if (r.cartao) { // cartão de rito: lido pelo leitor próprio (ferramentas/docx/cartao_json.py)
+        const out = require('node:child_process').execFileSync('python3', [path.join(__dirname, 'docx/cartao_json.py'), destino]);
+        const novo = JSON.parse(out.toString());
+        S.s.roteiros[chave] = { ...novo, titulo: r.titulo, fonte: r.fonte, cartao: true };
+        novo.secoes[0].titulo = r.titulo.toUpperCase();
+        S.s.roteiros[chave].secoes = novo.secoes;
+        lidos++;
+        continue;
+      }
       const dados = r.tipo === 'preces' ? L.lerPreces(doc) : L.lerRoteiro(doc);
       S.s.roteiros[chave] = { tipo: r.tipo, titulo: r.titulo, ...(r.botao ? { botao: r.botao } : {}), fonte: r.fonte, ...dados };
       lidos++;

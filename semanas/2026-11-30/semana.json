@@ -6,7 +6,9 @@
  "shortTitle": "30 de novembro a 6 de dezembro — 2º Domingo do Advento",
  "fullTitle": "Semana de 30 de novembro a 6 de dezembro de 2026 — Santo André e 2º Domingo do Advento",
  "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento",
- "roteiroExtras": [],
+ "roteiroExtras": [
+  "rito"
+ ],
  "precesExtras": [],
  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
@@ -416,9 +418,9 @@
   "antifonas": "antifonas_13",
   "botoes": [
    {
-    "tipo": "link",
-    "arquivo": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
-    "rotulo": "📄 2ª vela do Advento (impressão)"
+    "tipo": "roteiro",
+    "chave": "rito",
+    "rotulo": "🕯️ 2ª vela do Advento"
    }
   ]
  },
@@ -1446,6 +1448,60 @@
      ]
     }
    ]
+  },
+  "roteiro_12_rito": {
+   "tipo": "roteiro",
+   "titulo": "2ª vela do Advento",
+   "secoes": [
+    {
+     "titulo": "2ª VELA DO ADVENTO",
+     "linhas": [
+      [
+       "Orientação",
+       "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"
+      ],
+      [
+       "Orientação",
+       "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."
+      ],
+      [
+       "Orientação",
+       "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"
+      ],
+      [
+       "Comentarista",
+       "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."
+      ],
+      [
+       "Orientação",
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a segunda vela acesa em procissão pelo corredor central e a coloca na coroa."
+      ],
+      [
+       "Orientação",
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Orientação",
+       "Colocada a vela, o sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Deus misericordioso, a luz desta segunda vela nos chama à conversão. Pedimos perdão pelos nossos erros e abrimos nosso coração para amar como Vós amais. Aumentai nossa fé, para que possamos acolher a mensagem de salvação. Inspirai-nos a ver e a servir o próximo, preparando um caminho de justiça para o Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Segue-se o ato penitencial."
+      ]
+     ]
+    }
+   ],
+   "fonte": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
+   "cartao": true,
+   "botao": "🕯️ 2ª vela do Advento"
   }
  },
  "retidos": [

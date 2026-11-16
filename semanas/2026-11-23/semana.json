@@ -6,7 +6,9 @@
  "shortTitle": "23 a 29 de novembro — 1º Domingo do Advento",
  "fullTitle": "Semana de 23 a 29 de novembro de 2026 — 1º Domingo do Advento",
  "roteiroLabel": "📖 Roteiro — 1º Domingo do Advento",
- "roteiroExtras": [],
+ "roteiroExtras": [
+  "rito"
+ ],
  "precesExtras": [],
  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
@@ -395,9 +397,9 @@
   "antifonas": "antifonas_12",
   "botoes": [
    {
-    "tipo": "link",
-    "arquivo": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
-    "rotulo": "📄 Bênção da Coroa e 1ª vela (impressão)"
+    "tipo": "roteiro",
+    "chave": "rito",
+    "rotulo": "🕯️ Bênção da Coroa e 1ª vela"
    }
   ]
  },
@@ -1414,6 +1416,88 @@
      ]
     }
    ]
+  },
+  "roteiro_11_rito": {
+   "tipo": "roteiro",
+   "titulo": "Bênção da Coroa e 1ª vela",
+   "secoes": [
+    {
+     "titulo": "BÊNÇÃO DA COROA E 1ª VELA",
+     "linhas": [
+      [
+       "Orientação",
+       "1º Domingo do Advento – 28 e 29 de novembro de 2026\nSábado 18h30 (Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"
+      ],
+      [
+       "Orientação",
+       "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."
+      ],
+      [
+       "Orientação",
+       "BÊNÇÃO DA COROA DO ADVENTO. Depois da saudação, omitido o versículo «O nosso auxílio está no nome do Senhor», o sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Oremos.\nSenhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "O sacerdote asperge a coroa com água benta, em silêncio ou durante um breve canto."
+      ],
+      [
+       "Orientação",
+       "ACENDIMENTO DA PRIMEIRA VELA. O comentarista faz a motivação:"
+      ],
+      [
+       "Comentarista",
+       "Acendemos a primeira vela da Coroa do Advento, a vela da esperança. Começamos um novo ano litúrgico, e o Senhor nos pede que fiquemos acordados e atentos, como servos que esperam a volta do seu Senhor. Com os profetas, clamamos: vem, Senhor, salvar o teu povo!"
+      ],
+      [
+       "Orientação",
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a primeira vela acesa em procissão pelo corredor central e a coloca na coroa."
+      ],
+      [
+       "Orientação",
+       "Canto durante a procissão da vela."
+      ],
+      [
+       "Orientação",
+       "Colocada a vela, o sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Senhor Jesus, ao acendermos esta primeira vela, acendemos em nossos corações a Esperança de Sua vinda. Ajudai-nos a reconhecer onde precisamos mudar, preparando o caminho em nossa comunidade para que o Senhor possa nascer em nós."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "BÊNÇÃO DAS VELAS DAS FAMÍLIAS. Todos elevam as velas que trouxeram para a coroa do Advento de suas casas, e o sacerdote diz:"
+      ],
+      [
+       "Sacerdote",
+       "Oremos.\nDeus de eterna promessa, que iluminastes vosso povo com a esperança da vinda do Salvador, abençoai ✠ estas velas que vossos filhos trazem para formar a coroa do Advento em seus lares. Que estas velas, sinal da esperança cristã, recordem a cada família que Cristo vem para renovar nossos caminhos e fortalecer nossa confiança em vosso amor. Que sua luz nos ajude a viver vigilantes, firmes na fé e prontos para acolher o Senhor que se aproxima. Por Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Segue-se o ato penitencial."
+      ]
+     ]
+    }
+   ],
+   "fonte": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
+   "cartao": true,
+   "botao": "🕯️ Bênção da Coroa e 1ª vela"
   }
  }
 }
