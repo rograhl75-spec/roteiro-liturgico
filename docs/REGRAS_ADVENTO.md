@@ -59,7 +59,7 @@ Santa Luzia (13/12) cai no domingo e não é celebrada. Nossa Senhora de Guadalu
 
 ## 5. Acendimento das velas da Coroa do Advento
 
-**Velas: todas brancas** (as quatro da coroa e as velas das famílias). Os textos não citam cor de vela.
+**Velas: todas brancas** (as quatro da coroa e as velas das famílias). Os textos não citam cor de vela. Quem traz a vela em procissão usa **túnica branca** em todos os domingos.
 
 Sequência no **1º Domingo**, depois da saudação inicial:
 
