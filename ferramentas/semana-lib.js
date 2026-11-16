@@ -508,6 +508,19 @@
     const celebracoes = {};
     const avisos = [];
     const add = (data, linha) => { (porDia[data] = porDia[data] || []).push(linha); };
+    /* Locais padronizados: Igreja Matriz, Capela de Pedra, Capela São Domingos Sávio.
+       Confissões: sempre na Secretaria; na 1ª sexta-feira do mês (12h00), na Igreja Matriz. */
+    const localPadrao = (v) => {
+      const t = limpar(v || '');
+      if (!t || /^(par[óo]quia|templo|igreja matriz|matriz)/i.test(t)) return 'Igreja Matriz';
+      if (/pedra/i.test(t)) return 'Capela de Pedra';
+      if (/domingos/i.test(t)) return 'Capela São Domingos Sávio';
+      return t;
+    };
+    const localConfissao = (data) => {
+      const d = new Date(`${data}T12:00:00`);
+      return d.getDay() === 5 && d.getDate() <= 7 ? 'Igreja Matriz' : 'Secretaria';
+    };
     const dentro = (data) => data && data >= inicio && data <= fim;
 
     const missas = tabelaDaPlanilha(planilhas, 'missas');
@@ -518,7 +531,7 @@
       for (const l of missas.linhas) {
         const data = dataIso(l[c.data]);
         if (!dentro(data) || !l[c.hora]) continue;
-        const linha = [horaTexto(l[c.hora]), limpar(l[c.local]), semTelefone(l[c.resp]) || 'A definir'];
+        const linha = [horaTexto(l[c.hora]), localPadrao(l[c.local]), semTelefone(l[c.resp]) || 'A definir'];
         (celebracoes[data] = celebracoes[data] || []).push([linha, limpar(l[c.cel] || '')]);
         add(data, linha);
       }
@@ -536,7 +549,7 @@
       for (const l of confissoes.linhas) {
         const data = dataIso(l[c.data]);
         if (!dentro(data) || !l[c.hora]) continue;
-        add(data, [horaTexto(l[c.hora]), limpar(l[c.local]) || 'Templo Principal',
+        add(data, [horaTexto(l[c.hora]), localConfissao(data),
           semTelefone(l[c.resp]) || 'A definir', 'confissao', semTelefone(l[c.obs]) || 'Confissões']);
       }
     }
@@ -547,7 +560,7 @@
       for (const l of casamentos.linhas) {
         const data = dataIso(l[c.data]);
         if (!dentro(data) || !l[c.hora]) continue;
-        add(data, [horaTexto(l[c.hora]), limpar(l[c.local]), semTelefone(l[c.resp]) || 'A definir', 'casamento',
+        add(data, [horaTexto(l[c.hora]), localPadrao(l[c.local]), semTelefone(l[c.resp]) || 'A definir', 'casamento',
           `Matrimônio — ${semTelefone(l[c.noivos]) || 'noivos'}`]);
       }
     }

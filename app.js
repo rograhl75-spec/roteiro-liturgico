@@ -172,6 +172,8 @@ function renderDocumentModals() {
       body.appendChild(createSourceRow(doc.fonte, type === 'preces' ? 'Abrir ou baixar as preces originais' : 'Abrir ou baixar o documento original'));
     }
 
+    if (doc.cartao && window.Cartao) { body.appendChild(window.Cartao.html(doc)); root.appendChild(modal); return; }
+
     (doc.secoes || []).forEach((secao) => {
       const heading = document.createElement('h4');
       heading.className = 'roteiro-section-title';

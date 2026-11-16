@@ -308,3 +308,21 @@ input:focus-visible {
 .lec-fecho { margin: 10px 0 0; font-weight: 700; }
 @media print { .lec { font-size: 14pt; } .lec-cab, .lec-rub, .lec-ref, .lec-frase, .lec-cruz, .lec-r, .lec-verso, .lec-ou { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 .lec-r { font-family: "Segoe UI Symbol", "Noto Sans Symbols", "DejaVu Sans", Garamond, Georgia, serif; }
+
+/* Cartões de rito – formato dos livros litúrgicos */
+.cartao-rito { font-family: 'EB Garamond', Garamond, 'Times New Roman', serif; font-size: 1.15em; line-height: 1.45; color: #111; max-width: 40em; }
+.cartao-titulo { color: #a01010; text-align: center; font-size: 1.25em; margin: .4em 0 1em; letter-spacing: .02em; }
+.cartao-rubrica { color: #a01010; font-style: italic; margin: .5em 0; }
+.cartao-fala { margin: .5em 0; }
+.cartao-prefixo, .cartao-cruz { color: #a01010; font-weight: 700; }
+.cartao-resposta { font-weight: 700; }
+.cartao-oremos { font-weight: 700; margin-bottom: .1em; }
+@media print {
+  @page cartao { size: A5 portrait; margin: 15mm 16mm; }
+  .cartao-rito { font-size: 15pt; line-height: 1.4; max-width: none; }
+  #print-mount:has(.cartao-rito) { page: cartao; }
+  #print-mount:has(.cartao-rito) .print-sheet-header, #print-mount:has(.cartao-rito) .script-row { display: none !important; }
+  .cartao-rito p { break-inside: avoid; page-break-inside: avoid; }
+  .cartao-rubrica, .cartao-oremos, .cartao-fala:has(+ .cartao-resposta) { break-after: avoid; page-break-after: avoid; }
+  .cartao-rubrica, .cartao-prefixo, .cartao-cruz, .cartao-titulo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

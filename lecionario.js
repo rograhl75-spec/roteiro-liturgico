@@ -144,4 +144,51 @@
     return RX_CANTO.test(t);
   }
   root.Musica = { cantado };
+
+  /* ---------------- Cartões de rito (formato dos livros litúrgicos) ----------------
+     Rubricas em vermelho itálico; S./℟. em vermelho; «Oremos.» em linha própria. */
+  const PREFIXOS = { Sacerdote: 'S.', Todos: '℟.', Leitor: 'D./L.', 'Diácono': 'D.' };
+  function cartaoItens(doc) {
+    const itens = [];
+    for (const sec of doc.secoes || []) {
+      for (const [papel, texto] of sec.linhas) {
+        if (/^orienta/i.test(papel)) { itens.push({ tipo: 'rubrica', texto, musica: cantado(papel, texto) }); continue; }
+        const prefixo = PREFIXOS[papel] || `${papel}:`;
+        const partes = String(texto).split('\n');
+        if (/^Oremos\.?$/.test(partes[0].trim()) && partes.length > 1) {
+          itens.push({ tipo: 'fala', prefixo, texto: 'Oremos.', oremos: true });
+          itens.push({ tipo: 'fala', prefixo: '', texto: partes.slice(1).join('\n') });
+        } else {
+          itens.push({ tipo: 'fala', prefixo, texto, resposta: papel === 'Todos', musica: cantado(papel, texto) });
+        }
+      }
+    }
+    return itens;
+  }
+  function cartaoHtml(doc) {
+    const box = document.createElement('div');
+    box.className = 'cartao-rito';
+    const h = document.createElement('h3'); h.className = 'cartao-titulo'; h.textContent = doc.titulo; box.appendChild(h);
+    for (const it of cartaoItens(doc)) {
+      const p = document.createElement('p');
+      if (it.tipo === 'rubrica') {
+        p.className = 'cartao-rubrica';
+        String(it.texto).split('\n').forEach((t, k) => { if (k) p.appendChild(document.createElement('br')); p.appendChild(document.createTextNode(t)); });
+      } else {
+        p.className = 'cartao-fala' + (it.resposta ? ' cartao-resposta' : '') + (it.oremos ? ' cartao-oremos' : '');
+        if (it.prefixo) { const b = document.createElement('span'); b.className = 'cartao-prefixo'; b.textContent = it.prefixo + ' '; p.appendChild(b); }
+        String(it.texto).split('\n').forEach((t, k) => {
+          if (k) p.appendChild(document.createElement('br'));
+          t.split('✠').forEach((pedaco, j) => {
+            if (j) { const c = document.createElement('span'); c.className = 'cartao-cruz'; c.textContent = '✠'; p.appendChild(c); }
+            p.appendChild(document.createTextNode(pedaco));
+          });
+        });
+      }
+      if (it.musica) { const n = document.createElement('span'); n.className = 'musica-icone'; n.textContent = '♫'; p.appendChild(n); }
+      box.appendChild(p);
+    }
+    return box;
+  }
+  root.Cartao = { itens: cartaoItens, html: cartaoHtml };
 }(typeof self !== 'undefined' ? self : this));

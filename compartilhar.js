@@ -38,7 +38,8 @@
   }
 
   /* ------------------------------ montagem -------------------------------- */
-  async function gerarPdf({ titulo, subtitulo, blocos }) {
+  async function gerarPdf({ titulo, subtitulo, blocos, tamanho }) {
+    const PAG = tamanho === 'A5' ? [419.53, 595.28] : A4;
     const { PDFDocument, StandardFonts, rgb } = window.PDFLib;
     const pdf = await PDFDocument.create();
     pdf.setTitle(titulo);
@@ -63,10 +64,10 @@
         return suportado.get(c);
       }).join('').replace(/ {2,}/g, ' ');
 
-    const largura = A4[0] - 2 * MARGEM;
+    const largura = PAG[0] - 2 * MARGEM;
     let pagina;
     let y;
-    const novaPagina = () => { pagina = pdf.addPage(A4); y = A4[1] - MARGEM; };
+    const novaPagina = () => { pagina = pdf.addPage(PAG); y = PAG[1] - MARGEM; };
     const garantir = (altura) => { if (y - altura < MARGEM + RODAPE) novaPagina(); };
 
     function quebrar(texto, fonte, tam, max) {
@@ -170,10 +171,10 @@
       if (a.referencia) {
         const ref = limpar(a.referencia);
         const w = fontes.serif.widthOfTextAtSize(ref, 11);
-        pagina.drawText(ref, { x: A4[0] - MARGEM - w, y, size: 11, font: fontes.serif, color: rgb(...VERMELHO) });
+        pagina.drawText(ref, { x: PAG[0] - MARGEM - w, y, size: 11, font: fontes.serif, color: rgb(...VERMELHO) });
       }
       y -= 3;
-      pagina.drawLine({ start: { x: MARGEM, y }, end: { x: A4[0] - MARGEM, y }, thickness: 0.6, color: rgb(...VERMELHO) });
+      pagina.drawLine({ start: { x: MARGEM, y }, end: { x: PAG[0] - MARGEM, y }, thickness: 0.6, color: rgb(...VERMELHO) });
       y -= 6;
       // frase-título do Lecionário omitida (os leitores a liam junto com a leitura)
       if (a.abertura) escreverRico([...(a.evangelho ? [{ texto: '† ', fonte: 'serifNegrito', cor: VERMELHO }] : []), { texto: a.abertura, fonte: 'serifNegrito' }], { tam, depois: 4 });
@@ -187,16 +188,35 @@
       if (a.fecho) escreverRico([{ texto: a.fecho, fonte: 'serifNegrito' }], { tam, antes: 6, depois: 4 });
     }
 
+    /* Cartão de rito: rubrica vermelha em itálico; S./R. em vermelho; corpo 15 (papel duro A5). */
+    function itemCartao(it) {
+      const tam = 14.5;
+      const comCruz = (texto, base) => String(texto).split('✠').flatMap((p, j) => (j ? [{ texto: '† ', fonte: 'serifNegrito', cor: VERMELHO }] : []).concat(p ? [{ ...base, texto: p }] : []));
+      const linhas = String(it.texto).split('\n');
+      // estimativa da altura para não separar o bloco entre páginas
+      const est = linhas.reduce((n, l) => n + Math.max(1, Math.ceil(fontes.serif.widthOfTextAtSize(limpar(l), tam) / largura)), 0) * tam * 1.3 + 8;
+      garantir(Math.min(est + (it.tipo === 'rubrica' || it.oremos ? 60 : 0), PAG[1] - 2 * MARGEM - RODAPE - 10));
+      if (it.tipo === 'rubrica') {
+        linhas.forEach((l, k) => escreverRico([{ texto: l, fonte: 'serifItalico', cor: VERMELHO }], { tam: 12.5, depois: k === linhas.length - 1 ? 7 : 1 }));
+        if (it.musica) notaMusical(PAG[0] - MARGEM - 10, y + 7 + 12.5 * 0.32, 10);
+        return;
+      }
+      const base = { fonte: it.resposta || it.oremos ? 'serifNegrito' : 'serif' };
+      const pref = it.prefixo ? [{ texto: (it.prefixo === '℟.' ? 'R.' : it.prefixo) + ' ', fonte: 'serifNegrito', cor: VERMELHO }] : [];
+      linhas.forEach((l, k) => escreverRico((k ? [] : pref).concat(comCruz(l, base)), { tam, entrelinha: 1.3, depois: k === linhas.length - 1 ? (it.oremos ? 2 : 8) : 1 }));
+    }
+
     function separador() {
       garantir(12);
       y -= 6;
-      pagina.drawLine({ start: { x: MARGEM, y }, end: { x: A4[0] - MARGEM, y }, thickness: 0.5, color: rgb(0.8, 0.83, 0.88) });
+      pagina.drawLine({ start: { x: MARGEM, y }, end: { x: PAG[0] - MARGEM, y }, thickness: 0.5, color: rgb(0.8, 0.83, 0.88) });
       y -= 8;
     }
 
     novaPagina();
     escrever('Paróquia Nossa Senhora Auxiliadora — Londrina-PR', { tam: 9, cor: CINZA });
-    escrever(titulo, { fonte: 'negrito', tam: 15, cor: AZUL, antes: 4, depois: 2 });
+    if (tamanho === 'A5') escrever(titulo.toUpperCase(), { fonte: 'serifNegrito', tam: 15, cor: VERMELHO, antes: 4, depois: 2 });
+    else escrever(titulo, { fonte: 'negrito', tam: 15, cor: AZUL, antes: 4, depois: 2 });
     if (subtitulo) escrever(subtitulo, { fonte: 'italico', tam: 10, cor: CINZA });
     separador();
 
@@ -210,6 +230,7 @@
           break;
         case 'linha': linhaDupla(bloco.papel, bloco.texto, bloco); break;
         case 'lecionario': leituraLecionario(bloco.leitura); break;
+        case 'cartao': itemCartao(bloco.item); break;
         case 'leitura': {
           // Números de versículo (linhas só com o número) entram no começo da linha seguinte.
           const linhas = [];
@@ -237,7 +258,7 @@
       const tam = 8;
       const w = fontes.normal.widthOfTextAtSize(texto, tam);
       p.drawText(texto.length > 110 ? `Página ${i + 1} de ${paginas.length}` : texto,
-        { x: texto.length > 110 ? A4[0] / 2 - 25 : (A4[0] - w) / 2, y: MARGEM / 2, size: tam, font: fontes.normal, color: rgb(...CINZA) });
+        { x: texto.length > 110 ? PAG[0] / 2 - 25 : (PAG[0] - w) / 2, y: MARGEM / 2, size: tam, font: fontes.normal, color: rgb(...CINZA) });
     });
     return pdf.save();
   }
@@ -325,6 +346,9 @@
 
   /* ------------------------------ conteúdos ------------------------------- */
   function documentoRoteiro(doc) {
+    if (doc.cartao && window.Cartao) {
+      return { titulo: doc.titulo, tamanho: 'A5', blocos: window.Cartao.itens(doc).map((item) => ({ t: 'cartao', item })) };
+    }
     const blocos = [];
     (doc.secoes || []).forEach((secao) => {
       blocos.push({ t: 'secao', texto: secao.titulo });
