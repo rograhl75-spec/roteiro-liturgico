@@ -22,6 +22,8 @@
 5b. **Paginação dos arquivos**: nenhuma página em branco; nenhuma oração ou fala quebrada entre páginas (a linha passa inteira
    para a página seguinte e termina no ponto final); rubricas ficam junto do que vem depois; nas preces, cada horário numa página;
    nos cartões de bênção, cada oração fica inteira com o seu ℟. Rodapé apenas «página N». Ferramenta: ferramentas/docx/paginacao.py.
+   Cartões de rito: além disso, **quebras de página fixas** entre blocos (ferramentas/docx/cartao_paginas.py), porque
+   alguns visualizadores (Drive, celular) ignoram «manter linhas juntas»; conferido também no Google Docs.
 5c. **Símbolo de música**: todo momento cantado leva, ao fim da rubrica/título, o par de ícones que a Pastoral da Música
    já usa (nota musical + violão): Entrada, procissões, Ato Penitencial, Glória, Salmo, Aclamação, Oferendas, Santo,
    «Amém» cantado, Comunhão, hinos (Te Deum, Noite Feliz…), fundo musical e Canto Final; nos cartões
