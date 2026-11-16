@@ -44,7 +44,71 @@
   const chaveBase = (ref) => chaveLecionario(String(ref ?? '')
     .replace(/\((?!\d)[^)]*\)/g, '').replace(/\bcf\.?\s*/gi, '').replace(/\bou\b.*$/i, '').replace(/\s+e\s+/g, '.').replace(/[;:]\s*$/, ''))
     .replace(/[.,;]+$/, '');
-  const paginaLecionario = (paginas, ref) => paginas[chaveLecionario(ref)] || paginas['~' + chaveBase(ref)] || '';
+  /* Ano litúrgico (começa no 1º domingo do Advento) e ciclo dominical A/B/C. */
+  function inicioAdvento(ano) {
+    for (let d = 27; d <= 33; d++) {
+      const t = new Date(Date.UTC(ano, 10, d));
+      if (t.getUTCDay() === 0) return t.toISOString().slice(0, 10);
+    }
+    return `${ano}-12-01`;
+  }
+  const anoLiturgico = (data) => { const y = Number(String(data).slice(0, 4)); return data >= inicioAdvento(y) ? y + 1 : y; };
+  const cicloDominical = (data) => ['C', 'A', 'B'][anoLiturgico(data) % 3];
+  function pascoa(ano) {
+    const a = ano % 19, b = Math.floor(ano / 100), c = ano % 100, d = Math.floor(b / 4), e = b % 4;
+    const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30;
+    const i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const mes = Math.floor((h + l - 7 * m + 114) / 31), dia = ((h + l - 7 * m + 114) % 31) + 1;
+    return new Date(Date.UTC(ano, mes - 1, dia)).toISOString().slice(0, 10);
+  }
+  const maisDias = (iso, n) => new Date(Date.parse(`${iso}T00:00:00Z`) + n * 864e5).toISOString().slice(0, 10);
+  /* Tempo litúrgico aproximado da data: ADV, NAT, QUA, PAS ou TC. */
+  function tempoDaData(data) {
+    const y = Number(data.slice(0, 4));
+    if (data >= inicioAdvento(y) && data < `${y}-12-25`) return 'ADV';
+    if (data >= `${y}-12-25` || data <= `${y}-01-13`) return 'NAT';
+    const p = pascoa(y);
+    if (data >= maisDias(p, -46) && data < maisDias(p, -3)) return 'QUA';
+    if (data >= maisDias(p, -3) && data <= maisDias(p, 49)) return 'PAS';
+    return 'TC';
+  }
+  const anoFerial = (data) => (anoLiturgico(data) % 2 === 0 ? 'II' : 'I');
+  /* Página do lecionário. Com contexto ({ data, dominical }), procura primeiro no cadastro
+     separado por livro/ciclo (_ciclos: A, B, C = Lecionário I; semana = II; santoral = III). */
+  /* Distância (em dias, circular no ano) entre duas datas 'MM-DD'. */
+  function distanciaMD(a, b) {
+    const dia = (md) => { const [m, d] = md.split('-').map(Number); return Date.UTC(2001, m - 1, d) / 864e5; };
+    const x = Math.abs(dia(a) - dia(b)) % 365;
+    return Math.min(x, 365 - x);
+  }
+  /* Entre as páginas cadastradas para a referência ([[página, 'MM-DD'], …]), escolhe a da data mais próxima. */
+  function maisProxima(lista, md, maxDias) {
+    let melhor = '', dist = Infinity;
+    for (const [pagina, quando] of lista || []) {
+      const d = distanciaMD(md, quando);
+      if (d < dist) { dist = d; melhor = pagina; }
+    }
+    return dist <= (maxDias ?? Infinity) ? melhor : '';
+  }
+  /* Página do lecionário. Com contexto ({ data, dominical }), usa o cadastro separado por livro e ciclo
+     (_ciclos: A, B, C = Lecionário I por ciclo dominical; semana = Lecionário II; santoral = Lecionário III). */
+  function paginaLecionario(paginas, ref, ctx) {
+    const k = chaveLecionario(ref);
+    const kb = '~' + chaveBase(ref);
+    const C = paginas && paginas._ciclos;
+    if (C && ctx && ctx.data) {
+      const md = ctx.data.slice(5);
+      const busca = (b, max) => { const t = C[b]; return t ? (maisProxima(t[k], md, max) || maisProxima(t[kb], md, Math.min(max ?? 10, 10))) : ''; };
+      const ciclo = cicloDominical(ctx.data);
+      const r = busca('santoral', 0) ||
+        (ctx.dominical ? busca(ciclo) : busca('semana') || busca('santoral', 3) || busca(ciclo));
+      if (r) return r;
+      const plano = paginas[k] || paginas[kb] || '';
+      return /^I \//.test(plano) ? '' : plano;
+    }
+    return (typeof paginas[k] === 'string' && paginas[k]) || (typeof paginas[kb] === 'string' && paginas[kb]) || '';
+  }
+  const bucketDaPagina = (pagina, data) => (/^I \//.test(pagina) ? cicloDominical(data) : /^II \//.test(pagina) ? 'semana' : /^III \//.test(pagina) ? 'santoral' : null);
 
   function periodoTexto(inicio, fim) {
     const [di, mi] = [Number(inicio.slice(8)), Number(inicio.slice(5, 7)) - 1];
@@ -746,7 +810,8 @@
       if (l.parte.endsWith('_breve')) momento += ' (mais breve)';
       else if (/_2$/.test(l.parte)) momento += ' (outra opção)';
       const chave = `${prefixo}_${codigo}_${l.parte}`;
-      const pagina = base === 'acl' ? '' : paginaLecionario(paginas, l.referencia);
+      const pagina = base === 'acl' ? '' : paginaLecionario(paginas, l.referencia,
+        { data: info.data, dominical: codigo === 'dom' || /Solenidade/i.test(info.linhaCelebracao || '') });
       leiturasJs[chave] = { momento: MOMENTOS_LONGOS[base] ? momento.replace(MOMENTOS[base], MOMENTOS_LONGOS[base]) : momento,
         referencia: l.referencia, day: rotuloDia, text: l.texto, ...(l.frase ? { frase: l.frase } : {}) };
       return [momento, l.referencia, chave, pagina];
@@ -878,15 +943,32 @@
   /* Páginas do lecionário informadas na semana → cadastro atualizado. */
   function atualizarLecionario(lecionario, semana) {
     const novo = { ...lecionario };
+    const ciclos = JSON.parse(JSON.stringify(lecionario._ciclos || {}));
     const todos = semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : []);
     for (const dia of todos) {
-      for (const [, referencia, , pagina] of dia.leituras) if (referencia && pagina) { novo[chaveLecionario(referencia)] = pagina; novo['~' + chaveBase(referencia)] = pagina; }
+      const data = dia.data || (dia.dias && dia.dias[dia.dias.length - 1].data) || semana.id;
+      for (const [, referencia, , pagina] of dia.leituras) {
+        if (!referencia || !pagina) continue;
+        const b = bucketDaPagina(pagina, data);
+        if (b) {
+          const t = (ciclos[b] = ciclos[b] || {});
+          for (const chave of [chaveLecionario(referencia), '~' + chaveBase(referencia)]) {
+            const lista = (t[chave] = (t[chave] || []).filter(([p, q]) => !(q === data.slice(5) || p === pagina)));
+            lista.push([pagina, data.slice(5)]);
+          }
+        }
+        if (!/^I \//.test(pagina)) { novo[chaveLecionario(referencia)] = pagina; novo['~' + chaveBase(referencia)] = pagina; }
+      }
     }
-    return Object.fromEntries(Object.entries(novo).sort(([a], [b]) => a.localeCompare(b, 'pt-BR')));
+    delete novo._ciclos;
+    const ordenado = (o) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b, 'pt-BR')));
+    const saida = ordenado(novo);
+    saida._ciclos = Object.fromEntries(Object.entries(ciclos).sort().map(([b, t]) => [b, ordenado(t)]));
+    return saida;
   }
 
   return {
     papelIGMR, lerLeituras, lerRoteiro, lerPreces, lerEscala, missalDoRoteiro, missalDoIndice, montarSemana, finalizarSemana,
-    atualizarLecionario, chaveLecionario, chaveBase, paginaLecionario, semanaLegada, slug, somarDias, diaDaSemana, dataCurta, tituloData
+    atualizarLecionario, chaveLecionario, chaveBase, paginaLecionario, cicloDominical, anoFerial, anoLiturgico, bucketDaPagina, tempoDaData, pascoa, maisProxima, semanaLegada, slug, somarDias, diaDaSemana, dataCurta, tituloData
   };
 }));

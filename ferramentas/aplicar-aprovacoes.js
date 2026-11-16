@@ -129,10 +129,20 @@ async function principal() {
         if (linha[1] === r['referencia'] && linha[3] !== pagina) { linha[3] = pagina; S.mudou = true; novasPaginas++; }
       }
     }
-    cadastro[L.chaveLecionario(r['referencia'])] = pagina;
-    cadastro['~' + L.chaveBase(r['referencia'])] = pagina;
+    const dataRef = /^\d{4}-/.test(r['data']) ? r['data'] : (S.s.fimDeSemana ? S.s.fimDeSemana.dias.slice(-1)[0].data : S.s.id);
+    const bucket = L.bucketDaPagina(pagina, dataRef);
+    cadastro._ciclos = cadastro._ciclos || {};
+    for (const chave of [L.chaveLecionario(r['referencia']), '~' + L.chaveBase(r['referencia'])]) {
+      if (!/^I \//.test(pagina)) cadastro[chave] = pagina;
+      if (bucket) {
+        const t = (cadastro._ciclos[bucket] = cadastro._ciclos[bucket] || {});
+        t[chave] = (t[chave] || []).filter(([p]) => p !== pagina).concat([[pagina, dataRef.slice(5)]]);
+      }
+    }
   }
+  const ciclos = cadastro._ciclos; delete cadastro._ciclos;
   cadastro = Object.fromEntries(Object.entries(cadastro).sort(([a], [b]) => a.localeCompare(b, 'pt-BR')));
+  if (ciclos) cadastro._ciclos = ciclos;
   fs.writeFileSync(arqLec, JSON.stringify(cadastro, null, 1) + '\n');
   if (novasPaginas) relatorio.push(`${novasPaginas} página(s) do lecionário preenchida(s).`);
 
