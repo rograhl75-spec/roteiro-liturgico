@@ -150,7 +150,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-09/pdf/33º DOMINGO TEMPO COMUM - 14 E 15 NOVEMBRO 2026 - ANO A.pdf",
+    "pdfHash": "1dfcb52c5c03dbe8"
   },
   "preces_9": {
     "tipo": "preces",
@@ -206,7 +208,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-09/pdf/PRECES - 33º DOMINGO TEMPO COMUM.pdf",
+    "pdfHash": "10316302a33f4718"
   },
   "roteiro_10": {
     "tipo": "roteiro",
@@ -372,7 +376,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-16/pdf/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf",
+    "pdfHash": "c0bc92f6ae8e018e"
   },
   "preces_10": {
     "tipo": "preces",
@@ -428,7 +434,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-16/pdf/PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.pdf",
+    "pdfHash": "8b5f02e20fa5ff81"
   },
   "roteiro_11": {
     "tipo": "roteiro",
@@ -611,7 +619,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "ec73b4381ff0c3cb"
   },
   "preces_11": {
     "tipo": "preces",
@@ -667,7 +677,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-23/pdf/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.pdf",
+    "pdfHash": "9caff20d62c7ed2c"
   },
   "roteiro_11_rito": {
     "tipo": "roteiro",
@@ -698,7 +710,9 @@ window.roteirosData = {
     ],
     "fonte": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
     "cartao": true,
-    "botao": "🕯️ Bênção da Coroa e 1ª vela"
+    "botao": "🕯️ Bênção da Coroa e 1ª vela",
+    "pdf": "semanas/2026-11-23/pdf/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.pdf",
+    "pdfHash": "6eb85b8a0c220137"
   },
   "roteiro_12": {
     "tipo": "roteiro",
@@ -874,7 +888,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "2af37b33ff0cabb1"
   },
   "preces_12": {
     "tipo": "preces",
@@ -930,7 +946,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-11-30/pdf/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
+    "pdfHash": "e94b4b9056f51e07"
   },
   "roteiro_12_rito": {
     "tipo": "roteiro",
@@ -954,7 +972,9 @@ window.roteirosData = {
     ],
     "fonte": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
     "cartao": true,
-    "botao": "🕯️ 2ª vela do Advento"
+    "botao": "🕯️ 2ª vela do Advento",
+    "pdf": "semanas/2026-11-30/pdf/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
+    "pdfHash": "a65f425faa63199a"
   },
   "roteiro_13_imaculada": {
     "tipo": "roteiro",
@@ -1129,7 +1149,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
+    "pdfHash": "fb27938e2f350c87"
   },
   "preces_13_imaculada": {
     "tipo": "preces",
@@ -1154,7 +1176,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-07/pdf/PRECES - IMACULADA CONCEIÇÃO - 8 DEZEMBRO 2026.pdf",
+    "pdfHash": "9f13b115ff1269ee"
   },
   "roteiro_13": {
     "tipo": "roteiro",
@@ -1332,7 +1356,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "8798990f6b86c03c"
   },
   "preces_13": {
     "tipo": "preces",
@@ -1388,7 +1414,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-07/pdf/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.pdf",
+    "pdfHash": "13e6a6a81648d3cb"
   },
   "roteiro_13_rito": {
     "tipo": "roteiro",
@@ -1413,7 +1441,9 @@ window.roteirosData = {
     ],
     "fonte": "semanas/2026-12-07/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",
     "cartao": true,
-    "botao": "🕯️ 3ª vela do Advento"
+    "botao": "🕯️ 3ª vela do Advento",
+    "pdf": "semanas/2026-12-07/pdf/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.pdf",
+    "pdfHash": "07d8b90add7caad1"
   },
   "roteiro_14": {
     "tipo": "roteiro",
@@ -1590,7 +1620,9 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "27c52b35cdd17bb0"
   },
   "preces_14": {
     "tipo": "preces",
@@ -1646,7 +1678,9 @@ window.roteirosData = {
           ["Todos", "Amém."]
         ]
       }
-    ]
+    ],
+    "pdf": "semanas/2026-12-14/pdf/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
+    "pdfHash": "f99a8120b4b0cbf8"
   },
   "roteiro_14_rito": {
     "tipo": "roteiro",
@@ -1671,6 +1705,8 @@ window.roteirosData = {
     ],
     "fonte": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
     "cartao": true,
-    "botao": "🕯️ 4ª vela do Advento"
+    "botao": "🕯️ 4ª vela do Advento",
+    "pdf": "semanas/2026-12-14/pdf/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
+    "pdfHash": "e633134534c1f80f"
   }
 };

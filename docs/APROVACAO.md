@@ -24,3 +24,12 @@
 - Toda semana aprovada aparece na página assim que aprovada, **sem limite de semanas** (some quando termina).
 - `"retidos"` no semana.json: documentos que entram mais tarde (ex.: Adoração Solene de 4/12). A semana é publicada
   sem eles; quando o documento é marcado OK/Revisado no painel, ele sai da lista e passa a aparecer.
+
+## PDF real dos documentos (formato idêntico ao arquivo)
+
+A página mostra, imprime e envia (WhatsApp) o **PDF gerado do próprio .docx** de cada roteiro, preces e cartão de rito — não uma recomposição. Depois de qualquer alteração em um .docx:
+
+    python3 ferramentas/gerar-pdfs.py      # só regenera o que mudou (hash)
+    node ferramentas/montar-site.js && node validate-data.js
+
+Requer LibreOffice (soffice) e a fonte EB Garamond instalada (alias Garamond → EB Garamond no fontconfig). As leituras continuam no formato Lecionário.

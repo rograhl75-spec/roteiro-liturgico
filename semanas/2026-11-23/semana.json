@@ -1260,7 +1260,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "ec73b4381ff0c3cb"
   },
   "preces_11": {
    "tipo": "preces",
@@ -1415,7 +1417,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-11-23/pdf/PRECES - 1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026.pdf",
+   "pdfHash": "9caff20d62c7ed2c"
   },
   "roteiro_11_rito": {
    "tipo": "roteiro",
@@ -1497,7 +1501,9 @@
    ],
    "fonte": "semanas/2026-11-23/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.docx",
    "cartao": true,
-   "botao": "🕯️ Bênção da Coroa e 1ª vela"
+   "botao": "🕯️ Bênção da Coroa e 1ª vela",
+   "pdf": "semanas/2026-11-23/pdf/RITO - BÊNÇÃO DA COROA DO ADVENTO E 1ª VELA - 28 E 29 NOVEMBRO 2026.pdf",
+   "pdfHash": "6eb85b8a0c220137"
   }
  }
 }

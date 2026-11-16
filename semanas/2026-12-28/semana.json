@@ -1176,7 +1176,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.pdf",
+   "pdfHash": "0e0aa13ff6e961a8"
   },
   "roteiro_16_mae_deus": {
    "tipo": "roteiro",
@@ -1783,7 +1785,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
+   "pdfHash": "cccfb752030b3e15"
   },
   "preces_16_deum": {
    "tipo": "preces",
@@ -1841,7 +1845,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/PRECES - 7º DIA NA OITAVA DO NATAL - 31 DEZEMBRO 2026.pdf",
+   "pdfHash": "e871c2eb6cdf7987"
   },
   "preces_16_mae_deus": {
    "tipo": "preces",
@@ -1899,7 +1905,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/PRECES - SANTA MARIA MÃE DE DEUS - 1 JANEIRO 2027.pdf",
+   "pdfHash": "825b1bc3a4de22e1"
   },
   "roteiro_16": {
    "tipo": "roteiro",
@@ -2497,7 +2505,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
+   "pdfHash": "e525f29f6ca9108b"
   },
   "preces_16": {
    "tipo": "preces",
@@ -2652,7 +2662,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-28/pdf/PRECES - EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
+   "pdfHash": "c3c2c9987cbb08cc"
   },
   "roteiro_16_rito": {
    "tipo": "roteiro",
@@ -2682,7 +2694,9 @@
    ],
    "fonte": "semanas/2026-12-28/RITO - TE DEUM - 31 DEZEMBRO 2026.docx",
    "cartao": true,
-   "botao": "🕯️ Te Deum"
+   "botao": "🕯️ Te Deum",
+   "pdf": "semanas/2026-12-28/pdf/RITO - TE DEUM - 31 DEZEMBRO 2026.pdf",
+   "pdfHash": "fdabfa4beb80da8e"
   }
  },
  "aprovado": false

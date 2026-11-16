@@ -17,7 +17,7 @@ const raiz = path.join(__dirname, '..');
 const MAX_SEMANAS = Number(process.env.MAX_SEMANAS) || Infinity;
 const ARQUIVOS_FIXOS = [
   'index.html', 'styles.css', 'app.js', 'programacao.js', 'semanas.js', 'leituras.js', 'antifonas.js',
-  'roteiros.js', 'lecionario.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
+  'roteiros.js', 'lecionario.js', 'compartilhar.js', 'vendor/pdf-lib.min.js', 'vendor/pdf.min.js', 'vendor/pdf.worker.min.js', 'manifest.json', 'sw.js', 'icone.png', 'icone.svg',
   'Selo Auxiliadora 60 anos_Ano 3.png'
 ];
 
@@ -81,6 +81,7 @@ function gerar() {
       roteiros[chave] = Object.fromEntries(Object.entries(doc).filter(([, valor]) => valor !== undefined));
     }
     for (const doc of semana.documentos || []) if (!documentos.includes(doc)) documentos.push(doc);
+    for (const r of Object.values(semana.roteiros || {})) if (r.pdf && !documentos.includes(r.pdf)) documentos.push(r.pdf);
     for (const dia of semana.dias.concat(semana.fimDeSemana ? [semana.fimDeSemana] : [])) {
       for (const botao of dia.botoes || []) if (botao.arquivo && !documentos.includes(botao.arquivo)) documentos.push(botao.arquivo);
     }

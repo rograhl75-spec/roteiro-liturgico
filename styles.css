@@ -326,3 +326,15 @@ input:focus-visible {
   .cartao-rubrica, .cartao-oremos, .cartao-fala:has(+ .cartao-resposta) { break-after: avoid; page-break-after: avoid; }
   .cartao-rubrica, .cartao-prefixo, .cartao-cruz, .cartao-titulo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* Documentos mostrados como o arquivo original (PDF gerado do .docx) */
+.pdf-paginas { overflow-x: auto; padding: 4px 0; color: #475569; }
+.pdf-paginas .pdf-pagina { display: block; width: calc(100% * var(--zoom, 1)); max-width: none; margin: 0 auto 14px; box-shadow: 0 1px 6px rgba(15,23,42,.25); background: #fff; }
+@media print {
+  #print-mount:has(.print-pdf) { page: pdfdoc; }
+  @page pdfdoc { size: A4 portrait; margin: 0; }
+  #print-mount:has(.print-pdf-a5) { page: pdfdoc5; }
+  @page pdfdoc5 { size: A5 portrait; margin: 0; }
+  .print-pdf img { display: block; width: 100%; height: auto; max-height: 99.5vh; object-fit: contain; break-after: page; page-break-after: always; box-shadow: none; margin: 0; }
+  .print-pdf img:last-child { break-after: auto; page-break-after: auto; }
+}

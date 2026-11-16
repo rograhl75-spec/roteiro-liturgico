@@ -1215,7 +1215,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "27c52b35cdd17bb0"
   },
   "preces_14": {
    "tipo": "preces",
@@ -1370,7 +1372,9 @@
       ]
      ]
     }
-   ]
+   ],
+   "pdf": "semanas/2026-12-14/pdf/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
+   "pdfHash": "f99a8120b4b0cbf8"
   },
   "roteiro_14_rito": {
    "tipo": "roteiro",
@@ -1428,7 +1432,9 @@
    ],
    "fonte": "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
    "cartao": true,
-   "botao": "🕯️ 4ª vela do Advento"
+   "botao": "🕯️ 4ª vela do Advento",
+   "pdf": "semanas/2026-12-14/pdf/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
+   "pdfHash": "e633134534c1f80f"
   }
  }
 }

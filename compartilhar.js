@@ -325,8 +325,16 @@
       if (botao) { botao.disabled = true; botao.textContent = '⏳ Gerando…'; }
       const documento = montar();
       if (!documento) return;
-      await carregarPdfLib();
-      const bytes = await gerarPdf(documento);
+      let bytes;
+      if (documento.arquivoPdf) {
+        // O próprio documento (PDF gerado do .docx): envia exatamente o arquivo.
+        const resposta = await fetch(`./${documento.arquivoPdf.split('/').map(encodeURIComponent).join('/')}`);
+        if (!resposta.ok) throw new Error('arquivo indisponível');
+        bytes = new Uint8Array(await resposta.arrayBuffer());
+      } else {
+        await carregarPdfLib();
+        bytes = await gerarPdf(documento);
+      }
       const arquivo = new File([bytes], nomeSeguro(documento.titulo), { type: 'application/pdf' });
       if (botao && botao.dataset.modo === 'baixar') {
         baixar(arquivo);
@@ -346,6 +354,7 @@
 
   /* ------------------------------ conteúdos ------------------------------- */
   function documentoRoteiro(doc) {
+    if (doc.pdf) return { titulo: doc.titulo, arquivoPdf: doc.pdf };
     if (doc.cartao && window.Cartao) {
       return { titulo: doc.titulo, tamanho: 'A5', blocos: window.Cartao.itens(doc).map((item) => ({ t: 'cartao', item })) };
     }

@@ -172,6 +172,16 @@ function renderDocumentModals() {
       body.appendChild(createSourceRow(doc.fonte, type === 'preces' ? 'Abrir ou baixar as preces originais' : 'Abrir ou baixar o documento original'));
     }
 
+    if (doc.pdf) {
+      // Mostra o próprio documento (PDF gerado do .docx), página por página — igual ao arquivo.
+      const paginas = document.createElement('div');
+      paginas.className = 'pdf-paginas';
+      paginas.dataset.pdf = doc.pdf;
+      paginas.textContent = 'Carregando o documento…';
+      body.appendChild(paginas);
+      root.appendChild(modal);
+      return;
+    }
     if (doc.cartao && window.Cartao) { body.appendChild(window.Cartao.html(doc)); root.appendChild(modal); return; }
 
     (doc.secoes || []).forEach((secao) => {
@@ -439,6 +449,7 @@ function adjustTextSize(step, containerId) {
     return;
   }
 
+  container.style.setProperty('--zoom', String(fontSizes[containerId] / 12));
   const texts = container.querySelectorAll('.script-text');
   texts.forEach((element) => {
     element.style.fontSize = `${fontSizes[containerId]}pt`;
@@ -451,6 +462,7 @@ function openModal(id, trigger = document.activeElement) {
 
   modalFocusReturn.set(id, trigger || null);
   modal.hidden = false;
+  modal.querySelectorAll('.pdf-paginas').forEach((el) => { renderPdfPaginas(el); });
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 
@@ -910,6 +922,72 @@ function printProgramacaoGeral() {
   });
 }
 
+/* ------------------------- Documentos em PDF (pdf.js) ------------------------- */
+let pdfjsCarregando = null;
+function carregarPdfJs() {
+  if (window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+  if (!pdfjsCarregando) {
+    pdfjsCarregando = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'vendor/pdf.min.js';
+      script.onload = () => {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.js';
+        resolve(window.pdfjsLib);
+      };
+      script.onerror = () => { pdfjsCarregando = null; reject(new Error('Não foi possível carregar o leitor de PDF.')); };
+      document.head.appendChild(script);
+    });
+  }
+  return pdfjsCarregando;
+}
+
+function renderPdfPaginas(el) {
+  if (el.dataset.estado) return el.renderizado || Promise.resolve();
+  el.dataset.estado = 'carregando';
+  el.renderizado = (async () => {
+    try {
+      const pdfjs = await carregarPdfJs();
+      const url = `./${el.dataset.pdf.split('/').map(encodeURIComponent).join('/')}`;
+      const pdf = await pdfjs.getDocument(url).promise;
+      el.textContent = '';
+      for (let n = 1; n <= pdf.numPages; n++) {
+        const pagina = await pdf.getPage(n);
+        const base = pagina.getViewport({ scale: 1 });
+        if (n === 1) el.dataset.formato = base.width < 500 ? 'A5' : 'A4';
+        const escala = Math.min(2.2, 1300 / base.width);
+        const vp = pagina.getViewport({ scale: escala });
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.round(vp.width); canvas.height = Math.round(vp.height);
+        await pagina.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise;
+        const blob = await new Promise((r) => canvas.toBlob(r, 'image/jpeg', 0.88));
+        const img = document.createElement('img');
+        img.className = 'pdf-pagina';
+        img.alt = `Página ${n} de ${pdf.numPages}`;
+        img.src = URL.createObjectURL(blob);
+        el.appendChild(img);
+        canvas.width = canvas.height = 0;
+      }
+      el.dataset.estado = 'pronto';
+    } catch (erro) {
+      console.error(erro);
+      el.dataset.estado = '';
+      el.textContent = 'Não foi possível abrir o documento. Use «Abrir ou baixar o documento original».';
+    }
+  })();
+  return el.renderizado;
+}
+
+async function printPdfPaginas(content, title) {
+  const paginas = content.querySelector('.pdf-paginas');
+  await renderPdfPaginas(paginas);
+  runPrintMount(() => {
+    const wrapper = document.createElement('div');
+    wrapper.className = `print-pdf${paginas.dataset.formato === 'A5' ? ' print-pdf-a5' : ''}`;
+    paginas.querySelectorAll('img').forEach((img) => wrapper.appendChild(img.cloneNode(true)));
+    return wrapper;
+  });
+}
+
 function printActiveRoteiro(roteiroKey) {
   const week = getCurrentWeek();
   if (!week) return;
@@ -918,6 +996,7 @@ function printActiveRoteiro(roteiroKey) {
   const content = document.getElementById(`content_roteiro_${suffix}`);
   if (!content) return;
   const title = getRoteirosData()[`roteiro_${suffix}`]?.titulo || `Roteiro Litúrgico — ${week.shortTitle}`;
+  if (content.querySelector('.pdf-paginas')) { printPdfPaginas(content, title); return; }
 
   runPrintMount(() => {
     const wrapper = document.createElement('div');
@@ -935,6 +1014,7 @@ function printActivePreces(precesKey) {
   const suffix = getPrecesSuffix(week, precesKey);
   const content = document.getElementById(`content_preces_${suffix}`);
   if (!content) return;
+  if (content.querySelector('.pdf-paginas')) { printPdfPaginas(content, ''); return; }
   // Cada formulário (horário) é impresso em uma página própria.
   const forms = Array.from(content.querySelectorAll('[data-preces-form]'));
   const blocks = forms.length ? forms : [content];
