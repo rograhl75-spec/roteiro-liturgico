@@ -1352,7 +1352,7 @@ subindo para Jerusalém.
 Palavra da Salvação.`
     },
     's11_qui_l1': {
-        title: "1ª Leitura — Ap 5,1-10",
+        title: "1ª Leitura — Ap 5,1-10 (Lecionário II, pág. 1207)",
         day: "Quinta-feira (19/11) — Santos Roque González",
         momento: "1ª Leitura",
         referencia: "Ap 5,1-10",
@@ -1415,7 +1415,7 @@ E eles reinarão sobre a terra."
 Palavra do Senhor.`
     },
     's11_qui_sal': {
-        title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
+        title: "Salmo Responsorial — Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10) (Lecionário II, pág. 1208)",
         day: "Quinta-feira (19/11) — Santos Roque González",
         momento: "Salmo Responsorial",
         referencia: "Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
@@ -1455,7 +1455,7 @@ V. Oxalá ouvísseis hoje a sua voz:
 Não fecheis os corações como em Meriba!`
     },
     's11_qui_ev': {
-        title: "Evangelho — Lc 19,41-44",
+        title: "Evangelho — Lc 19,41-44 (Lecionário II, pág. 1209)",
         day: "Quinta-feira (19/11) — Santos Roque González",
         momento: "Evangelho",
         referencia: "Lc 19,41-44",
@@ -1582,7 +1582,7 @@ quando ouvia Jesus falar.
 Palavra da Salvação.`
     },
     's11_dom_l1': {
-        title: "1ª Leitura — Ez 34,11-12.15-17",
+        title: "1ª Leitura — Ez 34,11-12.15-17 (Lecionário I, pág. 360)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         momento: "1ª Leitura",
         referencia: "Ez 34,11-12.15-17",
@@ -1615,7 +1615,7 @@ entre carneiros e bodes".
 Palavra do Senhor.`
     },
     's11_dom_sal': {
-        title: "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
+        title: "Salmo Responsorial — Sl 22(23),1-2a.2b-3.5-6 (R. 1) (Lecionário I, pág. 360)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         momento: "Salmo Responsorial",
         referencia: "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
@@ -1640,7 +1640,7 @@ e, na casa do Senhor, habitarei *
 pelos tempos infinitos. R.`
     },
     's11_dom_l2': {
-        title: "2ª Leitura — 1Cor 15,20-26.28",
+        title: "2ª Leitura — 1Cor 15,20-26.28 (Lecionário I, pág. 361)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         momento: "2ª Leitura",
         referencia: "1Cor 15,20-26.28",
@@ -1692,7 +1692,7 @@ e o Reino que vem, seja bendito;
 ao que vem e a seu Reino, o louvor!`
     },
     's11_dom_ev': {
-        title: "Evangelho — Mt 25,31-46",
+        title: "Evangelho — Mt 25,31-46 (Lecionário I, pág. 362)",
         day: "Fim de Semana (21 e 22/11) — Nosso Senhor Jesus Cristo, Rei do Universo",
         momento: "Evangelho",
         referencia: "Mt 25,31-46",
@@ -2412,7 +2412,7 @@ mas as minhas palavras não hão de passar".
 Palavra da Salvação.`
     },
     's12_dom_l1': {
-        title: "1ª Leitura — Is 63,16b-17.19b;64,2b-7",
+        title: "1ª Leitura — Is 63,16b-17.19b;64,2b-7 (Lecionário I, pág. 369)",
         day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
         momento: "1ª Leitura",
         referencia: "Is 63,16b-17.19b;64,2b-7",
@@ -2491,7 +2491,7 @@ E nunca mais vos deixaremos, Senhor Deus!*
 Dai-nos vida, e louvaremos vosso nome! R.`
     },
     's12_dom_l2': {
-        title: "2ª Leitura — 1Cor 1,3-9",
+        title: "2ª Leitura — 1Cor 1,3-9 (Lecionário I, pág. 370)",
         day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
         momento: "2ª Leitura",
         referencia: "1Cor 1,3-9",
@@ -2536,7 +2536,7 @@ V. Mostrai-nos, ó Senhor, vossa bondade,
 e a vossa salvação nos concedei!`
     },
     's12_dom_ev': {
-        title: "Evangelho — Mc 13,33-37",
+        title: "Evangelho — Mc 13,33-37 (Lecionário I, pág. 371)",
         day: "Fim de Semana (28 e 29/11) — 1º Domingo do Advento",
         momento: "Evangelho",
         referencia: "Mc 13,33-37",
@@ -2565,7 +2565,7 @@ Palavra da Salvação.`
     },
     /* SEMANA DE 30 DE NOVEMBRO A 6 DE DEZEMBRO */
     's13_seg_l1': {
-        title: "1ª Leitura — Rm 10,9-18",
+        title: "1ª Leitura — Rm 10,9-18 (Lecionário III, pág. 213)",
         day: "Segunda-feira (30/11) — Santo André",
         momento: "1ª Leitura",
         referencia: "Rm 10,9-18",
@@ -2617,7 +2617,7 @@ e as suas palavras chegaram aos confins do mundo".
 Palavra do Senhor.`
     },
     's13_seg_sal': {
-        title: "Salmo Responsorial — Sl 18(19A),2-3.4-5 (R. 5a)",
+        title: "Salmo Responsorial — Sl 18(19A),2-3.4-5 (R. 5a) (Lecionário III, pág. 214)",
         day: "Segunda-feira (30/11) — Santo André",
         momento: "Salmo Responsorial",
         referencia: "Sl 18(19A),2-3.4-5 (R. 5a)",
@@ -2649,7 +2649,7 @@ V. Vinde após mim, disse o Senhor,
 e eu ensinarei a pescar gente.`
     },
     's13_seg_ev': {
-        title: "Evangelho — Mt 4,18-22",
+        title: "Evangelho — Mt 4,18-22 (Lecionário III, pág. 214)",
         day: "Segunda-feira (30/11) — Santo André",
         momento: "Evangelho",
         referencia: "Mt 4,18-22",
@@ -2683,7 +2683,7 @@ e o seguiram.
 Palavra da Salvação.`
     },
     's13_ter_l1': {
-        title: "1ª Leitura — Is 11,1-10",
+        title: "1ª Leitura — Is 11,1-10 (Lecionário II, pág. 54)",
         day: "Terça-feira (01/12)",
         momento: "1ª Leitura",
         referencia: "Is 11,1-10",
@@ -2738,7 +2738,7 @@ e gloriosa será a sua morada.
 Palavra do Senhor.`
     },
     's13_ter_sal': {
-        title: "Salmo Responsorial — Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7)",
+        title: "Salmo Responsorial — Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7) (Lecionário II, pág. 55)",
         day: "Terça-feira (01/12)",
         momento: "Salmo Responsorial",
         referencia: "Sl 71(72),1-2.7-8.12-13.17 (R. cf. 7)",
@@ -3098,7 +3098,7 @@ e os maldizentes concordarão em aprender".
 Palavra do Senhor.`
     },
     's13_sex_sal': {
-        title: "Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a) (Lecionário II, pág. 1153)",
+        title: "Salmo Responsorial — Sl 26(27),1.4.13-14 (R. 1a) (Lecionário II, pág. 61)",
         day: "Sexta-feira (04/12)",
         momento: "Salmo Responsorial",
         referencia: "Sl 26(27),1.4.13-14 (R. 1a)",
@@ -4409,7 +4409,7 @@ não vos arrependestes para crer nele".
 Palavra da Salvação.`
     },
     's15_qua_l1': {
-        title: "1ª Leitura — Is 45,6b-8.18.21b-25",
+        title: "1ª Leitura — Is 45,6b-8.18.21b-25 (Lecionário II, pág. 83)",
         day: "Quarta-feira (16/12)",
         momento: "1ª Leitura",
         referencia: "Is 45,6b-8.18.21b-25",
@@ -4460,7 +4460,7 @@ toda a descendência de Israel.
 Palavra do Senhor.`
     },
     's15_qua_sal': {
-        title: "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)",
+        title: "Salmo Responsorial — Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8) (Lecionário II, pág. 84)",
         day: "Quarta-feira (16/12)",
         momento: "Salmo Responsorial",
         referencia: "Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)",
@@ -4503,7 +4503,7 @@ levanta tua voz e anuncia:
 eis que vem o Senhor Deus com poderio!`
     },
     's15_qua_ev': {
-        title: "Evangelho — Lc 7,19-23",
+        title: "Evangelho — Lc 7,19-23 (Lecionário II, pág. 84)",
         day: "Quarta-feira (16/12)",
         momento: "Evangelho",
         referencia: "Lc 7,19-23",

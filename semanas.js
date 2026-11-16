@@ -610,13 +610,13 @@ window.semanasData = [
       "1ª Leitura",
       "Ap 5,1-10",
       "s11_qui_l1",
-      ""
+      "II / 1207"
      ],
      [
       "Salmo",
       "Sl 149,1-2.3-4.5-6a e 9b (R. Ap 5,10)",
       "s11_qui_sal",
-      ""
+      "II / 1208"
      ],
      [
       "Aclamação ao Evangelho",
@@ -628,7 +628,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 19,41-44",
       "s11_qui_ev",
-      ""
+      "II / 1209"
      ]
     ],
     "missal": {
@@ -761,19 +761,19 @@ window.semanasData = [
      "1ª Leitura",
      "Ez 34,11-12.15-17",
      "s11_dom_l1",
-     ""
+     "I / 360"
     ],
     [
      "Salmo",
      "Sl 22(23),1-2a.2b-3.5-6 (R. 1)",
      "s11_dom_sal",
-     ""
+     "I / 360"
     ],
     [
      "2ª Leitura",
      "1Cor 15,20-26.28",
      "s11_dom_l2",
-     ""
+     "I / 361"
     ],
     [
      "Aclamação ao Evangelho",
@@ -785,7 +785,7 @@ window.semanasData = [
      "Evangelho",
      "Mt 25,31-46",
      "s11_dom_ev",
-     ""
+     "I / 362"
     ]
    ],
    "missal": {
@@ -1162,7 +1162,7 @@ window.semanasData = [
      "1ª Leitura",
      "Is 63,16b-17.19b;64,2b-7",
      "s12_dom_l1",
-     ""
+     "I / 369"
     ],
     [
      "Salmo",
@@ -1174,7 +1174,7 @@ window.semanasData = [
      "2ª Leitura",
      "1Cor 1,3-9",
      "s12_dom_l2",
-     ""
+     "I / 370"
     ],
     [
      "Aclamação ao Evangelho",
@@ -1186,7 +1186,7 @@ window.semanasData = [
      "Evangelho",
      "Mc 13,33-37",
      "s12_dom_ev",
-     ""
+     "I / 371"
     ]
    ],
    "missal": {
@@ -1252,13 +1252,13 @@ window.semanasData = [
       "1ª Leitura",
       "Rm 10,9-18",
       "s13_seg_l1",
-      ""
+      "III / 213"
      ],
      [
       "Salmo",
       "Sl 18(19A),2-3.4-5 (R. 5a)",
       "s13_seg_sal",
-      ""
+      "III / 214"
      ],
      [
       "Aclamação ao Evangelho",
@@ -1270,7 +1270,7 @@ window.semanasData = [
       "Evangelho",
       "Mt 4,18-22",
       "s13_seg_ev",
-      ""
+      "III / 214"
      ]
     ],
     "missal": {
@@ -2218,13 +2218,13 @@ window.semanasData = [
       "1ª Leitura",
       "Is 45,6b-8.18.21b-25",
       "s15_qua_l1",
-      ""
+      "II / 83"
      ],
      [
       "Salmo",
       "Sl 84(85),9ab-10.11-12.13-14 (R. cf. Is 45,8)",
       "s15_qua_sal",
-      ""
+      "II / 84"
      ],
      [
       "Aclamação ao Evangelho",
@@ -2236,7 +2236,7 @@ window.semanasData = [
       "Evangelho",
       "Lc 7,19-23",
       "s15_qua_ev",
-      ""
+      "II / 84"
      ]
     ],
     "missal": {
