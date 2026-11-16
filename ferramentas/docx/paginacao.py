@@ -78,6 +78,10 @@ def processar(arq):
                     ant = fs.getprevious()
                     if ant is not None and ant.tag == qn('w:r') and ''.join(ant.itertext()).strip() == 'de': ant.getparent().remove(ant)
                     fs.getparent().remove(fs)
+            # «de» que sobrou no fim da linha (sem o total de páginas depois)
+            for r in list(el.iter(qn('w:r'))):
+                if ''.join(t.text or '' for t in r.iter(qn('w:t'))).strip() == 'de' and r.getnext() is None:
+                    r.getparent().remove(r)
     # 5. preces: entrelinha 1,15 para cada horário caber numa página
     if '/PRECES' in arq or arq.split('/')[-1].startswith('PRECES'):
         for t in d.tables:
@@ -106,7 +110,20 @@ def cartao(arq):
         manter = t == 'rubrica' or p.text.strip().endswith('Oremos.') or prox in ('cont', 'resp')
         flag(p._p, 'w:keepNext', manter)
     d.save(arq)
+def rodape(arq):
+    """Só corrige o rodapé («página N», sem «de» sobrando)."""
+    d = docx.Document(arq); mudou = False
+    for sec in d.sections:
+        for ft in (sec.footer, sec.first_page_footer, sec.even_page_footer):
+            try: el = ft._element
+            except Exception: continue
+            for r in list(el.iter(qn('w:r'))):
+                if ''.join(t.text or '' for t in r.iter(qn('w:t'))).strip() == 'de' and r.getnext() is None:
+                    r.getparent().remove(r); mudou = True
+    if mudou: d.save(arq)
+    return mudou
+
 if __name__ == '__main__':
     modo = sys.argv[1]
     for a in sys.argv[2:]:
-        (cartao if modo == 'cartao' else processar)(a); print('ok', a.split('/')[-1])
+        {'cartao': cartao, 'rodape': rodape}.get(modo, processar)(a); print('ok', a.split('/')[-1])

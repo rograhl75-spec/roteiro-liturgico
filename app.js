@@ -76,6 +76,14 @@ function createScriptRow(role, text) {
   const body = document.createElement('span');
   body.className = 'script-text';
   appendMultiline(body, text);
+  if (window.Musica && window.Musica.cantado(role, text)) {
+    const nota = document.createElement('span');
+    nota.className = 'musica-icone';
+    nota.title = 'Música';
+    nota.setAttribute('aria-label', 'música');
+    nota.textContent = '♫';
+    body.appendChild(nota);
+  }
   row.append(tag, body);
   return row;
 }

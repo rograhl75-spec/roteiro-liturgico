@@ -132,4 +132,16 @@
   }
 
   root.Lecionario = { analisar, html };
+
+  /* Momento cantado → símbolo de música (♫), mesma regra dos roteiros .docx
+     (ferramentas/docx/musica.py). */
+  const RX_CANTO = /^\s*[«“"]?(canto\b|canta-se|ato penitencial|gl[óo]ria a deus nas alturas|salmo responsorial|aclama[çc][ãa]o ao evangelho|sequ[êe]ncia|santo, santo|cordeiro de deus|am[ée]m\.? \(cantado\)|te deum|hino\b|noite feliz|fundo musical|m[úu]sica de|tantum ergo|t[ãa]o sublime|pater noster|anima christi|verbum panis|vinde,? crist[ãa]os)/i;
+  const RX_CANTO_RUBRICA = /(canta-se(?! ou diz)|fundo musical|durante (o|um breve) canto|canto durante)/i;
+  function cantado(papel, texto) {
+    const t = String(texto || '').trim();
+    if (/^gl[óo]ria a v[óo]s/i.test(t)) return false;
+    if (/^(orienta|rubrica|nota)/i.test(String(papel || ''))) return RX_CANTO.test(t) && !/^canto\b.*\b(dever|ser[áa])/i.test(t) || RX_CANTO_RUBRICA.test(t);
+    return RX_CANTO.test(t);
+  }
+  root.Musica = { cantado };
 }(typeof self !== 'undefined' ? self : this));

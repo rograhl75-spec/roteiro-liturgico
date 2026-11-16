@@ -108,6 +108,7 @@
         .row-animador .script-text { border-left: 3px solid var(--cor-animador); }
         .row-padre .script-text { border-left: 3px solid var(--cor-padre); }
         .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
+        .musica-icone { display: inline-block; margin-left: .4em; padding: 0 .3em; border: 1px solid var(--cor-musica); border-radius: 4px; color: var(--cor-musica); font-size: .95em; line-height: 1.2; font-weight: 700; }
         .row-todos .script-text { border-left: 3px solid var(--cor-todos); }
         .row-leitor .script-text { border-left: 3px solid var(--cor-leitor); }
         .row-diacono .script-text { border-left: 3px solid var(--cor-diacono); }

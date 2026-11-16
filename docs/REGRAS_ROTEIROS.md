@@ -22,6 +22,11 @@
 5b. **Paginação dos arquivos**: nenhuma página em branco; nenhuma oração ou fala quebrada entre páginas (a linha passa inteira
    para a página seguinte e termina no ponto final); rubricas ficam junto do que vem depois; nas preces, cada horário numa página;
    nos cartões de bênção, cada oração fica inteira com o seu ℟. Rodapé apenas «página N». Ferramenta: ferramentas/docx/paginacao.py.
+5c. **Símbolo de música**: todo momento cantado leva, ao fim da rubrica/título, o par de ícones que a Pastoral da Música
+   já usa (nota musical + violão): Entrada, procissões, Ato Penitencial, Glória, Salmo, Aclamação, Oferendas, Santo,
+   «Amém» cantado, Cordeiro de Deus, Comunhão, hinos (Te Deum, Noite Feliz…), fundo musical e Canto Final; nos cartões
+   de rito, nas rubricas «canta-se…», «durante o canto…». Respostas faladas («Glória a vós, Senhor») não levam.
+   Na página e no PDF aparece ♫ verde. Ferramenta: ferramentas/docx/musica.py (regra igual em lecionario.js → Musica.cantado).
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
 8. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.

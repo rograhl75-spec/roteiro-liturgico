@@ -96,9 +96,21 @@
       y -= depois;
     }
 
-    function linhaDupla(papel, texto, { colunaPapel = 120, tam = 10.5 } = {}) {
+    /* Símbolo de música (♫) desenhado: as fontes padrão do PDF não têm o caractere. */
+    function notaMusical(x, base, tam) {
+      const cor = rgb(0.09, 0.4, 0.2);
+      const k = tam / 10.5;
+      pagina.drawRectangle({ x: x - 1.5 * k, y: base - 2.5 * k, width: 12.5 * k, height: 12.5 * k, borderColor: cor, borderWidth: 0.7, opacity: 0 });
+      pagina.drawEllipse({ x: x + 2 * k, y: base + 0.8 * k, xScale: 1.9 * k, yScale: 1.4 * k, color: cor });
+      pagina.drawEllipse({ x: x + 7.6 * k, y: base + 1.8 * k, xScale: 1.9 * k, yScale: 1.4 * k, color: cor });
+      pagina.drawLine({ start: { x: x + 3.8 * k, y: base + 0.8 * k }, end: { x: x + 3.8 * k, y: base + 8 * k }, thickness: 0.8 * k, color: cor });
+      pagina.drawLine({ start: { x: x + 9.4 * k, y: base + 1.8 * k }, end: { x: x + 9.4 * k, y: base + 9 * k }, thickness: 0.8 * k, color: cor });
+      pagina.drawLine({ start: { x: x + 3.8 * k, y: base + 7.6 * k }, end: { x: x + 9.4 * k, y: base + 8.6 * k }, thickness: 1.6 * k, color: cor });
+    }
+
+    function linhaDupla(papel, texto, { colunaPapel = 120, tam = 10.5, musica = false } = {}) {
       const esquerda = quebrar(papel, fontes.negrito, tam - 0.5, colunaPapel - 8);
-      const direita = quebrar(texto, fontes.normal, tam, largura - colunaPapel);
+      const direita = quebrar(texto, fontes.normal, tam, largura - colunaPapel - (musica ? 18 : 0));
       const total = Math.max(esquerda.length, direita.length);
       const passo = tam * 1.35;
       garantir(Math.min(total, 3) * passo);
@@ -107,6 +119,7 @@
         const base = y - tam;
         if (esquerda[i]) pagina.drawText(esquerda[i], { x: MARGEM, y: base, size: tam - 0.5, font: fontes.negrito, color: rgb(...AZUL) });
         if (direita[i]) pagina.drawText(direita[i], { x: MARGEM + colunaPapel, y: base, size: tam, font: fontes.normal, color: rgb(...PRETO) });
+        if (musica && i === direita.length - 1) notaMusical(MARGEM + colunaPapel + fontes.normal.widthOfTextAtSize(direita[i], tam) + 6, base, tam);
         y -= passo;
       }
       y -= 4;
@@ -315,12 +328,12 @@
     const blocos = [];
     (doc.secoes || []).forEach((secao) => {
       blocos.push({ t: 'secao', texto: secao.titulo });
-      secao.linhas.forEach(([papel, texto]) => blocos.push({ t: 'linha', papel, texto }));
+      secao.linhas.forEach(([papel, texto]) => blocos.push({ t: 'linha', papel, texto, musica: !!(window.Musica && window.Musica.cantado(papel, texto)) }));
     });
     (doc.formularios || []).forEach((form, i) => {
       if (i) blocos.push({ t: 'quebra' });
       blocos.push({ t: 'secao', texto: form.titulo });
-      form.linhas.forEach(([papel, texto]) => blocos.push({ t: 'linha', papel, texto }));
+      form.linhas.forEach(([papel, texto]) => blocos.push({ t: 'linha', papel, texto, musica: !!(window.Musica && window.Musica.cantado(papel, texto)) }));
     });
     return { titulo: doc.titulo, blocos };
   }
