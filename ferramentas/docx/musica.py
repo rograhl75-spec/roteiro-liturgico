@@ -12,7 +12,7 @@ MIDIA = os.path.join(AQUI, 'icones-musica')       # nota.png, violao.png, fundo.
 # Início do texto que indica momento cantado (cartões e 2ª coluna dos roteiros)
 CANTADO = re.compile(r'(?i)^\s*[«“"]?(canto\b|canta-se|ato penitencial|'
     r'gl[óo]ria a deus nas alturas|salmo responsorial|aclama[çc][ãa]o ao evangelho|sequ[êe]ncia|'
-    r'santo, santo|cordeiro de deus|am[ée]m\.? \(cantado\)|te deum|hino\b|noite feliz|'
+    r'santo, santo|am[ée]m\.? \(cantado\)|te deum|hino\b|noite feliz|'
     r'fundo musical|m[úu]sica de|tantum ergo|t[ãa]o sublime|pater noster|anima christi|'
     r'verbum panis|bendito seja deus para sempre|vinde,? crist[ãa]os)')
 # Em qualquer posição (rubricas dos cartões: «… canta-se "Noite Feliz"…»)

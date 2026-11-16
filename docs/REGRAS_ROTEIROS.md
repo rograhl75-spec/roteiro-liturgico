@@ -10,7 +10,7 @@
    - formato litúrgico, papel A5, letras grandes: texto 16 pt, rubricas 14 pt em vermelho itálico, títulos em vermelho;
    - entra no painel de aprovação e na página como botão “📄 … (impressão)”.
 5. **Forma dos roteiros (aproximar dos livros litúrgicos)**:
-   - somente informações do próprio dia (nada sobre outros domingos, Páscoa, Tempo Comum etc.);
+   - somente informações do próprio dia (nada sobre outros domingos, Páscoa, Tempo Comum etc.); nenhum aviso antecipado na monição nem nas orientações (ex.: coleta do domingo seguinte);
    - uma única fonte (Garamond, serifada como os livros litúrgicos); a cruz ✠ em vermelho, com fonte que a exibe (Segoe UI Symbol);
    - «Oremos.» em linha própria, em negrito, antes da oração;
    - rubricas (o que se faz) em vermelho itálico; o que se diz em preto, sem aspas, negrito ou itálico;
@@ -24,8 +24,8 @@
    nos cartões de bênção, cada oração fica inteira com o seu ℟. Rodapé apenas «página N». Ferramenta: ferramentas/docx/paginacao.py.
 5c. **Símbolo de música**: todo momento cantado leva, ao fim da rubrica/título, o par de ícones que a Pastoral da Música
    já usa (nota musical + violão): Entrada, procissões, Ato Penitencial, Glória, Salmo, Aclamação, Oferendas, Santo,
-   «Amém» cantado, Cordeiro de Deus, Comunhão, hinos (Te Deum, Noite Feliz…), fundo musical e Canto Final; nos cartões
-   de rito, nas rubricas «canta-se…», «durante o canto…». Respostas faladas («Glória a vós, Senhor») não levam.
+   «Amém» cantado, Comunhão, hinos (Te Deum, Noite Feliz…), fundo musical e Canto Final; nos cartões
+   de rito, nas rubricas «canta-se…», «durante o canto…». Respostas faladas («Glória a vós, Senhor») não levam. O **Cordeiro de Deus não é cantado** na paróquia: não leva símbolo.
    Na página e no PDF aparece ♫ verde. Ferramenta: ferramentas/docx/musica.py (regra igual em lecionario.js → Musica.cantado).
 5d. **Leituras na página e no PDF**: formato do Lecionário (rubrica e referência em vermelho, abertura, versículos, ℟), **sem a frase-título** em vermelho, que não se lê e confundia os leitores.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
