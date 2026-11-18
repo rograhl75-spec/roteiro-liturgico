@@ -112,7 +112,7 @@ O aplicativo também verifica automaticamente ao abrir, ao voltar a ficar visív
 
 Uma atualização só é aplicada depois que todos os arquivos da nova versão foram baixados e conferidos. Se a conexão falhar, a versão anterior é preservada.
 
-Para não interromper uma leitura ou impressão, a troca fica bloqueada enquanto houver qualquer janela de conteúdo (modal) aberta ou uma impressão em andamento, inclusive em outra aba ou janela do aplicativo. Feche essas janelas e termine ou cancele a impressão para permitir a atualização.
+Para não interromper uma leitura ou impressão, a troca espera enquanto houver uma janela de conteúdo (modal) aberta ou uma impressão em andamento **na tela que você está usando**; ao fechar a janela, a atualização é aplicada sozinha. Outras abas ou janelas do aplicativo não impedem a atualização: elas continuam com a versão que já carregaram e se atualizam sozinhas quando você voltar a elas e não houver leitura aberta.
 
 Se uma interrupção da janela de impressão deixar a atualização pendente mesmo depois de fechá-la, feche e reabra o aplicativo ou a aba afetada. Por segurança, não há cancelamento automático por tempo.
 
@@ -122,7 +122,7 @@ Ao recarregar para trocar de versão, o aplicativo restaura a semana selecionada
 
 1. Confirme a conexão à internet.
 2. Use **Buscar atualização** e aguarde a verificação.
-3. Feche as janelas de conteúdo em todas as abas e termine a impressão.
+3. Feche a janela de conteúdo aberta (leitura, roteiro, preces) e termine a impressão.
 4. Se necessário, abra o endereço online diretamente no navegador e tente novamente.
 
 Usuários que instalaram uma versão muito antiga podem precisar abrir o endereço online uma vez antes que as atualizações automáticas funcionem.

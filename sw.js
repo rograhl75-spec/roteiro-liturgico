@@ -155,9 +155,13 @@ async function prepareUpdate() {
   }
 }
 
-async function clientsAreSafe() {
+// Só a janela que pediu a atualização precisa estar livre (sem leitura aberta nem impressão).
+// As outras abas continuam usando a versão que já carregaram (o fetch serve cada aba pela
+// sua própria versão) e recarregam sozinhas quando voltarem a ficar visíveis e livres
+// (reloadSafely em app.js). Assim uma aba esquecida em segundo plano não trava a troca.
+async function clientsAreSafe(sourceId) {
   const clients = (await self.clients.matchAll({ type: 'window', includeUncontrolled: true }))
-    .filter((client) => client.url.startsWith(self.registration.scope));
+    .filter((client) => client.url.startsWith(self.registration.scope) && (!sourceId || client.id === sourceId));
   return (await Promise.all(clients.map((client) => new Promise((resolve) => {
     const channel = new MessageChannel();
     const timer = setTimeout(() => { channel.port1.close(); resolve(false); }, 2000);
@@ -210,7 +214,7 @@ self.addEventListener('message', (event) => {
       } else if (event.data.type === 'ACTIVATE_UPDATE') {
         const metadata = await readState('prepared');
         if (!metadata || metadata.version !== event.data.version) throw new Error('Versão não preparada');
-        if (!await clientsAreSafe()) { reply({ deferred: true }); return; }
+        if (!await clientsAreSafe(event.source && event.source.id)) { reply({ deferred: true }); return; }
         if (event.data.waiting) {
           await self.skipWaiting();
           reply({ activating: true });
