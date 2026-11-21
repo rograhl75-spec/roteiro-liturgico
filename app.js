@@ -841,8 +841,20 @@ function previewSelectedReadings() {
   openModal('modal_leituras_view', trigger);
 }
 
-function runPrintMount(nodeBuilder) {
+// Nome do arquivo ao «Salvar como PDF»: o navegador usa o título da página.
+function nomeImpressao(nome) {
+  return String(nome || '').replace(/\.(pdf|docx)$/i, '').replace(/[\\/:*?"<>|]+/g, '-').replace(/\s+/g, ' ').trim().slice(0, 120);
+}
+
+function nomeDoPdf(caminho) {
+  try { return decodeURIComponent(String(caminho).split('/').pop()); } catch (e) { return String(caminho).split('/').pop(); }
+}
+
+function runPrintMount(nodeBuilder, nomeArquivo) {
   printing = true;
+  const tituloOriginal = document.title;
+  const nome = nomeImpressao(nomeArquivo);
+  if (nome) document.title = nome;
   document.querySelectorAll('.modal').forEach((modal) => {
     modal.hidden = true;
     modal.setAttribute('aria-hidden', 'true');
@@ -860,6 +872,7 @@ function runPrintMount(nodeBuilder) {
   const cleanup = () => {
     if (cleanedUp) return;
     cleanedUp = true;
+    document.title = tituloOriginal;
     mount.textContent = '';
     mount.hidden = true;
     printing = false;
@@ -919,7 +932,7 @@ function printProgramacaoGeral() {
     wrapper.appendChild(buildHeaderNode('Programação Litúrgica Oficial', week.fullTitle));
     wrapper.appendChild(source.cloneNode(true));
     return wrapper;
-  });
+  }, `Programação - ${week.fullTitle || week.shortTitle}`);
 }
 
 /* ------------------------- Documentos em PDF (pdf.js) ------------------------- */
@@ -984,7 +997,7 @@ async function printPdfPaginas(content, title) {
     wrapper.className = 'print-pdf'; // todos os documentos em A4
     paginas.querySelectorAll('img').forEach((img) => wrapper.appendChild(img.cloneNode(true)));
     return wrapper;
-  });
+  }, nomeDoPdf(paginas.dataset.pdf) || title);
 }
 
 function printActiveRoteiro(roteiroKey) {
@@ -1003,7 +1016,7 @@ function printActiveRoteiro(roteiroKey) {
     wrapper.appendChild(buildHeaderNode(title));
     wrapper.appendChild(content.cloneNode(true));
     return wrapper;
-  });
+  }, title);
 }
 
 function printActivePreces(precesKey) {
@@ -1029,7 +1042,7 @@ function printActivePreces(precesKey) {
       wrapper.appendChild(page);
     });
     return wrapper;
-  });
+  }, getRoteirosData()[`preces_${suffix}`]?.titulo || `Preces - ${week.shortTitle}`);
 }
 
 function printActiveReflexoes() {
@@ -1045,7 +1058,7 @@ function printActiveReflexoes() {
     wrapper.appendChild(buildHeaderNode('Reflexões Litúrgicas'));
     wrapper.appendChild(content.cloneNode(true));
     return wrapper;
-  });
+  }, `Reflexões - ${week.shortTitle}`);
 }
 
 function printLeiturasFromView() {
@@ -1058,7 +1071,7 @@ function printLeiturasFromView() {
     wrapper.appendChild(buildHeaderNode('Leituras Selecionadas — Ambão'));
     wrapper.appendChild(view.cloneNode(true));
     return wrapper;
-  });
+  }, `Leituras - ${(getCurrentWeek() || {}).shortTitle || ''}`);
 }
 
 function handleScrollButton() {

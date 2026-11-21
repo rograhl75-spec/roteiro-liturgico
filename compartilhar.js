@@ -336,7 +336,9 @@
         await carregarPdfLib();
         bytes = await gerarPdf(documento);
       }
-      const arquivo = new File([bytes], nomeSeguro(documento.titulo), { type: 'application/pdf' });
+      // Nome do arquivo: o do próprio documento (identifica a Missa e os dias); senão, o título.
+      const nomePdf = documento.arquivoPdf ? decodeURIComponent(documento.arquivoPdf.split('/').pop()) : '';
+      const arquivo = new File([bytes], nomePdf || nomeSeguro(documento.titulo), { type: 'application/pdf' });
       if (botao && botao.dataset.modo === 'baixar') {
         baixar(arquivo);
         aviso('PDF salvo na pasta Downloads. Arraste-o para a conversa do WhatsApp ou anexe-o no e-mail.');
