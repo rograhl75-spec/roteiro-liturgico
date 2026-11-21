@@ -463,6 +463,12 @@ function openModal(id, trigger = document.activeElement) {
   modalFocusReturn.set(id, trigger || null);
   modal.hidden = false;
   modal.querySelectorAll('.pdf-paginas').forEach((el) => { renderPdfPaginas(el); });
+  // Com um documento aberto, o título da aba é o nome do arquivo: «Salvar como PDF» (até pelo Ctrl+P) já sugere esse nome.
+  const pdfAberto = modal.querySelector('.pdf-paginas[data-pdf]');
+  if (pdfAberto) {
+    if (!document.documentElement.dataset.tituloPagina) document.documentElement.dataset.tituloPagina = document.title;
+    document.title = nomeImpressao(nomeDoPdf(pdfAberto.dataset.pdf));
+  }
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 
@@ -482,6 +488,10 @@ function closeModal(id) {
   const hasOpenModals = Array.from(document.querySelectorAll('.modal')).some((item) => !item.hidden);
   if (!hasOpenModals) {
     document.body.style.overflow = '';
+    if (document.documentElement.dataset.tituloPagina) {
+      document.title = document.documentElement.dataset.tituloPagina;
+      delete document.documentElement.dataset.tituloPagina;
+    }
   }
 
   const trigger = modalFocusReturn.get(id);
