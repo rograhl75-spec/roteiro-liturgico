@@ -46,3 +46,6 @@
     - **cartões do padre (orações e bênçãos em arquivo separado): 16 pt, rubricas 14 pt** — letra grande;
     - **Adoração Solene: Garamond, mantendo os tamanhos do roteiro original** (texto 16 pt, rubricas 12–13 pt).
     Aplicar com `python3 ferramentas/docx/fontes.py <roteiro|preces|leituras|escala|antifona|cartao|manter> ARQ.docx`.
+
+11. **Primeiro sábado do mês — Missa em ação de graças pelo ECC e pelos empreendedores da paróquia**: no roteiro do fim de semana que contém o primeiro sábado do mês, incluir nos Ritos Iniciais (depois das intenções e antes da monição inicial) uma rubrica «Na Missa de sábado…» e a acolhida do comentarista aos casais do ECC (Encontro de Casais com Cristo) e aos empreendedores da paróquia, que participam da Missa em ação de graças. Quando a Missa do ECC for transferida para outro sábado, a acolhida vai no roteiro desse fim de semana — o texto lido nunca menciona a transferência nem que é «excepcional».
+

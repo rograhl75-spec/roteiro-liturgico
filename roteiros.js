@@ -28,7 +28,7 @@ window.roteirosData = {
           ["Orientação", "Missa sem transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Na Missa de sábado às 18h30 (Igreja Matriz) — acolhida aos casais do ECC:"],
-          ["Comentarista", "Acolhemos com alegria os casais do Encontro de Casais com Cristo – ECC, que, excepcionalmente neste fim de semana, participam desta Santa Missa em ação de graças. Unidos a eles, agradeçamos a Deus pelo dom do Matrimônio e da família, e peçamos que Cristo, Rei do Universo, reine em cada lar de nossa comunidade."],
+          ["Comentarista", "Acolhemos com alegria os casais do Encontro de Casais com Cristo – ECC, que participam desta Santa Missa em ação de graças. Unidos a eles, agradeçamos a Deus pelo dom do Matrimônio e da família, e peçamos que Cristo, Rei do Universo, reine em cada lar de nossa comunidade."],
           ["Orientação", "Na Missa de domingo às 18h30 — acolhida aos novos Ministros Extraordinários da Sagrada Comunhão:"],
           ["Comentarista", "Acolhemos com alegria os novos Ministros Extraordinários da Sagrada Comunhão – MESC, que foram instituídos e iniciam oficialmente, nesta Santa Missa, o seu ministério em nossa paróquia. Nesta Solenidade de Cristo Rei, que veio não para ser servido, mas para servir, rezemos por eles, para que sirvam com fé, humildade e amor ao Senhor presente na Eucaristia, aos irmãos da comunidade e aos enfermos."],
           ["Orientação", "Monição inicial:"],
@@ -171,7 +171,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-16/pdf/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf",
-    "pdfHash": "0b25be9b5ce05a74"
+    "pdfHash": "fd58f9df86a780bb"
   },
   "preces_10": {
     "tipo": "preces",
