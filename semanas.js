@@ -185,7 +185,7 @@ window.semanasData = [
      [
       "19h00",
       "Igreja Matriz",
-      "Pe. Laurindo"
+      "Pe. Afonso"
      ],
      [
       "14h00–17h30",
@@ -197,7 +197,7 @@ window.semanasData = [
      [
       "14h30–17h30",
       "Secretaria",
-      "Pe. Afonso",
+      "Pe. Manuel José",
       "confissao",
       "Confissões — Padre de Schoenstatt"
      ]
@@ -741,7 +741,7 @@ window.semanasData = [
       [
        "09h00",
        "Igreja Matriz",
-       "Pe. Heriberto"
+       "Pe. Laurindo"
       ],
       [
        "11h00",
@@ -1147,7 +1147,7 @@ window.semanasData = [
       [
        "11h00",
        "Capela de Pedra",
-       "Diác. Pedrinho",
+       "Diác. Rogério",
        "casamento",
        "Matrimônio — Luiz e Nicole"
       ],
@@ -1583,14 +1583,14 @@ window.semanasData = [
       [
        "11h00",
        "Capela de Pedra",
-       "Diác. Pedrinho",
+       "Pe. Laurindo",
        "casamento",
        "Matrimônio — Arthur e Juliana"
       ],
       [
        "16h00",
        "Igreja Matriz",
-       "Diác. Pedrinho",
+       "Diác. Rogério",
        "casamento",
        "Matrimônio — Érico e Franciele"
       ]
