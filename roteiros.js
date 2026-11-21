@@ -533,6 +533,8 @@ window.roteirosData = {
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Missa sem transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Na Missa de sábado às 18h30 (Igreja Matriz) — acolhida aos casais do ECC e aos empreendedores da paróquia:"],
+          ["Comentarista", "Acolhemos com alegria os casais do Encontro de Casais com Cristo – ECC e os empreendedores de nossa paróquia, que participam desta Santa Missa em ação de graças. Unidos a eles, agradeçamos a Deus pelo dom do Matrimônio e da família, pelo trabalho e por todos os frutos que dele nascem, e peçamos que o Senhor que vem encontre em nossos lares e em nossos trabalhos corações preparados para acolhê-lo."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -683,7 +685,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "21921e852bb1c80d"
+    "pdfHash": "d3ca90777f35b2dd"
   },
   "preces_12": {
     "tipo": "preces",
