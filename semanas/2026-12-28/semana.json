@@ -249,7 +249,7 @@
     [
      "19h00",
      "Igreja Matriz",
-     "a confirmar"
+     "Pe. Heriberto"
     ]
    ],
    "leituras": [
@@ -321,12 +321,39 @@
    {
     "data": "2027-01-02",
     "dia": "Sábado",
-    "escala": []
+    "escala": [
+     [
+      "18h30",
+      "Igreja Matriz",
+      "A definir"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "A definir"
+     ]
+    ]
    },
    {
     "data": "2027-01-03",
     "dia": "Domingo",
-    "escala": []
+    "escala": [
+     [
+      "09h00",
+      "Igreja Matriz",
+      "A definir"
+     ],
+     [
+      "11h00",
+      "Igreja Matriz",
+      "A definir"
+     ],
+     [
+      "18h30",
+      "Igreja Matriz",
+      "A definir"
+     ]
+    ]
    }
   ],
   "leituras": [
