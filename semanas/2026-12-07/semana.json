@@ -873,6 +873,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 872)"
       ],
@@ -924,6 +928,10 @@
       [
        "Orientação",
        "Incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -1019,6 +1027,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 872)"
       ],
@@ -1049,6 +1061,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -1212,6 +1228,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 874)"
       ],
@@ -1304,7 +1324,7 @@
     }
    ],
    "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
-   "pdfHash": "2cf32d8e003dcfb0"
+   "pdfHash": "8532becf65df17dd"
   },
   "preces_13_imaculada": {
    "tipo": "preces",

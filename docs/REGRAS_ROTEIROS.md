@@ -51,3 +51,5 @@
 
 12. **Nome dos arquivos (PDF impresso, enviado ou baixado da página)**: o PDF sai com o nome do próprio documento, que identifica a celebração e os dias — ex.: «CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf», «PRECES - CRISTO REI - 21 E 22 NOVEMBRO 2026.pdf», «RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf». Quando houver mais de um roteiro no fim de semana (ritos diferentes nas Missas), o nome do arquivo indica também a Missa — ex.: «CRISTO REI - SÁBADO 18H30 - 21 NOVEMBRO 2026.docx» — e cada roteiro aparece na página como documento próprio. Programação, leituras e reflexões saem com o tipo e a semana no nome.
 
+13. **Missas solenes (com incenso) — fundo musical ao teclado**: na Oração da Coleta, no início do Evangelho («O Senhor esteja convosco»), na Oração sobre as Oferendas, no Prefácio e na Oração depois da Comunhão, incluir a rubrica «… fundo musical ao teclado durante … – o Ministério de Música deve confirmar antes com o padre.», com o mesmo prefixo das rubricas de incenso do roteiro («Missa solene:» ou «Na Missa de domingo às 18h30:»). Nas Missas sem incenso, não se inclui.
+

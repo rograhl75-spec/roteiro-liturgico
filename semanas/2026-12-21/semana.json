@@ -911,6 +911,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 128)"
       ],
@@ -970,6 +974,10 @@
       [
        "Orientação",
        "Missa solene: incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -1105,6 +1113,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 128)"
       ],
@@ -1135,6 +1147,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -1314,6 +1330,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 129)"
       ],
@@ -1414,7 +1434,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "77321d4b27d3be69"
+   "pdfHash": "e13d6faa66473649"
   },
   "roteiro_15_natal_dia": {
    "tipo": "roteiro",
@@ -1576,6 +1596,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 132)"
       ],
@@ -1627,6 +1651,10 @@
       [
        "Orientação",
        "Missa solene: incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -1726,6 +1754,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 132)"
       ],
@@ -1756,6 +1788,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -1935,6 +1971,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 132)"
       ],
@@ -2027,7 +2067,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-   "pdfHash": "1466064e7622b8bc"
+   "pdfHash": "66f315e9b1d7858d"
   },
   "preces_15_natal_noite": {
    "tipo": "preces",

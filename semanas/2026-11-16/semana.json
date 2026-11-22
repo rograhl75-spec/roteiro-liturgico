@@ -801,6 +801,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 425)"
       ],
@@ -852,6 +856,10 @@
       [
        "Orientação",
        "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -947,6 +955,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 425)"
       ],
@@ -977,6 +989,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -1140,6 +1156,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 427)"
       ],
@@ -1200,7 +1220,7 @@
     }
    ],
    "pdf": "semanas/2026-11-16/pdf/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf",
-   "pdfHash": "fd58f9df86a780bb"
+   "pdfHash": "17c87f647f2adbe5"
   },
   "preces_10": {
    "tipo": "preces",

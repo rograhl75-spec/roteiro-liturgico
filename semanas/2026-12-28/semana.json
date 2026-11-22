@@ -1340,6 +1340,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 138)"
       ],
@@ -1391,6 +1395,10 @@
       [
        "Orientação",
        "Missa solene: incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -1486,6 +1494,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 138)"
       ],
@@ -1516,6 +1528,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -1695,6 +1711,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 139)"
       ],
@@ -1787,7 +1807,7 @@
     }
    ],
    "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
-   "pdfHash": "7160e70b1b170425"
+   "pdfHash": "30586ac362a9e509"
   },
   "preces_16_deum": {
    "tipo": "preces",
@@ -2064,6 +2084,10 @@
        "Todos rezam em silêncio por alguns instantes (IGMR 54)."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração da Coleta (pág. 144)"
       ],
@@ -2115,6 +2139,10 @@
       [
        "Orientação",
        "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."
+      ],
+      [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Diácono / Sacerdote",
@@ -2222,6 +2250,10 @@
        "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração sobre as Oferendas (pág. 144)"
       ],
@@ -2252,6 +2284,10 @@
       [
        "Todos",
        "É nosso dever e nossa salvação."
+      ],
+      [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."
       ],
       [
        "Sacerdote",
@@ -2415,6 +2451,10 @@
        "Oremos."
       ],
       [
+       "Orientação",
+       "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."
+      ],
+      [
        "Sacerdote",
        "Oração depois da Comunhão (pág. 144)"
       ],
@@ -2507,7 +2547,7 @@
     }
    ],
    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
-   "pdfHash": "affcf736c4a9c655"
+   "pdfHash": "c1739341b3bd32b4"
   },
   "preces_16": {
    "tipo": "preces",

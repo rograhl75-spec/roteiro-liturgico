@@ -53,6 +53,7 @@ window.roteirosData = {
           ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
           ["Sacerdote", "Oremos."],
           ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
+          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração da Coleta (pág. 425)"],
           ["Todos", "Amém."]
         ]
@@ -70,6 +71,7 @@ window.roteirosData = {
           ["Todos", "Graças a Deus."],
           ["Cantores e Todos", "Aclamação ao Evangelho ."],
           ["Orientação", "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."],
+          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."],
           ["Diácono / Sacerdote", "O Senhor esteja convosco."],
           ["Todos", "Ele está no meio de nós."],
           ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Mateus."],
@@ -97,6 +99,7 @@ window.roteirosData = {
           ["Orientação", "Na Missa de domingo às 18h30: incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
           ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
           ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração sobre as Oferendas (pág. 425)"],
           ["Todos", "Amém."],
           ["Sacerdote", "O Senhor esteja convosco."],
@@ -105,6 +108,7 @@ window.roteirosData = {
           ["Todos", "O nosso coração está em Deus."],
           ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
           ["Todos", "É nosso dever e nossa salvação."],
+          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Prefácio de Nosso Senhor Jesus Cristo, Rei do Universo (pág. 426)"],
           ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso. Com óleo de exultação ungistes vosso Filho Unigênito, nosso Senhor Jesus Cristo, Sacerdote eterno e Rei do universo. Oferecendo-se a si mesmo no altar da cruz como vítima pura e pacífica, realizou o mistério da redenção humana. Depois de ter submetido ao seu poder todas as criaturas, entregará à vossa imensa majestade um reino eterno e universal: reino da verdade e da vida, reino da santidade e da graça, reino da justiça, do amor e da paz. Por isso, com os Anjos e os Arcanjos, os Tronos e as Dominações e todos os coros celestes, proclamamos o hino da vossa glória, cantando (dizendo) a uma só voz:"],
           ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
@@ -149,6 +153,7 @@ window.roteirosData = {
           ["Cantores", "Canto da Comunhão ."],
           ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
           ["Sacerdote", "Oremos."],
+          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração depois da Comunhão (pág. 427)"],
           ["Todos", "Amém."]
         ]
@@ -171,7 +176,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-16/pdf/CRISTO REI - 34º DOMINGO TEMPO COMUM - 21 E 22 NOVEMBRO 2026 - ANO A.pdf",
-    "pdfHash": "fd58f9df86a780bb"
+    "pdfHash": "17c87f647f2adbe5"
   },
   "preces_10": {
     "tipo": "preces",
@@ -820,6 +825,7 @@ window.roteirosData = {
           ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
           ["Sacerdote", "Oremos."],
           ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração da Coleta (pág. 872)"],
           ["Todos", "Amém."]
         ]
@@ -837,6 +843,7 @@ window.roteirosData = {
           ["Todos", "Graças a Deus."],
           ["Cantores e Todos", "Aclamação ao Evangelho ."],
           ["Orientação", "Incensação do Evangeliário (IGMR 134)."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."],
           ["Diácono / Sacerdote", "O Senhor esteja convosco."],
           ["Todos", "Ele está no meio de nós."],
           ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Lucas."],
@@ -864,6 +871,7 @@ window.roteirosData = {
           ["Orientação", "Incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
           ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
           ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração sobre as Oferendas (pág. 872)"],
           ["Todos", "Amém."],
           ["Sacerdote", "O Senhor esteja convosco."],
@@ -872,6 +880,7 @@ window.roteirosData = {
           ["Todos", "O nosso coração está em Deus."],
           ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
           ["Todos", "É nosso dever e nossa salvação."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Prefácio da Imaculada Conceição – O mistério de Maria e da Igreja (pág. 873)"],
           ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso.\nA fim de preparar para o vosso Filho Mãe que fosse digna dele, preservastes a Bem-aventurada Virgem Maria de toda mancha da culpa original e a enriquecestes com a plenitude da vossa graça. Nela nos destes as primícias da Igreja, Esposa de Cristo, sem ruga e sem mancha, resplandecente de beleza.\nDe fato, dela, Virgem puríssima, devia nascer o Filho, Cordeiro inocente, que tira os nossos pecados; vós a colocastes acima de todas as criaturas, em favor de vosso povo, como advogada da graça e modelo de santidade.\nPor isso, unidos aos coros dos anjos, nós vos louvamos e cantamos alegres a uma só voz:"],
           ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
@@ -916,6 +925,7 @@ window.roteirosData = {
           ["Cantores", "Canto da Comunhão ."],
           ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
           ["Sacerdote", "Oremos."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração depois da Comunhão (pág. 874)"],
           ["Todos", "Amém."]
         ]
@@ -946,7 +956,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
-    "pdfHash": "2cf32d8e003dcfb0"
+    "pdfHash": "8532becf65df17dd"
   },
   "preces_13_imaculada": {
     "tipo": "preces",
