@@ -15,7 +15,7 @@
   "deum",
   "mae_deus"
  ],
- "nota": "RASCUNHO – aguardando aprovação. Leituras só com referências (textos a inserir do Liturgia Diária – CNBB); páginas do lecionário conforme as programações anteriores da paróquia (Ano B). Escala de janeiro de 2027 ainda não consta na planilha: horários e celebrantes de 1º a 3/1 a confirmar.",
+ "nota": "RASCUNHO – aguardando aprovação. Leituras só com referências (textos a inserir do Liturgia Diária – CNBB); páginas do lecionário conforme as programações anteriores da paróquia (Ano B). Escala de janeiro de 2027 ainda não consta na planilha: horários e celebrantes de 1º a 3/1 a confirmar (Santa Maria, Mãe de Deus: 19h00).",
  "dias": [
   {
    "data": "2026-12-28",
@@ -245,7 +245,13 @@
    "grau": "Solenidade",
    "celebracao": "Santa Maria, Mãe de Deus (Solenidade) — Oitava do Natal",
    "selecaoTitulo": "Sexta-feira — 01/01 — Santa Maria",
-   "escala": [],
+   "escala": [
+    [
+     "19h00",
+     "Igreja Matriz",
+     "a confirmar"
+    ]
+   ],
    "leituras": [
     [
      "1ª Leitura",
@@ -301,7 +307,7 @@
      "rotulo": "Preces — Santa Maria, Mãe de Deus"
     }
    ],
-   "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Dia Mundial da Paz. Horário a confirmar (escala de janeiro)."
+   "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Dia Mundial da Paz. Missa às 19h00, na Igreja Matriz."
   }
  ],
  "fimDeSemana": {
@@ -1192,7 +1198,7 @@
      "linhas": [
       [
        "Orientação",
-       "Solenidade em dia de semana (sexta-feira, 1º de janeiro – horário a confirmar com a escala de janeiro): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio. Oração Eucarística I (Cânon Romano), com o «Em comunhão» do Natal. Prefácio da Bem-aventurada Virgem Maria I, «na maternidade» (pág. 493). Dia Mundial da Paz."
+       "Solenidade em dia de semana (sexta-feira, 1º de janeiro, 19h00 – Igreja Matriz): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio. Oração Eucarística I (Cânon Romano), com o «Em comunhão» do Natal. Prefácio da Bem-aventurada Virgem Maria I, «na maternidade» (pág. 493). Dia Mundial da Paz."
       ],
       [
        "Orientação",
@@ -1807,7 +1813,7 @@
     }
    ],
    "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
-   "pdfHash": "30586ac362a9e509"
+   "pdfHash": "314b395a2c315c19"
   },
   "preces_16_deum": {
    "tipo": "preces",
@@ -1877,7 +1883,7 @@
    "cabecalho": "● PRECES – SANTA MARIA, MÃE DE DEUS – 1º JANEIRO 2027",
    "formularios": [
     {
-     "titulo": "Data: 01/01/2027 — Horário: Sexta-feira (horário a confirmar)",
+     "titulo": "Data: 01/01/2027 — Horário: Sexta-feira 19h00 (Igreja Matriz)",
      "linhas": [
       [
        "Sacerdote",
@@ -1927,7 +1933,7 @@
     }
    ],
    "pdf": "semanas/2026-12-28/pdf/PRECES - SANTA MARIA MÃE DE DEUS - 1 JANEIRO 2027.pdf",
-   "pdfHash": "38bfb7c1e351396e"
+   "pdfHash": "9b6fb1d6d5fa26ce"
   },
   "roteiro_16": {
    "tipo": "roteiro",
