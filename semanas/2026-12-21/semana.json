@@ -1005,7 +1005,23 @@
       ],
       [
        "Orientação",
-       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote asperge com água benta e incensa o presépio e a imagem do Menino Jesus (a oração de bênção do presépio é feita depois das preces). Terminado o canto, acendem-se todas as luzes, exceto as da árvore de Natal."
+       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote incensa o presépio e a imagem do Menino Jesus."
+      ],
+      [
+       "Orientação",
+       "BÊNÇÃO DO PRESÉPIO – terminada a incensação, o sacerdote, diante do presépio, de mãos estendidas, diz a oração de bênção (Ritual de Bênçãos, adaptado – combinar com o pároco). A oração não consagra as imagens: pede que todos os que contemplarem o presépio recordem o nascimento de Jesus."
+      ],
+      [
+       "Sacerdote",
+       "Deus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
+      ],
+      [
+       "Orientação",
+       "Em seguida, o sacerdote asperge o presépio com água benta. Acendem-se todas as luzes, exceto as da árvore de Natal."
       ],
       [
        "Orientação",
@@ -1044,12 +1060,8 @@
        "Conforme formulário de preces para cada horário."
       ],
       [
-       "Orientação",
-       "BÊNÇÃO DO PRESÉPIO (Book of Blessings, cap. 48, nn. 1562-1564, adaptado – combinar com o pároco). Nesta Missa, as preces são as próprias da bênção do presépio (formulário de preces da Noite de Natal). Depois da Oração do Jubileu, o sacerdote, de mãos estendidas, conclui com a oração de bênção. A oração não consagra as imagens: pede que todos os que contemplarem o presépio recordem o nascimento de Jesus."
-      ],
-      [
        "Sacerdote",
-       "Deus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+       "Finaliza as preces."
       ],
       [
        "Todos",
@@ -1174,11 +1186,11 @@
       ],
       [
        "Sacerdote",
-       "Na véspera de sua paixão, ele tomou o pão em suas santas e veneráveis mãos, elevou os olhos ao céu, a vós, ó Pai todo-poderoso, pronunciou a bênção de ação de graças, partiu o pão e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou este precioso cálice em suas santas e veneráveis mãos, pronunciou novamente a bênção de ação de graças e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+       "Na véspera de sua paixão, ele tomou o pão em suas santas e veneráveis mãos, elevou os olhos ao céu, a vós, ó Pai todo-poderoso, pronunciou a bênção de ação de graças, partiu o pão e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou este precioso cálice em suas santas e veneráveis mãos, pronunciou novamente a bênção de ação de graças e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"
       ],
       [
        "Todos",
-       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+       "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"
       ],
       [
        "Sacerdote",
@@ -1402,7 +1414,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "ba13dbddf9a00d99"
+   "pdfHash": "77321d4b27d3be69"
   },
   "roteiro_15_natal_dia": {
    "tipo": "roteiro",
@@ -1795,11 +1807,11 @@
       ],
       [
        "Sacerdote",
-       "Na véspera de sua paixão, ele tomou o pão em suas santas e veneráveis mãos, elevou os olhos ao céu, a vós, ó Pai todo-poderoso, pronunciou a bênção de ação de graças, partiu o pão e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou este precioso cálice em suas santas e veneráveis mãos, pronunciou novamente a bênção de ação de graças e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+       "Na véspera de sua paixão, ele tomou o pão em suas santas e veneráveis mãos, elevou os olhos ao céu, a vós, ó Pai todo-poderoso, pronunciou a bênção de ação de graças, partiu o pão e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou este precioso cálice em suas santas e veneráveis mãos, pronunciou novamente a bênção de ação de graças e o deu a seus discípulos, dizendo:\nTOMAI, TODOS, E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"
       ],
       [
        "Todos",
-       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+       "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"
       ],
       [
        "Sacerdote",
@@ -2015,7 +2027,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-   "pdfHash": "3fab19e928fbf578"
+   "pdfHash": "1466064e7622b8bc"
   },
   "preces_15_natal_noite": {
    "tipo": "preces",
@@ -2073,7 +2085,7 @@
       ],
       [
        "Sacerdote",
-       "Oração de bênção do presépio (de mãos estendidas):\nDeus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+       "Finaliza as preces."
       ],
       [
        "Todos",
@@ -2083,7 +2095,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "6198be5b687a6af4"
+   "pdfHash": "436eb8d17360fcba"
   },
   "preces_15_natal_dia": {
    "tipo": "preces",
@@ -2491,11 +2503,11 @@
       ],
       [
        "Sacerdote",
-       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé!"
+       "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"
       ],
       [
        "Todos",
-       "Anunciamos, Senhor, a vossa morte e proclamamos a vossa ressurreição. Vinde, Senhor Jesus!"
+       "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"
       ],
       [
        "Sacerdote",
@@ -2715,7 +2727,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "30543d16066872c2"
+   "pdfHash": "96beecf6e3ebf450"
   },
   "preces_15": {
    "tipo": "preces",
@@ -2879,7 +2891,7 @@
    "titulo": "Bênção do presépio e ritos da Noite",
    "secoes": [
     {
-     "titulo": "BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE",
+     "titulo": "BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL",
      "linhas": [
       [
        "Orientação",
@@ -2891,7 +2903,7 @@
       ],
       [
        "Orientação",
-       "1. RITO DA LUZ – Liturgia da Palavra (aclamação e Evangelho)"
+       "1. RITO DA LUZ E BÊNÇÃO DO PRESÉPIO – Liturgia da Palavra (aclamação e Evangelho)"
       ],
       [
        "Orientação",
@@ -2903,15 +2915,31 @@
       ],
       [
        "Orientação",
-       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote asperge com água benta e incensa o presépio e a imagem do Menino Jesus (a oração de bênção do presépio é feita depois das preces). Terminado o canto, acendem-se todas as luzes, exceto as da árvore de Natal."
+       "RITO DA LUZ – canta-se «Vinde, Cristãos», enquanto o sacerdote incensa o presépio e a imagem do Menino Jesus."
       ],
       [
        "Orientação",
-       "2. BÊNÇÃO DO PRESÉPIO – na oração dos fiéis, depois do Creio (adaptado do Book of Blessings, cap. 48 – combinar com o pároco)"
+       "BÊNÇÃO DO PRESÉPIO – terminada a incensação, o sacerdote, diante do presépio, de mãos estendidas, diz a oração de bênção:"
+      ],
+      [
+       "Sacerdote",
+       "Deus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+      ],
+      [
+       "Todos",
+       "Amém."
       ],
       [
        "Orientação",
-       "Oração dos fiéis – preces próprias da bênção do presépio:"
+       "Em seguida, o sacerdote asperge o presépio com água benta. Acendem-se todas as luzes, exceto as da árvore de Natal."
+      ],
+      [
+       "Orientação",
+       "2. ORAÇÃO DOS FIÉIS – depois do Creio"
+      ],
+      [
+       "Orientação",
+       "Preces próprias da Noite de Natal:"
       ],
       [
        "Sacerdote",
@@ -2958,12 +2986,8 @@
        "Todos rezam a Oração do Jubileu de Diamante (telão)."
       ],
       [
-       "Orientação",
-       "O sacerdote, de mãos estendidas, conclui com a oração de bênção:"
-      ],
-      [
        "Sacerdote",
-       "Deus eterno e todo-poderoso, nós vos bendizemos pelo vosso grande amor: enviastes ao mundo o vosso Filho, nascido da Virgem Maria, para nos salvar e nos conduzir de volta a vós.\nAbençoai ✠ todos os que contemplarem este presépio. Que, ao verem a pobreza da manjedoura, recordem o humilde nascimento de Jesus e o reconheçam como Deus-conosco e Salvador do mundo. E que, acolhendo-o no coração, levem sua luz e sua paz a todos os irmãos.\nPor Cristo, nosso Senhor."
+       "Finaliza as preces."
       ],
       [
        "Todos",
@@ -2988,7 +3012,7 @@
    "cartao": true,
    "botao": "🕯️ Bênção do presépio e ritos da Noite",
    "pdf": "semanas/2026-12-21/pdf/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "4034a564408f9440"
+   "pdfHash": "6522753e0e572e4d"
   }
  },
  "aprovado": false

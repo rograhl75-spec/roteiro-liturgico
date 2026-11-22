@@ -87,6 +87,7 @@ Texto da bênção conforme a fonte enviada pelo Diácono Rogério (a confirmar 
 | 24/12, 19h00 (Matriz e Capela) | **Missa da Noite** de Natal (Missal, págs. 128-129). |
 | 25/12, 19h00 | Natal do Senhor – **Missa do Dia** (págs. 132-133). |
 | 24 e 25/12 | Regras da Missa solene: incenso, «Por Cristo» e Amém cantados. Glória; Creio (todos se ajoelham ao «E se encarnou»). **Oração Eucarística I** (Cânon Romano, pág. 523), com o «Em comunhão» próprio do Natal (pág. 526: «a noite santíssima» na Missa da Noite; «o dia santíssimo» na Missa do Dia). Prefácio do Natal I (pág. 455; ou II/III). Bênção Solene do Natal (págs. 129 e 133). |
-| Bênção do presépio | Sim, na Missa da Noite, depois da homilia (texto do Ritual de Bênçãos a definir com o pároco). Anúncio do Natal opcional após a saudação (págs. 1216-1219). |
+| Bênção do presépio | Sim, na Missa da Noite, logo depois da incensação do presépio no Rito da Luz (Menino Jesus levado ao presépio durante o Evangelho; canta-se «Vinde, Cristãos» com a incensação; segue a oração de bênção e a aspersão). As preces terminam com a oração conclusiva normal. Anúncio do Natal opcional após a saudação (págs. 1216-1219). |
+| Aclamação depois da consagração | Em todo o Tempo do Natal, como no Advento: «Mistério da fé e do amor!» — ℟. «Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!» |
 | Sagrada Família (26 e 27/12) | Festa no domingo: Glória e Creio; OE II (regra dos fins de semana); Prefácio do Natal I. Leituras: **Eclo 3 e Cl 3**; Evangelho Lc 2,22-40 (ou breve 2,22.39-40). Bênção Solene do Natal opcional (pág. 579). |
 | Aprovação | A semana de 21 a 27/12 segue a mesma regra do Advento: rascunho até o "aprovado". |
