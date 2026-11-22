@@ -2212,7 +2212,11 @@
       ],
       [
        "Orientação",
-       "Preparar a imagem da Sagrada Família (ornamentação). Na procissão de entrada, uma família entra com a imagem, que depois é colocada em local próximo ao ambão."
+       "Preparar, antes da Missa, um local próximo ao ambão para receber a imagem da Sagrada Família (mesa ou suporte firme, com toalha e flores, bem visível à assembleia). A imagem, já ornamentada, fica no fundo da igreja, com a família que vai levá-la, para entrar na procissão."
+      ],
+      [
+       "Orientação",
+       "Procissão de entrada, nesta ordem: cruz processional entre duas velas; uma família da comunidade levando a imagem da Sagrada Família; diácono com o Evangeliário; coroinhas que servem o altar; sacerdote. Leitores, MESC e coroinhas da comunhão já ficam em seus lugares e não participam da procissão."
       ],
       [
        "Orientação",
@@ -2274,6 +2278,10 @@
       [
        "Cantores",
        "Canto de Entrada"
+      ],
+      [
+       "Orientação",
+       "Durante o canto de entrada, a família coloca a imagem da Sagrada Família no local preparado junto ao ambão, faz uma inclinação e volta ao seu lugar; em seguida, o sacerdote beija o altar."
       ],
       [
        "Sacerdote",
@@ -2767,7 +2775,7 @@
     }
    ],
    "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "96beecf6e3ebf450"
+   "pdfHash": "44bd1292254e8ef2"
   },
   "preces_15": {
    "tipo": "preces",
