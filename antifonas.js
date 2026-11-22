@@ -290,5 +290,211 @@ window.antifonasData = {
         "text": "Eis que conceberás e darás à luz um filho."
       }
     ]
+  },
+  "antifonas_16_qui": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Natal do Senhor, Missa da Noite (24/12/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — Is 9,5",
+        "text": "Nasceu para nós um menino, foi-nos dado um filho; ele traz aos ombros a marca da realeza; o nome que lhe foi dado é: Conselheiro admirável."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Lc 2,10-11",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. Eu vos trago a boa nova de uma grande alegria:\n    é que hoje vos nasceu o Salvador, Cristo, o Senhor."
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Sl 97,3",
+            "text": "Os confins do universo contemplaram a salvação do nosso Deus."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Foi-nos dado um filho."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "Hoje nasceu para nós o Salvador, que é Cristo o Senhor."
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Manifestou-se a bondade de Deus para toda a humanidade."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Hoje, nasceu para vós um Salvador."
+      }
+    ]
+  },
+  "antifonas_16": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Sagrada Família de Jesus, Maria e José (26 e 27/12/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — Lc 2,16",
+        "text": "Os pastores foram às pressas e encontraram Maria e José e o recém-nascido deitado na manjedoura."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Cl 3,15a.16a",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. Que a paz de Cristo reine em vossos corações\n    e ricamente habite em vós sua palavra!"
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Br 3,38",
+            "text": "Nosso Deus foi visto na terra e com os homens conviveu."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Quem teme o Senhor, honra seus pais."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "Felizes os que temem o Senhor e trilham seus caminhos!"
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "A vida da família no Senhor."
+      },
+      {
+        "label": "Evangelho",
+        "text": "O menino crescia cheio de sabedoria."
+      }
+    ]
+  },
+  "antifonas_17_seg": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Os Santos Inocentes, mártires (28/12/2026)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — ",
+        "text": "Inocentes, as crianças foram mortas por causa de Cristo, seguem o Cordeiro sem mancha, e cantam sem cessar: Glória a vós, Senhor!"
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. A vós, ó Deus, louvamos, a vós, Senhor, cantamos;\n    vos louva o exército dos vossos santos mártires!"
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Ap 14,4",
+            "text": "Estes são os que foram resgatados do meio da humanidade como primeira oferta a Deus e ao Cordeiro. Eles seguem o Cordeiro aonde guer que vá."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "O sangue de Jesus Cristo nos purifica de todo pecado."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "Nossa alma como um pássaro escapou do laço que lhe armara o caçador."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Herodes mandou matar todos os meninos de Belém."
+      }
+    ]
+  },
+  "antifonas_17_sex": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Santa Maria, Mãe de Deus (01/01/2027)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — ",
+        "text": "Salve, santa Mãe, vós destes à luz o Rei que governa o céu e a terra pelos séculos eternos."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "Hb 1,1-2",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. De muitos modos, Deus outrora\n    nos falou pelos profetas;\n    nestes tempos derradeiros,\n    nos falou pelo seu Filho."
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Hb 13,8 Solenidade de Santa Maria,Mãe de Deus",
+            "text": "Jesus Cristo é o mesmo ontem e hoje e por toda a eternidade. 1 39"
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Invocarão o meu nome sobre os filhos de Israel e eu os abençoarei."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "Que Deus nos dê a sua graça e sua bênção."
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Deus enviou o seu Filho, nascido de uma mulher."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Encontraram Maria e José e o recém-nascido. E, oito dias depois, deram-lhe o nome de Jesus."
+      }
+    ]
+  },
+  "antifonas_17": {
+    "title": "Antífonas, Aclamação e Citações para a transmissão — Epifania do Senhor (02 e 03/01/2027)",
+    "items": [
+      {
+        "label": "Antífona de Entrada",
+        "reference": "Missal Romano — Cf. MI 3,1; 1Cr 29,12",
+        "text": "Eis que vem o Senhor dos senhores, em suas mãos, o reino, o poder e o império."
+      },
+      {
+        "label": "Aclamação ao Evangelho",
+        "reference": "cf. Mt 2,2",
+        "text": "R. Aleluia, Aleluia, Aleluia.\nV. Vimos sua estrela no Oriente\n    e viemos adorar o Senhor."
+      },
+      {
+        "label": "Antífona de Comunhão",
+        "options": [
+          {
+            "reference": "Missal Romano — Cf. Mt 2,2",
+            "text": "Vimos sua estrela no Oriente, e viemos com presentes adorar o Senhor."
+          }
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "label": "Primeira Leitura",
+        "text": "Apareceu sobre ti a glória do Senhor."
+      },
+      {
+        "label": "Salmo Responsorial",
+        "text": "As nações de toda a terra, hão de adorar-vos, ó Senhor!"
+      },
+      {
+        "label": "Segunda Leitura",
+        "text": "Agora foi-nos revelado que os pagãos são co-herdeiros das promessas."
+      },
+      {
+        "label": "Evangelho",
+        "text": "Viemos do Oriente adorar o Rei."
+      }
+    ]
   }
 };

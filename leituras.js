@@ -4133,6 +4133,1817 @@ Maria, então, disse:
 faça-se em mim segundo a tua palavra!"
 E o anjo retirou-se.
 Palavra da Salvação.`
+    },
+    /* SEMANA DE 21 A 27 DE DEZEMBRO */
+    's16_seg_l1': {
+        title: "1ª Leitura — Ct 2,8-14 (Lecionário II, pág. 99)",
+        day: "Segunda-feira (21/12)",
+        momento: "1ª Leitura",
+        referencia: "Ct 2,8-14",
+        frase: "Eis o meu amado que vem saltando pelos montes.",
+        text: `PRIMEIRA LEITURA
+Leitura do Cântico dos Cânticos 2,8-14
+8
+É a voz do meu amado!
+Eis que ele vem
+saltando pelos montes,
+pulando sobre as colinas.
+9
+O meu amado parece uma gazela,
+ou um cervo ainda novo.
+Eis que ele está de pé atrás de nossa parede,
+espiando pelas janelas,
+observando através das grades.
+10
+O meu amado me fala dizendo:
+"Levanta-te, minha amada,
+minha rola, formosa minha, e vem!
+11
+O inverno já passou,
+as chuvas pararam e já se foram.
+12
+No campo aparecem as flores,
+chegou o tempo das canções,
+a rola já faz ouvir
+seu canto em nossa terra.
+13
+Da figueira brotam os primeiros frutos,
+soltam perfume as vinhas em flor.
+Levanta-te, minha amada,
+formosa minha, e vem!
+14
+Minha rola, que moras nas fendas da rocha,
+no esconderijo escarpado,
+mostra-me teu rosto,
+deixa-me ouvir tua voz!
+Pois a tua voz é tão doce,
+e gracioso o teu semblante".
+Palavra do Senhor.
+Ou:
+O rei de Israel, o Senhor, está no meio de ti.
+Leitura da Profecia de Sofonias 3,14-18a
+14
+Canta de alegria, cidade de Sião;
+rejubila, povo de Israel!
+Alegra-te e exulta de todo o coração,
+cidade de Jerusalém!
+15
+O Senhor revogou a sentença contra ti,
+afastou teus inimigos;
+o rei de Israel é o Senhor,
+ele está no meio de ti,
+nunca mais temerás o mal.
+16
+Naquele dia, se dirá a Jerusalém:
+"Não temas, Sião,
+não te deixes levar pelo desânimo!
+17
+O Senhor, teu Deus, está no meio de ti,
+o valente guerreiro que te salva;
+ele exultará de alegria por ti,
+movido por amor;
+exultará por ti, entre louvores
+18a
+como nos dias de festa".
+Palavra do Senhor.`
+    },
+    's16_seg_sal': {
+        title: "Salmo Responsorial — Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a) (Lecionário II, pág. 101)",
+        day: "Segunda-feira (21/12)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)",
+        text: `Salmo responsorial
+Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)
+R. Ó justos, alegrai-vos no Senhor!
+Cantai para o Senhor um canto novo!
+2
+Dai graças ao Senhor ao som da harpa, *
+na lira de dez cordas celebrai-o!
+3
+Cantai para o Senhor um canto novo, *
+com arte sustentai a louvação! R.
+11
+Mas os desígnios do Senhor são para sempre, †
+e os pensamentos que ele traz no coração, *
+de geração em geração, vão perdurar.
+12
+Feliz o povo cujo Deus é o Senhor, *
+e a nação que escolheu por sua herança! R.
+20
+No Senhor nós esperamos confiantes, *
+porque ele é nosso auxílio e proteção!
+21
+Por isso o nosso coração se alegra nele, *
+seu santo nome é nossa única esperança. R.`
+    },
+    's16_seg_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Segunda-feira (21/12)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. Ó Emanuel, sois nosso rei e orientador:
+vinde salvar-nos, ó Senhor e nosso Deus!`
+    },
+    's16_seg_ev': {
+        title: "Evangelho — Lc 1,39-45 (Lecionário II, pág. 101)",
+        day: "Segunda-feira (21/12)",
+        momento: "Evangelho",
+        referencia: "Lc 1,39-45",
+        frase: "Como posso merecer que a mãe do meu Senhor me venha visitar?",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 1,39-45
+39
+Naqueles dias, Maria partiu para a região montanhosa,
+dirigindo-se, apressadamente, a uma cidade da Judeia.
+40
+Entrou na casa de Zacarias e cumprimentou Isabel.
+41
+Quando Isabel ouviu a saudação de Maria,
+a criança pulou no seu ventre
+e Isabel ficou cheia do Espírito Santo.
+42
+Com um grande grito, exclamou:
+"Bendita és tu entre as mulheres
+e bendito é o fruto do teu ventre!
+43
+Como posso merecer
+que a mãe do meu Senhor me venha visitar?
+44
+Logo que a tua saudação chegou aos meus ouvidos,
+a criança pulou de alegria no meu ventre.
+45
+Bem-aventurada aquela que acreditou,
+porque será cumprido, o que o Senhor lhe prometeu".
+Palavra da Salvação.`
+    },
+    's16_ter_l1': {
+        title: "1ª Leitura — 1Sm 1,24-28 (Lecionário II, pág. 102)",
+        day: "Terça-feira (22/12)",
+        momento: "1ª Leitura",
+        referencia: "1Sm 1,24-28",
+        frase: "Ana dá graças pelo nascimento de Samuel.",
+        text: `PRIMEIRA LEITURA
+Leitura do Primeiro Livro de Samuel 1,24-28
+Naqueles dias,
+24
+Ana, logo que o desmamou,
+levou consigo Samuel à casa do Senhor em Silo,
+e mais um novilho de três anos,
+três arrobas de farinha
+e um odre de vinho.
+O menino, porém, era ainda uma criança.
+25
+Depois de sacrificarem o novilho,
+apresentaram o menino a Eli.
+26
+E Ana disse-lhe:
+"Ouve, meu senhor, por tua vida,
+eu sou a mulher que esteve aqui
+orando ao Senhor, na tua presença.
+27
+Eis o menino por quem eu pedi,
+e o Senhor ouviu a minha súplica.
+28
+Portanto, eu também o ofereço ao Senhor,
+a fim de que só a ele sirva
+em todos os dias da sua vida".
+E adoraram o Senhor.
+Palavra do Senhor.`
+    },
+    's16_ter_sal': {
+        title: "Salmo Responsorial — 1Sm 2,1.4-5.6-7.8abcd (R. 1a) (Lecionário II, pág. 103)",
+        day: "Terça-feira (22/12)",
+        momento: "Salmo Responsorial",
+        referencia: "1Sm 2,1.4-5.6-7.8abcd (R. 1a)",
+        text: `Salmo responsorial
+1Sm 2,1. 4-5.6-7. 8abcd (R. 1a)
+R. Meu coração exultou no meu Senhor, Salvador.
+1
+Exulta no Senhor meu coração, *
+e se eleva a minha fronte no meu Deus;
+Minha boca desafia os meus rivais *
+porque me alegro com a vossa salvação. R.
+4
+O arco dos fortes foi dobrado, foi quebrado, *
+mas os fracos se vestiram de vigor.
+5
+Os saciados se empregaram por um pão, *
+mas os pobres e os famintos se fartaram.
+Muitas vezes deu à luz a que era estéril, *
+mas a mãe de muitos filhos definhou. R.
+6
+É o Senhor quem dá a morte e dá a vida, *
+faz descer à sepultura e faz voltar;
+7
+é o Senhor quem faz o pobre e faz o rico, *
+é o Senhor quem nos humilha e nos exalta. R.
+8a
+O Senhor ergue do pó o homem fraco, *
+b
+e do lixo ele retira o indigente,
+c
+para fazê-los assentar-se com os nobres *
+d
+num lugar de muita honra e distinção. R.`
+    },
+    's16_ter_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Terça-feira (22/12)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. Ó Rei e Senhor das nações,
+e pedra angular da Igreja,
+vinde salvar a mulher e o homem,
+que, um dia, formastes do barro.`
+    },
+    's16_ter_ev': {
+        title: "Evangelho — Lc 1,46-56 (Lecionário II, pág. 103)",
+        day: "Terça-feira (22/12)",
+        momento: "Evangelho",
+        referencia: "Lc 1,46-56",
+        frase: "O Todo-poderoso fez grandes coisas em meu favor.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 1,46-56
+Naquele tempo,
+46
+Maria disse:
+"A minha alma engrandece o Senhor,
+47
+e o meu espírito se alegra em Deus, meu Salvador,
+48
+porque olhou para a humildade de sua serva.
+Doravante todas as gerações me chamarão bem-aventurada,
+49
+porque o Todo-poderoso
+fez grandes coisas em meu favor.
+O seu nome é santo,
+50
+e sua misericórdia se estende, de geração em geração,
+a todos os que o temem.
+51
+Ele mostrou a força de seu braço:
+dispersou os soberbos de coração.
+52
+Derrubou do trono os poderosos
+e elevou os humildes.
+53
+Encheu de bens os famintos,
+e despediu os ricos de mãos vazias.
+54
+Socorreu Israel, seu servo,
+lembrando-se de sua misericórdia,
+55
+conforme prometera aos nossos pais,
+em favor de Abraão e de sua descendência, para sempre".
+56
+Maria ficou três meses com Isabel;
+depois voltou para casa.
+Palavra da Salvação.`
+    },
+    's16_qua_l1': {
+        title: "1ª Leitura — Ml 3,1-4.23-24 (Lecionário II, pág. 104)",
+        day: "Quarta-feira (23/12)",
+        momento: "1ª Leitura",
+        referencia: "Ml 3,1-4.23-24",
+        frase: "Eu vos enviarei o profeta Elias, antes que venha o dia do Senhor.",
+        text: `PRIMEIRA LEITURA
+Leitura da Profecia de Malaquias 3,1-4.23-24
+Assim fala o Senhor Deus:
+1
+"Eis que envio meu anjo,
+e ele há de preparar o caminho para mim;
+logo chegará ao seu templo o Dominador,
+que tentais encontrar,
+e o anjo da aliança, que desejais.
+Ei-lo que vem, diz o Senhor dos exércitos;
+2
+e quem poderá fazer-lhe frente,
+no dia de sua chegada?
+E quem poderá resistir-lhe, quando ele aparecer?
+Ele é como o fogo da forja
+e como a barrela dos lavadeiros;
+3
+e estará a postos,
+como para fazer derreter e purificar a prata:
+assim ele purificará os filhos de Levi
+e os refinará como ouro e como prata,
+e eles poderão assim
+fazer oferendas justas ao Senhor.
+4
+Será então aceitável ao Senhor
+a oblação de Judá e de Jerusalém,
+como nos primeiros tempos e nos anos antigos.
+23
+Eis que eu vos enviarei
+o profeta Elias,
+antes que venha o dia do Senhor,
+dia grande e terrível;
+24
+o coração dos pais há de voltar-se para os filhos,
+e o coração dos filhos para seus pais,
+para que eu não intervenha,
+ferindo de maldição a vossa terra".
+Palavra do Senhor.`
+    },
+    's16_qua_sal': {
+        title: "Salmo Responsorial — Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28) (Lecionário II, pág. 105)",
+        day: "Quarta-feira (23/12)",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)",
+        text: `Salmo responsorial
+Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)
+R. Levantai vossa cabeça e olhai,
+pois, a vossa redenção se aproxima!
+4
+Mostrai-me, ó Senhor, vossos caminhos, *
+e fazei-me conhecer a vossa estrada!
+5a
+Vossa verdade me oriente e me conduza, *
+b
+porque sois o Deus da minha salvação! R.
+8
+O Senhor é piedade e retidão, *
+e reconduz ao bom caminho os pecadores.
+9
+Ele dirige os humildes na justiça, *
+e aos pobres ele ensina o seu caminho. R.
+10
+Verdade e amor são os caminhos do Senhor *
+para quem guarda sua Aliança e seus preceitos.
+14
+O Senhor se torna íntimo aos que o temem *
+e lhes dá a conhecer sua Aliança. R.`
+    },
+    's16_qua_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Quarta-feira (23/12)",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. Ó Rei e Senhor das nações
+e Pedra angular da Igreja,
+vinde salvar a mulher e o homem,
+que, um dia, formastes do barro.`
+    },
+    's16_qua_ev': {
+        title: "Evangelho — Lc 1,57-66 (Lecionário II, pág. 106)",
+        day: "Quarta-feira (23/12)",
+        momento: "Evangelho",
+        referencia: "Lc 1,57-66",
+        frase: "Nascimento de João Batista.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 1,57-66
+57
+Completou-se o tempo da gravidez de Isabel,
+e ela deu à luz um filho.
+58
+Os vizinhos e parentes ouviram dizer
+como o Senhor tinha sido misericordioso
+para com Isabel, e alegraram-se com ela.
+59
+No oitavo dia, foram circuncidar o menino,
+e queriam dar-lhe o nome de seu pai, Zacarias.
+60
+A mãe porém disse:
+"Não! Ele vai chamar-se João."
+61
+Os outros disseram:
+"Não existe nenhum parente teu com esse nome!"
+62
+Então fizeram sinais ao pai,
+perguntando como ele queria que o menino se chamasse.
+63
+Zacarias pediu uma tabuinha, e escreveu:
+"João é o seu nome."
+64
+No mesmo instante, a boca de Zacarias se abriu,
+sua língua se soltou, e ele começou a louvar a Deus.
+65
+Todos os vizinhos ficaram com medo,
+e a notícia espalhou-se
+por toda a região montanhosa da Judeia.
+66
+E todos os que ouviam a notícia, ficavam pensando:
+"O que virá a ser este menino?"
+De fato, a mão do Senhor estava com ele.
+Palavra da Salvação.`
+    },
+    's16_qui_l1': {
+        title: "1ª Leitura — Is 9,1-6 (Lecionário I, pág. 390)",
+        day: "Quinta-feira (24/12) — Natal do Senhor",
+        momento: "1ª Leitura",
+        referencia: "Is 9,1-6",
+        frase: "Foi-nos dado um filho.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Profeta Isaías 9,1-6
+1
+O povo, que andava na escuridão,
+viu uma grande luz;
+para os que habitavam nas sombras da morte,
+uma luz resplandeceu.
+2
+Fizeste crescer a alegria, e aumentaste a felicidade;
+todos se regozijam em tua presença
+como alegres ceifeiros na colheita,
+ou como exaltados guerreiros ao dividirem os despojos.
+3
+Pois o jugo que oprimia o povo,
+- a carga sobre os ombros, o orgulho dos fiscais -
+tu os abateste como na jornada de Madiã.
+4
+Botas de tropa de assalto,
+trajes manchados de sangue,
+tudo será queimado e devorado pelas chamas.
+5
+Porque nasceu para nós um menino,
+foi-nos dado um filho;
+ele traz aos ombros a marca da realeza;
+o nome que lhe foi dado é:
+Conselheiro admirável, Deus forte,
+Pai dos tempos futuros, Príncipe da Paz.
+6
+Grande será o seu reino e a paz não há de ter fim
+sobre o trono de Davi e sobre o seu reinado,
+que ele irá consolidar e confirmar
+em justiça e santidade,
+a partir de agora e para todo o sempre.
+O amor zeloso do Senhor dos exércitos
+há de realizar estas coisas.
+Palavra do Senhor.`
+    },
+    's16_qui_sal': {
+        title: "Salmo Responsorial — Sl 95(96),1-2a.2b-3.11-12.13 (R. Lc 2,11) (Lecionário I, pág. 390)",
+        day: "Quinta-feira (24/12) — Natal do Senhor",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 95(96),1-2a.2b-3.11-12.13 (R. Lc 2,11)",
+        text: `Salmo responsorial
+Sl 95(96),1-2a.2b-3.11-12,13 (R. Lc 2,11)
+R.Hoje nasceu para nós
+o Salvador, que é Cristo o Senhor.
+1
+Cantai ao Senhor Deus um canto novo, †
+2a
+cantai ao Senhor Deus, ó terra inteira! *
+Cantai e bendizei seu santo nome! R.
+b
+Dia após dia anunciai sua salvação, †
+3
+manifestai a sua glória entre as nações, *
+e entre os povos do universo seus prodígios! R.
+11
+O céu se rejubile e exulte a terra, *
+aplauda o mar com o que vive em suas águas;
+12
+os campos com seus frutos rejubilem *
+e exultem as florestas e as matas R.
+13
+na presença do Senhor, pois ele vem, *
+porque vem para julgar a terra inteira.
+Governará o mundo todo com justiça, *
+e os povos julgará com lealdade. R.`
+    },
+    's16_qui_l2': {
+        title: "2ª Leitura — Tt 2,11-14 (Lecionário I, pág. 391)",
+        day: "Quinta-feira (24/12) — Natal do Senhor",
+        momento: "2ª Leitura",
+        referencia: "Tt 2,11-14",
+        frase: "Manifestou-se a bondade de Deus para toda a humanidade.",
+        text: `SEGUNDA LEITURA
+Leitura da Carta de São Paulo a Tito 2,11-14
+Caríssimo:
+11
+A graça de Deus se manifestou
+trazendo a salvação para todos os homens.
+12
+Ela nos ensina a abandonar a impiedade
+e as paixões mundanas e a viver neste mundo
+com equilíbrio, justiça e piedade
+13
+aguardando a feliz esperança e a manifestação da glória
+do nosso grande Deus e Salvador, Jesus Cristo.
+14
+Ele se entregou por nós, para nos resgatar de toda maldade
+e purificar para si um povo que lhe pertença
+e que se dedique a praticar o bem.
+Palavra do Senhor.`
+    },
+    's16_qui_acl': {
+        title: "Aclamação ao Evangelho — Lc 2,10-11",
+        day: "Quinta-feira (24/12) — Natal do Senhor",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Lc 2,10-11",
+        text: `Aclamação ao Evangelho
+Lc 2,10-11
+R. Aleluia, Aleluia, Aleluia.
+V. Eu vos trago a boa nova de uma grande alegria:
+é que hoje vos nasceu o Salvador, Cristo, o Senhor.`
+    },
+    's16_qui_ev': {
+        title: "Evangelho — Lc 2,1-14 (Lecionário I, pág. 392)",
+        day: "Quinta-feira (24/12) — Natal do Senhor",
+        momento: "Evangelho",
+        referencia: "Lc 2,1-14",
+        frase: "Hoje, nasceu para vós um Salvador.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,1-14
+1
+Aconteceu que naqueles dias,
+César Augusto publicou um decreto,
+ordenando o recenseamento de toda a terra.
+2
+Este primeiro recenseamento foi feito
+quando Quirino era governador da Síria.
+3
+Todos iam registrar-se cada um na sua cidade natal.
+4
+Por ser da família e descendência de Davi,
+José subiu da cidade de Nazaré, na Galileia,
+até a cidade de Davi, chamada Belém, na Judeia,
+5
+para registrar-se com Maria, sua esposa,
+que estava grávida.
+6
+Enquanto estavam em Belém,
+completaram-se os dias para o parto,
+7
+e Maria deu à luz o seu filho primogênito.
+Ela o enfaixou e o colocou na manjedoura,
+pois não havia lugar para eles na hospedaria.
+8
+Naquela região havia pastores
+que passavam a noite nos campos,
+tomando conta do seu rebanho.
+9
+Um anjo do Senhor apareceu aos pastores,
+a glória do Senhor os envolveu em luz,
+e eles ficaram com muito medo.
+10
+O anjo, porém, disse aos pastores:
+"Não tenhais medo!
+Eu vos anuncio uma grande alegria,
+que o será para todo o povo:
+11
+Hoje, na cidade de Davi, nasceu para vós um Salvador,
+que é o Cristo Senhor.
+12
+Isto vos servirá de sinal:
+Encontrareis um recém-nascido
+envolvido em faixas e deitado numa manjedoura".
+13
+E, de repente, juntou-se ao anjo
+uma multidão da coorte celeste.
+Cantavam louvores a Deus, dizendo:
+14
+"Glória a Deus no mais alto dos céus,
+e paz na terra aos homens por ele amados".
+Palavra da Salvação.`
+    },
+    's16_sex_l1': {
+        title: "1ª Leitura — Is 52,7-10 (Lecionário I, pág. 396)",
+        day: "Sexta-feira (25/12) — Natal de Nosso Senhor Jesus Cristo",
+        momento: "1ª Leitura",
+        referencia: "Is 52,7-10",
+        frase: "Todos os confins da terra hão de ver a salvação que vem do nosso Deus.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Profeta Isaías 52,7-10
+7
+Como são belos, andando sobre os montes,
+os pés de quem anuncia e prega a paz,
+de quem anuncia o bem e prega a salvação,
+e diz a Sião: "Reina teu Deus!"
+8
+Ouve-se a voz de teus vigias, eles levantam a voz,
+estão exultantes de alegria,
+sabem que verão com os próprios olhos
+o Senhor voltar a Sião.
+9
+Alegrai-vos e exultai ao mesmo tempo,
+ó ruínas de Jerusalém,
+o Senhor consolou seu povo
+e resgatou Jerusalém.
+10
+O Senhor desnudou seu santo braço
+aos olhos de todas as nações;
+todos os confins da terra hão de ver
+a salvação que vem do nosso Deus.
+Palavra do Senhor.`
+    },
+    's16_sex_sal': {
+        title: "Salmo Responsorial — Sl 97(98),1.2-3ab.3cd-4.5-6 (R. 3cd) (Lecionário I, pág. 396)",
+        day: "Sexta-feira (25/12) — Natal de Nosso Senhor Jesus Cristo",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 97(98),1.2-3ab.3cd-4.5-6 (R. 3cd)",
+        text: `Salmo responsorial
+Sl 97(98),1.2-3ab.3cd-4.5-6 (R. 3cd)
+R. Os confins do universo contemplaram
+a salvação do nosso Deus.
+1
+Cantai ao Senhor Deus um canto novo, *
+porque ele fez prodígios!
+Sua mão e o seu braço forte e santo *
+alcançaram-lhe a vitória. R.
+2
+O Senhor fez conhecer a salvação, *
+e às nações, sua justiça;
+3a
+recordou o seu amor sempre fiel *
+3b
+pela casa de Israel. R.
+3c
+Os confins do universo contemplaram *
+3d
+a salvação do nosso Deus.
+4
+Aclamai o Senhor Deus, ó terra inteira, *
+alegrai-vos e exultai! R.
+5
+Cantai salmos ao Senhor ao som da harpa *
+e da cítara suave!
+6
+Aclamai, com os clarins e as trombetas, *
+ao Senhor, o nosso Rei! R.`
+    },
+    's16_sex_l2': {
+        title: "2ª Leitura — Hb 1,1-6 (Lecionário I, pág. 397)",
+        day: "Sexta-feira (25/12) — Natal de Nosso Senhor Jesus Cristo",
+        momento: "2ª Leitura",
+        referencia: "Hb 1,1-6",
+        frase: "Deus falou-nos por meio de seu Filho.",
+        text: `SEGUNDA LEITURA
+Leitura da Carta aos Hebreus 1,1-6
+1
+Muitas vezes e de muitos modos
+falou Deus outrora aos nossos pais, pelos profetas;
+2
+nestes dias, que são os últimos,
+ele nos falou por meio do Filho,
+a quem ele constituiu herdeiro de todas as coisas
+e pelo qual também ele criou o universo.
+Este é o esplendor da glória do Pai,
+3
+a expressão do seu ser.
+Ele sustenta o universo com o poder de sua palavra.
+Tendo feito a purificação dos pecados,
+ele sentou-se à direita da majestade divina,
+nas alturas.
+4
+Ele foi colocado tanto acima dos anjos
+quanto o nome que ele herdou supera o nome deles.
+5
+De fato, a qual dos anjos Deus disse alguma vez:
+"Tu és o meu Filho, eu hoje te gerei?"
+Ou ainda: "Eu serei para ele um Pai
+e ele será para mim um filho?"
+6
+Mas, quando faz entrar o Primogênito no mundo,
+Deus diz: "Todos os anjos devem adorá-lo!"
+Palavra do Senhor.`
+    },
+    's16_sex_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Sexta-feira (25/12) — Natal de Nosso Senhor Jesus Cristo",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. Despontou o santo dia para nós:
+Ó nações, vinde adorar o Senhor Deus,
+porque hoje grande luz brilhou na terra!`
+    },
+    's16_sex_ev': {
+        title: "Evangelho — Jo 1,1-18 (Lecionário I, pág. 398)",
+        day: "Sexta-feira (25/12) — Natal de Nosso Senhor Jesus Cristo",
+        momento: "Evangelho",
+        referencia: "Jo 1,1-18",
+        frase: "A Palavra se fez carne e habitou entre nós.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo João 1, 1-18
+1
+No princípio era a Palavra,
+e a Palavra estava com Deus;
+e a Palavra era Deus.
+2
+No princípio estava ela com Deus.
+3
+Tudo foi feito por ela, e sem ela nada se fez
+de tudo que foi feito.
+4
+Nela estava a vida, e a vida era a luz dos homens.
+5
+E a luz brilha nas trevas,
+e as trevas não conseguiram dominá-la.
+6
+Surgiu um homem enviado por Deus;
+seu nome era João.
+7
+Ele veio como testemunha,
+para dar testemunho da luz,
+para que todos chegassem à fé por meio dele.
+8
+Ele não era a luz,
+mas veio para dar testemunho da luz:
+9
+daquele que era a luz de verdade,
+que, vindo ao mundo,
+ilumina todo ser humano.
+10
+A Palavra estava no mundo
+- e o mundo foi feito por meio dela -
+mas o mundo não quis conhecê-la.
+11
+Veio para o que era seu,
+e os seus não a acolheram.
+12
+Mas, a todos que a receberam,
+deu-lhes capacidade de se tornarem filhos de Deus,
+isto é, aos que acreditam em seu nome,
+13
+pois estes não nasceram do sangue
+nem da vontade da carne
+nem da vontade do varão,
+mas de Deus mesmo.
+14
+E a Palavra se fez carne e habitou entre nós.
+E nós contemplamos a sua glória,
+glória que recebe do Pai como filho unigênito,
+cheio de graça e de verdade.
+15
+Dele, João dá testemunho, clamando:
+"Este é aquele de quem eu disse:
+O que vem depois de mim
+passou à minha frente,
+porque ele existia antes de mim".
+16
+De sua plenitude todos nós recebemos graça por graça.
+17
+Pois por meio de Moisés foi dada a Lei,
+mas a graça e a verdade nos chegaram
+através de Jesus Cristo.
+18
+A Deus, ninguém jamais viu.
+Mas o Unigênito de Deus, que está
+na intimidade do Pai,
+ele no-lo deu a conhecer.
+Palavra da Salvação.`
+    },
+    's16_dom_l1': {
+        title: "1ª Leitura — Eclo 3,3-7.14-17a (Lecionário I, pág. 400)",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "1ª Leitura",
+        referencia: "Eclo 3,3-7.14-17a",
+        frase: "Quem teme o Senhor, honra seus pais.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Eclesiástico 3,3-7.14-17a (gr. 2-6.12-14)
+3
+Deus honra o pai nos filhos
+e confirma, sobre eles, a autoridade da mãe.
+4
+Quem honra o seu pai,
+alcança o perdão dos pecados; evita cometê-los
+e será ouvido na oração cotidiana.
+5
+Quem respeita a sua mãe
+é como alguém que ajunta tesouros.
+6
+Quem honra o seu pai,
+terá alegria com seus próprios filhos;
+e, no dia em que orar, será atendido.
+7
+Quem respeita o seu pai, terá vida longa,
+e quem obedece ao pai
+é o consolo da sua mãe.
+14
+Meu filho, ampara o teu pai na velhice
+e não lhe causes desgosto enquanto ele vive.
+15
+Mesmo que ele esteja perdendo a lucidez,
+procura ser compreensivo para com ele;
+não o humilhes, em nenhum dos dias de sua vida:
+a caridade feita a teu pai não será esquecida,
+16
+mas servirá para reparar os teus pecados
+17a
+e, na justiça, será para tua edificação.
+Palavra do Senhor`
+    },
+    's16_dom_sal': {
+        title: "Salmo Responsorial — Sl 127(128),1-2.3.4-5 (R. cf.1) (Lecionário I, pág. 400)",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 127(128),1-2.3.4-5 (R. cf.1)",
+        text: `Salmo responsorial Sl 127,1-2.3.4-5 (R. cf. 1)
+R. Felizes os que temem o Senhor e trilham seus caminhos!
+1
+Feliz és tu se temes o Senhor *
+e trilhas seus caminhos!
+2
+Do trabalho de tuas mãos hás de viver, *
+serás feliz, tudo irá bem! R.
+3
+A tua esposa é uma videira bem fecunda *
+no coração da tua casa;
+os teus filhos são rebentos de oliveira *
+ao redor de tua mesa. R.
+4
+Será assim abençoado todo homem *
+que teme o Senhor.
+5
+O Senhor te abençoe de Sião, *
+cada dia de tua vida. R.`
+    },
+    's16_dom_l2': {
+        title: "2ª Leitura — Cl 3,12-21 (Lecionário I, pág. 401)",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "2ª Leitura",
+        referencia: "Cl 3,12-21",
+        frase: "A vida da família no Senhor.",
+        text: `SEGUNDA LEITURA
+Leitura da Carta de São Paulo aos Colossenses 3,12-21
+Irmãos:
+12
+Vós sois amados por Deus,
+sois os seus santos eleitos.
+Por isso, revesti-vos de sincera misericórdia,
+bondade, humildade, mansidão e paciência,
+13
+suportando-vos uns aos outros
+e perdoando-vos mutuamente,
+se um tiver queixa contra o outro.
+Como o Senhor vos perdoou,
+assim perdoai vós também.
+14
+Mas, sobretudo, amai-vos uns aos outros,
+pois o amor é o vínculo da perfeição.
+15
+Que a paz de Cristo reine em vossos corações,
+à qual fostes chamados como membros de um só corpo.
+E sede agradecidos.
+16
+Que a palavra de Cristo, com toda a sua riqueza,
+habite em vós.
+Ensinai e admoestai-vos uns aos outros
+com toda a sabedoria.
+Do fundo dos vossos corações, cantai a Deus
+salmos, hinos e cânticos espirituais,
+em ação de graças.
+17
+Tudo o que fizerdes, em palavras ou obras,
+seja feito em nome do Senhor Jesus Cristo.
+Por meio dele dai graças a Deus, o Pai.
+18
+Esposas, sede solícitas para com vossos maridos,
+como convém, no Senhor.
+19
+Maridos, amai vossas esposas
+e não sejais grosseiros com elas.
+20
+Filhos, obedecei em tudo aos vossos pais,
+pois isso é bom e correto no Senhor.
+21
+Pais, não intimideis os vossos filhos,
+para que eles não desanimem.
+Palavra do Senhor.`
+    },
+    's16_dom_acl': {
+        title: "Aclamação ao Evangelho — Cl 3,15a.16a",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "Aclamação ao Evangelho",
+        referencia: "Cl 3,15a.16a",
+        text: `Aclamação ao Evangelho Cl 3,15a.16a
+R. Aleluia, Aleluia, Aleluia.
+V. Que a paz de Cristo reine em vossos corações
+e ricamente habite em vós sua palavra!`
+    },
+    's16_dom_ev': {
+        title: "Evangelho — Lc 2,22-40 (Lecionário I, pág. 402)",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "Evangelho",
+        referencia: "Lc 2,22-40",
+        frase: "O menino crescia cheio de sabedoria.",
+        text: `EVANGELHO (mais longo)
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,22-40
+22
+Quando se completaram os dias
+para a purificação da mãe e do filho,
+conforme a Lei de Moisés,
+Maria e José levaram Jesus a Jerusalém,
+a fim de apresentá-lo ao Senhor.
+23
+Conforme está escrito na Lei do Senhor:
+"Todo primogênito do sexo masculino
+deve ser consagrado ao Senhor".
+24
+Foram também oferecer o sacrifício
+— um par de rolas ou dois pombinhos —
+como está ordenado na Lei do Senhor.
+25
+Em Jerusalém, havia um homem chamado Simeão,
+o qual era justo e piedoso,
+e esperava a consolação do povo de Israel.
+O Espírito Santo estava com ele
+26
+e lhe havia anunciado que não morreria
+antes de ver o Messias que vem do Senhor.
+27
+Movido pelo Espírito, Simeão veio ao Templo.
+Quando os pais trouxeram o menino Jesus
+para cumprir o que a Lei ordenava,
+28
+Simeão tomou o menino nos braços
+e bendisse a Deus:
+29
+"Agora, Senhor, conforme a tua promessa,
+podes deixar teu servo partir em paz;
+30
+porque meus olhos viram a tua salvação,
+31
+que preparaste diante de todos os povos:
+32
+luz para iluminar as nações
+e glória do teu povo Israel".
+33
+O pai e a mãe de Jesus estavam admirados
+com o que diziam a respeito dele.
+34
+Simeão os abençoou e disse a Maria, a mãe de Jesus:
+"Este menino vai ser causa
+tanto de queda como de reerguimento
+para muitos em Israel.
+Ele será um sinal de contradição.
+35
+Assim serão revelados
+os pensamentos de muitos corações.
+Quanto a ti, uma espada te traspassará a alma".
+36
+Havia também uma profetisa, chamada Ana,
+filha de Fanuel, da tribo de Aser.
+Era de idade muito avançada;
+quando jovem, tinha sido casada
+e vivera sete anos com o marido.
+37
+Depois ficara viúva,
+e agora já estava com oitenta e quatro anos.
+Não saía do Templo, dia e noite servindo a Deus
+com jejuns e orações.
+38
+Ana chegou nesse momento
+e pôs-se a louvar a Deus e a falar do menino
+a todos os que esperavam a libertação de Jerusalém.
+39
+Depois de cumprirem tudo, conforme a Lei do Senhor,
+voltaram à Galileia, para Nazaré, sua cidade.
+40
+O menino crescia e tornava-se forte,
+cheio de sabedoria;
+e a graça de Deus estava com ele.
+Palavra da Salvação.`
+    },
+    's16_dom_ev_breve': {
+        title: "Evangelho (mais breve) — Lc 2,22.39-40 (Lecionário I, pág. 404)",
+        day: "Fim de Semana (26 e 27/12) — Sagrada Família de Jesus, Maria e José",
+        momento: "Evangelho (mais breve)",
+        referencia: "Lc 2,22.39-40",
+        frase: "O menino crescia cheio de sabedoria.",
+        text: `EVANGELHO (mais breve)
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,22.39-40
+22
+Quando se completaram os dias
+para a purificação da mãe e do filho,
+conforme a Lei de Moisés,
+Maria e José levaram Jesus a Jerusalém,
+a fim de apresentá-lo ao Senhor.
+39
+Depois de cumprirem tudo, conforme a Lei do Senhor,
+voltaram à Galileia, para Nazaré, sua cidade.
+40
+O menino crescia e tornava-se forte,
+cheio de sabedoria;
+e a graça de Deus estava com ele.
+Palavra da Salvação.`
+    },
+    /* SEMANA DE 28 DE DEZEMBRO A 3 DE JANEIRO */
+    's17_seg_l1': {
+        title: "1ª Leitura — 1Jo 1,5–2,2 (Lecionário III, pág. 228)",
+        day: "Segunda-feira (28/12) — Os Santos Inocentes",
+        momento: "1ª Leitura",
+        referencia: "1Jo 1,5–2,2",
+        frase: "O sangue de Jesus Cristo nos purifica de todo pecado.",
+        text: `PRIMEIRA LEITURA
+Leitura da Primeira Carta de São João 1,5-2,2
+Caríssimos,
+5
+a mensagem, que ouvimos de Jesus Cristo
+e vos anunciamos,
+é esta:
+Deus é luz e nele não há trevas.
+6
+Se dissermos que estamos em comunhão com ele,
+mas andamos nas trevas,
+estamos mentindo e não nos guiamos pela verdade.
+7
+Mas, se andamos na luz,
+como ele está na luz,
+então estamos em comunhão uns com os outros,
+e o sangue de seu Filho Jesus
+nos purifica de todo pecado.
+8
+Se dissermos que não temos pecado,
+estamo-nos enganando a nós mesmos,
+e a verdade não está dentro de nós.
+9
+Se reconhecermos nossos pecados,
+então Deus se mostra fiel e justo,
+para nos perdoar os pecados
+e nos purificar de toda culpa.
+10
+Se dissermos que nunca pecamos,
+fazemos dele um mentiroso
+e sua palavra não está dentro de nós.
+2,1
+Meus filhinhos,
+escrevo isto para que não pequeis.
+No entanto, se alguém pecar,
+temos junto do Pai um Defensor:
+Jesus Cristo, o Justo.
+2
+Ele é a vítima de expiação pelos nossos pecados,
+e não só pelos nossos,
+mas também pelos pecados do mundo inteiro.
+Palavra do Senhor.`
+    },
+    's17_seg_sal': {
+        title: "Salmo Responsorial — Sl 123(124),2-3.4-5.7b-8 (R. 7a) (Lecionário III, pág. 229)",
+        day: "Segunda-feira (28/12) — Os Santos Inocentes",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 123(124),2-3.4-5.7b-8 (R. 7a)",
+        text: `Salmo responsorial
+Sl 123(124),2-3.4-5.7b-8 (R. 7a)
+R. Nossa alma como um pássaro escapou
+do laço que lhe armara o caçador.
+2
+Se o Senhor não estivesse ao nosso lado, *
+quando os homens investiram contra nós,
+3
+com certeza nos teriam devorado *
+no furor de sua ira contra nós. R.
+4
+Então as águas nos teriam submergido, *
+a correnteza nos teria arrastado,
+5
+e então, por sobre nós teriam passado *
+essas águas sempre mais impetuosas. R.
+7b
+O laço arrebentou-se de repente, *
+e assim nós conseguimos libertar-nos.
+8
+O nosso auxílio está no nome do Senhor, *
+do Senhor que fez o céu e fez a terra! R.`
+    },
+    's17_seg_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Segunda-feira (28/12) — Os Santos Inocentes",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. A vós, ó Deus, louvamos, a vós, Senhor, cantamos;
+vos louva o exército dos vossos santos mártires!`
+    },
+    's17_seg_ev': {
+        title: "Evangelho — Mt 2,13-18 (Lecionário III, pág. 230)",
+        day: "Segunda-feira (28/12) — Os Santos Inocentes",
+        momento: "Evangelho",
+        referencia: "Mt 2,13-18",
+        frase: "Herodes mandou matar todos os meninos de Belém.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 2,13-18
+13
+Depois que os magos partiram,
+o Anjo do Senhor apareceu em sonho a José
+e lhe disse:
+"Levanta-te, pega o menino e sua mãe e foge para o Egito!
+Fica lá até que eu te avise!
+Porque Herodes vai procurar o menino
+para matá-lo".
+14
+José levantou-se de noite,
+pegou o menino e sua mãe,
+e partiu para o Egito.
+15
+Ali ficou até à morte de Herodes,
+para se cumprir
+o que o Senhor havia dito pelo profeta:
+"Do Egito chamei o meu Filho".
+16
+Quando Herodes percebeu
+que os magos o haviam enganado,
+ficou muito furioso.
+Mandou matar todos os meninos de Belém
+e de todo o território vizinho,
+de dois anos para baixo,
+exatamente conforme o tempo indicado pelos magos.
+17
+Então se cumpriu
+o que foi dito pelo profeta Jeremias:
+18
+"Ouviu-se um grito em Ramá,
+choro e grande lamento:
+é Raquel que chora seus filhos,
+e não quer ser consolada,
+porque eles não existem mais".
+Palavra da Salvação.`
+    },
+    's17_ter_l1': {
+        title: "1ª Leitura — 1Jo 2,3-11 (Lecionário II, pág. 113)",
+        day: "Terça-feira (29/12) — 5º dia na Oitava do Natal",
+        momento: "1ª Leitura",
+        referencia: "1Jo 2,3-11",
+        frase: "Quem ama o seu irmão permanece na luz.",
+        text: `PRIMEIRA LEITURA
+Leitura da Primeira Carta de São João 2,3-11
+Caríssimos,
+3
+para saber que conhecemos Jesus,
+vejamos se guardamos os seus mandamentos.
+4
+Quem diz: "Eu conheço a Deus",
+mas não guarda os seus mandamentos,
+é mentiroso, e a verdade não está nele.
+5
+Naquele, porém, que guarda a sua palavra,
+o amor de Deus é plenamente realizado.
+O critério para saber se estamos com Jesus é este:
+6
+quem diz que permanece nele,
+deve também proceder como ele procedeu.
+7
+Caríssimos,
+não vos comunico um mandamento novo,
+mas um mandamento antigo,
+que recebestes desde o início;
+este mandamento antigo é a palavra que ouvistes.
+8
+No entanto, o que vos escrevo é um mandamento novo
+- que é verdadeiro nele e em vós -,
+pois que as trevas passam
+e já brilha a luz verdadeira.
+9
+Aquele que diz estar na luz,
+mas odeia o seu irmão,
+ainda está nas trevas.
+10
+O que ama o seu irmão permanece na luz
+e não corre perigo de tropeçar.
+11
+Mas o que odeia o seu irmão está nas trevas,
+caminha nas trevas,
+e não sabe aonde vai,
+porque as trevas ofuscaram os seus olhos.
+Palavra do Senhor.`
+    },
+    's17_ter_sal': {
+        title: "Salmo Responsorial — Sl 95(96),1-2a.2b-3.5b-6 (R. 11a) (Lecionário II, pág. 114)",
+        day: "Terça-feira (29/12) — 5º dia na Oitava do Natal",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 95(96),1-2a.2b-3.5b-6 (R. 11a)",
+        text: `Salmo responsorial
+Sl 95(96),1-2a.2b-3.5b-6 (R. 11a)
+R. O céu se rejubile e exulte a terra!
+1
+Cantai ao Senhor Deus um canto novo, †
+cantai ao Senhor Deus, ó terra inteira! *
+2a
+Cantai e bendizei seu santo nome! R.
+b
+Dia após dia anunciai sua salvação, †
+3
+manifestai a sua glória entre as nações, *
+e entre os povos do universo seus prodígios! R.
+5b
+Foi o Senhor e nosso Deus quem fez os céus: †
+6
+diante dele vão a glória e a majestade, *
+e o seu templo, que beleza e esplendor! R.`
+    },
+    's17_ter_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Terça-feira (29/12) — 5º dia na Oitava do Natal",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+Lc 2,32
+R. Aleluia, Aleluia, Aleluia.
+V. Sois a luz que brilhará para os gentios
+e para a glória de Israel, o vosso povo.`
+    },
+    's17_ter_ev': {
+        title: "Evangelho — Lc 2,22-35 (Lecionário II, pág. 114)",
+        day: "Terça-feira (29/12) — 5º dia na Oitava do Natal",
+        momento: "Evangelho",
+        referencia: "Lc 2,22-35",
+        frase: "Luz para iluminar as nações.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,22-35
+22
+Quando se completaram os dias
+para a purificação da mãe e do filho,
+conforme a Lei de Moisés,
+Maria e José levaram Jesus a Jerusalém,
+a fim de apresentá-lo ao Senhor.
+23
+Conforme está escrito na Lei do Senhor:
+"Todo primogênito do sexo masculino
+deve ser consagrado ao Senhor".
+24
+Foram também oferecer o sacrifício
+- um par de rolas ou dois pombinhos -
+como está ordenado na Lei do Senhor.
+25
+Em Jerusalém, havia um homem chamado Simeão,
+o qual era justo e piedoso,
+e esperava a consolação do povo de Israel.
+O Espírito Santo estava com ele
+26
+e lhe havia anunciado que não morreria
+antes de ver o Messias que vem do Senhor.
+27
+Movido pelo Espírito, Simeão veio ao Templo.
+Quando os pais trouxeram o menino Jesus
+para cumprir o que a Lei ordenava,
+28
+Simeão tomou o menino nos braços
+e bendisse a Deus:
+29
+"Agora, Senhor, conforme a tua promessa,
+podes deixar teu servo partir em paz;
+30
+porque meus olhos viram a tua salvação,
+31
+que preparaste diante de todos os povos:
+32
+luz para iluminar as nações
+e glória do teu povo Israel".
+33
+O pai e a mãe de Jesus estavam admirados
+com o que diziam a respeito dele.
+34
+Simeão os abençoou e disse a Maria, a mãe de Jesus:
+"Este menino vai ser causa
+tanto de queda como de reerguimento
+para muitos em Israel.
+Ele será um sinal de contradição.
+35
+Assim serão revelados os pensamentos de muitos corações.
+Quanto a ti, uma espada te traspassará a alma".
+Palavra da Salvação.`
+    },
+    's17_qua_l1': {
+        title: "1ª Leitura — 1Jo 2,12-17 (Lecionário II, pág. 115)",
+        day: "Quarta-feira (30/12) — 6º dia na Oitava do Natal",
+        momento: "1ª Leitura",
+        referencia: "1Jo 2,12-17",
+        frase: "Aquele que faz a vontade de Deus permanece para sempre.",
+        text: `PRIMEIRA LEITURA
+Leitura da Primeira Carta de São João 2,12-17
+12
+Eu vos escrevo, filhinhos:
+os vossos pecados foram perdoados
+por meio do seu nome.
+13
+Eu vos escrevo, pais:
+vós conheceis aquele que é desde o princípio.
+Eu vos escrevo, jovens:
+vós vencestes o Maligno.
+14
+Já vos escrevi, filhinhos:
+vós conheceis o Pai.
+Já vos escrevi, jovens:
+vós sois fortes,
+a Palavra de Deus permanece em vós,
+e vencestes o Maligno.
+15
+Não ameis o mundo, nem o que há no mundo.
+Se alguém ama o mundo, não está nele o amor do Pai.
+16
+Porque tudo o que há no mundo
+— as paixões da natureza,
+a concupiscência dos olhos
+e a ostentação da riqueza —
+não vem do Pai, mas do mundo.
+17
+Ora, o mundo passa,
+e também a sua concupiscência;
+mas aquele que faz a vontade de Deus
+permanece para sempre.
+Palavra do Senhor.`
+    },
+    's17_qua_sal': {
+        title: "Salmo Responsorial — Sl 95(96),7-8a.8b-9.10 (R. 11a) (Lecionário II, pág. 116)",
+        day: "Quarta-feira (30/12) — 6º dia na Oitava do Natal",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 95(96),7-8a.8b-9.10 (R. 11a)",
+        text: `Salmo responsorial Sl 95(96),7-8a.8b-9.10 (R. 11a)
+R. O céu se rejubile e exulte a terra!
+7
+Ó família das nações, dai ao Senhor, †
+ó nações, dai ao Senhor poder e glória, *
+8a
+dai-lhe a glória que é devida ao seu nome! R.
+8b
+Oferecei um sacrifício nos seus átrios, †
+9
+adorai-o no esplendor da santidade, *
+terra inteira, estremecei diante dele! R.
+10
+Publicai entre as nações: "Reina o Senhor!" †
+Ele firmou o universo inabalável, *
+e os povos ele julga com justiça. R.`
+    },
+    's17_qua_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Quarta-feira (30/12) — 6º dia na Oitava do Natal",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+R. Aleluia, Aleluia, Aleluia.
+V. Um dia sagrado brilhou para nós:
+Nações, vinde todas adorar o Senhor:
+pois hoje desceu grande luz sobre a terra!`
+    },
+    's17_qua_ev': {
+        title: "Evangelho — Lc 2,36-40 (Lecionário II, pág. 117)",
+        day: "Quarta-feira (30/12) — 6º dia na Oitava do Natal",
+        momento: "Evangelho",
+        referencia: "Lc 2,36-40",
+        frase: "Pôs-se a falar do menino a todos que esperavam a libertação de Jerusalém.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,36-40
+Naquele tempo,
+36
+havia também uma profetisa, chamada Ana,
+filha de Fanuel, da tribo de Aser.
+Era de idade muito avançada;
+quando jovem, tinha sido casada
+e vivera sete anos com o marido.
+37
+Depois ficara viúva,
+e agora já estava com oitenta e quatro anos.
+Não saía do Templo, dia e noite servindo a Deus
+com jejuns e orações.
+38
+Ana chegou nesse momento
+e pôs-se a louvar a Deus e a falar do menino
+a todos os que esperavam a libertação de Jerusalém.
+39
+Depois de cumprirem tudo, conforme a Lei do Senhor,
+voltaram à Galileia, para Nazaré, sua cidade.
+40
+O menino crescia e tornava-se forte,
+cheio de sabedoria;
+e a graça de Deus estava com ele.
+Palavra da Salvação.`
+    },
+    's17_qui_l1': {
+        title: "1ª Leitura — 1Jo 2,18-21 (Lecionário II, pág. 117)",
+        day: "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
+        momento: "1ª Leitura",
+        referencia: "1Jo 2,18-21",
+        frase: "Vós já recebestes a unção do Santo, e todos tendes conhecimento.",
+        text: `PRIMEIRA LEITURA
+Leitura da Primeira Carta de São João 2,18-21
+18
+Filhinhos, esta é a última hora.
+Ouvistes dizer que o Anticristo virá.
+Com efeito, muitos anticristos já apareceram.
+Por isso, sabemos que chegou a última hora.
+19
+Eles saíram do nosso meio,
+mas não eram dos nossos,
+pois se fossem realmente dos nossos,
+teriam permanecido conosco.
+Mas era necessário ficar claro
+que nem todos são dos nossos.
+20
+Vós já recebestes a unção do Santo,
+e todos tendes conhecimento.
+21
+Se eu vos escrevi,
+não é porque ignorais a verdade,
+mas porque a conheceis,
+e porque nenhuma mentira provém da verdade.
+Palavra do Senhor.`
+    },
+    's17_qui_sal': {
+        title: "Salmo Responsorial — Sl 95(96),1-2.11-12.13 (R. 11a) (Lecionário II, pág. 118)",
+        day: "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 95(96),1-2.11-12.13 (R. 11a)",
+        text: `Salmo responsorial
+Sl 95(96),1-2.11-12.13 (R. 11a)
+R. O céu se rejubile e exulte a terra!
+1
+Cantai ao Senhor Deus um canto novo,*
+cantai ao Senhor Deus, ó terra inteira!
+2
+Cantai e bendizei seu santo nome!*
+Dia após dia anunciai sua salvação. R.
+11
+O céu se rejubile e exulte a terra, *
+aplauda o mar com o que vive em suas águas;
+12
+os campos com seus frutos rejubilem *
+e exultem as florestas e as matas R.
+13
+na presença do Senhor, pois ele vem, *
+porque vem para julgar a terra inteira.
+Governará o mundo todo com justiça, *
+e os povos julgará com lealdade. R.`
+    },
+    's17_qui_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+Jo 1,14a.12a
+R. Aleluia, Aleluia, Aleluia.
+V. A palavra se fez carne, entre nós ela habitou;
+e todos os que a acolheram, de Deus filhos se tornaram.`
+    },
+    's17_qui_ev': {
+        title: "Evangelho — Jo 1,1-18 (Lecionário II, pág. 118)",
+        day: "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
+        momento: "Evangelho",
+        referencia: "Jo 1,1-18",
+        frase: "E a Palavra se fez carne.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo João 1,1-18
+1
+No princípio era a Palavra,
+e a Palavra estava com Deus;
+e a Palavra era Deus.
+2
+No princípio estava ela com Deus.
+3
+Tudo foi feito por ela
+e sem ela nada se fez de tudo que foi feito.
+4
+Nela estava a vida,
+e a vida era a luz dos homens.
+5
+E a luz brilha nas trevas,
+e as trevas não conseguiram dominá-la.
+6
+Surgiu um homem enviado por Deus;
+Seu nome era João.
+7
+Ele veio como testemunha,
+para dar testemunho da luz,
+para que todos chegassem à fé por meio dele.
+8
+Ele não era a luz,
+mas veio para dar testemunho da luz:
+9
+daquele que era a luz de verdade,
+que, vindo ao mundo,
+ilumina todo ser humano.
+10
+A Palavra estava no mundo
+- e o mundo foi feito por meio dela -
+mas o mundo não quis conhecê-la.
+11
+Veio para o que era seu,
+e os seus não a acolheram.
+12
+Mas, a todos que a receberam,
+deu-lhes capacidade de se tornarem filhos de Deus
+isto é, aos que acreditam em seu nome,
+13
+pois estes não nasceram do sangue
+nem da vontade da carne
+nem da vontade do varão,
+mas de Deus mesmo.
+14
+E a Palavra se fez carne
+e habitou entre nós.
+E nós contemplamos a sua glória,
+glória que recebe do Pai como filho unigênito,
+cheio de graça e de verdade.
+15
+Dele, João dá testemunho, clamando:
+"Este é aquele de quem eu disse:
+'O que vem depois de mim
+passou à minha frente,
+porque ele existia antes de mim' ".
+16
+De sua plenitude
+todos nós recebemos graça por graça.
+17
+Pois por meio de Moisés foi dada a Lei,
+mas a graça e a verdade
+nos chegaram através de Jesus Cristo.
+18
+A Deus, ninguém jamais viu.
+Mas o Unigênito de Deus,
+que está na intimidade do Pai,
+ele no-lo deu a conhecer.
+Palavra da Salvação.`
+    },
+    's17_sex_l1': {
+        title: "1ª Leitura — Nm 6,22-27 (Lecionário I, pág. 407)",
+        day: "Sexta-feira (01/01) — Santa Maria",
+        momento: "1ª Leitura",
+        referencia: "Nm 6,22-27",
+        frase: "Invocarão o meu nome sobre os filhos de Israel e eu os abençoarei.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro dos Números 6,22-27
+22
+O Senhor falou a Moisés, dizendo:
+23
+"Fala a Aarão e a seus filhos:
+Ao abençoar os filhos de Israel, dizei-lhes:
+24
+O Senhor te abençoe e te guarde!
+25
+'O Senhor faça brilhar sobre ti a sua face,
+e se compadeça de ti!
+26
+O Senhor volte para ti o seu rosto
+e te dê a paz!'
+27
+Assim invocarão o meu nome sobre os filhos de Israel,
+e eu os abençoarei".
+Palavra do Senhor.`
+    },
+    's17_sex_sal': {
+        title: "Salmo Responsorial — Sl 66(67),2-3.5.6.8 (R. 2a) (Lecionário I, pág. 407)",
+        day: "Sexta-feira (01/01) — Santa Maria",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 66(67),2-3.5.6.8 (R. 2a)",
+        text: `Salmo responsorial
+Sl 66(67),2-3.5.6.8 (R. 2a)
+R. Que Deus nos dê a sua graça e sua bênção.
+2
+Que Deus nos dê a sua graça e sua bênção, *
+e sua face resplandeça sobre nós!
+3
+Que na terra se conheça o seu caminho *
+e a sua salvação por entre os povos. R.
+5
+Exulte de alegria a terra inteira, *
+pois julgais o universo com justiça;
+os povos governais com retidão, *
+e guiais, em toda a terra, as nações. R.
+6
+Que as nações vos glorifiquem, ó Senhor, *
+que todas as nações vos glorifiquem!
+8
+Que o Senhor e nosso Deus nos abençoe, *
+e o respeitem os confins de toda a terra! R.`
+    },
+    's17_sex_l2': {
+        title: "2ª Leitura — Gl 4,4-7 (Lecionário I, pág. 408)",
+        day: "Sexta-feira (01/01) — Santa Maria",
+        momento: "2ª Leitura",
+        referencia: "Gl 4,4-7",
+        frase: "Deus enviou o seu Filho, nascido de uma mulher.",
+        text: `SEGUNDA LEITURA
+Leitura da Carta de São Paulo aos Gálatas 4,4-7
+Irmãos:
+4
+Quando se completou o tempo previsto,
+Deus enviou o seu Filho, nascido de uma mulher,
+nascido sujeito à Lei,
+5
+a fim de resgatar os que eram sujeitos à Lei
+e para que todos recebêssemos a filiação adotiva.
+6
+E porque sois filhos,
+Deus enviou aos nossos corações o Espírito do seu Filho,
+que clama: Abá - ó Pai!
+7
+Assim já não és mais escravo, mas filho;
+e se és filho, és também herdeiro:
+tudo isso, por graça de Deus.
+Palavra do Senhor.`
+    },
+    's17_sex_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Sexta-feira (01/01) — Santa Maria",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+Hb 1,1-2
+R. Aleluia, Aleluia, Aleluia.
+V. De muitos modos, Deus outrora
+nos falou pelos profetas;
+nestes tempos derradeiros,
+nos falou pelo seu Filho.`
+    },
+    's17_sex_ev': {
+        title: "Evangelho — Lc 2,16-21 (Lecionário I, pág. 408)",
+        day: "Sexta-feira (01/01) — Santa Maria",
+        momento: "Evangelho",
+        referencia: "Lc 2,16-21",
+        frase: "Encontraram Maria e José e o recém-nascido. E, oito dias depois, deram-lhe o nome de Jesus.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Lucas 2,16-21
+Naquele tempo,
+16
+os pastores foram às pressas a Belém
+e encontraram Maria e José,
+e o recém-nascido, deitado na manjedoura.
+17
+Tendo-o visto, contaram o que lhes fora dito
+sobre o menino.
+18
+E todos os que ouviram os pastores
+ficaram maravilhados com aquilo que contavam.
+19
+Quanto a Maria, guardava todos estes fatos
+e meditava sobre eles em seu coração.
+20
+Os pastores voltaram, glorificando e louvando a Deus
+por tudo que tinham visto e ouvido,
+conforme lhes tinha sido dito.
+21
+Quando se completaram os oito dias
+para a circuncisão do menino,
+deram-lhe o nome de Jesus,
+como fora chamado pelo anjo antes de ser concebido.
+Palavra da Salvação.`
+    },
+    's17_dom_l1': {
+        title: "1ª Leitura — Is 60,1-6 (Lecionário I, pág. 415)",
+        day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
+        momento: "1ª Leitura",
+        referencia: "Is 60,1-6",
+        frase: "Apareceu sobre ti a glória do Senhor.",
+        text: `PRIMEIRA LEITURA
+Leitura do Livro do Profeta Isaías 60, 1-6
+1
+Levanta-te, acende as luzes, Jerusalém,
+porque chegou a tua luz,
+apareceu sobre ti a glória do Senhor.
+2
+Eis que está a terra envolvida em trevas,
+e nuvens escuras cobrem os povos;
+mas sobre ti apareceu o Senhor,
+e sua glória já se manifesta sobre ti.
+3
+Os povos caminham à tua luz
+e os reis ao clarão de tua aurora.
+4
+Levanta os olhos ao redor e vê:
+todos se reuniram e vieram a ti;
+teus filhos vêm chegando de longe
+com tuas filhas, carregadas nos braços.
+5
+Ao vê-los, ficarás radiante,
+com o coração vibrando e batendo forte,
+pois com eles virão as riquezas de além-mar
+e mostrarão o poderio de suas nações;
+6
+será uma inundação de camelos
+e dromedários de Madiã e Efa a te cobrir;
+virão todos os de Sabá, trazendo ouro e incenso
+e proclamando a glória do Senhor.
+Palavra do Senhor.`
+    },
+    's17_dom_sal': {
+        title: "Salmo Responsorial — Sl 71(72),1-2.7-8.10-11.12-13 (R. cf. 11) (Lecionário I, pág. 415)",
+        day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
+        momento: "Salmo Responsorial",
+        referencia: "Sl 71(72),1-2.7-8.10-11.12-13 (R. cf. 11)",
+        text: `Salmo responsorial
+Sl 71(72),1-2.7-8.10-11.12-13 (R. cf. 11)
+R. As nações de toda a terra, hão de adorar-vos, ó Senhor!
+1
+Dai ao Rei vossos poderes, Senhor Deus,*
+vossa justiça ao descendente da realeza!
+2
+Com justiça ele governe o vosso povo,*
+com equidade ele julgue os vossos pobres. R.
+7
+Nos seus dias a justiça florirá*
+e grande paz, até que a lua perca o brilho!
+8
+De mar a mar estenderá o seu domínio,*
+e desde o rio até os confins de toda a terra! R.
+10
+Os reis de Társis e das ilhas hão de vir*
+e oferecer-lhe seus presentes e seus dons;
+e também os reis de Seba e de Sabá*
+hão de trazer-lhe oferendas e tributos.
+11
+Os reis de toda a terra hão de adorá-lo,*
+e todas as nações hão de servi-lo. R.
+12
+Libertará o indigente que suplica,*
+e o pobre ao qual ninguém quer ajudar.
+13
+Terá pena do indigente e do infeliz,*
+e a vida dos humildes salvará. R.`
+    },
+    's17_dom_l2': {
+        title: "2ª Leitura — Ef 3,2-3a.5-6 (Lecionário I, pág. 416)",
+        day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
+        momento: "2ª Leitura",
+        referencia: "Ef 3,2-3a.5-6",
+        frase: "Agora foi-nos revelado que os pagãos são co-herdeiros das promessas.",
+        text: `SEGUNDA LEITURA
+Leitura da Carta de São Paulo aos Efésios 3,2-3a.5-6
+Irmãos:
+2
+Se ao menos soubésseis da graça que Deus me concedeu
+para realizar o seu plano a vosso respeito,
+3a
+e como, por revelação, tive conhecimento do mistério.
+5
+Este mistério, Deus não o fez conhecer
+aos homens das gerações passadas
+mas acaba de o revelar agora, pelo Espírito,
+aos seus santos apóstolos e profetas:
+6
+os pagãos são admitidos à mesma herança,
+são membros do mesmo corpo,
+são associados à mesma promessa em Jesus Cristo,
+por meio do Evangelho.
+Palavra do Senhor.`
+    },
+    's17_dom_acl': {
+        title: "Aclamação ao Evangelho — ",
+        day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
+        momento: "Aclamação ao Evangelho",
+        referencia: "",
+        text: `Aclamação ao Evangelho
+cf. Mt 2,2
+R. Aleluia, Aleluia, Aleluia.
+V. Vimos sua estrela no Oriente
+e viemos adorar o Senhor.`
+    },
+    's17_dom_ev': {
+        title: "Evangelho — Mt 2,1-12 (Lecionário I, pág. 417)",
+        day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
+        momento: "Evangelho",
+        referencia: "Mt 2,1-12",
+        frase: "Viemos do Oriente adorar o Rei.",
+        text: `EVANGELHO
+Proclamação do Evangelho de Jesus Cristo segundo Mateus 2,1-12
+1
+Tendo nascido Jesus na cidade de Belém, na Judeia,
+no tempo do rei Herodes,
+eis que alguns magos do Oriente chegaram a Jerusalém,
+2
+perguntando:
+"Onde está o rei dos judeus, que acaba de nascer?
+Nós vimos a sua estrela no Oriente e viemos adorá-lo".
+3
+Ao saber disso, o rei Herodes ficou perturbado,
+assim como toda a cidade de Jerusalém.
+4
+Reunindo todos os sumos sacerdotes e os mestres da Lei,
+perguntava-lhes onde o Messias deveria nascer.
+5
+Eles responderam: "Em Belém, na Judeia,
+pois assim foi escrito pelo profeta:
+6
+E tu, Belém, terra de Judá, de modo algum
+és a menor entre as principais cidades de Judá,
+porque de ti sairá um chefe
+que vai ser o pastor de Israel, o meu povo".
+7
+Então Herodes chamou em segredo os magos
+e procurou saber deles cuidadosamente
+quando a estrela tinha aparecido.
+8
+Depois os enviou a Belém, dizendo:
+"Ide e procurai obter informações exatas
+sobre o menino.
+E, quando o encontrardes, avisai-me,
+para que também eu vá adorá-lo".
+9
+Depois que ouviram o rei, eles partiram.
+E a estrela, que tinham visto no Oriente, ia adiante deles,
+até parar sobre o lugar onde estava o menino.
+10
+Ao verem de novo a estrela,
+os magos sentiram uma alegria muito grande.
+11
+Quando entraram na casa,
+viram o menino com Maria, sua mãe.
+Ajoelharam-se diante dele, e o adoraram.
+Depois abriram seus cofres
+e lhe ofereceram presentes: ouro, incenso e mirra.
+12
+Avisados em sonho para não voltarem a Herodes,
+retornaram para a sua terra, seguindo outro caminho.
+Palavra da Salvação.`
     }
 };
 

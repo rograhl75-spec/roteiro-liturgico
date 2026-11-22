@@ -15,7 +15,7 @@
   "natal_noite",
   "natal_dia"
  ],
- "nota": "RASCUNHO – aguardando aprovação. Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
+ "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
  "dias": [
   {
    "data": "2026-12-21",
@@ -258,7 +258,7 @@
      "rotulo": "🕯️ Bênção do presépio e ritos da Noite"
     }
    ],
-   "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio depois da homilia."
+   "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio logo após a incensação do presépio (Rito da Luz)."
   },
   {
    "data": "2026-12-25",
@@ -3062,6 +3062,5 @@
    "pdf": "semanas/2026-12-21/pdf/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.pdf",
    "pdfHash": "6522753e0e572e4d"
   }
- },
- "aprovado": false
+ }
 }

@@ -2066,5 +2066,831 @@ window.semanasData = [
    "semanas/2026-12-14/PRECES - 4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx",
    "semanas/2026-12-14/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.docx"
   ]
+ },
+ {
+  "legacyWeek": 15,
+  "id": "2026-12-21",
+  "periodo": "21 a 27 de dezembro",
+  "shortTitle": "21 a 27 de dezembro — Natal do Senhor e Sagrada Família",
+  "fullTitle": "Semana de 21 a 27 de dezembro de 2026 — Natal do Senhor e Sagrada Família de Jesus, Maria e José",
+  "roteiroLabel": "📖 Roteiro — Sagrada Família de Jesus, Maria e José",
+  "roteiroExtras": [
+   "natal_noite",
+   "natal_dia",
+   "rito"
+  ],
+  "precesExtras": [
+   "natal_noite",
+   "natal_dia"
+  ],
+  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
+  "dias": [
+   {
+    "data": "2026-12-21",
+    "titulo": "Segunda-feira, 21 de Dezembro de 2026",
+    "dia": "Segunda",
+    "cor": "roxo",
+    "grau": "Féria",
+    "celebracao": "4ª Semana do Advento — Féria do Advento",
+    "selecaoTitulo": "Segunda-feira — 21/12",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Laurindo"
+     ],
+     [
+      "14h00–17h30",
+      "Secretaria",
+      "Pe. Laurindo",
+      "confissao",
+      "Confissões e Direção Espiritual"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ct 2,8-14",
+      "s16_seg_l1",
+      "II / 99"
+     ],
+     [
+      "Salmo",
+      "Sl 32(33),2-3.11-12.20-21 (R. 1a e 3a)",
+      "s16_seg_sal",
+      "II / 101"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s16_seg_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 1,39-45",
+      "s16_seg_ev",
+      "II / 101"
+     ]
+    ],
+    "missal": {
+     "coleta": "121",
+     "oferendas": "121",
+     "comunhao": "121",
+     "eucaristica": "537 (OE II)",
+     "prefacio": "453 (Advento II)"
+    }
+   },
+   {
+    "data": "2026-12-22",
+    "titulo": "Terça-feira, 22 de Dezembro de 2026",
+    "dia": "Terça",
+    "cor": "roxo",
+    "grau": "Féria",
+    "celebracao": "4ª Semana do Advento — Féria do Advento",
+    "selecaoTitulo": "Terça-feira — 22/12",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Manuel José"
+     ],
+     [
+      "14h30–17h30",
+      "Secretaria",
+      "Pe. Manuel José",
+      "confissao",
+      "Direção Espiritual — Padre de Schoenstatt"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "1Sm 1,24-28",
+      "s16_ter_l1",
+      "II / 102"
+     ],
+     [
+      "Salmo",
+      "1Sm 2,1.4-5.6-7.8abcd (R. 1a)",
+      "s16_ter_sal",
+      "II / 103"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s16_ter_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 1,46-56",
+      "s16_ter_ev",
+      "II / 103"
+     ]
+    ],
+    "missal": {
+     "coleta": "122",
+     "oferendas": "122",
+     "comunhao": "122",
+     "eucaristica": "537 (OE II)",
+     "prefacio": "453 (Advento II)"
+    }
+   },
+   {
+    "data": "2026-12-23",
+    "titulo": "Quarta-feira, 23 de Dezembro de 2026",
+    "dia": "Quarta",
+    "cor": "roxo",
+    "grau": "Féria",
+    "celebracao": "4ª Semana do Advento — Féria do Advento",
+    "selecaoTitulo": "Quarta-feira — 23/12",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Ml 3,1-4.23-24",
+      "s16_qua_l1",
+      "II / 104"
+     ],
+     [
+      "Salmo",
+      "Sl 24(25),4-5ab.8-9.10 e 14 (R. Lc 21,28)",
+      "s16_qua_sal",
+      "II / 105"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s16_qua_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 1,57-66",
+      "s16_qua_ev",
+      "II / 106"
+     ]
+    ],
+    "missal": {
+     "coleta": "123",
+     "oferendas": "123",
+     "comunhao": "123",
+     "eucaristica": "537 (OE II)",
+     "prefacio": "453 (Advento II)"
+    }
+   },
+   {
+    "data": "2026-12-24",
+    "titulo": "Quinta-feira, 24 de Dezembro de 2026",
+    "dia": "Quinta",
+    "cor": "branco",
+    "grau": "Solenidade",
+    "celebracao": "Natal do Senhor — Missa da Noite (Solenidade)",
+    "selecaoTitulo": "Quinta-feira — 24/12 — Natal do Senhor",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Heriberto"
+     ],
+     [
+      "19h00",
+      "Capela São Domingos Sávio",
+      "Pe. Laurindo"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Is 9,1-6",
+      "s16_qui_l1",
+      "I / 390"
+     ],
+     [
+      "Salmo",
+      "Sl 95(96),1-2a.2b-3.11-12.13 (R. Lc 2,11)",
+      "s16_qui_sal",
+      "I / 390"
+     ],
+     [
+      "2ª Leitura",
+      "Tt 2,11-14",
+      "s16_qui_l2",
+      "I / 391"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "Lc 2,10-11",
+      "s16_qui_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 2,1-14",
+      "s16_qui_ev",
+      "I / 392"
+     ]
+    ],
+    "missal": {
+     "coleta": "128",
+     "oferendas": "128",
+     "comunhao": "129",
+     "gloria": "Cantado (pág. 442)",
+     "creio": "Rezado – todos se ajoelham ao «E se encarnou»",
+     "eucaristica": "523 (OE I – Cânon Romano, com o «Em comunhão» do Natal)",
+     "prefacio": "455 (Natal I; ou II, 456, ou III, 457)",
+     "bencao": "129 (Natal do Senhor)"
+    },
+    "antifonas": "antifonas_16_qui",
+    "botoes": [
+     {
+      "tipo": "roteiro",
+      "chave": "natal_noite",
+      "rotulo": "Roteiro — Natal – Missa da Noite"
+     },
+     {
+      "tipo": "preces",
+      "chave": "natal_noite",
+      "rotulo": "Preces — Natal – Missa da Noite"
+     },
+     {
+      "tipo": "roteiro",
+      "chave": "rito",
+      "rotulo": "🕯️ Bênção do presépio e ritos da Noite"
+     }
+    ],
+    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Bênção do presépio logo após a incensação do presépio (Rito da Luz)."
+   },
+   {
+    "data": "2026-12-25",
+    "titulo": "Sexta-feira, 25 de Dezembro de 2026",
+    "dia": "Sexta",
+    "cor": "branco",
+    "grau": "Solenidade",
+    "celebracao": "Natal do Senhor — Missa do Dia (Solenidade)",
+    "selecaoTitulo": "Sexta-feira — 25/12 — Natal de Nosso Senhor Jesus Cristo",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Is 52,7-10",
+      "s16_sex_l1",
+      "I / 396"
+     ],
+     [
+      "Salmo",
+      "Sl 97(98),1.2-3ab.3cd-4.5-6 (R. 3cd)",
+      "s16_sex_sal",
+      "I / 396"
+     ],
+     [
+      "2ª Leitura",
+      "Hb 1,1-6",
+      "s16_sex_l2",
+      "I / 397"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s16_sex_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Jo 1,1-18",
+      "s16_sex_ev",
+      "I / 398"
+     ]
+    ],
+    "missal": {
+     "coleta": "132",
+     "oferendas": "132",
+     "comunhao": "132",
+     "gloria": "Cantado (pág. 442)",
+     "creio": "Rezado – todos se ajoelham ao «E se encarnou»",
+     "eucaristica": "523 (OE I – Cânon Romano, com o «Em comunhão» do Natal)",
+     "prefacio": "455 (Natal I; ou II, 456, ou III, 457)",
+     "bencao": "133 (Natal do Senhor)"
+    },
+    "botoes": [
+     {
+      "tipo": "roteiro",
+      "chave": "natal_dia",
+      "rotulo": "Roteiro — Natal – Missa do Dia"
+     },
+     {
+      "tipo": "preces",
+      "chave": "natal_dia",
+      "rotulo": "Preces — Natal – Missa do Dia"
+     }
+    ],
+    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados."
+   }
+  ],
+  "fimDeSemana": {
+   "titulo": "Fim de semana: 26 e 27 de Dezembro de 2026",
+   "dia": "Sábado",
+   "cor": "branco",
+   "grau": "Festa",
+   "celebracao": "Sagrada Família de Jesus, Maria e José (Festa) — sábado vespertino e domingo",
+   "selecaoTitulo": "Fim de semana — 26 e 27/12 — Sagrada Família de Jesus, Maria e José",
+   "dias": [
+    {
+     "data": "2026-12-26",
+     "dia": "Sábado",
+     "escala": [
+      [
+       "18h30",
+       "Igreja Matriz",
+       "Pe. Laurindo"
+      ],
+      [
+       "19h00",
+       "Capela São Domingos Sávio",
+       "Pe. Heriberto"
+      ]
+     ]
+    },
+    {
+     "data": "2026-12-27",
+     "dia": "Domingo",
+     "escala": [
+      [
+       "09h00",
+       "Igreja Matriz",
+       "Pe. Laurindo"
+      ],
+      [
+       "11h00",
+       "Igreja Matriz",
+       "Pe. Heriberto"
+      ],
+      [
+       "18h30",
+       "Igreja Matriz",
+       "Pe. Heriberto"
+      ]
+     ]
+    }
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Eclo 3,3-7.14-17a",
+     "s16_dom_l1",
+     "I / 400"
+    ],
+    [
+     "Salmo",
+     "Sl 127(128),1-2.3.4-5 (R. cf.1)",
+     "s16_dom_sal",
+     "I / 400"
+    ],
+    [
+     "2ª Leitura",
+     "Cl 3,12-21",
+     "s16_dom_l2",
+     "I / 401"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "Cl 3,15a.16a",
+     "s16_dom_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Lc 2,22-40",
+     "s16_dom_ev",
+     "I / 402"
+    ],
+    [
+     "Evangelho (mais breve)",
+     "Lc 2,22.39-40",
+     "s16_dom_ev_breve",
+     "I / 404"
+    ]
+   ],
+   "missal": {
+    "coleta": "134",
+    "oferendas": "134",
+    "comunhao": "134",
+    "gloria": "Cantado (pág. 442)",
+    "creio": "Rezado (página omitida)",
+    "eucaristica": "537 (OE II)",
+    "prefacio": "455 (Natal I)",
+    "bencao": "579 (Natal do Senhor, opcional)"
+   },
+   "antifonas": "antifonas_16"
+  },
+  "documentos": [
+   "semanas/2026-12-21/Leituras 21 a 27 dezembro 2026.docx",
+   "semanas/2026-12-21/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.docx",
+   "semanas/2026-12-21/PRECES - SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026.docx",
+   "semanas/2026-12-21/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+   "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+   "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+   "semanas/2026-12-21/PRECES - NATAL DO SENHOR MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+   "semanas/2026-12-21/RITO - BÊNÇÃO DO PRESÉPIO E RITOS DA NOITE DE NATAL - 24 DEZEMBRO 2026.docx"
+  ]
+ },
+ {
+  "legacyWeek": 16,
+  "id": "2026-12-28",
+  "periodo": "28 de dezembro a 3 de janeiro",
+  "shortTitle": "28 de dezembro a 3 de janeiro — Oitava do Natal, Mãe de Deus e Epifania",
+  "fullTitle": "Semana de 28 de dezembro de 2026 a 3 de janeiro de 2027 — Oitava do Natal, Santa Maria, Mãe de Deus, e Epifania do Senhor",
+  "roteiroLabel": "📖 Roteiro — Epifania do Senhor",
+  "roteiroExtras": [
+   "deum",
+   "mae_deus",
+   "rito"
+  ],
+  "precesExtras": [
+   "deum",
+   "mae_deus"
+  ],
+  "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia (Ano B). Escala de janeiro de 2027 ainda não consta na planilha: horários e celebrantes de 1º a 3/1 a confirmar (Santa Maria, Mãe de Deus: 19h00).",
+  "dias": [
+   {
+    "data": "2026-12-28",
+    "titulo": "Segunda-feira, 28 de Dezembro de 2026",
+    "dia": "Segunda",
+    "cor": "vermelho",
+    "grau": "Festa",
+    "celebracao": "Os Santos Inocentes, mártires — Festa",
+    "selecaoTitulo": "Segunda-feira — 28/12 — Os Santos Inocentes",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Laurindo"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "1Jo 1,5–2,2",
+      "s17_seg_l1",
+      "III / 228"
+     ],
+     [
+      "Salmo",
+      "Sl 123(124),2-3.4-5.7b-8 (R. 7a)",
+      "s17_seg_sal",
+      "III / 229"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s17_seg_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Mt 2,13-18",
+      "s17_seg_ev",
+      "III / 230"
+     ]
+    ],
+    "missal": {
+     "coleta": "882",
+     "oferendas": "882",
+     "comunhao": "883",
+     "prefacio": "455 (Natal)",
+     "eucaristica": "537 (OE II)",
+     "gloria": "442",
+     "bencao": "579"
+    },
+    "antifonas": "antifonas_17_seg"
+   },
+   {
+    "data": "2026-12-29",
+    "titulo": "Terça-feira, 29 de Dezembro de 2026",
+    "dia": "Terça",
+    "cor": "branco",
+    "grau": "",
+    "celebracao": "5º dia na Oitava do Natal",
+    "selecaoTitulo": "Terça-feira — 29/12 — 5º dia na Oitava do Natal",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Lairton"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "1Jo 2,3-11",
+      "s17_ter_l1",
+      "II / 113"
+     ],
+     [
+      "Salmo",
+      "Sl 95(96),1-2a.2b-3.5b-6 (R. 11a)",
+      "s17_ter_sal",
+      "II / 114"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s17_ter_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 2,22-35",
+      "s17_ter_ev",
+      "II / 114"
+     ]
+    ],
+    "missal": {
+     "coleta": "135",
+     "oferendas": "135",
+     "comunhao": "135",
+     "gloria": "442",
+     "prefacio": "455 (Natal)",
+     "eucaristica": "537 (OE II)"
+    }
+   },
+   {
+    "data": "2026-12-30",
+    "titulo": "Quarta-feira, 30 de Dezembro de 2026",
+    "dia": "Quarta",
+    "cor": "branco",
+    "grau": "",
+    "celebracao": "6º dia na Oitava do Natal",
+    "selecaoTitulo": "Quarta-feira — 30/12 — 6º dia na Oitava do Natal",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "1Jo 2,12-17",
+      "s17_qua_l1",
+      "II / 115"
+     ],
+     [
+      "Salmo",
+      "Sl 95(96),7-8a.8b-9.10 (R. 11a)",
+      "s17_qua_sal",
+      "II / 116"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s17_qua_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 2,36-40",
+      "s17_qua_ev",
+      "II / 117"
+     ]
+    ],
+    "missal": {
+     "coleta": "136",
+     "oferendas": "136",
+     "comunhao": "136",
+     "gloria": "442",
+     "prefacio": "455 (Natal)",
+     "eucaristica": "537 (OE II)"
+    }
+   },
+   {
+    "data": "2026-12-31",
+    "titulo": "Quinta-feira, 31 de Dezembro de 2026",
+    "dia": "Quinta",
+    "cor": "branco",
+    "grau": "",
+    "celebracao": "7º dia na Oitava do Natal",
+    "selecaoTitulo": "Quinta-feira — 31/12 — 7º dia na Oitava do Natal",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "Pe. Heriberto"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "1Jo 2,18-21",
+      "s17_qui_l1",
+      "II / 117"
+     ],
+     [
+      "Salmo",
+      "Sl 95(96),1-2.11-12.13 (R. 11a)",
+      "s17_qui_sal",
+      "II / 118"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s17_qui_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Jo 1,1-18",
+      "s17_qui_ev",
+      "II / 118"
+     ]
+    ],
+    "missal": {
+     "coleta": "137",
+     "oferendas": "137",
+     "comunhao": "137",
+     "prefacio": "455 (Natal I; ou II, 456, ou III, 457)",
+     "eucaristica": "537 (OE II)",
+     "gloria": "Cantado (pág. 442)"
+    },
+    "botoes": [
+     {
+      "tipo": "roteiro",
+      "chave": "deum",
+      "rotulo": "Roteiro — 31/12 – Te Deum"
+     },
+     {
+      "tipo": "preces",
+      "chave": "deum",
+      "rotulo": "Preces — 31/12"
+     },
+     {
+      "tipo": "roteiro",
+      "chave": "rito",
+      "rotulo": "🕯️ Te Deum"
+     }
+    ],
+    "nota": "Te Deum em ação de graças pelo ano que termina, depois dos avisos e antes da bênção final (costume da paróquia)."
+   },
+   {
+    "data": "2027-01-01",
+    "titulo": "Sexta-feira, 1 de Janeiro de 2027",
+    "dia": "Sexta",
+    "cor": "branco",
+    "grau": "Solenidade",
+    "celebracao": "Santa Maria, Mãe de Deus (Solenidade) — Oitava do Natal",
+    "selecaoTitulo": "Sexta-feira — 01/01 — Santa Maria",
+    "escala": [
+     [
+      "19h00",
+      "Igreja Matriz",
+      "a confirmar"
+     ]
+    ],
+    "leituras": [
+     [
+      "1ª Leitura",
+      "Nm 6,22-27",
+      "s17_sex_l1",
+      "I / 407"
+     ],
+     [
+      "Salmo",
+      "Sl 66(67),2-3.5.6.8 (R. 2a)",
+      "s17_sex_sal",
+      "I / 407"
+     ],
+     [
+      "2ª Leitura",
+      "Gl 4,4-7",
+      "s17_sex_l2",
+      "I / 408"
+     ],
+     [
+      "Aclamação ao Evangelho",
+      "",
+      "s17_sex_acl",
+      ""
+     ],
+     [
+      "Evangelho",
+      "Lc 2,16-21",
+      "s17_sex_ev",
+      "I / 408"
+     ]
+    ],
+    "missal": {
+     "coleta": "138",
+     "oferendas": "138",
+     "comunhao": "139",
+     "gloria": "Cantado (pág. 442)",
+     "creio": "Rezado (página omitida)",
+     "prefacio": "493 (Bem-aventurada Virgem Maria I – «na maternidade»)",
+     "eucaristica": "523 (OE I – Cânon Romano, com o «Em comunhão» do Natal)",
+     "bencao": "139 (início do ano)"
+    },
+    "antifonas": "antifonas_17_sex",
+    "botoes": [
+     {
+      "tipo": "roteiro",
+      "chave": "mae_deus",
+      "rotulo": "Roteiro — Santa Maria, Mãe de Deus"
+     },
+     {
+      "tipo": "preces",
+      "chave": "mae_deus",
+      "rotulo": "Preces — Santa Maria, Mãe de Deus"
+     }
+    ],
+    "nota": "Missa solene: incenso, «Por Cristo» e Amém cantados. Dia Mundial da Paz. Missa às 19h00, na Igreja Matriz."
+   }
+  ],
+  "fimDeSemana": {
+   "titulo": "Fim de semana: 2 e 3 de Janeiro de 2027",
+   "dia": "Sábado",
+   "cor": "branco",
+   "grau": "Solenidade",
+   "celebracao": "Epifania do Senhor (Solenidade) — sábado vespertino e domingo",
+   "selecaoTitulo": "Fim de semana — 02 e 03/01 — Epifania do Senhor",
+   "dias": [
+    {
+     "data": "2027-01-02",
+     "dia": "Sábado",
+     "escala": []
+    },
+    {
+     "data": "2027-01-03",
+     "dia": "Domingo",
+     "escala": []
+    }
+   ],
+   "leituras": [
+    [
+     "1ª Leitura",
+     "Is 60,1-6",
+     "s17_dom_l1",
+     "I / 415"
+    ],
+    [
+     "Salmo",
+     "Sl 71(72),1-2.7-8.10-11.12-13 (R. cf. 11)",
+     "s17_dom_sal",
+     "I / 415"
+    ],
+    [
+     "2ª Leitura",
+     "Ef 3,2-3a.5-6",
+     "s17_dom_l2",
+     "I / 416"
+    ],
+    [
+     "Aclamação ao Evangelho",
+     "",
+     "s17_dom_acl",
+     ""
+    ],
+    [
+     "Evangelho",
+     "Mt 2,1-12",
+     "s17_dom_ev",
+     "I / 417"
+    ]
+   ],
+   "missal": {
+    "coleta": "144",
+    "oferendas": "144",
+    "comunhao": "144",
+    "gloria": "Cantado (pág. 442)",
+    "creio": "Rezado (página omitida)",
+    "prefacio": "458 (Epifania do Senhor)",
+    "eucaristica": "537 (OE II)",
+    "bencao": "145 (Epifania do Senhor)"
+   },
+   "antifonas": "antifonas_17",
+   "nota": "Incenso somente na Missa de domingo às 18h30. Anúncio da Páscoa e das Solenidades Móveis de 2027 depois do Evangelho, em todas as Missas."
+  },
+  "documentos": [
+   "semanas/2026-12-28/Leituras 28 dezembro 2026 a 3 janeiro 2027.docx",
+   "semanas/2026-12-28/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.docx",
+   "semanas/2026-12-28/PRECES - EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.docx",
+   "semanas/2026-12-28/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.docx",
+   "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",
+   "semanas/2026-12-28/PRECES - 7º DIA NA OITAVA DO NATAL - 31 DEZEMBRO 2026.docx",
+   "semanas/2026-12-28/PRECES - SANTA MARIA MÃE DE DEUS - 1 JANEIRO 2027.docx",
+   "semanas/2026-12-28/RITO - TE DEUM - 31 DEZEMBRO 2026.docx"
+  ]
  }
 ];
