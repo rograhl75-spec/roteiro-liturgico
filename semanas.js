@@ -2607,7 +2607,7 @@ window.semanasData = [
      ],
      [
       "Aclamação ao Evangelho",
-      "",
+      "Lc 2,32",
       "s17_ter_acl",
       ""
      ],
@@ -2707,7 +2707,7 @@ window.semanasData = [
      ],
      [
       "Aclamação ao Evangelho",
-      "",
+      "Jo 1,14a.12a",
       "s17_qui_acl",
       ""
      ],
@@ -2757,7 +2757,7 @@ window.semanasData = [
      [
       "19h00",
       "Igreja Matriz",
-      "a confirmar"
+      "Pe. Heriberto"
      ]
     ],
     "leituras": [
@@ -2781,7 +2781,7 @@ window.semanasData = [
      ],
      [
       "Aclamação ao Evangelho",
-      "",
+      "Hb 1,1-2",
       "s17_sex_acl",
       ""
      ],
@@ -2829,12 +2829,39 @@ window.semanasData = [
     {
      "data": "2027-01-02",
      "dia": "Sábado",
-     "escala": []
+     "escala": [
+      [
+       "18h30",
+       "Igreja Matriz",
+       "A definir"
+      ],
+      [
+       "19h00",
+       "Capela São Domingos Sávio",
+       "A definir"
+      ]
+     ]
     },
     {
      "data": "2027-01-03",
      "dia": "Domingo",
-     "escala": []
+     "escala": [
+      [
+       "09h00",
+       "Igreja Matriz",
+       "A definir"
+      ],
+      [
+       "11h00",
+       "Igreja Matriz",
+       "A definir"
+      ],
+      [
+       "18h30",
+       "Igreja Matriz",
+       "A definir"
+      ]
+     ]
     }
    ],
    "leituras": [
@@ -2858,7 +2885,7 @@ window.semanasData = [
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "cf. Mt 2,2",
      "s17_dom_acl",
      ""
     ],

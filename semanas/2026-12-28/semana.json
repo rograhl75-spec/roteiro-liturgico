@@ -99,7 +99,7 @@
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Lc 2,32",
      "s17_ter_acl",
      ""
     ],
@@ -199,7 +199,7 @@
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Jo 1,14a.12a",
      "s17_qui_acl",
      ""
     ],
@@ -273,7 +273,7 @@
     ],
     [
      "Aclamação ao Evangelho",
-     "",
+     "Hb 1,1-2",
      "s17_sex_acl",
      ""
     ],
@@ -377,7 +377,7 @@
    ],
    [
     "Aclamação ao Evangelho",
-    "",
+    "cf. Mt 2,2",
     "s17_dom_acl",
     ""
    ],
@@ -459,7 +459,7 @@
   },
   "s17_ter_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Lc 2,32",
    "day": "Terça-feira (29/12) — 5º dia na Oitava do Natal",
    "text": "Aclamação ao Evangelho\nLc 2,32\nR. Aleluia, Aleluia, Aleluia.\nV. Sois a luz que brilhará para os gentios\ne para a glória de Israel, o vosso povo.",
    "title": "Aclamação ao Evangelho — "
@@ -519,7 +519,7 @@
   },
   "s17_qui_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Jo 1,14a.12a",
    "day": "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
    "text": "Aclamação ao Evangelho\nJo 1,14a.12a\nR. Aleluia, Aleluia, Aleluia.\nV. A palavra se fez carne, entre nós ela habitou;\ne todos os que a acolheram, de Deus filhos se tornaram.",
    "title": "Aclamação ao Evangelho — "
@@ -557,7 +557,7 @@
   },
   "s17_sex_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "Hb 1,1-2",
    "day": "Sexta-feira (01/01) — Santa Maria",
    "text": "Aclamação ao Evangelho\nHb 1,1-2\nR. Aleluia, Aleluia, Aleluia.\nV. De muitos modos, Deus outrora\nnos falou pelos profetas;\nnestes tempos derradeiros,\nnos falou pelo seu Filho.",
    "title": "Aclamação ao Evangelho — "
@@ -595,7 +595,7 @@
   },
   "s17_dom_acl": {
    "momento": "Aclamação ao Evangelho",
-   "referencia": "",
+   "referencia": "cf. Mt 2,2",
    "day": "Fim de Semana (02 e 03/01) — Epifania do Senhor",
    "text": "Aclamação ao Evangelho\ncf. Mt 2,2\nR. Aleluia, Aleluia, Aleluia.\nV. Vimos sua estrela no Oriente\ne viemos adorar o Senhor.",
    "title": "Aclamação ao Evangelho — "

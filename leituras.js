@@ -5334,7 +5334,7 @@ e o seu templo, que beleza e esplendor! R.`
         title: "Aclamação ao Evangelho — ",
         day: "Terça-feira (29/12) — 5º dia na Oitava do Natal",
         momento: "Aclamação ao Evangelho",
-        referencia: "",
+        referencia: "Lc 2,32",
         text: `Aclamação ao Evangelho
 Lc 2,32
 R. Aleluia, Aleluia, Aleluia.
@@ -5568,7 +5568,7 @@ e os povos julgará com lealdade. R.`
         title: "Aclamação ao Evangelho — ",
         day: "Quinta-feira (31/12) — 7º dia na Oitava do Natal",
         momento: "Aclamação ao Evangelho",
-        referencia: "",
+        referencia: "Jo 1,14a.12a",
         text: `Aclamação ao Evangelho
 Jo 1,14a.12a
 R. Aleluia, Aleluia, Aleluia.
@@ -5736,7 +5736,7 @@ Palavra do Senhor.`
         title: "Aclamação ao Evangelho — ",
         day: "Sexta-feira (01/01) — Santa Maria",
         momento: "Aclamação ao Evangelho",
-        referencia: "",
+        referencia: "Hb 1,1-2",
         text: `Aclamação ao Evangelho
 Hb 1,1-2
 R. Aleluia, Aleluia, Aleluia.
@@ -5880,7 +5880,7 @@ Palavra do Senhor.`
         title: "Aclamação ao Evangelho — ",
         day: "Fim de Semana (02 e 03/01) — Epifania do Senhor",
         momento: "Aclamação ao Evangelho",
-        referencia: "",
+        referencia: "cf. Mt 2,2",
         text: `Aclamação ao Evangelho
 cf. Mt 2,2
 R. Aleluia, Aleluia, Aleluia.

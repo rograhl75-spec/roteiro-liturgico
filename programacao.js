@@ -76,8 +76,9 @@
           <table class="liturgy-table">${cabecalho.length ? `<thead><tr>${cabecalho.map((texto) => `<th scope="col">${texto}</th>`).join('')}</tr></thead>` : ''}
           <tbody>${linhas.map((linha) => `<tr>${linha.map((texto) => `<td>${texto}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 
+  // Aclamações sem citação bíblica (ex.: antífonas do Advento) abrem o texto pelo rótulo «Ver aclamação».
   const referenciaClicavel = (referencia, chave) =>
-    `<button type="button" class="clickable-ref" data-action="open-reading" data-reading-key="${chave}">${escapar(referencia)}</button>`;
+    `<button type="button" class="clickable-ref" data-action="open-reading" data-reading-key="${chave}">${escapar(referencia || 'Ver aclamação')}</button>`;
 
   function tabelaMissal(dia) {
     const missal = { ...MISSAL_PADRAO, ...dia.missal };
