@@ -241,7 +241,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 1º Domingo do Advento — 28 e 29/11/2026",
     "fonte": "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "6809ed934a0a6736",
+    "pdfHash": "3f89ad2e6368273e",
     "cabecalho": "● 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
@@ -261,9 +261,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -540,7 +540,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "ec0e0579a72ee87b",
+    "pdfHash": "c6f30e0dc5f14121",
     "cabecalho": "● 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026 – ANO B – COR ROXA Demais Missas: sábado 19h00 (Capela São Domingos Sávio) · domingo 9h00, 11h00 e 18h30 (Igreja Matriz)",
     "secoes": [
       {
@@ -559,9 +559,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missa com transmissão (domingo, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -810,7 +810,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.pdf",
-    "pdfHash": "09bcff84c570473d",
+    "pdfHash": "8151f2c7579cebe4",
     "cabecalho": "● 2º DOMINGO DO ADVENTO – SÁBADO, 5 DE DEZEMBRO DE 2026 – 18h30 – IGREJA MATRIZ – ANO B – COR ROXA Roteiro próprio desta Missa: Missa em ação de graças pelo ECC e pelos empreendedores da paróquia",
     "secoes": [
       {
@@ -831,8 +831,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Acolhida aos casais do ECC e aos empreendedores da paróquia:"],
           ["Comentarista", "Acolhemos com alegria os casais do Encontro de Casais com Cristo – ECC e os empreendedores de nossa paróquia, que participam desta Santa Missa em ação de graças. Unidos a eles, agradeçamos a Deus pelo dom do Matrimônio e da família, pelo trabalho e por todos os frutos que dele nascem, e peçamos que o Senhor que vem encontre em nossos lares e em nossos trabalhos corações preparados para acolhê-lo."],
           ["Orientação", "Monição inicial:"],
@@ -990,6 +988,8 @@ window.roteirosData = {
     "titulo": "Roteiro — Imaculada Conceição — 08/12/2026",
     "botao": "📖 Roteiro — Imaculada Conceição",
     "fonte": "semanas/2026-12-07/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.docx",
+    "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
+    "pdfHash": "6e981b9e9546f2a2",
     "cabecalho": "● SOLENIDADE DA IMACULADA CONCEIÇÃO DA BEM-AVENTURADA VIRGEM MARIA – 8 DE DEZEMBRO DE 2026 – COR BRANCA",
     "secoes": [
       {
@@ -1010,8 +1010,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -1163,9 +1161,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
-    "pdfHash": "8532becf65df17dd"
+    ]
   },
   "preces_13_imaculada": {
     "tipo": "preces",
@@ -1199,7 +1195,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
     "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "a371dc2b9dc725b4",
+    "pdfHash": "837c6c7dade542f1",
     "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
     "secoes": [
       {
@@ -1219,9 +1215,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Neste domingo, a coleta é destinada à Campanha para a Evangelização, que sustenta a missão da Igreja no Brasil. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -1464,7 +1460,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
     "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "e92498a94b2752ba",
+    "pdfHash": "0c9b1b70e708aa1d",
     "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
@@ -1483,9 +1479,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -1728,13 +1724,15 @@ window.roteirosData = {
     "titulo": "Roteiro — Natal – Missa da Noite — 24/12/2026",
     "botao": "📖 Roteiro — Natal – Missa da Noite",
     "fonte": "semanas/2026-12-21/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
+    "pdfHash": "8cffa47c5d368224",
     "cabecalho": "● NATAL DO SENHOR – MISSA DA NOITE – 24 DE DEZEMBRO DE 2026 – 19h00 – SOLENIDADE – COR BRANCA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
           ["Orientação", "Missa da Noite de Natal (quinta-feira, 24/12, 19h00 – Igreja Matriz e Capela São Domingos Sávio): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio (todos se ajoelham ao «E se encarnou»). Oração Eucarística I (Cânon Romano), com o «Em comunhão» próprio do Natal. Prefácio do Natal I (pág. 455; pode-se usar o II ou o III, págs. 456-457)."],
-          ["Orientação", "Preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."],
+          ["Orientação", "Preparar o espaço Dom Bosco e a Capela de Pedra (igreja velha) para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."],
           ["Orientação", "Procissão de entrada: turíbulo e naveta, cruz, velas, diácono com o Evangeliário, coroinhas que servem o altar e sacerdote; o sacerdote beija o altar e o incensa. Leitores, MESC e coroinhas da comunhão já ficam em seus lugares e não participam da procissão. Os coroinhas tocam o sino para iniciar o canto do Glória."],
           ["Orientação", "Antes da Missa, entregar velas à assembleia. A igreja fica com pouca luz até o fim do canto «Vinde, Cristãos». Preparar uma luminária pequena no ambão e para o comentarista."],
           ["Orientação", "Rito da Luz antes do Evangelho (velas da assembleia, Menino Jesus levado ao presépio durante o Evangelho) e Rito da Noite Feliz antes da Bênção Solene, com entrega de uma vela por família e da oração para a Ceia de Natal."],
@@ -1752,8 +1750,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -1924,15 +1920,15 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-    "pdfHash": "e13d6faa66473649"
+    ]
   },
   "roteiro_15_natal_dia": {
     "tipo": "roteiro",
     "titulo": "Roteiro — Natal – Missa do Dia — 25/12/2026",
     "botao": "📖 Roteiro — Natal – Missa do Dia",
     "fonte": "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
+    "pdfHash": "f2738dee87ae0efe",
     "cabecalho": "● NATAL DO SENHOR – MISSA DO DIA – 25 DE DEZEMBRO DE 2026 – SOLENIDADE – COR BRANCA",
     "secoes": [
       {
@@ -1955,8 +1951,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -2113,9 +2107,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-    "pdfHash": "66f315e9b1d7858d"
+    ]
   },
   "preces_15_natal_noite": {
     "tipo": "preces",
@@ -2177,6 +2169,8 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — Sagrada Família de Jesus, Maria e José — 26 e 27/12/2026",
     "fonte": "semanas/2026-12-21/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.docx",
+    "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "6fed5e3a2e8cf32e",
     "cabecalho": "● SAGRADA FAMÍLIA DE JESUS, MARIA E JOSÉ – FESTA – 26 E 27 DEZEMBRO 2026 – ANO B – COR BRANCA",
     "secoes": [
       {
@@ -2197,9 +2191,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -2344,9 +2338,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "44bd1292254e8ef2"
+    ]
   },
   "preces_15": {
     "tipo": "preces",
@@ -2617,6 +2609,8 @@ window.roteirosData = {
     "titulo": "Roteiro — Santa Maria, Mãe de Deus — 01/01/2027",
     "botao": "📖 Roteiro — Santa Maria, Mãe de Deus",
     "fonte": "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",
+    "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
+    "pdfHash": "649800860190f1ea",
     "cabecalho": "● SANTA MARIA, MÃE DE DEUS – SOLENIDADE – 1º DE JANEIRO DE 2027 – OITAVA DO NATAL – COR BRANCA",
     "secoes": [
       {
@@ -2639,8 +2633,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -2796,9 +2788,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
-    "pdfHash": "314b395a2c315c19"
+    ]
   },
   "preces_16_deum": {
     "tipo": "preces",
@@ -2880,6 +2870,8 @@ window.roteirosData = {
         "local": "Igreja Matriz"
       }
     ],
+    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
+    "pdfHash": "579600875a05c05c",
     "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – 2 E 3 DE JANEIRO DE 2027 – COR BRANCA Demais Missas: sábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio) · domingo 9h00 e 11h00 (Igreja Matriz)",
     "secoes": [
       {
@@ -2898,9 +2890,9 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
+          ["Orientação", "Missa com transmissão (sábado, 18h30 – Igreja Matriz):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
+          ["Orientação", "Demais Missas (sem transmissão):"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -3047,9 +3039,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
-    "pdfHash": "5148f0ace989376c"
+    ]
   },
   "preces_16": {
     "tipo": "preces",
@@ -3141,6 +3131,8 @@ window.roteirosData = {
         "local": "Igreja Matriz"
       }
     ],
+    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.pdf",
+    "pdfHash": "a79588d462576de7",
     "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – DOMINGO, 3 DE JANEIRO DE 2027 – 18h30 – IGREJA MATRIZ – COR BRANCA Roteiro próprio desta Missa: Missa solene",
     "secoes": [
       {
@@ -3162,8 +3154,6 @@ window.roteirosData = {
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
           ["Orientação", "Missa com transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Missa sem transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
@@ -3318,8 +3308,6 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.pdf",
-    "pdfHash": "052ae67beaef22d5"
+    ]
   }
 };

@@ -1273,6 +1273,8 @@
    "titulo": "Roteiro — Santa Maria, Mãe de Deus — 01/01/2027",
    "botao": "📖 Roteiro — Santa Maria, Mãe de Deus",
    "fonte": "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",
+   "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
+   "pdfHash": "649800860190f1ea",
    "cabecalho": "● SANTA MARIA, MÃE DE DEUS – SOLENIDADE – 1º DE JANEIRO DE 2027 – OITAVA DO NATAL – COR BRANCA",
    "secoes": [
     {
@@ -1330,14 +1332,6 @@
       [
        "Comentarista",
        "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
-      ],
-      [
-       "Orientação",
-       "Missa sem transmissão:"
-      ],
-      [
-       "Comentarista",
-       "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
       ],
       [
        "Orientação",
@@ -1893,9 +1887,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
-   "pdfHash": "314b395a2c315c19"
+   ]
   },
   "preces_16_deum": {
    "tipo": "preces",
@@ -2043,6 +2035,8 @@
      "local": "Igreja Matriz"
     }
    ],
+   "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
+   "pdfHash": "579600875a05c05c",
    "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – 2 E 3 DE JANEIRO DE 2027 – COR BRANCA Demais Missas: sábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio) · domingo 9h00 e 11h00 (Igreja Matriz)",
    "secoes": [
     {
@@ -2087,7 +2081,7 @@
       ],
       [
        "Orientação",
-       "Missa com transmissão:"
+       "Missa com transmissão (sábado, 18h30 – Igreja Matriz):"
       ],
       [
        "Comentarista",
@@ -2095,7 +2089,7 @@
       ],
       [
        "Orientação",
-       "Missa sem transmissão:"
+       "Demais Missas (sem transmissão):"
       ],
       [
        "Comentarista",
@@ -2615,9 +2609,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
-   "pdfHash": "5148f0ace989376c"
+   ]
   },
   "preces_16": {
    "tipo": "preces",
@@ -2820,6 +2812,8 @@
      "local": "Igreja Matriz"
     }
    ],
+   "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.pdf",
+   "pdfHash": "a79588d462576de7",
    "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – DOMINGO, 3 DE JANEIRO DE 2027 – 18h30 – IGREJA MATRIZ – COR BRANCA Roteiro próprio desta Missa: Missa solene",
    "secoes": [
     {
@@ -2873,14 +2867,6 @@
       [
        "Comentarista",
        "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
-      ],
-      [
-       "Orientação",
-       "Missa sem transmissão:"
-      ],
-      [
-       "Comentarista",
-       "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
       ],
       [
        "Orientação",
@@ -3432,9 +3418,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.pdf",
-   "pdfHash": "052ae67beaef22d5"
+   ]
   }
  }
 }

@@ -744,6 +744,8 @@
    "titulo": "Roteiro — Natal – Missa da Noite — 24/12/2026",
    "botao": "📖 Roteiro — Natal – Missa da Noite",
    "fonte": "semanas/2026-12-21/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.docx",
+   "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
+   "pdfHash": "8cffa47c5d368224",
    "cabecalho": "● NATAL DO SENHOR – MISSA DA NOITE – 24 DE DEZEMBRO DE 2026 – 19h00 – SOLENIDADE – COR BRANCA",
    "secoes": [
     {
@@ -755,7 +757,7 @@
       ],
       [
        "Orientação",
-       "Preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."
+       "Preparar o espaço Dom Bosco e a Capela de Pedra (igreja velha) para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."
       ],
       [
        "Orientação",
@@ -809,14 +811,6 @@
       [
        "Comentarista",
        "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
-      ],
-      [
-       "Orientação",
-       "Missa sem transmissão:"
-      ],
-      [
-       "Comentarista",
-       "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
       ],
       [
        "Orientação",
@@ -1432,15 +1426,15 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DA NOITE - 24 DEZEMBRO 2026.pdf",
-   "pdfHash": "e13d6faa66473649"
+   ]
   },
   "roteiro_15_natal_dia": {
    "tipo": "roteiro",
    "titulo": "Roteiro — Natal – Missa do Dia — 25/12/2026",
    "botao": "📖 Roteiro — Natal – Missa do Dia",
    "fonte": "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
+   "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
+   "pdfHash": "f2738dee87ae0efe",
    "cabecalho": "● NATAL DO SENHOR – MISSA DO DIA – 25 DE DEZEMBRO DE 2026 – SOLENIDADE – COR BRANCA",
    "secoes": [
     {
@@ -1498,14 +1492,6 @@
       [
        "Comentarista",
        "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
-      ],
-      [
-       "Orientação",
-       "Missa sem transmissão:"
-      ],
-      [
-       "Comentarista",
-       "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
       ],
       [
        "Orientação",
@@ -2065,9 +2051,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-   "pdfHash": "66f315e9b1d7858d"
+   ]
   },
   "preces_15_natal_noite": {
    "tipo": "preces",
@@ -2201,6 +2185,8 @@
    "tipo": "roteiro",
    "titulo": "Roteiro — Sagrada Família de Jesus, Maria e José — 26 e 27/12/2026",
    "fonte": "semanas/2026-12-21/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.docx",
+   "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "6fed5e3a2e8cf32e",
    "cabecalho": "● SAGRADA FAMÍLIA DE JESUS, MARIA E JOSÉ – FESTA – 26 E 27 DEZEMBRO 2026 – ANO B – COR BRANCA",
    "secoes": [
     {
@@ -2253,7 +2239,7 @@
       ],
       [
        "Orientação",
-       "Missa com transmissão:"
+       "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"
       ],
       [
        "Comentarista",
@@ -2261,7 +2247,7 @@
       ],
       [
        "Orientação",
-       "Missa sem transmissão:"
+       "Demais Missas (sem transmissão):"
       ],
       [
        "Comentarista",
@@ -2773,9 +2759,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-21/pdf/SAGRADA FAMÍLIA - 26 E 27 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "44bd1292254e8ef2"
+   ]
   },
   "preces_15": {
    "tipo": "preces",
