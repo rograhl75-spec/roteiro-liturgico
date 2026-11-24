@@ -19,7 +19,7 @@ Advento de 2026: de 29 de novembro (I Vésperas, sábado 28/11 à noite) até a 
 | Creio | Nos domingos e solenidades. |
 | Oração Eucarística | II (pág. 537), nos domingos e também nos dias de semana. A OE V fica só para as férias do Tempo Comum. |
 | Prefácio | Advento I (pág. 451) até 16/12; Advento II (pág. 453) de 17 a 24/12 e no 4º Domingo. Memórias, festas e solenidades usam o prefácio próprio ou o do Comum. |
-| Bênção | Domingos: Bênção Solene do Advento (pág. 578). Festas e solenidades: a bênção indicada no próprio formulário. |
+| Bênção | Domingos: Bênção Solene do Advento (pág. 578). Festas e solenidades: a bênção indicada no próprio formulário. Nas orientações do roteiro, escrever como rubrica: «Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578).» (nunca «Pedir a bênção…»: quem dá a bênção é o sacerdote, e o texto já está nos Ritos de Encerramento). |
 | Memórias | Obrigatórias, até 16/12, seguem o santo. Facultativas não são celebradas. De 17 a 24/12 celebra-se sempre a féria do Advento. |
 | Missas votivas | Não se celebram nas férias do Advento. Na 1ª sexta-feira (4/12) mantêm-se os horários (Missas às 5h30 e 12h00, confissões das 11h30 às 13h00, na Igreja Matriz), mas a Missa é a do dia; reza-se a Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo às 19h30 (roteiro a preparar). |
 | Ornamentação | Flores e instrumentos com moderação, sem antecipar a alegria do Natal (IGMR 305 e 313). |
@@ -65,7 +65,7 @@ Sequência no **1º Domingo**, depois da saudação inicial:
 
 1. Bênção da coroa pelo sacerdote. Dentro da Missa omite-se o diálogo «O nosso auxílio está no nome do Senhor», porque a saudação já foi feita:
    > Oremos. Senhor nosso Deus, sois o doador de toda bênção e a fonte de todo dom perfeito. Abençoai ✠ esta Coroa em honra do Advento do Cristo, vosso Filho, e dai-nos esperar solícitos a sua vinda. Que ele, ao chegar, nos encontre vigilantes na oração e proclamando o seu louvor. Pelo mesmo Cristo, nosso Senhor. – **Amém.**
-2. Aspersão da coroa com água benta, em silêncio ou durante um breve canto.
+2. Aspersão da coroa com água benta, em silêncio ou durante um breve canto. **Nas orientações do roteiro do 1º Domingo:** «Preparar a caldeirinha com água benta e o aspersório junto à coroa do Advento, para a aspersão da coroa logo depois da bênção.»
 3. Motivação do comentarista, oração de todos e acendimento da primeira vela enquanto se canta.
 4. Ato penitencial.
 

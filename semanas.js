@@ -757,6 +757,17 @@ window.semanasData = [
        "casamento",
        "Matrimônio — Carlos e Alessandra"
       ]
+     ],
+     "equipes": [
+      {
+       "hora": "18h30",
+       "local": "Igreja Matriz",
+       "comentarista": "Miriam",
+       "leitor": "Livia Bonfim Catanho da Silva",
+       "leitor2": "Rogério Lemes da Rosa",
+       "preces": "Manoel",
+       "liturgia": "Duda e Maycon"
+      }
      ]
     },
     {
@@ -778,6 +789,35 @@ window.semanasData = [
        "Igreja Matriz",
        "Pe. Heriberto"
       ]
+     ],
+     "equipes": [
+      {
+       "hora": "09h00",
+       "local": "Igreja Matriz",
+       "comentarista": "Caroline",
+       "leitor": "Luana Held Salinet",
+       "leitor2": "Almir Rogerio Lopes Franciscao",
+       "preces": "Reni",
+       "liturgia": "Carla"
+      },
+      {
+       "hora": "11h00",
+       "local": "Igreja Matriz",
+       "comentarista": "Lu",
+       "leitor": "Priscilla Bassan",
+       "leitor2": "Denise De Marchi Beluzo Do Valle",
+       "preces": "Alexandre",
+       "liturgia": "Zilda, Alexandre e Lisandro"
+      },
+      {
+       "hora": "18h30",
+       "local": "Igreja Matriz",
+       "comentarista": "Carla",
+       "leitor": "Matheus A. de Andrade Fiumari",
+       "leitor2": "Mario André Glaeser Bortolossi",
+       "preces": "Fabio",
+       "liturgia": "Duda, Maycon e Fabio"
+      }
      ]
     }
    ],
@@ -844,9 +884,10 @@ window.semanasData = [
   "periodo": "30 de novembro a 6 de dezembro",
   "shortTitle": "30 de novembro a 6 de dezembro — 2º Domingo do Advento",
   "fullTitle": "Semana de 30 de novembro a 6 de dezembro de 2026 — Santo André e 2º Domingo do Advento",
-  "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento",
+  "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento (demais Missas)",
   "roteiroExtras": [
-   "rito"
+   "rito",
+   "ecc"
   ],
   "precesExtras": [],
   "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
@@ -1252,6 +1293,11 @@ window.semanasData = [
    "botoes": [
     {
      "tipo": "roteiro",
+     "chave": "ecc",
+     "rotulo": "Roteiro — Sábado 18h30 · ECC"
+    },
+    {
+     "tipo": "roteiro",
      "chave": "rito",
      "rotulo": "🕯️ 2ª vela do Advento"
     }
@@ -1260,6 +1306,7 @@ window.semanasData = [
   "documentos": [
    "semanas/2026-11-30/Leituras 30 novembro a 6 dezembro 2026.docx",
    "semanas/2026-11-30/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.docx",
+   "semanas/2026-11-30/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.docx",
    "semanas/2026-11-30/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
    "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx"
   ]
@@ -2538,11 +2585,12 @@ window.semanasData = [
   "periodo": "28 de dezembro a 3 de janeiro",
   "shortTitle": "28 de dezembro a 3 de janeiro — Oitava do Natal, Mãe de Deus e Epifania",
   "fullTitle": "Semana de 28 de dezembro de 2026 a 3 de janeiro de 2027 — Oitava do Natal, Santa Maria, Mãe de Deus, e Epifania do Senhor",
-  "roteiroLabel": "📖 Roteiro — Epifania do Senhor",
+  "roteiroLabel": "📖 Roteiro — Epifania do Senhor (demais Missas)",
   "roteiroExtras": [
    "deum",
    "mae_deus",
-   "rito"
+   "rito",
+   "solene"
   ],
   "precesExtras": [
    "deum",
@@ -2932,11 +2980,19 @@ window.semanasData = [
     "bencao": "145 (Epifania do Senhor)"
    },
    "antifonas": "antifonas_17",
-   "nota": "Incenso somente na Missa de domingo às 18h30. Anúncio da Páscoa e das Solenidades Móveis de 2027 depois do Evangelho, em todas as Missas."
+   "nota": "Incenso somente na Missa de domingo às 18h30. Anúncio da Páscoa e das Solenidades Móveis de 2027 depois do Evangelho, em todas as Missas.",
+   "botoes": [
+    {
+     "tipo": "roteiro",
+     "chave": "solene",
+     "rotulo": "Roteiro — Domingo 18h30 · Missa solene"
+    }
+   ]
   },
   "documentos": [
    "semanas/2026-12-28/Leituras 28 dezembro 2026 a 3 janeiro 2027.docx",
    "semanas/2026-12-28/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.docx",
+   "semanas/2026-12-28/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.docx",
    "semanas/2026-12-28/PRECES - EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.docx",
    "semanas/2026-12-28/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.docx",
    "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",

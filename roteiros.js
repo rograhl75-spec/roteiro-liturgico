@@ -240,13 +240,16 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — 1º Domingo do Advento — 28 e 29/11/2026",
     "fonte": "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
+    "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "6809ed934a0a6736",
     "cabecalho": "● 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
-          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."],
+          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "Preparar a caldeirinha com água benta e o aspersório junto à coroa do Advento, para a aspersão da coroa logo depois da bênção."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -417,9 +420,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "a0ab20ec9d417ba2"
+    ]
   },
   "preces_11": {
     "tipo": "preces",
@@ -514,14 +515,38 @@ window.roteirosData = {
   },
   "roteiro_12": {
     "tipo": "roteiro",
-    "titulo": "Roteiro — 2º Domingo do Advento — 5 e 06/12/2026",
+    "titulo": "Roteiro — 2º Domingo do Advento — 5 e 06/12/2026 — demais Missas",
     "fonte": "semanas/2026-11-30/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.docx",
-    "cabecalho": "● 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026 – ANO B – COR ROXA",
+    "missas": [
+      {
+        "data": "2026-12-05",
+        "hora": "19h00",
+        "local": "Capela São Domingos Sávio"
+      },
+      {
+        "data": "2026-12-06",
+        "hora": "09h00",
+        "local": "Igreja Matriz"
+      },
+      {
+        "data": "2026-12-06",
+        "hora": "11h00",
+        "local": "Igreja Matriz"
+      },
+      {
+        "data": "2026-12-06",
+        "hora": "18h30",
+        "local": "Igreja Matriz"
+      }
+    ],
+    "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "ec0e0579a72ee87b",
+    "cabecalho": "● 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026 – ANO B – COR ROXA Demais Missas: sábado 19h00 (Capela São Domingos Sávio) · domingo 9h00, 11h00 e 18h30 (Igreja Matriz)",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
-          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."],
+          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
@@ -538,7 +563,277 @@ window.roteirosData = {
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Missa sem transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
-          ["Orientação", "Na Missa de sábado às 18h30 (Igreja Matriz) — acolhida aos casais do ECC e aos empreendedores da paróquia:"],
+          ["Orientação", "Monição inicial:"],
+          ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
+          ["Cantores", "Canto de Entrada"],
+          ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
+          ["Todos", "Bendito seja Deus que nos reuniu no amor de Cristo."],
+          ["Orientação", "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a segunda vela acesa em procissão pelo corredor central e a coloca na coroa."],
+          ["Cantores", "Canto durante a procissão da vela."],
+          ["Orientação", "Colocada a vela, o sacerdote diz:"],
+          ["Sacerdote", "Deus misericordioso, a luz desta segunda vela nos chama à conversão. Pedimos perdão pelos nossos erros e abrimos nosso coração para amar como Vós amais. Aumentai nossa fé, para que possamos acolher a mensagem de salvação. Inspirai-nos a ver e a servir o próximo, preparando um caminho de justiça para o Senhor."],
+          ["Todos", "Amém."],
+          ["Orientação", "Segue-se o ato penitencial."],
+          ["Sacerdote", "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
+          ["Cantores", "Ato Penitencial"],
+          ["Sacerdote", "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."],
+          ["Todos", "Amém."],
+          ["Orientação", "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Sacerdote", "Cristo, tende piedade de nós."],
+          ["Todos", "Cristo, tende piedade de nós."],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Sacerdote", "Oremos."],
+          ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
+          ["Sacerdote", "Oração da Coleta (pág. 103)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA DA PALAVRA",
+        "linhas": [
+          ["Leitor", "Is 40,1-5.9-11"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Orientação", "Breve silêncio para meditar a Palavra (IGMR 56)."],
+          ["Salmista", "Salmo Responsorial Sl 84(85),9ab-10.11-12.13-14 (R. 8)"],
+          ["Leitor", "2Pd 3,8-14"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Cantores e Todos", "Aclamação ao Evangelho ."],
+          ["Diácono / Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Marcos."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Diácono / Sacerdote", "Mc 1,1-8"],
+          ["Diácono / Sacerdote", "Palavra da Salvação."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Sacerdote / Diácono", "Homilia."],
+          ["Sacerdote / Diácono", "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "Breve silêncio depois da homilia (IGMR 66)."],
+          ["Sacerdote e Todos", "(Profissão de fé – Símbolo dos Apóstolos; pode ser substituído pelo Símbolo Niceno-Constantinopolitano, próprio do domingo)\nCreio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."],
+          ["Sacerdote", "Faz a introdução às preces."],
+          ["Diácono / Leitor", "Conforme formulário de preces para cada horário."],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA EUCARÍSTICA",
+        "linhas": [
+          ["Comentarista", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
+          ["Cantores", "Canto das Oferendas"],
+          ["Sacerdote", "Preparação das oferendas."],
+          ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
+          ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Sacerdote", "Oração sobre as Oferendas (pág. 103)"],
+          ["Todos", "Amém."],
+          ["Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Sacerdote", "Corações ao alto."],
+          ["Todos", "O nosso coração está em Deus."],
+          ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
+          ["Todos", "É nosso dever e nossa salvação."],
+          ["Sacerdote", "Prefácio do Advento I (pág. 451)"],
+          ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso, por Cristo, Senhor nosso. Revestido da nossa fragilidade, ele veio a primeira vez para realizar seu eterno plano de amor e abrir-nos o caminho da salvação. Revestido de sua glória, ele virá uma segunda vez, para conceder-nos em plenitude os dons prometidos que hoje vigilantes esperamos. Por isso, com os Anjos e Arcanjos, os Tronos e as Dominações e todos os coros celestes entoamos o hino da vossa glória, cantando (dizendo) a uma só voz:"],
+          ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
+          ["Sacerdote", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
+          ["Todos", "Enviai o vosso Espírito Santo!"],
+          ["Sacerdote", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"],
+          ["Todos", "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"],
+          ["Sacerdote", "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."],
+          ["Todos", "Aceitai, ó Senhor, a nossa oferta!"],
+          ["Sacerdote", "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."],
+          ["Todos", "O Espírito nos una num só corpo!"],
+          ["Sacerdote", "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."],
+          ["Todos", "Lembrai-vos, ó Pai, da vossa Igreja!"],
+          ["Sacerdote", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
+          ["Todos", "Concedei-lhes, ó Senhor, a luz eterna!"],
+          ["Sacerdote", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
+          ["Sacerdote", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITO DA COMUNHÃO",
+        "linhas": [
+          ["Sacerdote", "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"],
+          ["Todos", "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."],
+          ["Sacerdote", "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."],
+          ["Todos", "Vosso é o Reino, o poder e a glória para sempre."],
+          ["Sacerdote", "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A paz do Senhor esteja sempre convosco."],
+          ["Todos", "O amor de Cristo nos uniu."],
+          ["Diácono / Sacerdote", "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."],
+          ["Orientação", "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."],
+          ["Orientação", "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."],
+          ["Todos", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
+          ["Sacerdote", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
+          ["Todos", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
+          ["Orientação", "Comunhão do sacerdote (em silêncio)."],
+          ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
+          ["Cantores", "Canto da Comunhão ."],
+          ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
+          ["Sacerdote", "Oremos."],
+          ["Sacerdote", "Oração depois da Comunhão (pág. 103)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITOS DE ENCERRAMENTO",
+        "linhas": [
+          ["Pároco / Diácono / Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."],
+          ["Sacerdote", "Bênção dos pães (quando houver)."],
+          ["Sacerdote", "Nossa Senhora Auxiliadora!"],
+          ["Todos", "Rogai por nós."],
+          ["Sacerdote", "O Senhor esteja convosco!"],
+          ["Todos", "Ele está no meio de nós."],
+          ["Orientação", "Bênção Solene do Advento (Missal, pág. 578):"],
+          ["Diácono / Sacerdote", "Inclinai-vos para receber a bênção."],
+          ["Sacerdote", "Bênção Solene – Tempo do Advento (pág. 578)\nO Deus onipotente e misericordioso vos santifique com o esplendor do advento do seu Filho, em cuja vinda credes e cuja volta esperais, e derrame sobre vós as suas bênçãos."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "Durante esta vida, Deus vos torne firmes na fé, alegres na esperança e solícitos na caridade."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "E vós, que vos alegrais com fé e devoção pela vinda, segundo a carne, do nosso Redentor, sejais recompensados com o prêmio da vida eterna, quando ele vier de novo na majestade da sua glória."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."],
+          ["Todos", "Amém."],
+          ["Diácono / Sacerdote", "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"],
+          ["Todos", "Graças a Deus."],
+          ["Cantores", "Canto Final."]
+        ]
+      }
+    ]
+  },
+  "preces_12": {
+    "tipo": "preces",
+    "titulo": "Preces — 2º Domingo do Advento",
+    "fonte": "semanas/2026-11-30/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
+    "cabecalho": "● PRECES – 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026",
+    "formularios": [
+      {
+        "titulo": "Data: 05/12/2026 — Horário: Sábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
+        "linhas": [
+          ["Sacerdote", "Oremos, irmãos caríssimos, a Cristo nosso Senhor,\nque nasceu da Virgem Maria; e digamos com humildade e alegria:"],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Filho Unigênito de Deus, que haveis de vir como o verdadeiro mensageiro da Aliança, fazei que o mundo vos acolha e reconheça, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Filho Unigênito de Deus, que vos fizestes filho do homem no seio da Virgem Maria, livrai-nos de toda a corrupção da condição humana, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Filho Unigênito de Deus, que sois fonte de vida e quisestes experimentar a morte, livrai-nos da sentença de morte que merecemos, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "Data: 06/12/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
+        "linhas": [
+          ["Sacerdote", "Rezemos irmãos caríssimos a nosso Senhor Jesus Cristo, Juiz dos vivos e dos mortos; e digamos:"],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Senhor Jesus Cristo, que viestes salvar os pecadores, defendei-nos de toda tentação, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Senhor Jesus Cristo, que vireis cheio de glória para julgar o mundo, manifestai em nós o poder da vossa salvação, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Ajudai-nos a cumprir, na força do Espírito, os mandamentos de vossa lei, para que possamos acolher com amor o dia de vossa vinda, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "Data: 06/12/2026 — Horário: Domingo 18h30 – II Vésperas",
+        "linhas": [
+          ["Sacerdote", "Imploremos, irmãos caríssimos, a Cristo Redentor, que veio salvar a humanidade; e digamos confiantes:"],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Senhor Jesus Cristo, que pelo ministério da encarnação revelastes aos seres humanos a glória da vossa divindade, dai vida ao mundo com a vossa vinda, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Vós, que assumistes a fragilidade da natureza humana, concedei-nos a vossa misericórdia, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Diácono / Leitor", "Vós, que, na primeira vez, viestes humilde, para remir o mundo de seus pecados, quando vierdes novamente, absolvei-nos de toda culpa, nós vos pedimos."],
+          ["Todos", "R. Vinde, Senhor Jesus!"],
+          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      }
+    ],
+    "pdf": "semanas/2026-11-30/pdf/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
+    "pdfHash": "37d64a74eb79b3f0"
+  },
+  "roteiro_12_rito": {
+    "tipo": "roteiro",
+    "titulo": "2ª vela do Advento",
+    "secoes": [
+      {
+        "titulo": "2ª VELA DO ADVENTO",
+        "linhas": [
+          ["Orientação", "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
+          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
+          ["Orientação", "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
+          ["Comentarista", "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."],
+          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a segunda vela acesa em procissão pelo corredor central e a coloca na coroa."],
+          ["Orientação", "Canto durante a procissão da vela."],
+          ["Orientação", "Colocada a vela, o sacerdote diz:"],
+          ["Sacerdote", "Deus misericordioso, a luz desta segunda vela nos chama à conversão. Pedimos perdão pelos nossos erros e abrimos nosso coração para amar como Vós amais. Aumentai nossa fé, para que possamos acolher a mensagem de salvação. Inspirai-nos a ver e a servir o próximo, preparando um caminho de justiça para o Senhor."],
+          ["Todos", "Amém."],
+          ["Orientação", "Segue-se o ato penitencial."]
+        ]
+      }
+    ],
+    "fonte": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
+    "cartao": true,
+    "botao": "🕯️ 2ª vela do Advento",
+    "pdf": "semanas/2026-11-30/pdf/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
+    "pdfHash": "bc76ae9a1529f217"
+  },
+  "roteiro_12_ecc": {
+    "tipo": "roteiro",
+    "titulo": "Roteiro — 2º Domingo do Advento — Sábado 18h30 (ECC) — 05/12/2026",
+    "botao": "📖 Roteiro — Sábado 18h30 · ECC",
+    "fonte": "semanas/2026-11-30/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.docx",
+    "missas": [
+      {
+        "data": "2026-12-05",
+        "hora": "18h30",
+        "local": "Igreja Matriz"
+      }
+    ],
+    "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.pdf",
+    "pdfHash": "09bcff84c570473d",
+    "cabecalho": "● 2º DOMINGO DO ADVENTO – SÁBADO, 5 DE DEZEMBRO DE 2026 – 18h30 – IGREJA MATRIZ – ANO B – COR ROXA Roteiro próprio desta Missa: Missa em ação de graças pelo ECC e pelos empreendedores da paróquia",
+    "secoes": [
+      {
+        "titulo": "Orientações",
+        "linhas": [
+          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
+          ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
+          ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
+        ]
+      },
+      {
+        "titulo": "RITOS INICIAIS",
+        "linhas": [
+          ["Orientação", "Antes do canto de entrada, o comentarista saúda a assembleia:"],
+          ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "O comentarista apresenta as intenções da Missa."],
+          ["Orientação", "Missa com transmissão:"],
+          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Missa sem transmissão:"],
+          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Acolhida aos casais do ECC e aos empreendedores da paróquia:"],
           ["Comentarista", "Acolhemos com alegria os casais do Encontro de Casais com Cristo – ECC e os empreendedores de nossa paróquia, que participam desta Santa Missa em ação de graças. Unidos a eles, agradeçamos a Deus pelo dom do Matrimônio e da família, pelo trabalho e por todos os frutos que dele nascem, e peçamos que o Senhor que vem encontre em nossos lares e em nossos trabalhos corações preparados para acolhê-lo."],
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
@@ -688,93 +983,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "d3ca90777f35b2dd"
-  },
-  "preces_12": {
-    "tipo": "preces",
-    "titulo": "Preces — 2º Domingo do Advento",
-    "fonte": "semanas/2026-11-30/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
-    "cabecalho": "● PRECES – 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026",
-    "formularios": [
-      {
-        "titulo": "Data: 05/12/2026 — Horário: Sábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio) – I Vésperas",
-        "linhas": [
-          ["Sacerdote", "Oremos, irmãos caríssimos, a Cristo nosso Senhor,\nque nasceu da Virgem Maria; e digamos com humildade e alegria:"],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Filho Unigênito de Deus, que haveis de vir como o verdadeiro mensageiro da Aliança, fazei que o mundo vos acolha e reconheça, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Filho Unigênito de Deus, que vos fizestes filho do homem no seio da Virgem Maria, livrai-nos de toda a corrupção da condição humana, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Filho Unigênito de Deus, que sois fonte de vida e quisestes experimentar a morte, livrai-nos da sentença de morte que merecemos, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
-          ["Sacerdote", "Finaliza as preces."],
-          ["Todos", "Amém."]
-        ]
-      },
-      {
-        "titulo": "Data: 06/12/2026 — Horário: Domingo 09h00 e 11h00 – Laudes",
-        "linhas": [
-          ["Sacerdote", "Rezemos irmãos caríssimos a nosso Senhor Jesus Cristo, Juiz dos vivos e dos mortos; e digamos:"],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Senhor Jesus Cristo, que viestes salvar os pecadores, defendei-nos de toda tentação, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Senhor Jesus Cristo, que vireis cheio de glória para julgar o mundo, manifestai em nós o poder da vossa salvação, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Ajudai-nos a cumprir, na força do Espírito, os mandamentos de vossa lei, para que possamos acolher com amor o dia de vossa vinda, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
-          ["Sacerdote", "Finaliza as preces."],
-          ["Todos", "Amém."]
-        ]
-      },
-      {
-        "titulo": "Data: 06/12/2026 — Horário: Domingo 18h30 – II Vésperas",
-        "linhas": [
-          ["Sacerdote", "Imploremos, irmãos caríssimos, a Cristo Redentor, que veio salvar a humanidade; e digamos confiantes:"],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Senhor Jesus Cristo, que pelo ministério da encarnação revelastes aos seres humanos a glória da vossa divindade, dai vida ao mundo com a vossa vinda, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Vós, que assumistes a fragilidade da natureza humana, concedei-nos a vossa misericórdia, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Diácono / Leitor", "Vós, que, na primeira vez, viestes humilde, para remir o mundo de seus pecados, quando vierdes novamente, absolvei-nos de toda culpa, nós vos pedimos."],
-          ["Todos", "R. Vinde, Senhor Jesus!"],
-          ["Todos / Telão", "Oração do Jubileu de Diamante – 60 anos da Paróquia\nDeus de infinita bondade, nós Vos bendizemos pelo Jubileu de Diamante da nossa Paróquia Nossa Senhora Auxiliadora. Damos-Vos graças por estes 60 anos, edificados pelo suor, pela força e pelo trabalho incansável da nossa comunidade.\nNós Vos suplicamos: inflamai em nós um coração sempre acolhedor e missionário, cheio de amor pelas nossas famílias e pelos jovens. Ensinai-nos a transformar o nosso esforço de cada dia em verdadeira oração e serviço aos irmãos.\nConfiantes na Virgem Maria, com a certeza inabalável de que a Mãe de Deus nos conduz e tudo providencia, pedimos que a Auxiliadora dos Cristãos seja o amparo de nossas famílias e a nossa eterna defensora.\nPor Nosso Senhor Jesus Cristo, Vosso Filho, na unidade do Espírito Santo. Amém!"],
-          ["Sacerdote", "Finaliza as preces."],
-          ["Todos", "Amém."]
-        ]
-      }
-    ],
-    "pdf": "semanas/2026-11-30/pdf/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
-    "pdfHash": "37d64a74eb79b3f0"
-  },
-  "roteiro_12_rito": {
-    "tipo": "roteiro",
-    "titulo": "2ª vela do Advento",
-    "secoes": [
-      {
-        "titulo": "2ª VELA DO ADVENTO",
-        "linhas": [
-          ["Orientação", "2º Domingo do Advento – 5 e 6 de dezembro de 2026\nSábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio); domingo 9h00, 11h00 e 18h30"],
-          ["Orientação", "Momento: Ritos iniciais, logo após a saudação do sacerdote («Bendito seja Deus que nos reuniu no amor de Cristo»), antes do ato penitencial."],
-          ["Orientação", "ACENDIMENTO DA SEGUNDA VELA (a primeira vela já acesa antes da Missa). Depois da saudação, o comentarista faz a motivação:"],
-          ["Comentarista", "Acendemos a segunda vela, a vela da conversão. Ela nos recorda a voz que clama no deserto: preparai o caminho do Senhor! Deus vem consolar o seu povo e nos chama a endireitar as veredas da nossa vida."],
-          ["Orientação", "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a segunda vela acesa em procissão pelo corredor central e a coloca na coroa."],
-          ["Orientação", "Canto durante a procissão da vela."],
-          ["Orientação", "Colocada a vela, o sacerdote diz:"],
-          ["Sacerdote", "Deus misericordioso, a luz desta segunda vela nos chama à conversão. Pedimos perdão pelos nossos erros e abrimos nosso coração para amar como Vós amais. Aumentai nossa fé, para que possamos acolher a mensagem de salvação. Inspirai-nos a ver e a servir o próximo, preparando um caminho de justiça para o Senhor."],
-          ["Todos", "Amém."],
-          ["Orientação", "Segue-se o ato penitencial."]
-        ]
-      }
-    ],
-    "fonte": "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
-    "cartao": true,
-    "botao": "🕯️ 2ª vela do Advento",
-    "pdf": "semanas/2026-11-30/pdf/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
-    "pdfHash": "bc76ae9a1529f217"
+    ]
   },
   "roteiro_13_imaculada": {
     "tipo": "roteiro",
@@ -989,13 +1198,15 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
     "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
+    "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "a371dc2b9dc725b4",
     "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
           ["Orientação", "Hoje: coleta da Campanha para a Evangelização (CNBB) – lembrar nos avisos."],
-          ["Orientação", "3º Domingo do Advento (Gaudete) – cor rósea (ou roxa). Domingo da alegria: o altar pode ser ornado com flores e os instrumentos acompanham o canto com alegria, sem antecipar a plenitude do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."],
+          ["Orientação", "3º Domingo do Advento (Gaudete) – cor rósea (ou roxa). Domingo da alegria: o altar pode ser ornado com flores e os instrumentos acompanham o canto com alegria, sem antecipar a plenitude do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
@@ -1161,9 +1372,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "1963f9b703a171cd"
+    ]
   },
   "preces_13": {
     "tipo": "preces",
@@ -1254,12 +1463,14 @@ window.roteirosData = {
     "tipo": "roteiro",
     "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
     "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
+    "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
+    "pdfHash": "e92498a94b2752ba",
     "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
-          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."],
+          ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
@@ -1425,9 +1636,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "4b9172bd58f0f784"
+    ]
   },
   "preces_14": {
     "tipo": "preces",
@@ -2647,15 +2856,36 @@ window.roteirosData = {
   },
   "roteiro_16": {
     "tipo": "roteiro",
-    "titulo": "Roteiro — Epifania do Senhor — 2 e 03/01/2027",
+    "titulo": "Roteiro — Epifania do Senhor — 2 e 03/01/2027 — demais Missas",
     "fonte": "semanas/2026-12-28/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.docx",
-    "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – 2 E 3 DE JANEIRO DE 2027 – COR BRANCA",
+    "missas": [
+      {
+        "data": "2027-01-02",
+        "hora": "18h30",
+        "local": "Igreja Matriz"
+      },
+      {
+        "data": "2027-01-02",
+        "hora": "19h00",
+        "local": "Capela São Domingos Sávio"
+      },
+      {
+        "data": "2027-01-03",
+        "hora": "09h00",
+        "local": "Igreja Matriz"
+      },
+      {
+        "data": "2027-01-03",
+        "hora": "11h00",
+        "local": "Igreja Matriz"
+      }
+    ],
+    "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – 2 E 3 DE JANEIRO DE 2027 – COR BRANCA Demais Missas: sábado 18h30 (Igreja Matriz) e 19h00 (Capela São Domingos Sávio) · domingo 9h00 e 11h00 (Igreja Matriz)",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
-          ["Orientação", "Solenidade no fim de semana: a celebração com solenidade (incenso, «Por Cristo» e Amém cantados) acontece somente na Missa de domingo às 18h30. Nas demais Missas, omitem-se as indicações marcadas «Na Missa de domingo às 18h30»."],
-          ["Orientação", "procissão de entrada com turíbulo (somente domingo 18h30), cruz, velas, diácono com o Evangeliário, ministros leitores, MESC e sacerdote; os cantos de entrada, aclamação ao Evangelho e ofertório mais prolongados quando houver incensação. Depois do Evangelho, o Anúncio da Páscoa e das Solenidades Móveis de 2027 (Missal, págs. 1219-1223)."],
+          ["Orientação", "procissão de entrada com cruz, velas, diácono com o Evangeliário, ministros leitores, MESC e sacerdote. Depois do Evangelho, o Anúncio da Páscoa e das Solenidades Móveis de 2027 (Missal, págs. 1219-1223)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
@@ -2675,7 +2905,6 @@ window.roteirosData = {
           ["Orientação", "Monição inicial:"],
           ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
           ["Cantores", "Canto de Entrada"],
-          ["Orientação", "Na Missa de domingo às 18h30: incensação da cruz e do altar (IGMR 49 e 276)."],
           ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
           ["Todos", "Amém."],
           ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
@@ -2694,7 +2923,6 @@ window.roteirosData = {
           ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
           ["Sacerdote", "Oremos."],
           ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
-          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração da Coleta (pág. 144)"],
           ["Todos", "Amém."]
         ]
@@ -2711,8 +2939,6 @@ window.roteirosData = {
           ["Leitor", "Palavra do Senhor."],
           ["Todos", "Graças a Deus."],
           ["Cantores e Todos", "Aclamação ao Evangelho ."],
-          ["Orientação", "Na Missa de domingo às 18h30: incensação do Evangeliário (IGMR 134)."],
-          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."],
           ["Diácono / Sacerdote", "O Senhor esteja convosco."],
           ["Todos", "Ele está no meio de nós."],
           ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Mateus."],
@@ -2740,10 +2966,8 @@ window.roteirosData = {
           ["Comentarista", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
           ["Cantores", "Canto das Oferendas"],
           ["Sacerdote", "Preparação das oferendas."],
-          ["Orientação", "Na Missa de domingo às 18h30: incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
           ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
           ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
-          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração sobre as Oferendas (pág. 144)"],
           ["Todos", "Amém."],
           ["Sacerdote", "O Senhor esteja convosco."],
@@ -2752,11 +2976,10 @@ window.roteirosData = {
           ["Todos", "O nosso coração está em Deus."],
           ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
           ["Todos", "É nosso dever e nossa salvação."],
-          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Prefácio da Epifania do Senhor – Cristo, luz dos povos (pág. 458)"],
           ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso.\nPois, em Cristo, para iluminar todos os povos, revelastes hoje o mistério da nossa salvação; quando ele se manifestou em nossa carne mortal, vós nos recriastes no novo esplendor da sua imortalidade.\nPor isso, com os Anjos e Arcanjos, os Tronos e as Dominações e todos os coros celestes, entoamos o hino da vossa glória, cantando a uma só voz:"],
           ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
-          ["Orientação", "Oração Eucarística II. Na Missa de domingo às 18h30: incensação na apresentação da hóstia e do cálice."],
+          ["Orientação", "Oração Eucarística II."],
           ["Sacerdote", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
           ["Todos", "Enviai o vosso Espírito Santo!"],
           ["Sacerdote", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"],
@@ -2770,9 +2993,8 @@ window.roteirosData = {
           ["Sacerdote", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
           ["Todos", "Concedei-lhes, ó Senhor, a luz eterna!"],
           ["Sacerdote", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
-          ["Orientação", "Na Missa de domingo às 18h30: o sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."],
           ["Sacerdote", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
-          ["Todos", "Amém. (cantado na Missa de domingo às 18h30)"]
+          ["Todos", "Amém."]
         ]
       },
       {
@@ -2797,7 +3019,6 @@ window.roteirosData = {
           ["Cantores", "Canto da Comunhão ."],
           ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
           ["Sacerdote", "Oremos."],
-          ["Orientação", "Na Missa de domingo às 18h30: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."],
           ["Sacerdote", "Oração depois da Comunhão (pág. 144)"],
           ["Todos", "Amém."]
         ]
@@ -2828,7 +3049,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - 2 E 3 JANEIRO 2027.pdf",
-    "pdfHash": "c1739341b3bd32b4"
+    "pdfHash": "5148f0ace989376c"
   },
   "preces_16": {
     "tipo": "preces",
@@ -2907,5 +3128,198 @@ window.roteirosData = {
     "botao": "🕯️ Te Deum",
     "pdf": "semanas/2026-12-28/pdf/RITO - TE DEUM - 31 DEZEMBRO 2026.pdf",
     "pdfHash": "bd9433c6da1c7230"
+  },
+  "roteiro_16_solene": {
+    "tipo": "roteiro",
+    "titulo": "Roteiro — Epifania do Senhor — Domingo 18h30 (Missa solene) — 03/01/2027",
+    "botao": "📖 Roteiro — Domingo 18h30 · Missa solene",
+    "fonte": "semanas/2026-12-28/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.docx",
+    "missas": [
+      {
+        "data": "2027-01-03",
+        "hora": "18h30",
+        "local": "Igreja Matriz"
+      }
+    ],
+    "cabecalho": "● EPIFANIA DO SENHOR – SOLENIDADE – DOMINGO, 3 DE JANEIRO DE 2027 – 18h30 – IGREJA MATRIZ – COR BRANCA Roteiro próprio desta Missa: Missa solene",
+    "secoes": [
+      {
+        "titulo": "Orientações",
+        "linhas": [
+          ["Orientação", "Missa solene (domingo, 18h30 – Igreja Matriz): com incenso, «Por Cristo» e Amém cantados."],
+          ["Orientação", "procissão de entrada com turíbulo, cruz, velas, diácono com o Evangeliário, ministros leitores, MESC e sacerdote; os cantos de entrada, aclamação ao Evangelho e ofertório mais prolongados por causa da incensação. Depois do Evangelho, o Anúncio da Páscoa e das Solenidades Móveis de 2027 (Missal, págs. 1219-1223)."],
+          ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
+          ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
+        ]
+      },
+      {
+        "titulo": "RITOS INICIAIS",
+        "linhas": [
+          ["Orientação", "Antes do canto de entrada, o comentarista saúda a assembleia:"],
+          ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "O comentarista apresenta as intenções da Missa."],
+          ["Orientação", "Missa com transmissão:"],
+          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Missa sem transmissão:"],
+          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
+          ["Orientação", "Monição inicial:"],
+          ["Comentarista", "Irmãos e irmãs, sejam todos muito bem-vindos à nossa celebração! É uma alegria acolher cada um de vocês, as famílias e os visitantes. Com alegria, acompanhemos a procissão de entrada, cantando."],
+          ["Cantores", "Canto de Entrada"],
+          ["Orientação", "Incensação da cruz e do altar (IGMR 49 e 276)."],
+          ["Sacerdote", "Em nome do Pai ✠ e do Filho e do Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A graça de nosso Senhor Jesus Cristo, o amor do Pai e a comunhão do Espírito Santo estejam convosco."],
+          ["Todos", "Bendito seja Deus que nos reuniu no amor de Cristo."],
+          ["Sacerdote", "Irmãos e irmãs, reconheçamos os nossos pecados, para celebrarmos dignamente os santos mistérios."],
+          ["Cantores", "Ato Penitencial"],
+          ["Sacerdote", "(segue-se a absolvição sacerdotal)\nDeus todo-poderoso tenha compaixão de nós, perdoe os nossos pecados e nos conduza à vida eterna."],
+          ["Todos", "Amém."],
+          ["Orientação", "Seguem-se as invocações Senhor, tende piedade de nós (Kýrie, eléison), caso já não tenham ocorrido no ato penitencial:"],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Sacerdote", "Cristo, tende piedade de nós."],
+          ["Todos", "Cristo, tende piedade de nós."],
+          ["Sacerdote", "Senhor, tende piedade de nós."],
+          ["Todos", "Senhor, tende piedade de nós."],
+          ["Cantores e Todos", "“Glória a Deus nas alturas” (sempre nas solenidades) ."],
+          ["Sacerdote", "Oremos."],
+          ["Orientação", "Todos rezam em silêncio por alguns instantes (IGMR 54)."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração da Coleta – o Ministério de Música deve confirmar antes com o padre."],
+          ["Sacerdote", "Oração da Coleta (pág. 144)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA DA PALAVRA",
+        "linhas": [
+          ["Leitor", "Is 60,1-6"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Orientação", "Breve silêncio para meditar a Palavra (IGMR 56)."],
+          ["Salmista", "Salmo Responsorial Sl 71(72),1-2.7-8.10-11.12-13 (R. cf. 11)"],
+          ["Leitor", "Ef 3,2-3a.5-6"],
+          ["Leitor", "Palavra do Senhor."],
+          ["Todos", "Graças a Deus."],
+          ["Cantores e Todos", "Aclamação ao Evangelho ."],
+          ["Orientação", "Incensação do Evangeliário (IGMR 134)."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante o início do Evangelho («O Senhor esteja convosco») – o Ministério de Música deve confirmar antes com o padre."],
+          ["Diácono / Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Diácono / Sacerdote", "Proclamação do Evangelho de Jesus Cristo segundo Mateus."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Diácono / Sacerdote", "Mt 2,1-12"],
+          ["Diácono / Sacerdote", "Palavra da Salvação."],
+          ["Todos", "Glória a vós, Senhor."],
+          ["Orientação", "Anúncio da Páscoa e das Solenidades Móveis de 2027 – feito do ambão pelo diácono (ou pelo sacerdote ou cantor), em todas as Missas do fim de semana."],
+          ["Diácono / Sacerdote", "Sabei, irmãos caríssimos, que, pela misericórdia de Deus, assim como nos alegramos com o Nascimento de nosso Senhor Jesus Cristo, também vos anunciamos a alegria da Ressurreição do mesmo Jesus, nosso Salvador. No dia dez de fevereiro será o dia das Cinzas e o início do jejum da santíssima Quaresma. No dia vinte e oito de março celebraremos com alegria a santa Páscoa de nosso Senhor Jesus Cristo. No dia nove de maio, a Ascensão de nosso Senhor Jesus Cristo. No dia dezesseis de maio, a festa de Pentecostes. No dia vinte e sete de maio, a festa do Santíssimo Corpo e Sangue de Cristo. No dia vinte e oito de novembro, o primeiro domingo do Advento de nosso Senhor Jesus Cristo. A ele a honra e a glória pelos séculos dos séculos."],
+          ["Todos", "Amém."],
+          ["Sacerdote / Diácono", "Homilia."],
+          ["Sacerdote / Diácono", "(Opcional, costume local) Louvado seja o Nosso Senhor Jesus Cristo (terminada a homilia)."],
+          ["Todos", "Para sempre seja louvado."],
+          ["Orientação", "Breve silêncio depois da homilia (IGMR 66)."],
+          ["Sacerdote e Todos", "(Profissão de fé – Símbolo Niceno-Constantinopolitano) Creio em um só Deus, Pai todo-poderoso, criador do céu e da terra, de todas as coisas visíveis e invisíveis. Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, nascido do Pai antes de todos os séculos: Deus de Deus, luz da luz, Deus verdadeiro de Deus verdadeiro, gerado, não criado, consubstancial ao Pai. Por ele todas as coisas foram feitas. E por nós, homens, e para nossa salvação, desceu dos céus (todos se inclinam) e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem. Também por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado. Ressuscitou ao terceiro dia, conforme as Escrituras, e subiu aos céus, onde está sentado à direita do Pai. E de novo há de vir, em sua glória, para julgar os vivos e os mortos; e o seu reino não terá fim. Creio no Espírito Santo, Senhor que dá a vida, e procede do Pai e do Filho; e com o Pai e o Filho é adorado e glorificado: ele que falou pelos profetas. Creio na Igreja, una, santa, católica e apostólica. Professo um só Batismo para a remissão dos pecados. E espero a ressurreição dos mortos e a vida do mundo que há de vir. Amém."],
+          ["Sacerdote", "Faz a introdução às preces."],
+          ["Diácono / Leitor", "Conforme formulário de preces para cada horário."],
+          ["Sacerdote", "Finaliza as preces."],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "LITURGIA EUCARÍSTICA",
+        "linhas": [
+          ["Comentarista", "Você pode fazer a sua oferta através do QR Code que está fixado no banco à sua frente ou se dirigindo às cestas de coleta nos corredores."],
+          ["Cantores", "Canto das Oferendas"],
+          ["Sacerdote", "Preparação das oferendas."],
+          ["Orientação", "Incensação das oferendas, da cruz e do altar; depois, do sacerdote e do povo (IGMR 75)."],
+          ["Sacerdote", "Orai, irmãos e irmãs, para que o meu e vosso sacrifício seja aceito por Deus Pai todo-poderoso."],
+          ["Todos", "Receba o Senhor por tuas mãos este sacrifício, para glória do seu nome, para nosso bem e de toda a sua santa Igreja."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração sobre as Oferendas – o Ministério de Música deve confirmar antes com o padre."],
+          ["Sacerdote", "Oração sobre as Oferendas (pág. 144)"],
+          ["Todos", "Amém."],
+          ["Sacerdote", "O Senhor esteja convosco."],
+          ["Todos", "Ele está no meio de nós."],
+          ["Sacerdote", "Corações ao alto."],
+          ["Todos", "O nosso coração está em Deus."],
+          ["Sacerdote", "Demos graças ao Senhor, nosso Deus."],
+          ["Todos", "É nosso dever e nossa salvação."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante o Prefácio – o Ministério de Música deve confirmar antes com o padre."],
+          ["Sacerdote", "Prefácio da Epifania do Senhor – Cristo, luz dos povos (pág. 458)"],
+          ["Sacerdote", "Na verdade, é digno e justo, é nosso dever e salvação dar-vos graças, sempre e em todo lugar, Senhor, Pai santo, Deus eterno e todo-poderoso.\nPois, em Cristo, para iluminar todos os povos, revelastes hoje o mistério da nossa salvação; quando ele se manifestou em nossa carne mortal, vós nos recriastes no novo esplendor da sua imortalidade.\nPor isso, com os Anjos e Arcanjos, os Tronos e as Dominações e todos os coros celestes, entoamos o hino da vossa glória, cantando a uma só voz:"],
+          ["Todos", "Santo, Santo, Santo, Senhor Deus do universo. O céu e a terra proclamam a vossa glória. Hosana nas alturas! Bendito o que vem em nome do Senhor! Hosana nas alturas!"],
+          ["Orientação", "Oração Eucarística II. Incensação na apresentação da hóstia e do cálice."],
+          ["Sacerdote", "(ORAÇÃO EUCARÍSTICA II – pág. 537) Na verdade, ó Pai, vós sois Santo, fonte de toda santidade. Santificai, pois, estes dons, derramando sobre eles o vosso Espírito, a fim de que se tornem para nós o Corpo e ✠ o Sangue de nosso Senhor Jesus Cristo."],
+          ["Todos", "Enviai o vosso Espírito Santo!"],
+          ["Sacerdote", "Estando para ser entregue e abraçando livremente a paixão, Jesus tomou o pão, pronunciou a bênção de ação de graças, partiu e o deu a seus discípulos, dizendo:\nTOMAI, TODOS E COMEI: ISTO É O MEU CORPO, QUE SERÁ ENTREGUE POR VÓS.\nDo mesmo modo, no fim da Ceia, ele tomou o cálice em suas mãos e, dando graças novamente, o entregou a seus discípulos, dizendo:\nTOMAI, TODOS E BEBEI: ESTE É O CÁLICE DO MEU SANGUE, O SANGUE DA NOVA E ETERNA ALIANÇA, QUE SERÁ DERRAMADO POR VÓS E POR TODOS PARA REMISSÃO DOS PECADOS. FAZEI ISTO EM MEMÓRIA DE MIM.\nMistério da fé e do amor!"],
+          ["Todos", "Todas as vezes que comemos deste pão e bebemos deste cálice, anunciamos, Senhor, a vossa morte, enquanto esperamos a vossa vinda!"],
+          ["Sacerdote", "Celebrando, pois, o memorial da morte e ressurreição do vosso Filho, nós vos oferecemos, ó Pai, o Pão da vida e o Cálice da salvação; e vos agradecemos porque nos tornastes dignos de estar aqui na vossa presença e vos servir."],
+          ["Todos", "Aceitai, ó Senhor, a nossa oferta!"],
+          ["Sacerdote", "Suplicantes, vos pedimos que, participando do Corpo e Sangue de Cristo, sejamos reunidos pelo Espírito Santo num só corpo."],
+          ["Todos", "O Espírito nos una num só corpo!"],
+          ["Sacerdote", "Lembrai-vos, ó Pai, da vossa Igreja que se faz presente pelo mundo inteiro; e aqui convocada no dia em que Cristo venceu a morte e nos fez participantes de sua vida imortal; que ela cresça na caridade, em comunhão com o Papa Leão, com o nosso Bispo Geremias, os bispos do mundo inteiro, os presbíteros, os diáconos e todos os ministros do vosso povo."],
+          ["Todos", "Lembrai-vos, ó Pai, da vossa Igreja!"],
+          ["Sacerdote", "Lembrai-vos também, na vossa misericórdia, dos nossos irmãos e irmãs que adormeceram na esperança da ressurreição e de todos os que partiram desta vida; acolhei-os junto a vós na luz da vossa face."],
+          ["Todos", "Concedei-lhes, ó Senhor, a luz eterna!"],
+          ["Sacerdote", "Enfim, nós vos pedimos, tende piedade de todos nós e dai-nos participar da vida eterna, com a Virgem Maria, Mãe de Deus, São José, seu esposo, os Apóstolos, e todos os Santos que neste mundo viveram na vossa amizade, a fim de vos louvarmos e glorificarmos por Jesus Cristo, vosso Filho."],
+          ["Orientação", "O sacerdote canta o «Por Cristo» e todos respondem cantando o Amém."],
+          ["Sacerdote", "Por Cristo, com Cristo, em Cristo, a vós, Deus Pai todo-poderoso, na unidade do Espírito Santo, toda honra e toda glória, por todos os séculos dos séculos."],
+          ["Todos", "Amém. (cantado)"]
+        ]
+      },
+      {
+        "titulo": "RITO DA COMUNHÃO",
+        "linhas": [
+          ["Sacerdote", "Obedientes à palavra do Salvador e formados por seu divino ensinamento, ousamos dizer:"],
+          ["Todos", "Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino, seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal."],
+          ["Sacerdote", "Livrai-nos de todos os males, ó Pai, e dai-nos hoje a vossa paz. Ajudados pela vossa misericórdia, sejamos sempre livres do pecado e protegidos de todos os perigos, enquanto aguardamos a feliz esperança e a vinda do nosso Salvador, Jesus Cristo."],
+          ["Todos", "Vosso é o Reino, o poder e a glória para sempre."],
+          ["Sacerdote", "Senhor Jesus Cristo, dissestes aos vossos Apóstolos: Eu vos deixo a paz, eu vos dou a minha paz. Não olheis os nossos pecados, mas a fé que anima vossa Igreja; dai-lhe, segundo o vosso desejo, a paz e a unidade. Vós que sois Deus com o Pai e o Espírito Santo."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "A paz do Senhor esteja sempre convosco."],
+          ["Todos", "O amor de Cristo nos uniu."],
+          ["Diácono / Sacerdote", "(Opcional – abraço da paz) Irmãos e irmãs, saudai-vos em Cristo Jesus."],
+          ["Orientação", "Se houver o abraço da paz, cada um saúda sobriamente apenas quem está mais próximo (IGMR 82)."],
+          ["Orientação", "Fração do pão: enquanto o sacerdote parte o pão, canta-se ou diz-se o Cordeiro de Deus, repetindo-o enquanto durar a fração (IGMR 83)."],
+          ["Todos", "Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós. Cordeiro de Deus que tirais o pecado do mundo, dai-nos a paz."],
+          ["Sacerdote", "Felizes os convidados para a Ceia do Senhor. Eis o Cordeiro de Deus, que tira o pecado do mundo."],
+          ["Todos", "Senhor, eu não sou digno/a de que entreis em minha morada, mas dizei uma palavra e serei salvo/a."],
+          ["Orientação", "Comunhão do sacerdote (em silêncio)."],
+          ["Comentarista", "Irmãos, por reverência ao Corpo do Senhor, pedimos que, ao receberem a Sagrada Eucaristia nas mãos, comunguem imediatamente diante do ministro, antes de retornar ao lugar. Zelar pela Eucaristia é um ato de fé e amor."],
+          ["Cantores", "Canto da Comunhão ."],
+          ["Orientação", "Terminada a distribuição da Comunhão, guarda-se um tempo de silêncio sagrado (IGMR 88)."],
+          ["Sacerdote", "Oremos."],
+          ["Orientação", "Missa solene: fundo musical ao teclado durante a Oração depois da Comunhão – o Ministério de Música deve confirmar antes com o padre."],
+          ["Sacerdote", "Oração depois da Comunhão (pág. 144)"],
+          ["Todos", "Amém."]
+        ]
+      },
+      {
+        "titulo": "RITOS DE ENCERRAMENTO",
+        "linhas": [
+          ["Pároco / Diácono / Comentarista", "Avisos paroquiais e aniversariantes (breves comunicações – IGMR 90a). Quando o pároco preside, ele mesmo faz os avisos; nas demais Missas, o diácono ou o comentarista."],
+          ["Sacerdote", "Bênção dos pães (quando houver)."],
+          ["Sacerdote", "Nossa Senhora Auxiliadora!"],
+          ["Todos", "Rogai por nós."],
+          ["Sacerdote", "O Senhor esteja convosco!"],
+          ["Todos", "Ele está no meio de nós."],
+          ["Orientação", "Bênção Solene:"],
+          ["Diácono / Sacerdote", "Inclinai-vos para receber a bênção."],
+          ["Sacerdote", "Bênção Solene – Epifania do Senhor (pág. 145)\nDeus, que vos chamou das trevas à sua luz admirável, derrame benigno sobre vós as suas bênçãos e confirme os vossos corações na fé, na esperança e na caridade."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "Porque seguis confiantes o Cristo, que hoje se manifestou ao mundo como luz que ilumina as trevas, Deus vos torne também uma luz para vossos irmãos e irmãs."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "Terminada a vossa peregrinação, possais chegar ao Cristo Senhor, luz da luz, que os magos procuravam guiados pela estrela e com grande alegria encontraram."],
+          ["Todos", "Amém."],
+          ["Sacerdote", "E a bênção de Deus todo-poderoso, Pai e Filho ✠ e Espírito Santo, desça sobre vós e permaneça para sempre."],
+          ["Todos", "Amém."],
+          ["Diácono / Sacerdote", "Ide em paz, e o Senhor vos acompanhe.\n(Ou: Ide em paz, e anunciai o Evangelho do Senhor. / Ide em paz, e glorificai o Senhor com vossa vida. / Em nome do Senhor, ide em paz e o Senhor vos acompanhe.)"],
+          ["Todos", "Graças a Deus."],
+          ["Cantores", "Canto Final."]
+        ]
+      }
+    ],
+    "pdf": "semanas/2026-12-28/pdf/EPIFANIA DO SENHOR - DOMINGO 18H30 - 3 JANEIRO 2027.pdf",
+    "pdfHash": "052ae67beaef22d5"
   }
 };

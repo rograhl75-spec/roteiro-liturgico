@@ -1390,6 +1390,8 @@
    "tipo": "roteiro",
    "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
    "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
+   "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "a371dc2b9dc725b4",
    "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
    "secoes": [
     {
@@ -1401,7 +1403,7 @@
       ],
       [
        "Orientação",
-       "3º Domingo do Advento (Gaudete) – cor rósea (ou roxa). Domingo da alegria: o altar pode ser ornado com flores e os instrumentos acompanham o canto com alegria, sem antecipar a plenitude do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+       "3º Domingo do Advento (Gaudete) – cor rósea (ou roxa). Domingo da alegria: o altar pode ser ornado com flores e os instrumentos acompanham o canto com alegria, sem antecipar a plenitude do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."
       ],
       [
        "Orientação",
@@ -1982,9 +1984,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "1963f9b703a171cd"
+   ]
   },
   "preces_13": {
    "tipo": "preces",
