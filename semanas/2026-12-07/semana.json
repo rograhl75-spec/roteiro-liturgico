@@ -726,6 +726,8 @@
    "titulo": "Roteiro — Imaculada Conceição — 08/12/2026",
    "botao": "📖 Roteiro — Imaculada Conceição",
    "fonte": "semanas/2026-12-07/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.docx",
+   "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
+   "pdfHash": "6e981b9e9546f2a2",
    "cabecalho": "● SOLENIDADE DA IMACULADA CONCEIÇÃO DA BEM-AVENTURADA VIRGEM MARIA – 8 DE DEZEMBRO DE 2026 – COR BRANCA",
    "secoes": [
     {
@@ -775,14 +777,6 @@
       [
        "Comentarista",
        "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
-      ],
-      [
-       "Orientação",
-       "Missa sem transmissão:"
-      ],
-      [
-       "Comentarista",
-       "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."
       ],
       [
        "Orientação",
@@ -1322,9 +1316,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-07/pdf/IMACULADA CONCEIÇÃO - SOLENIDADE - 8 DEZEMBRO 2026.pdf",
-   "pdfHash": "8532becf65df17dd"
+   ]
   },
   "preces_13_imaculada": {
    "tipo": "preces",
@@ -1391,7 +1383,7 @@
    "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
    "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
    "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "a371dc2b9dc725b4",
+   "pdfHash": "837c6c7dade542f1",
    "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
    "secoes": [
     {
@@ -1440,7 +1432,7 @@
       ],
       [
        "Orientação",
-       "Missa com transmissão:"
+       "Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):"
       ],
       [
        "Comentarista",
@@ -1448,7 +1440,7 @@
       ],
       [
        "Orientação",
-       "Missa sem transmissão:"
+       "Demais Missas (sem transmissão):"
       ],
       [
        "Comentarista",

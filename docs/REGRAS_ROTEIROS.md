@@ -16,8 +16,8 @@
    - uma única fonte (Garamond, serifada como os livros litúrgicos); a cruz ✠ em vermelho, com fonte que a exibe (Segoe UI Symbol);
    - «Oremos.» em linha própria, em negrito, antes da oração;
    - rubricas (o que se faz) em vermelho itálico; o que se diz em preto, sem aspas, negrito ou itálico;
-   - abertura: saudação do comentarista (℟. Para sempre seja louvado) → intenções, lidas em todas as Missas, com duas versões:
-     «Missa com transmissão» (inclui as intenções deixadas nas redes sociais) e «Missa sem transmissão» → monição inicial → canto de entrada;
+   - abertura: saudação do comentarista (℟. Para sempre seja louvado) → intenções, lidas em todas as Missas → monição inicial → canto de entrada.
+     As intenções têm a versão «com transmissão» (inclui as intenções deixadas nas redes sociais) e/ou «sem transmissão», conforme a regra 15;
    - a monição inicial não cita a transmissão;
    - ritos próprios (ex.: coroa do Advento) com as rubricas na ordem em que acontecem;
    - os roteiros de 2025 são a base, mas sem notas internas («como em 2025», «dinâmica de 2025»).
@@ -60,6 +60,11 @@
     - dentro do roteiro próprio, as orientações **não levam prefixo de horário**; nas Missas solenes usa-se «Missa solene:» (regra 13), como nos roteiros das solenidades em dia de semana;
     - **não** geram roteiro próprio: o que depende de quem preside (ex.: avisos feitos pelo pároco) e as preces (cada horário já tem o seu formulário).
     - **Publicação**: na ferramenta *Montar a semana*, marcar o arquivo como «Roteiro de outra celebração», escolher o **dia** e digitar o **horário** na coluna «Horário da Missa» (ex.: `18h30`; vários: `18h30 e 19h00`). O roteiro passa a guardar as Missas a que se destina (`"missas": [{ data, hora, local }]`), e a página mostra:
-      - na escala do dia, em cada Missa, o botão **«📖 Roteiro desta Missa»**, que abre o roteiro certo;
+      - na escala do dia, em cada Missa, o botão **«⭐ Roteiro próprio desta Missa»** (amarelo) ou **«📖 Roteiro das demais Missas»** (azul), que abre o roteiro certo;
       - no topo do roteiro, uma **faixa amarela** — «Roteiro próprio desta Missa: Sábado, 05/12 — 18h30 (Igreja Matriz)»; o roteiro principal mostra «Este roteiro vale para as demais Missas» com os horários;
       - na barra do topo, o botão com o horário — «📖 Roteiro — Sábado 18h30 · ECC» — e o principal como «… (demais Missas)».
+
+15. **Transmissão (redes sociais)**: são transmitidas **somente** as Missas de **sábado às 18h30** e de **domingo às 18h30** (Igreja Matriz) e, **durante a semana, as solenidades**. Por isso, nas intenções:
+    - **solenidade em dia de semana** (ex.: Imaculada Conceição, Natal, Santa Maria Mãe de Deus) e **roteiro próprio** de sábado ou domingo 18h30 (regra 14): somente «Missa com transmissão»;
+    - **dia de semana sem solenidade** (féria, memória, festa, missa votiva): somente «Missa sem transmissão»;
+    - **roteiro do fim de semana usado em várias Missas**: as duas versões, com o horário no rótulo — «Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):» e «Demais Missas (sem transmissão):». Se o roteiro valer só para um dos horários transmitidos (ex.: quando o outro tem roteiro próprio), o rótulo indica só esse horário.
