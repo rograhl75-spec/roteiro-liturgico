@@ -53,7 +53,7 @@
   }
 
   /* Equipe de liturgia do dia: "equipe": { comentarista, leitor, projecao }.
-     Comentarista é o termo da IGMR (n. 105b) para quem faz as monições — o "animador". */
+     Comentarista é o termo da IGMR (n. 105b) para quem faz as monições. */
   const FUNCOES_EQUIPE = [
     ['comentarista', '🎙️ Comentarista'],
     ['leitor', '📖 Leitor(a)'],

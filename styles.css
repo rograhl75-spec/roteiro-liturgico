@@ -5,8 +5,8 @@
             --card-bg: #ffffff;
             --text: #1e293b;
             --border: #cbd5e1;
-            --cor-animador: #1e40af;
-            --bg-animador: #eff6ff;
+            --cor-comentarista: #1e40af;
+            --bg-comentarista: #eff6ff;
             --cor-padre: #991b1b;
             --bg-padre: #fef2f2;
             --cor-musica: #166534;
@@ -98,7 +98,7 @@
         .script-tag { flex: 0 0 120px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 8px; text-align: center; display: flex; align-items: flex-start; justify-content: center; padding-top: 12px; letter-spacing: 0.5px; }
         .script-text { flex: 1; font-size: 11pt; line-height: 1.5; padding: 10px 14px; background: #fff; text-align: justify; transition: font-size 0.2s ease; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
         
-        .tag-animador { background: var(--cor-animador); color: #fff; }
+        .tag-comentarista { background: var(--cor-comentarista); color: #fff; }
         .tag-padre { background: var(--cor-padre); color: #fff; }
         .tag-musica { background: var(--cor-musica); color: #fff; }
         .tag-todos { background: var(--cor-todos); color: #fff; }
@@ -106,7 +106,7 @@
         .tag-leitor { background: var(--cor-leitor); color: #fff; }
         .tag-diacono { background: var(--cor-diacono); color: #fff; }
         
-        .row-animador .script-text { border-left: 3px solid var(--cor-animador); }
+        .row-comentarista .script-text { border-left: 3px solid var(--cor-comentarista); }
         .row-padre .script-text { border-left: 3px solid var(--cor-padre); }
         .row-musica .script-text { border-left: 3px solid var(--cor-musica); }
         .musica-icone { display: inline-block; margin-left: .4em; padding: 0 .3em; border: 1px solid var(--cor-musica); border-radius: 4px; color: var(--cor-musica); font-size: .95em; line-height: 1.2; font-weight: 700; }
@@ -223,7 +223,7 @@
             .day-nav, .action-row, .source-note { display: none !important; }
             .clickable-ref { background: transparent; color: #000; padding: 0; }
             .roteiro-section-title, .preces-form-title { color: #000; border-bottom: 1px solid #000; font-size: 12pt; page-break-after: avoid; }
-            .script-tag.tag-animador, .script-tag.tag-padre, .script-tag.tag-musica, .script-tag.tag-todos,
+            .script-tag.tag-comentarista, .script-tag.tag-padre, .script-tag.tag-musica, .script-tag.tag-todos,
             .script-tag.tag-leitor, .script-tag.tag-diacono, .script-tag.tag-rubrica { background: #e2e8f0; color: #000; }
         }
         

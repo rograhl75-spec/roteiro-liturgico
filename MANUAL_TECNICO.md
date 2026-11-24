@@ -79,7 +79,7 @@ A semana exibida ao abrir o aplicativo é escolhida automaticamente pela data (f
 
 ### Papéis reconhecidos nos roteiros
 
-O texto do papel define a cor da linha: `Animador`, `Padre`, `Diácono`, `Música`, `Todos`, `Leitor`/`1ª Leitura`/`2ª Leitura`; qualquer outro (ex.: `Orientação`, `Liturgia`, `Acólito`, `Coroinhas`) aparece como rubrica.
+O texto do papel define a cor da linha, com os nomes das funções conforme a IGMR: `Comentarista`, `Sacerdote`, `Diácono`, `Cantores`/`Salmista`, `Todos`, `Leitor`; qualquer outro (ex.: `Orientação`, `Liturgia`, `Acólito`, `Coroinhas`) aparece como rubrica. O termo antigo «Animador» não é mais usado: ao montar a semana, ele é convertido automaticamente para «Comentarista» (ou «Todos», quando é resposta da assembleia).
 
 ---
 

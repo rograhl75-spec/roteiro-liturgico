@@ -2,8 +2,8 @@
 
 - sem fundos coloridos (retira todo sombreamento de células e parágrafos);
 - texto em preto; rubricas continuam em vermelho;
-- marca-texto AMARELO no texto do Comentarista/Animador e em todas as respostas
-  de «Todos» (o animador também responde), inclusive no rótulo da linha;
+- marca-texto AMARELO no texto do Comentarista e em todas as respostas
+  de «Todos» (o comentarista também responde), inclusive no rótulo da linha;
   as rubricas vermelhas dentro dessas células não recebem amarelo.
 
   python3 cores.py ROTEIRO.docx PRECES.docx ...
