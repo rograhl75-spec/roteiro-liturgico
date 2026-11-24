@@ -437,6 +437,11 @@ window.semanasData = [
       "Confissões e Direção Espiritual"
      ]
     ],
+    "equipe": {
+     "comentarista": "Caroline",
+     "leitor": "Roberta Vieira Aoki",
+     "projecao": "Alessandro"
+    },
     "leituras": [
      [
       "1ª Leitura",
@@ -493,6 +498,11 @@ window.semanasData = [
       "Direção Espiritual — Padre de Schoenstatt"
      ]
     ],
+    "equipe": {
+     "comentarista": "Vilma",
+     "leitor": "Iracema da Costa Estevão (Capelinhas)",
+     "projecao": "Isabela"
+    },
     "leituras": [
      [
       "1ª Leitura",
@@ -542,6 +552,11 @@ window.semanasData = [
       "Pe. Heriberto"
      ]
     ],
+    "equipe": {
+     "comentarista": "Reni",
+     "leitor": "Giovanna Laffranchi Teixeira",
+     "projecao": "Alessandro"
+    },
     "leituras": [
      [
       "1ª Leitura",
@@ -605,6 +620,11 @@ window.semanasData = [
       "Confissões — Padre de Schoenstatt"
      ]
     ],
+    "equipe": {
+     "comentarista": "Carla",
+     "leitor": "Fabiana Teixeira Augusto Romano",
+     "projecao": "Arthur"
+    },
     "leituras": [
      [
       "1ª Leitura",
@@ -661,6 +681,11 @@ window.semanasData = [
       "Matrimônio — Gregorio e Maria"
      ]
     ],
+    "equipe": {
+     "comentarista": "Dani",
+     "leitor": "Selma Aparecida Pereira",
+     "projecao": "Reni"
+    },
     "leituras": [
      [
       "1ª Leitura",

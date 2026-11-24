@@ -358,11 +358,16 @@
     return papel;
   }
 
+  const trocarAnimador = (texto) => String(texto)
+    .replace(/\bANIMADOR(ES)?\b/g, (_, pl) => `COMENTARISTA${pl ? 'S' : ''}`)
+    .replace(/\b([Aa])nimador(es)?\b/g, (_, a, pl) => `${a === 'A' ? 'C' : 'c'}omentarista${pl ? 's' : ''}`);
+
   function aplicarIGMR(linhas) {
     return linhas.map(([papel, texto], i) => {
       const seguinte = linhas.slice(i + 1, i + 3).map(([, x]) => x).join('\n');
       const novo = papelIGMR(papel, texto, seguinte);
-      return [novo, novo === 'Orientação' ? texto.replace(/\b([Oo]) animador\b/g, '$1 comentarista') : texto];
+      // O termo antigo «animador» vira «comentarista» também dentro dos textos.
+      return [novo, trocarAnimador(texto)];
     });
   }
 

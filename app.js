@@ -44,12 +44,13 @@ function getDefaultWeek(weeks, today = todayIso()) {
     || null;
 }
 
+/* Funções conforme a IGMR. «Animador» (nome antigo) é tratado como Comentarista. */
 const ROLE_CLASSES = [
-  [/^animador/i, 'animador'],
-  [/^padre\s*\/\s*animador/i, 'todos'],
-  [/^padre/i, 'padre'],
+  [/^(padre|sacerdote)\s*\/\s*(animador|comentarista)/i, 'todos'],
+  [/^(comentarista|animador|monitor)/i, 'comentarista'],
+  [/^(padre|sacerdote|p[aá]roco|celebrante|presidente)/i, 'padre'],
   [/^di[aá]cono/i, 'diacono'],
-  [/^m[uú]sica/i, 'musica'],
+  [/^(m[uú]sica|cantores|salmista)/i, 'musica'],
   [/^todos/i, 'todos'],
   [/^(leitor|\d[ªa]\s*leitura)/i, 'leitor']
 ];
