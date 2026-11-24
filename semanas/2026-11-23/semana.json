@@ -354,6 +354,17 @@
       "casamento",
       "Matrimônio — Carlos e Alessandra"
      ]
+    ],
+    "equipes": [
+     {
+      "hora": "18h30",
+      "local": "Igreja Matriz",
+      "comentarista": "Miriam",
+      "leitor": "Livia Bonfim Catanho da Silva",
+      "leitor2": "Rogério Lemes da Rosa",
+      "preces": "Manoel",
+      "liturgia": "Duda e Maycon"
+     }
     ]
    },
    {
@@ -375,6 +386,35 @@
       "Igreja Matriz",
       "Pe. Heriberto"
      ]
+    ],
+    "equipes": [
+     {
+      "hora": "09h00",
+      "local": "Igreja Matriz",
+      "comentarista": "Caroline",
+      "leitor": "Luana Held Salinet",
+      "leitor2": "Almir Rogerio Lopes Franciscao",
+      "preces": "Reni",
+      "liturgia": "Carla"
+     },
+     {
+      "hora": "11h00",
+      "local": "Igreja Matriz",
+      "comentarista": "Lu",
+      "leitor": "Priscilla Bassan",
+      "leitor2": "Denise De Marchi Beluzo Do Valle",
+      "preces": "Alexandre",
+      "liturgia": "Zilda, Alexandre e Lisandro"
+     },
+     {
+      "hora": "18h30",
+      "local": "Igreja Matriz",
+      "comentarista": "Carla",
+      "leitor": "Matheus A. de Andrade Fiumari",
+      "leitor2": "Mario André Glaeser Bortolossi",
+      "preces": "Fabio",
+      "liturgia": "Duda, Maycon e Fabio"
+     }
     ]
    }
   ],
@@ -673,6 +713,8 @@
    "tipo": "roteiro",
    "titulo": "Roteiro — 1º Domingo do Advento — 28 e 29/11/2026",
    "fonte": "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
+   "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "6809ed934a0a6736",
    "cabecalho": "● 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026 – ANO B – COR ROXA",
    "secoes": [
     {
@@ -680,11 +722,15 @@
      "linhas": [
       [
        "Orientação",
-       "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+       "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."
       ],
       [
        "Orientação",
        "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "Preparar a caldeirinha com água benta e o aspersório junto à coroa do Advento, para a aspersão da coroa logo depois da bênção."
       ],
       [
        "Orientação",
@@ -1285,9 +1331,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "a0ab20ec9d417ba2"
+   ]
   },
   "preces_11": {
    "tipo": "preces",

@@ -75,13 +75,15 @@
   }
 
   /* Equipe de liturgia. Dia com uma missa: "equipe": { comentarista, leitor, projecao }.
-     Dia com várias missas (ex.: fim de semana): "equipes": [{ hora, local, comentarista, leitor, leitor2, projecao }].
+     Dia com várias missas (ex.: fim de semana): "equipes": [{ hora, local, comentarista, leitor, leitor2, preces, liturgia, projecao }].
      No fim de semana há dois leitores (1ª e 2ª leitura); o salmista é do ministério de música e não é publicado.
      Comentarista é o termo da IGMR (n. 105b) para quem faz as monições. */
   const FUNCOES_EQUIPE = [
     ['comentarista', '🎙️ Comentarista'],
     ['leitor', '📖 Leitor(a)'],
     ['leitor2', '📖 2ª Leitura'],
+    ['preces', '🙏 Preces'],
+    ['liturgia', '⛪ Liturgia'],
     ['projecao', '📽️ Projeção (multimídia)']
   ];
   const preenchido = (valor) => String(valor || '').trim();
@@ -92,7 +94,7 @@
       .filter(([, , funcoes]) => funcoes.length));
     if (!equipes.length) return '';
     const comDia = dias.length > 1;
-    return `<div class="presidency-box presidency-equipe"><div class="presidency-title">🙋 Equipe de liturgia</div>
+    return `<div class="presidency-box presidency-equipe"><div class="presidency-title">🙋 Escala da liturgia</div>
                 <table class="escala-table"><tbody>${equipes.map(([item, equipe, funcoes]) => {
                   const cabecalho = equipe.hora
                     ? `<tr class="equipe-missa"><td colspan="2">${comDia ? `<span class="p-dia">${item.dia}</span> ` : ''}<span class="p-hora">${escapar(equipe.hora)}</span>${equipe.local ? ` <span class="p-loc">${escapar(equipe.local)}</span>` : ''}</td></tr>`

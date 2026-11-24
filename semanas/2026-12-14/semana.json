@@ -627,6 +627,8 @@
    "tipo": "roteiro",
    "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
    "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
+   "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
+   "pdfHash": "e92498a94b2752ba",
    "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
    "secoes": [
     {
@@ -634,7 +636,7 @@
      "linhas": [
       [
        "Orientação",
-       "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Pedir a bênção solene do Advento ao fim da Missa (Missal, pág. 578)."
+       "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."
       ],
       [
        "Orientação",
@@ -1215,9 +1217,7 @@
       ]
      ]
     }
-   ],
-   "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "4b9172bd58f0f784"
+   ]
   },
   "preces_14": {
    "tipo": "preces",
