@@ -52,6 +52,25 @@
     }).join('');
   }
 
+  /* Equipe de liturgia do dia: "equipe": { comentarista, leitor, projecao }.
+     Comentarista é o termo da IGMR (n. 105b) para quem faz as monições — o "animador". */
+  const FUNCOES_EQUIPE = [
+    ['comentarista', '🎙️ Comentarista'],
+    ['leitor', '📖 Leitor(a)'],
+    ['projecao', '📽️ Projeção (multimídia)']
+  ];
+
+  function blocoEquipe(dias) {
+    const linhas = dias.flatMap((item) => FUNCOES_EQUIPE
+      .filter(([chave]) => item.equipe && String(item.equipe[chave] || '').trim())
+      .map(([chave, rotulo]) => [item, rotulo, item.equipe[chave]]));
+    if (!linhas.length) return '';
+    const comDia = dias.length > 1;
+    return `<div class="presidency-box presidency-equipe"><div class="presidency-title">🙋 Equipe de liturgia</div>
+                <table class="escala-table"><tbody>${linhas.map(([item, rotulo, nome]) =>
+                  `<tr><td class="p-loc">${comDia ? `<span class="p-dia">${item.dia}</span> ` : ''}${rotulo}</td><td class="p-cel">${escapar(nome)}</td></tr>`).join('')}</tbody></table></div>`;
+  }
+
   function resumoAtendimentos(semana) {
     const linhas = semana.dias.concat(semana.fimDeSemana.dias).flatMap((dia) => dia.escala
       .filter((linha) => tipoDaLinha(linha) !== 'missa')
@@ -120,6 +139,7 @@
                 <span class="color-badge badge-${dia.cor}">${CORES[dia.cor]}${dia.grau ? ` (${dia.grau})` : ''}</span></div>
               <p><strong>Celebração:</strong> ${dia.celebracao}</p>
               ${blocosEscala(dia, dias)}
+              ${blocoEquipe(dias)}
               ${dia.nota ? `<p class="source-note">${dia.nota}</p>` : ''}
               ${botoes ? `<div class="action-row">${botoes}</div>` : ''}
               <div class="tables-grid">
