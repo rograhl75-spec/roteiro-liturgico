@@ -75,7 +75,7 @@
       <input type="file" id="arquivos" multiple accept=".docx,.xlsx,.pdf">
     </div>
     <table class="lista-arquivos" id="tabela-arquivos" hidden>
-      <thead><tr><th>Arquivo</th><th>O que é</th><th>Dia</th><th>Nome do botão</th><th></th></tr></thead>
+      <thead><tr><th>Arquivo</th><th>O que é</th><th>Dia</th><th>Horário da Missa</th><th>Nome do botão</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
     <p class="acoes" style="margin-top:12px"><button type="button" id="montar" disabled>Montar a semana</button>
@@ -226,6 +226,7 @@ function desenharArquivos() {
       <td><select data-i="${i}" data-campo="tipo">${TIPOS.map(([v, t]) => `<option value="${v}"${v === a.tipo ? ' selected' : ''}>${t}</option>`).join('')}</select></td>
       <td>${precisaDia ? `<select data-i="${i}" data-campo="data">${dias.map((d) =>
         `<option value="${d}"${d === a.data ? ' selected' : ''}>${NOMES_DIA[SemanaLib.diaDaSemana(d)]} ${SemanaLib.dataCurta(d)}</option>`).join('')}</select>` : '—'}</td>
+      <td>${a.tipo === 'roteiro-extra' || a.tipo === 'preces-extra' ? `<input data-i="${i}" data-campo="horas" value="${escapar(a.horas || '')}" size="10" placeholder="ex.: 18h30" title="Só para roteiro próprio de um horário (deixe vazio se vale para o dia todo)">` : '—'}</td>
       <td>${precisaDia ? `<input data-i="${i}" data-campo="rotulo" value="${escapar(a.rotulo)}" size="28">` : '—'}</td>
       <td><button type="button" class="secundario" data-remover="${i}" aria-label="Remover ${escapar(a.nome)}">✖</button></td>
     </tr>`;
@@ -250,7 +251,7 @@ async function montar() {
     const extras = [];
     for (const a of estado.arquivos) {
       if (a.tipo === 'roteiro-extra' || a.tipo === 'preces-extra') {
-        extras.push({ nome: a.nome, tipo: a.tipo.replace('-extra', ''), data: a.data, rotulo: a.rotulo, doc: await Office.readDocx(a.bytes) });
+        extras.push({ nome: a.nome, tipo: a.tipo.replace('-extra', ''), data: a.data, rotulo: a.rotulo, horas: a.horas, doc: await Office.readDocx(a.bytes) });
       } else if (a.tipo === 'documento') extras.push({ nome: a.nome, tipo: 'documento', data: a.data, rotulo: a.rotulo });
     }
     const escala = umDe('escala');
@@ -419,7 +420,7 @@ $('#tabela-arquivos').addEventListener('change', (e) => {
   if (e.target.dataset.campo === 'tipo') desenharArquivos();
 });
 $('#tabela-arquivos').addEventListener('input', (e) => {
-  if (e.target.dataset.campo === 'rotulo') estado.arquivos[e.target.dataset.i].rotulo = e.target.value;
+  if (['rotulo', 'horas'].includes(e.target.dataset.campo)) estado.arquivos[e.target.dataset.i][e.target.dataset.campo] = e.target.value;
 });
 $('#tabela-arquivos').addEventListener('click', (e) => {
   const i = e.target.dataset.remover;
