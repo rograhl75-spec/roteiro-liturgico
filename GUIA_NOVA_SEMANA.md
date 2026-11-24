@@ -50,6 +50,7 @@ Clique em **Montar a semana**.
    - **Missal Romano:** páginas já preenchidas. Corrija se precisar; deixe vazio o que não se aplica.
    - **Leituras:** se a página do lecionário estiver vazia, digite assim: `II / 1172` (volume / página).
    - **Escala:** vem da planilha. Se estiver errada, corrija **na planilha** e clique de novo em **Montar a semana**.
+   - **🙋 Equipe de liturgia (opcional):** digite o **Comentarista**, o **Leitor(a)** e quem opera a **Projeção (multimídia)** de cada dia. No fim de semana há um grupo de campos **para cada missa** (horário e local da escala), com **1ª Leitura** e **2ª Leitura**. O salmista é do ministério de música e não aparece na página. Campo vazio não é publicado.
    - **Antífonas e citações para a transmissão:** confira o texto; as citações podem ser digitadas ou corrigidas.
 
 ## Passo 5 — Baixar o pacote

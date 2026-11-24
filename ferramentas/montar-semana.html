@@ -293,6 +293,15 @@ const CAMPOS_MISSAL = [['gloria', 'Glória'], ['coleta', 'Coleta'], ['creio', 'C
   ['prefacio', 'Prefácio'], ['eucaristica', 'Oração Eucarística'], ['rito_comunhao', 'Rito da Comunhão'],
   ['comunhao', 'Depois da Comunhão'], ['bencao', 'Bênção solene']];
 const CAMPOS_EQUIPE = [['comentarista', 'Comentarista'], ['leitor', 'Leitor(a)'], ['projecao', 'Projeção (multimídia)']];
+const CAMPOS_EQUIPE_FIM = [['comentarista', 'Comentarista'], ['leitor', '1ª Leitura'], ['leitor2', '2ª Leitura'], ['projecao', 'Projeção (multimídia)']];
+
+/* Uma equipe para cada missa da escala do dia (mantém o que já foi digitado no mesmo horário). */
+function equipesDaEscala(d) {
+  const anteriores = d.equipes || [];
+  d.equipes = d.escala.filter((l) => !l[3]).map(([hora, local]) =>
+    anteriores.find((e) => e.hora === hora && e.local === local) || { hora, local });
+  return d.equipes;
+}
 const CORES = [['verde', 'Verde'], ['branco', 'Branca'], ['vermelho', 'Vermelha'], ['roxo', 'Roxa'], ['rosa', 'Rósea']];
 
 function campo(caminho, valor, rotulo, extra = '') {
@@ -326,7 +335,11 @@ function desenharDia(dia, base) {
           : '<p class="pequeno">Nenhum horário na planilha para este dia.</p>'}</div>
       ${base.startsWith('dias.') ? `<div><h3>🙋 Equipe de liturgia</h3>
         <div class="grade">${CAMPOS_EQUIPE.map(([k, t]) => campo(`${base}.equipe.${k}`, (dia.equipe || {})[k] || '', t)).join('')}</div>
-        <p class="pequeno">Opcional. Deixe vazio o que não houver.</p></div>` : ''}
+        <p class="pequeno">Opcional. Deixe vazio o que não houver.</p></div>` : `<div><h3>🙋 Equipe de liturgia (por missa)</h3>
+        ${(dia.dias || []).map((d, j) => equipesDaEscala(d).map((eq, k) => `<p class="pequeno"><strong>${NOMES_DIA[SemanaLib.diaDaSemana(d.data)]} ${escapar(eq.hora)}</strong> — ${escapar(eq.local)}</p>
+          <div class="grade">${CAMPOS_EQUIPE_FIM.map(([c, t]) => campo(`${base}.dias.${j}.equipes.${k}.${c}`, eq[c] || '', t)).join('')}</div>`).join('')).join('')
+          || '<p class="pequeno">Nenhuma missa na escala do fim de semana.</p>'}
+        <p class="pequeno">Opcional. O salmista é do ministério de música e não aparece na página.</p></div>`}
       ${ant ? `<div><h3>🎵 Antífonas e 📺 citações para a transmissão</h3>
         ${ant.items.map((item, i) => item.options
           ? item.options.map((o, j) => `<label>${escapar(item.label)}${item.options.length > 1 ? ` (${j + 1})` : ''} — ${escapar(o.reference)}<textarea data-caminho="${antBase}.items.${i}.options.${j}.text">${escapar(o.text)}</textarea></label>`).join('')
@@ -363,6 +376,12 @@ function baixar() {
     if (dia.equipe) {
       for (const k of Object.keys(dia.equipe)) if (!String(dia.equipe[k]).trim()) delete dia.equipe[k];
       if (!Object.keys(dia.equipe).length) delete dia.equipe;
+    }
+    for (const d of dia.dias || []) {
+      if (!d.equipes) continue;
+      d.equipes = d.equipes.map((e) => Object.fromEntries(Object.entries(e).filter(([, v]) => String(v).trim())))
+        .filter((e) => CAMPOS_EQUIPE_FIM.some(([c]) => e[c]));
+      if (!d.equipes.length) delete d.equipes;
     }
     dia.leituras.forEach((l) => { l[3] = String(l[3] || '').trim().replace(/\s*\/\s*/, ' / '); });
   }

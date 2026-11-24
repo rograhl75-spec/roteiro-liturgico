@@ -89,6 +89,8 @@
         .presidency-casamento { border-top-color: #b45309; }
         .presidency-casamento .p-hora { background: #fef3c7; color: #92400e; }
         .presidency-equipe { border-top-color: #7c3aed; }
+        .presidency-equipe .equipe-missa td { background: #f5f3ff; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .presidency-equipe .p-hora { background: #ede9fe; color: #5b21b6; }
         .card-atendimentos { border-left-color: #0f766e; }
         .card-atendimentos a { color: #1d4ed8; font-weight: 600; }
         
