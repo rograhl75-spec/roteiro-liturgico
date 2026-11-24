@@ -66,5 +66,5 @@
 
 15. **Transmissão (redes sociais)**: são transmitidas **somente** as Missas de **sábado às 18h30** e de **domingo às 18h30** (Igreja Matriz) e, **durante a semana, as solenidades**. Por isso, nas intenções:
     - **solenidade em dia de semana** (ex.: Imaculada Conceição, Natal, Santa Maria Mãe de Deus) e **roteiro próprio** de sábado ou domingo 18h30 (regra 14): somente «Missa com transmissão»;
-    - **dia de semana sem solenidade** (féria, memória, festa, missa votiva): somente «Missa sem transmissão»;
+    - **dia de semana sem solenidade** (féria, memória, festa, missa votiva — ex.: Sagrado Coração de Jesus na 1ª sexta-feira —, 7º dia da Oitava do Natal com o Te Deum em 31/12): somente «Missa sem transmissão»;
     - **roteiro do fim de semana usado em várias Missas**: as duas versões, com o horário no rótulo — «Missas com transmissão (sábado e domingo, 18h30 – Igreja Matriz):» e «Demais Missas (sem transmissão):». Se o roteiro valer só para um dos horários transmitidos (ex.: quando o outro tem roteiro próprio), o rótulo indica só esse horário.
