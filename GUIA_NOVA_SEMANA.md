@@ -40,6 +40,7 @@ Arraste todos os arquivos da semana para o quadro tracejado (ou clique em **Esco
 
 Confira a coluna **“O que é”**. Ela já vem preenchida; mude só se estiver errada.
 Para roteiros, preces e PDFs de outras celebrações, escolha também o **dia** e o **nome do botão** (ex.: “Fiéis Defuntos”).
+Se uma Missa do fim de semana tiver **roteiro próprio** (ex.: só a de sábado 18h30 tem acolhida do ECC, ou só a de domingo 18h30 é solene), marque o arquivo como roteiro de outra celebração, escolha o dia e digite o **horário** na coluna **“Horário da Missa”** (ex.: `18h30`). O roteiro do domingo passa a valer para as demais Missas, e a página mostra em cada horário qual roteiro usar.
 
 ## Passo 4 — Montar e conferir
 

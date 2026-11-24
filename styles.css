@@ -89,6 +89,12 @@
         .presidency-casamento { border-top-color: #b45309; }
         .presidency-casamento .p-hora { background: #fef3c7; color: #92400e; }
         .presidency-equipe { border-top-color: #7c3aed; }
+        .missa-roteiro { display: inline-block; margin: 6px 0 0; font: inherit; font-size: 0.8rem; font-weight: 600; color: #1e40af; background: #eff6ff; border: 1px solid #93c5fd; border-radius: 4px; padding: 3px 8px; cursor: pointer; }
+        .missa-roteiro:hover, .missa-roteiro:focus-visible { background: #dbeafe; }
+        .missa-roteiro-proprio { font-weight: 700; color: #92400e; background: #fef3c7; border: 2px solid #f59e0b; }
+        .missa-roteiro-proprio:hover, .missa-roteiro-proprio:focus-visible { background: #fde68a; }
+        .roteiro-missas { margin: 0 0 1rem; padding: 0.8rem 1rem; border: 2px solid #f59e0b; border-left-width: 8px; border-radius: 6px; background: #fffbeb; color: #78350f; font-size: 1.05rem; line-height: 1.5; }
+        .roteiro-missas strong { display: block; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.85rem; color: #92400e; }
         .presidency-equipe .equipe-missa td { background: #f5f3ff; padding-top: 0.5rem; padding-bottom: 0.5rem; }
         .presidency-equipe .p-hora { background: #ede9fe; color: #5b21b6; }
         .card-atendimentos { border-left-color: #0f766e; }
@@ -339,3 +345,4 @@ input:focus-visible {
   .print-pdf img { display: block; width: 100%; height: auto; max-height: 99.5vh; object-fit: contain; break-after: page; page-break-after: always; box-shadow: none; margin: 0; }
   .print-pdf img:last-child { break-after: auto; page-break-after: auto; }
 }
+@media print { .missa-roteiro { display: none !important; } .roteiro-missas { border: 1px solid #000; background: transparent; color: #000; } }

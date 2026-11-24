@@ -107,6 +107,31 @@ function createSourceRow(fileName, label) {
   return row;
 }
 
+const NOMES_DIAS_SEMANA = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+
+function createMissasBanner(missas, principal) {
+  const banner = document.createElement('div');
+  banner.className = 'roteiro-missas';
+  const titulo = document.createElement('strong');
+  titulo.textContent = principal
+    ? '🕒 Este roteiro vale para as demais Missas:'
+    : `🕒 Roteiro próprio ${missas.length > 1 ? 'destas Missas' : 'desta Missa'}:`;
+  banner.appendChild(titulo);
+  const porDia = new Map();
+  missas.forEach((missa) => {
+    if (!porDia.has(missa.data)) porDia.set(missa.data, []);
+    porDia.get(missa.data).push(missa.local ? `${missa.hora} (${missa.local})` : missa.hora);
+  });
+  porDia.forEach((horarios, data) => {
+    const linha = document.createElement('div');
+    const [ano, mes, dia] = data.split('-').map(Number);
+    const nome = NOMES_DIAS_SEMANA[new Date(ano, mes - 1, dia).getDay()];
+    linha.textContent = `${nome}, ${String(dia).padStart(2, '0')}/${String(mes).padStart(2, '0')} — ${horarios.join(' · ')}`;
+    banner.appendChild(linha);
+  });
+  return banner;
+}
+
 function createModalShell(id, title, contentId, printAction, dataset = {}) {
   const modal = document.createElement('div');
   modal.id = id;
@@ -172,6 +197,9 @@ function renderDocumentModals() {
     if (doc.fonte) {
       body.appendChild(createSourceRow(doc.fonte, type === 'preces' ? 'Abrir ou baixar as preces originais' : 'Abrir ou baixar o documento original'));
     }
+
+    // Roteiro de horário específico (regra 14): identificação bem visível da(s) Missa(s).
+    if (Array.isArray(doc.missas) && doc.missas.length) body.appendChild(createMissasBanner(doc.missas, !extra));
 
     if (doc.pdf) {
       // Mostra o próprio documento (PDF gerado do .docx), página por página — igual ao arquivo.

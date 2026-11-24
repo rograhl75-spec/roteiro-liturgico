@@ -793,6 +793,17 @@
     } else avisos.push('Roteiro do domingo não enviado.');
     if (!entrada.preces) avisos.push('Preces do domingo não enviadas.');
 
+    const missasDoDia = (data) => (escala.porDia[data] || []).filter((l) => !l[3]).map(([hora, local]) => ({ data, hora, local }));
+    const normalizarHora = (h) => String(h).toLowerCase().replace(/\s/g, '').replace(/^(\d)h/, '0$1h').replace(/h$/, 'h00').replace(/:/, 'h');
+    function missasDoHorario(data, horas) {
+      const pedidas = String(horas || '').split(/\s*(?:[,;]|\be\b)\s*/).map((h) => h.trim()).filter(Boolean).map(normalizarHora);
+      return pedidas.map((hora) => {
+        const missa = missasDoDia(data).find((m) => normalizarHora(m.hora) === hora);
+        if (!missa) avisos.push(`${dataCurta(data)}: roteiro para as ${hora}, mas a escala não tem Missa nesse horário.`);
+        return missa || { data, hora };
+      });
+    }
+
     for (const extra of entrada.extras || []) {
       const chave = slug(extra.chave || extra.rotulo || extra.nome);
       const data = extra.data || segunda;
@@ -807,11 +818,15 @@
       const icone = extra.tipo === 'preces' ? '🙏' : '📖';
       const nomeTipo = extra.tipo === 'preces' ? 'Preces' : 'Roteiro';
       const dados = extra.tipo === 'preces' ? lerPreces(extra.doc) : lerRoteiro(extra.doc);
+      // Roteiro próprio de um horário (regra 14): identifica a(s) Missa(s) pela escala.
+      const missas = missasDoHorario(data, extra.horas);
+      const quando = missas.length ? `${DIAS_CURTOS[diaDaSemana(data)]} ${missas.map((m) => m.hora).join(' e ')}` : '';
+      const rotulo = [quando, extra.rotulo].filter(Boolean).join(' · ');
       roteiros[`${extra.tipo}_${legado}_${unico}`] = {
-        tipo: extra.tipo, titulo: `${nomeTipo} — ${extra.rotulo} — ${dataCurta(data)}/${data.slice(0, 4)}`,
-        botao: `${icone} ${nomeTipo} — ${extra.rotulo}`, fonte: caminho(extra.nome), ...dados
+        tipo: extra.tipo, titulo: `${nomeTipo} — ${rotulo} — ${dataCurta(data)}/${data.slice(0, 4)}`,
+        botao: `${icone} ${nomeTipo} — ${rotulo}`, fonte: caminho(extra.nome), ...(missas.length ? { missas } : {}), ...dados
       };
-      (botoesPorDia[alvo] = botoesPorDia[alvo] || []).push({ tipo: extra.tipo, chave: unico, rotulo: `${nomeTipo} — ${extra.rotulo}` });
+      (botoesPorDia[alvo] = botoesPorDia[alvo] || []).push({ tipo: extra.tipo, chave: unico, rotulo: `${nomeTipo} — ${rotulo}` });
       if (extra.tipo === 'roteiro') {
         const doRoteiro = missalDoRoteiro(dados);
         const atual = missalRoteiroPorDia[data] || { missal: {}, cor: null };
@@ -899,7 +914,7 @@
         leituras: linhasLeituras(infoDomingo, 'dom', rotuloDia),
         missal
       };
-      if (missalSabado) avisos.push('Há roteiro extra no sábado: as páginas do Missal do fim de semana seguem o roteiro do domingo.');
+      if (missalSabado && !Object.values(roteiros).some((r) => r.missas)) avisos.push('Há roteiro extra no sábado: as páginas do Missal do fim de semana seguem o roteiro do domingo.');
       if (infoDomingo.notas.length) fimDeSemana.nota = infoDomingo.notas.join(' ');
       const ant = antifonasDoDia(`${nomeDomingo} (${sabado.slice(8)} e ${dataCurta(domingo)}/${domingo.slice(0, 4)})`, infoDomingo, doIndice.formulario);
       if (ant) { antifonasJs[`antifonas_${legado + 1}`] = ant; fimDeSemana.antifonas = `antifonas_${legado + 1}`; }
@@ -910,6 +925,14 @@
     if (roteiroPrincipal) {
       roteiros[`roteiro_${legado}`] = { tipo: 'roteiro', titulo: `Roteiro — ${nomeDomingo} — ${Number(sabado.slice(8))} e ${dataCurta(domingo)}/${domingo.slice(0, 4)}`,
         fonte: caminho(entrada.roteiro.nome), ...roteiroPrincipal };
+      // Havendo roteiro próprio de algum horário do fim de semana, o principal vale para as demais Missas.
+      const proprias = Object.values(roteiros).filter((r) => r.tipo === 'roteiro' && r.missas).flatMap((r) => r.missas)
+        .filter((m) => m.data >= sabado).map((m) => `${m.data} ${normalizarHora(m.hora)}`);
+      const demais = [sabado, domingo].flatMap(missasDoDia).filter((m) => !proprias.includes(`${m.data} ${normalizarHora(m.hora)}`));
+      if (proprias.length && demais.length) {
+        roteiros[`roteiro_${legado}`].missas = demais;
+        roteiros[`roteiro_${legado}`].titulo += ' — demais Missas';
+      }
     }
     if (entrada.preces) {
       roteiros[`preces_${legado}`] = { tipo: 'preces', titulo: `Preces — ${nomeDomingo}`, fonte: caminho(entrada.preces.nome),
@@ -928,7 +951,7 @@
       periodo,
       shortTitle: `${periodo} — ${nomeDomingo || 'Programação'}`,
       fullTitle: `Semana de ${periodo} de ${domingo.slice(0, 4)} — ${[...destaques, nomeDomingo].filter(Boolean).join(' e ')}`,
-      roteiroLabel: `📖 Roteiro — ${nomeDomingo || 'Domingo'}`,
+      roteiroLabel: `📖 Roteiro — ${nomeDomingo || 'Domingo'}${roteiros[`roteiro_${legado}`] && roteiros[`roteiro_${legado}`].missas ? ' (demais Missas)' : ''}`,
       roteiroExtras: extras.roteiro,
       precesExtras: extras.preces,
       nota: `Leituras conforme “${entrada.leituras.nome}”; escala conforme a planilha de escala da paróquia; páginas do Missal conforme os roteiros e o índice do Missal Romano.`,

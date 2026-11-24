@@ -35,6 +35,28 @@
   const ICONES_ATENDIMENTO = { confissao: '🕊️', casamento: '💍' };
   const tipoDaLinha = (linha) => linha[3] || 'missa';
 
+  /* Roteiros próprios de um horário (regra 14 de docs/REGRAS_ROTEIROS.md): cada Missa da escala
+     ganha o botão do roteiro que vale para ela. "missas": [{ data, hora, local }] no roteiro. */
+  let roteiroDaMissa = {};
+  const horaChave = (hora) => String(hora).toLowerCase().replace(/\s/g, '').replace(/^(\d)h/, '0$1h');
+  function mapearRoteirosPorMissa(semana) {
+    roteiroDaMissa = {};
+    const documentos = window.roteirosData || {};
+    const prefixo = `roteiro_${semana.legacyWeek}`;
+    for (const [chave, doc] of Object.entries(documentos)) {
+      if (chave !== prefixo && !chave.startsWith(`${prefixo}_`)) continue;
+      const extra = chave === prefixo ? '' : chave.slice(prefixo.length + 1);
+      for (const missa of doc.missas || []) roteiroDaMissa[`${missa.data} ${horaChave(missa.hora)}`] = extra;
+    }
+  }
+  function botaoRoteiroDaMissa(data, hora) {
+    const extra = roteiroDaMissa[`${data} ${horaChave(hora)}`];
+    if (extra === undefined) return '';
+    return extra
+      ? `<button type="button" class="missa-roteiro missa-roteiro-proprio" data-action="open-active-roteiro" data-roteiro-key="${extra}">⭐ Roteiro próprio desta Missa</button>`
+      : '<button type="button" class="missa-roteiro" data-action="open-active-roteiro">📖 Roteiro das demais Missas</button>';
+  }
+
   function blocosEscala(dia, dias) {
     const ancorados = new Set([dia.data]);
     return GRUPOS_ESCALA.map(([tipo, titulo]) => {
@@ -46,7 +68,7 @@
                 <table class="escala-table"><tbody>${linhas.map(([item, [hora, local, responsavel, , descricao]]) => {
                   const ancora = ancorados.has(item.data) ? '' : ` id="dia-${item.data}" data-date="${item.data}"`;
                   ancorados.add(item.data);
-                  const texto = tipo === 'missa' ? responsavel : `${responsavel}<span class="p-desc">${descricao}</span>`;
+                  const texto = tipo === 'missa' ? `${responsavel}${botaoRoteiroDaMissa(item.data, hora) ? `<br>${botaoRoteiroDaMissa(item.data, hora)}` : ''}` : `${responsavel}<span class="p-desc">${descricao}</span>`;
                   return `<tr${ancora}><td><span class="p-dia">${item.dia}</span> <span class="p-hora">${hora}</span></td><td class="p-loc">${local}</td><td class="p-cel">${texto}</td></tr>`;
                 }).join('')}</tbody></table></div>`;
     }).join('');
@@ -162,6 +184,7 @@
   }
 
   function montarSemana(semana) {
+    mapearRoteirosPorMissa(semana);
     const todosOsDias = semana.dias.concat(semana.fimDeSemana.dias);
     const fimDeSemana = { ...semana.fimDeSemana, data: semana.fimDeSemana.dias[0].data };
     const navegacao = `<nav class="day-nav" aria-label="Dias de ${semana.periodo}">${todosOsDias.map((dia) =>
