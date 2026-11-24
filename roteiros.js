@@ -2447,6 +2447,8 @@ window.roteirosData = {
     "titulo": "Roteiro — 31/12 – Te Deum — 31/12/2026",
     "botao": "📖 Roteiro — 31/12 – Te Deum",
     "fonte": "semanas/2026-12-28/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.docx",
+    "pdf": "semanas/2026-12-28/pdf/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.pdf",
+    "pdfHash": "8ca5af39ac091337",
     "cabecalho": "● MISSA – QUINTA-FEIRA, 31 DE DEZEMBRO DE 2026 – 7º DIA NA OITAVA DO NATAL – COR BRANCA",
     "secoes": [
       {
@@ -2464,8 +2466,6 @@ window.roteirosData = {
           ["Comentarista", "Louvado seja Nosso Senhor Jesus Cristo!"],
           ["Todos", "Para sempre seja louvado."],
           ["Orientação", "O comentarista apresenta as intenções da Missa."],
-          ["Orientação", "Missa com transmissão:"],
-          ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); por todas as intenções deixadas nos comentários das redes sociais e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Missa sem transmissão:"],
           ["Comentarista", "As intenções desta Santa Missa são: (ler as intenções); e as que trazemos em nossos corações, as quais serão apresentadas no altar do Senhor."],
           ["Orientação", "Monição inicial:"],
@@ -2600,9 +2600,7 @@ window.roteirosData = {
           ["Cantores", "Canto Final."]
         ]
       }
-    ],
-    "pdf": "semanas/2026-12-28/pdf/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.pdf",
-    "pdfHash": "e198ca66c2ff581b"
+    ]
   },
   "roteiro_16_mae_deus": {
     "tipo": "roteiro",
