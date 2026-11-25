@@ -6,7 +6,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 1º Domingo do Advento — 28 e 29/11/2026",
     "fonte": "semanas/2026-11-23/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-11-23/pdf/1º DOMINGO DO ADVENTO - 28 E 29 NOVEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "3f89ad2e6368273e",
+    "pdfHash": "c13329f4e5cea148",
     "cabecalho": "● 1º DOMINGO DO ADVENTO – 28 E 29 NOVEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
@@ -15,6 +15,7 @@ window.roteirosData = {
           ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "Preparar a caldeirinha com água benta e o aspersório junto à coroa do Advento, para a aspersão da coroa logo depois da bênção."],
+          ["Orientação", "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -305,7 +306,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "c6f30e0dc5f14121",
+    "pdfHash": "50d82b4b2970712e",
     "cabecalho": "● 2º DOMINGO DO ADVENTO – 5 E 6 DEZEMBRO 2026 – ANO B – COR ROXA Demais Missas: sábado 19h00 (Capela São Domingos Sávio) · domingo 9h00, 11h00 e 18h30 (Igreja Matriz)",
     "secoes": [
       {
@@ -313,6 +314,7 @@ window.roteirosData = {
         "linhas": [
           ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -575,7 +577,7 @@ window.roteirosData = {
       }
     ],
     "pdf": "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.pdf",
-    "pdfHash": "8151f2c7579cebe4",
+    "pdfHash": "13202f06964df6d4",
     "cabecalho": "● 2º DOMINGO DO ADVENTO – SÁBADO, 5 DE DEZEMBRO DE 2026 – 18h30 – IGREJA MATRIZ – ANO B – COR ROXA Roteiro próprio desta Missa: Missa em ação de graças pelo ECC e pelos empreendedores da paróquia",
     "secoes": [
       {
@@ -583,6 +585,7 @@ window.roteirosData = {
         "linhas": [
           ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -960,7 +963,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
     "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "a582df7ceb32defe",
+    "pdfHash": "e4328962ba52ec64",
     "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
     "secoes": [
       {
@@ -969,6 +972,7 @@ window.roteirosData = {
           ["Orientação", "Hoje: coleta da Campanha para a Evangelização (CNBB) – lembrar nos avisos."],
           ["Orientação", "3º Domingo do Advento (Gaudete) – cor rósea (ou roxa). Domingo da alegria: o altar pode ser ornado com flores e os instrumentos acompanham o canto com alegria, sem antecipar a plenitude do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -1223,7 +1227,7 @@ window.roteirosData = {
     "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
     "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
     "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-    "pdfHash": "dcab37ebdc28449c",
+    "pdfHash": "6a4cdccc4dce1e01",
     "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
     "secoes": [
       {
@@ -1231,6 +1235,7 @@ window.roteirosData = {
         "linhas": [
           ["Orientação", "Tempo do Advento – cor roxa. O altar é ornado com flores de modo moderado, e os instrumentos musicais acompanham o canto com moderação, sem antecipar a alegria plena do Natal (IGMR 305 e 313). Não se diz o Glória. Ao fim da Missa, Bênção Solene do Tempo do Advento (Missal Romano, pág. 578)."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -1689,14 +1694,14 @@ window.roteirosData = {
     "botao": "📖 Roteiro — Natal – Missa do Dia",
     "fonte": "semanas/2026-12-21/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.docx",
     "pdf": "semanas/2026-12-21/pdf/NATAL DO SENHOR - MISSA DO DIA - 25 DEZEMBRO 2026.pdf",
-    "pdfHash": "f2738dee87ae0efe",
+    "pdfHash": "3a68b795804ef5f7",
     "cabecalho": "● NATAL DO SENHOR – MISSA DO DIA – 25 DE DEZEMBRO DE 2026 – SOLENIDADE – COR BRANCA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
           ["Orientação", "Natal do Senhor – Missa do Dia (sexta-feira, 25/12, 19h00): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio (todos se ajoelham ao «E se encarnou»). Oração Eucarística I (Cânon Romano), com o «Em comunhão» próprio do Natal. Prefácio do Natal I (pág. 455; pode-se usar o II ou o III, págs. 456-457)."],
-          ["Orientação", "Preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."],
+          ["Orientação", "Preparar o espaço Dom Bosco e a Igreja Velha para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC). Incenso: os cantos de entrada, aclamação ao Evangelho e ofertório devem ser mais prolongados."],
           ["Orientação", "Procissão de entrada: turíbulo e naveta, cruz, velas, diácono com o Evangeliário, coroinhas que servem o altar e sacerdote; o sacerdote beija o altar e o incensa. Leitores, MESC e coroinhas da comunhão já ficam em seus lugares e não participam da procissão. Os coroinhas tocam o sino para iniciar o canto do Glória."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
@@ -2209,13 +2214,14 @@ window.roteirosData = {
     "botao": "📖 Roteiro — 31/12 – Te Deum",
     "fonte": "semanas/2026-12-28/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.docx",
     "pdf": "semanas/2026-12-28/pdf/7º DIA NA OITAVA DO NATAL - TE DEUM - 31 DEZEMBRO 2026.pdf",
-    "pdfHash": "8ca5af39ac091337",
+    "pdfHash": "31bcc254578224fe",
     "cabecalho": "● MISSA – QUINTA-FEIRA, 31 DE DEZEMBRO DE 2026 – 7º DIA NA OITAVA DO NATAL – COR BRANCA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
+          ["Orientação", "Manter aberta a Igreja Velha para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC)."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
           ["Orientação", "O canto de comunhão deverá ser prolongado até o término da distribuição da comunhão."]
         ]
@@ -2369,14 +2375,14 @@ window.roteirosData = {
     "botao": "📖 Roteiro — Santa Maria, Mãe de Deus",
     "fonte": "semanas/2026-12-28/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.docx",
     "pdf": "semanas/2026-12-28/pdf/SANTA MARIA MÃE DE DEUS - SOLENIDADE - 1 JANEIRO 2027.pdf",
-    "pdfHash": "649800860190f1ea",
+    "pdfHash": "886d58f9583705c0",
     "cabecalho": "● SANTA MARIA, MÃE DE DEUS – SOLENIDADE – 1º DE JANEIRO DE 2027 – OITAVA DO NATAL – COR BRANCA",
     "secoes": [
       {
         "titulo": "Orientações",
         "linhas": [
           ["Orientação", "Solenidade em dia de semana (sexta-feira, 1º de janeiro, 19h00 – Igreja Matriz): Missa solene, com incenso, «Por Cristo» e Amém cantados. Glória e Creio. Oração Eucarística I (Cânon Romano), com o «Em comunhão» do Natal. Prefácio da Bem-aventurada Virgem Maria I, «na maternidade» (pág. 493). Dia Mundial da Paz."],
-          ["Orientação", "preparar o espaço Dom Bosco para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC); ornamentar com a imagem de Santa Maria, Mãe de Deus; os cantos de entrada, aclamação ao Evangelho e ofertório mais prolongados para a incensação."],
+          ["Orientação", "manter aberta a Igreja Velha para acolher a comunidade e prever os demais recursos (acolhida, liturgia, MESC); ornamentar com a imagem de Santa Maria, Mãe de Deus; os cantos de entrada, aclamação ao Evangelho e ofertório mais prolongados para a incensação."],
           ["Orientação", "Procissão de entrada: turíbulo e naveta, cruz, velas, diácono com o Evangeliário, coroinhas que servirão ao altar e sacerdote. Ministros leitores, MESC e coroinhas (comunhão) já em seus lugares desde o início."],
           ["Orientação", "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."],
           ["Orientação", "O Ministério de Música, como de costume deverá iniciar o canto de meditação 5 minutos antes de iniciar a Missa."],
