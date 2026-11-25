@@ -152,7 +152,7 @@ window.semanasData = [
      ]
     ],
     "equipe": {
-     "comentarista": "Reni",
+     "comentarista": "Luciene",
      "leitor": "Giovanna Laffranchi Teixeira",
      "projecao": "Alessandro"
     },
