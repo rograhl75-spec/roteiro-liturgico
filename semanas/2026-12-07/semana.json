@@ -1383,7 +1383,7 @@
    "titulo": "Roteiro — 3º Domingo do Advento — 12 e 13/12/2026",
    "fonte": "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
    "pdf": "semanas/2026-12-07/pdf/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "837c6c7dade542f1",
+   "pdfHash": "e4328962ba52ec64",
    "cabecalho": "● 3º DOMINGO DO ADVENTO – 12 E 13 DEZEMBRO 2026 – ANO B – COR RÓSEA",
    "secoes": [
     {
@@ -1400,6 +1400,10 @@
       [
        "Orientação",
        "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."
       ],
       [
        "Orientação",
@@ -1484,7 +1488,7 @@
       ],
       [
        "Orientação",
-       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central e a coloca na coroa."
       ],
       [
        "Cantores",
@@ -1492,7 +1496,7 @@
       ],
       [
        "Orientação",
-       "O sacerdote diz:"
+       "Colocada a vela, o sacerdote diz:"
       ],
       [
        "Sacerdote",
@@ -1501,10 +1505,6 @@
       [
        "Todos",
        "Amém."
-      ],
-      [
-       "Orientação",
-       "Terminada a oração, a vela é colocada na coroa."
       ],
       [
        "Orientação",
@@ -2160,7 +2160,7 @@
       ],
       [
        "Orientação",
-       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a terceira vela acesa em procissão pelo corredor central e a coloca na coroa."
       ],
       [
        "Orientação",
@@ -2168,7 +2168,7 @@
       ],
       [
        "Orientação",
-       "O sacerdote diz:"
+       "Colocada a vela, o sacerdote diz:"
       ],
       [
        "Sacerdote",
@@ -2177,10 +2177,6 @@
       [
        "Todos",
        "Amém."
-      ],
-      [
-       "Orientação",
-       "Terminada a oração, a vela é colocada na coroa."
       ],
       [
        "Orientação",
@@ -2193,7 +2189,7 @@
    "cartao": true,
    "botao": "🕯️ 3ª vela do Advento",
    "pdf": "semanas/2026-12-07/pdf/RITO - 3ª VELA DO ADVENTO - 12 E 13 DEZEMBRO 2026.pdf",
-   "pdfHash": "aa4f7602e1369ae7"
+   "pdfHash": "831ec175a473b7ad"
   }
  }
 }

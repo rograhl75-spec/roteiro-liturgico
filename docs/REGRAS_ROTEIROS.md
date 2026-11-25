@@ -20,6 +20,7 @@
      As intenções têm a versão «com transmissão» (inclui as intenções deixadas nas redes sociais) e/ou «sem transmissão», conforme a regra 15;
    - a monição inicial não cita a transmissão;
    - ritos próprios (ex.: coroa do Advento) com as rubricas na ordem em que acontecem;
+   - velas da coroa do Advento: a mesma dinâmica nos quatro domingos — durante o canto, a pessoa de túnica branca traz a vela acesa pelo corredor central e a coloca na coroa; colocada a vela, o sacerdote reza (sem subir ao presbitério);
    - os roteiros de 2025 são a base, mas sem notas internas («como em 2025», «dinâmica de 2025»).
 5b. **Paginação dos arquivos**: nenhuma página em branco; nenhuma oração ou fala quebrada entre páginas (a linha passa inteira
    para a página seguinte e termina no ponto final); rubricas ficam junto do que vem depois; nas preces, cada horário numa página;
@@ -34,7 +35,7 @@
 5d. **Leituras na página e no PDF**: formato do Lecionário (rubrica e referência em vermelho, abertura, versículos, ℟), **sem a frase-título** em vermelho, que não se lê e confundia os leitores.
 6. **Natal – Missa da Noite**: as preces são as próprias da bênção do presépio (seguidas da Oração do Jubileu), e a oração de bênção do presépio conclui a oração dos fiéis.
 7. **Aprovação**: nada é publicado sem aprovação no painel do Drive (ver `APROVACAO.md`).
-8. **Locais (nomes padronizados)**: Missas e casamentos: «Igreja Matriz», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» (nunca «Paróquia…»/«Templo» como local). **Confissões e direção espiritual: sempre na «Secretaria»**, exceto na 1ª sexta-feira do mês, das 11h30 às 13h00, na «Igreja Matriz». O importador da escala aplica isso sozinho (semana-lib.js → localPadrao/localConfissao).
+8. **Locais (nomes padronizados)**: Missas e casamentos: «Igreja Matriz», «Capela de Pedra» (mesmo endereço) e «Capela São Domingos Sávio» (nunca «Paróquia…»/«Templo» como local). A «Igreja Velha» **não** é a Capela de Pedra: escrever sempre «Igreja Velha». **Confissões e direção espiritual: sempre na «Secretaria»**, exceto na 1ª sexta-feira do mês, das 11h30 às 13h00, na «Igreja Matriz». O importador da escala aplica isso sozinho (semana-lib.js → localPadrao/localConfissao).
 9. **Privacidade**: celulares e espórtulas nunca entram na página nem no repositório.
 
 9. **Cores (economia de tinta, como nos roteiros do Diácono Rogério)**: sem fundos coloridos nas células e títulos; texto em preto; rubricas em vermelho; **marca-texto amarelo** no texto do Comentarista e em **todas as respostas de «Todos»** (o comentarista também responde), incluindo o rótulo da linha — as rubricas vermelhas dentro dessas linhas ficam sem amarelo. Aplicar com `python3 ferramentas/docx/cores.py <roteiro/preces>.docx` antes de `gerar-pdfs.py`.

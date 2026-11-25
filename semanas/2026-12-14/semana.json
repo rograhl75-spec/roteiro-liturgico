@@ -628,7 +628,7 @@
    "titulo": "Roteiro — 4º Domingo do Advento — 19 e 20/12/2026",
    "fonte": "semanas/2026-12-14/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.docx",
    "pdf": "semanas/2026-12-14/pdf/4º DOMINGO DO ADVENTO - 19 E 20 DEZEMBRO 2026 - ANO B.pdf",
-   "pdfHash": "0c9b1b70e708aa1d",
+   "pdfHash": "6a4cdccc4dce1e01",
    "cabecalho": "● 4º DOMINGO DO ADVENTO – 19 E 20 DEZEMBRO 2026 – ANO B – COR ROXA",
    "secoes": [
     {
@@ -641,6 +641,10 @@
       [
        "Orientação",
        "O comentarista, 10 minutos antes de iniciar a Missa, deverá convidar a comunidade a rezar um ou dois mistérios do Terço Mariano. Iniciando a oração dos mistérios, o datashow deverá colocar a seguinte orientação nos dois telões: “SILÊNCIO”."
+      ],
+      [
+       "Orientação",
+       "A equipe de liturgia chega 40 minutos antes da Missa para escolher e orientar a pessoa que levará a vela e preparar as demais atividades da celebração."
       ],
       [
        "Orientação",
@@ -725,7 +729,7 @@
       ],
       [
        "Orientação",
-       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central e a coloca na coroa."
       ],
       [
        "Cantores",
@@ -733,7 +737,7 @@
       ],
       [
        "Orientação",
-       "O sacerdote diz:"
+       "Colocada a vela, o sacerdote diz:"
       ],
       [
        "Sacerdote",
@@ -742,10 +746,6 @@
       [
        "Todos",
        "Amém."
-      ],
-      [
-       "Orientação",
-       "Terminada a oração, a vela é colocada na coroa."
       ],
       [
        "Orientação",
@@ -1401,7 +1401,7 @@
       ],
       [
        "Orientação",
-       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central, sobe ao presbitério e permanece junto do sacerdote."
+       "Durante o canto, uma pessoa (leitores, preces, liturgia ou comunidade), de túnica branca, traz a quarta vela acesa em procissão pelo corredor central e a coloca na coroa."
       ],
       [
        "Orientação",
@@ -1409,7 +1409,7 @@
       ],
       [
        "Orientação",
-       "O sacerdote diz:"
+       "Colocada a vela, o sacerdote diz:"
       ],
       [
        "Sacerdote",
@@ -1418,10 +1418,6 @@
       [
        "Todos",
        "Amém."
-      ],
-      [
-       "Orientação",
-       "Terminada a oração, a vela é colocada na coroa."
       ],
       [
        "Orientação",
@@ -1434,7 +1430,7 @@
    "cartao": true,
    "botao": "🕯️ 4ª vela do Advento",
    "pdf": "semanas/2026-12-14/pdf/RITO - 4ª VELA DO ADVENTO - 19 E 20 DEZEMBRO 2026.pdf",
-   "pdfHash": "e79ede5c8b7e888a"
+   "pdfHash": "a550481d35852122"
   }
  }
 }
