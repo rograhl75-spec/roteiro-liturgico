@@ -1,48 +1,6 @@
 /* GERADO AUTOMATICAMENTE por ferramentas/montar-site.js — não edite.
    Antífonas, aclamações e citações para a transmissão. Chave: antifonas_<legacyWeek + 1>[_<extra>]. */
 window.antifonasData = {
-  "antifonas_11": {
-    "title": "Antífonas, Aclamação e Citações para a transmissão — Nosso Senhor Jesus Cristo, Rei do Universo (21 e 22/11/2026)",
-    "items": [
-      {
-        "label": "Antífona de Entrada",
-        "reference": "Missal Romano — Ap 5,12; 1,6",
-        "text": "O Cordeiro imolado é digno de receber o poder, a riqueza, a sabedoria e a força, a honra, a glória e o louvor, a ele glória e poder, pelos séculos dos séculos."
-      },
-      {
-        "label": "Aclamação ao Evangelho",
-        "reference": "cf. Mc 11,10",
-        "text": "R. Aleluia, Aleluia, Aleluia.\nV. É bendito aquele que vem vindo,\n    que vem vindo em nome do Senhor;\n    e o Reino que vem, seja bendito;\n    ao que vem e a seu Reino, o louvor!"
-      },
-      {
-        "label": "Antífona de Comunhão",
-        "options": [
-          {
-            "reference": "Missal Romano — Cf. Sl 28,10-11",
-            "text": "O Senhor em seu trono reinará para sempre; o Senhor abençoará o seu povo na paz."
-          }
-        ]
-      }
-    ],
-    "citations": [
-      {
-        "label": "Primeira Leitura",
-        "text": "Quanto a vós, minhas ovelhas, farei justiça entre uma ovelha e outra."
-      },
-      {
-        "label": "Salmo Responsorial",
-        "text": "O Senhor é o pastor que me conduz; não me falta coisa alguma."
-      },
-      {
-        "label": "Segunda Leitura",
-        "text": "Entregará a realeza a Deus-Pai, para que Deus seja tudo em todos."
-      },
-      {
-        "label": "Evangelho",
-        "text": "Assentar-se-á em seu trono glorioso e separará uns dos outros."
-      }
-    ]
-  },
   "antifonas_12": {
     "title": "Antífonas, Aclamação e Citações para a transmissão — 1º Domingo do Advento (28 e 29/11/2026)",
     "items": [
