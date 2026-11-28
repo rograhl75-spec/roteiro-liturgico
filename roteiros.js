@@ -751,6 +751,23 @@ window.roteirosData = {
       }
     ]
   },
+  "roteiro_12_adoracao": {
+    "tipo": "roteiro",
+    "titulo": "Adoração Eucarística Solene — 4/12/2026 — 19h30",
+    "fonte": "semanas/2026-11-30/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.docx",
+    "botao": "🕯️ Adoração Solene (19h30)",
+    "cabecalho": "● ADORAÇÃO EUCARÍSTICA SOLENE – 4 DE DEZEMBRO DE 2026 – 19h30 – IGREJA MATRIZ – COR BRANCA",
+    "secoes": [
+      {
+        "titulo": "ADORAÇÃO EUCARÍSTICA SOLENE",
+        "linhas": [
+          ["Orientação", "Abra o documento original para ver o roteiro completo."]
+        ]
+      }
+    ],
+    "pdf": "semanas/2026-11-30/pdf/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.pdf",
+    "pdfHash": "7919ef253f9097e7"
+  },
   "roteiro_13_imaculada": {
     "tipo": "roteiro",
     "titulo": "Roteiro — Imaculada Conceição — 08/12/2026",
