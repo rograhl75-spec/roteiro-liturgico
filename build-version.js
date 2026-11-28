@@ -40,6 +40,7 @@ const assets = [
     "semanas/2026-11-30/pdf/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
     "semanas/2026-11-30/pdf/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.pdf",
     "semanas/2026-11-30/pdf/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.pdf",
+    "semanas/2026-11-30/pdf/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.pdf",
     "semanas/2026-12-07/Leituras 7 a 13 dezembro 2026.docx",
     "semanas/2026-12-07/3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026 - ANO B.docx",
     "semanas/2026-12-07/PRECES - 3º DOMINGO DO ADVENTO - 12 E 13 DEZEMBRO 2026.docx",

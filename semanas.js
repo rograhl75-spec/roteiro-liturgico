@@ -486,7 +486,8 @@ window.semanasData = [
   "roteiroLabel": "📖 Roteiro — 2º Domingo do Advento (demais Missas)",
   "roteiroExtras": [
    "rito",
-   "ecc"
+   "ecc",
+   "adoracao"
   ],
   "precesExtras": [],
   "nota": "Leituras conforme o Liturgia Diária (CNBB); páginas do lecionário conforme as programações anteriores da paróquia. Escala conforme a planilha da paróquia.",
@@ -785,9 +786,9 @@ window.semanasData = [
     },
     "botoes": [
      {
-      "tipo": "link",
-      "arquivo": "semanas/2026-11-30/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.docx",
-      "rotulo": "📄 Adoração Solene (19h30)"
+      "tipo": "roteiro",
+      "chave": "adoracao",
+      "rotulo": "🕯️ Adoração Solene (19h30)"
      }
     ],
     "nota": "1ª sexta-feira: Missa do dia (Féria do Advento), sem Missa votiva. Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo Sacramento às 19h30."
