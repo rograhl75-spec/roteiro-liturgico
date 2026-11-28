@@ -783,7 +783,13 @@ window.semanasData = [
      "eucaristica": "537 (OE II)",
      "prefacio": "451 (Advento I)"
     },
-    "botoes": [],
+    "botoes": [
+     {
+      "tipo": "link",
+      "arquivo": "semanas/2026-11-30/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.docx",
+      "rotulo": "📄 Adoração Solene (19h30)"
+     }
+    ],
     "nota": "1ª sexta-feira: Missa do dia (Féria do Advento), sem Missa votiva. Ladainha do Sagrado Coração de Jesus antes das Missas. Adoração Solene ao Santíssimo Sacramento às 19h30."
    }
   ],
@@ -907,6 +913,7 @@ window.semanasData = [
    "semanas/2026-11-30/2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026 - ANO B.docx",
    "semanas/2026-11-30/2º DOMINGO DO ADVENTO - SÁBADO 18H30 - 5 DEZEMBRO 2026.docx",
    "semanas/2026-11-30/PRECES - 2º DOMINGO DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx",
+   "semanas/2026-11-30/ADORAÇÃO EUCARÍSTICA SOLENE - 4 DEZEMBRO 2026.docx",
    "semanas/2026-11-30/RITO - 2ª VELA DO ADVENTO - 5 E 6 DEZEMBRO 2026.docx"
   ]
  },
